@@ -15,14 +15,14 @@ class BrandMenu(QFrame):
     def __init__(self, parent=None) -> None:
         super().__init__(parent, Qt.WindowType.Popup | Qt.WindowType.FramelessWindowHint)
         self.setObjectName("panel")
-        self.setFixedWidth(235)
+        self.setFixedWidth(350)
         layout = QVBoxLayout(self)
         layout.setContentsMargins(12, 12, 12, 12)
         actions = (
             ("settings", "Настройки", self.settings_requested),
             ("info", "О проекте", self.about_requested),
             ("clock", "История изменений", self.changelog_requested),
-            ("plus", "Поддержать TreeTranslate", self.support_requested),
+            ("boosty", "Поддержать TreeTranslate", self.support_requested),
         )
         for icon, text, signal in actions:
             button = QPushButton(QIcon(icon_path(icon)), text)

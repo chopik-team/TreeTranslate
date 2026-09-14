@@ -88,6 +88,18 @@ def test_clicking_svg_logo_opens_brand_menu() -> None:
     window.close()
 
 
+def test_support_menu_item_fits_and_uses_boosty_icon() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    support = next(
+        button for button in window.brand_menu.findChildren(QPushButton)
+        if button.text() == "Поддержать TreeTranslate"
+    )
+    assert window.brand_menu.width() >= support.sizeHint().width()
+    assert not support.icon().isNull()
+    window.close()
+
+
 def test_logo_mouse_events_do_not_reach_title_bar() -> None:
     app = QApplication.instance() or QApplication([])
     window = MainWindow()
