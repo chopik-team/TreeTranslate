@@ -1,6 +1,6 @@
 # TreeTranslate
 
-Current release: **AW 0.2-alpha**.
+Current development cycle: **AW 0.3-alpha**. Latest published release: **AW 0.2-alpha**.
 
 > **Your PC. Your files. Your rules.**
 > TreeTranslate работает локально и не отправляет документы в облако. Вы сами решаете, сколько ресурсов компьютера использовать.

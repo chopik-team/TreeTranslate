@@ -16,7 +16,7 @@ from app.gui.widgets.workspace_splitter import WorkspaceSplitterHandle
 from app.gui.widgets.language_combo import LanguageComboBox
 from app.gui.widgets.language_selector import LanguageSelector
 from app.gui.widgets.acceleration_selector import HoverInfoButton
-from app.config.constants import BOOSTY_URL
+from app.config.constants import APP_VERSION, BOOSTY_URL
 
 
 def test_main_window_and_states() -> None:
@@ -81,7 +81,7 @@ def test_about_dialog_has_sorted_product_credits() -> None:
     labels = " ".join(label.text() for label in dialog.findChildren(QLabel))
     buttons = [button.text() for button in dialog.findChildren(QPushButton)]
     assert "локального перевода" in labels
-    assert "AW 0.2-alpha · Windows" in labels
+    assert f"{APP_VERSION} · Windows" in labels
     assert "офлайн" not in labels
     assert "Алексей Широков · Станислав Смирнов" in labels
     assert "Станислав Смирнов" in labels
