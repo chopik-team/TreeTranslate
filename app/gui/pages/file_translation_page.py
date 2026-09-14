@@ -1,8 +1,6 @@
 from PySide6.QtCore import QTimer, Qt, Signal
-from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QPushButton, QVBoxLayout, QWidget
 
-from app.config.paths import icon_path
 from app.gui.widgets.acceleration_selector import AccelerationSelector
 from app.gui.widgets.drop_zone import DropZone
 from app.gui.widgets.file_tree import FileTree
@@ -45,24 +43,18 @@ class FileTranslationPage(QWidget):
         divider.setFixedHeight(1)
         layout.addWidget(divider)
         layout.addWidget(QLabel("Дополнительные параметры", objectName="caption"))
-        layout.addLayout(self._option_row("Перевести папки", "Названия каталогов", "Имена директорий будут переведены", True))
+        layout.addLayout(self._option_row("Перевести папки", "Названия каталогов", True))
         return panel
 
-    def _option_row(self, title: str, suffix: str, tip: str, checked: bool, enabled: bool = True) -> QHBoxLayout:
+    def _option_row(self, title: str, suffix: str, checked: bool) -> QHBoxLayout:
         row = QHBoxLayout()
         toggle = ToggleSwitch(checked)
-        toggle.setEnabled(enabled)
         if title == "Перевести папки":
             self.translate_folders = toggle
         text = QLabel(title + (f" ({suffix})" if suffix else ""))
-        text.setEnabled(enabled)
-        info = QPushButton(QIcon(icon_path("info")), "", objectName="iconButton")
-        info.setFixedSize(28, 28)
-        info.setToolTip(tip)
         row.addWidget(toggle)
         row.addWidget(text)
         row.addStretch()
-        row.addWidget(info)
         return row
 
     def _build_workspace(self) -> QWidget:
