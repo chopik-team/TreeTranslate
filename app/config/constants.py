@@ -1,5 +1,5 @@
 APP_NAME = "TreeTranslate"
-APP_VERSION = "AW 0.1"
+APP_VERSION = "AW 0.2"
 ORGANIZATION_NAME = "CHOPIK Team"
 GITHUB_URL = "https://github.com/CHOPIK-Team"
 MINIMUM_WINDOW_SIZE = (1180, 680)

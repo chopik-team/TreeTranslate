@@ -1,6 +1,6 @@
 # TreeTranslate
 
-Current UI release: **AW 0.1**.
+Current development cycle: **AW 0.2**. Stable release: **AW 0.1**.
 
 Desktop UI prototype for translating folders, documents and text. This stage uses only a mock translation service; no real translation engine, OCR or archive extraction is included.
 

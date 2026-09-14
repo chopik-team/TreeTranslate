@@ -12,5 +12,6 @@ def test_changelog_renders_release_history() -> None:
     dialog = ChangelogDialog()
     text = " ".join(label.text() for label in dialog.findChildren(QLabel))
     assert RELEASES
+    assert "AW 0.2" in text
     assert "AW 0.1" in text
     dialog.close()

@@ -36,7 +36,7 @@ class AboutDialog(QDialog):
         github = QPushButton(QIcon(icon_path("external_link")), "GitHub")
         github.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(GITHUB_URL)))
         updates = QPushButton(QIcon(icon_path("refresh")), "Проверить обновления")
-        updates.clicked.connect(lambda: QMessageBox.information(self, "Обновления", "Установлена актуальная версия AW 0.1."))
+        updates.clicked.connect(lambda: QMessageBox.information(self, "Обновления", f"Установлена актуальная версия {APP_VERSION}."))
         licenses = QPushButton(QIcon(icon_path("help")), "Лицензии")
         licenses.clicked.connect(lambda: QMessageBox.information(self, "Лицензии", "Сведения о лицензиях будут включены перед публичным выпуском."))
         for button in (github, updates, licenses):
