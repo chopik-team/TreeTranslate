@@ -1,7 +1,7 @@
 from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QCursor
+from PySide6.QtGui import QColor, QCursor
 from PySide6.QtSvgWidgets import QSvgWidget
-from PySide6.QtWidgets import QFrame, QHBoxLayout
+from PySide6.QtWidgets import QFrame, QGraphicsDropShadowEffect, QHBoxLayout
 
 from app.config.paths import TREE_TRANSLATE_LOGO
 
@@ -17,7 +17,21 @@ class BrandWidget(QFrame):
         self.logo = QSvgWidget(str(TREE_TRANSLATE_LOGO))
         self.logo.setFixedSize(39, 39)
         self.logo.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)
+        self._logo_glow = QGraphicsDropShadowEffect(self.logo)
+        self._logo_glow.setBlurRadius(14)
+        self._logo_glow.setOffset(0, 0)
+        self._logo_glow.setColor(QColor("#12d968"))
+        self._logo_glow.setEnabled(False)
+        self.logo.setGraphicsEffect(self._logo_glow)
         layout.addWidget(self.logo)
+
+    def enterEvent(self, event) -> None:
+        self._logo_glow.setEnabled(True)
+        super().enterEvent(event)
+
+    def leaveEvent(self, event) -> None:
+        self._logo_glow.setEnabled(False)
+        super().leaveEvent(event)
 
     def mousePressEvent(self, event) -> None:
         if event.button() == Qt.MouseButton.LeftButton:

@@ -111,6 +111,20 @@ def test_logo_mouse_events_do_not_reach_title_bar() -> None:
     window.close()
 
 
+def test_logo_hover_highlights_only_the_svg() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    window.show()
+    app.processEvents()
+    brand = window.title_bar.brand
+    assert brand.graphicsEffect() is None
+    assert not brand._logo_glow.isEnabled()
+    QTest.mouseMove(brand, brand.rect().center())
+    app.processEvents()
+    assert brand._logo_glow.isEnabled()
+    window.close()
+
+
 def test_source_picker_menu_matches_button_width() -> None:
     app = QApplication.instance() or QApplication([])
     window = MainWindow()
