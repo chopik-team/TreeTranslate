@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">TreeTranslate</title>
+  <desc id="desc">Зелёная монограмма TT с ветвями и листьями</desc>
+  <defs>
+    <linearGradient id="logoGreen" x1="150" y1="285" x2="1050" y2="1030" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18a354"/><stop offset="0.52" stop-color="#128b43"/><stop offset="1" stop-color="#0d9a48"/>
+    </linearGradient>
+    <linearGradient id="leafGreen" x1="365" y1="525" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#45b84d"/><stop offset="1" stop-color="#2eac4a"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#logoGreen)" d="M186 391h302c64 0 117 48 117 108v560c0 8-9 13-16 9l-53-34a34 34 0 0 1-16-29V505c0-18-15-32-34-32H186c-11 0-19-8-19-19v-44c0-11 8-19 19-19Z"/>
+  <path fill="url(#logoGreen)" d="M733 391h333c11 0 19 8 19 19v44c0 11-8 19-19 19H766c-19 0-34 14-34 32v296l178-139-17-21c-4-5-4-11 0-16l15-19c4-5 11-5 15 0l96 112c4 5 4 11 0 16l-15 17c-5 5-12 5-16 0l-48-56-208 161v149a34 34 0 0 1-16 29l-53 34c-7 4-16-1-16-9V499c0-60 52-108 116-108Z"/>
+  <path fill="url(#logoGreen)" d="m399 570 122 130v59L376 604Z"/>
+  <path fill="url(#leafGreen)" d="M351 529c72-2 126 37 132 96 1 7 0 13-1 19l-80-68 59 89c-55-22-101-76-110-136Z"/>
+  <path fill="url(#leafGreen)" d="M911 543c-11 76-62 139-131 149l72-95-75 66c-7-61 48-119 134-120Z"/>
+</svg>
