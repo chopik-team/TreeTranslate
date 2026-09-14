@@ -1,9 +1,9 @@
-from PySide6.QtCore import Qt
-from PySide6.QtGui import QIcon
+from PySide6.QtCore import Qt, QUrl
+from PySide6.QtGui import QDesktopServices, QIcon
 from PySide6.QtSvgWidgets import QSvgWidget
 from PySide6.QtWidgets import QDialog, QFrame, QGridLayout, QLabel, QPushButton, QVBoxLayout
 
-from app.config.constants import APP_VERSION, ORGANIZATION_NAME
+from app.config.constants import APP_VERSION, ORGANIZATION_NAME, PROJECT_GITHUB_URL
 from app.config.paths import TREE_TRANSLATE_LOGO, icon_path
 
 
@@ -18,8 +18,10 @@ class AboutDialog(QDialog):
         logo = QSvgWidget(str(TREE_TRANSLATE_LOGO))
         logo.setFixedSize(92, 92)
         layout.addWidget(logo, alignment=Qt.AlignmentFlag.AlignHCenter)
-        title = QLabel("TreeTranslate", objectName="heading")
-        title.setStyleSheet("font-size: 25px; font-weight: 700")
+        title = QPushButton("TreeTranslate", objectName="aboutProjectLink")
+        title.setCursor(Qt.CursorShape.PointingHandCursor)
+        title.setToolTip("Открыть TreeTranslate на GitHub")
+        title.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(PROJECT_GITHUB_URL)))
         layout.addWidget(title, alignment=Qt.AlignmentFlag.AlignHCenter)
         version = QLabel(f"{APP_VERSION} · Windows", objectName="secondary", alignment=Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(version)
@@ -54,7 +56,7 @@ class AboutDialog(QDialog):
         layout.addWidget(credits)
         layout.addStretch()
         attribution = QLabel(
-            "Иконки: Velora Icon Pack · Flaticon · Icons8"
+            "Иконки: TreeTranslate Icon Pack · Flaticon · Icons8"
         )
         attribution.setObjectName("secondary")
         layout.addWidget(attribution)

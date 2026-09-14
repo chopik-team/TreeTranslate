@@ -29,8 +29,7 @@ class ProgressPanel(QFrame):
         self.bar.setRange(0, 100)
         progress_row = QHBoxLayout()
         progress_row.addWidget(self.bar, 1)
-        self.percent = QLabel("0%")
-        self.percent.setStyleSheet("font-size: 20px; font-weight: 650")
+        self.percent = QLabel("0%", objectName="progressPercent")
         progress_row.addWidget(self.percent)
         layout.addLayout(progress_row)
         info = QGridLayout()
@@ -60,13 +59,13 @@ class ProgressPanel(QFrame):
         buttons.addWidget(self.pause)
         buttons.addWidget(self.cancel)
         layout.addLayout(buttons)
-        self.set_state(JobState.EMPTY)
+        self.set_state(JobState.IDLE)
 
     def set_state(self, state: JobState) -> None:
         labels = {
-            JobState.EMPTY: "Ожидание", JobState.DRAGGING: "Добавление…", JobState.SCANNING: "Сканирование…",
+            JobState.IDLE: "Ожидание", JobState.DRAGGING: "Добавление…", JobState.SCANNING: "Сканирование…",
             JobState.READY: "Готово к запуску", JobState.TRANSLATING: "Выполняется", JobState.PAUSED: "Приостановлено",
-            JobState.COMPLETED: "Завершено", JobState.ERROR: "Ошибка", JobState.CANCELLED: "Отменено",
+            JobState.CANCELLING: "Отмена…", JobState.COMPLETED: "Завершено", JobState.ERROR: "Ошибка", JobState.CANCELLED: "Отменено",
         }
         self.status.setText(labels[state])
         active = state in {JobState.TRANSLATING, JobState.PAUSED}

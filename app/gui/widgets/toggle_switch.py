@@ -2,6 +2,8 @@ from PySide6.QtCore import Property, QEasingCurve, QPropertyAnimation, QRectF, Q
 from PySide6.QtGui import QColor, QPainter
 from PySide6.QtWidgets import QAbstractButton
 
+from app.gui.styles.theme import color
+
 
 class ToggleSwitch(QAbstractButton):
     def __init__(self, checked: bool = False, parent=None) -> None:
@@ -33,7 +35,7 @@ class ToggleSwitch(QAbstractButton):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         painter.setPen(Qt.PenStyle.NoPen)
-        painter.setBrush(QColor("#15934a" if self.isChecked() else "#34423a"))
+        painter.setBrush(QColor(color("accent") if self.isChecked() else color("border")))
         painter.drawRoundedRect(QRectF(0, 1, 44, 22), 11, 11)
-        painter.setBrush(QColor("#ffffff"))
+        painter.setBrush(QColor(color("text_primary")))
         painter.drawEllipse(QRectF(3 + self._position * 20, 4, 16, 16))

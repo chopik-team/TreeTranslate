@@ -34,7 +34,7 @@ def language_icon(language: str) -> QIcon:
 
 
 class LanguageComboBox(QComboBox):
-    """Language selector using the shared Velora flag assets."""
+    """Language selector using TreeTranslate's bundled flag assets."""
 
     def __init__(self, languages=(), parent=None) -> None:
         super().__init__(parent)

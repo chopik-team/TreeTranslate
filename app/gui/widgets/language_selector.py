@@ -14,8 +14,7 @@ class LanguageSelector(QWidget):
         layout.setContentsMargins(0, 0, 0, 0)
         options = [self.AUTOMATIC, *self.LANGUAGES]
         self.source = self._combo("Исходный язык", options)
-        arrow = QLabel("→")
-        arrow.setStyleSheet("font-size: 22px; color: #718078")
+        arrow = QLabel("→", objectName="languageArrow")
         self.target = self._combo("Язык перевода", options)
         self.target.combo.setCurrentText("Русский")
         layout.addWidget(self.source, 1)

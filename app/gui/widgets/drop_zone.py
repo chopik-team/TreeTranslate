@@ -48,9 +48,10 @@ class DropZone(QFrame):
         layout.addStretch()
 
     def _set_drag_active(self, active: bool) -> None:
-        color = "#1b7540" if active else "#26352d"
-        background = "#13271b" if active else "#121a16"
-        self.setStyleSheet(f"QFrame#dropZone {{ background: {background}; border: 1px dashed {color}; border-radius: 16px; }}")
+        self.setProperty("dragActive", active)
+        self.style().unpolish(self)
+        self.style().polish(self)
+        self.update()
 
     def dragEnterEvent(self, event) -> None:
         if event.mimeData().hasUrls():

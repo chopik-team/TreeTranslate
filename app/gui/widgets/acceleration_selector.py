@@ -41,8 +41,8 @@ class AccelerationSelector(QWidget):
             "Ограничить использование CPU, RAM, GPU и VRAM можно в разделе "
             "<b>Настройки → Производительность</b>. При нехватке памяти приложение сможет "
             "автоматически снизить нагрузку.<br><br>"
-            "<span style='color:#91a69b'>В AW 0.2 рекомендации по распределению нагрузки "
-            "носят предварительный характер и будут уточняться в следующих версиях.</span></div>"
+            "В AW 0.3 рекомендации по распределению нагрузки носят предварительный "
+            "характер и будут уточняться в следующих версиях.</div>"
         )
         title_row.addWidget(info)
         title_row.addStretch()
@@ -63,3 +63,9 @@ class AccelerationSelector(QWidget):
     def selected(self) -> str:
         button = self.group.checkedButton()
         return button.text() if button else "Auto"
+
+    def set_selected(self, name: str) -> None:
+        for button in self.group.buttons():
+            if button.text() == name:
+                button.setChecked(True)
+                return

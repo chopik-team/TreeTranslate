@@ -16,7 +16,8 @@ from app.gui.widgets.workspace_splitter import WorkspaceSplitterHandle
 from app.gui.widgets.language_combo import LanguageComboBox
 from app.gui.widgets.language_selector import LanguageSelector
 from app.gui.widgets.acceleration_selector import HoverInfoButton
-from app.config.constants import APP_VERSION, BOOSTY_URL
+from app.config.constants import APP_VERSION, BOOSTY_URL, PROJECT_GITHUB_URL
+from app.gui.styles.theme import load_stylesheet
 
 
 def test_main_window_and_states() -> None:
@@ -88,7 +89,20 @@ def test_about_dialog_has_sorted_product_credits() -> None:
     assert "ChatGPT 5.6 Sol" in labels
     assert "Translation Engine" not in labels
     assert "Translation backend" not in labels
-    assert buttons == ["Закрыть"]
+    assert buttons == ["TreeTranslate", "Закрыть"]
+    dialog.close()
+
+
+def test_about_product_title_opens_its_github_repository() -> None:
+    app = QApplication.instance() or QApplication([])
+    dialog = AboutDialog()
+    title = dialog.findChild(QPushButton, "aboutProjectLink")
+    assert title is not None
+    assert "QPushButton#aboutProjectLink:hover" in load_stylesheet()
+    with patch("app.gui.dialogs.about_dialog.QDesktopServices.openUrl", return_value=True) as open_url:
+        title.click()
+    open_url.assert_called_once()
+    assert open_url.call_args.args[0].toString() == PROJECT_GITHUB_URL
     dialog.close()
 
 
@@ -174,15 +188,16 @@ def test_output_folder_naming_uses_clear_mode_selector() -> None:
     dialog.close()
 
 
-def test_output_location_has_only_nearby_or_browse_choices() -> None:
+def test_output_location_has_clear_change_button() -> None:
     app = QApplication.instance() or QApplication([])
     dialog = SettingsDialog()
     location = dialog.findChild(QComboBox, "outputLocation")
     assert location is not None
-    assert [location.itemText(index) for index in range(location.count())] == [
-        "Рядом с оригиналом",
-        "Обзор…",
-    ]
+    assert location.itemText(0) == "Рядом с оригиналом"
+    change = dialog.findChild(QPushButton, "changeOutputLocation")
+    assert change is not None and change.text() == "Изменить…"
+    assert dialog.findChild(QLabel, "safetyNotice") is not None
+    assert not any(check.text() == "Не изменять оригинальные файлы" for check in dialog.findChildren(QCheckBox))
     dialog.close()
 
 
@@ -214,6 +229,7 @@ def test_text_page_uses_automatic_translation() -> None:
     assert window.text_page.reference_area.isHidden()
     window.text_page.source.editor.setPlainText("Привет")
     window.text_page._request_translation()
+    app.processEvents()
     assert window.text_page.result.editor.toPlainText() == "Hi"
     assert not window.text_page.reference_area.isHidden()
     window.text_page.source.editor.clear()
@@ -328,6 +344,22 @@ def test_acceleration_info_has_svg_and_help_text() -> None:
     assert not info.icon().isNull()
     assert all(mode in info.toolTip() for mode in ("Auto", "CPU", "GPU"))
     assert all(detail in info.toolTip() for detail in ("VRAM", "сложных вычислений", "Производительность"))
+    window.close()
+
+
+def test_acceleration_selection_is_visible_and_switches_reliably() -> None:
+    app = QApplication.instance() or QApplication([])
+    app.setStyleSheet(load_stylesheet())
+    window = MainWindow()
+    selector = window.file_page.acceleration
+    buttons = {button.text(): button for button in selector.group.buttons()}
+    assert "radio_checked.svg);" in app.styleSheet()
+    for name in ("GPU", "CPU", "Auto", "GPU"):
+        buttons[name].click()
+        app.processEvents()
+        assert selector.selected() == name
+        assert buttons[name].isChecked()
+        assert sum(button.isChecked() for button in buttons.values()) == 1
     window.close()
 
 

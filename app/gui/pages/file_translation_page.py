@@ -30,7 +30,11 @@ class FileTranslationPage(QWidget):
         splitter.setStretchFactor(1, 7)
         splitter.setSizes([470, 820])
         root.addWidget(splitter)
-        QTimer.singleShot(0, lambda: splitter.setSizes([470, max(700, splitter.width() - 477)]))
+        self._initial_splitter_timer = QTimer(self, singleShot=True)
+        self._initial_splitter_timer.timeout.connect(
+            lambda: splitter.setSizes([470, max(700, splitter.width() - 477)])
+        )
+        self._initial_splitter_timer.start(0)
 
     def _build_source_panel(self) -> QWidget:
         panel = QFrame(objectName="sourcePanel")

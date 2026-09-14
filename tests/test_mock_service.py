@@ -36,8 +36,8 @@ def test_mock_service_completes_without_sleep() -> None:
 
 def test_basic_text_dictionary() -> None:
     service = MockTranslationService()
-    assert service.mock_translate_text("Привет") == "Hi"
-    assert service.mock_translate_text("hello") == "Привет"
+    assert service.translate_text("Привет") == "Hi"
+    assert service.translate_text("hello") == "Привет"
 
 
 def test_resource_policy_is_applied_before_work_starts() -> None:

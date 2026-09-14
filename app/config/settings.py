@@ -20,3 +20,10 @@ class PerformanceSettings:
     vram_limit: str = "Автоматически"
     unload_model: bool = True
     reduce_load: bool = True
+
+
+@dataclass(slots=True)
+class TranslationJobConfig:
+    """UI-side contract to be passed to the future Translation Engine."""
+
+    translate_directories: bool = True

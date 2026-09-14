@@ -24,22 +24,22 @@ class BrandMenu(QFrame):
             ("clock", "История изменений", self.changelog_requested),
             ("boosty", "Поддержать TreeTranslate", self.support_requested),
         )
+        action_buttons = []
         for icon, text, signal in actions:
-            button = QPushButton(QIcon(icon_path(icon)), text)
-            button.setStyleSheet("text-align:left")
+            button = QPushButton(QIcon(icon_path(icon)), text, objectName="brandMenuAction")
+            action_buttons.append(button)
             button.clicked.connect(signal)
             button.clicked.connect(self.close)
             layout.addWidget(button)
-        separator = QFrame()
+        separator = QFrame(objectName="divider")
         separator.setFixedHeight(1)
-        separator.setStyleSheet("background: #26352d; border: 0")
         layout.addWidget(separator)
         exit_button = QPushButton(QIcon(icon_path("close")), "Выход")
-        exit_button.setObjectName("danger")
-        exit_button.setStyleSheet("text-align:left")
+        exit_button.setObjectName("brandMenuDanger")
         exit_button.clicked.connect(self.exit_requested)
         exit_button.clicked.connect(self.close)
         layout.addWidget(exit_button)
+        self.setFixedWidth(max(350, *(button.sizeHint().width() + 24 for button in action_buttons)))
         self._animation = QPropertyAnimation(self, b"windowOpacity", self, duration=130)
         self._animation.setEasingCurve(QEasingCurve.Type.OutCubic)
 

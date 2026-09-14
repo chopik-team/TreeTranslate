@@ -2,6 +2,8 @@ from PySide6.QtCore import QPointF, QRectF, Qt
 from PySide6.QtGui import QColor, QCursor, QPainter, QPen
 from PySide6.QtWidgets import QSplitter, QSplitterHandle
 
+from app.gui.styles.theme import color
+
 
 class WorkspaceSplitterHandle(QSplitterHandle):
     def __init__(self, orientation: Qt.Orientation, parent: QSplitter) -> None:
@@ -23,13 +25,13 @@ class WorkspaceSplitterHandle(QSplitterHandle):
     def paintEvent(self, event) -> None:
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
-        accent = QColor("#1bc869") if self._hovered else QColor("#31463b")
+        accent = QColor(color("splitter_hover") if self._hovered else color("splitter"))
         center_x = self.width() / 2
         painter.setPen(QPen(accent, 1))
         painter.drawLine(QPointF(center_x, 14), QPointF(center_x, self.height() - 14))
         grip = QRectF(center_x - 4, self.height() / 2 - 27, 8, 54)
         painter.setPen(Qt.PenStyle.NoPen)
-        painter.setBrush(QColor("#184b2d") if self._hovered else QColor("#17251e"))
+        painter.setBrush(QColor(color("splitter_grip_hover") if self._hovered else color("splitter_grip")))
         painter.drawRoundedRect(grip, 4, 4)
         painter.setBrush(accent)
         for offset in (-9, 0, 9):

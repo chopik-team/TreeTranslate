@@ -24,3 +24,8 @@ class NavigationTabs(QWidget):
             self.group.addButton(button, index)
             layout.addWidget(button)
         self.group.idClicked.connect(self.page_changed)
+
+    def set_current(self, index: int) -> None:
+        button = self.group.button(index)
+        if button:
+            button.setChecked(True)

@@ -17,7 +17,7 @@ def test_mock_tree_has_content() -> None:
 
 
 def test_all_required_states_exist() -> None:
-    required = {"EMPTY", "DRAGGING", "SCANNING", "READY", "TRANSLATING", "PAUSED", "COMPLETED", "ERROR", "CANCELLED"}
+    required = {"IDLE", "DRAGGING", "SCANNING", "READY", "TRANSLATING", "PAUSED", "CANCELLING", "COMPLETED", "ERROR", "CANCELLED"}
     assert required == {state.name for state in JobState}
 
 

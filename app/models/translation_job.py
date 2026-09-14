@@ -3,12 +3,13 @@ from enum import Enum, auto
 
 
 class JobState(Enum):
-    EMPTY = auto()
+    IDLE = auto()
     DRAGGING = auto()
     SCANNING = auto()
     READY = auto()
     TRANSLATING = auto()
     PAUSED = auto()
+    CANCELLING = auto()
     COMPLETED = auto()
     ERROR = auto()
     CANCELLED = auto()

@@ -1,21 +1,20 @@
 from __future__ import annotations
 
-from PySide6.QtCore import QObject, QTimer, Signal
+from PySide6.QtCore import QObject, QTimer
 
 from app.models.translation_job import JobState, TranslationProgress
 from app.config.settings import PerformanceSettings
+from app.services.translation_service import TranslationService
 
 
-class MockTranslationService(QObject):
-    state_changed = Signal(object)
-    scan_finished = Signal()
-    progress_changed = Signal(object)
+class MockTranslationService(TranslationService):
+    """Deterministic UI placeholder; it performs no real translation or inference."""
 
     FILES = ["系统概述.pdf", "安装说明.docx", "启动车辆.pdf", "配置参考.docx", "readme.txt", "localization.json", "terms.xml", "notes.md"]
 
     def __init__(self, parent: QObject | None = None) -> None:
         super().__init__(parent)
-        self.state = JobState.EMPTY
+        self.state = JobState.IDLE
         self.progress = TranslationProgress(total=14)
         self._timer = QTimer(self, interval=420)
         self._timer.timeout.connect(self._tick)
@@ -63,13 +62,14 @@ class MockTranslationService(QObject):
 
     def cancel(self) -> None:
         self._timer.stop()
+        self._set_state(JobState.CANCELLING)
         self._set_state(JobState.CANCELLED)
 
     def simulate_error(self) -> None:
         self._timer.stop()
         self._set_state(JobState.ERROR)
 
-    def mock_translate_text(self, text: str) -> str:
+    def translate_text(self, text: str) -> str:
         if not text.strip():
             return ""
         normalized = text.strip().casefold()

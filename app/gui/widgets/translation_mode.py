@@ -1,14 +1,29 @@
+from dataclasses import dataclass
+
 from PySide6.QtCore import QItemSelectionModel, QSize, Qt
 from PySide6.QtGui import QStandardItem, QStandardItemModel
 from PySide6.QtWidgets import QAbstractItemView, QComboBox, QHeaderView, QLabel, QTableView, QVBoxLayout, QWidget
 
 
-MODE_REQUIREMENTS = (
-    ("🍂  Эконом", "минимум нагрузки", "~10–20 слов/мин", "8 ГБ RAM, CPU"),
-    ("🚶  Быстрый", "скорость", "~30–50 слов/мин", "16 ГБ RAM"),
-    ("🚙  Баланс", "скорость / качество", "~50–100 слов/мин", "16 ГБ + GPU желательно"),
-    ("⚡  Турбо", "максимальная скорость", "~100–200+ слов/мин", "32 ГБ + GPU"),
-    ("🚀  Максимум", "всё доступное железо", "зависит от GPU", "32 ГБ+ / мощная GPU"),
+@dataclass(frozen=True, slots=True)
+class ModePresentation:
+    name: str
+    priority: str
+    speed_placeholder: str
+    requirements: str
+
+    def as_row(self) -> tuple[str, str, str, str]:
+        return self.name, self.priority, self.speed_placeholder, self.requirements
+
+
+# Presentation-only defaults. A future benchmark provider can replace this
+# collection without changing the combo or its table view.
+MODE_PRESENTATIONS = (
+    ModePresentation("🍂  Эконом", "минимум нагрузки", "~10–20 слов/мин", "8 ГБ RAM, CPU"),
+    ModePresentation("🚶  Быстрый", "скорость", "~30–50 слов/мин", "16 ГБ RAM"),
+    ModePresentation("🚙  Баланс", "скорость / качество", "~50–100 слов/мин", "16 ГБ + GPU желательно"),
+    ModePresentation("⚡  Турбо", "максимальная скорость", "~100–200+ слов/мин", "32 ГБ + GPU"),
+    ModePresentation("🚀  Максимум", "всё доступное железо", "зависит от GPU", "32 ГБ+ / мощная GPU"),
 )
 
 
@@ -39,7 +54,7 @@ class ModeRequirementsCombo(QComboBox):
         super().__init__(parent)
         self._model = QStandardItemModel(self)
         self._model.setHorizontalHeaderLabels(["Режим", "Приоритет", "Условная скорость", "Требования"])
-        rows = list(MODE_REQUIREMENTS)
+        rows = [presentation.as_row() for presentation in MODE_PRESENTATIONS]
         if include_automatic:
             rows.insert(0, ("Автоматический", "подбор системой", "зависит от устройства", "определяются автоматически"))
         for row in rows:

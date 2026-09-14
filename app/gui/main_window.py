@@ -12,6 +12,10 @@ from app.gui.pages.file_translation_page import FileTranslationPage
 from app.gui.pages.text_translation_page import TextTranslationPage
 from app.gui.widgets.brand_menu import BrandMenu
 from app.gui.widgets.title_bar import TitleBar
+from app.services.settings_service import SettingsService
+from app.services.translation_preferences import TranslationPreferences
+from app.services.translation_session_manager import TranslationSessionManager
+from app.services.mock_translation_service import MockTranslationService
 
 
 class MainWindow(QMainWindow):
@@ -37,9 +41,16 @@ class MainWindow(QMainWindow):
         self.size_grip = QSizeGrip(root)
         self.size_grip.setFixedSize(18, 18)
         self.navigation = NavigationController(self.stack, self)
-        self.translation = TranslationUiController(self.file_page, self.text_page, self)
+        self.settings = SettingsService()
+        self.preferences = TranslationPreferences(self.settings, self)
+        self.sessions = TranslationSessionManager(parent=self)
+        self.translation_service = MockTranslationService(self)
+        self.translation = TranslationUiController(
+            self.file_page, self.text_page, self.translation_service,
+            self.preferences, self.sessions, self
+        )
         self.brand_menu = BrandMenu(self)
-        self.title_bar.page_changed.connect(self.navigation.navigate)
+        self.title_bar.page_changed.connect(self.request_navigation)
         self.title_bar.brand_requested.connect(self.open_brand_menu)
         self.brand_menu.settings_requested.connect(self.open_settings)
         self.brand_menu.about_requested.connect(self.open_about)
@@ -57,8 +68,43 @@ class MainWindow(QMainWindow):
         self.brand_menu.show_at(position)
 
     def open_settings(self) -> None:
-        SettingsDialog(self).exec()
+        SettingsDialog(self, self.settings, self.preferences).exec()
         self.translation.refresh_performance_controls()
+
+    def request_navigation(self, index: int) -> None:
+        current = self.stack.currentIndex()
+        if index == current:
+            return
+        target_kind = "file" if index == 0 else "text"
+        active_kind = "text" if index == 0 else "file"
+        if self.sessions.is_active(active_kind) and self.sessions.conflicts_with(target_kind):
+            if not self._confirm_stop_and_switch(active_kind):
+                self.title_bar.tabs.set_current(current)
+                return
+            if active_kind == "file":
+                self.translation.service.cancel()
+            else:
+                self.translation.cancel_text_requests()
+        self.navigation.navigate(index)
+        self.title_bar.tabs.set_current(index)
+        if index == 0:
+            self.translation.cancel_text_requests()
+
+    def _confirm_stop_and_switch(self, active_kind: str) -> bool:
+        noun = "файлов" if active_kind == "file" else "текста"
+        target = "текста" if active_kind == "file" else "файлов"
+        dialog = QMessageBox(self)
+        dialog.setWindowTitle("Переключение режима")
+        dialog.setIcon(QMessageBox.Icon.Question)
+        dialog.setText(
+            f"Сейчас выполняется перевод {noun}.\n"
+            f"Чтобы перейти к переводу {target}, текущую задачу необходимо остановить."
+        )
+        stay = dialog.addButton("Остаться", QMessageBox.ButtonRole.RejectRole)
+        stop = dialog.addButton("Остановить и перейти", QMessageBox.ButtonRole.AcceptRole)
+        dialog.setDefaultButton(stay)
+        dialog.exec()
+        return dialog.clickedButton() is stop
 
     def open_about(self) -> None:
         AboutDialog(self).exec()
