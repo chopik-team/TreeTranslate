@@ -2,7 +2,7 @@ import os
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
-from PySide6.QtWidgets import QApplication, QPushButton
+from PySide6.QtWidgets import QApplication, QPushButton, QToolButton
 from PySide6.QtCore import Qt
 from PySide6.QtTest import QTest
 
@@ -107,4 +107,14 @@ def test_source_picker_menu_matches_button_width() -> None:
     picker = next(button for button in window.file_page.drop_zone.findChildren(QPushButton) if button.objectName() == "outlinePrimary")
     picker.menu().aboutToShow.emit()
     assert picker.menu().width() == picker.width()
+    window.close()
+
+
+def test_acceleration_info_has_svg_and_help_text() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    info = window.file_page.acceleration.findChild(QToolButton, "infoButton")
+    assert info is not None
+    assert not info.icon().isNull()
+    assert all(mode in info.toolTip() for mode in ("Auto", "CPU", "GPU"))
     window.close()

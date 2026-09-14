@@ -26,6 +26,8 @@ QPushButton#primary:hover {{ background: #20b960; }}
 QPushButton#outlinePrimary {{ color: white; background: #102018; border: 1px solid {accent_green}; font-weight: 650; }}
 QPushButton#outlinePrimary:hover {{ background: #143222; }}
 QPushButton#iconButton {{ background: transparent; border: 0; padding: 3px; }}
+QToolButton#infoButton {{ background: transparent; border: 0; border-radius: 6px; padding: 3px; }}
+QToolButton#infoButton:hover {{ background: #1a2a21; }}
 QPushButton#aboutProjectLink {{ background: transparent; border: 0; color: {text_primary}; font-size: 25px; font-weight: 700; padding: 2px; }}
 QPushButton#aboutProjectLink:hover {{ color: {accent_green}; background: transparent; }}
 QPushButton#danger:hover {{ color: white; background: #7c3037; border-color: {danger_red}; }}
@@ -76,4 +78,4 @@ QListWidget::item {{ padding: 10px; border-radius: 8px; }}
 QListWidget::item:selected {{ background: #1d5e37; }}
 QListWidget#settingsNav {{ background: #101713; border: 1px solid {border}; border-radius: 12px; padding: 6px; }}
 QListWidget#settingsNav::item {{ margin: 2px; padding: 12px; }}
-QToolTip {{ background: #26332c; color: white; border: 1px solid #43554b; padding: 5px; }}
+QToolTip {{ background: #18231d; color: #eef6f1; border: 1px solid #3d5a4b; border-radius: 7px; padding: 9px; }}
