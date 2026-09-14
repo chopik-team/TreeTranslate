@@ -32,11 +32,12 @@ def test_object_total_appears_after_scan() -> None:
     window.close()
 
 
-def test_settings_has_five_user_sections() -> None:
+def test_settings_has_four_user_sections() -> None:
     app = QApplication.instance() or QApplication([])
     dialog = SettingsDialog()
-    assert dialog.sections.count() == 5
-    assert dialog.pages.count() == 5
+    assert dialog.sections.count() == 4
+    assert dialog.pages.count() == 4
+    assert "О программе" not in dialog.SECTIONS
     dialog.close()
 
 

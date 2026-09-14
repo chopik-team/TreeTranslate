@@ -2,23 +2,19 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
-from PySide6.QtCore import Qt, QUrl
-from PySide6.QtGui import QDesktopServices, QIcon
-from PySide6.QtSvgWidgets import QSvgWidget
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QCheckBox, QComboBox, QDialog, QFormLayout, QFrame, QHBoxLayout, QLabel,
     QLineEdit, QListWidget, QMessageBox, QPushButton, QScrollArea,
     QStackedWidget, QVBoxLayout, QWidget,
 )
 
-from app.config.constants import APP_VERSION, GITHUB_URL
-from app.config.paths import TREE_TRANSLATE_LOGO, icon_path
 from app.gui.widgets.translation_mode import ModeRequirementsCombo
 from app.services.settings_service import SettingsService
 
 
 class SettingsDialog(QDialog):
-    SECTIONS = ("Общие", "Перевод", "Производительность", "Интерфейс", "О программе")
+    SECTIONS = ("Общие", "Перевод", "Производительность", "Интерфейс")
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
@@ -35,7 +31,7 @@ class SettingsDialog(QDialog):
         self.sections.setFixedWidth(205)
         self.sections.addItems(self.SECTIONS)
         self.pages = QStackedWidget()
-        builders = (self._general_page, self._translation_page, self._performance_page, self._interface_page, self._about_page)
+        builders = (self._general_page, self._translation_page, self._performance_page, self._interface_page)
         for builder in builders:
             self.pages.addWidget(self._scrollable(builder()))
         self.sections.currentRowChanged.connect(self.pages.setCurrentIndex)
@@ -175,34 +171,5 @@ class SettingsDialog(QDialog):
             self._check("interface/extensions", "Показывать расширения файлов", True),
             self._check("interface/tray", "Сворачивать приложение в системный трей", False),
         ])
-        layout.addStretch()
-        return page
-
-    def _about_page(self) -> QWidget:
-        page = QWidget()
-        layout = QVBoxLayout(page)
-        layout.setContentsMargins(4, 4, 14, 12)
-        logo = QSvgWidget(str(TREE_TRANSLATE_LOGO))
-        logo.setFixedSize(100, 100)
-        layout.addWidget(logo, alignment=Qt.AlignmentFlag.AlignHCenter)
-        for text, name in (("TreeTranslate", "heading"), (APP_VERSION, "secondary"), ("Developed by CHOPIK Team", "secondary")):
-            layout.addWidget(QLabel(text, objectName=name, alignment=Qt.AlignmentFlag.AlignCenter))
-        layout.addSpacing(12)
-        buttons = QHBoxLayout()
-        github = QPushButton(QIcon(icon_path("external_link")), "GitHub")
-        github.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(GITHUB_URL)))
-        updates = QPushButton(QIcon(icon_path("refresh")), "Проверить обновления")
-        updates.clicked.connect(lambda: QMessageBox.information(self, "Обновления", f"Установлена актуальная версия {APP_VERSION}."))
-        licenses = QPushButton(QIcon(icon_path("help")), "Лицензии")
-        licenses.clicked.connect(lambda: QMessageBox.information(self, "Лицензии", "Сведения о лицензиях будут добавлены перед выпуском."))
-        for button in (github, updates, licenses):
-            buttons.addWidget(button)
-        layout.addLayout(buttons)
-        attribution = QLabel('Иконки: Velora Icon Pack · <a href="https://www.flaticon.com/uicons">Flaticon</a> · <a href="https://icons8.com">Icons8</a>')
-        attribution.setOpenExternalLinks(True)
-        layout.addWidget(attribution)
-        details = QLabel("Сторонние компоненты\nPython 3.12 · PySide6 / Qt 6\n\nTranslation backend\nНе подключён — используется mock-сервис.", objectName="secondary")
-        details.setWordWrap(True)
-        layout.addWidget(details)
         layout.addStretch()
         return page
