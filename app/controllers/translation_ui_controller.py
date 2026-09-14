@@ -1,7 +1,9 @@
 from pathlib import Path
 
 from PySide6.QtCore import QObject, Slot
+from PySide6.QtGui import QIcon
 
+from app.config.paths import icon_path
 from app.gui.pages.file_translation_page import FileTranslationPage
 from app.gui.pages.text_translation_page import TextTranslationPage
 from app.models.file_item import mock_file_tree
@@ -52,7 +54,9 @@ class TranslationUiController(QObject):
     def _state_changed(self, state: JobState) -> None:
         self.file_page.progress.set_state(state)
         self.file_page.start_button.setEnabled(state in {JobState.READY, JobState.COMPLETED, JobState.CANCELLED, JobState.ERROR})
-        self.file_page.start_button.setText("↻  Запустить снова" if state in {JobState.COMPLETED, JobState.CANCELLED, JobState.ERROR} else "▶  Начать перевод")
+        restart = state in {JobState.COMPLETED, JobState.CANCELLED, JobState.ERROR}
+        self.file_page.start_button.setText("  Запустить снова" if restart else "  Начать перевод")
+        self.file_page.start_button.setIcon(QIcon(icon_path("refresh" if restart else "play")))
 
     @Slot(str)
     def translate_text(self, text: str) -> None:

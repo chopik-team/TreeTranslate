@@ -49,9 +49,11 @@ class ProgressPanel(QFrame):
             info.addWidget(QLabel(caption, objectName="progressCaption"), 0, col)
             info.addWidget(value, 1, col)
         layout.addLayout(info)
+        layout.addSpacing(12)
         buttons = QHBoxLayout()
+        buttons.setSpacing(10)
         buttons.addStretch()
-        self.pause = QPushButton("⏸  Приостановить")
+        self.pause = QPushButton(QIcon(icon_path("pause")), "  Приостановить")
         self.cancel = QPushButton(QIcon(icon_path("cancel")), "  Отменить", objectName="danger")
         self.pause.clicked.connect(self.pause_requested)
         self.cancel.clicked.connect(self.cancel_requested)
@@ -70,7 +72,12 @@ class ProgressPanel(QFrame):
         active = state in {JobState.TRANSLATING, JobState.PAUSED}
         self.pause.setEnabled(active)
         self.cancel.setEnabled(active)
-        self.pause.setText("▶  Продолжить" if state is JobState.PAUSED else "⏸  Приостановить")
+        if state is JobState.PAUSED:
+            self.pause.setIcon(QIcon(icon_path("play")))
+            self.pause.setText("  Продолжить")
+        else:
+            self.pause.setIcon(QIcon(icon_path("pause")))
+            self.pause.setText("  Приостановить")
 
     def set_progress(self, progress: TranslationProgress) -> None:
         self.bar.setValue(progress.percent)

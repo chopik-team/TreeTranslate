@@ -118,3 +118,22 @@ def test_acceleration_info_has_svg_and_help_text() -> None:
     assert not info.icon().isNull()
     assert all(mode in info.toolTip() for mode in ("Auto", "CPU", "GPU"))
     window.close()
+
+
+def test_file_controls_follow_job_state() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    controller = window.translation
+    controller._show_tree()
+    controller._state_changed(JobState.READY)
+    assert window.file_page.start_button.isEnabled()
+    controller.service.start()
+    assert "Приостановить" in window.file_page.progress.pause.text()
+    controller.service.pause_or_resume()
+    assert "Продолжить" in window.file_page.progress.pause.text()
+    controller.service.pause_or_resume()
+    assert "Приостановить" in window.file_page.progress.pause.text()
+    controller.service.cancel()
+    assert "Запустить снова" in window.file_page.start_button.text()
+    assert window.file_page.start_button.isEnabled()
+    window.close()
