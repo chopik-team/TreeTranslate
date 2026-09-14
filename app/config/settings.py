@@ -8,3 +8,15 @@ class AppSettings:
     translation_mode: str = "Автоматический"
     acceleration: str = "Auto"
     translate_folders: bool = True
+
+
+@dataclass(slots=True)
+class PerformanceSettings:
+    mode: str = "Автоматический"
+    device: str = "Auto"
+    cpu_threads: str = "Автоматически"
+    gpu_usage: str = "Автоматически"
+    ram_limit: str = "Автоматически"
+    vram_limit: str = "Автоматически"
+    unload_model: bool = True
+    reduce_load: bool = True

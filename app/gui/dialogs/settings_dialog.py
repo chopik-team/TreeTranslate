@@ -1,20 +1,23 @@
 from __future__ import annotations
 
 from collections.abc import Iterable
+import os
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import QSize, Qt
 from PySide6.QtWidgets import (
-    QCheckBox, QComboBox, QDialog, QFormLayout, QFrame, QHBoxLayout, QLabel,
-    QLineEdit, QListWidget, QMessageBox, QPushButton, QScrollArea,
+    QButtonGroup, QCheckBox, QComboBox, QDialog, QFileDialog, QFormLayout, QFrame, QHBoxLayout, QLabel,
+    QListWidget, QPushButton, QScrollArea,
     QStackedWidget, QVBoxLayout, QWidget,
 )
 
+from app.gui.widgets.language_combo import language_icon
 from app.gui.widgets.translation_mode import ModeRequirementsCombo
 from app.services.settings_service import SettingsService
+from app.services.hardware_profile_service import HardwareProfileService
 
 
 class SettingsDialog(QDialog):
-    SECTIONS = ("Общие", "Перевод", "Производительность", "Интерфейс")
+    SECTIONS = ("Общие", "Язык", "Производительность", "Интерфейс")
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
@@ -31,7 +34,7 @@ class SettingsDialog(QDialog):
         self.sections.setFixedWidth(205)
         self.sections.addItems(self.SECTIONS)
         self.pages = QStackedWidget()
-        builders = (self._general_page, self._translation_page, self._performance_page, self._interface_page)
+        builders = (self._general_page, self._language_page, self._performance_page, self._interface_page)
         for builder in builders:
             self.pages.addWidget(self._scrollable(builder()))
         self.sections.currentRowChanged.connect(self.pages.setCurrentIndex)
@@ -52,6 +55,7 @@ class SettingsDialog(QDialog):
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
         scroll.setFrameShape(QFrame.Shape.NoFrame)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         scroll.setWidget(page)
         return scroll
 
@@ -62,7 +66,9 @@ class SettingsDialog(QDialog):
         layout.setContentsMargins(4, 2, 14, 12)
         layout.setSpacing(13)
         layout.addWidget(QLabel(title, objectName="heading"))
-        layout.addWidget(QLabel(description, objectName="secondary"))
+        description_label = QLabel(description, objectName="secondary")
+        description_label.setWordWrap(True)
+        layout.addWidget(description_label)
         form = QFormLayout()
         form.setHorizontalSpacing(30)
         form.setVerticalSpacing(12)
@@ -90,19 +96,42 @@ class SettingsDialog(QDialog):
 
     def _general_page(self) -> QWidget:
         page, layout, form = self._page("Общие", "Основное поведение приложения и сохранение результатов.")
-        form.addRow("Язык интерфейса", self._combo("general/ui_language", "Русский", ["Русский"]))
-        form.addRow("Папка сохранения", self._combo("general/output_location", "Рядом с оригиналом", ["Рядом с оригиналом", "Выбрать папку при запуске"]))
-        template = QLineEdit(str(self.settings.value("general/output_template", "{name}_{lang}")))
+        output_location = QComboBox(objectName="outputLocation")
+        output_location.addItems(("Рядом с оригиналом", "Обзор…"))
+        output_location.setCurrentIndex(0)
+
+        def choose_output_location(index: int) -> None:
+            if index == 0:
+                self.settings.save_value("general/output_location", "Рядом с оригиналом")
+                return
+            current_path = str(self.settings.value("general/output_path", ""))
+            selected_path = QFileDialog.getExistingDirectory(self, "Выберите папку сохранения", current_path)
+            if selected_path:
+                self.settings.save_value("general/output_location", "Выбранная папка")
+                self.settings.save_value("general/output_path", selected_path)
+                output_location.setToolTip(selected_path)
+            else:
+                output_location.blockSignals(True)
+                output_location.setCurrentIndex(0)
+                output_location.blockSignals(False)
+
+        output_location.activated.connect(choose_output_location)
+        form.addRow("Папка сохранения", output_location)
+        naming = QComboBox(objectName="outputNamingMode")
+        naming.addItems(("Добавить язык к имени", "Оставить как в оригинале"))
+        saved_template = str(self.settings.value("general/output_template", "{name}_{lang}"))
+        naming.setCurrentIndex(1 if saved_template == "{name}" else 0)
         preview = QLabel(objectName="secondary")
-        def update_template(value: str) -> None:
-            self.settings.save_value("general/output_template", value)
-            preview.setText("Пример: " + value.replace("{name}", "Manual").replace("{lang}", "RU"))
-        template.textChanged.connect(update_template)
-        update_template(template.text())
-        template_box = QVBoxLayout()
-        template_box.addWidget(template)
-        template_box.addWidget(preview)
-        form.addRow("Шаблон выходной папки", template_box)
+        def update_naming_mode(value: str) -> None:
+            add_language = value == "Добавить язык к имени"
+            self.settings.save_value("general/output_template", "{name}_{lang}" if add_language else "{name}")
+            preview.setText("Пример: Manual_RU" if add_language else "Пример: Manual")
+        naming.currentTextChanged.connect(update_naming_mode)
+        update_naming_mode(naming.currentText())
+        naming_box = QVBoxLayout()
+        naming_box.addWidget(naming)
+        naming_box.addWidget(preview)
+        form.addRow("Название выходной папки", naming_box)
         layout.addSpacing(4)
         self._add_checks(layout, [
             self._check("general/preserve_originals", "Не изменять оригинальные файлы", True),
@@ -113,48 +142,115 @@ class SettingsDialog(QDialog):
         layout.addStretch()
         return page
 
-    def _translation_page(self) -> QWidget:
-        page, layout, form = self._page("Перевод", "Значения по умолчанию для новых задач.")
-        form.addRow("Исходный язык", self._combo("translation/source", "Авто", ["Авто", "Китайский", "Английский", "Немецкий", "Японский"]))
-        form.addRow("Язык перевода", self._combo("translation/target", "Русский", ["Русский", "Английский", "Немецкий", "Испанский", "Французский"]))
-        form.addRow("Режим", self._combo("translation/mode", "Автоматический", ["Автоматический", "Economy", "Fast", "Balanced", "Turbo", "Maximum"]))
-        layout.addSpacing(4)
-        self._add_checks(layout, [
-            self._check("translation/folders", "Переводить названия папок", True),
-            self._check("translation/files", "Переводить названия файлов", True),
-            self._check("translation/content", "Переводить содержимое документов", True),
-            self._check("translation/cache", "Использовать кэш повторяющихся фраз", True),
-            self._check("translation/terms", "Использовать словарь терминов", True),
-            self._check("translation/keep_name", "Сохранять оригинальное имя рядом", False),
-        ])
-        glossary = QPushButton("Управление пользовательским глоссарием")
-        glossary.setEnabled(False)
-        glossary.setToolTip("Функция запланирована для следующего этапа")
-        layout.addWidget(glossary, alignment=Qt.AlignmentFlag.AlignLeft)
+    def _language_page(self) -> QWidget:
+        page, layout, _ = self._page(
+            "Язык интерфейса",
+            "Выберите язык приложения. Пока выбор сохраняется как настройка-заглушка.",
+        )
+        languages = (
+            "Русский",
+            "English (US)",
+            "English (UK)",
+            "Deutsch",
+            "Español",
+            "Français",
+            "中文",
+            "日本語",
+        )
+        selected_language = str(self.settings.value("general/ui_language", "Русский"))
+        self.language_group = QButtonGroup(self)
+        self.language_group.setExclusive(True)
+        for language in languages:
+            button = QPushButton(language, objectName="languageChoice")
+            button.setIcon(language_icon(language))
+            button.setIconSize(QSize(24, 17))
+            button.setCheckable(True)
+            button.setChecked(language == selected_language)
+            button.setMinimumHeight(44)
+            button.setProperty("language", language)
+            button.clicked.connect(
+                lambda checked, value=language: checked and self.settings.save_value("general/ui_language", value)
+            )
+            self.language_group.addButton(button)
+            layout.addWidget(button)
+        if not self.language_group.checkedButton():
+            self.language_group.buttons()[0].setChecked(True)
         layout.addStretch()
         return page
 
     def _performance_page(self) -> QWidget:
-        page, layout, form = self._page("Производительность", "Параметры сохраняются, но пока не управляют Translation Engine.")
-        form.addRow("Устройство", self._combo("performance/device", "Auto", ["Auto", "CPU", "GPU"]))
-        profile = ModeRequirementsCombo(include_automatic=False)
-        profile.set_clean_mode(str(self.settings.value("performance/profile", "Баланс")))
-        profile.currentIndexChanged.connect(lambda: self.settings.save_value("performance/profile", profile.clean_mode()))
-        form.addRow("Профиль", profile)
-        form.addRow("Количество потоков CPU", self._combo("performance/cpu_threads", "Автоматически", ["Автоматически", "2", "4", "6", "8", "12", "16"]))
-        form.addRow("Использование GPU", self._combo("performance/gpu", "Автоматически", ["Автоматически", "Отключено", "Предпочтительно"]))
-        form.addRow("Ограничение RAM", self._combo("performance/ram", "Автоматически", ["Автоматически", "4 GB", "8 GB", "16 GB", "32 GB"]))
-        form.addRow("Ограничение VRAM", self._combo("performance/vram", "Автоматически", ["Автоматически", "2 GB", "4 GB", "8 GB", "12 GB", "16 GB"]))
+        page, layout, form = self._page(
+            "Производительность",
+            "Полный контроль нагрузки хранится только на этом компьютере. По умолчанию все параметры выбираются автоматически.",
+        )
+        self.performance_mode = ModeRequirementsCombo()
+        self.performance_mode.setObjectName("performanceMode")
+        self.performance_mode.set_clean_mode(str(self.settings.value("performance/mode", "Автоматический")))
+        self.performance_mode.currentIndexChanged.connect(
+            lambda: self.settings.save_value("performance/mode", self.performance_mode.clean_mode())
+        )
+        logical_cores = max(1, os.cpu_count() or 1)
+        thread_options = ["Автоматически", *[str(value) for value in range(1, logical_cores + 1)]]
+        self.device_combo = self._combo("performance/device", "Auto", ["Auto", "CPU", "GPU"])
+        self.cpu_threads_combo = self._combo("performance/cpu_threads", "Автоматически", thread_options)
+        self.gpu_combo = self._combo("performance/gpu", "Автоматически", ["Автоматически", "Отключено", "Предпочтительно", "Обязательно"])
+        self.ram_combo = self._combo("performance/ram", "Автоматически", ["Автоматически", "2 GB", "4 GB", "6 GB", "8 GB", "12 GB", "16 GB", "24 GB", "32 GB", "48 GB", "64 GB"])
+        self.vram_combo = self._combo("performance/vram", "Автоматически", ["Автоматически", "1 GB", "2 GB", "4 GB", "6 GB", "8 GB", "10 GB", "12 GB", "16 GB", "24 GB"])
+        self.hardware_value = QLabel("Нажмите «Определить оборудование»", objectName="hardwareValue")
+        self.hardware_value.setWordWrap(True)
+        self.recommendation_value = QLabel("Будет рассчитан после анализа", objectName="hardwareValue")
+        self.recommendation_value.setWordWrap(True)
+        form.addRow("Режим перевода", self.performance_mode)
+        form.addRow("Устройство", self.device_combo)
+        form.addRow("Потоки CPU", self.cpu_threads_combo)
+        form.addRow("Использование GPU", self.gpu_combo)
+        form.addRow("Ограничение RAM", self.ram_combo)
+        form.addRow("Ограничение VRAM", self.vram_combo)
         self._add_checks(layout, [
             self._check("performance/unload_model", "Освобождать модель из памяти после завершения", True),
             self._check("performance/reduce_load", "Автоматически снижать нагрузку при нехватке памяти", True),
         ])
-        recommend = QPushButton("Определить рекомендуемые настройки")
-        recommend.clicked.connect(lambda: QMessageBox.information(self, "Рекомендации", "Определение конфигурации появится вместе с Translation Engine."))
+        form.addRow("Ваше оборудование", self.hardware_value)
+        form.addRow("Рекомендуемый профиль", self.recommendation_value)
+        recommend = QPushButton("Определить оборудование")
+        recommend.setObjectName("hardwareRecommendation")
+        recommend.clicked.connect(self._show_hardware_recommendation)
         layout.addWidget(recommend, alignment=Qt.AlignmentFlag.AlignLeft)
-        layout.addWidget(QLabel("Benchmark оборудования будет добавлен позднее.", objectName="secondary"))
+        note = QLabel(
+            "Анализ только показывает рекомендацию и не меняет выбранные ограничения. "
+            "Полноценный замер скорости появится в одной из следующих версий.",
+            objectName="secondary",
+        )
+        note.setWordWrap(True)
+        layout.addWidget(note)
         layout.addStretch()
+        saved_hardware = HardwareProfileService().load()
+        if saved_hardware:
+            self._display_hardware_profile(saved_hardware)
         return page
+
+    def _show_hardware_recommendation(self) -> None:
+        service = HardwareProfileService()
+        hardware = service.detect()
+        service.save(hardware)
+        self._display_hardware_profile(hardware)
+
+    def _display_hardware_profile(self, hardware) -> None:
+        recommendation = HardwareProfileService.recommend(hardware)
+        ram = f"{hardware.ram_gb} ГБ" if hardware.ram_gb else "не определена"
+        self.hardware_value.setText(
+            f"CPU: {hardware.cpu}\n"
+            f"Логических потоков: {hardware.logical_cores}\n"
+            f"RAM: {ram}\n"
+            f"GPU: {hardware.gpu}"
+        )
+        self.recommendation_value.setText(
+            f"Устройство: {recommendation.device}\n"
+            f"Профиль: {recommendation.profile}\n"
+            f"Потоки CPU: {recommendation.cpu_threads}\n"
+            f"Ограничение RAM: {recommendation.ram_limit}\n"
+            f"Ограничение VRAM: {recommendation.vram_limit}"
+        )
 
     def _interface_page(self) -> QWidget:
         page, layout, form = self._page("Интерфейс", "Внешний вид и отображение прогресса.")
@@ -169,7 +265,6 @@ class SettingsDialog(QDialog):
             self._check("interface/eta", "Показывать расчёт оставшегося времени", True),
             self._check("interface/detailed_progress", "Показывать подробный прогресс", True),
             self._check("interface/extensions", "Показывать расширения файлов", True),
-            self._check("interface/tray", "Сворачивать приложение в системный трей", False),
         ])
         layout.addStretch()
         return page

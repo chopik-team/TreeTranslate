@@ -51,3 +51,8 @@ class BrandMenu(QFrame):
         self._animation.setStartValue(0.0)
         self._animation.setEndValue(1.0)
         self._animation.start()
+
+    def hideEvent(self, event) -> None:
+        self.releaseMouse()
+        self.releaseKeyboard()
+        super().hideEvent(event)

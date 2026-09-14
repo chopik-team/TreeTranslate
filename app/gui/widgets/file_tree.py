@@ -2,7 +2,7 @@ from pathlib import Path
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
-from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QSizePolicy, QTreeWidget, QTreeWidgetItem, QVBoxLayout
+from PySide6.QtWidgets import QAbstractItemView, QFrame, QHBoxLayout, QLabel, QSizePolicy, QTreeWidget, QTreeWidgetItem, QVBoxLayout
 
 from app.models.file_item import FileItem
 from app.config.paths import icon_path
@@ -30,6 +30,7 @@ class FileTree(QFrame):
         self.tree = QTreeWidget()
         self.tree.setHeaderHidden(True)
         self.tree.setAlternatingRowColors(True)
+        self.tree.setSelectionMode(QAbstractItemView.SelectionMode.NoSelection)
         self.tree.itemChanged.connect(self._propagate_check)
         layout.addWidget(self.tree)
         self.show_empty()

@@ -1,7 +1,8 @@
 APP_NAME = "TreeTranslate"
-APP_VERSION = "AW 0.2"
+APP_VERSION = "AW 0.2-alpha"
 ORGANIZATION_NAME = "CHOPIK Team"
 GITHUB_URL = "https://github.com/CHOPIK-Team"
+BOOSTY_URL = "https://boosty.to/cho_pik"
 MINIMUM_WINDOW_SIZE = (1180, 680)
 DEFAULT_WINDOW_SIZE = (1440, 900)
 

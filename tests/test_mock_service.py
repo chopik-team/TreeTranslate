@@ -6,6 +6,7 @@ from PySide6.QtCore import QCoreApplication
 
 from app.models.translation_job import JobState
 from app.services.mock_translation_service import MockTranslationService
+from app.config.settings import PerformanceSettings
 
 
 def test_mock_service_control_flow() -> None:
@@ -37,3 +38,17 @@ def test_basic_text_dictionary() -> None:
     service = MockTranslationService()
     assert service.mock_translate_text("Привет") == "Hi"
     assert service.mock_translate_text("hello") == "Привет"
+
+
+def test_resource_policy_is_applied_before_work_starts() -> None:
+    service = MockTranslationService()
+    policy = PerformanceSettings(
+        mode="Турбо",
+        device="GPU",
+        cpu_threads="4",
+        ram_limit="4 GB",
+        vram_limit="2 GB",
+    )
+    service.configure(policy)
+    assert service.resource_policy == policy
+    assert service._timer.interval() == 260

@@ -3,6 +3,7 @@ from __future__ import annotations
 from PySide6.QtCore import QObject, QTimer, Signal
 
 from app.models.translation_job import JobState, TranslationProgress
+from app.config.settings import PerformanceSettings
 
 
 class MockTranslationService(QObject):
@@ -18,6 +19,18 @@ class MockTranslationService(QObject):
         self.progress = TranslationProgress(total=14)
         self._timer = QTimer(self, interval=420)
         self._timer.timeout.connect(self._tick)
+        self.resource_policy = PerformanceSettings()
+
+    def configure(self, policy: PerformanceSettings) -> None:
+        self.resource_policy = policy
+        intervals = {
+            "Эконом": 700,
+            "Быстрый": 520,
+            "Баланс": 420,
+            "Турбо": 260,
+            "Максимум": 180,
+        }
+        self._timer.setInterval(intervals.get(policy.mode, 420))
 
     def _set_state(self, state: JobState) -> None:
         self.state = state

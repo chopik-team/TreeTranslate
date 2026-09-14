@@ -5,12 +5,14 @@ QFrame#sourcePanel {{ background: #0e1713; border: 1px solid {border}; border-ra
 QFrame#textEditorPanel, QFrame#referencePanel {{ background: #101713; border: 1px solid {border}; border-radius: 14px; }}
 QFrame#exampleCard {{ background: #141d18; border: 0; border-radius: 9px; }}
 QFrame#changelogCard {{ background: #101a15; border: 1px solid {border}; border-radius: 12px; }}
+QFrame#aboutCredits {{ background: #101a15; border: 1px solid {border}; border-radius: 12px; }}
 QFrame#divider {{ background: #2a4035; border: 0; }}
 QLabel#secondary, QLabel#caption {{ color: {text_secondary}; }}
 QLabel#heading {{ font-size: 18px; font-weight: 650; }}
 QLabel#progressStatus {{ color: #9eb3a8; font-size: 13px; }}
 QLabel#progressCaption {{ color: #8fa198; font-size: 13px; padding-top: 3px; }}
 QLabel#progressValue {{ color: #f3f8f5; font-size: 15px; font-weight: 550; padding-top: 2px; }}
+QLabel#hardwareValue {{ background: #111b16; border: 1px solid {border}; border-radius: 9px; padding: 10px 12px; color: #edf6f0; }}
 QLabel#chip {{ background: #202923; border-radius: 13px; padding: 6px 11px; color: #d9e3dd; }}
 QLabel#dictionaryWord {{ font-size: 16px; font-weight: 650; color: #f2f7f4; padding: 5px 0; }}
 QLabel#changelogTitle {{ color: #51dc88; font-size: 16px; font-weight: 700; padding-bottom: 5px; }}
@@ -37,6 +39,8 @@ QPushButton#closeButton {{ background: transparent; border: 0; border-radius: 6p
 QPushButton#closeButton:hover {{ background: #c42b3a; }}
 QPushButton#navTab {{ background: #0d1512; border: 1px solid {border}; border-radius: 12px; color: {text_secondary}; padding: 11px 22px; min-width: 170px; }}
 QPushButton#navTab:checked {{ background: #10271b; border-color: {accent_green}; color: white; }}
+QPushButton#languageChoice {{ text-align: left; padding: 10px 16px; }}
+QPushButton#languageChoice:checked {{ background: #153d27; border-color: {accent_green}; color: white; font-weight: 650; }}
 QComboBox {{ background: #101713; border: 1px solid {border}; border-radius: 9px; padding: 9px 12px; min-height: 20px; }}
 QComboBox:hover {{ border-color: #416151; }}
 QComboBox::drop-down {{ border: 0; width: 24px; }}
@@ -51,11 +55,11 @@ QScrollArea {{ background: transparent; border: 0; }}
 QScrollArea > QWidget > QWidget {{ background: transparent; }}
 QScrollBar:vertical {{ background: transparent; width: 9px; margin: 2px; }}
 QScrollBar::handle:vertical {{ background: #35463d; border-radius: 4px; min-height: 30px; }}
+QScrollBar::handle:vertical:hover {{ background: #47705a; }}
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{ height: 0; }}
 QTreeWidget {{ background: transparent; border: 0; outline: 0; alternate-background-color: #111914; }}
 QTreeWidget::item {{ min-height: 28px; border-radius: 5px; }}
 QTreeWidget::item:hover {{ background: #1a2620; }}
-QTreeWidget::item:selected {{ background: #23573a; }}
 QTableView {{ background: #101713; border: 1px solid {border}; border-radius: 8px; gridline-color: {border}; outline: 0; }}
 QTableView::item {{ padding: 7px 10px; border-bottom: 1px solid #1c2922; }}
 QTableView::item:hover {{ background: #1a2820; }}

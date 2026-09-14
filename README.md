@@ -1,8 +1,11 @@
 # TreeTranslate
 
-Current development cycle: **AW 0.2**. Stable release: **AW 0.1**.
+Current release: **AW 0.2-alpha**.
 
-Desktop UI prototype for translating folders, documents and text. This stage uses only a mock translation service; no real translation engine, OCR or archive extraction is included.
+> **Your PC. Your files. Your rules.**
+> TreeTranslate работает локально и не отправляет документы в облако. Вы сами решаете, сколько ресурсов компьютера использовать.
+
+TreeTranslate — настольное приложение CHOPIK Team для перевода папок, файлов, архивов, документов и обычного текста. Проект не требует аккаунта, не синхронизирует пользовательские документы и оставляет управление производительностью владельцу компьютера.
 
 ## Run
 
@@ -11,4 +14,4 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-The interface is written in Russian and targets Windows 10/11.
+Интерфейс ориентирован на Windows 10/11. Пользовательские параметры и профиль оборудования хранятся локально.

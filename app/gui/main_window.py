@@ -1,7 +1,8 @@
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, QUrl
+from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import QMainWindow, QMessageBox, QSizeGrip, QStackedWidget, QVBoxLayout, QWidget
 
-from app.config.constants import APP_NAME, DEFAULT_WINDOW_SIZE, MINIMUM_WINDOW_SIZE
+from app.config.constants import APP_NAME, BOOSTY_URL, DEFAULT_WINDOW_SIZE, MINIMUM_WINDOW_SIZE
 from app.controllers.navigation_controller import NavigationController
 from app.controllers.translation_ui_controller import TranslationUiController
 from app.gui.dialogs.about_dialog import AboutDialog
@@ -43,9 +44,7 @@ class MainWindow(QMainWindow):
         self.brand_menu.settings_requested.connect(self.open_settings)
         self.brand_menu.about_requested.connect(self.open_about)
         self.brand_menu.changelog_requested.connect(self.open_changelog)
-        self.brand_menu.support_requested.connect(
-            lambda: self.show_placeholder("Поддержать TreeTranslate")
-        )
+        self.brand_menu.support_requested.connect(self.open_support_page)
         self.brand_menu.exit_requested.connect(self.close)
 
     def resizeEvent(self, event) -> None:
@@ -59,12 +58,17 @@ class MainWindow(QMainWindow):
 
     def open_settings(self) -> None:
         SettingsDialog(self).exec()
+        self.translation.refresh_performance_controls()
 
     def open_about(self) -> None:
         AboutDialog(self).exec()
 
     def open_changelog(self) -> None:
         ChangelogDialog(self).exec()
+
+    @staticmethod
+    def open_support_page() -> None:
+        QDesktopServices.openUrl(QUrl(BOOSTY_URL))
 
     def show_placeholder(self, title: str) -> None:
         QMessageBox.information(
