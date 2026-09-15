@@ -21,6 +21,8 @@ class TreeTranslateApplication:
         self.theme_manager = ThemeManager(self.qt_app, self.settings)
         self.theme_manager.apply_saved_theme()
         self.window = MainWindow()
+        self.qt_app.aboutToQuit.connect(self.window.translation_service.shutdown)
+        self.qt_app.aboutToQuit.connect(self.window.text_page.shutdown)
         self.logger.info("Application UI initialized")
 
     def run(self) -> int:

@@ -229,7 +229,7 @@ class SettingsDialog(QDialog):
         form.addRow("Ограничение RAM", self.ram_combo)
         form.addRow("Ограничение VRAM", self.vram_combo)
         self._add_checks(layout, [
-            self._check("performance/unload_model", "Освобождать модель из памяти после завершения", True),
+            self._check("performance/unload_model", "Освобождать модель из памяти после простоя", True),
             self._check("performance/reduce_load", "Автоматически снижать нагрузку при нехватке памяти", True),
         ])
         form.addRow("Ваше оборудование", self.hardware_value)
@@ -239,8 +239,8 @@ class SettingsDialog(QDialog):
         recommend.clicked.connect(self._show_hardware_recommendation)
         layout.addWidget(recommend, alignment=Qt.AlignmentFlag.AlignLeft)
         note = QLabel(
-            "Анализ только показывает рекомендацию и не меняет выбранные ограничения. "
-            "Полноценный замер скорости появится в одной из следующих версий.",
+            "Анализ только показывает предварительную рекомендацию. В AW 0.4 работают выбор устройства, "
+            "профиль, потоки CPU и выгрузка после простоя. Лимиты RAM/VRAM и снижение нагрузки пока не применяются.",
             objectName="secondary",
         )
         note.setWordWrap(True)

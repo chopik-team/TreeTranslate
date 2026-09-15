@@ -15,11 +15,11 @@ from app.gui.widgets.title_bar import TitleBar
 from app.services.settings_service import SettingsService
 from app.services.translation_preferences import TranslationPreferences
 from app.services.translation_session_manager import TranslationSessionManager
-from app.services.mock_translation_service import MockTranslationService
+from app.services.hybrid_translation_service import HybridTranslationService
 
 
 class MainWindow(QMainWindow):
-    def __init__(self) -> None:
+    def __init__(self, translation_service=None) -> None:
         super().__init__()
         self.setWindowTitle(APP_NAME)
         self.setWindowFlags(Qt.WindowType.Window | Qt.WindowType.FramelessWindowHint)
@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
         self.settings = SettingsService()
         self.preferences = TranslationPreferences(self.settings, self)
         self.sessions = TranslationSessionManager(parent=self)
-        self.translation_service = MockTranslationService(self)
+        self.translation_service = translation_service or HybridTranslationService(self)
         self.translation = TranslationUiController(
             self.file_page, self.text_page, self.translation_service,
             self.preferences, self.sessions, self
@@ -57,6 +57,12 @@ class MainWindow(QMainWindow):
         self.brand_menu.changelog_requested.connect(self.open_changelog)
         self.brand_menu.support_requested.connect(self.open_support_page)
         self.brand_menu.exit_requested.connect(self.close)
+
+    def closeEvent(self, event) -> None:
+        self.text_page.shutdown()
+        self.translation.cancel_text_requests()
+        self.translation_service.shutdown()
+        super().closeEvent(event)
 
     def resizeEvent(self, event) -> None:
         super().resizeEvent(event)

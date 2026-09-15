@@ -1,0 +1,3556 @@
+{
+  "timestamp": "2026-09-15T15:26:45.133393+00:00",
+  "disclaimer": "Original synthetic regression examples. Concepts are limited lexical/negation checks, not an overall translation quality score. Outputs are retained only for this public development corpus.",
+  "rows": [
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "привет",
+      "checks": [
+        true
+      ],
+      "latency_ms": 19.915999997465406
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, Анна! Как дела?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 36.77340000285767
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически сохраняет ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 70.15469999896595
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и смотрели на уток.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 79.38319999811938
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 46.02159999922151
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте исходные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 63.979600003222004
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните изменения перед закрытием приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 59.902699998929165
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь идет на кошек и собак, поэтому мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 87.28220000193687
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна положила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 50.33939999702852
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор. Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 39.20520000247052
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hey, Anna! How are you?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 289.64600000472274
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically saves progress.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 50.93009999836795
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is complete.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 48.50740000256337
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not war.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 46.6457000002265
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 60.59810000442667
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, рада познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 240.4898000022513
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 61.83759999839822
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Пожалуйста, не удаляйте оригинал документа до завершения перевода.",
+      "checks": [
+        true,
+        false,
+        true
+      ],
+      "latency_ms": 111.0913000011351
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезагрузите приложение и проверьте настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 155.52860000025248
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки, наблюдая за утками.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 125.26339999749325
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 214.72759999596747
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成之前不要删除原始文件.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 95.00699999625795
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 119.45060000289232
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "привет",
+      "checks": [
+        true
+      ],
+      "latency_ms": 26.540099999692757
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, Анна! Как дела?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 59.329299998353235
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически сохраняет ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 80.53890000155661
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и смотрели на уток.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 85.43400000053225
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 45.60730000230251
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте исходные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 78.57540000259178
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните изменения перед закрытием приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 64.25630000012461
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь идет на кошек и собак, поэтому мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 99.48399999848334
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна положила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 69.39250000141328
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор. Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 45.49330000008922
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hey, Anna! How are you?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 314.6448000043165
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically saves progress.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 75.39420000102837
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is complete.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 63.737999997101724
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not war.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 58.070600003702566
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 66.36589999834541
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте, приятно познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 219.62360000179615
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 64.76799999654759
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Пожалуйста, не удаляйте оригинал документа до завершения перевода.",
+      "checks": [
+        true,
+        false,
+        true
+      ],
+      "latency_ms": 136.85370000166586
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезагрузите приложение и проверьте настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 188.99099999543978
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки, наблюдая за утками.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 165.63419999874895
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 192.8427000020747
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成之前不要删除原始文件.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 96.7984000017168
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 114.26189999474445
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "привет",
+      "checks": [
+        true
+      ],
+      "latency_ms": 26.185299997450784
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, Анна! Как дела?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 43.46940000687027
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически сохраняет ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 80.20370000303956
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и смотрели на уток.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 93.73339999729069
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 56.39980000705691
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте исходные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 114.97239999880549
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните изменения перед закрытием приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 69.857199996477
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь идет на кошек и собак, поэтому мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 116.44190000515664
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна положила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 70.19140000193147
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор. Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 43.15789999964181
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hey, Anna! How are you?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 280.56249999644933
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically saves progress.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 66.42000000283588
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is complete.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 74.21249999606516
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not war.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 63.5614999991958
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 76.46150000073249
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, приятно познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 250.25170000299113
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 79.2342999993707
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Пожалуйста, не удаляйте оригинал документа до завершения перевода.",
+      "checks": [
+        true,
+        false,
+        true
+      ],
+      "latency_ms": 179.06480000237934
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезагрузите приложение и проверьте настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 204.14209999580635
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки, наблюдая за утками.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 167.31100000470178
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 216.9553999992786
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成前不要删除原始文件.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 112.13040000438923
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 145.74400000128662
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "привет",
+      "checks": [
+        true
+      ],
+      "latency_ms": 25.95560000190744
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, Анна! Как дела?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 42.71370000060415
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически сохраняет ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 82.23970000108238
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и смотрели на уток.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 97.67689999716822
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 50.91070000344189
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте исходные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 95.14309999940451
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните изменения перед закрытием приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 71.9632000036654
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь идет на кошек и собак, поэтому мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 128.3605999997235
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна положила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 71.42039999598637
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор. Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 53.18799999804469
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hey, Anna! How are you?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 296.92079999949783
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically saves progress.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 98.31690000282833
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is complete.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 72.28410000243457
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not war.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 60.58619999384973
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 78.96190000610659
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, приятно познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 260.31350000266684
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 78.23300000018207
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Пожалуйста, не удаляйте оригинал документа до завершения перевода.",
+      "checks": [
+        true,
+        false,
+        true
+      ],
+      "latency_ms": 189.2779999980121
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезагрузите приложение и проверьте настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 207.04330000444315
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки, наблюдая за утками.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 174.68930000177352
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 232.23870000219904
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成前不要删除原始文件.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 111.8851999999606
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 141.09530000132509
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "привет",
+      "checks": [
+        true
+      ],
+      "latency_ms": 33.68380000028992
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, Анна! Как дела?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 51.178000001527835
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически сохраняет ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 86.7324999999255
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и смотрели на уток.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 101.54609999881359
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 54.41389999759849
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте исходные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 93.55379999760771
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните изменения перед закрытием приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 75.0703000012436
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь идет на кошек и собак, поэтому мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 123.6884000027203
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна положила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 71.572599998035
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор. Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 52.50440000236267
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hey, Anna! How are you?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 295.4351000007591
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically saves progress.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 72.00549999834038
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is complete.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 73.80359999660868
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not war.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 67.1963000058895
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 75.2548000018578
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Привет, приятно познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 299.1184999991674
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 86.98310000181664
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Пожалуйста, не удаляйте оригинал документа до завершения перевода.",
+      "checks": [
+        true,
+        false,
+        true
+      ],
+      "latency_ms": 190.6825999976718
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезагрузите приложение и проверьте настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 214.869199997338
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки, наблюдая за утками.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 177.58129999856465
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 233.5635999988881
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成前不要删除原始文件.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 128.94210000376916
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "argos",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 148.11329999793088
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте",
+      "checks": [
+        true
+      ],
+      "latency_ms": 77.74729999800911
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте Анна! Как вы себя чувствуете?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 62.554399999498855
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически сберегает ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 136.44159999967087
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на речной баке и смотрели на дук.",
+      "checks": [
+        false,
+        false
+      ],
+      "latency_ms": 123.63440000626724
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Банк одобрил мой кредит вчера.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 69.71250000060536
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте оригинальные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 115.14339999848744
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните свои изменения до закрытия приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 97.9384999955073
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь заставляет кошек и собак, поэтому мы будем оставаться дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 148.54159999958938
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна поставила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 81.79570000356762
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 70.21739999618148
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hello Anna ! How is the business?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 60.13910000183387
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically keeps progress.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 104.04689999995753
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is completed.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 111.51460000110092
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not to fight.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 90.55179999995744
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, re-start the application and check the network settings.",
+      "checks": [
+        false,
+        true,
+        true
+      ],
+      "latency_ms": 122.64419999701204
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Добрый день, я рад вас познакомиться.",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 86.40800000284798
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за вашу помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 58.44970000180183
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "До завершения перевода, пожалуйста, не удаляйте оригинальный файл.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 124.20679999922868
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления, перезапустить приложение и проверить настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 130.6397999942419
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидим на берегу реки и смотрим на кукурузу.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 128.96800000453368
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助。",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 62.407199999142904
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "不要在翻译完成之前删除原始文件。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 102.01770000276156
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 1,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 108.12660000374308
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте",
+      "checks": [
+        true
+      ],
+      "latency_ms": 50.657400002819486
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Добрый день Анна! Как вы?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 70.49620000179857
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически спасает ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 156.3347999981488
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и наблюдали за дуками.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 123.02799999451963
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 82.03219999995781
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте оригинальные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 145.3687999965041
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните свои изменения до закрытия приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 105.24140000052284
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь у кошек и собак, так что мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 141.283700002532
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна поставила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 95.55569999793079
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 74.73839999875054
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hello to Anna! How the things?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 63.6097000024165
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically keeps progress.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 119.83980000513839
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is completed.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 123.37169999955222
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not to fight.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 96.89320000325097
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 124.65979999979027
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте, я рад вас познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 95.84030000405619
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за вашу помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 67.59949999832315
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "До завершения перевода, пожалуйста, не удаляйте оригинальный файл.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 138.5971999989124
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления, перезапустить приложение и проверить настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 145.03069999773288
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидим на берегу реки и смотрим на кукурузу.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 148.0807999978424
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助。",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 72.15540000470355
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成之前不要删除源文件。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 104.0553999991971
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 2,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 129.13629999820841
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте",
+      "checks": [
+        true
+      ],
+      "latency_ms": 48.985900000843685
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Добрый день Анна! А как вы?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 68.43880000087665
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически спасает ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 156.06980000302428
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и наблюдали за дуками.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 126.55639999866253
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Банк одобрил мой кредит вчера.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 75.42299999477109
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте оригинальные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 179.02469999535242
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните свои изменения до закрытия приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 110.64379999879748
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь у кошек и собак, так что мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 154.9821000007796
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна поставила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 102.97219999483787
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 93.27840000332799
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hello to Anna! How do things?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 74.97879999573343
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically keeps progress.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 143.78929999656975
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is completed.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 139.72110000031535
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not to fight.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 106.81720000138739
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 159.56619999633403
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте, я рад вас познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 107.32629999984056
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за вашу помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 73.40269999986049
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "До завершения перевода, пожалуйста, не удаляйте оригинальный файл.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 141.47079999384005
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезапустить приложение и проверить настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 162.108000004082
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидим на берегу реки и смотрим на кукурузу.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 150.03920000162907
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助。",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 68.24609999603126
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成之前不要删除原始文件。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 108.59310000523692
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 4,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 130.9019999971497
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте",
+      "checks": [
+        true
+      ],
+      "latency_ms": 58.90209999779472
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Добрый день Анна! А как вы?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 78.72029999998631
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически спасает ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 160.4157000037958
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и наблюдали за дуками.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 140.19310000003316
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 83.57350000005681
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте оригинальные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 173.2105999981286
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните свои изменения до закрытия приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 111.73000000417233
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь у кошек и собак, так что мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 170.30140000133542
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна поставила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 102.78990000369959
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 125.68379999720491
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hello to Anna! How do things?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 80.92429999669548
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically keeps progress.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 126.89289999980247
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is completed.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 128.99259999539936
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not to fight.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 107.88730000058422
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 130.3985999984434
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте, я рад вас познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 112.86829999880865
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за вашу помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 83.72569999482948
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "До завершения перевода, пожалуйста, не удаляйте оригинальный файл.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 143.8765000057174
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезапустить приложение и проверить настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 161.19790000084322
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидим на берегу реки и смотрим на кукурузу.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 151.36920000077225
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助。",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 75.06220000504982
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "在翻译完成之前不要删除原始文件。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 140.57680000405526
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 5,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 166.82910000236006
+    },
+    {
+      "case": "en-hi",
+      "source": "hi",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте",
+      "checks": [
+        true
+      ],
+      "latency_ms": 69.92670000181533
+    },
+    {
+      "case": "en-greeting",
+      "source": "Hi, Anna! How are you?",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Добрый день Анна! А как вы?",
+      "checks": [
+        false,
+        true
+      ],
+      "latency_ms": 92.93939999770373
+    },
+    {
+      "case": "en-game",
+      "source": "This game supports two players and saves your progress automatically.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Эта игра поддерживает двух игроков и автоматически спасает ваш прогресс.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 252.00919999770122
+    },
+    {
+      "case": "en-bank-river",
+      "source": "We sat on the river bank and watched the ducks.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидели на берегу реки и наблюдали за дуками.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 178.10830000235
+    },
+    {
+      "case": "en-bank-money",
+      "source": "The bank approved my loan yesterday.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Вчера банк одобрил мой кредит.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 104.10970000521047
+    },
+    {
+      "case": "en-negation",
+      "source": "Do not delete the original files until the translation is complete.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Не удаляйте оригинальные файлы до завершения перевода.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 201.86599999578902
+    },
+    {
+      "case": "en-save",
+      "source": "Save your changes before closing the application.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Сохраните свои изменения до закрытия приложения.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 149.27950000128476
+    },
+    {
+      "case": "en-idiom",
+      "source": "It is raining cats and dogs, so we will stay at home.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Дождь у кошек и собак, так что мы останемся дома.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 203.1178000033833
+    },
+    {
+      "case": "en-context",
+      "source": "Anna put the book on the table. She opened it and started reading.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Анна поставила книгу на стол. Она открыла его и начала читать.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 130.5244999966817
+    },
+    {
+      "case": "en-abbreviation",
+      "source": "Dr. Smith lives in the U.S. and works at a hospital.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Доктор Смит живет в США. Работает в больнице.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 100.26540000399109
+    },
+    {
+      "case": "ru-greeting",
+      "source": "Привет, Анна! Как дела?",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Hello to Anna! How do things?",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 74.04749999841442
+    },
+    {
+      "case": "ru-game",
+      "source": "Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "This game supports two players and automatically keeps progress.",
+      "checks": [
+        true,
+        true,
+        false
+      ],
+      "latency_ms": 144.3797000029008
+    },
+    {
+      "case": "ru-negation",
+      "source": "Не удаляйте исходные файлы, пока перевод не завершён.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Do not delete the original files until the translation is completed.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 160.02630000002682
+    },
+    {
+      "case": "ru-peace",
+      "source": "Мы хотим жить в мире, а не воевать.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "We want to live in peace, not to fight.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 120.0576999981422
+    },
+    {
+      "case": "ru-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "After the update, restart the application and check the network settings.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 149.14699999644654
+    },
+    {
+      "case": "zh-greeting",
+      "source": "你好，很高兴认识你。",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Здравствуйте, я рад вас познакомиться.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 138.05370000045514
+    },
+    {
+      "case": "zh-thanks",
+      "source": "谢谢你的帮助。",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Спасибо за вашу помощь.",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 91.14830000180518
+    },
+    {
+      "case": "zh-negation",
+      "source": "翻译完成之前，请不要删除原始文件。",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "До завершения перевода, пожалуйста, не удаляйте оригинальный файл.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 170.04350000206614
+    },
+    {
+      "case": "zh-technical",
+      "source": "更新完成后，请重新启动应用程序并检查网络设置。",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "После завершения обновления перезапустить приложение и проверить настройки сети.",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 179.7322999991593
+    },
+    {
+      "case": "zh-bank",
+      "source": "我们坐在河岸上看鸭子。",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "Мы сидим на берегу реки и смотрим на кукурузу.",
+      "checks": [
+        true,
+        false
+      ],
+      "latency_ms": 169.99579999537673
+    },
+    {
+      "case": "ru-zh-thanks",
+      "source": "Спасибо за вашу помощь.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "谢谢你的帮助。",
+      "checks": [
+        true,
+        true
+      ],
+      "latency_ms": 86.69590000499738
+    },
+    {
+      "case": "ru-zh-negation",
+      "source": "Не удаляйте исходные файлы до завершения перевода.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "不要在翻译完成之前删除原始文件。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 140.74270000128308
+    },
+    {
+      "case": "ru-zh-technical",
+      "source": "После обновления перезапустите приложение и проверьте настройки сети.",
+      "backend": "m2m100",
+      "beam": 8,
+      "threads": 4,
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "output": "更新后,重新启动应用程序并检查网络设置。",
+      "checks": [
+        true,
+        true,
+        true
+      ],
+      "latency_ms": 150.75500000239117
+    }
+  ]
+}

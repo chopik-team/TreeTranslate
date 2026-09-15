@@ -1,0 +1,76 @@
+<ns0:teiHeader xmlns:ns0="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <ns0:fileDesc>
+      <ns0:titleStmt>
+        <ns0:title>English-Русский FreeDict+WikDict dictionary</ns0:title>
+        <ns0:respStmt>
+          <ns0:resp>Maintainer</ns0:resp>
+          <ns0:name xml:id="karlb">Karl Bartel</ns0:name>
+        </ns0:respStmt>
+      </ns0:titleStmt>
+      <ns0:editionStmt>
+        <ns0:edition>2025.11.23</ns0:edition>
+      </ns0:editionStmt>
+      <ns0:extent>62181 headwords</ns0:extent>
+      <ns0:publicationStmt>
+        <ns0:publisher>Karl Bartel</ns0:publisher>
+        <ns0:availability status="free">
+          <ns0:p>Licensed under the <ns0:ref target="https://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution-ShareAlike 3.0 Unported</ns0:ref> license</ns0:p>
+        </ns0:availability>
+        <ns0:date>2025-11-23</ns0:date>
+      </ns0:publicationStmt>
+      <ns0:notesStmt>
+        <ns0:note type="status">big enough to be useful</ns0:note>
+      </ns0:notesStmt>
+      <ns0:sourceDesc>
+        <ns0:p>Automatic creation of this bilingual dictionary by <ns0:ref target="http://www.wikdict.com/">WikDict</ns0:ref>.</ns0:p>
+        <ns0:p>Base data from <ns0:ref target="https://www.wiktionary.org/">Wiktionary.org</ns0:ref> via <ns0:ref target="http://kaiko.getalp.org/about-dbnary/">DBnary</ns0:ref>.</ns0:p>
+      </ns0:sourceDesc>
+    </ns0:fileDesc>
+    <ns0:encodingDesc>
+      <ns0:projectDesc>
+        <ns0:p>
+          This dictionary comes to you through nice people
+          making it available for free and for good. It is part of
+          the FreeDict project, http://www.freedict.org/. This
+          project aims to make available many translating
+          dictionaries for free. Your contributions are welcome!
+        </ns0:p>
+      </ns0:projectDesc>
+      <ns0:tagsDecl>
+        <ns0:namespace name="http://www.tei-c.org/ns/1.0" xml:base="../shared/">
+          <ns0:tagUsage gi="pos">
+            <ns0:list n="values" type="bulleted">
+              <ns0:item ana="FreeDict_ontology.xml#f_pos_adj">adj</ns0:item>
+              <ns0:item ana="FreeDict_ontology.xml#f_pos_adv">adv</ns0:item>
+              <ns0:item ana="FreeDict_ontology.xml#f_pos_noun">n</ns0:item>
+              <ns0:item ana="FreeDict_ontology.xml#f_pos_noun">pn</ns0:item>
+              <ns0:item ana="FreeDict_ontology.xml#f_pos_verb">v</ns0:item>
+            </ns0:list>
+          </ns0:tagUsage>
+          <ns0:tagUsage gi="gen">
+            <ns0:list>
+              <ns0:item ana="FreeDict_ontology.xml#f_gen_fem">fem</ns0:item>
+              <ns0:item ana="FreeDict_ontology.xml#f_gen_masc">masc</ns0:item>
+              <ns0:item ana="FreeDict_ontology.xml#f_gen_neut">neut</ns0:item>
+            </ns0:list>
+          </ns0:tagUsage>
+        </ns0:namespace>
+      </ns0:tagsDecl>
+    </ns0:encodingDesc>
+    <ns0:revisionDesc>
+      <ns0:change when="2018-09-12" who="#karlb">
+        Change numbering scheme from YYYY-MM-DD to YYYY.MM.DD
+      </ns0:change>
+      <ns0:change when="2018-05-15" who="#karlb">
+        Add links to sourceDesc
+      </ns0:change>
+      <ns0:change when="2017-12-15" who="#karlb">
+        Add changelog
+      </ns0:change>
+      <ns0:change when="2017-11-22" who="#karlb">
+        Use ref tag to encode license URL
+      </ns0:change>
+    </ns0:revisionDesc>
+    
+  </ns0:teiHeader>
+  

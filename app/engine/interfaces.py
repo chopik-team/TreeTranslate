@@ -4,6 +4,18 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum, auto
 from pathlib import Path
+from threading import Event
+from typing import Protocol
+
+from app.engine.types import TranslationRequest, TranslationResult
+
+
+class TextTranslationEngine(Protocol):
+    """Real text contract. The AW 0.3 file/job ABC below remains a legacy boundary."""
+
+    def translate(self, request: TranslationRequest, cancelled: Event | None = None) -> TranslationResult: ...
+
+    def shutdown(self) -> None: ...
 
 
 @dataclass(frozen=True, slots=True)

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "pair": "eng-rus",
+      "entries": 62181,
+      "version": "2025.11.23",
+      "url": "https://download.freedict.org/dictionaries/eng-rus/2025.11.23/freedict-eng-rus-2025.11.23.src.tar.xz",
+      "sha512": "fdee5ebdbe59c2a4293b875def3befdfddd990f95ecd10eb289eff22d815ed6d31267ca4695af66811ef368dd72b16342210475e044c995831e7931ce0e4bcfe"
+    },
+    {
+      "pair": "rus-eng",
+      "entries": 42600,
+      "version": "2025.11.23",
+      "url": "https://download.freedict.org/dictionaries/rus-eng/2025.11.23/freedict-rus-eng-2025.11.23.src.tar.xz",
+      "sha512": "9adf7a5eda27ccfa3e496b86b2fd575fc0e4af7ac5626a219d44e4ebfd56280deaf67cefd995ab04e9d7ef415e88f8cf0f9cae3252da6221376fd6d0c39012ba"
+    }
+  ],
+  "license": "CC-BY-SA-3.0",
+  "changes": "TEI entries converted to indexed SQLite; stress-insensitive lookup keys added.",
+  "sha256": "a7e79a319ea1ccd3c9b34b9160a6c765773580212c6ad1730e6d7d0857943724",
+  "bytes": 43921408
+}

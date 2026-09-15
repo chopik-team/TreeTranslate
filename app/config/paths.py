@@ -4,6 +4,7 @@ import sys
 
 PROJECT_ROOT = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[2]))
 ASSETS_DIR = PROJECT_ROOT / "assets"
+MODELS_DIR = PROJECT_ROOT / "vendor" / "models"
 LOGOS_DIR = ASSETS_DIR / "logos"
 ICONS_DIR = ASSETS_DIR / "icons"
 STYLES_DIR = PROJECT_ROOT / "app" / "gui" / "styles"

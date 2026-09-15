@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "description": "Original synthetic developer corpus; speed only, no quality scores.",
+  "cases": [
+    {"id": "en-ru-short", "source": "en", "target": "ru", "text": "Hello world."},
+    {"id": "ru-en-short", "source": "ru", "target": "en", "text": "Привет, мир."},
+    {"id": "zh-ru-short", "source": "zh", "target": "ru", "text": "你好世界"},
+    {"id": "ru-zh-short", "source": "ru", "target": "zh", "text": "Перезапустите приложение."},
+    {"id": "en-ru-technical", "source": "en", "target": "ru", "text": "Save the configuration file before restarting the application. The translation engine works locally and keeps your documents on this computer. Select the processor or graphics card in the performance settings. If the operation fails, check the local model files and try again."},
+    {"id": "ru-en-technical", "source": "ru", "target": "en", "text": "Сохраните файл конфигурации перед перезапуском приложения. Движок перевода работает локально и сохраняет ваши документы на этом компьютере. Выберите процессор или видеокарту в настройках производительности. Если операция завершилась ошибкой, проверьте локальные файлы модели и повторите попытку."},
+    {"id": "zh-ru-technical", "source": "zh", "target": "ru", "text": "重新启动应用程序之前，请保存配置文件。翻译引擎在本地运行，并将您的文档保存在这台计算机上。在性能设置中选择处理器或显卡。如果操作失败，请检查本地模型文件，然后重试。"},
+    {"id": "ru-zh-technical", "source": "ru", "target": "zh", "text": "Сохраните файл конфигурации перед перезапуском приложения. Движок перевода работает локально и сохраняет ваши документы на этом компьютере. Выберите процессор или видеокарту в настройках производительности. Если операция завершилась ошибкой, проверьте локальные файлы модели и повторите попытку."}
+  ]
+}

@@ -9,21 +9,20 @@ from PySide6.QtWidgets import QAbstractItemView, QComboBox, QHeaderView, QLabel,
 class ModePresentation:
     name: str
     priority: str
-    speed_placeholder: str
-    requirements: str
+    load: str
+    device_hint: str
 
     def as_row(self) -> tuple[str, str, str, str]:
-        return self.name, self.priority, self.speed_placeholder, self.requirements
+        return self.name, self.priority, self.load, self.device_hint
 
 
-# Presentation-only defaults. A future benchmark provider can replace this
-# collection without changing the combo or its table view.
+# No invented words/minute or RAM requirements. Timing depends on text and device.
 MODE_PRESENTATIONS = (
-    ModePresentation("🍂  Эконом", "минимум нагрузки", "~10–20 слов/мин", "8 ГБ RAM, CPU"),
-    ModePresentation("🚶  Быстрый", "скорость", "~30–50 слов/мин", "16 ГБ RAM"),
-    ModePresentation("🚙  Баланс", "скорость / качество", "~50–100 слов/мин", "16 ГБ + GPU желательно"),
-    ModePresentation("⚡  Турбо", "максимальная скорость", "~100–200+ слов/мин", "32 ГБ + GPU"),
-    ModePresentation("🚀  Максимум", "всё доступное железо", "зависит от GPU", "32 ГБ+ / мощная GPU"),
+    ModePresentation("🍂  Эконом", "бережёт ресурсы", "низкая", "CPU в Auto"),
+    ModePresentation("🚶  Быстрый", "быстрый ответ", "умеренная", "CPU или GPU"),
+    ModePresentation("🚙  Баланс", "тщательный перевод", "повышенная", "CPU или GPU"),
+    ModePresentation("⚡  Турбо", "пакетная обработка", "высокая", "GPU желательно"),
+    ModePresentation("🚀  Максимум", "расширенный поиск", "высокая", "CPU или GPU"),
 )
 
 
@@ -53,10 +52,10 @@ class ModeRequirementsCombo(QComboBox):
     def __init__(self, include_automatic: bool = True, parent=None) -> None:
         super().__init__(parent)
         self._model = QStandardItemModel(self)
-        self._model.setHorizontalHeaderLabels(["Режим", "Приоритет", "Условная скорость", "Требования"])
+        self._model.setHorizontalHeaderLabels(["Режим", "Приоритет", "Нагрузка", "Устройство"])
         rows = [presentation.as_row() for presentation in MODE_PRESENTATIONS]
         if include_automatic:
-            rows.insert(0, ("Автоматический", "подбор системой", "зависит от устройства", "определяются автоматически"))
+            rows.insert(0, ("Автоматический", "настройки Баланса", "по устройству", "GPU при наличии"))
         for row in rows:
             items = [QStandardItem(value) for value in row]
             for item in items:
@@ -79,6 +78,7 @@ class ModeRequirementsCombo(QComboBox):
         self.setModelColumn(0)
         self.setView(table)
         self.setCurrentIndex(0)
+        self.setToolTip("Режим задаёт нагрузку и глубину поиска перевода. CPU/GPU выбирается отдельно.\nБолее высокий режим не гарантирует лучший перевод каждой фразы.")
 
     def showPopup(self) -> None:
         super().showPopup()

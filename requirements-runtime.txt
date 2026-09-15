@@ -1,0 +1,9 @@
+# Official Argos wheel is installed separately without unused Stanza/SpaCy extras.
+# See tools/install_runtime.py and THIRD_PARTY_NOTICES.md.
+PySide6==6.11.1
+ctranslate2==4.8.2
+sentencepiece==0.2.2
+sacremoses==0.1.1
+packaging>=24,<27
+langid==1.1.6
+pyspellchecker==0.9.0

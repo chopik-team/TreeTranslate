@@ -7,7 +7,8 @@ from PySide6.QtWidgets import QApplication, QButtonGroup, QCheckBox, QComboBox, 
 from PySide6.QtCore import QPoint, Qt
 from PySide6.QtTest import QTest
 
-from app.gui.main_window import MainWindow
+from app.gui.main_window import MainWindow as ProductionMainWindow
+from app.services.mock_translation_service import MockTranslationService
 from app.gui.dialogs.settings_dialog import SettingsDialog
 from app.gui.dialogs.about_dialog import AboutDialog
 from app.models.translation_job import JobState
@@ -18,6 +19,10 @@ from app.gui.widgets.language_selector import LanguageSelector
 from app.gui.widgets.acceleration_selector import HoverInfoButton
 from app.config.constants import APP_VERSION, BOOSTY_URL, PROJECT_GITHUB_URL
 from app.gui.styles.theme import load_stylesheet
+
+
+def MainWindow():
+    return ProductionMainWindow(translation_service=MockTranslationService())
 
 
 def test_main_window_and_states() -> None:
@@ -89,6 +94,11 @@ def test_about_dialog_has_sorted_product_credits() -> None:
     assert "ChatGPT 5.6 Sol" in labels
     assert "Translation Engine" not in labels
     assert "Translation backend" not in labels
+    assert "Argos Translate 1.11.0 — MIT (программный код)" in labels
+    assert "M2M100 418M INT8 — MIT" in labels
+    assert "CTranslate2 4.8.2 — MIT" in labels
+    assert "SentencePiece 0.2.2 — Apache-2.0" in labels
+    assert "лицензия итоговых весов требует уточнения" not in labels
     assert buttons == ["TreeTranslate", "Закрыть"]
     dialog.close()
 
@@ -176,6 +186,41 @@ def test_chinese_and_japanese_are_available_in_both_directions() -> None:
     assert (selector.source_combo.currentText(), selector.target_combo.currentText()) == (selector.AUTOMATIC, "Китайский")
 
 
+def test_british_and_american_english_are_separate_choices() -> None:
+    app = QApplication.instance() or QApplication([])
+    selector = LanguageSelector()
+
+    for language in ("Английский", "Английский (США)"):
+        source_index = selector.source_combo.findText(language)
+        target_index = selector.target_combo.findText(language)
+        assert source_index >= 0 and target_index >= 0
+        assert not selector.source_combo.itemIcon(source_index).isNull()
+        assert not selector.target_combo.itemIcon(target_index).isNull()
+
+    british_index = selector.source_combo.findText("Английский")
+    american_index = selector.source_combo.findText("Английский (США)")
+    assert (
+        selector.source_combo.itemIcon(british_index).cacheKey()
+        != selector.source_combo.itemIcon(american_index).cacheKey()
+    )
+
+
+def test_language_swap_button_exchanges_the_pair_atomically() -> None:
+    app = QApplication.instance() or QApplication([])
+    selector = LanguageSelector()
+    selector.source_combo.setCurrentText("Русский")
+    selector.target_combo.setCurrentText("Китайский")
+    selector.swap_button.click()
+    assert selector.source_combo.currentText() == "Китайский"
+    assert selector.target_combo.currentText() == "Русский"
+
+    selector.source_combo.setCurrentText(selector.AUTOMATIC)
+    selector.target_combo.setCurrentText("Японский")
+    selector.swap_button.click()
+    assert selector.source_combo.currentText() == "Японский"
+    assert selector.target_combo.currentText() == selector.AUTOMATIC
+
+
 def test_output_folder_naming_uses_clear_mode_selector() -> None:
     app = QApplication.instance() or QApplication([])
     dialog = SettingsDialog()
@@ -231,10 +276,12 @@ def test_text_page_uses_automatic_translation() -> None:
     window.text_page._request_translation()
     app.processEvents()
     assert window.text_page.result.editor.toPlainText() == "Hi"
-    assert not window.text_page.reference_area.isHidden()
+    # Fixed dictionary/examples from AW 0.3 do not describe real input.
+    assert window.text_page.reference_area.isHidden()
     window.text_page.source.editor.clear()
     assert window.text_page.reference_area.isHidden()
     assert window.text_page.findChildren(QPushButton, "primary") == []
+    assert window.text_page.mode.combo.count() == 6
     window.close()
 
 
@@ -379,4 +426,21 @@ def test_file_controls_follow_job_state() -> None:
     controller.service.cancel()
     assert "Запустить снова" in window.file_page.start_button.text()
     assert window.file_page.start_button.isEnabled()
+    assert not window.file_page.progress.show_output.isEnabled()
+    window.close()
+
+
+def test_completed_file_can_be_revealed_in_explorer(tmp_path) -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    output = tmp_path / "document_ru.pdf"
+    output.write_bytes(b"translated")
+
+    window.translation.service.file_outputs_ready.emit([output])
+    assert window.file_page.progress.show_output.isEnabled()
+    with patch("app.controllers.translation_ui_controller.QProcess.startDetached", return_value=(True, 1)) as reveal:
+        window.file_page.progress.show_output.click()
+    reveal.assert_called_once()
+    assert reveal.call_args.args[0] == "explorer.exe"
+    assert str(output.resolve()) in reveal.call_args.args[1]
     window.close()

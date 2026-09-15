@@ -1,0 +1,5 @@
+# Developer conversion environment only. Never ship this environment.
+ctranslate2==4.8.2
+sentencepiece==0.2.2
+transformers==4.57.6
+torch==2.10.0

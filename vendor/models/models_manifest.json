@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "argos-en-ru",
+      "backend": "argos",
+      "path": "argos/argos-en-ru",
+      "version": "1.9",
+      "source": "https://argos-net.com/v1/translate-en_ru-1_9.argosmodel",
+      "languages": [
+        "en",
+        "ru"
+      ],
+      "pairs": [
+        [
+          "en",
+          "ru"
+        ]
+      ],
+      "format": "ctranslate2",
+      "quantization": "upstream",
+      "license": "UNKNOWN: package has no license file; review upstream before distribution",
+      "size": 217259288,
+      "files": [
+        {
+          "path": "metadata.json",
+          "size": 255,
+          "sha256": "a40657925da1c25d98d8a6bc53c436a5b1179bd8771e016147d88587edf1b529"
+        },
+        {
+          "path": "model/config.json",
+          "size": 188,
+          "sha256": "3f1a3cc20b961c1fe0e6007e8ca663730c4a8b82fa54073fde03edf1402c6726"
+        },
+        {
+          "path": "model/model.bin",
+          "size": 214346964,
+          "sha256": "c262cce6a506447d4b3c7a899787694df13783340ba67f0df3ecbf046ae27924"
+        },
+        {
+          "path": "model/shared_vocabulary.json",
+          "size": 1207938,
+          "sha256": "5e39116c77f19b90841f9b0d0dbe4e38ecf6eadd43dff40ea1415104f441c720"
+        },
+        {
+          "path": "README.md",
+          "size": 7704,
+          "sha256": "ae9d1fa7d28837433eb979e5e442c3907fa84d10458ff9f3d23eb372bf0061cd"
+        },
+        {
+          "path": "sentencepiece.model",
+          "size": 943491,
+          "sha256": "cdd7fd3f6b069cd1baa90d95682ec6851119ae0d734438ba85d3678b2f1e2a66"
+        },
+        {
+          "path": "stanza/en/tokenize/ewt.pt",
+          "size": 630886,
+          "sha256": "7bc5a1523f4e60107640ea44d2cb27c787bc339ba0c93be6c7dbf744d5635cd6"
+        },
+        {
+          "path": "stanza/resources.json",
+          "size": 121862,
+          "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+        }
+      ]
+    },
+    {
+      "id": "argos-ru-en",
+      "backend": "argos",
+      "path": "argos/argos-ru-en",
+      "version": "1.9",
+      "source": "https://argos-net.com/v1/translate-ru_en-1_9.argosmodel",
+      "languages": [
+        "ru",
+        "en"
+      ],
+      "pairs": [
+        [
+          "ru",
+          "en"
+        ]
+      ],
+      "format": "ctranslate2",
+      "quantization": "upstream",
+      "license": "UNKNOWN: package has no license file; review upstream before distribution",
+      "size": 173455367,
+      "files": [
+        {
+          "path": "metadata.json",
+          "size": 255,
+          "sha256": "2034d666010673068722bc15af5bb8561173665872867c89a1b99695f0fb25d0"
+        },
+        {
+          "path": "model/config.json",
+          "size": 188,
+          "sha256": "3f1a3cc20b961c1fe0e6007e8ca663730c4a8b82fa54073fde03edf1402c6726"
+        },
+        {
+          "path": "model/model.bin",
+          "size": 170495176,
+          "sha256": "026d5f34266b4235c13fc29c665f151b88d0c1b02b0be7f87734fe9c511e20bc"
+        },
+        {
+          "path": "model/shared_vocabulary.json",
+          "size": 1238402,
+          "sha256": "32d134b048b6a27a48ba7fad9154976743b9bed9cbef7080b952108374d1cea1"
+        },
+        {
+          "path": "README.md",
+          "size": 7704,
+          "sha256": "5a157fd062b9786eb4c7d5aa8fce0f3f01de0fa71c2f34fbf16e222c66ecd090"
+        },
+        {
+          "path": "sentencepiece.model",
+          "size": 953634,
+          "sha256": "d324f59d3b5ba04d9b088e162b5e779e27a5eb72d56ec8e5e69a9efc1bf8f495"
+        },
+        {
+          "path": "stanza/resources.json",
+          "size": 121862,
+          "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+        },
+        {
+          "path": "stanza/ru/tokenize/syntagrus.pt",
+          "size": 638146,
+          "sha256": "a28c7770bd33220f61b5ab060c9aaebe62354771f557683875602d1c2a38fefc"
+        }
+      ]
+    },
+    {
+      "id": "argos-zh-en",
+      "backend": "argos",
+      "path": "argos/argos-zh-en",
+      "version": "1.9",
+      "source": "https://argos-net.com/v1/translate-zh_en-1_9.argosmodel",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "pairs": [
+        [
+          "zh",
+          "en"
+        ]
+      ],
+      "format": "ctranslate2",
+      "quantization": "upstream",
+      "license": "CC-BY-4.0 for original OPUS model, per bundled README; package-wide terms not separately stated",
+      "size": 86137496,
+      "files": [
+        {
+          "path": "metadata.json",
+          "size": 135,
+          "sha256": "e42259bbbec6cd09ecd16d97d614bebbf1e7351130c6970fe77a2f1ed7f99cca"
+        },
+        {
+          "path": "model/config.json",
+          "size": 196,
+          "sha256": "b28e3136fc7a103e29585c10c8124849fb01d649531f58e00cbe240111560cd7"
+        },
+        {
+          "path": "model/model.bin",
+          "size": 82713318,
+          "sha256": "edd8c8a6863d36959613ff291074627a1635fab2f51b872ef437e924d238921a"
+        },
+        {
+          "path": "model/shared_vocabulary.json",
+          "size": 1368422,
+          "sha256": "c980413009e8041fc42c81730ad4b72ab6cb1313b3b89b1ced261fe5e177b024"
+        },
+        {
+          "path": "README.md",
+          "size": 393,
+          "sha256": "1bb7a1261520b8f7d1f94b7fd108c0ccfd7333a3e40a2256df274df0a2ff1cc8"
+        },
+        {
+          "path": "sentencepiece.model",
+          "size": 804374,
+          "sha256": "72600ea476b3e3b76763919c3a30ef5104d9b473b19567d45251f56034264f54"
+        },
+        {
+          "path": "stanza/resources.json",
+          "size": 121862,
+          "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+        },
+        {
+          "path": "stanza/zh-hans/tokenize/gsdsimp.pt",
+          "size": 1128796,
+          "sha256": "37cfdbc78f972a6950c66719b363c80ad148ff6b57992c960a0309224e1c87fc"
+        }
+      ]
+    },
+    {
+      "id": "argos-en-zh",
+      "backend": "argos",
+      "path": "argos/argos-en-zh",
+      "version": "1.9",
+      "source": "https://argos-net.com/v1/translate-en_zh-1_9.argosmodel",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "pairs": [
+        [
+          "en",
+          "zh"
+        ]
+      ],
+      "format": "ctranslate2",
+      "quantization": "upstream",
+      "license": "CC-BY-4.0 for original OPUS model, per bundled README; package-wide terms not separately stated",
+      "size": 85640765,
+      "files": [
+        {
+          "path": "metadata.json",
+          "size": 135,
+          "sha256": "106086bc1b77d2d5c298aa38be69e8e87263eeb4167b4614b08a030c43d31b6a"
+        },
+        {
+          "path": "model/config.json",
+          "size": 216,
+          "sha256": "3a8660f12559a223969532ff191e5e6f50d4ff24164517edbd6a5090dc5144c6"
+        },
+        {
+          "path": "model/model.bin",
+          "size": 82713318,
+          "sha256": "1a039114d9456b6528fabb65b455b6f156319634a0f984b1f6018f7737d67598"
+        },
+        {
+          "path": "model/shared_vocabulary.json",
+          "size": 1367577,
+          "sha256": "c0b6e24705ec0489d5b810de365959c1013aecd644cfeca161b54ea1df6a7dc0"
+        },
+        {
+          "path": "README.md",
+          "size": 401,
+          "sha256": "050e546664f0e70d80b6f83aa1da5f04ee85335f4a1b62d1c89184f76100b5dc"
+        },
+        {
+          "path": "sentencepiece.model",
+          "size": 806370,
+          "sha256": "872224b85a11edc9d769a94949fd387b67ea85b50708db9f91f32f5b497a9af3"
+        },
+        {
+          "path": "stanza/en/tokenize/ewt.pt",
+          "size": 630886,
+          "sha256": "7bc5a1523f4e60107640ea44d2cb27c787bc339ba0c93be6c7dbf744d5635cd6"
+        },
+        {
+          "path": "stanza/resources.json",
+          "size": 121862,
+          "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+        }
+      ]
+    },
+    {
+      "id": "m2m100-418m-int8",
+      "backend": "m2m100",
+      "path": "m2m100-418m-int8",
+      "version": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+      "source": "https://huggingface.co/facebook/m2m100_418M/tree/55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+      "languages": [
+        "af",
+        "am",
+        "ar",
+        "ast",
+        "az",
+        "ba",
+        "be",
+        "bg",
+        "bn",
+        "br",
+        "bs",
+        "ca",
+        "ceb",
+        "cs",
+        "cy",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fa",
+        "ff",
+        "fi",
+        "fr",
+        "fy",
+        "ga",
+        "gd",
+        "gl",
+        "gu",
+        "ha",
+        "he",
+        "hi",
+        "hr",
+        "ht",
+        "hu",
+        "hy",
+        "id",
+        "ig",
+        "ilo",
+        "is",
+        "it",
+        "ja",
+        "jv",
+        "ka",
+        "kk",
+        "km",
+        "kn",
+        "ko",
+        "lb",
+        "lg",
+        "ln",
+        "lo",
+        "lt",
+        "lv",
+        "mg",
+        "mk",
+        "ml",
+        "mn",
+        "mr",
+        "ms",
+        "my",
+        "ne",
+        "nl",
+        "no",
+        "ns",
+        "oc",
+        "or",
+        "pa",
+        "pl",
+        "ps",
+        "pt",
+        "ro",
+        "ru",
+        "sd",
+        "si",
+        "sk",
+        "sl",
+        "so",
+        "sq",
+        "sr",
+        "ss",
+        "su",
+        "sv",
+        "sw",
+        "ta",
+        "th",
+        "tl",
+        "tn",
+        "tr",
+        "uk",
+        "ur",
+        "uz",
+        "vi",
+        "wo",
+        "xh",
+        "yi",
+        "yo",
+        "zh",
+        "zu"
+      ],
+      "pairs": [],
+      "format": "ctranslate2",
+      "quantization": "int8",
+      "license": "MIT (official model card)",
+      "size": 499882152,
+      "files": [
+        {
+          "path": "model/config.json",
+          "size": 233,
+          "sha256": "72901fbd8abd89fb5cf4a388f26fc681f5c4c58a1e1a88b30b879f107270e7ee"
+        },
+        {
+          "path": "model/model.bin",
+          "size": 490667752,
+          "sha256": "a1826980fc5c037e69c7ac94fcb56c03001a66f380eb71863cc0a3879e71421b"
+        },
+        {
+          "path": "model/shared_vocabulary.json",
+          "size": 2924622,
+          "sha256": "18916ac68f9ac8fbd5250ca603dcb3861aac8672924d93a8dadc82eb3147f941"
+        },
+        {
+          "path": "tokenizer/added_tokens.json",
+          "size": 2108,
+          "sha256": "405ac426bc0b72c532f596762291c4e5400d6da47f4819899d727116c6bb3c9e"
+        },
+        {
+          "path": "tokenizer/languages.json",
+          "size": 906,
+          "sha256": "72a8e935a3240ee325f471878cc8530e9d3d22bb09e16f2302551132905e7561"
+        },
+        {
+          "path": "tokenizer/sentencepiece.bpe.model",
+          "size": 2423393,
+          "sha256": "d8f7c76ed2a5e0822be39f0a4f95a55eb19c78f4593ce609e2edbc2aea4d380a"
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "size": 1668,
+          "sha256": "6c964f670634fbd3a81ce112743c7c251d4412df2b30b8f73913c40d0219225e"
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "size": 20770,
+          "sha256": "fa4730cb87e3cc7c06af158394068797b9d84c04a932f7c8799283e8b8e429b5"
+        },
+        {
+          "path": "tokenizer/vocab.json",
+          "size": 3836097,
+          "sha256": "7cedcc7c1e59b9bdb99489b84eb810dc3dc808d6f4d9d187346100b3affc7552"
+        },
+        {
+          "path": "UPSTREAM_MODEL_CARD.md",
+          "size": 4603,
+          "sha256": "1fd660f130aedc5ecf1796b47ab47d43d3c4b36541f5387b7adb3df75cb5dfdb"
+        }
+      ]
+    }
+  ]
+}

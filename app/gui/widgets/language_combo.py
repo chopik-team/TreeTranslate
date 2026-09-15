@@ -9,7 +9,8 @@ from app.config.paths import ICONS_DIR
 
 LANGUAGE_ICON_FILES = {
     "Русский": "language_ru.png",
-    "Английский": "language_en_us.png",
+    "Английский": "language_en_gb.png",
+    "Английский (США)": "language_en_us.png",
     "English (US)": "language_en_us.png",
     "English (UK)": "language_en_gb.png",
     "Немецкий": "language_de.png",

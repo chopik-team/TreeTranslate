@@ -1,0 +1,28 @@
+{
+  "description": "Original synthetic regression examples. Concepts are limited lexical/negation checks, not an overall translation quality score. Outputs are retained only for this public development corpus.",
+  "cases": [
+    {"id":"en-hi","source":"en","target":"ru","text":"hi","concepts":[["привет","здравств"]]},
+    {"id":"en-greeting","source":"en","target":"ru","text":"Hi, Anna! How are you?","concepts":[["привет","здравств"],["анн"]]},
+    {"id":"en-game","source":"en","target":"ru","text":"This game supports two players and saves your progress automatically.","concepts":[["игр"],["двух","два"],["сохран"]]},
+    {"id":"en-bank-river","source":"en","target":"ru","text":"We sat on the river bank and watched the ducks.","concepts":[["берег"],["ут"]]},
+    {"id":"en-bank-money","source":"en","target":"ru","text":"The bank approved my loan yesterday.","concepts":[["банк"],["кредит","ссуд","заём","заем"]]},
+    {"id":"en-negation","source":"en","target":"ru","text":"Do not delete the original files until the translation is complete.","concepts":[["не удал"],["файл"],["перевод"]]},
+    {"id":"en-save","source":"en","target":"ru","text":"Save your changes before closing the application.","concepts":[["сохран"],["изменен","изменён"]]},
+    {"id":"en-idiom","source":"en","target":"ru","text":"It is raining cats and dogs, so we will stay at home.","concepts":[["дожд","лив"],["дом"]]},
+    {"id":"en-context","source":"en","target":"ru","text":"Anna put the book on the table. She opened it and started reading.","concepts":[["книг"],["она"],["читать","чтени"]]},
+    {"id":"en-abbreviation","source":"en","target":"ru","text":"Dr. Smith lives in the U.S. and works at a hospital.","concepts":[["смит"],["сша","соединенн","соединённ"],["больниц","госпитал"]]},
+    {"id":"ru-greeting","source":"ru","target":"en","text":"Привет, Анна! Как дела?","concepts":[["hi","hello"],["anna"]]},
+    {"id":"ru-game","source":"ru","target":"en","text":"Эта игра поддерживает двух игроков и автоматически сохраняет прогресс.","concepts":[["game"],["two"],["save"]]},
+    {"id":"ru-negation","source":"ru","target":"en","text":"Не удаляйте исходные файлы, пока перевод не завершён.","concepts":[["not delete","don't delete"],["file"],["translation"]]},
+    {"id":"ru-peace","source":"ru","target":"en","text":"Мы хотим жить в мире, а не воевать.","concepts":[["peace"],["not"]]},
+    {"id":"ru-technical","source":"ru","target":"en","text":"После обновления перезапустите приложение и проверьте настройки сети.","concepts":[["restart"],["application","app"],["network"]]},
+    {"id":"zh-greeting","source":"zh","target":"ru","text":"你好，很高兴认识你。","concepts":[["привет","здравств"],["познаком","встреч"]]},
+    {"id":"zh-thanks","source":"zh","target":"ru","text":"谢谢你的帮助。","concepts":[["спасибо","благодар"],["помощ"]]},
+    {"id":"zh-negation","source":"zh","target":"ru","text":"翻译完成之前，请不要删除原始文件。","concepts":[["не удал"],["файл"],["перевод"]]},
+    {"id":"zh-technical","source":"zh","target":"ru","text":"更新完成后，请重新启动应用程序并检查网络设置。","concepts":[["перезапуст","перезагруз"],["приложен"],["сет"]]},
+    {"id":"zh-bank","source":"zh","target":"ru","text":"我们坐在河岸上看鸭子。","concepts":[["берег"],["ут"]]},
+    {"id":"ru-zh-thanks","source":"ru","target":"zh","text":"Спасибо за вашу помощь.","concepts":[["谢谢","感谢"],["帮助"]]},
+    {"id":"ru-zh-negation","source":"ru","target":"zh","text":"Не удаляйте исходные файлы до завершения перевода.","concepts":[["不要","不删除","不得"],["文件"],["翻译"]]},
+    {"id":"ru-zh-technical","source":"ru","target":"zh","text":"После обновления перезапустите приложение и проверьте настройки сети.","concepts":[["重新启动","重启"],["应用"],["网络"]]}
+  ]
+}

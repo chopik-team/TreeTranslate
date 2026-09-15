@@ -72,6 +72,8 @@ class FileTranslationPage(QWidget):
         self.file_tree = FileTree()
         layout.addWidget(self.file_tree, 1)
         self.progress = ProgressPanel()
+        self.progress.setToolTip("Демонстрация: перевод файлов пока не реализован.")
+        layout.addWidget(QLabel("Перевод файлов — демонстрация", objectName="secondary"))
         layout.addWidget(self.progress)
         return workspace
 

@@ -1,0 +1,17 @@
+{
+  "status": "AW0.4 calibrated on Ryzen 7 5700X / RTX 3080; limited synthetic corpus, not a universal quality ranking",
+  "evidence": ["docs/benchmarks/aw04-cpu-threads.json", "docs/benchmarks/aw04-decoding-context.json", "docs/benchmarks/aw04-tuned-profiles.json"],
+  "idle_timeout_seconds": 180,
+  "max_text_chars": 50000,
+  "quality_pairs": [["zh", "ru"], ["ru", "zh"]],
+  "argos_preferred_pairs": [["en", "ru"], ["ru", "en"]],
+  "decoding": {"max_input_tokens": 192, "max_decoding_length": 512},
+  "profiles": {
+    "economy": {"prefer_quality": false, "allow_quality": false, "auto_gpu": false, "threads": 2, "beam_size": 1, "batch_tokens": 192},
+    "fast": {"prefer_quality": false, "allow_quality": true, "auto_gpu": true, "threads": 8, "beam_size": 1, "batch_tokens": 384},
+    "balanced": {"prefer_quality": false, "allow_quality": true, "auto_gpu": true, "threads": 8, "beam_size": 4, "batch_tokens": 768},
+    "turbo": {"prefer_quality": false, "allow_quality": true, "auto_gpu": true, "threads": 8, "beam_size": 2, "batch_tokens": 1536},
+    "maximum": {"prefer_quality": true, "allow_quality": true, "auto_gpu": true, "threads": 8, "beam_size": 5, "batch_tokens": 768},
+    "automatic": {"prefer_quality": false, "allow_quality": true, "auto_gpu": true, "threads": 8, "beam_size": 4, "batch_tokens": 768}
+  }
+}

@@ -6,3 +6,10 @@ __pycache__/
 .vscode/
 dist/
 build/
+.venv*/
+vendor/models/argos/
+vendor/models/m2m100-418m-int8/
+vendor/runtime/cuda/
+*.argosmodel
+benchmark-results/
+vendor/lexicon/lexicon.sqlite3

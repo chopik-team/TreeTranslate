@@ -1,11 +1,22 @@
-from PySide6.QtWidgets import QComboBox, QHBoxLayout, QLabel, QVBoxLayout, QWidget
+from PySide6.QtCore import Qt, Signal
+from PySide6.QtWidgets import QComboBox, QHBoxLayout, QLabel, QPushButton, QVBoxLayout, QWidget
 
 from app.gui.widgets.language_combo import LanguageComboBox
 
 
 class LanguageSelector(QWidget):
+    languages_swapped = Signal(str, str)
     AUTOMATIC = "Определить автоматически"
-    LANGUAGES = ("Русский", "Китайский", "Английский", "Немецкий", "Японский", "Испанский", "Французский")
+    LANGUAGES = (
+        "Русский",
+        "Китайский",
+        "Английский",
+        "Английский (США)",
+        "Немецкий",
+        "Японский",
+        "Испанский",
+        "Французский",
+    )
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
@@ -14,14 +25,31 @@ class LanguageSelector(QWidget):
         layout.setContentsMargins(0, 0, 0, 0)
         options = [self.AUTOMATIC, *self.LANGUAGES]
         self.source = self._combo("Исходный язык", options)
-        arrow = QLabel("→", objectName="languageArrow")
+        self.swap_button = QPushButton("⇄", objectName="languageSwap")
+        self.swap_button.setToolTip("Поменять языки местами")
+        self.swap_button.setAccessibleName("Поменять языки местами")
+        self.swap_button.setFixedSize(42, 42)
         self.target = self._combo("Язык перевода", options)
         self.target.combo.setCurrentText("Русский")
         layout.addWidget(self.source, 1)
-        layout.addWidget(arrow)
+        layout.addWidget(self.swap_button, alignment=Qt.AlignmentFlag.AlignBottom)
         layout.addWidget(self.target, 1)
         self.source.combo.currentTextChanged.connect(lambda: self._keep_languages_distinct("source"))
         self.target.combo.currentTextChanged.connect(lambda: self._keep_languages_distinct("target"))
+        self.swap_button.clicked.connect(self.swap_languages)
+
+    def swap_languages(self) -> None:
+        source = self.source_combo.currentText()
+        target = self.target_combo.currentText()
+        self._syncing = True
+        self.source_combo.blockSignals(True)
+        self.target_combo.blockSignals(True)
+        self.source_combo.setCurrentText(target)
+        self.target_combo.setCurrentText(source)
+        self.source_combo.blockSignals(False)
+        self.target_combo.blockSignals(False)
+        self._syncing = False
+        self.languages_swapped.emit(target, source)
 
     def _keep_languages_distinct(self, changed: str) -> None:
         if self._syncing:

@@ -1,0 +1,149 @@
+[
+  {
+    "name": "argostranslate",
+    "version": "1.11.0",
+    "license": "UNKNOWN",
+    "license_files": [
+      "vendor/licenses/argostranslate/LICENSE"
+    ]
+  },
+  {
+    "name": "ctranslate2",
+    "version": "4.8.2",
+    "license": "MIT",
+    "license_files": []
+  },
+  {
+    "name": "sentencepiece",
+    "version": "0.2.2",
+    "license": "Apache-2.0",
+    "license_files": []
+  },
+  {
+    "name": "sacremoses",
+    "version": "0.1.1",
+    "license": null,
+    "license_files": [
+      "vendor/licenses/sacremoses/LICENSE"
+    ]
+  },
+  {
+    "name": "langid",
+    "version": "1.1.6",
+    "license": "BSD",
+    "license_files": []
+  },
+  {
+    "name": "packaging",
+    "version": "26.2",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "license_files": [
+      "vendor/licenses/packaging/licenses/LICENSE",
+      "vendor/licenses/packaging/licenses/LICENSE.APACHE",
+      "vendor/licenses/packaging/licenses/LICENSE.BSD"
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.3",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "license_files": [
+      "vendor/licenses/numpy/licenses/LICENSE.txt",
+      "vendor/licenses/numpy/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "vendor/licenses/numpy/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "vendor/licenses/numpy/licenses/numpy/_core/src/highway/LICENSE",
+      "vendor/licenses/numpy/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "vendor/licenses/numpy/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "vendor/licenses/numpy/licenses/numpy/ma/LICENSE",
+      "vendor/licenses/numpy/licenses/numpy/random/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/random/src/distributions/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/random/src/philox/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "vendor/licenses/numpy/licenses/numpy/random/src/splitmix64/LICENSE.md"
+    ]
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license": "MIT",
+    "license_files": [
+      "vendor/licenses/PyYAML/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      "vendor/licenses/click/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "joblib",
+    "version": "1.6.0",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      "vendor/licenses/joblib/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "cloudpickle",
+    "version": "3.1.2",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      "vendor/licenses/cloudpickle/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "regex",
+    "version": "2026.9.10",
+    "license": "Apache-2.0 AND CNRI-Python",
+    "license_files": [
+      "vendor/licenses/regex/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "tqdm",
+    "version": "4.70.1",
+    "license": "MPL-2.0 AND MIT",
+    "license_files": [
+      "vendor/licenses/tqdm/licenses/LICENCE"
+    ]
+  },
+  {
+    "name": "nvidia-cublas-cu12",
+    "version": "12.9.2.10",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "license_files": [
+      "vendor/licenses/nvidia-cublas-cu12/licenses/License.txt"
+    ]
+  },
+  {
+    "name": "nvidia-cuda-nvrtc-cu12",
+    "version": "12.9.86",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "license_files": [
+      "vendor/licenses/nvidia-cuda-nvrtc-cu12/licenses/License.txt"
+    ]
+  },
+  {
+    "name": "pyspellchecker",
+    "version": "0.9.0",
+    "license": "MIT",
+    "license_files": [
+      "vendor/licenses/pyspellchecker/LICENSE"
+    ]
+  },
+  {
+    "name": "FreeDict-WikDict",
+    "version": "2025.11.23",
+    "license": "CC-BY-SA-3.0",
+    "license_files": [
+      "vendor/licenses/freedict/CC-BY-SA-3.0.txt"
+    ]
+  }
+]

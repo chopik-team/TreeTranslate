@@ -1,0 +1,2 @@
+# Install ONLY with --no-deps; full upstream dependencies pull unused PyTorch.
+argostranslate==1.11.0

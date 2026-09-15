@@ -54,6 +54,22 @@ class AboutDialog(QDialog):
             credits_layout.addWidget(value, row, 1)
         credits_layout.setColumnStretch(1, 1)
         layout.addWidget(credits)
+
+        engines = QFrame(objectName="aboutEngines")
+        engines_layout = QVBoxLayout(engines)
+        engines_layout.setContentsMargins(18, 14, 18, 14)
+        engines_layout.setSpacing(6)
+        engines_layout.addWidget(QLabel("Движки перевода", objectName="aboutSectionTitle"))
+        engine_lines = (
+            "Argos Translate 1.11.0 — MIT (программный код)",
+            "M2M100 418M INT8 — MIT (согласно официальной карточке модели Meta)",
+            "CTranslate2 4.8.2 — MIT · SentencePiece 0.2.2 — Apache-2.0",
+        )
+        for text in engine_lines:
+            label = QLabel(text)
+            label.setWordWrap(True)
+            engines_layout.addWidget(label)
+        layout.addWidget(engines)
         layout.addStretch()
         attribution = QLabel(
             "Иконки: TreeTranslate Icon Pack · Flaticon · Icons8"
