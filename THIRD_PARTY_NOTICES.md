@@ -1,4 +1,12 @@
-# Third-party notices — TreeTranslate AW 0.4-alpha
+# Third-party notices — TreeTranslate AW 0.5-alpha
+
+## DOCX Document Layer
+
+- python-docx 1.2.0 — MIT. Copyright Steve Canny. Официальный пакет `python-docx`; текст лицензии из установленного wheel сохранён в `vendor/licenses/python-docx/LICENSE`.
+- lxml 6.0.2 — BSD-3-Clause; бинарный wheel также содержит libxml2/libxslt и их notices. Оригинальные LICENSE.txt и LICENSES.txt из wheel сохранены в `vendor/licenses/lxml/`.
+- typing_extensions 4.16.0 — PSF-2.0; транзитивная зависимость python-docx, включена в runtime lock.
+
+В runtime не добавлены Office, LibreOffice или облачные конвертеры. Проверка DOCX выполняется локально через ZIP, lxml и python-docx.
 
 ## Runtime
 

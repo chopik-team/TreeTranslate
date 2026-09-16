@@ -14,6 +14,7 @@ class SettingsService:
             translation_mode=self._settings.value("translation/mode", "Автоматический"),
             acceleration=self._settings.value("performance/device", "Auto"),
             translate_folders=self._settings.value("translation/translate_folders", True, bool),
+            translate_filenames=self._settings.value("translation/translate_filenames", False, bool),
         )
 
     def save_value(self, key: str, value: object) -> None:

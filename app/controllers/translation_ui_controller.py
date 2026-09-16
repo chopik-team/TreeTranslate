@@ -8,7 +8,7 @@ from PySide6.QtGui import QIcon
 from app.config.paths import icon_path
 from app.gui.pages.file_translation_page import FileTranslationPage
 from app.gui.pages.text_translation_page import TextTranslationPage
-from app.models.file_item import mock_file_tree
+from app.models.file_item import FileItem, mock_file_tree
 from app.models.translation_job import JobState
 from app.services.file_picker import FilePicker
 from app.services.settings_service import SettingsService
@@ -34,7 +34,10 @@ class TranslationUiController(QObject):
         self.preferences = preferences or TranslationPreferences(self.settings, self)
         self.sessions = sessions or TranslationSessionManager(parent=self)
         self._text_request_id = 0
-        self.job_config = TranslationJobConfig(self.preferences.translate_directories)
+        self.job_config = TranslationJobConfig(
+            translate_directories=self.preferences.translate_directories,
+            translate_filenames=self.preferences.translate_filenames,
+        )
         self._source_name = "Документация проект.zip"
         file_page.drop_zone.paths_dropped.connect(self.accept_paths)
         file_page.drop_zone.browse_files_requested.connect(self.choose_files)
@@ -43,6 +46,9 @@ class TranslationUiController(QObject):
         file_page.progress.pause_requested.connect(self.service.pause_or_resume)
         file_page.progress.cancel_requested.connect(self.service.cancel)
         file_page.progress.show_output_requested.connect(self._show_output)
+        file_page.progress.open_file_requested.connect(self._open_file)
+        if getattr(service, 'real_files', False):
+            service.files.failed.connect(file_page.file_status.setText)
         text_page.translate_requested.connect(self.translate_text)
         text_page.variant_chosen.connect(self._use_dictionary_variant)
         self.service.state_changed.connect(self._state_changed)
@@ -64,10 +70,12 @@ class TranslationUiController(QObject):
             for button in page.acceleration.group.buttons():
                 button.toggled.connect(lambda checked, name=button.text(): checked and self.preferences.set_device(name))
         file_page.translate_folders.toggled.connect(self.preferences.set_translate_directories)
+        file_page.translate_filenames.toggled.connect(self.preferences.set_translate_filenames)
         self.preferences.device_changed.connect(self._apply_device)
         self.preferences.profile_changed.connect(self._apply_profile)
         self.preferences.languages_changed.connect(self._apply_languages)
         self.preferences.translate_directories_changed.connect(self._apply_translate_directories)
+        self.preferences.translate_filenames_changed.connect(self._apply_translate_filenames)
         self.refresh_performance_controls()
         self.preferences.device_changed.connect(self._retranslate)
         self.preferences.profile_changed.connect(self._retranslate)
@@ -78,6 +86,7 @@ class TranslationUiController(QObject):
         self._apply_device(self.preferences.device)
         self._apply_languages(self.preferences.source_language, self.preferences.target_language)
         self._apply_translate_directories(self.preferences.translate_directories)
+        self._apply_translate_filenames(self.preferences.translate_filenames)
 
     def _apply_profile(self, value: str) -> None:
         for page in (self.file_page, self.text_page):
@@ -105,6 +114,12 @@ class TranslationUiController(QObject):
         self.file_page.translate_folders.blockSignals(False)
         self.job_config.translate_directories = enabled
 
+    def _apply_translate_filenames(self, enabled: bool) -> None:
+        self.file_page.translate_filenames.blockSignals(True)
+        self.file_page.translate_filenames.setChecked(enabled)
+        self.file_page.translate_filenames.blockSignals(False)
+        self.job_config.translate_filenames = enabled
+
     def _save_languages(self) -> None:
         sender = self.sender()
         selector = self.file_page.languages if sender in (
@@ -120,7 +135,30 @@ class TranslationUiController(QObject):
             return
         self.file_page.progress.set_output_paths(())
         self.service.configure(self.settings.load_performance())
+        if getattr(self.service, 'real_files', False):
+            from app.documents.job import DocumentConfig
+            from app.engine.types import DevicePreference, PerformanceProfile
+            from app.services.hybrid_translation_service import PROFILE_NAMES
+            selected = set(self.file_page.file_tree.selected_paths())
+            self.service.files.selected = tuple(f for f in self.service.files.scan_result.files if f.path in selected)
+            mode, path = self.settings.output_location()
+            policy = self.settings.load_performance()
+            self.service.files.config = DocumentConfig(
+                self.preferences.source_language, self.preferences.target_language,
+                DevicePreference(self.preferences.device.lower()),
+                PROFILE_NAMES.get(self.preferences.profile, PerformanceProfile.AUTOMATIC),
+                int(policy.cpu_threads) if policy.cpu_threads.isdigit() else None,
+                Path(path) if mode == 'custom' and path else None,
+                str(self.settings.value('general/output_template', '{name}_{lang}')),
+                self.preferences.translate_directories,
+                self.preferences.translate_filenames)
+            self.file_page.file_status.setText('Перевод DOCX · Оригиналы сохраняются')
         self.service.start()
+
+    def _open_file(self):
+        paths = self.file_page.progress.output_paths
+        if paths and paths[-1].is_file():
+            QDesktopServices.openUrl(QUrl.fromLocalFile(str(paths[-1].resolve())))
 
     @Slot()
     def _show_output(self) -> None:
@@ -150,21 +188,56 @@ class TranslationUiController(QObject):
 
     @Slot(list)
     def accept_paths(self, paths: list[Path]) -> None:
+        if not paths:
+            return
+        if getattr(self.service, 'real_files', False):
+            if self.service.files.busy or not self.sessions.start('file'):
+                return
+            self.file_page.progress.set_output_paths(())
+            self.service.scan(paths)
+            return
         self._source_name = paths[0].name if len(paths) == 1 else f"Выбрано файлов: {len(paths)}"
         self.file_page.progress.set_output_paths(())
         self.service.scan()
 
     def _show_tree(self) -> None:
+        if getattr(self.service, 'real_files', False):
+            result = self.service.files.scan_result
+            root = FileItem('Выбранные DOCX', True)
+            folders = {}
+            for source in result.files:
+                parent = root
+                if source.root:
+                    parts = (source.root.name,) + source.relative.parts[:-1]
+                    key = str(source.root)
+                    for part in parts:
+                        key += '/' + part
+                        if key not in folders:
+                            folders[key] = FileItem(part, True)
+                            parent.children.append(folders[key])
+                        parent = folders[key]
+                parent.children.append(FileItem(source.path.name, path=str(source.path)))
+            self.file_page.file_tree.populate(root)
+            self.file_page.start_button.setEnabled(bool(result.files))
+            self.file_page.file_status.setText(
+                f'Найдено DOCX: {len(result.files)}. Пропущено: {len(result.skipped)}. Формат пока не поддерживается для других файлов.'
+                if result.skipped else f'Найдено DOCX: {len(result.files)}. Оригиналы сохраняются.')
+            return
         self.file_page.file_tree.populate(mock_file_tree(self._source_name))
         self.file_page.progress.set_progress(self.service.progress)
 
     def _state_changed(self, state: JobState) -> None:
+        busy = state in {JobState.SCANNING, JobState.TRANSLATING, JobState.PAUSED, JobState.CANCELLING}
+        for widget in (self.file_page.drop_zone, self.file_page.file_tree, self.file_page.languages,
+                       self.file_page.mode, self.file_page.acceleration, self.file_page.translate_folders,
+                       self.file_page.translate_filenames):
+            widget.setEnabled(not busy)
         self.file_page.progress.set_state(state)
         self.file_page.start_button.setEnabled(state in {JobState.READY, JobState.COMPLETED, JobState.CANCELLED, JobState.ERROR})
         restart = state in {JobState.COMPLETED, JobState.CANCELLED, JobState.ERROR}
         self.file_page.start_button.setText("  Запустить снова" if restart else "  Начать перевод")
         self.file_page.start_button.setIcon(QIcon(icon_path("refresh" if restart else "play")))
-        if state in {JobState.CANCELLED, JobState.COMPLETED, JobState.ERROR}:
+        if state in {JobState.READY, JobState.CANCELLED, JobState.COMPLETED, JobState.ERROR}:
             self.sessions.finish("file")
 
     @Slot(str)

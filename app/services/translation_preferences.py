@@ -12,6 +12,7 @@ class TranslationPreferences(QObject):
     profile_changed = Signal(str)
     languages_changed = Signal(str, str)
     translate_directories_changed = Signal(bool)
+    translate_filenames_changed = Signal(bool)
 
     def __init__(self, settings: SettingsService | None = None, parent=None) -> None:
         super().__init__(parent)
@@ -23,6 +24,7 @@ class TranslationPreferences(QObject):
         self.source_language = app.source_language
         self.target_language = app.target_language
         self.translate_directories = app.translate_folders
+        self.translate_filenames = app.translate_filenames
 
     def set_device(self, value: str) -> None:
         if value == self.device:
@@ -52,3 +54,10 @@ class TranslationPreferences(QObject):
         self.translate_directories = enabled
         self.settings.save_value("translation/translate_folders", enabled)
         self.translate_directories_changed.emit(enabled)
+
+    def set_translate_filenames(self, enabled: bool) -> None:
+        if enabled == self.translate_filenames:
+            return
+        self.translate_filenames = enabled
+        self.settings.save_value("translation/translate_filenames", enabled)
+        self.translate_filenames_changed.emit(enabled)

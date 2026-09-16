@@ -6,7 +6,7 @@ from app.config.settings import PerformanceSettings
 
 
 class TranslationService(QObject):
-    """Controller-facing boundary for real text and the retained file demonstration."""
+    """Controller-facing boundary for text and document jobs."""
 
     state_changed = Signal(object)
     scan_finished = Signal()

@@ -23,11 +23,11 @@ class DropZone(QFrame):
         layout.addStretch()
         icon = QLabel(alignment=Qt.AlignmentFlag.AlignCenter)
         icon.setPixmap(QIcon(icon_path("file")).pixmap(62, 62))
-        title = QLabel("Перетащите папку, файлы\nили архив сюда", alignment=Qt.AlignmentFlag.AlignCenter)
+        title = QLabel("Перетащите DOCX\nили папку сюда", alignment=Qt.AlignmentFlag.AlignCenter)
         title.setObjectName("heading")
         hint = QLabel(
-            "Поддерживаются папки и отдельные файлы\n"
-            "Архивы: .ZIP, .RAR  •  Документы: .PDF, .DOCX, .TXT, .MD",
+            "Документы Word .DOCX\n"
+            "Папки проверяются вместе с вложенными каталогами",
             alignment=Qt.AlignmentFlag.AlignCenter,
         )
         hint.setObjectName("secondary")

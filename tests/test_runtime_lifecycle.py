@@ -48,3 +48,24 @@ def test_idle_cannot_unload_during_native_inference():
     idle.join(3)
     assert backend.loaded
     runtime.shutdown()
+
+
+def test_file_job_pin_prevents_idle_unload_even_without_inference():
+    backend = FakeBackend('argos')
+    clock = [0]
+    runtime = RuntimeManager({'argos': backend}, idle_timeout_seconds=1000, clock=lambda: clock[0])
+    options = FakeDevices().options('cpu', RoutingPolicy().profile(request().performance_profile))[0]
+    try:
+        with runtime.keep_warm():
+            runtime.run('argos', request(), PairKind.DIRECT, options, Event())
+            clock[0] = 5000
+            assert not runtime.release_idle()
+            assert backend.loaded
+            with runtime.keep_warm():
+                assert runtime._pins == 2
+        assert runtime._pins == 0
+        assert not runtime.release_idle()
+        clock[0] = 6001
+        assert runtime.release_idle()
+    finally:
+        runtime.shutdown()

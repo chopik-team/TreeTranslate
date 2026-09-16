@@ -16,6 +16,7 @@ class ProgressPanel(QFrame):
     pause_requested = Signal()
     cancel_requested = Signal()
     show_output_requested = Signal()
+    open_file_requested = Signal()
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent, objectName="progressPanel")
@@ -41,7 +42,7 @@ class ProgressPanel(QFrame):
         self.remaining = QLabel("—", objectName="progressValue")
         details = (
             ("Текущий файл", self.current),
-            ("Обработано объектов", self.processed),
+            ("Обработано сегментов", self.processed),
             ("Прошло времени", self.elapsed),
             ("Осталось примерно", self.remaining),
         )
@@ -54,7 +55,10 @@ class ProgressPanel(QFrame):
         buttons = QHBoxLayout()
         buttons.setSpacing(10)
         buttons.addStretch()
-        self.show_output = QPushButton(QIcon(icon_path("folder")), "  Показать в папке")
+        self.show_output = QPushButton(QIcon(icon_path("folder")), "  Открыть папку")
+        self.open_file = QPushButton("Открыть файл")
+        self.open_file.clicked.connect(self.open_file_requested)
+        buttons.addWidget(self.open_file)
         self.pause = QPushButton(QIcon(icon_path("pause")), "  Приостановить")
         self.cancel = QPushButton(QIcon(icon_path("cancel")), "  Отменить", objectName="danger")
         self.show_output.clicked.connect(self.show_output_requested)
@@ -64,6 +68,9 @@ class ProgressPanel(QFrame):
         buttons.addWidget(self.pause)
         buttons.addWidget(self.cancel)
         layout.addLayout(buttons)
+        self.output_location = QLabel('', objectName='secondary')
+        self.output_location.setWordWrap(True)
+        layout.addWidget(self.output_location)
         self._output_paths: tuple[Path, ...] = ()
         self.set_state(JobState.IDLE)
 
@@ -71,13 +78,14 @@ class ProgressPanel(QFrame):
         labels = {
             JobState.IDLE: "Ожидание", JobState.DRAGGING: "Добавление…", JobState.SCANNING: "Сканирование…",
             JobState.READY: "Готово к запуску", JobState.TRANSLATING: "Выполняется", JobState.PAUSED: "Приостановлено",
-            JobState.CANCELLING: "Отмена…", JobState.COMPLETED: "Завершено", JobState.ERROR: "Ошибка", JobState.CANCELLED: "Отменено",
+            JobState.CANCELLING: "Отмена…", JobState.COMPLETED: "Перевод завершён", JobState.ERROR: "Ошибка", JobState.CANCELLED: "Отменено",
         }
         self.status.setText(labels[state])
         active = state in {JobState.TRANSLATING, JobState.PAUSED}
         self.pause.setEnabled(active)
-        self.cancel.setEnabled(active)
+        self.cancel.setEnabled(active or state == JobState.SCANNING)
         self.show_output.setEnabled(bool(self._output_paths))
+        self.open_file.setEnabled(bool(self._output_paths))
         if state is JobState.PAUSED:
             self.pause.setIcon(QIcon(icon_path("play")))
             self.pause.setText("  Продолжить")
@@ -87,7 +95,9 @@ class ProgressPanel(QFrame):
 
     def set_output_paths(self, paths) -> None:
         self._output_paths = tuple(Path(path) for path in paths if Path(path).exists())
+        self.output_location.setText(str(self._output_paths[-1]) if self._output_paths else '')
         self.show_output.setEnabled(bool(self._output_paths))
+        self.open_file.setEnabled(bool(self._output_paths))
 
     @property
     def output_paths(self) -> tuple[Path, ...]:
@@ -96,8 +106,9 @@ class ProgressPanel(QFrame):
     def set_progress(self, progress: TranslationProgress) -> None:
         self.bar.setValue(progress.percent)
         self.percent.setText(f"{progress.percent}%")
-        self.current.setText(progress.current_file)
+        prefix = f"{progress.file_index}/{progress.file_total} · " if progress.file_total else ""
+        self.current.setText(prefix + progress.current_file)
         self.processed.setText(f"{progress.processed} / {progress.total}")
         self.elapsed.setText(_time(progress.elapsed_seconds))
-        remaining = round(progress.elapsed_seconds * (100 - progress.percent) / progress.percent) if progress.percent else 0
-        self.remaining.setText(f"~{_time(remaining)}" if progress.percent else "—")
+        remaining = progress.eta_seconds if progress.eta_seconds is not None else round(progress.elapsed_seconds * (100 - progress.percent) / progress.percent) if progress.percent else 0
+        self.remaining.setText(_time(remaining) if progress.percent else "—")

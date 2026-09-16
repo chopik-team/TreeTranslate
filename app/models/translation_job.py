@@ -22,3 +22,6 @@ class TranslationProgress:
     total: int = 14
     current_file: str = "—"
     elapsed_seconds: int = 0
+    file_index: int = 0
+    file_total: int = 0
+    eta_seconds: int | None = None

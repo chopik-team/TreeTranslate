@@ -9,7 +9,7 @@ from app.config.settings import PerformanceSettings
 from app.engine.errors import TranslationCancelledError, TranslationError
 from app.engine.interfaces import TextTranslationEngine
 from app.engine.types import DevicePreference, PerformanceProfile, TranslationRequest
-from app.services.mock_translation_service import MockTranslationService
+from app.services.document_translation_service import DocumentTranslationService
 from app.services.translation_service import TranslationService
 
 PROFILE_NAMES = {
@@ -30,10 +30,12 @@ class HybridTranslationService(TranslationService):
             from app.engine.factory import create_translation_engine
             engine = create_translation_engine()
         self.engine = engine
-        self.files = MockTranslationService(self)  # File Translation Engine: PLANNED / MOCK
+        self.real_files = True
+        self.files = DocumentTranslationService(self)
         self.files.state_changed.connect(self.state_changed)
         self.files.scan_finished.connect(self.scan_finished)
         self.files.progress_changed.connect(self.progress_changed)
+        self.files.file_outputs_ready.connect(self.file_outputs_ready)
         self._executor = None
         self._pending = None
         self._active_cancel = None
@@ -52,8 +54,13 @@ class HybridTranslationService(TranslationService):
     def configure(self, policy: PerformanceSettings) -> None:
         self.files.configure(policy)
 
-    def scan(self):
-        self.files.scan()
+    def executor(self):
+        if self._executor is None:
+            self._executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="TreeTranslate")
+        return self._executor
+
+    def scan(self, paths):
+        self.files.scan(paths)
 
     def start(self):
         self.files.start()
@@ -66,7 +73,7 @@ class HybridTranslationService(TranslationService):
 
     def submit_text(self, text: str, source: str, target: str,
                     policy: PerformanceSettings, request_id: str) -> None:
-        if self._closed:
+        if self._closed or self.files.busy:
             return
         request = TranslationRequest(
             text, source, target, DevicePreference(policy.device.lower()),

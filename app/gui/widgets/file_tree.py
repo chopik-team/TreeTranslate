@@ -62,12 +62,25 @@ class FileTree(QFrame):
 
     def _make_item(self, model: FileItem) -> QTreeWidgetItem:
         item = QTreeWidgetItem([model.name])
+        item.setData(0, Qt.ItemDataRole.UserRole, model.path)
         item.setIcon(0, QIcon(icon_path("folder" if model.is_folder else "file")))
         item.setFlags(item.flags() | Qt.ItemFlag.ItemIsUserCheckable)
         item.setCheckState(0, Qt.CheckState.Checked if model.checked else Qt.CheckState.Unchecked)
         for child in model.children:
             item.addChild(self._make_item(child))
         return item
+
+    def selected_paths(self):
+        paths = []
+        def visit(item):
+            path = item.data(0, Qt.ItemDataRole.UserRole)
+            if path and item.checkState(0) == Qt.CheckState.Checked:
+                paths.append(Path(path))
+            for index in range(item.childCount()):
+                visit(item.child(index))
+        for index in range(self.tree.topLevelItemCount()):
+            visit(self.tree.topLevelItem(index))
+        return paths
 
     @staticmethod
     def _counts(item: FileItem) -> tuple[int, int]:

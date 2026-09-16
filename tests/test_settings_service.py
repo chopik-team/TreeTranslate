@@ -22,6 +22,7 @@ def test_local_settings_round_trip(tmp_path) -> None:
         "performance/device": "GPU",
         "performance/mode": "Турбо",
         "translation/translate_folders": False,
+        "translation/translate_filenames": True,
         "general/output_location": "custom",
         "general/output_path": "D:/Translations",
     }
@@ -36,6 +37,7 @@ def test_local_settings_round_trip(tmp_path) -> None:
     assert restored.load().target_language == "Японский"
     assert restored.load().acceleration == "GPU"
     assert restored.load().translate_folders is False
+    assert restored.load().translate_filenames is True
     assert restored.load_performance().mode == "Турбо"
 
 

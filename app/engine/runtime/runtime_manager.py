@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from threading import Event, RLock, Timer
 from time import monotonic
+from contextlib import contextmanager
 
 from app.engine.backends.base_backend import BaseBackend, check_cancelled
 from app.engine.errors import TranslationCancelledError
@@ -24,11 +25,26 @@ class RuntimeManager:
         self._last_used = 0.0
         self._timer: Timer | None = None
         self._closed = False
+        self._pins = 0
+
+    @contextmanager
+    def keep_warm(self):
+        with self._lock:
+            self._pins += 1
+            if self._timer:
+                self._timer.cancel()
+        try:
+            yield
+        finally:
+            with self._lock:
+                self._pins -= 1
+                self._last_used = self.clock()
+                self._schedule_idle()
 
     def _schedule_idle(self) -> None:
         if self._timer:
             self._timer.cancel()
-        if self.idle_timeout_seconds > 0 and not self._closed:
+        if self.idle_timeout_seconds > 0 and not self._closed and not self._pins:
             self._timer = Timer(self.idle_timeout_seconds, self.release_idle)
             self._timer.daemon = True
             self._timer.start()
@@ -56,7 +72,7 @@ class RuntimeManager:
 
     def release_idle(self) -> bool:
         with self._lock:
-            if self._warm and self.idle_timeout_seconds > 0 and self.clock() - self._last_used >= self.idle_timeout_seconds:
+            if not self._pins and self._warm and self.idle_timeout_seconds > 0 and self.clock() - self._last_used >= self.idle_timeout_seconds:
                 self.backends[self._warm].shutdown()
                 self._warm = None
                 self._timer = None

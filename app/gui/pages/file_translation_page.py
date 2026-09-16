@@ -49,15 +49,18 @@ class FileTranslationPage(QWidget):
         divider.setFixedHeight(1)
         layout.addWidget(divider)
         layout.addWidget(QLabel("Дополнительные параметры", objectName="caption"))
-        layout.addLayout(self._option_row("Перевести папки", "Названия каталогов", True))
+        layout.addLayout(self._option_row("Перевести названия папок", "directories", True))
+        layout.addLayout(self._option_row("Перевести названия файлов", "filenames", False))
         return panel
 
     def _option_row(self, title: str, suffix: str, checked: bool) -> QHBoxLayout:
         row = QHBoxLayout()
         toggle = ToggleSwitch(checked)
-        if title == "Перевести папки":
+        if suffix == "directories":
             self.translate_folders = toggle
-        text = QLabel(title + (f" ({suffix})" if suffix else ""))
+        elif suffix == "filenames":
+            self.translate_filenames = toggle
+        text = QLabel(title)
         row.addWidget(toggle)
         row.addWidget(text)
         row.addStretch()
@@ -72,8 +75,9 @@ class FileTranslationPage(QWidget):
         self.file_tree = FileTree()
         layout.addWidget(self.file_tree, 1)
         self.progress = ProgressPanel()
-        self.progress.setToolTip("Демонстрация: перевод файлов пока не реализован.")
-        layout.addWidget(QLabel("Перевод файлов — демонстрация", objectName="secondary"))
+        self.file_status = QLabel("DOCX · Оригиналы сохраняются. Другие форматы пока не поддерживаются.", objectName="secondary")
+        self.file_status.setWordWrap(True)
+        layout.addWidget(self.file_status)
         layout.addWidget(self.progress)
         return workspace
 

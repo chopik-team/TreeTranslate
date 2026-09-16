@@ -146,6 +146,10 @@ def test_translate_directories_is_a_persisted_job_config_property() -> None:
     window.file_page.translate_folders.setChecked(False)
     assert window.translation.job_config.translate_directories is False
     assert window.preferences.translate_directories is False
+    window.file_page.translate_filenames.setChecked(True)
+    assert window.translation.job_config.translate_filenames is True
+    assert window.preferences.translate_filenames is True
+    assert window.preferences.translate_directories is False
     window.close()
 
 

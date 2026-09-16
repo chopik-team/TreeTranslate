@@ -8,6 +8,7 @@ class AppSettings:
     translation_mode: str = "Автоматический"
     acceleration: str = "Auto"
     translate_folders: bool = True
+    translate_filenames: bool = False
 
 
 @dataclass(slots=True)
@@ -27,3 +28,4 @@ class TranslationJobConfig:
     """UI-side contract to be passed to the future Translation Engine."""
 
     translate_directories: bool = True
+    translate_filenames: bool = False

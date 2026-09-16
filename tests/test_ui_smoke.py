@@ -11,7 +11,7 @@ from app.gui.main_window import MainWindow as ProductionMainWindow
 from app.services.mock_translation_service import MockTranslationService
 from app.gui.dialogs.settings_dialog import SettingsDialog
 from app.gui.dialogs.about_dialog import AboutDialog
-from app.models.translation_job import JobState
+from app.models.translation_job import JobState, TranslationProgress
 from app.gui.widgets.translation_mode import ModeRequirementsCombo
 from app.gui.widgets.workspace_splitter import WorkspaceSplitterHandle
 from app.gui.widgets.language_combo import LanguageComboBox
@@ -427,6 +427,27 @@ def test_file_controls_follow_job_state() -> None:
     assert "Запустить снова" in window.file_page.start_button.text()
     assert window.file_page.start_button.isEnabled()
     assert not window.file_page.progress.show_output.isEnabled()
+    window.close()
+
+
+def test_eta_value_does_not_repeat_approximation_marker() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    panel = window.file_page.progress
+    panel.set_progress(TranslationProgress(percent=50, elapsed_seconds=84, eta_seconds=84))
+    assert panel.remaining.text() == "00:01:24"
+    panel.set_progress(TranslationProgress())
+    assert panel.remaining.text() == "—"
+    window.close()
+
+
+def test_file_and_folder_name_translation_toggles_are_visually_symmetric() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    labels = [label.text() for label in window.file_page.findChildren(QLabel)]
+    assert "Перевести названия папок" in labels
+    assert "Перевести названия файлов" in labels
+    assert window.file_page.translate_folders is not window.file_page.translate_filenames
     window.close()
 
 

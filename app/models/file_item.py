@@ -7,6 +7,7 @@ class FileItem:
     is_folder: bool = False
     children: list["FileItem"] = field(default_factory=list)
     checked: bool = True
+    path: str | None = None
 
 
 def mock_file_tree(source_name: str = "Документация проект.zip") -> FileItem:
