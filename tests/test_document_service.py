@@ -8,11 +8,13 @@ from time import monotonic, sleep
 os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
 from docx import Document
 from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import QSettings
 
 from app.documents.job import DocumentConfig
 from app.gui.main_window import MainWindow
 from app.models.translation_job import JobState
 from app.services.hybrid_translation_service import HybridTranslationService
+from app.services.settings_service import SettingsService
 from test_hybrid_service import SlowEngine
 
 
@@ -117,3 +119,110 @@ def test_pdf_scan_is_honest_and_cannot_start(tmp_path):
         assert window.file_page.progress.bar.value() == 0
     finally:
         window.close()
+
+
+def test_completed_job_opens_output_folder_only_when_enabled(tmp_path):
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow(translation_service=HybridTranslationService(engine=make_engine()))
+    output = tmp_path / 'result' / 'translated.docx'
+    output.parent.mkdir()
+    output.write_bytes(b'result')
+    try:
+        window.file_page.progress.set_output_paths([output])
+        with patch.object(window.translation.settings, 'value', return_value=False), \
+             patch('app.controllers.translation_ui_controller.QDesktopServices.openUrl', return_value=True) as open_url:
+            window.translation._state_changed(JobState.COMPLETED)
+            open_url.assert_not_called()
+
+        with patch.object(window.translation.settings, 'value', return_value=True), \
+             patch('app.controllers.translation_ui_controller.QDesktopServices.openUrl', return_value=True) as open_url:
+            window.translation._state_changed(JobState.COMPLETED)
+        open_url.assert_called_once()
+        assert Path(open_url.call_args.args[0].toLocalFile()) == output.parent.resolve()
+    finally:
+        window.close()
+
+
+def test_unfinished_job_is_restored_as_ready_without_auto_start(tmp_path):
+    app = QApplication.instance() or QApplication([])
+    source = make_source(tmp_path)
+    settings = SettingsService(QSettings(str(tmp_path / 'settings.ini'), QSettings.Format.IniFormat))
+    settings.save_value('general/restore_job', True)
+    settings.save_unfinished_job([source])
+    engine = make_engine()
+    engine.release.set()
+    service = HybridTranslationService(engine=engine)
+    window = MainWindow(translation_service=service)
+    window.translation.settings = settings
+    window.translation.preferences.settings = settings
+    try:
+        window.show()
+        wait_for(lambda: service.state == JobState.READY)
+        assert window.file_page.start_button.isEnabled()
+        assert window.file_page.file_tree.selected_paths() == [source.resolve()]
+        assert 'Задача восстановлена' in window.file_page.file_status.text()
+        assert not engine.calls
+    finally:
+        window.close()
+
+
+def test_finished_or_cancelled_job_is_not_restored(tmp_path):
+    app = QApplication.instance() or QApplication([])
+    source = make_source(tmp_path)
+    settings = SettingsService(QSettings(str(tmp_path / 'settings.ini'), QSettings.Format.IniFormat))
+    settings.save_value('general/restore_job', True)
+    settings.save_unfinished_job([source])
+    window = MainWindow(translation_service=HybridTranslationService(engine=make_engine()))
+    window.translation.settings = settings
+    try:
+        window.translation._state_changed(JobState.CANCELLED)
+        assert settings.unfinished_job_paths() == ()
+    finally:
+        window.close()
+
+
+def test_completed_job_stays_cleared_until_restarted(tmp_path):
+    app = QApplication.instance() or QApplication([])
+    source = make_source(tmp_path)
+    settings = SettingsService(QSettings(str(tmp_path / 'settings.ini'), QSettings.Format.IniFormat))
+    settings.save_value('general/restore_job', True)
+    engine = make_engine()
+    engine.release.set()
+    service = HybridTranslationService(engine=engine)
+    window = MainWindow(translation_service=service)
+    window.translation.settings = settings
+    try:
+        window.translation.accept_paths([source])
+        wait_for(lambda: service.state == JobState.READY)
+        window.translation._start_translation()
+        wait_for(lambda: service.state == JobState.COMPLETED)
+        window.translation.update_restore_preference()
+        assert settings.unfinished_job_paths() == ()
+        window.translation._start_translation()
+        assert settings.unfinished_job_paths() == (source.resolve(),)
+        wait_for(lambda: service.state == JobState.COMPLETED)
+    finally:
+        window.close()
+
+
+def test_shutdown_preserves_active_job_and_ignores_rejected_paths(tmp_path):
+    app = QApplication.instance() or QApplication([])
+    source = make_source(tmp_path)
+    settings = SettingsService(QSettings(str(tmp_path / 'settings.ini'), QSettings.Format.IniFormat))
+    settings.save_value('general/restore_job', True)
+    engine = make_engine()
+    service = HybridTranslationService(engine=engine)
+    window = MainWindow(translation_service=service)
+    window.translation.settings = settings
+    try:
+        window.translation.accept_paths([source])
+        wait_for(lambda: service.state == JobState.READY)
+        window.translation._start_translation()
+        assert engine.entered.wait(2)
+        window.translation.accept_paths([tmp_path / 'rejected.docx'])
+        assert settings.unfinished_job_paths() == (source.resolve(),)
+    finally:
+        engine.release.set()
+        window.close()
+    QApplication.processEvents()
+    assert settings.unfinished_job_paths() == (source.resolve(),)

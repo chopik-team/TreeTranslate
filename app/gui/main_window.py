@@ -58,6 +58,10 @@ class MainWindow(QMainWindow):
         self.brand_menu.support_requested.connect(self.open_support_page)
         self.brand_menu.exit_requested.connect(self.close)
 
+    def showEvent(self, event) -> None:
+        super().showEvent(event)
+        self.translation.restore_unfinished_job()
+
     def closeEvent(self, event) -> None:
         self.text_page.shutdown()
         self.translation.cancel_text_requests()
@@ -76,6 +80,7 @@ class MainWindow(QMainWindow):
     def open_settings(self) -> None:
         SettingsDialog(self, self.settings, self.preferences).exec()
         self.translation.refresh_performance_controls()
+        self.translation.update_restore_preference()
 
     def request_navigation(self, index: int) -> None:
         current = self.stack.currentIndex()

@@ -30,10 +30,13 @@ class TranslationUiController(QObject):
         self.file_page = file_page
         self.text_page = text_page
         self.service = service
-        self.settings = SettingsService()
-        self.preferences = preferences or TranslationPreferences(self.settings, self)
+        self.preferences = preferences or TranslationPreferences(SettingsService(), self)
+        self.settings = self.preferences.settings
         self.sessions = sessions or TranslationSessionManager(parent=self)
         self._text_request_id = 0
+        self._source_paths: tuple[Path, ...] = ()
+        self._restoring_job = False
+        self._restore_attempted = False
         self.job_config = TranslationJobConfig(
             translate_directories=self.preferences.translate_directories,
             translate_filenames=self.preferences.translate_filenames,
@@ -133,6 +136,8 @@ class TranslationUiController(QObject):
     def _start_translation(self) -> None:
         if not self.sessions.start("file"):
             return
+        if self.settings.restore_job_enabled() and self._source_paths:
+            self.settings.save_unfinished_job(self._source_paths)
         self.file_page.progress.set_output_paths(())
         self.service.configure(self.settings.load_performance())
         if getattr(self.service, 'real_files', False):
@@ -174,6 +179,13 @@ class TranslationUiController(QObject):
         location = paths[0] if paths[0].is_dir() else paths[0].parent
         QDesktopServices.openUrl(QUrl.fromLocalFile(str(location.resolve())))
 
+    def _open_output_directory(self) -> None:
+        paths = self.file_page.progress.output_paths
+        if not paths:
+            return
+        location = paths[-1] if paths[-1].is_dir() else paths[-1].parent
+        QDesktopServices.openUrl(QUrl.fromLocalFile(str(location.resolve())))
+
     @Slot()
     def choose_files(self) -> None:
         paths = FilePicker.choose_files(self.file_page)
@@ -193,12 +205,42 @@ class TranslationUiController(QObject):
         if getattr(self.service, 'real_files', False):
             if self.service.files.busy or not self.sessions.start('file'):
                 return
+        if not self._restoring_job:
+            self._restore_attempted = True
+        self._source_paths = tuple(Path(path).resolve() for path in paths)
+        if self.settings.restore_job_enabled():
+            self.settings.save_unfinished_job(self._source_paths)
+        else:
+            self.settings.clear_unfinished_job()
+        if getattr(self.service, 'real_files', False):
             self.file_page.progress.set_output_paths(())
             self.service.scan(paths)
             return
         self._source_name = paths[0].name if len(paths) == 1 else f"Выбрано файлов: {len(paths)}"
         self.file_page.progress.set_output_paths(())
         self.service.scan()
+
+    def restore_unfinished_job(self) -> None:
+        if self._restore_attempted or self._source_paths:
+            return
+        self._restore_attempted = True
+        if not getattr(self.service, 'real_files', False) or self.service.files.busy:
+            return
+        paths = self.settings.unfinished_job_paths()
+        if not paths:
+            if self.settings.value("job/unfinished", False, bool):
+                self.settings.clear_unfinished_job()
+            return
+        self._restoring_job = True
+        self.file_page.file_status.setText("Восстановление незавершённой задачи…")
+        self.accept_paths(list(paths))
+
+    def update_restore_preference(self) -> None:
+        unfinished = self.service.state not in {JobState.COMPLETED, JobState.CANCELLED}
+        if self.settings.restore_job_enabled() and self._source_paths and unfinished:
+            self.settings.save_unfinished_job(self._source_paths)
+        else:
+            self.settings.clear_unfinished_job()
 
     def _show_tree(self) -> None:
         if getattr(self.service, 'real_files', False):
@@ -222,6 +264,11 @@ class TranslationUiController(QObject):
             self.file_page.file_status.setText(
                 f'Найдено DOCX: {len(result.files)}. Пропущено: {len(result.skipped)}. Формат пока не поддерживается для других файлов.'
                 if result.skipped else f'Найдено DOCX: {len(result.files)}. Оригиналы сохраняются.')
+            if self._restoring_job:
+                self._restoring_job = False
+                self.file_page.file_status.setText(
+                    f"Задача восстановлена. Найдено DOCX: {len(result.files)}. Нажмите «Начать перевод»."
+                )
             return
         self.file_page.file_tree.populate(mock_file_tree(self._source_name))
         self.file_page.progress.set_progress(self.service.progress)
@@ -239,6 +286,12 @@ class TranslationUiController(QObject):
         self.file_page.start_button.setIcon(QIcon(icon_path("refresh" if restart else "play")))
         if state in {JobState.READY, JobState.CANCELLED, JobState.COMPLETED, JobState.ERROR}:
             self.sessions.finish("file")
+        if state is JobState.COMPLETED or (
+            state is JobState.CANCELLED and not getattr(self.service, '_closed', False)
+        ):
+            self.settings.clear_unfinished_job()
+        if state is JobState.COMPLETED and self.settings.value("general/open_output", False, bool):
+            self._open_output_directory()
 
     @Slot(str)
     def translate_text(self, text: str) -> None:

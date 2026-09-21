@@ -74,6 +74,9 @@ def test_settings_has_separate_language_section() -> None:
     assert dialog.ram_combo.findText("4 GB") >= 0
     assert dialog.vram_combo.findText("4 GB") >= 0
     assert dialog.cpu_threads_combo.count() > 1
+    assert "Масштаб интерфейса" not in {
+        label.text() for label in dialog.findChildren(QLabel)
+    }
     assert all(
         scroll.horizontalScrollBarPolicy() == Qt.ScrollBarPolicy.ScrollBarAlwaysOff
         for scroll in dialog.findChildren(QScrollArea)

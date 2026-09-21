@@ -153,10 +153,16 @@ class SettingsDialog(QDialog):
         layout.addSpacing(4)
         safety = QLabel("🔒  Оригинальные файлы всегда сохраняются", objectName="safetyNotice")
         layout.addWidget(safety)
+        restore_job = self._check(
+            "general/restore_job", "Восстанавливать незавершённую задачу после запуска", False
+        )
+        restore_job.toggled.connect(
+            lambda enabled: None if enabled else self.settings.clear_unfinished_job()
+        )
         self._add_checks(layout, [
-            self._check("general/open_output", "Открывать папку после завершения", True),
+            self._check("general/open_output", "Открывать папку после завершения", False),
             self._check("general/remember_language", "Запоминать последний выбранный язык", True),
-            self._check("general/restore_job", "Восстанавливать незавершённую задачу после запуска", True),
+            restore_job,
         ])
         layout.addStretch()
         return page
@@ -291,7 +297,6 @@ class SettingsDialog(QDialog):
             lambda value: ThemeManager(QApplication.instance(), self.settings).apply(value)
         )
         form.addRow("Тема", theme)
-        form.addRow("Масштаб интерфейса", self._combo("interface/scale", "Автоматически", ["Автоматически", "100%", "125%", "150%"]))
         accent = QComboBox()
         accent.addItem("Фирменный зелёный TreeTranslate")
         accent.setEnabled(False)

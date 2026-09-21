@@ -72,3 +72,24 @@ def test_theme_is_applied_and_restored_from_local_settings(tmp_path) -> None:
     selected = ThemeManager(app, restored).apply_saved_theme()
     assert selected == "Системная"
     assert app.styleSheet() == load_stylesheet("Системная")
+
+
+def test_open_output_defaults_to_disabled(tmp_path) -> None:
+    settings = make_settings(tmp_path)
+    assert settings.value("general/open_output", False, bool) is False
+
+
+def test_unfinished_job_restore_defaults_off_and_round_trips_local_paths(tmp_path) -> None:
+    settings = make_settings(tmp_path)
+    source = tmp_path / "source.docx"
+    source.write_bytes(b"docx")
+    assert settings.restore_job_enabled() is False
+
+    settings.save_value("general/restore_job", True)
+    settings.save_unfinished_job([source])
+    assert settings.unfinished_job_paths() == (source.resolve(),)
+
+    settings.save_value("general/restore_job", False)
+    assert settings.unfinished_job_paths() == ()
+    settings.clear_unfinished_job()
+    assert settings.value("job/unfinished", False, bool) is False

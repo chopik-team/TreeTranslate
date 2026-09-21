@@ -1,4 +1,5 @@
 from PySide6.QtCore import QSettings
+from pathlib import Path
 
 from app.config.settings import AppSettings, PerformanceSettings
 
@@ -35,6 +36,28 @@ class SettingsService:
         elif mode == "Выбранная папка":
             mode = "custom"
         return mode, path
+
+    def restore_job_enabled(self) -> bool:
+        return self.value("general/restore_job", False, bool)
+
+    def save_unfinished_job(self, paths) -> None:
+        normalized = [str(Path(path).resolve()) for path in paths]
+        self.save_value("job/unfinished", bool(normalized))
+        self.save_value("job/source_paths", normalized)
+        self.sync()
+
+    def unfinished_job_paths(self) -> tuple[Path, ...]:
+        if not self.restore_job_enabled() or not self.value("job/unfinished", False, bool):
+            return ()
+        stored = self.value("job/source_paths", [])
+        if isinstance(stored, str):
+            stored = [stored]
+        return tuple(Path(value) for value in stored if value and Path(value).exists())
+
+    def clear_unfinished_job(self) -> None:
+        self._settings.remove("job/unfinished")
+        self._settings.remove("job/source_paths")
+        self.sync()
 
     def load_performance(self) -> PerformanceSettings:
         return PerformanceSettings(
