@@ -1,0 +1,586 @@
+[
+  {
+    "case": "automotive",
+    "device": "cpu",
+    "profile": "balanced",
+    "seconds": 62.17371329999878,
+    "pages": 4,
+    "segments": 111,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 26.212618399993517,
+        "timings": {
+          "load_seconds": 1.0944570999999996,
+          "inference_seconds": 16.066923500002304,
+          "rss_bytes": 1053138944
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 12.603408700000728,
+        "timings": {
+          "load_seconds": 1.5999976312741637e-06,
+          "inference_seconds": 12.51765410000371,
+          "rss_bytes": 1053331456
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 10.861037399998168,
+        "timings": {
+          "load_seconds": 1.7999991541728377e-06,
+          "inference_seconds": 10.764786799998546,
+          "rss_bytes": 1040453632
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 11.98293740000372,
+        "timings": {
+          "load_seconds": 1.2000018614344299e-06,
+          "inference_seconds": 11.88908960000117,
+          "rss_bytes": 1052221440
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.024834437086092714,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5949367088607594,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.023752969121140142,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true
+  },
+  {
+    "case": "automotive",
+    "device": "gpu",
+    "profile": "balanced",
+    "seconds": 8.624725599998783,
+    "pages": 4,
+    "segments": 111,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 6.971087300000363,
+        "timings": {
+          "load_seconds": 1.7523458000068786,
+          "inference_seconds": 0.7602055999959703,
+          "rss_bytes": 1577807872
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.44571859999996377,
+        "timings": {
+          "load_seconds": 1.1000010999850929e-06,
+          "inference_seconds": 0.36741259999689646,
+          "rss_bytes": 1578696704
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4127661000020453,
+        "timings": {
+          "load_seconds": 1.3999961083754897e-06,
+          "inference_seconds": 0.3188984000007622,
+          "rss_bytes": 1578762240
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.39061300000321353,
+        "timings": {
+          "load_seconds": 1.400003384333104e-06,
+          "inference_seconds": 0.30980170000111684,
+          "rss_bytes": 1579028480
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.024834437086092714,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5949367088607594,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.023752969121140142,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true
+  },
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "balanced",
+    "seconds": 8.72045960000105,
+    "pages": 4,
+    "segments": 111,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 6.97447220000322,
+        "timings": {
+          "load_seconds": 1.8928739999973914,
+          "inference_seconds": 0.7380678999979864,
+          "rss_bytes": 1759182848
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.48049490000266815,
+        "timings": {
+          "load_seconds": 1.7999991541728377e-06,
+          "inference_seconds": 0.39877200000046287,
+          "rss_bytes": 1759387648
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4275414000003366,
+        "timings": {
+          "load_seconds": 1.6999983927235007e-06,
+          "inference_seconds": 0.3362563999980921,
+          "rss_bytes": 1759449088
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.3987678999983473,
+        "timings": {
+          "load_seconds": 1.1999945854768157e-06,
+          "inference_seconds": 0.3132175000064308,
+          "rss_bytes": 1759637504
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.024834437086092714,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5949367088607594,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.023752969121140142,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true
+  },
+  {
+    "case": "silverstone",
+    "device": "cpu",
+    "profile": "balanced",
+    "error": "OcrError",
+    "code": "inference",
+    "seconds": 103.5947648999936
+  },
+  {
+    "case": "silverstone",
+    "device": "gpu",
+    "profile": "balanced",
+    "error": "OcrError",
+    "code": "inference",
+    "seconds": 53.40451159999793
+  },
+  {
+    "case": "silverstone",
+    "device": "auto",
+    "profile": "balanced",
+    "seconds": 121.9220331999968,
+    "pages": 1,
+    "segments": 88,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 34.94837639999605,
+        "timings": {
+          "load_seconds": 0.576444199999969,
+          "inference_seconds": 29.67354489999707,
+          "rss_bytes": 782069760
+        },
+        "reason": "complex layout"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.21216407355021216,
+        "reference_characters": 707,
+        "identifier_numeric_recall": 0.6333333333333333,
+        "identifiers_expected": {
+          "ARDOR": 1,
+          "GAMING": 1,
+          "SILVERSTONE": 1,
+          "PC": 1,
+          "PS4": 1,
+          "1": 1,
+          "EURO": 1,
+          "TRUCK": 2,
+          "2": 2,
+          "DIRT": 3,
+          "RALLY": 3,
+          "2.0": 1,
+          "3": 2,
+          "4": 3,
+          "FORZA": 3,
+          "HORIZON": 2,
+          "5": 3,
+          "6": 1,
+          "ASSETTO": 2,
+          "CORSA": 2,
+          "COMPETIZIONE": 1,
+          "7": 3,
+          "8": 1,
+          "PROJECT": 2,
+          "CARS": 2,
+          "9": 2,
+          "F1": 1,
+          "2020": 1,
+          "2022": 1,
+          "10": 2,
+          "11": 1,
+          "12": 1,
+          "WRC": 2,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "MOTORSPORT": 1,
+          "16": 1,
+          "TOCA": 2,
+          "RACE": 2,
+          "DRIVER": 2,
+          "17": 1,
+          "18": 1,
+          "DAKAR": 1,
+          "19": 1,
+          "SNOW": 1,
+          "RUNNER": 1,
+          "20": 1,
+          "FIA": 1,
+          "EUROPEAN": 1,
+          "RACING": 1,
+          "CHAMPIONSHIP": 1,
+          "21": 1,
+          "22": 1,
+          "OVERPASS": 1,
+          "23": 1,
+          "24": 1,
+          "25": 1,
+          "GT": 2,
+          "26": 1,
+          "27": 1,
+          "28": 1,
+          "29": 1
+        },
+        "identifiers_missing": {
+          "ARDOR": 1,
+          "GAMING": 1,
+          "SILVERSTONE": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "DRIVER": 1,
+          "17": 1,
+          "18": 1,
+          "19": 1,
+          "20": 1,
+          "21": 1,
+          "22": 1,
+          "23": 1,
+          "24": 1,
+          "25": 1,
+          "26": 1,
+          "27": 1,
+          "28": 1,
+          "29": 1
+        }
+      }
+    ],
+    "source_sha_unchanged": true
+  }
+]

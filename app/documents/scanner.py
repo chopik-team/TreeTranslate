@@ -29,7 +29,7 @@ def scan_sources(paths, control: JobControl) -> ScanResult:
             return
         hidden = bool(getattr(path.stat(), "st_file_attributes", 0) & 0x2)
         service_name = path.name.startswith(("~$", ".", ".treetranslate-"))
-        if path.suffix.lower() != ".docx" or hidden or service_name:
+        if path.suffix.lower() not in {".docx", ".pdf"} or hidden or service_name:
             skipped.append(path)
             return
         resolved = path.resolve(strict=True)

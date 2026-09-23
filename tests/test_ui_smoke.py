@@ -17,6 +17,7 @@ from app.gui.widgets.workspace_splitter import WorkspaceSplitterHandle
 from app.gui.widgets.language_combo import LanguageComboBox
 from app.gui.widgets.language_selector import LanguageSelector
 from app.gui.widgets.acceleration_selector import HoverInfoButton
+from app.gui.widgets.toggle_switch import ToggleSwitch
 from app.config.constants import APP_VERSION, BOOSTY_URL, PROJECT_GITHUB_URL
 from app.gui.styles.theme import load_stylesheet
 
@@ -451,6 +452,110 @@ def test_file_and_folder_name_translation_toggles_are_visually_symmetric() -> No
     assert "Перевести названия папок" in labels
     assert "Перевести названия файлов" in labels
     assert window.file_page.translate_folders is not window.file_page.translate_filenames
+    window.close()
+
+
+def test_toggle_switch_syncs_progress_when_signals_are_blocked() -> None:
+    app = QApplication.instance() or QApplication([])
+    toggle = ToggleSwitch(True)
+    toggle.blockSignals(True)
+    toggle.setChecked(False)
+    toggle.blockSignals(False)
+    assert not toggle.isChecked()
+    assert toggle.progress == 0.0
+    toggle.blockSignals(True)
+    toggle.setChecked(True)
+    toggle.blockSignals(False)
+    assert toggle.isChecked()
+    assert toggle.progress == 1.0
+
+
+def test_toggle_switch_animates_through_intermediate_progress() -> None:
+    app = QApplication.instance() or QApplication([])
+    toggle = ToggleSwitch(False)
+    toggle.show()
+    QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
+    assert toggle.isChecked()
+    QTest.qWait(toggle._animation.duration() // 2)
+    assert 0.1 < toggle.progress < 0.9
+    QTest.qWait(toggle._animation.duration())
+    assert toggle.progress == 1.0
+    toggle.close()
+
+
+def test_toggle_switch_reverses_from_current_progress() -> None:
+    app = QApplication.instance() or QApplication([])
+    toggle = ToggleSwitch(False)
+    toggle.show()
+    QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
+    QTest.qWait(60)
+    midpoint = toggle.progress
+    assert 0.1 < midpoint < 1.0
+    QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
+    assert not toggle.isChecked()
+    QTest.qWait(45)
+    assert 0.0 < toggle.progress < midpoint
+    QTest.qWait(toggle._animation.duration())
+    assert toggle.progress == 0.0
+    toggle.close()
+
+
+def _rendered_thumb_center(toggle: ToggleSwitch) -> float:
+    image = toggle.grab().toImage()
+    white_x = []
+    for x in range(image.width()):
+        for y in range(6, image.height() - 5):
+            pixel = image.pixelColor(x, y)
+            if (pixel.alpha() > 200 and pixel.red() > 190 and pixel.green() > 190
+                    and pixel.blue() > 190):
+                white_x.append(x)
+    assert white_x
+    return sum(white_x) / len(white_x)
+
+
+def test_real_file_page_toggle_rendered_thumb_moves_across_frames() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    toggle = window.file_page.translate_filenames
+    toggle.blockSignals(True)
+    toggle.setChecked(False)
+    toggle.blockSignals(False)
+    window.show()
+    toggle.show()
+    app.processEvents()
+    frames = [_rendered_thumb_center(toggle)]
+    QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
+    for _ in range(4):
+        QTest.qWait(50)
+        frames.append(_rendered_thumb_center(toggle))
+    assert all(left < right for left, right in zip(frames, frames[1:])), frames
+    assert toggle.isChecked()
+    assert toggle.progress > 0.99
+    window.close()
+
+
+def test_real_file_page_toggle_rendered_reversal_starts_at_current_thumb() -> None:
+    app = QApplication.instance() or QApplication([])
+    window = MainWindow()
+    toggle = window.file_page.translate_filenames
+    toggle.blockSignals(True)
+    toggle.setChecked(False)
+    toggle.blockSignals(False)
+    window.show()
+    toggle.show()
+    app.processEvents()
+    QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
+    QTest.qWait(80)
+    midpoint = _rendered_thumb_center(toggle)
+    QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
+    after_reverse = _rendered_thumb_center(toggle)
+    assert abs(after_reverse - midpoint) <= 2.0, (midpoint, after_reverse)
+    QTest.qWait(60)
+    moving_back = _rendered_thumb_center(toggle)
+    assert 11.0 < moving_back < after_reverse
+    QTest.qWait(180)
+    assert _rendered_thumb_center(toggle) <= 12.0
+    assert not toggle.isChecked()
     window.close()
 
 

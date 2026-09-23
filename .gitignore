@@ -6,8 +6,10 @@ __pycache__/
 .vscode/
 dist/
 build/
+output/
 .venv*/
 vendor/models/argos/
+vendor/models/ocr/paddle/
 vendor/models/m2m100-418m-int8/
 vendor/runtime/cuda/
 *.argosmodel

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "bce-python-sdk",
+    "source": "https://raw.githubusercontent.com/baidubce/bce-sdk-python/aec72ad76efaef94a92e3738f5f98c4d591b295d/LICENSE",
+    "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9",
+    "note": "Official repository license revision; sdist omits license text"
+  },
+  {
+    "name": "bce-python-sdk",
+    "version": "0.9.79",
+    "source": "https://files.pythonhosted.org/packages/9d/64/d31e61620ddaecb7039dc7b8f62eb75b95d2281f2d2016b6d6b22396e16f/bce_python_sdk-0.9.79.tar.gz",
+    "sha256": "cd77476b43347ed28d0211d5ad557e524e1ec648bd093d57c6a6d3de075a7508",
+    "files": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "latex2mathml",
+    "source": "https://raw.githubusercontent.com/roniemartinez/latex2mathml/8a29b7cef13399f0adac9f203b9444303572c550/LICENSE",
+    "sha256": "4ac1e1da07f6b343d54191c5e1716840534e08591b3f9eaec90d6800cdc47543",
+    "note": "Official repository license revision; sdist omits license text"
+  },
+  {
+    "name": "latex2mathml",
+    "version": "3.81.1",
+    "source": "https://files.pythonhosted.org/packages/88/db/336c38300e44582752b95842b15a4be8fe656914cf5b02ad1bec53cebceb/latex2mathml-3.81.1.tar.gz",
+    "sha256": "c95add0c0fcdecad2d70567e0643050d5ea1149fb2e98a5d5792fb1c8eea2ed5",
+    "files": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "sentencepiece",
+    "version": "0.2.2",
+    "source": "https://files.pythonhosted.org/packages/cc/33/ea3cb3839607eb175da835244a798f797f478c5ddf0e8ecdf57ea85a4c70/sentencepiece-0.2.2.tar.gz",
+    "sha256": "3d2b5e824b5622038dc7b490897efe05ebbbb9e7350fc142f3ecc8789ef9bdf6",
+    "files": [
+      "sentencepiece/LICENSE",
+      "sentencepiece/third_party/abseil-cpp/LICENSE",
+      "sentencepiece/third_party/darts_clone/LICENSE",
+      "sentencepiece/third_party/esaxx/LICENSE",
+      "sentencepiece/third_party/protobuf-lite/LICENSE"
+    ]
+  },
+  {
+    "name": "tokenizers",
+    "version": "0.23.2",
+    "source": "https://files.pythonhosted.org/packages/18/1e/bc6587c5ab643b2e17776cace9070a2ae73549c86bffac9934a600bf3c31/tokenizers-0.23.2.tar.gz",
+    "sha256": "7f0f085686b9de0d0079e6f874ae053600db64c5d13049e0bbc0119926d25aac",
+    "files": [
+      "tokenizers/LICENSE"
+    ]
+  }
+]

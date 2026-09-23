@@ -1,0 +1,100 @@
+[
+  {
+    "case": "mixed",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\mixed_ru.pdf",
+    "seconds": 8.883542399998987,
+    "original_pages": 1,
+    "continuations": 0,
+    "segments": 3,
+    "warnings": 0,
+    "source_sha256": "0f4466590534413150c6a15024ac5582af50383189fd688f9020c0a48ffd123c",
+    "source_unchanged": true,
+    "renderers": [
+      "PDFium",
+      "Poppler"
+    ],
+    "fresh_translation_calls": 2,
+    "cached_translation_calls": 1,
+    "stages": [
+      "EXTRACTING",
+      "RENDERING",
+      "OCR",
+      "TRANSLATING",
+      "WRITING",
+      "VALIDATING",
+      "COMPLETED"
+    ]
+  },
+  {
+    "case": "automotive",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\automotive-scan_ru (1).pdf",
+    "seconds": 24.9608801,
+    "original_pages": 4,
+    "continuations": 2,
+    "segments": 80,
+    "warnings": 21,
+    "fresh_translation_calls": 0,
+    "cached_translation_calls": 79,
+    "source_sha256": "9a3c6c74fca6aaa906595bcc0652d3cd81e48f20742f3ef433ec8f039d780b9a",
+    "source_unchanged": true,
+    "renderers": [
+      "PDFium",
+      "Poppler"
+    ],
+    "measurement_record": "Recovered from successful qa_ocr_documents stdout after report replacement bug"
+  },
+  {
+    "case": "silverstone",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\silverstone-scan_en (1).pdf",
+    "seconds": 29.9068175,
+    "original_pages": 1,
+    "continuations": 1,
+    "segments": 87,
+    "warnings": 3,
+    "fresh_translation_calls": 1,
+    "cached_translation_calls": 7,
+    "source_sha256": "16fe326b33e05a76fb3c55065a660bd77597bd02ca70356d95b646e4418b209e",
+    "source_unchanged": true,
+    "renderers": [
+      "PDFium",
+      "Poppler"
+    ],
+    "measurement_record": "Recovered from successful qa_ocr_documents stdout after report replacement bug"
+  },
+  {
+    "case": "english",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\english-scan_ru (1).pdf",
+    "seconds": 12.99237,
+    "original_pages": 1,
+    "continuations": 0,
+    "segments": 2,
+    "warnings": 0,
+    "fresh_translation_calls": 1,
+    "cached_translation_calls": 0,
+    "source_sha256": "499e44ad1b324621302f35f593021611fec431e3fdadcf5f01c458a3b93aa18a",
+    "source_unchanged": true,
+    "renderers": [
+      "PDFium",
+      "Poppler"
+    ],
+    "measurement_record": "Recovered from successful qa_ocr_documents stdout after report replacement bug"
+  },
+  {
+    "case": "rotated",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\rotated-scan_ru (1).pdf",
+    "seconds": 11.0867612,
+    "original_pages": 1,
+    "continuations": 0,
+    "segments": 3,
+    "warnings": 0,
+    "fresh_translation_calls": 0,
+    "cached_translation_calls": 2,
+    "source_sha256": "aa760b65fb58e63e2afb53fb220f47f256604c1feba9864a1d5ec49d2ec49f7b",
+    "source_unchanged": true,
+    "renderers": [
+      "PDFium",
+      "Poppler"
+    ],
+    "measurement_record": "Recovered from successful qa_ocr_documents stdout after report replacement bug"
+  }
+]

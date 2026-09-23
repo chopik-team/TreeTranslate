@@ -1,0 +1,371 @@
+{
+  "scenarios": [
+    {
+      "scenario": "en_cpu",
+      "requested_device": "CPU",
+      "state": "COMPLETED",
+      "source_sha256_before": "71ac5e6b517fffb017abdb933eaf1ca1a46966b6a3d7f517c200b0b5d9a38d58",
+      "source_sha256_after": "71ac5e6b517fffb017abdb933eaf1ca1a46966b6a3d7f517c200b0b5d9a38d58",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\en_cpu.pdf": "71ac5e6b517fffb017abdb933eaf1ca1a46966b6a3d7f517c200b0b5d9a38d58"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\en_cpu.pdf": "71ac5e6b517fffb017abdb933eaf1ca1a46966b6a3d7f517c200b0b5d9a38d58"
+      },
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\en_cpu_ru.pdf"
+      ],
+      "elapsed_seconds": 3.359,
+      "calls": [
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 445.3244999999697,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 276.75649999991947,
+          "fallback": false
+        }
+      ]
+    },
+    {
+      "scenario": "zh_auto",
+      "requested_device": "Auto",
+      "state": "COMPLETED",
+      "source_sha256_before": "c424d2d8c7a8eb5e7cb5f6ce47a8fb7ba1ea535d241e944243a88df3d29099bd",
+      "source_sha256_after": "c424d2d8c7a8eb5e7cb5f6ce47a8fb7ba1ea535d241e944243a88df3d29099bd",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\zh_auto.pdf": "c424d2d8c7a8eb5e7cb5f6ce47a8fb7ba1ea535d241e944243a88df3d29099bd"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\zh_auto.pdf": "c424d2d8c7a8eb5e7cb5f6ce47a8fb7ba1ea535d241e944243a88df3d29099bd"
+      },
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\zh_auto_ru.pdf"
+      ],
+      "elapsed_seconds": 1.969,
+      "calls": [
+        {
+          "source": "zh",
+          "target": "ru",
+          "backend": "m2m100",
+          "device": "cuda",
+          "ms": 1062.3043999999027,
+          "fallback": false
+        },
+        {
+          "source": "zh",
+          "target": "ru",
+          "backend": "m2m100",
+          "device": "cuda",
+          "ms": 234.3935999997484,
+          "fallback": false
+        }
+      ]
+    },
+    {
+      "scenario": "zh_gpu",
+      "requested_device": "GPU",
+      "state": "COMPLETED",
+      "source_sha256_before": "15c8fad6c38da34c280b065b2ea7cf0c40baf05d40e8f03dab983fa4b031c3c2",
+      "source_sha256_after": "15c8fad6c38da34c280b065b2ea7cf0c40baf05d40e8f03dab983fa4b031c3c2",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\zh_gpu.pdf": "15c8fad6c38da34c280b065b2ea7cf0c40baf05d40e8f03dab983fa4b031c3c2"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\zh_gpu.pdf": "15c8fad6c38da34c280b065b2ea7cf0c40baf05d40e8f03dab983fa4b031c3c2"
+      },
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\zh_gpu_ru.pdf"
+      ],
+      "elapsed_seconds": 0.922,
+      "calls": [
+        {
+          "source": "zh",
+          "target": "ru",
+          "backend": "m2m100",
+          "device": "cuda",
+          "ms": 64.11679999973785,
+          "fallback": false
+        },
+        {
+          "source": "zh",
+          "target": "ru",
+          "backend": "m2m100",
+          "device": "cuda",
+          "ms": 199.463200000082,
+          "fallback": false
+        }
+      ]
+    },
+    {
+      "scenario": "folder",
+      "requested_device": "Auto",
+      "state": "COMPLETED",
+      "source_sha256_before": "d54d9892a36d688d9946505d162c852c886666420bb31620828902b096dc0f96",
+      "source_sha256_after": "d54d9892a36d688d9946505d162c852c886666420bb31620828902b096dc0f96",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\User guide\\Manual.pdf": "465ceae8bc3393fdb9357d39ff866b23e83c78b3ef8b7da98a302d1c817f3b5e",
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\User guide\\Installation\\Other.docx": "0416c6c742942c9690a46ec7f7494ab7819b6551ec6848c75612a33f516c0608"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\User guide\\Manual.pdf": "465ceae8bc3393fdb9357d39ff866b23e83c78b3ef8b7da98a302d1c817f3b5e",
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\User guide\\Installation\\Other.docx": "0416c6c742942c9690a46ec7f7494ab7819b6551ec6848c75612a33f516c0608"
+      },
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f_ru\\\u0420\u0443\u0447\u043d\u043e\u0439_ru.pdf",
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f_ru\\\u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430\\\u0434\u0440\u0443\u0433\u043e\u0439_ru.docx"
+      ],
+      "elapsed_seconds": 1.422,
+      "calls": [
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 350.1296999997976,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 91.13960000013321,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 40.05730000017138,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 53.6895000000186,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 52.51889999999548,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 44.906600000103936,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 29.395000000022264,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 22.815199999968172,
+          "fallback": false
+        }
+      ]
+    },
+    {
+      "scenario": "mixed",
+      "requested_device": "Auto",
+      "state": "COMPLETED",
+      "source_sha256_before": "2c192f9b0c499624ff6a9f7479c63193032b691a0b929f4346d8524294b23ae2",
+      "source_sha256_after": "2c192f9b0c499624ff6a9f7479c63193032b691a0b929f4346d8524294b23ae2",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\mixed.pdf": "2c192f9b0c499624ff6a9f7479c63193032b691a0b929f4346d8524294b23ae2"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\mixed.pdf": "2c192f9b0c499624ff6a9f7479c63193032b691a0b929f4346d8524294b23ae2"
+      },
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\mixed_ru.pdf"
+      ],
+      "elapsed_seconds": 0.813,
+      "calls": [
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 37.27130000015677,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cuda",
+          "ms": 94.42140000010113,
+          "fallback": false
+        }
+      ]
+    },
+    {
+      "scenario": "imageonly",
+      "requested_device": "CPU",
+      "state": "ERROR",
+      "source_sha256_before": "50760d8431d003ee6c4143a74a27bdd9538bb844498f455111e05376a9041b6c",
+      "source_sha256_after": "50760d8431d003ee6c4143a74a27bdd9538bb844498f455111e05376a9041b6c",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\imageonly.pdf": "50760d8431d003ee6c4143a74a27bdd9538bb844498f455111e05376a9041b6c"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\imageonly.pdf": "50760d8431d003ee6c4143a74a27bdd9538bb844498f455111e05376a9041b6c"
+      },
+      "outputs": [],
+      "elapsed_seconds": 0.031,
+      "calls": []
+    },
+    {
+      "scenario": "pause",
+      "requested_device": "CPU",
+      "state": "COMPLETED",
+      "source_sha256_before": "5ba7f2650dcd631b7403eada097b1007dc0f76fb17e666bf57680d489d26563d",
+      "source_sha256_after": "5ba7f2650dcd631b7403eada097b1007dc0f76fb17e666bf57680d489d26563d",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\pause.pdf": "5ba7f2650dcd631b7403eada097b1007dc0f76fb17e666bf57680d489d26563d"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\pause.pdf": "5ba7f2650dcd631b7403eada097b1007dc0f76fb17e666bf57680d489d26563d"
+      },
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\outputs\\pause_ru.pdf"
+      ],
+      "elapsed_seconds": 2.094,
+      "calls": [
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 238.07839999972202,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 151.1649000003672,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 46.78729999977804,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 130.11829999959446,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 43.88039999957982,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 128.8780000004408,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 44.76470000008703,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 135.87449999977252,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 46.2787000001299,
+          "fallback": false
+        },
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 127.19220000008136,
+          "fallback": false
+        }
+      ]
+    },
+    {
+      "scenario": "cancel",
+      "requested_device": "CPU",
+      "state": "CANCELLED",
+      "source_sha256_before": "a004411f6263d79366f8447178c9d7d744a6a6a2714d569473a5cc665effb0ed",
+      "source_sha256_after": "a004411f6263d79366f8447178c9d7d744a6a6a2714d569473a5cc665effb0ed",
+      "source_hashes_before": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\cancel.pdf": "a004411f6263d79366f8447178c9d7d744a6a6a2714d569473a5cc665effb0ed"
+      },
+      "source_hashes_after": {
+        "C:\\TreeTranslate\\build\\aw06-gui-smoke\\cancel.pdf": "a004411f6263d79366f8447178c9d7d744a6a6a2714d569473a5cc665effb0ed"
+      },
+      "outputs": [],
+      "elapsed_seconds": 0.078,
+      "calls": [
+        {
+          "source": "en",
+          "target": "ru",
+          "backend": "argos",
+          "device": "cpu",
+          "ms": 44.32420000011916,
+          "fallback": false
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

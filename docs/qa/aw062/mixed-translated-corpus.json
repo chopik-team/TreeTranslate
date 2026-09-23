@@ -1,0 +1,89 @@
+[
+  {
+    "text": "User guide",
+    "translated": "Руководство пользователя",
+    "page": 0,
+    "bbox": [
+      46.959999084472656,
+      715.02001953125,
+      143.66000366210938,
+      736.1599731445312
+    ],
+    "region_kind": "heading",
+    "available_bbox": [
+      46.959999084472656,
+      541.5,
+      565.0,
+      778.0
+    ],
+    "written_boxes": [
+      [
+        48.97999954223633,
+        726.8400268554688,
+        312.1199951171875,
+        746.3800048828125
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Save the configuration file before restarting the application.",
+    "translated": "Сохраните файл конфигурации перед перезагрузкой приложения.",
+    "page": 0,
+    "bbox": [
+      45.57600021362305,
+      672.0120239257812,
+      377.9880065917969,
+      684.8519897460938
+    ],
+    "region_kind": "paragraph",
+    "available_bbox": [
+      45.57600021362305,
+      541.5,
+      565.0,
+      778.0
+    ],
+    "written_boxes": [
+      [
+        46.27199935913086,
+        711.2799682617188,
+        440.9639587402344,
+        723.9639892578125
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Read the instructions before installation.",
+    "translated": "Прочитайте инструкцию перед установкой.",
+    "page": 0,
+    "bbox": [
+      55.79913606911447,
+      493.92,
+      376.1735061195105,
+      512.28
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      55.79913606911447,
+      457.2,
+      545.0,
+      512.28
+    ],
+    "written_boxes": [
+      [
+        57.282623291015625,
+        496.9310302734375,
+        371.6205139160156,
+        512.4562377929688
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  }
+]

@@ -1,0 +1,101 @@
+ M .gitignore
+ M CHANGELOG.md
+ M README.md
+ M THIRD_PARTY_NOTICES.md
+ M app/config/constants.py
+ M app/config/paths.py
+ M app/controllers/translation_ui_controller.py
+ M app/documents/job.py
+ M app/documents/scanner.py
+ M app/engine/runtime/runtime_manager.py
+ M app/gui/dialogs/changelog_dialog.py
+ M app/gui/main_window.py
+ M app/gui/pages/file_translation_page.py
+ M app/gui/styles/stylesheet.qss
+ M app/gui/styles/theme.py
+ M app/gui/widgets/drop_zone.py
+ M app/gui/widgets/file_tree.py
+ M app/gui/widgets/progress_panel.py
+ M app/gui/widgets/toggle_switch.py
+ M app/models/translation_job.py
+ M app/services/document_translation_service.py
+ M app/services/file_picker.py
+ M docs/qa/aw04-dictionary.png
+ M docs/qa/aw04-game.png
+ M docs/qa/aw04-real-text.png
+ M requirements-dev.txt
+ M requirements-runtime-lock.txt
+ M requirements-runtime.txt
+ M tests/test_document_service.py
+ M tests/test_documents.py
+ M tests/test_ui_smoke.py
+ M tools/verify_models.py
+?? app/documents/backends.py
+?? app/documents/pdf_diagnostics.py
+?? app/documents/pdf_document.py
+?? app/documents/pdf_fidelity.py
+?? app/documents/pdf_fonts.py
+?? app/documents/pdf_layout.py
+?? app/documents/pdf_regions.py
+?? app/documents/pdf_types.py
+?? app/gui/widgets/animated_icon.py
+?? app/ocr/
+?? assets/config/
+?? assets/fonts/
+?? assets/icons/animated-add-folder.png
+?? assets/icons/animated-document.png
+?? assets/icons/animated-folder.png
+?? assets/icons/document-icons-license.pdf
+?? assets/icons/docx.png
+?? assets/icons/pdf.png
+?? assets/icons/tree-check.svg
+?? assets/icons/tree-partial.svg
+?? docs/AW0.6.1_PRODUCTION_PDF_REPORT.md
+?? docs/AW0.6.2_OCR_REPORT.md
+?? docs/AW0.6_PDF_REPORT.md
+?? docs/qa/aw06-cancel.png
+?? docs/qa/aw06-en_cpu.png
+?? docs/qa/aw06-final-tests.xml
+?? docs/qa/aw06-folder.png
+?? docs/qa/aw06-imageonly.png
+?? docs/qa/aw06-mixed.png
+?? docs/qa/aw06-pages/
+?? docs/qa/aw06-pause.png
+?? docs/qa/aw06-pdf-gui.json
+?? docs/qa/aw06-real-pdf.xml
+?? docs/qa/aw06-zh_auto.png
+?? docs/qa/aw06-zh_gpu.png
+?? docs/qa/aw061/
+?? docs/qa/aw062/
+?? output/
+?? requirements-ocr-lock.txt
+?? tests/fixtures/
+?? tests/test_animated_document_icons.py
+?? tests/test_document_presentation.py
+?? tests/test_ocr.py
+?? tests/test_ocr_integration.py
+?? tests/test_pdf_documents.py
+?? tests/test_pdf_integration.py
+?? tests/test_pdf_production.py
+?? tools/audit_ocr_runtime.py
+?? tools/benchmark_ocr.py
+?? tools/fetch_ocr_licenses.py
+?? tools/ocr_fixtures.py
+?? tools/pdf_fixtures.py
+?? tools/prepare_ocr_runtime.py
+?? tools/prepare_paddleocr_models.py
+?? tools/prepare_pdf_font.py
+?? tools/probe_ocr_structure.py
+?? tools/qa_ocr_documents.py
+?? tools/qa_production_pdf.py
+?? tools/smoke_ocr_ui.py
+?? tools/smoke_pdf_ui.py
+?? tools/verify_ocr_visuals.py
+?? tools/verify_production_pdf.py
+?? vendor/licenses/Pillow/
+?? vendor/licenses/fonttools/
+?? vendor/licenses/ocr-runtime/
+?? vendor/licenses/pypdf/
+?? vendor/licenses/pypdfium2/
+?? vendor/model-metadata/ocr/
+?? vendor/models/ocr/

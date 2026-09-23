@@ -1,0 +1,9 @@
+{
+  "max_file_bytes": 134217728,
+  "max_pages": 500,
+  "max_objects_per_page": 20000,
+  "max_text_chars": 2000000,
+  "max_segment_chars": 4000,
+  "min_font_size": 6.0,
+  "max_page_points": 14400
+}

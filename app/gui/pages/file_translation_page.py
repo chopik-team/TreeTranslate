@@ -75,7 +75,7 @@ class FileTranslationPage(QWidget):
         self.file_tree = FileTree()
         layout.addWidget(self.file_tree, 1)
         self.progress = ProgressPanel()
-        self.file_status = QLabel("DOCX · Оригиналы сохраняются. Другие форматы пока не поддерживаются.", objectName="secondary")
+        self.file_status = QLabel("DOCX/PDF · Оригиналы сохраняются. Другие форматы пока не поддерживаются.", objectName="secondary")
         self.file_status.setWordWrap(True)
         layout.addWidget(self.file_status)
         layout.addWidget(self.progress)

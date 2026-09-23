@@ -1,0 +1,870 @@
+[
+  {
+    "page": 0,
+    "block_id": "p1-b1",
+    "text": "СПИСОК ПОДДЕРЖИВАЕМЫХ ИГР ДЛЯ ARDOR GAMING SILVERSTONE",
+    "translated": "СПИСОК ПОДДЕРЖИВАЕМЫХ ИГР ДЛЯ ARDOR GAMING SILVERSTONE",
+    "region_kind": "bullet",
+    "available_bbox": [
+      36.87080001831055,
+      542.1393432617188,
+      384.52801513671875,
+      573.2760009765625
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "CONSERVATIVE_PRESERVE",
+    "object_indices": [
+      1
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b3",
+    "text": "Игры",
+    "translated": "Games",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      59.27840042114258,
+      511.7200012207031,
+      210.56539916992188,
+      538.5733032226562
+    ],
+    "rendered_bbox": [
+      59.27840042114258,
+      519.34743359375,
+      210.56539916992188,
+      526.41943359375
+    ],
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      402
+    ],
+    "written_boxes": [
+      [
+        59.742401123046875,
+        520.3554077148438,
+        84.5823974609375,
+        526.5074462890625
+      ]
+    ]
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b4",
+    "text": "Платформы",
+    "translated": "Platforms",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      157.25439453125,
+      511.7200012207031,
+      210.56539916992188,
+      538.5733032226562
+    ],
+    "rendered_bbox": [
+      157.25439453125,
+      528.0354501953125,
+      210.56539916992188,
+      535.6114501953125
+    ],
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      401
+    ],
+    "written_boxes": [
+      [
+        158.06239318847656,
+        529.04345703125,
+        193.51840209960938,
+        535.7074584960938
+      ]
+    ]
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b5",
+    "text": "PC",
+    "translated": "PC",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.13140869140625,
+      511.7200012207031,
+      241.98269653320312,
+      538.5733032226562
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      403
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b6",
+    "text": "Поддержка",
+    "translated": "Support",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.7140808105469,
+      511.7200012207031,
+      382.50640869140625,
+      538.5733032226562
+    ],
+    "rendered_bbox": [
+      332.7140808105469,
+      529.7733032226563,
+      382.50640869140625,
+      538.5733032226562
+    ],
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      407
+    ],
+    "written_boxes": [
+      [
+        342.7382507324219,
+        530.7813110351562,
+        372.7542419433594,
+        538.6613159179688
+      ]
+    ]
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b7",
+    "text": "Xbox",
+    "translated": "Xbox",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.0762939453125,
+      511.7200012207031,
+      326.5024108886719,
+      538.5733032226562
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      405
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b8",
+    "text": "коробки  передач",
+    "translated": "gearbox",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.7140808105469,
+      511.7200012207031,
+      382.50640869140625,
+      538.5733032226562
+    ],
+    "rendered_bbox": [
+      332.7140808105469,
+      518.4053032226562,
+      382.50640869140625,
+      527.7733032226563
+    ],
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      408,
+      409
+    ],
+    "written_boxes": [
+      [
+        342.854248046875,
+        519.4132690429688,
+        372.6542663574219,
+        527.8692626953125
+      ]
+    ]
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b9",
+    "text": "PS4",
+    "translated": "PS4",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      245.5487060546875,
+      511.7200012207031,
+      269.03839111328125,
+      538.5733032226562
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      404
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b10",
+    "text": "(One&Series)",
+    "translated": "(One&Series)",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.0762939453125,
+      511.7200012207031,
+      329.1481018066406,
+      538.5733032226562
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      406
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b12",
+    "text": "EURO TRUCK",
+    "translated": "EURO TRUCK",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      496.2603759765625,
+      210.56539916992188,
+      508.1540222167969
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      411
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b16",
+    "text": "DIRT RALLY 2.0",
+    "translated": "DIRT RALLY 2.0",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      480.8009033203125,
+      210.56539916992188,
+      492.69439697265625
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      415
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b21",
+    "text": "DIRT RALLY 4",
+    "translated": "DIRT RALLY 4",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      465.3412780761719,
+      210.56539916992188,
+      477.23492431640625
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      420
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b26",
+    "text": "FORZA HORIZON 4",
+    "translated": "FORZA HORIZON 4",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      449.8816833496094,
+      210.56539916992188,
+      461.7752990722656
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      425
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b31",
+    "text": "FORZA HORIZON 5",
+    "translated": "FORZA HORIZON 5",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      434.4220886230469,
+      210.56539916992188,
+      446.3157043457031
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      430
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b36",
+    "text": "ASSETTO CORSA COMPETIZIONE",
+    "translated": "ASSETTO CORSA COMPETIZIONE",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      418.96258544921875,
+      210.56539916992188,
+      430.8561096191406
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      435
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b41",
+    "text": "ASSETTO CORSA",
+    "translated": "ASSETTO CORSA",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      403.50299072265625,
+      210.56539916992188,
+      415.3966064453125
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      440
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b45",
+    "text": "PROJECT CARS 2",
+    "translated": "PROJECT CARS 2",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      388.04339599609375,
+      210.56539916992188,
+      399.93701171875
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      444
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b49",
+    "text": "F1 2020-2022",
+    "translated": "F1 2020-2022",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      372.58380126953125,
+      210.56539916992188,
+      384.4774169921875
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      448
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b54",
+    "text": "BeamNG.drive",
+    "translated": "BeamNG.drive",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      357.1241760253906,
+      210.56539916992188,
+      369.017822265625
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      453
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b58",
+    "text": "PROJECT CARS 3",
+    "translated": "PROJECT CARS 3",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      341.6647033691406,
+      210.56539916992188,
+      353.5581970214844
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      457
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b62",
+    "text": "WRC 9",
+    "translated": "WRC 9",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      326.205078125,
+      210.56539916992188,
+      338.0987243652344
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      461
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b66",
+    "text": "WRC 10",
+    "translated": "WRC 10",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      310.7454833984375,
+      210.56539916992188,
+      322.63909912109375
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      465
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b69",
+    "text": "iRacing",
+    "translated": "iRacing",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      295.285888671875,
+      210.56539916992188,
+      307.17950439453125
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      468
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b72",
+    "text": "FORZA MOTORSPORT 7",
+    "translated": "FORZA MOTORSPORT 7",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      279.8262939453125,
+      210.56539916992188,
+      291.71990966796875
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      471
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b75",
+    "text": "TOCA RACE DRIVER",
+    "translated": "TOCA RACE DRIVER",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      264.36669921875,
+      210.56539916992188,
+      276.26031494140625
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      474
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b78",
+    "text": "TOCA RACE DRIVER Grid Legends",
+    "translated": "TOCA RACE DRIVER Grid Legends",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      248.90721130371094,
+      210.56539916992188,
+      260.80072021484375
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      477
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b81",
+    "text": "DAKAR",
+    "translated": "DAKAR",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      233.44760131835938,
+      210.56539916992188,
+      245.34120178222656
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      480
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b84",
+    "text": "SNOW RUNNER",
+    "translated": "SNOW RUNNER",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      217.98800659179688,
+      210.56539916992188,
+      229.881591796875
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      483
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b88",
+    "text": "FIA EUROPEAN TRUCK RACING",
+    "translated": "FIA EUROPEAN TRUCK RACING",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      196.56871032714844,
+      210.56539916992188,
+      214.4219970703125
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      487
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b89",
+    "text": "CHAMPIONSHIP",
+    "translated": "CHAMPIONSHIP",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      196.56871032714844,
+      210.56539916992188,
+      214.4219970703125
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      488
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b92",
+    "text": "CarX Drift Racing Online",
+    "translated": "CarX Drift Racing Online",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      181.10910034179688,
+      210.56539916992188,
+      193.00270080566406
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      491
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b95",
+    "text": "OVERPASS",
+    "translated": "OVERPASS",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      166.35910034179688,
+      210.56539916992188,
+      177.5430908203125
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      494
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b98",
+    "text": "Monster Truck Championship",
+    "translated": "Monster Truck Championship",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      150.89950561523438,
+      210.56539916992188,
+      162.7930908203125
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      497
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b101",
+    "text": "Wreckfest",
+    "translated": "Wreckfest",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      135.44000244140625,
+      210.56539916992188,
+      147.33349609375
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      500
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b104",
+    "text": "GT 7",
+    "translated": "GT 7",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      119.98040008544922,
+      210.56539916992188,
+      131.87399291992188
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      503
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b107",
+    "text": "GT sport",
+    "translated": "GT sport",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      104.52079772949219,
+      210.56539916992188,
+      116.4144058227539
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      506
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b110",
+    "text": "DIRT RALLY 5",
+    "translated": "DIRT RALLY 5",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      89.06119537353516,
+      210.56539916992188,
+      100.95480346679688
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      509
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b113",
+    "text": "Need for Speed Payback",
+    "translated": "Need for Speed Payback",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      73.60169982910156,
+      210.56539916992188,
+      85.49520111083984
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      512
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b116",
+    "text": "Need for Speed Heat",
+    "translated": "Need for Speed Heat",
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.22590255737305,
+      58.1421012878418,
+      210.56539916992188,
+      70.03570556640625
+    ],
+    "rendered_bbox": null,
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      515
+    ],
+    "written_boxes": []
+  },
+  {
+    "page": 0,
+    "block_id": "p1-b118",
+    "text": "*Для поддержки Н-образного режима переключения необходимы специальные  внутриигровые машины, которые поддерживают включение данного режима.",
+    "translated": "* To support the H-shaped switching mode, special in-game machines are needed that support the inclusion of this mode.",
+    "region_kind": "footer",
+    "available_bbox": [
+      36.75435256958008,
+      22.0,
+      384.52801513671875,
+      54.57609939575195
+    ],
+    "rendered_bbox": [
+      36.75435256958008,
+      27.372709342002867,
+      384.52801513671875,
+      51.06368589401245
+    ],
+    "continuation_page": null,
+    "policy": "TRANSLATABLE",
+    "object_indices": [
+      517,
+      518
+    ],
+    "written_boxes": [
+      [
+        37.407257080078125,
+        40.43639373779297,
+        380.3232116699219,
+        51.05364227294922
+      ],
+      [
+        37.678466796875,
+        29.005525588989258,
+        258.15960693359375,
+        39.542415618896484
+      ]
+    ]
+  }
+]

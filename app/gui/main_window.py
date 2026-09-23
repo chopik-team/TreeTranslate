@@ -1,4 +1,4 @@
-from PySide6.QtCore import Qt, QUrl
+from PySide6.QtCore import Qt, QUrl, QTimer
 from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import QMainWindow, QMessageBox, QSizeGrip, QStackedWidget, QVBoxLayout, QWidget
 
@@ -63,6 +63,10 @@ class MainWindow(QMainWindow):
         self.translation.restore_unfinished_job()
 
     def closeEvent(self, event) -> None:
+        # Hidden/just-created windows can still have deferred layout timers.
+        # Stop them before worker shutdown and destruction of captured widgets.
+        for timer in self.findChildren(QTimer):
+            timer.stop()
         self.text_page.shutdown()
         self.translation.cancel_text_requests()
         self.translation_service.shutdown()

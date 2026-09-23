@@ -1,0 +1,59 @@
+[
+  {
+    "text": "Userguide",
+    "translated": "Userguide",
+    "page": 0,
+    "bbox": [
+      42.831433713257354,
+      712.9104813315339,
+      146.49070185962807,
+      739.9010346378767
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      42.831433713257354,
+      685.5600539811066,
+      342.6514697060588,
+      739.9010346378767
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "Save the configuration file before restarting the application. Save the configuration file before restarting the application.",
+    "translated": "Сохранить файл конфигурации перед перезагрузкой приложения. Сохранить файл конфигурации перед перезагрузкой приложения.",
+    "page": 0,
+    "bbox": [
+      42.831433713257354,
+      653.1713900134953,
+      379.7240551889622,
+      688.4390463337832
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      42.831433713257354,
+      620.0629779577148,
+      600.0,
+      688.4390463337832
+    ],
+    "written_boxes": [
+      [
+        43.63294219970703,
+        673.998046875,
+        574.0537719726562,
+        688.6048583984375
+      ],
+      [
+        43.563846588134766,
+        658.1060180664062,
+        422.471435546875,
+        672.7128295898438
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  }
+]

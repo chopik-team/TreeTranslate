@@ -18,6 +18,10 @@ def main():
     for record in manager.records:
         manager.validate(record, full=True)
         print(f"OK {record.id} {record.size} bytes")
+    ocr = ModelManager(args.models_root / 'ocr')
+    for record in ocr.records:
+        ocr.validate(record, full=True)
+        print(f"OK OCR {record.id} {record.size} bytes")
 
 
 if __name__ == "__main__":

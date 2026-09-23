@@ -87,3 +87,12 @@ class RuntimeManager:
             for backend in self.backends.values():
                 backend.shutdown()
             self._warm = None
+
+    def release_models(self) -> None:
+        """Yield memory to document OCR at an admission-controlled job boundary."""
+        with self._lock:
+            if self._timer:
+                self._timer.cancel()
+            if self._warm:
+                self.backends[self._warm].shutdown()
+                self._warm = None

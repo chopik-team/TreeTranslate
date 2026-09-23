@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Save the configuration file before restarting the application.",
+    "translated": "Сохраните файл конфигурации перед перезагрузкой приложения.",
+    "page": 0,
+    "bbox": [
+      111.56095366621683,
+      43.19136172765445,
+      128.8349077822762,
+      380.0839832033593
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      111.56095366621683,
+      43.19136172765445,
+      128.8349077822762,
+      380.0839832033593
+    ],
+    "written_boxes": [
+      [
+        111.44095611572266,
+        43.7713623046875,
+        122.01095581054688,
+        372.68133544921875
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Save the configuration file before restarting the application.",
+    "translated": "Сохраните файл конфигурации перед перезагрузкой приложения.",
+    "page": 0,
+    "bbox": [
+      130.63427800269903,
+      43.91121775644865,
+      146.82860998650474,
+      380.0839832033593
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      130.63427800269903,
+      43.91121775644865,
+      146.82860998650474,
+      380.0839832033593
+    ],
+    "written_boxes": [
+      [
+        130.51426696777344,
+        44.49121856689453,
+        141.0842742919922,
+        373.40118408203125
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Userguide",
+    "translated": "Userguide",
+    "page": 0,
+    "bbox": [
+      60.09896536212326,
+      43.19136172765445,
+      87.08951866846604,
+      146.85062987402523
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      60.09896536212326,
+      43.19136172765445,
+      87.08951866846604,
+      146.85062987402523
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  }
+]

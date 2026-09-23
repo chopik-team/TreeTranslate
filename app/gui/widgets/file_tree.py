@@ -1,11 +1,12 @@
 from pathlib import Path
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import QEvent, Qt
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QAbstractItemView, QFrame, QHBoxLayout, QLabel, QSizePolicy, QTreeWidget, QTreeWidgetItem, QVBoxLayout
 
 from app.models.file_item import FileItem
 from app.config.paths import icon_path
+from app.gui.widgets.animated_icon import AnimatedIcon
 
 
 class FileTree(QFrame):
@@ -27,26 +28,49 @@ class FileTree(QFrame):
         header.addWidget(self.stats)
         layout.addLayout(header)
         self.tree = QTreeWidget()
+        self.tree.setObjectName("documentTree")
         self.tree.setHeaderHidden(True)
         self.tree.setAlternatingRowColors(True)
         self.tree.setSelectionMode(QAbstractItemView.SelectionMode.NoSelection)
         self.tree.itemChanged.connect(self._propagate_check)
+        self._folder_animation = AnimatedIcon("folder", self)
+        self._animated_item = None
+        self._folder_animation.changed.connect(self._set_folder_frame)
+        self._root_animation = AnimatedIcon("folder", self)
+        self._root_item = None
+        self._root_animation.changed.connect(self._set_root_frame)
+        self.tree.setMouseTracking(True)
+        self.tree.itemEntered.connect(self._hover_item)
+        self.tree.viewport().installEventFilter(self)
         layout.addWidget(self.tree)
         self.show_empty()
 
     def show_empty(self) -> None:
+        self._stop_folder_animation()
+        self._root_animation.stop()
+        self._root_item = None
         self.tree.clear()
+        self.tree.setRootIsDecorated(False)
         item = QTreeWidgetItem(["Здесь появится структура выбранных файлов"])
+        item.setFlags(Qt.ItemFlag.ItemIsEnabled)
         item.setForeground(0, Qt.GlobalColor.gray)
         self.tree.addTopLevelItem(item)
         self.stats.setText("Найдено: 0  •  Файлы: 0  •  Папки: 0")
         self.badge.hide()
 
     def populate(self, root: FileItem) -> None:
+        self._stop_folder_animation()
+        self._root_animation.stop()
+        self._root_item = None
         self.tree.blockSignals(True)
         self.tree.clear()
+        self.tree.setRootIsDecorated(True)
         top = self._make_item(root)
         self.tree.addTopLevelItem(top)
+        if root.is_folder:
+            self._root_item = top
+            if self.isVisible():
+                self._root_animation.start()
         top.setExpanded(True)
         for index in range(top.childCount()):
             top.child(index).setExpanded(True)
@@ -63,12 +87,57 @@ class FileTree(QFrame):
     def _make_item(self, model: FileItem) -> QTreeWidgetItem:
         item = QTreeWidgetItem([model.name])
         item.setData(0, Qt.ItemDataRole.UserRole, model.path)
-        item.setIcon(0, QIcon(icon_path("folder" if model.is_folder else "file")))
+        extension = Path(model.path or model.name).suffix.lower().lstrip(".")
+        icon = "folder" if model.is_folder else extension if extension in {"docx", "pdf"} else "file"
+        item.setData(0, Qt.ItemDataRole.UserRole + 1, model.is_folder)
+        item.setIcon(0, self._folder_animation.frames[0] if model.is_folder else QIcon(icon_path(icon)))
         item.setFlags(item.flags() | Qt.ItemFlag.ItemIsUserCheckable)
         item.setCheckState(0, Qt.CheckState.Checked if model.checked else Qt.CheckState.Unchecked)
         for child in model.children:
             item.addChild(self._make_item(child))
         return item
+
+    def _set_folder_frame(self, icon):
+        if self._animated_item is not None:
+            blocked = self.tree.blockSignals(True)
+            self._animated_item.setIcon(0, icon)
+            self.tree.blockSignals(blocked)
+
+    def _set_root_frame(self, icon):
+        if self._root_item is not None:
+            blocked = self.tree.blockSignals(True)
+            self._root_item.setIcon(0, icon)
+            self.tree.blockSignals(blocked)
+
+    def _stop_folder_animation(self):
+        self._folder_animation.stop()
+        self._animated_item = None
+
+    def _hover_item(self, item, _column):
+        if item is self._animated_item:
+            return
+        self._stop_folder_animation()
+        if item is not self._root_item and item.data(0, Qt.ItemDataRole.UserRole + 1):
+            self._animated_item = item
+            self._folder_animation.start()
+
+    def eventFilter(self, watched, event):
+        if watched is self.tree.viewport():
+            if event.type() in (QEvent.Type.Leave, QEvent.Type.Hide):
+                self._stop_folder_animation()
+            elif event.type() == QEvent.Type.MouseMove and self.tree.itemAt(event.pos()) is None:
+                self._stop_folder_animation()
+        return super().eventFilter(watched, event)
+
+    def hideEvent(self, event):
+        self._stop_folder_animation()
+        self._root_animation.stop()
+        super().hideEvent(event)
+
+    def showEvent(self, event):
+        super().showEvent(event)
+        if self._root_item is not None:
+            self._root_animation.start()
 
     def selected_paths(self):
         paths = []

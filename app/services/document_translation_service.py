@@ -16,6 +16,8 @@ from app.services.translation_service import TranslationService
 class DocumentTranslationService(TranslationService):
     finished = Signal(object)
     failed = Signal(str)
+    warning = Signal(str)
+    notice = Signal(str)
 
     def __init__(self, owner):
         super().__init__(owner)
@@ -27,6 +29,8 @@ class DocumentTranslationService(TranslationService):
         self.config = DocumentConfig()
         self.control = JobControl()
         self.policy = None
+        self.warnings = []
+        self.warning.connect(self._record_warning, Qt.ConnectionType.QueuedConnection)
         self.finished.connect(self._finish, Qt.ConnectionType.QueuedConnection)
         self.progress_changed.connect(self._progress, Qt.ConnectionType.QueuedConnection)
         self.timer = QTimer(self, interval=1000)
@@ -36,10 +40,22 @@ class DocumentTranslationService(TranslationService):
         self.state = state
         self.state_changed.emit(state)
 
+    def _record_warning(self, message):
+        if self.owner._closed:
+            return
+        if message not in self.warnings:
+            self.warnings.append(message)
+            self.notice.emit(f'Предупреждений: {len(self.warnings)}. {message}')
+
     def _progress(self, progress):
+        if self.owner._closed:
+            return
         self.progress = progress
 
     def _tick(self):
+        if self.owner._closed:
+            self.timer.stop()
+            return
         self.progress_changed.emit(replace(self.progress, elapsed_seconds=int(self.control.elapsed)))
 
     def configure(self, policy):
@@ -54,6 +70,7 @@ class DocumentTranslationService(TranslationService):
             return
         self.control = JobControl()
         self.progress = TranslationProgress(total=0)
+        self.warnings = []
         self._state(JobState.SCANNING if scanning else JobState.TRANSLATING)
         self.progress_changed.emit(self.progress)
         self.timer.start()
@@ -63,8 +80,10 @@ class DocumentTranslationService(TranslationService):
             except TranslationCancelledError:
                 return scanning, None, None, True
             except Exception as error:
-                logging.getLogger(__name__).warning('DOCX operation failed type=%s', type(error).__name__)
-                message = str(error) if isinstance(error, (DocumentError, TranslationError)) else 'Не удалось обработать DOCX или сохранить результат.'
+                logging.getLogger(__name__).warning('Document operation failed type=%s', type(error).__name__)
+                if getattr(error, 'diagnostic', None):
+                    logging.getLogger(__name__).warning('PDF diagnostic %s', error.diagnostic)
+                message = str(error) if isinstance(error, (DocumentError, TranslationError)) else 'Не удалось обработать документ или сохранить результат.'
                 return scanning, None, message, False
         self.owner.executor().submit(work).add_done_callback(lambda f: self.finished.emit(f.result()))
 
@@ -79,10 +98,14 @@ class DocumentTranslationService(TranslationService):
                 runtime.idle_timeout_seconds = engine.policy.idle_timeout_seconds if self.policy.unload_model else 0
             with runtime.keep_warm() if runtime else nullcontext():
                 return DocumentJob(self.selected, self.config, self.control, engine.translate, engine.languages.resolve,
-                                   self.progress_changed.emit, self.file_outputs_ready.emit).run()
+                                   self.progress_changed.emit, self.file_outputs_ready.emit, self.warning.emit,
+                                   getattr(runtime, 'release_models', lambda: None)).run()
         self._submit(run)
 
     def _finish(self, result):
+        if self.owner._closed:
+            self.timer.stop()
+            return
         scanning, value, error, cancelled = result
         self.timer.stop()
         if self.control.cancelled.is_set():

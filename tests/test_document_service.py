@@ -103,7 +103,7 @@ def test_file_service_completed_output_and_open_actions(tmp_path):
         window.close()
 
 
-def test_pdf_scan_is_honest_and_cannot_start(tmp_path):
+def test_corrupted_pdf_has_no_fake_translation(tmp_path):
     app = QApplication.instance() or QApplication([])
     pdf = tmp_path / 'manual.pdf'
     pdf.write_bytes(b'%PDF')
@@ -113,8 +113,10 @@ def test_pdf_scan_is_honest_and_cannot_start(tmp_path):
     try:
         window.translation.accept_paths([pdf])
         wait_for(lambda: window.translation_service.state == JobState.READY)
-        assert not window.file_page.start_button.isEnabled()
-        assert 'Формат пока не поддерживается' in window.file_page.file_status.text()
+        assert window.file_page.start_button.isEnabled()
+        window.translation._start_translation()
+        wait_for(lambda: window.translation_service.state == JobState.ERROR)
+        assert 'повреждён' in window.file_page.file_status.text()
         assert not engine.calls
         assert window.file_page.progress.bar.value() == 0
     finally:

@@ -1,10 +1,36 @@
 # TreeTranslate
 
-**AW 0.5.1-alpha — Real DOCX Translation · завершение цикла настроек**
+**AW 0.6.2-alpha — Hybrid PaddleOCR Router**
 
 > Your PC. Your files. Your rules.
 
-Приложение CHOPIK Team для локального перевода текста и DOCX через Argos и M2M100 418M INT8 / CTranslate2. PDF, OCR, архивы, Translation Memory и Glossary пока не реализованы.
+Приложение CHOPIK Team для локального перевода текста, DOCX, текстовых PDF и сканов через Argos и M2M100 418M INT8 / CTranslate2. OCR выполняется локальным PaddleOCR в отдельном процессе. Архивы, Translation Memory и Glossary пока не реализованы.
+
+### OCR-компонент (AW 0.6.2)
+
+На подготовленной машине запустите `run_dev.bat`, откройте страницу перевода файлов и добавьте PDF или папку. Выберите язык результата, устройство и профиль, затем начните перевод. OCR включается автоматически для поддерживаемых сканов. Интернет при работе не нужен. Краткий статус и ограничения: [итоги AW 0.6.2](docs/AW0.6.2_OCR_REPORT.md#итог-простыми-словами).
+
+Нужна отдельная `.venv-ocr` (PaddleX несовместим с NumPy основного переводчика). Подготовка разработчиком, с явным доступом к сети:
+
+```powershell
+.venv/Scripts/python tools/prepare_ocr_runtime.py --allow-network
+.venv/Scripts/python tools/prepare_paddleocr_models.py --allow-network
+.venv/Scripts/python tools/verify_models.py
+```
+
+Для установки без сети: `prepare_ocr_runtime.py --wheelhouse <каталог>` и `prepare_paddleocr_models.py --local <каталог>`. Runtime никогда не запускает установщики и не скачивает модели. На этой Windows-машине проверены PaddleOCR 3.7.0, PaddleX 3.7.2 и Paddle GPU 3.3.1 (CPU также поддерживается).
+
+Модели хранятся в `vendor/models/ocr`, лицензии и закреплённые SHA256 — в `vendor/model-metadata/ocr` и `vendor/licenses/ocr-runtime`. Профили OCR: `assets/config/ocr.json`. Полный аудит, результаты и ограничения: [AW0.6.2_OCR_REPORT](docs/AW0.6.2_OCR_REPORT.md).
+
+## Перевод PDF
+
+PDF использует ту же очередь и настройки, что DOCX; допускаются смешанные папки. Переводится видимый извлекаемый текст: исходные текстовые объекты заменяются, остальные объекты страницы сохраняются. Поддержаны переносы, несколько колонок, повороты на 90°, локальный шрифт Latin/кириллица/китайский. URL, email и идентификаторы с цифрами защищены от перевода. Для переполнения используется controlled reflow с continuation pages; обычные PDF annotations не создаются.
+
+Если перевод не помещается даже после умеренного уменьшения шрифта до читаемого минимума, остаток переносится на дополнительную страницу, а интерфейс показывает предупреждение. Число страниц может увеличиться. Сканы и поддерживаемые растровые области смешанных PDF распознаются локальным OCR. Для них нужны подготовленные OCR-модели и `.venv-ocr`. Зашифрованные и повреждённые файлы отклоняются. Сложные маски, Form XObject, RTL и невидимый текст сохраняются без перевода с предупреждением. Группировка определяется геометрически; перевод выравнивается по левому краю блока. Точная вёрстка произвольного издательского PDF не гарантируется.
+
+Лимиты: `assets/config/pdf_limits.json`. Runtime использует только локальные модели и `assets/fonts/TreeTranslateSans-Regular.ttf`. Получение/подготовка шрифта — отдельный developer tool `tools/prepare_pdf_font.py`; приложение его не вызывает.
+
+Проверка: `.venv\Scripts\python tools/smoke_pdf_ui.py`. Подробности и ограничения: [AW0.6.1_PRODUCTION_PDF_REPORT.md](docs/AW0.6.1_PRODUCTION_PDF_REPORT.md).
 
 ## Перевод DOCX
 

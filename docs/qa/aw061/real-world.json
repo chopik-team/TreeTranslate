@@ -1,0 +1,38 @@
+[
+  {
+    "name": "automotive",
+    "source_sha256": "ba930a3e2470c3566dd1bcd79247863717bb66a4ae5fb93d5a9fbaceb2b1bf1f",
+    "source_unchanged": true,
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw061\\automotive_ru (3).pdf",
+    "pages": 5,
+    "original_pages": 4,
+    "annotation_counts": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "segments": 76,
+    "continuation_blocks": 12,
+    "warnings": 13,
+    "elapsed_seconds": 11.19,
+    "stage": "COMPLETED"
+  },
+  {
+    "name": "silverstone",
+    "source_sha256": "cc37280b9dd65cf1b2b213e1452b49358f0042f4e26afd9fb9b34cd694503213",
+    "source_unchanged": true,
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw061\\silverstone_en (3).pdf",
+    "pages": 1,
+    "original_pages": 1,
+    "annotation_counts": [
+      0
+    ],
+    "segments": 40,
+    "continuation_blocks": 0,
+    "warnings": 1,
+    "elapsed_seconds": 0.8,
+    "stage": "COMPLETED"
+  }
+]

@@ -1,0 +1,1106 @@
+[
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "economy",
+    "seconds": 35.02973100000236,
+    "pages": 4,
+    "segments": 104,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 13.177697400002216,
+        "timings": {
+          "load_seconds": 0.8296572000035667,
+          "inference_seconds": 7.5183680999980425,
+          "rss_bytes": 805580800,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": null,
+          "gpu_peak_reserved_bytes": null
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 6.2382180000058725,
+        "timings": {
+          "load_seconds": 1.400003384333104e-06,
+          "inference_seconds": 6.192523899997468,
+          "rss_bytes": 809271296,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": null,
+          "gpu_peak_reserved_bytes": null
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 7.458948899999086,
+        "timings": {
+          "load_seconds": 1.500004145782441e-06,
+          "inference_seconds": 7.412040899995191,
+          "rss_bytes": 802762752,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": null,
+          "gpu_peak_reserved_bytes": null
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "cpu",
+        "seconds": 7.61577849999594,
+        "timings": {
+          "load_seconds": 1.1999945854768157e-06,
+          "inference_seconds": 7.559892600002058,
+          "rss_bytes": 806973440,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": null,
+          "gpu_peak_reserved_bytes": null
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.029801324503311258,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.6075949367088608,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.026128266033254157,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true,
+    "native_region_metrics": [
+      {
+        "native_region_cer": 0.019867549668874173,
+        "bbox_recall": 1.0,
+        "blocks": 26,
+        "reference_characters": 604
+      },
+      {
+        "native_region_cer": 0.004219409282700422,
+        "bbox_recall": 1.0,
+        "blocks": 13,
+        "reference_characters": 237
+      },
+      {
+        "native_region_cer": 0.0166270783847981,
+        "bbox_recall": 1.0,
+        "blocks": 20,
+        "reference_characters": 421
+      },
+      {
+        "native_region_cer": 0.017114914425427872,
+        "bbox_recall": 1.0,
+        "blocks": 17,
+        "reference_characters": 409
+      }
+    ]
+  },
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "fast",
+    "seconds": 8.782655000002705,
+    "pages": 4,
+    "segments": 109,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 6.992234900004405,
+        "timings": {
+          "load_seconds": 1.3096625000034692,
+          "inference_seconds": 0.7365737000000081,
+          "rss_bytes": 1576001536,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 320976384,
+          "gpu_peak_reserved_bytes": 530210048
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4175115999969421,
+        "timings": {
+          "load_seconds": 1.2000018614344299e-06,
+          "inference_seconds": 0.3568214999977499,
+          "rss_bytes": 1578520576,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 412434944,
+          "gpu_peak_reserved_bytes": 659135744
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.36996039999939967,
+        "timings": {
+          "load_seconds": 1.1999945854768157e-06,
+          "inference_seconds": 0.3030540000036126,
+          "rss_bytes": 1580322816,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 412434944,
+          "gpu_peak_reserved_bytes": 659135744
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.3525657999998657,
+        "timings": {
+          "load_seconds": 1.1000010999850929e-06,
+          "inference_seconds": 0.2891158999991603,
+          "rss_bytes": 1582108672,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 412434944,
+          "gpu_peak_reserved_bytes": 659135744
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.028145695364238412,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5991561181434599,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.021377672209026127,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.029339853300733496,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true,
+    "native_region_metrics": [
+      {
+        "native_region_cer": 0.016556291390728478,
+        "bbox_recall": 1.0,
+        "blocks": 26,
+        "reference_characters": 604
+      },
+      {
+        "native_region_cer": 0.004219409282700422,
+        "bbox_recall": 1.0,
+        "blocks": 13,
+        "reference_characters": 237
+      },
+      {
+        "native_region_cer": 0.019002375296912115,
+        "bbox_recall": 1.0,
+        "blocks": 20,
+        "reference_characters": 421
+      },
+      {
+        "native_region_cer": 0.017114914425427872,
+        "bbox_recall": 1.0,
+        "blocks": 17,
+        "reference_characters": 409
+      }
+    ]
+  },
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "balanced",
+    "seconds": 9.565349099997547,
+    "pages": 4,
+    "segments": 80,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 7.422642199999245,
+        "timings": {
+          "load_seconds": 1.9732452999960515,
+          "inference_seconds": 0.8527505000020028,
+          "rss_bytes": 1771876352,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 457989120,
+          "gpu_peak_reserved_bytes": 754894848
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4755162000001292,
+        "timings": {
+          "load_seconds": 1.400003384333104e-06,
+          "inference_seconds": 0.38201780000235885,
+          "rss_bytes": 1772335104,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 579049216,
+          "gpu_peak_reserved_bytes": 941475840
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.41985370000475086,
+        "timings": {
+          "load_seconds": 1.2000018614344299e-06,
+          "inference_seconds": 0.32846430000063265,
+          "rss_bytes": 1772400640,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 579049216,
+          "gpu_peak_reserved_bytes": 941475840
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.45097639999585226,
+        "timings": {
+          "load_seconds": 1.600004907231778e-06,
+          "inference_seconds": 0.35167769999679876,
+          "rss_bytes": 1774358528,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 579049216,
+          "gpu_peak_reserved_bytes": 941475840
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.024834437086092714,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5949367088607594,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.023752969121140142,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true,
+    "native_region_metrics": [
+      {
+        "native_region_cer": 0.018211920529801324,
+        "bbox_recall": 1.0,
+        "blocks": 26,
+        "reference_characters": 604
+      },
+      {
+        "native_region_cer": 0.004219409282700422,
+        "bbox_recall": 1.0,
+        "blocks": 13,
+        "reference_characters": 237
+      },
+      {
+        "native_region_cer": 0.019002375296912115,
+        "bbox_recall": 1.0,
+        "blocks": 20,
+        "reference_characters": 421
+      },
+      {
+        "native_region_cer": 0.017114914425427872,
+        "bbox_recall": 1.0,
+        "blocks": 17,
+        "reference_characters": 409
+      }
+    ]
+  },
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "turbo",
+    "seconds": 10.666344000004756,
+    "pages": 4,
+    "segments": 80,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 8.653757399995811,
+        "timings": {
+          "load_seconds": 2.0567636999985552,
+          "inference_seconds": 1.2734399999972084,
+          "rss_bytes": 1564094464,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 869542912,
+          "gpu_peak_reserved_bytes": 1571831296
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.41807620000327006,
+        "timings": {
+          "load_seconds": 1.2999953469261527e-06,
+          "inference_seconds": 0.3378106000018306,
+          "rss_bytes": 1571307520,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 869542912,
+          "gpu_peak_reserved_bytes": 1571831296
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4174522000030265,
+        "timings": {
+          "load_seconds": 1.8999999156221747e-06,
+          "inference_seconds": 0.30262679999577813,
+          "rss_bytes": 1578184704,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 869542912,
+          "gpu_peak_reserved_bytes": 1571831296
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.39362640000035753,
+        "timings": {
+          "load_seconds": 1.5999976312741637e-06,
+          "inference_seconds": 0.3109522000013385,
+          "rss_bytes": 1582366720,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 869542912,
+          "gpu_peak_reserved_bytes": 1571831296
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.024834437086092714,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5949367088607594,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.021377672209026127,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true,
+    "native_region_metrics": [
+      {
+        "native_region_cer": 0.018211920529801324,
+        "bbox_recall": 1.0,
+        "blocks": 26,
+        "reference_characters": 604
+      },
+      {
+        "native_region_cer": 0.004219409282700422,
+        "bbox_recall": 1.0,
+        "blocks": 13,
+        "reference_characters": 237
+      },
+      {
+        "native_region_cer": 0.0166270783847981,
+        "bbox_recall": 1.0,
+        "blocks": 20,
+        "reference_characters": 421
+      },
+      {
+        "native_region_cer": 0.017114914425427872,
+        "bbox_recall": 1.0,
+        "blocks": 17,
+        "reference_characters": 409
+      }
+    ]
+  },
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "maximum",
+    "seconds": 9.668476999999257,
+    "pages": 4,
+    "segments": 105,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 7.1651073999964865,
+        "timings": {
+          "load_seconds": 1.8024216999983764,
+          "inference_seconds": 0.8610679000048549,
+          "rss_bytes": 1644748800,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 542481408,
+          "gpu_peak_reserved_bytes": 921996544
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.5151039999982459,
+        "timings": {
+          "load_seconds": 1.2999953469261527e-06,
+          "inference_seconds": 0.3994635000053677,
+          "rss_bytes": 1645641728,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 713226240,
+          "gpu_peak_reserved_bytes": 1146129664
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4748309999995399,
+        "timings": {
+          "load_seconds": 1.3999961083754897e-06,
+          "inference_seconds": 0.3490490999975009,
+          "rss_bytes": 1647706112,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 713226240,
+          "gpu_peak_reserved_bytes": 1146129664
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.4618962999957148,
+        "timings": {
+          "load_seconds": 1.2000018614344299e-06,
+          "inference_seconds": 0.3470060999970883,
+          "rss_bytes": 1648472064,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 713226240,
+          "gpu_peak_reserved_bytes": 1146129664
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.03145695364238411,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5991561181434599,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.028503562945368172,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.034229828850855744,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true,
+    "native_region_metrics": [
+      {
+        "native_region_cer": 0.018211920529801324,
+        "bbox_recall": 1.0,
+        "blocks": 26,
+        "reference_characters": 604
+      },
+      {
+        "native_region_cer": 0.004219409282700422,
+        "bbox_recall": 1.0,
+        "blocks": 13,
+        "reference_characters": 237
+      },
+      {
+        "native_region_cer": 0.019002375296912115,
+        "bbox_recall": 1.0,
+        "blocks": 20,
+        "reference_characters": 421
+      },
+      {
+        "native_region_cer": 0.017114914425427872,
+        "bbox_recall": 1.0,
+        "blocks": 17,
+        "reference_characters": 409
+      }
+    ]
+  },
+  {
+    "case": "automotive",
+    "device": "auto",
+    "profile": "automatic",
+    "seconds": 10.119890599999053,
+    "pages": 4,
+    "segments": 80,
+    "routes": [
+      {
+        "page": 0,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 7.8386934000009205,
+        "timings": {
+          "load_seconds": 2.0156623999937437,
+          "inference_seconds": 0.9448218000034103,
+          "rss_bytes": 1845874688,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 457989120,
+          "gpu_peak_reserved_bytes": 754894848
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 1,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.5263954999973066,
+        "timings": {
+          "load_seconds": 1.5999976312741637e-06,
+          "inference_seconds": 0.4238063000011607,
+          "rss_bytes": 1846796288,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 579049216,
+          "gpu_peak_reserved_bytes": 941475840
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 2,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.47454690000449773,
+        "timings": {
+          "load_seconds": 2.5999979698099196e-06,
+          "inference_seconds": 0.3552181999984896,
+          "rss_bytes": 1846915072,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 579049216,
+          "gpu_peak_reserved_bytes": 941475840
+        },
+        "reason": "simple page or lightweight profile"
+      },
+      {
+        "page": 3,
+        "backend": "paddle",
+        "device": "gpu",
+        "seconds": 0.39532600000529783,
+        "timings": {
+          "load_seconds": 1.0000003385357559e-06,
+          "inference_seconds": 0.3133679000020493,
+          "rss_bytes": 1847066624,
+          "network_attempts": 0,
+          "gpu_peak_allocated_bytes": 579049216,
+          "gpu_peak_reserved_bytes": 941475840
+        },
+        "reason": "simple page or lightweight profile"
+      }
+    ],
+    "metrics": [
+      {
+        "cer": 0.024834437086092714,
+        "reference_characters": 604,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "ITM": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.5949367088607594,
+        "reference_characters": 237,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "ITM": 1,
+          "12": 1,
+          "20": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "1": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.023752969121140142,
+        "reference_characters": 421,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "45": 3,
+          "60": 4,
+          "IVT": 1,
+          "6.6": 1,
+          "1.74": 1,
+          "6.97": 1,
+          "5.80": 1
+        },
+        "identifiers_missing": {}
+      },
+      {
+        "cer": 0.02689486552567237,
+        "reference_characters": 409,
+        "identifier_numeric_recall": 1.0,
+        "identifiers_expected": {
+          "9": 1,
+          "ITM": 9,
+          "10": 1,
+          "11": 1,
+          "20": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1
+        },
+        "identifiers_missing": {}
+      }
+    ],
+    "source_sha_unchanged": true,
+    "native_region_metrics": [
+      {
+        "native_region_cer": 0.018211920529801324,
+        "bbox_recall": 1.0,
+        "blocks": 26,
+        "reference_characters": 604
+      },
+      {
+        "native_region_cer": 0.004219409282700422,
+        "bbox_recall": 1.0,
+        "blocks": 13,
+        "reference_characters": 237
+      },
+      {
+        "native_region_cer": 0.019002375296912115,
+        "bbox_recall": 1.0,
+        "blocks": 20,
+        "reference_characters": 421
+      },
+      {
+        "native_region_cer": 0.017114914425427872,
+        "bbox_recall": 1.0,
+        "blocks": 17,
+        "reference_characters": 409
+      }
+    ]
+  }
+]

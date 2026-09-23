@@ -25,3 +25,6 @@ class TranslationProgress:
     file_index: int = 0
     file_total: int = 0
     eta_seconds: int | None = None
+    stage: str = ''
+    page_index: int = 0
+    page_total: int = 0

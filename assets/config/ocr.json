@@ -1,0 +1,16 @@
+{
+  "limits": {"pixels": 18000000, "dimension": 12000, "pages": 500, "regions": 3000, "characters": 2000000, "temp_bytes": 80000000},
+  "confidence": {"low": 0.45, "high": 0.85},
+  "dedup": {"overlap": 0.65, "similarity": 0.65},
+  "complexity": {"lines": 8, "regions": 55, "columns": 2},
+  "native": {"minimum_characters": 20, "image_coverage": 0.65, "minimum_region_points": 20},
+  "runtime": {"idle_seconds": 30, "timeout_seconds": 240, "coexistence": false},
+  "profiles": {
+    "economy": {"dpi": 144, "threads": 2, "batch": 1, "structure": false, "auto_gpu": false, "orientation": false},
+    "fast": {"dpi": 168, "threads": 4, "batch": 4, "structure": false, "auto_gpu": true, "orientation": false},
+    "balanced": {"dpi": 200, "threads": 4, "batch": 6, "structure": true, "auto_gpu": true, "orientation": true},
+    "turbo": {"dpi": 200, "threads": 8, "batch": 16, "structure": true, "auto_gpu": true, "orientation": true},
+    "maximum": {"dpi": 240, "threads": 8, "batch": 6, "structure": true, "auto_gpu": true, "orientation": true},
+    "automatic": {"dpi": 200, "threads": 4, "batch": 6, "structure": true, "auto_gpu": true, "orientation": true}
+  }
+}

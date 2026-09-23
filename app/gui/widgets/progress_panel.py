@@ -48,7 +48,9 @@ class ProgressPanel(QFrame):
         )
         for col, (caption, value) in enumerate(details):
             info.setColumnStretch(col, 1)
-            info.addWidget(QLabel(caption, objectName="progressCaption"), 0, col)
+            label=QLabel(caption, objectName="progressCaption")
+            if col==1:self.processed_caption=label
+            info.addWidget(label, 0, col)
             info.addWidget(value, 1, col)
         layout.addLayout(info)
         layout.addSpacing(12)
@@ -75,6 +77,7 @@ class ProgressPanel(QFrame):
         self.set_state(JobState.IDLE)
 
     def set_state(self, state: JobState) -> None:
+        self._state = state
         labels = {
             JobState.IDLE: "Ожидание", JobState.DRAGGING: "Добавление…", JobState.SCANNING: "Сканирование…",
             JobState.READY: "Готово к запуску", JobState.TRANSLATING: "Выполняется", JobState.PAUSED: "Приостановлено",
@@ -104,11 +107,18 @@ class ProgressPanel(QFrame):
         return self._output_paths
 
     def set_progress(self, progress: TranslationProgress) -> None:
+        stages = {'EXTRACTING': 'Извлечение текста…', 'TRANSLATING': 'Перевод…',
+                  'RENDERING': 'Подготовка страницы…', 'OCR': 'Распознавание текста…',
+                  'LAYOUT_ANALYSIS': 'Анализ структуры страницы…',
+                  'WRITING': 'Запись документа…', 'VALIDATING': 'Проверка результата…'}
+        if self._state == JobState.TRANSLATING and progress.stage in stages:
+            self.status.setText(stages[progress.stage])
         self.bar.setValue(progress.percent)
         self.percent.setText(f"{progress.percent}%")
         prefix = f"{progress.file_index}/{progress.file_total} · " if progress.file_total else ""
         self.current.setText(prefix + progress.current_file)
-        self.processed.setText(f"{progress.processed} / {progress.total}")
+        self.processed.setText(f"{progress.page_index} / {progress.page_total} стр." if progress.page_total else f"{progress.processed} / {progress.total}")
+        self.processed_caption.setText('Страница OCR' if progress.page_total else 'Обработано сегментов')
         self.elapsed.setText(_time(progress.elapsed_seconds))
         remaining = progress.eta_seconds if progress.eta_seconds is not None else round(progress.elapsed_seconds * (100 - progress.percent) / progress.percent) if progress.percent else 0
-        self.remaining.setText(_time(remaining) if progress.percent else "—")
+        self.remaining.setText(_time(remaining) if progress.percent or progress.eta_seconds is not None else "—")

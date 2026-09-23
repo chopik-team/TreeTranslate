@@ -14,7 +14,8 @@ LOGS_DIR = APP_DATA_DIR / "logs"
 
 
 def icon_path(name: str) -> str:
-    return str(ICONS_DIR / f"{name}.svg")
+    extension = "png" if name in {"docx", "pdf"} else "svg"
+    return str(ICONS_DIR / f"{name}.{extension}")
 
 
 def stylesheet_url(path: Path) -> str:

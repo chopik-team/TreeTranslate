@@ -1,0 +1,65 @@
+[
+  {
+    "case": "automotive",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\automotive-scan_ru (1).pdf",
+    "pages": 6,
+    "metrics": [
+      {
+        "page": 1,
+        "unmasked_pixels": 934203,
+        "unexpected_changed_pixels": 0
+      },
+      {
+        "page": 2,
+        "unmasked_pixels": 955722,
+        "unexpected_changed_pixels": 0
+      },
+      {
+        "page": 3,
+        "unmasked_pixels": 986885,
+        "unexpected_changed_pixels": 0
+      },
+      {
+        "page": 4,
+        "unmasked_pixels": 943807,
+        "unexpected_changed_pixels": 0
+      }
+    ]
+  },
+  {
+    "case": "silverstone",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\silverstone-scan_en (1).pdf",
+    "pages": 2,
+    "metrics": [
+      {
+        "page": 1,
+        "unmasked_pixels": 530602,
+        "unexpected_changed_pixels": 0
+      }
+    ]
+  },
+  {
+    "case": "english",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\english-scan_ru (1).pdf",
+    "pages": 1,
+    "metrics": [
+      {
+        "page": 1,
+        "unmasked_pixels": 1038271,
+        "unexpected_changed_pixels": 0
+      }
+    ]
+  },
+  {
+    "case": "rotated",
+    "output": "C:\\TreeTranslate\\output\\pdf\\aw062\\rotated-scan_ru (1).pdf",
+    "pages": 1,
+    "metrics": [
+      {
+        "page": 1,
+        "unmasked_pixels": 1048097,
+        "unexpected_changed_pixels": 0
+      }
+    ]
+  }
+]

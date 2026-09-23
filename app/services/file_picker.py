@@ -8,7 +8,7 @@ from app.config.constants import SUPPORTED_FILE_FILTER
 class FilePicker:
     @staticmethod
     def choose_files(parent: QWidget) -> list[Path]:
-        names, _ = QFileDialog.getOpenFileNames(parent, "Выберите документы DOCX", "", SUPPORTED_FILE_FILTER)
+        names, _ = QFileDialog.getOpenFileNames(parent, "Выберите документы DOCX или PDF", "", SUPPORTED_FILE_FILTER)
         return [Path(name) for name in names]
 
     @staticmethod

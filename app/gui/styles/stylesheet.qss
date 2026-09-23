@@ -71,6 +71,9 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{ height: 0; }}
 QTreeWidget {{ background: transparent; border: 0; outline: 0; alternate-background-color: {alternate_row}; }}
 QTreeWidget::item {{ min-height: 28px; border-radius: 5px; }}
 QTreeWidget::item:hover {{ background: {row_hover}; }}
+QTreeWidget#documentTree::indicator {{ width: 16px; height: 16px; border: 1px solid {indicator_border}; border-radius: 4px; background: {input}; }}
+QTreeWidget#documentTree::indicator:checked {{ image: url({tree_check_url}); background: {accent_green}; border-color: {accent_green}; }}
+QTreeWidget#documentTree::indicator:indeterminate {{ image: url({tree_partial_url}); background: {panel_raised}; }}
 QTableView {{ background: {panel_alt}; border: 1px solid {border}; border-radius: 8px; gridline-color: {border}; outline: 0; }}
 QTableView::item {{ padding: 7px 10px; border-bottom: 1px solid {grid_line}; }}
 QTableView::item:hover {{ background: {hover}; }}

@@ -1,0 +1,1971 @@
+[
+  {
+    "text": "СПИСОК ПОДДЕРЖИВАЕМЫХ ИГР ДЛЯ АРDОР GАМИNG SILVЕRSТОНЕ",
+    "translated": "СПИСОК ПОДДЕРЖИВАЕМЫХ ИГР ДЛЯ АРDОР GАМИNG SILVЕRSТОНЕ",
+    "page": 0,
+    "bbox": [
+      35.98010421412682,
+      548.8487917105549,
+      392.1831359339823,
+      559.6458171212544
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      35.98010421412682,
+      541.2908739230653,
+      419.52801513671875,
+      559.6458171212544
+    ],
+    "written_boxes": [],
+    "policy": "CONSERVATIVE_PRESERVE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "Поддержка",
+    "translated": "Support",
+    "page": 0,
+    "bbox": [
+      333.5355660649557,
+      528.6943442772492,
+      375.9920890376253,
+      537.6918654528322
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.88491020634405,
+      512.6465546171898,
+      380.7637888516266,
+      538.2553608107075
+    ],
+    "written_boxes": [
+      [
+        333.2689208984375,
+        530.46337890625,
+        363.284912109375,
+        538.3433837890625
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Платформы",
+    "translated": "Platforms",
+    "page": 0,
+    "bbox": [
+      160.8310658371469,
+      523.6557324189229,
+      205.0865940205229,
+      533.3730552885523
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.31804258946975,
+      512.5463841551517,
+      210.13712646587595,
+      538.4419027600758
+    ],
+    "written_boxes": [
+      [
+        59.126041412353516,
+        530.8050537109375,
+        94.58204650878906,
+        537.4690551757812
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Xbox",
+    "translated": "Xbox",
+    "page": 0,
+    "bbox": [
+      291.079043092286,
+      524.3755341129695,
+      310.8681004100558,
+      533.7329561355757
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.09529365240365,
+      512.5057926159859,
+      328.92039839507083,
+      538.6846929459193
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "PC",
+    "translated": "PC",
+    "page": 0,
+    "bbox": [
+      221.27764091687996,
+      519.6968231016664,
+      233.51087634968306,
+      529.0542451242726
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.07730602893793,
+      512.6028438201945,
+      241.7283782707,
+      538.6676193168171
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "PS4",
+    "translated": "PS4",
+    "page": 0,
+    "bbox": [
+      249.34212220389887,
+      519.6968231016664,
+      265.533169100256,
+      529.414145971296
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      245.68830033479253,
+      512.570846715013,
+      271.1272022775398,
+      538.6911476095335
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "коробки",
+    "translated": "box",
+    "page": 0,
+    "bbox": [
+      339.29238273921595,
+      519.3369222546431,
+      371.3146754897888,
+      529.414145971296
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.88491020634405,
+      512.6465546171898,
+      380.7637888516266,
+      538.2553608107075
+    ],
+    "written_boxes": [
+      [
+        333.6265869140625,
+        520.9414672851562,
+        346.6463623046875,
+        527.5521240234375
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "Игры",
+    "translated": "Games",
+    "page": 0,
+    "bbox": [
+      63.68478445900448,
+      513.57850870227,
+      86.35225011390438,
+      525.4552366540395
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.31804258946975,
+      512.5463841551517,
+      210.13712646587595,
+      538.4419027600758
+    ],
+    "written_boxes": [
+      [
+        58.86912155151367,
+        520.5950317382812,
+        88.37091827392578,
+        527.901611328125
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "(One&Series)",
+    "translated": "(One&Series)",
+    "page": 0,
+    "bbox": [
+      275.9673993223527,
+      514.65821124334,
+      322.38173375857633,
+      524.3755341129695
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.09529365240365,
+      512.5057926159859,
+      328.92039839507083,
+      538.6846929459193
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "передач",
+    "translated": "transmission",
+    "page": 0,
+    "bbox": [
+      339.6521837813572,
+      510.3394010790602,
+      370.95487444764757,
+      519.3369222546431
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      339.6521837813572,
+      504.94088837371055,
+      371.67447653193005,
+      519.3369222546431
+    ],
+    "written_boxes": [
+      [
+        340.50018310546875,
+        511.64892578125,
+        350.8921813964844,
+        519.4329223632812
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "continuation",
+    "continuation_page": 2
+  },
+  {
+    "text": "EURO TRUCK",
+    "translated": "EURO TRUCK",
+    "page": 0,
+    "bbox": [
+      111.89812410593441,
+      497.3829705862209,
+      156.51345333145167,
+      506.0205909147804
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.229829954511786,
+      496.5209636613051,
+      210.21130907820222,
+      508.594589868579
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      496.66316889217427,
+      231.71187113897673,
+      506.0205909147804
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.1813110176819,
+      496.5278611750969,
+      241.736833068138,
+      508.5898862694049
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.6844244248667,
+      496.66316889217427,
+      360.880445267692,
+      506.0205909147804
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.8867329289086,
+      496.62814970763384,
+      381.0513837275959,
+      508.6241761389241
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "DIRT RALLY 2.0",
+    "translated": "DIRT RALLY 2.0",
+    "page": 0,
+    "bbox": [
+      109.01971576880426,
+      482.2671350112417,
+      158.31245854215803,
+      490.9047553398012
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.098249424318624,
+      481.21750033456505,
+      210.15502428382916,
+      492.58706666569384
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      481.18743247017176,
+      231.35207009683546,
+      490.5448544927779
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      480.1077299291018,
+      242.86570344535605,
+      490.5448544927779
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      481.18743247017176,
+      305.4710847779367,
+      490.5448544927779
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      480.1077299291018,
+      329.93755564354296,
+      490.5448544927779
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.3246233827254,
+      481.18743247017176,
+      360.880445267692,
+      490.5448544927779
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.3246233827254,
+      480.1077299291018,
+      383.18810988045067,
+      490.5448544927779
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "DIRT RALLY 4",
+    "translated": "DIRT RALLY 4",
+    "page": 0,
+    "bbox": [
+      112.61772619021696,
+      466.07159689519256,
+      156.1536522893104,
+      474.7092172237521
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.183325823538624,
+      465.92950698899665,
+      210.18272747075918,
+      477.2581660110208
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      465.7116960481692,
+      231.35207009683546,
+      475.0691180707754
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      464.6319935070993,
+      242.86570344535605,
+      475.0691180707754
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      465.35179520114593,
+      305.4710847779367,
+      475.0691180707754
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      464.6319935070993,
+      329.93755564354296,
+      475.0691180707754
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.6844244248667,
+      465.7116960481692,
+      360.880445267692,
+      475.0691180707754
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.6844244248667,
+      464.6319935070993,
+      383.18810988045067,
+      475.0691180707754
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "FORZA HORIZON 4",
+    "translated": "FORZA HORIZON 4",
+    "page": 0,
+    "bbox": [
+      102.90309805240271,
+      450.59586047319,
+      165.14867834284212,
+      459.2334808017496
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.11409118925848,
+      450.19864493146304,
+      210.1504235563921,
+      461.9669380829497
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      449.87605877914336,
+      231.35207009683546,
+      459.59338164877283
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      449.15625708509674,
+      242.86570344535605,
+      459.59338164877283
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      449.87605877914336,
+      305.4710847779367,
+      459.59338164877283
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      449.15625708509674,
+      329.93755564354296,
+      459.59338164877283
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.6844244248667,
+      449.87605877914336,
+      360.880445267692,
+      459.59338164877283
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.6844244248667,
+      449.15625708509674,
+      383.18810988045067,
+      459.59338164877283
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "FORZA HORIZON 5",
+    "translated": "FORZA HORIZON 5",
+    "page": 0,
+    "bbox": [
+      103.26289909454398,
+      435.83992574523404,
+      164.0692752164183,
+      443.3978435327237
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.12032111224081,
+      434.90864713324015,
+      210.21942348769142,
+      446.2887848927521
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      434.76022320416416,
+      231.71187113897673,
+      444.1176452267703
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      433.68052066309417,
+      242.86570344535605,
+      444.1176452267703
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      434.76022320416416,
+      305.4710847779367,
+      444.1176452267703
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      433.68052066309417,
+      329.93755564354296,
+      444.1176452267703
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.3246233827254,
+      434.76022320416416,
+      360.880445267692,
+      444.1176452267703
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.3246233827254,
+      433.68052066309417,
+      383.18810988045067,
+      444.1176452267703
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "ASSETTO CORSA COMPETIZIONE",
+    "translated": "ASSETTO CORSA COMPETIZIONE",
+    "page": 0,
+    "bbox": [
+      81.31503552392661,
+      420.0042884762082,
+      187.09654191345948,
+      428.2820079577445
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.077535170595496,
+      419.6281718580388,
+      210.1503247340844,
+      430.9476708060146
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      419.2844867821616,
+      231.71187113897673,
+      428.6419088047678
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      418.2047842410917,
+      242.86570344535605,
+      428.6419088047678
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      419.2844867821616,
+      305.4710847779367,
+      428.6419088047678
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      418.2047842410917,
+      329.93755564354296,
+      428.6419088047678
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V*",
+    "translated": "V**",
+    "page": 0,
+    "bbox": [
+      353.3246233827254,
+      419.64438762918496,
+      364.4784556891047,
+      429.36171049881443
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.3246233827254,
+      418.2047842410917,
+      383.18810988045067,
+      429.36171049881443
+    ],
+    "written_boxes": [
+      [
+        353.3326110839844,
+        422.99371337890625,
+        364.8686218261719,
+        429.45770263671875
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  },
+  {
+    "text": "ASSETTO CORSA",
+    "translated": "ASSETTO CORSA",
+    "page": 0,
+    "bbox": [
+      107.22071055809793,
+      404.888452901229,
+      160.8310658371469,
+      412.4463706887186
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.09705394890166,
+      403.712707948505,
+      210.1954426076854,
+      415.6989592408228
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      403.80875036015914,
+      231.35207009683546,
+      413.16617238276524
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.14849103126343,
+      403.7227247201262,
+      241.7315845055726,
+      415.6737635455386
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      403.80875036015914,
+      305.11128373579544,
+      413.16617238276524
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.20999341089384,
+      403.77658683419486,
+      328.86420144274905,
+      415.7072736006005
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "PROJECT CARS 2",
+    "translated": "PROJECT CARS 2",
+    "page": 0,
+    "bbox": [
+      106.86090951595666,
+      388.6929147851798,
+      160.8310658371469,
+      397.3305351137394
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.124762625959875,
+      373.21012266607954,
+      210.18102553101514,
+      399.75955173245745
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      387.9731130911332,
+      231.35207009683546,
+      397.6904359607628
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      387.2533113970866,
+      242.86570344535605,
+      397.6904359607628
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      352.96482234058413,
+      387.61321224410995,
+      360.880445267692,
+      396.9706342667161
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      352.96482234058413,
+      386.8934105500633,
+      383.18810988045067,
+      396.9706342667161
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "F1 2020-2022",
+    "translated": "F1 2020-2022",
+    "page": 0,
+    "bbox": [
+      110.81872097951062,
+      373.5770792102006,
+      157.2330554157342,
+      382.2146995387602
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.124762625959875,
+      373.21012266607954,
+      210.18102553101514,
+      399.75955173245745
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      372.857277516154,
+      231.35207009683546,
+      382.2146995387602
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      371.7775749750841,
+      242.86570344535605,
+      382.2146995387602
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.3246233827254,
+      372.857277516154,
+      360.880445267692,
+      382.2146995387602
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.3246233827254,
+      371.7775749750841,
+      383.18810988045067,
+      382.2146995387602
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      298.6348649772526,
+      373.2171783631773,
+      304.75148269365417,
+      381.8547986917369
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.2008358770454,
+      373.21192392764306,
+      328.9139639648128,
+      384.5439108902388
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "BeamNG.drive",
+    "translated": "BeamNG.drive",
+    "page": 0,
+    "bbox": [
+      109.73931785308682,
+      357.7414419411748,
+      158.31245854215803,
+      366.3790622697344
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.129355118204614,
+      357.46570172196,
+      210.2490482194937,
+      369.21284652502925
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      357.3815410941515,
+      231.35207009683546,
+      367.098863963781
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      223.4364471697276,
+      356.30183855308155,
+      242.86570344535605,
+      367.098863963781
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      354.04422546700795,
+      357.7414419411748,
+      360.1608431834095,
+      366.3790622697344
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.9484419699496,
+      357.537203019388,
+      381.3344327774103,
+      369.2952432582558
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "PROJECT CARS 3",
+    "translated": "PROJECT CARS 3",
+    "page": 0,
+    "bbox": [
+      106.86090951595666,
+      342.6256063661956,
+      160.8310658371469,
+      351.26322669475513
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.17884862398622,
+      342.2306973179341,
+      210.20218448512298,
+      353.5080753019105
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      342.2657055191723,
+      231.35207009683546,
+      351.62312754177844
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.18162944511786,
+      327.05990129866456,
+      241.80357106661626,
+      353.51009622951824
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.3246233827254,
+      342.2657055191723,
+      360.880445267692,
+      351.62312754177844
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      353.3246233827254,
+      340.826102131079,
+      383.18810988045067,
+      351.62312754177844
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "WRC 9",
+    "translated": "WRC 9",
+    "page": 0,
+    "bbox": [
+      121.97255328588993,
+      327.1498699441931,
+      146.43902415149617,
+      336.14739111977593
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.160293363180294,
+      327.01003710660257,
+      210.2139113989721,
+      338.28800818889863
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      327.1498699441931,
+      231.35207009683546,
+      335.7874902727526
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.18162944511786,
+      327.05990129866456,
+      241.80357106661626,
+      353.51009622951824
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      353.3246233827254,
+      327.1498699441931,
+      360.880445267692,
+      335.7874902727526
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      332.94000913302443,
+      327.11677283754045,
+      381.3849858779358,
+      338.428792156707
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "WRC 10",
+    "translated": "WRC 10",
+    "page": 0,
+    "bbox": [
+      119.45394599090106,
+      311.3142326751672,
+      148.2380293622025,
+      321.39145639182
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.20424870213359,
+      311.10560043249393,
+      210.24351417026153,
+      323.0214377743031
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      311.3142326751672,
+      231.35207009683546,
+      321.03155554479673
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.19939549999413,
+      311.16014351129996,
+      241.7560704773736,
+      323.09309283796216
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "iRacing",
+    "translated": "iRacing",
+    "page": 0,
+    "bbox": [
+      120.53334911732486,
+      294.7587937120947,
+      146.79882519363744,
+      305.55581912279416
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      120.53334911732486,
+      294.03899201804813,
+      211.20321173692443,
+      305.55581912279416
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      223.4364471697276,
+      295.8384962531647,
+      231.35207009683546,
+      305.19591827577085
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      214.192401076659,
+      295.8362841923443,
+      241.7345491748041,
+      307.2011112285668
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "FORZA MOTORSPORT 7",
+    "translated": "FORZA MOTORSPORT 7",
+    "page": 0,
+    "bbox": [
+      96.42667929385989,
+      281.4424623722321,
+      173.06430126995,
+      289.00038015972166
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.09333987716996,
+      280.6545268374629,
+      210.17165937229484,
+      291.8772079764022
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      280.00285898413887,
+      305.4710847779367,
+      289.360281006745
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      278.9231564430689,
+      329.93755564354296,
+      289.360281006745
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "TOCA RACE DRIVER",
+    "translated": "TOCA RACE DRIVER",
+    "page": 0,
+    "bbox": [
+      100.38449075741384,
+      264.8870234091596,
+      165.5084793849834,
+      274.24444543176577
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.12888708477501,
+      264.8778259681296,
+      210.25079408026335,
+      276.7292132925337
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      264.8870234091596,
+      305.4710847779367,
+      274.24444543176577
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      263.44742002106636,
+      329.93755564354296,
+      274.24444543176577
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "TOCA RACE DRIVERGrid Legends",
+    "translated": "TOCA RACE DRIVERGrid Legends",
+    "page": 0,
+    "bbox": [
+      78.0768261446552,
+      249.41128698715704,
+      189.97495025058961,
+      259.48851070380994
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      78.0768261446552,
+      248.33158444608716,
+      211.20321173692443,
+      259.48851070380994
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      296.83585976654626,
+      249.0513861401338,
+      305.83088582007804,
+      259.48851070380994
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      296.83585976654626,
+      248.33158444608716,
+      329.93755564354296,
+      259.48851070380994
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "DAKAR",
+    "translated": "DAKAR",
+    "page": 0,
+    "bbox": [
+      121.97255328588993,
+      233.93555056515453,
+      146.43902415149617,
+      243.2929725877607
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.105156005602396,
+      233.69658244175986,
+      210.20411701025168,
+      245.58942074872812
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      233.57564971813122,
+      305.4710847779367,
+      243.2929725877607
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      232.8558480240846,
+      329.93755564354296,
+      243.2929725877607
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "SNOW RUNNER",
+    "translated": "SNOW RUNNER",
+    "page": 0,
+    "bbox": [
+      107.94031264238046,
+      219.53951668422195,
+      160.11146375286435,
+      227.09743447171155
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.118469566503165,
+      218.3217386339162,
+      210.1723511284489,
+      229.75547490824363
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      254.01953575173536,
+      218.45981414315196,
+      261.93515867884327,
+      227.45733531873486
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      254.01953575173536,
+      217.38011160208208,
+      272.36938890094007,
+      227.45733531873486
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "FIA EUROPEAN TRUCK RACING",
+    "translated": "FIA EUROPEAN TRUCK RACING",
+    "page": 0,
+    "bbox": [
+      82.7542396924917,
+      205.50338365031268,
+      183.13873044990552,
+      213.4212022848256
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.18957770703378,
+      197.21308387066392,
+      210.16421475844686,
+      214.31224906080132
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      298.27506393511135,
+      200.46477179198627,
+      305.11128373579544,
+      208.7424912735225
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.1315504590794,
+      197.3661252037457,
+      328.95351484841245,
+      214.2474695443296
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "CHAMPIONSHIP",
+    "translated": "CHAMPIONSHIP",
+    "page": 0,
+    "bbox": [
+      107.22071055809793,
+      196.14596162770647,
+      160.8310658371469,
+      204.78358195626606
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      107.22071055809793,
+      195.4261599336599,
+      211.20321173692443,
+      204.78358195626606
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "CarX Drift Racing Online",
+    "translated": "CarX Drift Racing Online",
+    "page": 0,
+    "bbox": [
+      94.62767408315354,
+      181.7499277467739,
+      173.4241023120913,
+      190.38754807533348
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      94.62767408315354,
+      180.31032435868065,
+      211.20321173692443,
+      190.38754807533348
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      181.39002689975064,
+      305.4710847779367,
+      190.7474489223568
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      180.31032435868065,
+      329.93755564354296,
+      190.7474489223568
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "OVERPASS",
+    "translated": "OVERPASS",
+    "page": 0,
+    "bbox": [
+      116.57553765377091,
+      166.6340921717947,
+      151.47623874147394,
+      175.63161334737754
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.15468656974941,
+      151.3850576737637,
+      210.14463696126248,
+      177.8142525307798
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "Monster Truck Championship",
+    "translated": "Monster Truck Championship",
+    "page": 0,
+    "bbox": [
+      85.27284698748056,
+      150.43855405574556,
+      182.05932732348174,
+      160.8756786194217
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      85.27284698748056,
+      149.71875236169893,
+      211.20321173692443,
+      160.8756786194217
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      150.7984549027688,
+      305.11128373579544,
+      160.51577777239834
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      297.91526289297013,
+      150.07865320872224,
+      329.93755564354296,
+      160.51577777239834
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "Wreckfest",
+    "translated": "Wreckfest",
+    "page": 0,
+    "bbox": [
+      116.93533869591217,
+      136.04252017481298,
+      151.83603978361518,
+      146.11974389146576
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.121221493266674,
+      135.92236941479405,
+      210.09565403740405,
+      147.44067711618692
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      297.91526289297013,
+      136.04252017481298,
+      305.4710847779367,
+      145.39994219741914
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      275.1574638642141,
+      135.96151390389298,
+      328.910274598658,
+      147.47371488925353
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "GT 7",
+    "translated": "GT 7",
+    "page": 0,
+    "bbox": [
+      125.21076266516134,
+      119.84698205876384,
+      143.56061581436603,
+      130.28410662243994
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      125.21076266516134,
+      119.12718036471716,
+      211.20321173692443,
+      130.28410662243994
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      254.37933679387663,
+      120.92668459983372,
+      261.575357636702,
+      129.5643049283933
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      245.76896129840247,
+      120.4920599307581,
+      271.1907779621711,
+      132.01875887504423
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "GT sport",
+    "translated": "GT sport",
+    "page": 0,
+    "bbox": [
+      118.37454286447723,
+      103.6514439427146,
+      150.03703457290885,
+      115.16827104746073
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      118.37454286447723,
+      102.93164224866803,
+      211.20321173692443,
+      115.16827104746073
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      254.37933679387663,
+      105.0910473308079,
+      261.93515867884327,
+      114.44846935341405
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      254.37933679387663,
+      103.65144394271465,
+      272.36938890094007,
+      114.44846935341405
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "DIRT RALLY 5",
+    "translated": "DIRT RALLY 5",
+    "page": 0,
+    "bbox": [
+      112.61772619021696,
+      89.97521175582864,
+      155.79385124716913,
+      98.61283208438823
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.08198766457097,
+      89.38682085572503,
+      210.15760464408623,
+      101.18089730916444
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      254.01953575173536,
+      89.25541006178207,
+      261.93515867884327,
+      98.97273293141154
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      254.01953575173536,
+      88.17570752071214,
+      272.36938890094007,
+      98.97273293141154
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "Need for Speed Payback",
+    "translated": "Need for Speed Payback",
+    "page": 0,
+    "bbox": [
+      93.90807199887101,
+      74.13957448680276,
+      174.14370439637383,
+      82.77719481536235
+    ],
+    "region_kind": "table_cell",
+    "available_bbox": [
+      58.066265309919594,
+      59.204838164993134,
+      210.1321743702337,
+      85.47569773725922
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      253.65973470959412,
+      73.7796736397795,
+      261.575357636702,
+      83.13709566238572
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      253.65973470959412,
+      72.69997109870963,
+      272.36938890094007,
+      83.13709566238572
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "Need for Speed Heat",
+    "translated": "Need for Speed Heat",
+    "page": 0,
+    "bbox": [
+      99.30508763099003,
+      58.6638380648003,
+      169.10648980639607,
+      67.3014583933599
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      99.30508763099003,
+      57.224234676707056,
+      211.20321173692443,
+      67.3014583933599
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "V",
+    "translated": "V",
+    "page": 0,
+    "bbox": [
+      254.01953575173536,
+      58.303937217776934,
+      261.575357636702,
+      67.66135924038315
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      254.01953575173536,
+      57.224234676707056,
+      272.36938890094007,
+      67.66135924038315
+    ],
+    "written_boxes": [],
+    "policy": "TRANSLATABLE",
+    "status": "translated",
+    "continuation_page": null
+  },
+  {
+    "text": "*Для поддержки Н-образного режима переключения необходимы специальные внутриигровые машины, которые поддерживают включение данного режима.",
+    "translated": "* To support the H-shaped switching mode, special in-game machines are needed that support the inclusion of this mode.",
+    "page": 0,
+    "bbox": [
+      35.260502129844284,
+      23.393555056515424,
+      383.18810988045067,
+      47.14701096005422
+    ],
+    "region_kind": "ocr_region",
+    "available_bbox": [
+      35.260502129844284,
+      5.398512705349731,
+      419.52801513671875,
+      47.14701096005422
+    ],
+    "written_boxes": [
+      [
+        35.82194900512695,
+        38.00840759277344,
+        415.5404052734375,
+        47.13837432861328
+      ],
+      [
+        35.493717193603516,
+        30.044523239135742,
+        141.0540771484375,
+        37.239662170410156
+      ]
+    ],
+    "policy": "TRANSLATABLE",
+    "status": "written",
+    "continuation_page": null
+  }
+]

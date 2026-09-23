@@ -31,6 +31,7 @@ DARK_COLORS = {
     "accent_green": "#19a653",
     "accent": "#19a653",
     "accent_hover": "#20b960",
+    "toggle_off": "#59645e",
     "danger_red": "#e85d68",
     "danger_hover": "#7c3037",
     "close_hover": "#c42b3a",
@@ -73,5 +74,7 @@ def load_stylesheet(theme_name: str = "Тёмная") -> str:
     values.update(
         radio_unchecked_url=stylesheet_url(ICONS_DIR / "radio_unchecked.svg"),
         radio_checked_url=stylesheet_url(ICONS_DIR / "radio_checked.svg"),
+        tree_check_url=stylesheet_url(ICONS_DIR / "tree-check.svg"),
+        tree_partial_url=stylesheet_url(ICONS_DIR / "tree-partial.svg"),
     )
     return stylesheet.format(**values)

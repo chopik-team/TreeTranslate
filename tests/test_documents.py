@@ -111,7 +111,7 @@ def test_scan_recursive_deduplicates_and_skips(tmp_path):
     folder = tmp_path / 'nested'
     folder.mkdir()
     source = fixture(folder / 'test.DOCX')
-    (folder / 'test.pdf').write_bytes(b'%PDF')
+    (folder / 'test.txt').write_bytes(b'unsupported')
     result = scan_sources([tmp_path, source], JobControl())
     assert len(result.files) == 1 and len(result.skipped) == 1
     assert result.files[0].relative.parts == ('nested', 'test.DOCX')
@@ -214,8 +214,8 @@ def test_directory_structure_and_translation_collisions(tmp_path):
     assert len({p.parent.parent for p in results}) == 1
 
 
-def test_unsupported_pdf_and_auto_target(tmp_path):
-    pdf = tmp_path / 'test.pdf'
+def test_unsupported_format_and_auto_target(tmp_path):
+    pdf = tmp_path / 'test.txt'
     pdf.write_bytes(b'%PDF')
     with pytest.raises(DocumentError, match='Формат пока не поддерживается'):
         job([pdf]).run()

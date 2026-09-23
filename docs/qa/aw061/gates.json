@@ -1,0 +1,33 @@
+[
+  {
+    "name": "automotive",
+    "dimensions_preserved": true,
+    "images_preserved": true,
+    "image_count": 19,
+    "background_pixel_difference_ratio": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "numeric_failures": [],
+    "identifier_failures": [],
+    "text_outside_page": [],
+    "text_overlaps": [],
+    "annotations": 0
+  },
+  {
+    "name": "silverstone",
+    "dimensions_preserved": true,
+    "images_preserved": true,
+    "image_count": 0,
+    "background_pixel_difference_ratio": [
+      0.0
+    ],
+    "numeric_failures": [],
+    "identifier_failures": [],
+    "text_outside_page": [],
+    "text_overlaps": [],
+    "annotations": 0
+  }
+]

@@ -52,6 +52,7 @@ class TranslationUiController(QObject):
         file_page.progress.open_file_requested.connect(self._open_file)
         if getattr(service, 'real_files', False):
             service.files.failed.connect(file_page.file_status.setText)
+            service.files.notice.connect(file_page.file_status.setText)
         text_page.translate_requested.connect(self.translate_text)
         text_page.variant_chosen.connect(self._use_dictionary_variant)
         self.service.state_changed.connect(self._state_changed)
@@ -112,12 +113,20 @@ class TranslationUiController(QObject):
         self.text_page.refresh_assistance()
 
     def _apply_translate_directories(self, enabled: bool) -> None:
+        # Avoid echoing a user's already-applied click into ToggleSwitch while
+        # its thumb is animating toward the same target.
+        if self.file_page.translate_folders.isChecked() == enabled:
+            self.job_config.translate_directories = enabled
+            return
         self.file_page.translate_folders.blockSignals(True)
         self.file_page.translate_folders.setChecked(enabled)
         self.file_page.translate_folders.blockSignals(False)
         self.job_config.translate_directories = enabled
 
     def _apply_translate_filenames(self, enabled: bool) -> None:
+        if self.file_page.translate_filenames.isChecked() == enabled:
+            self.job_config.translate_filenames = enabled
+            return
         self.file_page.translate_filenames.blockSignals(True)
         self.file_page.translate_filenames.setChecked(enabled)
         self.file_page.translate_filenames.blockSignals(False)
@@ -157,7 +166,7 @@ class TranslationUiController(QObject):
                 str(self.settings.value('general/output_template', '{name}_{lang}')),
                 self.preferences.translate_directories,
                 self.preferences.translate_filenames)
-            self.file_page.file_status.setText('Перевод DOCX · Оригиналы сохраняются')
+            self.file_page.file_status.setText('Перевод DOCX/PDF · Оригиналы сохраняются')
         self.service.start()
 
     def _open_file(self):
@@ -245,7 +254,7 @@ class TranslationUiController(QObject):
     def _show_tree(self) -> None:
         if getattr(self.service, 'real_files', False):
             result = self.service.files.scan_result
-            root = FileItem('Выбранные DOCX', True)
+            root = FileItem('Выбранные документы', True)
             folders = {}
             for source in result.files:
                 parent = root
@@ -261,13 +270,16 @@ class TranslationUiController(QObject):
                 parent.children.append(FileItem(source.path.name, path=str(source.path)))
             self.file_page.file_tree.populate(root)
             self.file_page.start_button.setEnabled(bool(result.files))
+            extensions = {source.path.suffix.lower() for source in result.files}
+            formats = "/".join(name for name in ("DOCX", "PDF") if f".{name.lower()}" in extensions)
+            found = f"Найдено {formats}: {len(result.files)}" if formats else "Найдено: 0"
             self.file_page.file_status.setText(
-                f'Найдено DOCX: {len(result.files)}. Пропущено: {len(result.skipped)}. Формат пока не поддерживается для других файлов.'
-                if result.skipped else f'Найдено DOCX: {len(result.files)}. Оригиналы сохраняются.')
+                f'{found}. Пропущено: {len(result.skipped)}. Формат пока не поддерживается для других файлов.'
+                if result.skipped else f'{found}. Оригиналы сохраняются.')
             if self._restoring_job:
                 self._restoring_job = False
                 self.file_page.file_status.setText(
-                    f"Задача восстановлена. Найдено DOCX: {len(result.files)}. Нажмите «Начать перевод»."
+                    f"Задача восстановлена. {found}. Нажмите «Начать перевод»."
                 )
             return
         self.file_page.file_tree.populate(mock_file_tree(self._source_name))

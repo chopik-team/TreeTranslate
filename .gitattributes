@@ -1,0 +1,6 @@
+*.pdf binary
+*.png binary
+*.ttf binary
+# Preserve upstream license/model-card snapshots, including original whitespace.
+vendor/licenses/** -text -whitespace conflict-marker-size=32
+vendor/model-metadata/** -text -whitespace
