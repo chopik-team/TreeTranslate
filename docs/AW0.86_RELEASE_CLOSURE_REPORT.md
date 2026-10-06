@@ -16,14 +16,14 @@ Consolidation preserves existing best known production. No new algorithm, optimi
 | Diff check | PASS — working and staged git diff --check |
 | Repo hygiene | PASS — candidate content ~79 MB rather than ~3.12 GB; useful tracked font retained |
 | Freeze receipt | PASS — production SHA, 49 DB hashes, model/sample references and fresh full-suite result |
-| Git commit | PREPARED — one closing commit after test/static gates |
-| Git tag | PREPARED — annotated AW0.86, no retroactive 0.81–0.85 tags |
-| GitHub push | PREPARED — authenticated push permission verified |
-| GitHub Release | PREPARED — technical prerelease, compact evidence, no corpus/model weights |
-| AW0.9 branch | PREPARED — existing convention codex/aw0.9, only development marker/transition metadata |
+| Git commit | PASS — `10bbc50`; one closing commit |
+| Git tag | PASS — annotated AW0.86; no retroactive 0.81–0.85 tags |
+| GitHub push | PASS — closing branch + tag pushed atomically |
+| GitHub Release | PASS — [technical prerelease](https://github.com/chopik-team/TreeTranslate/releases/tag/AW0.86), 655459-byte evidence ZIP |
+| AW0.9 branch | PASS — codex/aw0.9; AW0.9-dev markers and transition metadata only |
 | AW0.9 scope | PASS — preliminary MUST/SHOULD/MAY/NOT NOW; no tasks executed |
 
-The closing source commit necessarily precedes its tag/publication and cannot contain its own SHA. Post-publication status/commit/release/branch identities will be bound in the external finalization receipt and development-cycle transition metadata, without amending the immutable AW0.86 tag.
+The closing source commit necessarily precedes its tag/publication and cannot contain its own SHA. Post-publication identities are bound in the external finalization receipt and this development-cycle transition metadata. The immutable AW0.86 tag was not amended. Its source report records the pre-publication preparation state; the release finalization assets record actual completion.
 
 Historical restored NMT suite: **1269 PASS**. Closing suite includes nine previously added ETA cases (1278 collected). First attempt: 1276 passed / 2 failed; one was the missed presentation version field, corrected as permitted metadata. GPU UI smoke exceeded its existing 30-second limit; standalone rerun passed without changing runtime or timeout. Both failed checks separately passed. The complete retry passed **1278/1278**, with unchanged production hashes.
 
@@ -32,3 +32,5 @@ Benchmark: **same100 79,73 → 23,81 min, 3,35×, −70,14% wall**, 76 translate
 Decision: existing `codex/*` branch convention is retained, so the next branch is `codex/aw0.9`. No production architecture/UI redesign was made. The previously accepted UI and ETA work remains part of this freeze. Large QA trees are ignored but kept locally; compact evidence and exact regression fixture paths are retained. No tracked evidence deletion or history rewrite. Seventeen exact duplicate render copies are local-only. Narrow gitattributes preserve upstream notices/forensic output bytes; six QA/helper/note whitespace cleanups preserve Python AST and do not touch production.
 
 [Freeze receipt](AW0.86_FREEZE_RECEIPT.md), [release notes](releases/AW0.86.md), [known issues](KNOWN_ISSUES.md), [AW0.9 preliminary scope](AW0.9_SCOPE.md).
+
+Final stop: consolidation, publication and development-cycle opening complete; no AW0.9 feature work started.

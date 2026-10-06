@@ -1,6 +1,6 @@
 # TreeTranslate AW0.86 — source freeze receipt
 
-Date: 2026-10-06. Version: **AW0.86**, technical alpha/source freeze. Immutable Git reference: annotated tag **`AW0.86`**; exact closing commit is resolved with `git rev-parse AW0.86^{commit}` and recorded in the release finalization asset. A commit cannot contain its own final SHA; the post-publication receipt binds that tag, commit and release URL without rewriting history.
+Date: 2026-10-06. Closing Git commit: **`10bbc50f023c106bf259330395110daacaceee57`**. [Published release](https://github.com/chopik-team/TreeTranslate/releases/tag/AW0.86). Version: **AW0.86**, technical alpha/source freeze. Immutable Git reference: annotated tag **`AW0.86`**; exact closing commit is resolved with `git rev-parse AW0.86^{commit}` and recorded in the release finalization asset. A commit cannot contain its own final SHA; the post-publication receipt binds that tag, commit and release URL without rewriting history.
 
 ## Production identity
 
@@ -31,3 +31,5 @@ Full CN7C source SHA256: **`ecc0fd54bbc421af33febcb4f971e9a4735b15102aae9c451334
 Official benchmark: already measured same100 `25825c3f75a7` → `736fc7a72805`, 4783,64 → 1428,60 s, 3,35×; 76 translated / 24 preserved / 0 fatal. No repeat benchmark/full-corpus run. [Performance](PERFORMANCE_AW0.86.md), [history](BENCHMARK_HISTORY.md), [reproducibility](BENCHMARK_REPRODUCIBILITY.md).
 
 [Known issues](KNOWN_ISSUES.md), [rejected experiments](research/REJECTED_EXPERIMENTS.md), [closure status](AW0.86_RELEASE_CLOSURE_REPORT.md), [next scope](AW0.9_SCOPE.md). AW0.9 begins only after this freeze/release gate; no next-cycle feature work is performed here.
+
+Transition metadata: `codex/aw0.9` opened after verified publication; `AW0.9-dev` changes only current development version markers. AW0.86 tag/source/evidence remain immutable.

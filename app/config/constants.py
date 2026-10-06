@@ -1,5 +1,5 @@
 APP_NAME = "TreeTranslate"
-APP_VERSION = "AW0.86"
+APP_VERSION = "AW0.9-dev"
 ORGANIZATION_NAME = "CHOPIK Team"
 PROJECT_GITHUB_URL = "https://github.com/chopik-team/TreeTranslate"
 BOOSTY_URL = "https://boosty.to/cho_pik"

@@ -1,6 +1,6 @@
 # TreeTranslate
 
-**AW0.86 — technical alpha / development release.** Consolidated best known production в конце engineering cycle AW0.8x. Это source freeze, не 1.0; Windows installer и веса моделей в этот release не входят.
+**AW0.9-dev — development cycle opened.** Новые функции ещё не разрабатываются; roadmap будет утверждён отдельно. Frozen reference: [AW0.86 technical release](https://github.com/chopik-team/TreeTranslate/releases/tag/AW0.86), consolidated best known production в конце AW0.8x. Это source freeze, не 1.0; Windows installer и веса моделей в release не входят.
 
 > Your PC. Your files. Your rules.
 
