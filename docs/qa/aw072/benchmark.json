@@ -1,0 +1,74 @@
+[
+  {
+    "records": 100,
+    "synthetic": true,
+    "ingest_seconds": 0.0219957000008435,
+    "records_per_second": 4546.343148713847,
+    "link_including_classify_seconds": 0.0219474999976228,
+    "linking_per_second": 4556.327600447947,
+    "classify_seconds": 0.0017698000010568649,
+    "classify_per_second": 56503.55969052061,
+    "conflicts_seconds": 0.00027069999487139285,
+    "pack_build_seconds": 0.12253680000139866,
+    "process_peak_rss_bytes": 36990976,
+    "db_bytes": 466944,
+    "output_pack_bytes": 17584,
+    "integrity": [
+      "ok"
+    ]
+  },
+  {
+    "records": 1000,
+    "synthetic": true,
+    "ingest_seconds": 0.08452069999475498,
+    "records_per_second": 11831.421179214749,
+    "link_including_classify_seconds": 0.13794250000501052,
+    "linking_per_second": 7249.397393578315,
+    "classify_seconds": 0.013386899998295121,
+    "classify_per_second": 74699.8931886661,
+    "conflicts_seconds": 0.002242000002297573,
+    "pack_build_seconds": 0.2908162000021548,
+    "process_peak_rss_bytes": 39280640,
+    "db_bytes": 3653632,
+    "output_pack_bytes": 128629,
+    "integrity": [
+      "ok"
+    ]
+  },
+  {
+    "records": 10000,
+    "synthetic": true,
+    "ingest_seconds": 0.6959650999997393,
+    "records_per_second": 14368.536583233477,
+    "link_including_classify_seconds": 1.4043720000045141,
+    "linking_per_second": 7120.620462361722,
+    "classify_seconds": 0.13245389999792678,
+    "classify_per_second": 75497.96570849574,
+    "conflicts_seconds": 0.019700099997862708,
+    "pack_build_seconds": 2.1583758999986458,
+    "process_peak_rss_bytes": 42106880,
+    "db_bytes": 35495936,
+    "output_pack_bytes": 1238362,
+    "integrity": [
+      "ok"
+    ]
+  },
+  {
+    "records": 100000,
+    "synthetic": true,
+    "ingest_seconds": 6.846741100001964,
+    "records_per_second": 14605.48873389872,
+    "link_including_classify_seconds": 17.27707420000661,
+    "linking_per_second": 5788.017047467548,
+    "classify_seconds": 1.4491052000012132,
+    "classify_per_second": 69008.10237925878,
+    "conflicts_seconds": 0.5630851999958395,
+    "pack_build_seconds": 26.054365300005884,
+    "process_peak_rss_bytes": 44494848,
+    "db_bytes": 354897920,
+    "output_pack_bytes": 12339513,
+    "integrity": [
+      "ok"
+    ]
+  }
+]

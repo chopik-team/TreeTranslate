@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "sources": [
     {
       "pair": "eng-rus",
@@ -16,8 +16,132 @@
       "sha512": "9adf7a5eda27ccfa3e496b86b2fd575fc0e4af7ac5626a219d44e4ebfd56280deaf67cefd995ab04e9d7ef415e88f8cf0f9cae3252da6221376fd6d0c39012ba"
     }
   ],
-  "license": "CC-BY-SA-3.0",
+  "license": "mixed-see-sources",
   "changes": "TEI entries converted to indexed SQLite; stress-insensitive lookup keys added.",
-  "sha256": "a7e79a319ea1ccd3c9b34b9160a6c765773580212c6ad1730e6d7d0857943724",
-  "bytes": 43921408
+  "sha256": "2176705a7b932cd1e4acd300f838cce7395eb88809acd42fee23dffb1fafe5b0",
+  "bytes": 316022784,
+  "expansion": {
+    "wordnet": {
+      "articles": 156890,
+      "senses": 206978,
+      "embedded_examples": 95117
+    },
+    "openrussian": {
+      "articles": 45561,
+      "senses": 46982,
+      "forms": 486262,
+      "rejected": 13263,
+      "duplicates": 1
+    },
+    "tatoeba_en": {
+      "scanned": 2035201,
+      "examples": 68008,
+      "links": 87308,
+      "rejected": 30842,
+      "duplicates": 232
+    },
+    "tatoeba_ru": {
+      "scanned": 1226454,
+      "examples": 53569,
+      "links": 75247,
+      "rejected": 52970,
+      "duplicates": 4217
+    },
+    "statistics": {
+      "articles": {
+        "en": 156890,
+        "ru": 45561
+      },
+      "lemmas": {
+        "en": 147765,
+        "ru": 45238
+      },
+      "forms": {
+        "en": 161545,
+        "ru": 486262
+      },
+      "examples": {
+        "en": 68008,
+        "ru": 53569
+      },
+      "example_links": {
+        "en": 87308,
+        "ru": 75247
+      }
+    },
+    "source_files": {
+      "wordnet.zip": {
+        "url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/wordnet.zip",
+        "bytes": 10775600,
+        "sha256": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59",
+        "acquisition_date": "2026-09-27",
+        "revision": "nltk-data 550b6625bcef1f2abff2ff770a5a0d272c9c6b2a",
+        "license": "WordNet-3.0",
+        "attribution": "Princeton University WordNet 3.0"
+      },
+      "openrussian-nouns.csv": {
+        "url": "https://raw.githubusercontent.com/Badestrand/russian-dictionary/master/nouns.csv",
+        "bytes": 8378501,
+        "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+        "acquisition_date": "2026-09-27",
+        "revision": "50e210c4803237779cb562bc1abcea529066031c",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "OpenRussian.org contributors"
+      },
+      "openrussian-verbs.csv": {
+        "url": "https://raw.githubusercontent.com/Badestrand/russian-dictionary/master/verbs.csv",
+        "bytes": 5650332,
+        "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+        "acquisition_date": "2026-09-27",
+        "revision": "50e210c4803237779cb562bc1abcea529066031c",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "OpenRussian.org contributors"
+      },
+      "openrussian-adjectives.csv": {
+        "url": "https://raw.githubusercontent.com/Badestrand/russian-dictionary/master/adjectives.csv",
+        "bytes": 8343334,
+        "sha256": "89ab5d10dcd2f21f6b485de704aef372f32251468e3aa96f18b21e259f26b80a",
+        "acquisition_date": "2026-09-27",
+        "revision": "50e210c4803237779cb562bc1abcea529066031c",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "OpenRussian.org contributors"
+      },
+      "openrussian-others.csv": {
+        "url": "https://raw.githubusercontent.com/Badestrand/russian-dictionary/master/others.csv",
+        "bytes": 344444,
+        "sha256": "9f22a16b17fc9a564298112168b667fced11aafb254ccebf5b7544fc37cdaa92",
+        "acquisition_date": "2026-09-27",
+        "revision": "50e210c4803237779cb562bc1abcea529066031c",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "OpenRussian.org contributors"
+      },
+      "openrussian-LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/Badestrand/russian-dictionary/master/LICENSE",
+        "bytes": 20131,
+        "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+        "acquisition_date": "2026-09-27",
+        "revision": "50e210c4803237779cb562bc1abcea529066031c",
+        "license": "CC-BY-SA-4.0",
+        "attribution": "OpenRussian.org contributors"
+      },
+      "tatoeba-eng.tsv.bz2": {
+        "url": "https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2",
+        "bytes": 34909145,
+        "sha256": "353d48de7905952cf6f1500f6a3158516ecf9e10cd844ba051982cfa4a11c111",
+        "acquisition_date": "2026-09-27",
+        "revision": "2026-09-26",
+        "license": "CC-BY-2.0-FR",
+        "attribution": "Tatoeba contributors; sentence ID and contributor retained"
+      },
+      "tatoeba-rus.tsv.bz2": {
+        "url": "https://downloads.tatoeba.org/exports/per_language/rus/rus_sentences_detailed.tsv.bz2",
+        "bytes": 23467285,
+        "sha256": "4270bbb5e918693bb8a2d96f0b7bcf62b5b3847e4a85d66362ff3e6213adc5d5",
+        "acquisition_date": "2026-09-27",
+        "revision": "2026-09-26",
+        "license": "CC-BY-2.0-FR",
+        "attribution": "Tatoeba contributors; sentence ID and contributor retained"
+      }
+    }
+  }
 }

@@ -1,18 +1,21 @@
-from PySide6.QtCore import QSettings
+from PySide6.QtCore import QSettings, QObject, Signal
 from pathlib import Path
 
 from app.config.settings import AppSettings, PerformanceSettings
 
 
-class SettingsService:
+class SettingsService(QObject):
+    changed = Signal(str, object)
     def __init__(self, settings: QSettings | None = None) -> None:
+        super().__init__()
         self._settings = settings or QSettings()
 
     def load(self) -> AppSettings:
+        remember = self.value('general/remember_language', True, bool)
         return AppSettings(
-            source_language=self._settings.value("language/source", "Определить автоматически"),
-            target_language=self._settings.value("language/target", "Русский"),
-            translation_mode=self._settings.value("translation/mode", "Автоматический"),
+            source_language=self._settings.value("language/source", "Определить автоматически") if remember else "Определить автоматически",
+            target_language=self._settings.value("language/target", "Русский") if remember else "Русский",
+            translation_mode="Автоматический",
             acceleration=self._settings.value("performance/device", "Auto"),
             translate_folders=self._settings.value("translation/translate_folders", True, bool),
             translate_filenames=self._settings.value("translation/translate_filenames", False, bool),
@@ -20,6 +23,7 @@ class SettingsService:
 
     def save_value(self, key: str, value: object) -> None:
         self._settings.setValue(key, value)
+        self.changed.emit(key, value)
 
     def sync(self) -> None:
         self._settings.sync()
@@ -60,18 +64,27 @@ class SettingsService:
         self.sync()
 
     def load_performance(self) -> PerformanceSettings:
+        # UI policy is automatic; explicit profiles remain available in the
+        # developer request APIs. Ignore obsolete manual resource controls.
+        device = str(self._settings.value('performance/device', 'Auto'))
+        if device not in ('Auto', 'CPU', 'GPU'):
+            device = 'Auto'
+        self._settings.setValue('performance/device', device)
+        self._settings.setValue('performance/mode', 'Автоматический')
         return PerformanceSettings(
-            mode=str(self._settings.value("performance/mode", "Автоматический")),
-            device=str(self._settings.value("performance/device", "Auto")),
-            cpu_threads=str(self._settings.value("performance/cpu_threads", "Автоматически")),
-            gpu_usage=str(self._settings.value("performance/gpu", "Автоматически")),
-            ram_limit=str(self._settings.value("performance/ram", "Автоматически")),
-            vram_limit=str(self._settings.value("performance/vram", "Автоматически")),
-            unload_model=self._settings.value("performance/unload_model", True, bool),
-            reduce_load=self._settings.value("performance/reduce_load", True, bool),
+            device=device,
         )
 
     def value(self, key: str, default: object, value_type=None):
         if value_type is None:
             return self._settings.value(key, default)
-        return self._settings.value(key, default, value_type)
+        if value_type is bool:
+            value = self._settings.value(key, default)
+            if isinstance(value, bool): return value
+            if str(value).lower() in ('true','1'): return True
+            if str(value).lower() in ('false','0'): return False
+            return default
+        try:
+            return self._settings.value(key, default, value_type)
+        except (ValueError, TypeError):
+            return default

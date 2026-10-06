@@ -1,0 +1,116 @@
+{
+  "actual": [
+    {
+      "event": "hardware_plan",
+      "pid": 26984,
+      "capabilities": {
+        "ram_total": 34266484736,
+        "ram_available": 20634836992,
+        "logical_threads": 16,
+        "cuda": true,
+        "vram_total": 12884901888,
+        "vram_available": 10785652736
+      },
+      "plan": {
+        "resident_models": 2,
+        "resident_ram_bytes": 11993269657,
+        "resident_vram_bytes": 8375186227,
+        "result_cache_bytes": 154948642,
+        "prepared_region_bytes": 134217728,
+        "ram_reserve_bytes": 5139972710,
+        "vram_reserve_bytes": 1932735283,
+        "batch_ceiling": null
+      },
+      "device": "gpu"
+    }
+  ],
+  "synthetic": [
+    {
+      "capabilities": {
+        "ram_total": 8589934592,
+        "ram_available": 6442450944,
+        "logical_threads": 16,
+        "cuda": false,
+        "vram_total": 0,
+        "vram_available": 0
+      },
+      "plan": {
+        "resident_models": 1,
+        "resident_ram_bytes": 3006477107,
+        "resident_vram_bytes": 0,
+        "result_cache_bytes": 42949672,
+        "prepared_region_bytes": 85899345,
+        "ram_reserve_bytes": 2147483648,
+        "vram_reserve_bytes": 0,
+        "batch_ceiling": null
+      }
+    },
+    {
+      "capabilities": {
+        "ram_total": 17179869184,
+        "ram_available": 12884901888,
+        "logical_threads": 16,
+        "cuda": true,
+        "vram_total": 4294967296,
+        "vram_available": 3650722201
+      },
+      "plan": {
+        "resident_models": 2,
+        "resident_ram_bytes": 6012954214,
+        "resident_vram_bytes": 2791728742,
+        "result_cache_bytes": 103079215,
+        "prepared_region_bytes": 134217728,
+        "ram_reserve_bytes": 2576980377,
+        "vram_reserve_bytes": 644245094,
+        "batch_ceiling": null
+      }
+    },
+    {
+      "capabilities": {
+        "ram_total": 34359738368,
+        "ram_available": 25769803776,
+        "logical_threads": 16,
+        "cuda": true,
+        "vram_total": 12884901888,
+        "vram_available": 10952166604
+      },
+      "plan": {
+        "resident_models": 4,
+        "resident_ram_bytes": 12025908428,
+        "resident_vram_bytes": 8375186227,
+        "result_cache_bytes": 206158430,
+        "prepared_region_bytes": 134217728,
+        "ram_reserve_bytes": 5153960755,
+        "vram_reserve_bytes": 1932735283,
+        "batch_ceiling": null
+      }
+    },
+    {
+      "capabilities": {
+        "ram_total": 68719476736,
+        "ram_available": 51539607552,
+        "logical_threads": 16,
+        "cuda": true,
+        "vram_total": 25769803776,
+        "vram_available": 21904333209
+      },
+      "plan": {
+        "resident_models": 4,
+        "resident_ram_bytes": 24051816857,
+        "resident_vram_bytes": 16750372454,
+        "result_cache_bytes": 268435456,
+        "prepared_region_bytes": 134217728,
+        "ram_reserve_bytes": 10307921510,
+        "vram_reserve_bytes": 3865470566,
+        "batch_ceiling": null
+      }
+    }
+  ],
+  "execution_settings": {
+    "nmt_threads": 8,
+    "ocr_threads": 4,
+    "ocr_batch": 6,
+    "dpi": 200
+  },
+  "prepared_buffer_note": "Ceiling only; synchronous existing region rendering, no speculative buffer allocated."
+}

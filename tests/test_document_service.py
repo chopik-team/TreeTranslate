@@ -3,6 +3,7 @@ from types import SimpleNamespace
 from hashlib import sha256
 from unittest.mock import patch
 from pathlib import Path
+import pytest
 from time import monotonic, sleep
 
 os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
@@ -41,6 +42,57 @@ def make_engine():
     engine = SlowEngine()
     engine.languages = SimpleNamespace(resolve=lambda text, source, target: ('en', 'ru'))
     return engine
+
+
+@pytest.mark.parametrize('failed_document',[False,True])
+def test_gui_zip_run_saves_local_diagnostics(tmp_path,failed_document):
+    import json
+    from zipfile import ZipFile
+    app = QApplication.instance() or QApplication([])
+    source = make_source(tmp_path)
+    archive = tmp_path / 'manual.zip'
+    with ZipFile(archive, 'w') as bundle:
+        bundle.write(source, 'chapter/one.docx')
+        bundle.write(source, 'chapter/two.docx')
+        if failed_document:
+            bundle.writestr('chapter/broken.pdf',b'not a PDF')
+    source_hash = sha256(archive.read_bytes()).hexdigest()
+    engine = make_engine()
+    engine.release.set()
+    service = HybridTranslationService(engine=engine)
+    window = MainWindow(translation_service=service)
+    try:
+        window.translation.accept_paths([archive])
+        wait_for(lambda: service.state == JobState.READY)
+        with patch('app.controllers.translation_ui_controller.LOGS_DIR', tmp_path / 'logs'):
+            window.translation._start_translation()
+        wait_for(lambda: service.state in {JobState.COMPLETED, JobState.ERROR}, timeout=10000)
+        assert service.state == JobState.COMPLETED
+        directories = list((tmp_path / 'logs/document_runs').iterdir())
+        assert len(directories) == 1
+        manifest = json.loads((directories[0] / 'run_manifest.json').read_text('utf8'))
+        summary = json.loads((directories[0] / 'run_summary.json').read_text('utf8'))
+        assert manifest['metadata']['entrypoint'] == 'TreeTranslate GUI'
+        assert manifest['metadata']['scan_run_id'] == service.files._scan_run_id
+        assert manifest['metadata']['scan_seconds'] >= 0
+        assert summary['status'] == ('COMPLETED_WITH_FAILURES' if failed_document else 'COMPLETED')
+        assert summary['logging_status'] == 'COMPLETE'
+        assert summary['counters']['documents'] == (3 if failed_document else 2)
+        if failed_document:
+            assert summary['source_preserved_documents']==1
+            assert window.file_page.progress.status.text()=='Завершено с ошибками; оригиналы сохранены'
+        assert sha256(archive.read_bytes()).hexdigest() == source_hash
+        output, = window.file_page.progress.output_paths
+        with ZipFile(output) as bundle:
+            assert bundle.testzip() is None
+            if failed_document:assert bundle.read('chapter/broken.pdf')==b'not a PDF'
+        documents = [json.loads(line) for line in (directories[0] / 'documents.jsonl').read_text('utf8').splitlines()]
+        assert len(documents) == (3 if failed_document else 2)
+        assert all(d['source_immutable'] and d['output_sha256'] for d in documents)
+        assert (directories[0] / 'quality_sample_manifest.json').exists()
+        assert all('Private paragraph' not in p.read_text('utf8') for p in directories[0].glob('*.jsonl'))
+    finally:
+        window.close()
 
 
 def test_file_cancel_retains_session_until_worker_finishes(tmp_path):

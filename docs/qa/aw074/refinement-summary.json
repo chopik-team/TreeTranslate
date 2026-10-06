@@ -1,0 +1,1454 @@
+{
+  "before": {
+    "AUTO": 141989,
+    "REJECTED": 222,
+    "REVIEW": 50326,
+    "VERIFIED": 4409
+  },
+  "after": {
+    "AUTO": 141935,
+    "REJECTED": 230,
+    "REVIEW": 61082,
+    "VERIFIED": 4405
+  },
+  "unique_verified_before": 3041,
+  "unique_verified_after": 3038,
+  "transitions": {
+    "AUTO->AUTO": 141863,
+    "REVIEW->REVIEW": 46112,
+    "NEW->REVIEW": 14964,
+    "VERIFIED->VERIFIED": 4403,
+    "REJECTED->REJECTED": 222,
+    "NEW->AUTO": 72,
+    "VERIFIED->REVIEW": 6,
+    "NEW->REJECTED": 8,
+    "REVIEW->VERIFIED": 2
+  },
+  "promoted": 2,
+  "promoted_examples": [
+    {
+      "id": "418bba0d4e5189d9c5f2899f711777bfca5e88c34280f10e1dd21fb698d8a8a2",
+      "zh": "化学工程",
+      "ru": "химическая инженерия",
+      "domain": "chemistry-engineering",
+      "before": "REVIEW",
+      "after": "VERIFIED",
+      "reasons": [
+        "shared_concept",
+        "preferred_zh_ru",
+        "taxonomy_path"
+      ],
+      "evidence": [
+        {
+          "kind": "taxonomy",
+          "path": [],
+          "root": "agrovoc:http://aims.fao.org/aos/agrovoc/c_9752"
+        }
+      ]
+    },
+    {
+      "id": "b25de95065ea41322a5eb6d4a2bf4d139b07ac8cf2aee782b386e8dd893ee4b0",
+      "zh": "製程",
+      "ru": "производственный процесс",
+      "domain": "manufacturing",
+      "before": "REVIEW",
+      "after": "VERIFIED",
+      "reasons": [
+        "shared_concept",
+        "preferred_zh_ru",
+        "taxonomy_path"
+      ],
+      "evidence": [
+        {
+          "kind": "taxonomy",
+          "path": [],
+          "root": "wikidata:Q1408288"
+        }
+      ]
+    }
+  ],
+  "tiers": {
+    "AUTO": 141935,
+    "REVIEW": 44558,
+    "REVIEW_AMBIGUOUS": 15137,
+    "VERIFIED_DIRECT": 4405,
+    "REVIEW_HIGH": 1387,
+    "REJECTED": 230
+  },
+  "links": {
+    "DIRECT_CONCEPT:AUTO": 141935,
+    "DIRECT_CONCEPT:REVIEW": 44500,
+    "ENGLISH_PIVOT_AMBIGUOUS:REVIEW": 14208,
+    "DIRECT_CONCEPT:VERIFIED": 4405,
+    "ENGLISH_PIVOT_EXACT:REVIEW": 2316,
+    "DIRECT_CONCEPT:REJECTED": 222,
+    "CROSS_SOURCE_CONCEPT:REVIEW": 58,
+    "ENGLISH_PIVOT_AMBIGUOUS:REJECTED": 8
+  },
+  "independent_pair_agreements": 52,
+  "independent_agreement_examples": [
+    {
+      "zh": "不锈钢",
+      "ru": "нержавеющая сталь",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "135049c7c6221d3424469edfedf5738ee5a75ea0005387baa2094fa87ba67c35",
+        "de98ad50bde12cdc34658902579d59b520dcab6cbe02a5213cf90df51d4df702",
+        "9f13599c06a941c45e4400b77e614becd515c880011edf7d6f80b0524818afb7"
+      ]
+    },
+    {
+      "zh": "丝裂霉素",
+      "ru": "митомицин",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "f4ef30c835cd6515ec341801bf5c5afd097a7a222126cc52caff6b523aade61e",
+        "d640a7b9581cc382732f751cd4b8df294fa42740f7ed788d0c2b705478e7913f"
+      ]
+    },
+    {
+      "zh": "乳",
+      "ru": "молоко",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "4bbcf7824b1477e7661075eee18475b4aca8d4b10e90cf99f927b8d51b29d302",
+        "fc79990daf57e2bac1b85af09c3ea1a58255efbbd339e9dd932e7ba24360be34"
+      ]
+    },
+    {
+      "zh": "信息处理",
+      "ru": "обработка информации",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "77f1181d8c8fd49156af9572e77a942c641cc8a3fd921a9429b864357a301939",
+        "20d47fad8510e9cb5ec8abbfcd9d2d8a14f739559bc90a7624723edbd4c41e73"
+      ]
+    },
+    {
+      "zh": "克隆",
+      "ru": "клонирование",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "51d3541aa90c5c7c82cf7549ef80eddd1e3a1153f8e83aaa64a46c49f0e28b7a",
+        "27a36dfbe0305a1f9792e3173baadca26917d0b1a96025160ed6c051c95896ff"
+      ]
+    },
+    {
+      "zh": "可可粉",
+      "ru": "какао-порошок",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "560b5ce49b708a326a836dc1782f5eb4f47bcb77f3dc53d2e971f4adc794b7bd",
+        "3ddb8ac9c0f552e07f8efe6935b35900167afff41d715847759d75f15f03fbeb"
+      ]
+    },
+    {
+      "zh": "四轮驱动",
+      "ru": "полный привод",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "b7314d6195dc22eea0327e5004bc8b40a9d2644fa8433109cc1a2ee56294bc1e",
+        "189af1cc89b66eab5bb12331c837750fb5ce335286d08e7773c1814c16f5d8a6",
+        "b34dcb6c42db5ed7520c9dafef77bae4dca6f0ff40ea119e347b873f932b5297"
+      ]
+    },
+    {
+      "zh": "土壤",
+      "ru": "почва",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "622c2908ed9760e700edd9326056ae1fd0ef513ffe2ea2b73491de807920ba16",
+        "efcc53fc69d4b1654eec83bf4e71814195729cbd9d16c83cd8a22beb3f32b6b2"
+      ]
+    },
+    {
+      "zh": "手工具",
+      "ru": "ручной инструмент",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "a462f9d105cf69f27559b02db22def7ec721d5cd43c2ca4ed3018d93775f4ca2",
+        "ca7d6d976c15802c56590304eb602bbcf7213d088a54589b61325913e6ef332a"
+      ]
+    },
+    {
+      "zh": "数据处理",
+      "ru": "обработка данных",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "314062d600542b5aec59c829b2894c41d0a9aafae5b017f712a797a09069345c",
+        "7f5d4fbffc5f6b253777ee2c8bbf107e4cb53baad76ba53fa0d82a3cac64d7a9"
+      ]
+    },
+    {
+      "zh": "松香",
+      "ru": "канифоль",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "a25cd164796d35c517668155e516217b60846977fab49ce0545981753b61d36a",
+        "6eeded1a26f2048d9f01b89317a5e7e1813b92ca9f8bccaadbae26d0602e67ae"
+      ]
+    },
+    {
+      "zh": "染料",
+      "ru": "красители",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "aac15d83a30cf932933a3b56e110d5c1c003642b2e96dede15ef323293c24358",
+        "110c6af20b2918016b930496893000d8f1c2cc300a5db44872c5540997951449"
+      ]
+    },
+    {
+      "zh": "毒死蜱",
+      "ru": "хлорпирифос",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "cab9cb4d57bcefc3a687566bb8bb14fce6a552d4bc3af741cd1361c736c940e7",
+        "a455fe23d5fccc9c988f19eafab49d99db8fedcb9593e69e5136f6557fee6f6c"
+      ]
+    },
+    {
+      "zh": "水泥",
+      "ru": "цемент",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "70cdebe315ed547db8467d41d4a1c965ffd498679a5fd1154fc0f2dc6793afb7",
+        "6503dffd5b4ffda5f39ea28404c644eaddd423c6dca923c154c74bafeafb12f7",
+        "2b0872fdfeef8d3a96b175a8338e767ca1aa5815e741d4b61d1f90738749d3c9"
+      ]
+    },
+    {
+      "zh": "污染",
+      "ru": "загрязнение",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "9d5b99b763b79fb3f3ebe8bac847a95ce8312bf50384fc4bef6b4ea8526860df",
+        "9d086bc0fd2df706f051b94e85eb7fc69c659777b29d796ab42b8883408bbea2"
+      ]
+    },
+    {
+      "zh": "沥青",
+      "ru": "битум",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "535e866e10a036f543e57dfa93aa971a245706193579b8bbb5f378932ff6dfb3",
+        "d5aaad8f97fcebf11c72ef1e84e63abe6bcf2783fbc49f68e52954700400ac80"
+      ]
+    },
+    {
+      "zh": "泡沫塑料",
+      "ru": "пенопласт",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "e385b002407b2cd6c53cdfc8c58000edeb74d516f346f9106802ea18e9ee46f3",
+        "db5b889292663b07915cdc163ae425c0e767c2e1b82cc446cd3c59a62c4546cc"
+      ]
+    },
+    {
+      "zh": "活性炭",
+      "ru": "активированный уголь",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "7d89d8a06fbcbc5f99cb1ca2f2be5e1895f26f593d6a0db69a033415f0862568",
+        "eed34aa236235c773f8df045f0dc15446bd71ad5ce574e3e86daf49d1f490288"
+      ]
+    },
+    {
+      "zh": "混凝土",
+      "ru": "бетон",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "13269c9f25997e925277e197347381ee67182e1ebd8b21e89feab07ec2d3f3c5",
+        "311c13309f5b83e8baff5bb52fb9defcc564845590fa83288e88cc844542f016"
+      ]
+    },
+    {
+      "zh": "玻璃",
+      "ru": "стекло",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "dc8c5250a17c5c62b8bc164a9f1dfb9ebf6e8204b9c33611f748ec3d02b8dc59",
+        "691a0fc75b7470be16157f5eca4cf8ce2db07e8d2c322ee648b2a234f6f56e5f"
+      ]
+    },
+    {
+      "zh": "玻璃钢",
+      "ru": "стеклопластик",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "32aa88233379822bcd7a89b74f34a31db7c62f2fd89221524e728ccb01a69f52",
+        "41ad7b7e423360a454be7b431ed5a29505749d35ede64f231629d34abbcc6642"
+      ]
+    },
+    {
+      "zh": "珍珠母",
+      "ru": "перламутр",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "f7c7e1d591ed7551a8e0acec77d2c5941a9674085d5255a7c057d8b2ef8f8096",
+        "f5600c99743d9b65dd623116a32bdad6ca2e8bbd9c1b662315d844935dfe891b"
+      ]
+    },
+    {
+      "zh": "生成式人工智能",
+      "ru": "генеративный искусственный интеллект",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "49893591c3e0583e0b960e53104057af3ea28f59c2a87fea60e0a4b38052bfed",
+        "d03c51fb2330fb778158595a4d3c9e23dec2cc11948f0cd908ef812fe2b329fe"
+      ]
+    },
+    {
+      "zh": "生面团",
+      "ru": "тесто",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "8bb78d2840967417bae1c75cb363a467548508d055c446285111c6774710e6cd",
+        "322e54c01fbff16a9d655496f987d8bc0f1c51793759424fbda9233274161237"
+      ]
+    },
+    {
+      "zh": "电子工程",
+      "ru": "электронная инженерия",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "4dd97707cb176b10cc349103d8408bf623d4be2ad5a749d5ea6f6a18d2268e11",
+        "d0ffd7b39ef90cb9819409a8682e54042c78407ff9cd040bb032d4844b9060e4",
+        "60d2e40027f862e0bf267f0c50271b9f87825b8cf6968250a2003376f9a47e9f",
+        "98b700719f451bffa55df806b9a5c289e9a58283961d8963c668e318d19d4b12",
+        "b7f5e440ac2fada4a71f040b85a698215f33027d6889d31a6839c67887962674"
+      ]
+    },
+    {
+      "zh": "石墨",
+      "ru": "графит",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "b521e1e120b35af6877995a70433c4d671dc954d5107d4af715ddbfb258250ce",
+        "b89192d28ec47ab851693cb3ef918afafce236099d01b7f052b17273192d6aa9"
+      ]
+    },
+    {
+      "zh": "石墨烯",
+      "ru": "графен",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "a6f056bc334f28b668ee94ad6ba6c46669fb7dc649b731dc648ca6ba516ad862",
+        "fbff15497032fd9d2ab1c7ffbe88e48410a00539b200ca9ee7c375f4a46a8c2a"
+      ]
+    },
+    {
+      "zh": "石油",
+      "ru": "нефть",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "0adef45c4c30603a54e538f636bd5f043926c704cb46b641bf222a34160ee125",
+        "981cb9177d81f3276a3129337101a264662604251736f1ef746abcff8e6a3d8b"
+      ]
+    },
+    {
+      "zh": "石蜡",
+      "ru": "парафин",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "2ca54664404d8b0e12ad917f39507402292007f100f89c105ecac143b4887f73",
+        "8ce9cef666d205c3c541592bf06eb544a003ff6b7a47c9d0b65314e4f74727d0"
+      ]
+    },
+    {
+      "zh": "磺胺二甲氧嘧啶",
+      "ru": "сульфадиметоксин",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "6dc448a943466bafc312abed652c77bb33f7012189b2ad45d3402451b04ca06c",
+        "d6eed13b0c2e11768e8a8f020ea0a76cb9728cc7d26c1a0c6c71332e09d17b7c"
+      ]
+    },
+    {
+      "zh": "禽肉",
+      "ru": "мясо птицы",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "a4202f3c6360c3ba07bf7ab3ca28882244e99959c6bbf29db7ef1c0c0b339252",
+        "d58fb15b7618804b26e540b5becb392d873d40fcde6e84a6cc0740f2fa354d44"
+      ]
+    },
+    {
+      "zh": "纸板",
+      "ru": "картон",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "322cfe070dc3b29930bb5cef68720b73792ff6be9a03281c667a50beeee6b57a",
+        "9da3555f96f1a6ec1fe828f8e6e2fe258b7f3078750dd558ad09a82a74e0979b"
+      ]
+    },
+    {
+      "zh": "聚氨酯",
+      "ru": "полиуретан",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "396f10598256ddeda0929ff52ea37bbc0537cf42b44d9dcf166fc1619ef261a3",
+        "84f8e6e4012c307ff5c84cb3538687a661a8f122d66252ef7eb003f2dd73909f"
+      ]
+    },
+    {
+      "zh": "脂肪",
+      "ru": "жиры",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "2881de3f1f87ea7346ab5bfcc516eee1238717613c264dfea925eaa82abc0c19",
+        "67d27b06c7fb844412814a7ebbb3ce38d1ea11d841cb7a1ad4f7ebafd5082636"
+      ]
+    },
+    {
+      "zh": "膳食纤维",
+      "ru": "пищевые волокна",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "0e1c78d20536b799e5c81d280c64a2dd6afd82b068fd67b4866c8ce4670b6a82",
+        "eeaa6d553a535d764d7752bfd666456e1db64f8c1747cde9e3624c23fa3dd9aa"
+      ]
+    },
+    {
+      "zh": "自行车",
+      "ru": "велосипед",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "5ae49b9e107f555fff77d449a7004fabcca963fa301e7858fd8e7ee8bfaf79a4",
+        "718f19b6ef2fa2ad02a2d0e21810cf01251440a5c4c8718dcb7c6b67653e60f2"
+      ]
+    },
+    {
+      "zh": "自行车",
+      "ru": "велосипеды",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "9d8e434dc06591823a8ec31a82e5a790af9002fc199123dd7b42ded6f0682802",
+        "13536e9dd3562d724a80d45ceb46ec2779b1667f397049edd6faaf29b84e3566"
+      ]
+    },
+    {
+      "zh": "苯佐卡因",
+      "ru": "бензокаин",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "68f01e1c3dbb746781d96df3823efed154886b58b02f68f49eea27de18084d5d",
+        "77f7ef1aef11405c9e235e771dca991442eded3b355e35b5d4b6ab3be45c8cb9"
+      ]
+    },
+    {
+      "zh": "苯线磷",
+      "ru": "фенамифос",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "f94ba75206e8c771ee4156297916a9c1dea1dce45c88d676666353fc93aa6365",
+        "1419ea7dde8fd97a8fb244ffaaed8f2ccfdbe08f8e030f6da49edc235f981751"
+      ]
+    },
+    {
+      "zh": "蜂王浆",
+      "ru": "маточное молочко",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "3a0396ead50d2b6d397ee8b89fe200197b23ace4fd4a8f6beb74ba4219392ec2",
+        "7c383a7a7407726a6c51d07dbd393c18c21a74539162670bfd1cb7a48570d3e2"
+      ]
+    },
+    {
+      "zh": "蜂蜡",
+      "ru": "пчелиный воск",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "f39e31d408368db784dd159688723d56bab4267d26d7eeefdf2035fda63f79e0",
+        "f7bddd42f752cbb491245eee4142102e4803a514ae603c0c6bdde44ddddcca92"
+      ]
+    },
+    {
+      "zh": "钴",
+      "ru": "кобальт",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "08910523bd5a5a25bae9d3a52195cd83af32bed586033b07f937b307dc5fbd89",
+        "b148acca48ed1d2568ccab44f20b45bec4218515fde089ea50a2cee3c39fcfe0"
+      ]
+    },
+    {
+      "zh": "铝",
+      "ru": "алюминий",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "2ef4bb60cc6edacd74c1acd34edbec7cae9fcc070b7b0c2100315b236093bd36",
+        "1b32928e5a793b613ab5b415593d2fa73fc1ff690a283493cfd434af6c506b79"
+      ]
+    },
+    {
+      "zh": "铬",
+      "ru": "хром",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "b06cfef3c17e761c54bde8545bdbd85626431d10045b7544af9c7fe265ed4ba9",
+        "c8d32d4717367764f3a47b4a62ab0bb24dd968c924753036d77855b77abdc96e"
+      ]
+    },
+    {
+      "zh": "镍",
+      "ru": "никель",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "232c51fda2e7238786e6270887e061a4044de7016f8e43e9e4c1725d6b38f056",
+        "69116f5a5100865566ff02f8709c2da09f3ccad96a82d4ef761d8a3ffbe60608"
+      ]
+    },
+    {
+      "zh": "陀螺仪",
+      "ru": "гироскоп",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "f11353f4c4eeb9b811fe96e918ba2631fc59abe69848941d8443b80146c6464c",
+        "40edea1e12749f5faed98d78af914f9b58e7257ecb4378605b193b1339f6f179",
+        "aedc9c23c8b957f74d66564654590c96c2f5c5f493cef854edc5c9be80e373fd"
+      ]
+    },
+    {
+      "zh": "雪",
+      "ru": "снег",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "ba7a2594c5c5a939786e95b336e85d9128b6ba60ff88f1ebabf2e2d67b7bfdd0",
+        "cf9ab67bd3e0c8006758299cf05f6c4582001d093e78a34ce2ce465314232ef8"
+      ]
+    },
+    {
+      "zh": "风洞",
+      "ru": "аэродинамическая труба",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "e7f0bfd7a6e12e0f6b3238f169558a4ebfeafdc79b5cd58d18c76cc1c13e4bcb",
+        "2e5163ec0b5550f6affdecc4ced4ff3328c3d5b473f15e4e1e36ee694a083416",
+        "1af12fd4b79a8e6351ea588968af6c528936fd2bdc8c227413ef5b9b7a46beb7"
+      ]
+    },
+    {
+      "zh": "验潮仪",
+      "ru": "мареограф",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "cadeea1ce45ed39ccf54cde7382e9f0f5e1860030512c8f5c8054b409e9e7978",
+        "a6c240fa36991434a319d3e12b854bd0d58c96561b4f3a1a0bc030c82625548e",
+        "02a705f7dddfc702bfe84722b8d37cadda5421b4191b55f2793c12f735ca42e0",
+        "07797c4e9fc05d7e385825e0ef60228be7492ed7b1d00f8cffea4bbd3ac9225a"
+      ]
+    },
+    {
+      "zh": "鲸油",
+      "ru": "китовый жир",
+      "independence_groups": [
+        "fao-agrovoc",
+        "wikidata"
+      ],
+      "candidate_ids": [
+        "0f28cad118b46e5ad916a094b3d224b5825465ec11acd8281b51aafb8f6ffb25",
+        "5591895f8d35aa764b402ccd38e83e9652da987cb3480e2b6b1cb1eb4798ab0b"
+      ]
+    }
+  ],
+  "conflict_categories": {
+    "retrieval_only_challenge": 1030,
+    "alias_collision": 340,
+    "semantic_ambiguity_requires_review": 3370,
+    "case_normalization_collision": 13,
+    "duplicate_provenance_pairs": 2961,
+    "domain_separation_keys": 1268,
+    "reverse_only_collision_keys": 36
+  },
+  "conflict_examples": {
+    "retrieval_only_challenge": [
+      {
+        "left": "21cfb95da99f0ad7714af14756637b4d53e94973cd78a22e1838e9a044f86d2d",
+        "right": "c8939d6405bbe68e590abf31138d0bb89ae84cec94be807bc2cf69884ae94eb1",
+        "zh": "世代",
+        "ru": [
+          "годовые классы",
+          "возраст"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "21cfb95da99f0ad7714af14756637b4d53e94973cd78a22e1838e9a044f86d2d",
+        "right": "e56e256f74a8ab48cdeb3ed1008a8d14493209601d0c4ece3bfba1e6870a53b8",
+        "zh": "世代",
+        "ru": [
+          "годовые классы",
+          "волнообразование"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "067b11cb81c41569d7af322e76d0ea1d856d859aba4cb570c1bcdf1af566eebd",
+        "right": "408e97ada18620272fe216f060498b242f207a016c664550e091e5b789ca98f0",
+        "zh": "链条",
+        "ru": [
+          "цепи",
+          "цепь"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "4094abeee5b6adc529f20f85ecf779bcba875b3bd1562130eec5e11b1d68260f",
+        "right": "55053836516f85166c1e78b595590cda4fcb4288a62950e969e19a1585f39200",
+        "zh": "溶液培养",
+        "ru": [
+          "гидрокультура",
+          "гидропоника"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "63df92d98281c00343f697fd768f10fdfa9c735522e55285d535e9205e562cdf",
+        "right": "8bc214605da5a37db7863d788efe040aea2fe36c3a2eacf23df408ee1e3131fc",
+        "zh": "黄瓜",
+        "ru": [
+          "огурцы",
+          "Cucumis sativus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "5163c2dc6746619108aef384b9c221f824c452d40f8ed404f436fa3d1f122789",
+        "right": "a069341b9a91d0b3fa0ecef9ea21441a042f74f0febea4d891f9c2418e13eac8",
+        "zh": "习惯法",
+        "ru": [
+          "обычное право",
+          "общее право"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "5b2596979115f50c46cf0b1d4a452da5a3d54037fd542f4e56c89868bddefc59",
+        "right": "d3254c69e067869a02dfa8053720c1c19533390f08b44721c075de5530b2c5e9",
+        "zh": "变质",
+        "ru": [
+          "ухудшение качества",
+          "метаморфизм (геология)"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "3a0f31d11f6883e57713a44cde8d92e0e1e6908f3bbfd5af02f492fe815765d9",
+        "right": "b691ac9b2d2c2373d81d4da07e8408dd12ecb5f5f24980a42205b83eea3344e0",
+        "zh": "稗",
+        "ru": [
+          "Echinochloa crus-galli",
+          "Dactylis glomerata"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "5028b26e5ecb2db2929d6e1f016d9e5658d98eed9635b16e53347c259c958a23",
+        "right": "bf02604b61c2fa016948dc3cf2d84f796b790c74cc1ddaa419293011a334bcae",
+        "zh": "脑",
+        "ru": [
+          "головной мозг",
+          "голова"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "574f975e621f18ef0173da26f3facc4d9b10d67218718973a916ad103f099cac",
+        "right": "e566e8bda4483c201ec8a52d7acf9e490ec90d7fcde56f6eb1cc928855508762",
+        "zh": "蕨",
+        "ru": [
+          "папоротники",
+          "Pteridium aquilinum"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "6d30364da1ab8c6f4fc4bffb8cfe363885b3eeac86dc6a3cf2960739b61a5889",
+        "right": "eec438b0e4b5ca3557bc070a7b39ef8029f3d4e6e3af4b95eefb862607a1a68d",
+        "zh": "中华猕猴桃",
+        "ru": [
+          "Actinidia chinensis",
+          "киви (плоды)"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "2d0adda1fe428f8eae78a4bc5c4da2625a1a02317f951a4c35d6e863da6b0172",
+        "right": "e34d8638053af0577d72ba4fa6164ea5f76bbaf94238213032e6530539ed7e6a",
+        "zh": "砖",
+        "ru": [
+          "строительные блоки",
+          "кафель"
+        ],
+        "domain": "materials-science"
+      },
+      {
+        "left": "22f76b4fde04e5bdf79573757eca62f142ccea1121f85917543e2876ff8b0461",
+        "right": "7378ba8d634c98008c85afddd25a17cd9992685eda5438b9be95d742c1e676fc",
+        "zh": "味",
+        "ru": [
+          "вкус и запах",
+          "запах"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "22f76b4fde04e5bdf79573757eca62f142ccea1121f85917543e2876ff8b0461",
+        "right": "cf1e8f48626926d237070c66e7c5ad5db97fb208eba0243ba48367e9676ecd17",
+        "zh": "味",
+        "ru": [
+          "вкус и запах",
+          "качество"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "22f76b4fde04e5bdf79573757eca62f142ccea1121f85917543e2876ff8b0461",
+        "right": "d3428a510da4713499841319d7433388d86590141541b16def85bf3787aceedc",
+        "zh": "味",
+        "ru": [
+          "вкус и запах",
+          "вкусовые ощущения"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "a8d8e633b16d9b91d6266f5829606648b3ffbf8905ebee1d770b092ee362eedc",
+        "right": "ff1d58be25ad66a743f5eb4454cb19fb0212161b42c3a1aaf6d5e9e55a96fb28",
+        "zh": "牙龈",
+        "ru": [
+          "десна",
+          "Eucalyptus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "7338ece4db67996d0b5fbcef6b7022e395280cd9c5eb151ef5b8872ecf152441",
+        "right": "ffa0486093bbdbc2a1092a170d0d99329ee15094a814c4420061a0d71c00ec2b",
+        "zh": "番石榴",
+        "ru": [
+          "гуайява (плоды)",
+          "Psidium guajava"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "60ee2a362bb92fb04afb0bf7c64c8f02672afbbab4bbca64ee55980ab3e81158",
+        "right": "8bb80ca9f158ffcd930ecd99bfb6ecbaa7b4b7418ee32fe7d255ee907328f840",
+        "zh": "出血",
+        "ru": [
+          "геморрагия",
+          "обескровливание (убой скота)"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "6e78ff26b520ac80213bf1319906a61255830960919748486869c423ef3ecc88",
+        "right": "8a8ebbc2f84f4dedc008c6b7209897013b03050b4362a126f14036f0b4d6973a",
+        "zh": "人工流产",
+        "ru": [
+          "искусственный аборт",
+          "аборт"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "269822ca8d5a9135c4b2079161ee36a92a2347e20115371e11d952f8eae4acaa",
+        "right": "707079c0068bdc18af25b138d8c39b90333c914bc67e4c0ad77df696e61c890f",
+        "zh": "电离辐射",
+        "ru": [
+          "ионизирующее излучение",
+          "ядерное излучение"
+        ],
+        "domain": "unclassified"
+      }
+    ],
+    "alias_collision": [
+      {
+        "left": "2518b69357a9ea1346ca4c5eb530d1c683b3fb7d5fb5889ed7e1ecda079ab0ca",
+        "right": "2ec6f8614da3853dc6acc491a928085587c61ffcd634ed705cce547fd66d787f",
+        "zh": "分生孢子梗",
+        "ru": [
+          "конидиофоры",
+          "конидии"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "ad1773fc7c57408e04a6a57c7a627d3b98e1f5613cf2e0cbe7c166c8b9dcc7e8",
+        "right": "ce2673daea1359649ef5fa1ccb126590c515b491420d68fa0b3e9f243eae3515",
+        "zh": "尘卷风",
+        "ru": [
+          "пыльные бури",
+          "пыльная буря"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "4f2f29d3b081c0f48152bf3368852e7bf6a2263b5cb56f23fdd5c85646a8e6e0",
+        "right": "d80c68303a000153f4e81bbb395b8bd522ae89583d53727862eb6fa2e66d601f",
+        "zh": "餐饮服务",
+        "ru": [
+          "служба питания",
+          "обслуживание в сфере питания"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "4f2f29d3b081c0f48152bf3368852e7bf6a2263b5cb56f23fdd5c85646a8e6e0",
+        "right": "e20c48c70a6c38e9ce0e24c34d01605c51211eaed1be5737fc27ebabc7214000",
+        "zh": "餐饮服务",
+        "ru": [
+          "служба питания",
+          "обслуживание в сфере питания"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "0fb9a605dc8b050867beeb2bb93704a0d7e96490fd282bb5171064cf91a0c25b",
+        "right": "0fe1e6084bda516bcb07b6fd0abf97ed005ff17fea803d60697642735b742fb4",
+        "zh": "鲳鱼",
+        "ru": [
+          "масляная рыба",
+          "Monodactylus argenteus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "0fb9a605dc8b050867beeb2bb93704a0d7e96490fd282bb5171064cf91a0c25b",
+        "right": "dbe42679908457072625c2013e314b7a91fc58383858b8c9ec374da16df07f24",
+        "zh": "鲳鱼",
+        "ru": [
+          "масляная рыба",
+          "Pampus argenteus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "91d4738f2c0fc599cf065e292b17eb158c6b9d64fb27a62da372bdcfa357f812",
+        "right": "a541b160f5d87ed557e1aa7fe0051e89fe3370429e71ab8a910025a6802204f1",
+        "zh": "海洋",
+        "ru": [
+          "океаны",
+          "океанское пространство"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "b13e6bd7c9c6a92bbb6fa3bac854428242e985f4740fdea81b74e13f6f39baf6",
+        "right": "d53357630c6afdedf04423b56413d0b277d68563bb7f653b8a0fd7a62f687c8d",
+        "zh": "趋光性",
+        "ru": [
+          "фототаксис",
+          "фототропизм"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "143c2ad244661749197ce805c800cd74bee6077983f5828f92b285a10629916c",
+        "right": "b541bfa2ff4a6a83fd56854e5665168b0f2dfb62fefa71cb613f72345a56a081",
+        "zh": "推车",
+        "ru": [
+          "повозки",
+          "тачки"
+        ],
+        "domain": "automotive"
+      },
+      {
+        "left": "13445070c30bb5f8b01133265f95293d967b2181f883fad1e758ba87dab1cdff",
+        "right": "ed7a46dc4493a2a1c21c58628f44fdab8128a15545885091672eac2e42790778",
+        "zh": "蜡蚧属",
+        "ru": [
+          "Ceroplastes",
+          "Coccus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "27f613c1e33d24a6e86b6eeaaef7527fab61e33c517fcca36c96df1a586a95a7",
+        "right": "b59e602afeab46b0694b89037980e72f561d483a7a652d4935b2c85e6698c5a7",
+        "zh": "有害物质",
+        "ru": [
+          "опасные материалы",
+          "токсические вещества"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "40a82d8623e735285471910ad5b97174586366de7cb6cf8a978158e2810d8a53",
+        "right": "5f4257a2b5927765a7f3a6ae5622687ccf2f896e7bc3b71bac29857db41bf53a",
+        "zh": "游牧",
+        "ru": [
+          "номадизм",
+          "отгонное животноводство"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "a2ba4986711abe32944b1f8644655c250f2ef436466fc681f5be9d14d9683246",
+        "right": "dce1127fe576217d1d9bfe5dfc60e3edbfb56705ca218ebaafc5b91299022317",
+        "zh": "凝聚",
+        "ru": [
+          "коагуляция",
+          "конденсация"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "65076698620467f563a8409163f9961ca06a24b2794d060ce45e1417feb8fb9d",
+        "right": "7d839cc5840822d97c2785da37c15d7504f80a0ef09bc5dc651ddc21a76cb523",
+        "zh": "计算机",
+        "ru": [
+          "компьютеры",
+          "компьютер"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "7b757a78edef8c51423a4275b1574914607bca04eda23661cb87da4d6a622218",
+        "right": "9fea3b735efd7dc21929ef57fc338f131cf8c98bcfd84921b965022b54d84770",
+        "zh": "小龙虾",
+        "ru": [
+          "речные раки",
+          "Pacifastacus leniusculus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "31365fbfeb60821bdf60e442e7155b88de438a22274f773d2d0f6bb9f10258aa",
+        "right": "7437da9c9eca5f30221c12dfd43ccaadd71ee0d2b300f8015a30ff78ec023543",
+        "zh": "驯化",
+        "ru": [
+          "доместикация",
+          "акклиматизация"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "6ee06dc83207c966b5004b2ccbab372ee92874e0dc6d309f91c672151475cd7a",
+        "right": "e97572a21e5c045d3768ad8311f21fdc131187954220cd9009e4d1db85411adf",
+        "zh": "裸颊鲷属",
+        "ru": [
+          "Lethrinus",
+          "Lethrinidae"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "8019a2138e8da0e944f753c660adeb27f9551609a06db5f36eaf171a7854ca9a",
+        "right": "f28cf440080aa597271318c7cf58080ec23129b8bc7b99d578bf16c6e0950510",
+        "zh": "模拟模型",
+        "ru": [
+          "имитационные модели",
+          "аналоговая модель"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "46fddda3bc1d0a0f1f5fbcd909409f3173de015f05cd2a5e0eb1c5cd18fb7dcd",
+        "right": "d7df727631b2e9a936522b802c5d48757b2816b00db8f5aec270a48a45d42a2e",
+        "zh": "营养状况",
+        "ru": [
+          "статус питания",
+          "трофический статус"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "0b508c1ecfcf2ed9893e42cfa735dc2913baad969c2c3965885f01a00771df41",
+        "right": "431aeca0ae6e723503201280a48419b93968d2367bb04632b0c3f44cad3af31b",
+        "zh": "流体力学",
+        "ru": [
+          "механика жидкостей и газов",
+          "динамика жидкостей"
+        ],
+        "domain": "unclassified"
+      }
+    ],
+    "semantic_ambiguity_requires_review": [
+      {
+        "left": "2d0adda1fe428f8eae78a4bc5c4da2625a1a02317f951a4c35d6e863da6b0172",
+        "right": "5b5052b4e6a11a8392724581b2ce55b2cd4439bab039cec2971c9e0dd104ac0d",
+        "zh": "砖",
+        "ru": [
+          "строительные блоки",
+          "кирпич"
+        ],
+        "domain": "materials-science"
+      },
+      {
+        "left": "2f1b1bf6fcf1cc1770f07cae20cd92cbc409391bd8be154d501b181e4a186f1c",
+        "right": "e1a8fbf56cf05f81a368e6c31964ed0d5ff5c8288d91ef6dab53073c278cafd9",
+        "zh": "建筑材料",
+        "ru": [
+          "строительные материалы",
+          "строительный материал"
+        ],
+        "domain": "materials-science"
+      },
+      {
+        "left": "bc750581372294bc6c3aa2e6a9b5ef275592b645bfadfcbdffff654a780e7b70",
+        "right": "e77065087b7dd397ca94c29b7220c9dfc0b578ab307edaed52b8d3a560ffdcfe",
+        "zh": "单孢子虫属",
+        "ru": [
+          "Haplosporidium",
+          "Thelohania"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "1a1dc310d94d0a6dd855f8117cbbe9d59b2bbc87545fa1ae7ec3039e029cadf4",
+        "right": "c47a0ecb940c6247e394f4e330b1ac58bd5512d08158dece5da81c69ceeb083f",
+        "zh": "海带",
+        "ru": [
+          "зола водорослей",
+          "Laminaria japonica"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "aa7d3d1410c80eb14204973450fd10f2fda307e37370dac25eb87a244511526d",
+        "right": "e37e124adeaee9786ae91e5736991d57d9ea16bfa52955a6b323fa14bc15dbca",
+        "zh": "液体",
+        "ru": [
+          "жидкости",
+          "жидкость"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "17d61788f51212902a6ab8c0d5b731c2473cbedd2ce88181e530b213bf08adff",
+        "right": "74db67252daac4cd7fcee43db038782cb211b6057af8e41e04afe6e7e15352be",
+        "zh": "测量仪器",
+        "ru": [
+          "измерительные приборы",
+          "измерительный прибор"
+        ],
+        "domain": "measurement"
+      },
+      {
+        "left": "dc092f5409da05c27abb68d6677f64f4254b6533da0ddafb13c8c1b8e87ca298",
+        "right": "fe10663234923aab6c56c7c42d73e33ec9b0df4fdaddd22352ec9ff92c7da5c2",
+        "zh": "测量仪器",
+        "ru": [
+          "измерительные приборы",
+          "измерительный прибор"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "2b6ae9397c80d0637aa9e2bb090175bf7bb40fe5592971b07f27db107e8cd6b1",
+        "right": "91847710951266fe7c319e2cb1cd88d83921888a245b1d712a3d03f18f3f609a",
+        "zh": "根瘤蚜属",
+        "ru": [
+          "Phylloxera",
+          "Viteus"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "53603879558e8e498e306add7e860218b12143852ca5351f18fb324b9bd336db",
+        "right": "7967a137122ae36732bcdd992140829173d6119ca5859ce5b81f5a814904010b",
+        "zh": "辐射计",
+        "ru": [
+          "радиометры",
+          "радиометр"
+        ],
+        "domain": "measurement"
+      },
+      {
+        "left": "53603879558e8e498e306add7e860218b12143852ca5351f18fb324b9bd336db",
+        "right": "ebbc9ab9f30539d7c57626ae8d7b71a52ed0528efb5031ae6e1c58802aa11a9f",
+        "zh": "辐射计",
+        "ru": [
+          "радиометры",
+          "радиометр"
+        ],
+        "domain": "measurement"
+      },
+      {
+        "left": "065442e8aa00252f5366dcacd23359463ee73d56fe57411487f21e33393b596c",
+        "right": "1f0504bfd86f3b8a9fc1926a75d2808d076eecf501dba5fc2f50b92a1e5d4383",
+        "zh": "辐射计",
+        "ru": [
+          "радиометры",
+          "радиометр"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "065442e8aa00252f5366dcacd23359463ee73d56fe57411487f21e33393b596c",
+        "right": "4b2bbc7e377d1c4c343c93691ad4abe7fef17ac2ef98dcfd50ba64e7105c1935",
+        "zh": "辐射计",
+        "ru": [
+          "радиометры",
+          "радиометр"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "065442e8aa00252f5366dcacd23359463ee73d56fe57411487f21e33393b596c",
+        "right": "581b95b4e4da687e446e571bb7539b023a8a9a71248010e89f4ff52c6c652cd6",
+        "zh": "辐射计",
+        "ru": [
+          "радиометры",
+          "измерители яркости"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "986e1152865a66e4469f3a443e96ddf41e1a6c48fba6cafa9e02794374804b75",
+        "right": "c1d254735158e29f8eaf6c7d273e358f43d4926c538e07f3efbdb04b26393d87",
+        "zh": "软管",
+        "ru": [
+          "шланги",
+          "Шланг"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "65076698620467f563a8409163f9961ca06a24b2794d060ce45e1417feb8fb9d",
+        "right": "cf7c805bd37ba088fdcff19d0b1428c73d0914ea84ff2e484c2c2a41ce5a7a3c",
+        "zh": "计算机",
+        "ru": [
+          "компьютеры",
+          "компьютер"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "5f2a903f600390d60661cd06710baf45fcaa4dd21dbf0bd1c2b3115da8e22e2a",
+        "right": "cc7a7acfed93985dd3e0c9f84d0747048f96ce195a797e35300336a7d6615f92",
+        "zh": "犬牙石首鱼属",
+        "ru": [
+          "Cynoscion",
+          "судачие горбыли"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "87fa3b69784a4a3f2aae910bf1314bef4eaeca965ff4820c6a6b709014e5084e",
+        "right": "cda3bd250def7c2d52da1b0c8287a4deb17baadd441245f3753be3026de7e980",
+        "zh": "寻常海绵纲",
+        "ru": [
+          "Demospongia",
+          "Demospongiae"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "0f1a0f65f791d83e1f9f3db6da0002b5f7df5e8388751d5757291db9e72d2f50",
+        "right": "3dffe09204772a698643fb30abf976b1f74fa7def84586a07ab99cf2bd1bd5cc",
+        "zh": "航空器",
+        "ru": [
+          "летательные аппараты",
+          "воздушное судно"
+        ],
+        "domain": "automotive"
+      },
+      {
+        "left": "0f1a0f65f791d83e1f9f3db6da0002b5f7df5e8388751d5757291db9e72d2f50",
+        "right": "63cc3c28029d63f62b1a34c6454117d55b6c5e1ba07038cffc5f5a50dacadb27",
+        "zh": "航空器",
+        "ru": [
+          "летательные аппараты",
+          "воздушное судно"
+        ],
+        "domain": "automotive"
+      },
+      {
+        "left": "ba538ca1768d09142a036d71077cec9303f0fa0f91169a0fa829d5dec2191410",
+        "right": "f134a3bb0f1fc3f5200357b4c7f21a7207a7f63bb368ca279435ed14fc29234a",
+        "zh": "航空器",
+        "ru": [
+          "летательные аппараты",
+          "воздушное судно"
+        ],
+        "domain": "technical-core"
+      }
+    ],
+    "case_normalization_collision": [
+      {
+        "left": "8986a160ba577c8fe3b19809149609245f51f3b92346c10dfe252732d05e237a",
+        "right": "95453ba54b6d0ab04aa64cdad91ff3ad14afc260b52ae411f6e88aa06b7986ef",
+        "zh": "圈养繁殖",
+        "ru": [
+          "разведение в неволе",
+          "Разведение в неволе"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "3966608b5001db071b6312a04adbcb884b05331aaa0e5abfc7aee4a2dd75b5fa",
+        "right": "7c7d5495b59c29b1b3c10e8d90c3354fe922d92e2ec1331f7e6d3309048cfcfe",
+        "zh": "盖革计数器",
+        "ru": [
+          "счётчик Гейгера",
+          "Счётчик Гейгера"
+        ],
+        "domain": "measurement"
+      },
+      {
+        "left": "1772a8cbef492e02bfb860c0c5d6a27e71780544d3c22934cd906991765520f2",
+        "right": "82dc3710b9592f2d717b7a9e9d24e79f7f63067620f219d5b304740d15f364f8",
+        "zh": "盖革计数器",
+        "ru": [
+          "счётчик Гейгера",
+          "Счётчик Гейгера"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "1772a8cbef492e02bfb860c0c5d6a27e71780544d3c22934cd906991765520f2",
+        "right": "cfbe31a85096259e93b7d3f936dc8dd4702207ca3a09b6454067f17787d09049",
+        "zh": "盖革计数器",
+        "ru": [
+          "счётчик Гейгера",
+          "Счётчик Гейгера"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "1452d68aa0dc851fbc719629776de5f87877efb6e159862746e7a37355345394",
+        "right": "78f130a5a323de4d683e4e799157b6b4adf405a00f5c8270497a8c1d20885887",
+        "zh": "驯养繁殖",
+        "ru": [
+          "Разведение в неволе",
+          "разведение в неволе"
+        ],
+        "domain": "unclassified"
+      },
+      {
+        "left": "8055495ce8e9af1cd0a12f254cd844090d62312f614983a40ff3601caeb37b34",
+        "right": "d7d2782514891419ca7303fb0a5ad37ba3f7af6b9674f9292fe8f768e2b0ba7a",
+        "zh": "螺栓",
+        "ru": [
+          "Болт",
+          "болт"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "86352cccce6e20c16851923192bac9290e8822e93a570fdb122ca56e8505b370",
+        "right": "a15d3ec48144441ef874409b1118a969d8f592c283985e2402b25844dc8da96e",
+        "zh": "明矾",
+        "ru": [
+          "сульфат алюминия-калия",
+          "Сульфат алюминия-калия"
+        ],
+        "domain": "materials-science"
+      },
+      {
+        "left": "24f67dcf71d02c60fb5326c7aa5ba2db5de78ec07617808d28181a26a661fcbb",
+        "right": "3966608b5001db071b6312a04adbcb884b05331aaa0e5abfc7aee4a2dd75b5fa",
+        "zh": "盖革计数器",
+        "ru": [
+          "Счётчик Гейгера",
+          "счётчик Гейгера"
+        ],
+        "domain": "measurement"
+      },
+      {
+        "left": "8af104126694279d7413d3aff4e61183b947c981e29d22d200ca24ad93ad4bd4",
+        "right": "c58f0db7f8ad86304a4d3f0eacce00d135cb172822ff914ad5644367b058687d",
+        "zh": "销",
+        "ru": [
+          "Болт",
+          "болт"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "970beb900f6f8ac39c6774aec4cff672573779f265a780ddc80b4563585f44ad",
+        "right": "cb384dfc294fd9b168bf710cedca0e22711b67df3cc83ed40044a90e9fc50b36",
+        "zh": "栓",
+        "ru": [
+          "болт",
+          "Болт"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "70d8857cd29adbc648ecb74c7c3668d3d5dfc68e2ae99131b6da9672d3496ac5",
+        "right": "d7d2782514891419ca7303fb0a5ad37ba3f7af6b9674f9292fe8f768e2b0ba7a",
+        "zh": "螺栓",
+        "ru": [
+          "Болт",
+          "болт"
+        ],
+        "domain": "technical-core"
+      },
+      {
+        "left": "721e4c93deeeb840a1351b32ece8d464ef0db5141dbdfbcc13cb548f64432fd9",
+        "right": "a15d3ec48144441ef874409b1118a969d8f592c283985e2402b25844dc8da96e",
+        "zh": "明矾",
+        "ru": [
+          "сульфат алюминия-калия",
+          "Сульфат алюминия-калия"
+        ],
+        "domain": "materials-science"
+      },
+      {
+        "left": "b432da0b18ccdf6490de9b18c4915d19e2e318e2117a5563fa96073a06f355f6",
+        "right": "ec14f5956ed31878c687d24fc016a7d1e29e1e4b407702e4f4f99203104a6bf9",
+        "zh": "水下听音器",
+        "ru": [
+          "Гидрофон",
+          "гидрофон"
+        ],
+        "domain": "technical-core"
+      }
+    ]
+  },
+  "conflict_classification_seconds": 0.42338919999997415,
+  "removed_candidates": 4338,
+  "high_value_rows": 1000,
+  "human_verified": 0
+}

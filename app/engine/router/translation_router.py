@@ -11,6 +11,8 @@ from app.engine.errors import (BackendUnavailableError, DeviceUnavailableError, 
                                ModelMissingError, TranslationCancelledError, TranslationError,
                                UnsupportedLanguageError)
 from app.engine.languages import LanguageResolver
+from app.engine.output_validation import checked_output
+from app.documents.run_metrics import observe
 from app.engine.router.route_decision import RouteCandidate, RouteDecision
 from app.engine.router.routing_policy import RoutingPolicy
 from app.engine.runtime.device_manager import DeviceManager
@@ -58,13 +60,19 @@ class TranslationRouter:
         quality_first = (policy.prefer_quality and pair not in self.policy.argos_preferred_pairs) or (balanced and (pair in self.policy.quality_pairs or pair not in self.policy.argos_preferred_pairs))
         order = ["m2m100", "argos"] if quality_first else ["argos", "m2m100"]
         candidates = []
+        argos = capabilities.get("argos")
+        argos_route_available = bool(argos and (
+            argos.supports_pair(source, target) or argos.supports_pair(source, target, PairKind.PIVOT)
+        ))
         for name in order:
             caps = capabilities.get(name)
-            if name == "m2m100" and not policy.allow_quality:
+            # Economy avoids the larger quality backend only when Argos can
+            # actually serve the pair. M2M100 remains the local release route
+            # for languages that have no dedicated Argos package.
+            if name == "m2m100" and not policy.allow_quality and argos_route_available:
                 continue
             if caps and caps.supports_pair(source, target):
                 candidates.append(RouteCandidate(name, PairKind.DIRECT))
-        argos = capabilities.get("argos")
         if argos and argos.supports_pair(source, target, PairKind.PIVOT):
             candidates.append(RouteCandidate("argos", PairKind.PIVOT))
         if not candidates:
@@ -128,14 +136,21 @@ class TranslationRouter:
                         continue
                     for options in options_list:
                         check_cancelled(cancelled)
+                        blocked = self.runtime.blocked_error(candidate.backend, request, candidate.kind, options)
+                        if blocked is not None:
+                            last_error = blocked
+                            attempted += 1
+                            observe('archive_event', 'backend_circuit_skip', backend=candidate.backend,
+                                    device=device, compute_type=options.compute_type,
+                                    exception_type=type(blocked).__name__)
+                            continue
                         tick = perf_counter()
                         fallback = attempted > 0
                         attempted += 1
                         try:
                             output = self.runtime.run(candidate.backend, request, candidate.kind, options, cancelled)
                             check_cancelled(cancelled)
-                            if request.text.strip() and not output.text.strip():
-                                raise TranslationError()
+                            output = replace(output, text=checked_output(request.text, output.text))
                         except TranslationCancelledError:
                             raise
                         except Exception as error:
@@ -157,6 +172,7 @@ class TranslationRouter:
             raise last_error from None
 
     def _metric(self, backend, request, device, started, success, fallback, error_type=None):
+        observe('model_event',backend,device,success,fallback,error_type)
         duration = (perf_counter() - started) * 1000
         self.metrics.append(TranslationMetric(backend, f"{request.source_language}-{request.target_language}",
                                               len(request.text), duration, device, success, fallback, error_type))

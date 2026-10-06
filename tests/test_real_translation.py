@@ -70,14 +70,15 @@ def test_real_model_reused_then_unloaded(local_engine):
     request = TranslationRequest("Save the configuration file.", "en", "ru", DevicePreference.CPU)
     local_engine.translate(request, backend_only="argos")
     backend = local_engine.backends["argos"]
-    translator = backend._translators[("en", "ru")]
+    key = next(key for key in backend._translators if key[0] == ("en", "ru"))
+    translator = backend._translators[key]
     local_engine.translate(request, backend_only="argos")
-    assert backend._translators[("en", "ru")] is translator
+    assert backend._translators[key] is translator
     local_engine.runtime._last_used -= local_engine.runtime.idle_timeout_seconds + 1
     assert local_engine.runtime.release_idle()
     assert not translator.model_is_loaded
     local_engine.translate(request, backend_only="argos")
-    assert backend._translators[("en", "ru")] is not translator
+    assert backend._translators[key] is not translator
 
 
 def test_first_real_import_and_inference_make_zero_network_attempts(local_engine, tmp_path):
@@ -124,7 +125,7 @@ def test_real_qt_gpu_window_exits_cleanly(local_engine):
     assert "GPU idle/reload" in run.stdout
 
 
-def test_native_dictionary_completion_and_maximum_translation(local_engine):
+def test_native_dictionary_completion_and_automatic_translation(local_engine):
     if sys.platform != "win32" or not local_engine.devices.gpu_available():
         pytest.skip("Native Windows CUDA UI smoke requires a CUDA device")
     env = dict(os.environ, QT_QPA_PLATFORM="windows", PYTHONIOENCODING="utf-8", PYTHONFAULTHANDLER="1")

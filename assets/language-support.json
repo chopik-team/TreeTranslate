@@ -1,0 +1,314 @@
+{
+  "schema": 1,
+  "version": "AW0.86",
+  "capability_source": "docs/qa/aw076/language-matrix.json",
+  "languages": [
+    {
+      "code": "ru",
+      "labels": [
+        "Русский"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": true
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": 4330,
+        "dictionary_entries": 45561,
+        "bilingual_entries": 42600,
+        "usage_examples": 53569
+      }
+    },
+    {
+      "code": "zh",
+      "labels": [
+        "Китайский"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": true
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": 5909,
+        "dictionary_entries": null,
+        "bilingual_entries": null,
+        "usage_examples": null
+      }
+    },
+    {
+      "code": "en",
+      "labels": [
+        "Английский",
+        "Английский (США)"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": true
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": null,
+        "dictionary_entries": 156890,
+        "bilingual_entries": 62181,
+        "usage_examples": 68008
+      }
+    },
+    {
+      "code": "de",
+      "labels": [
+        "Немецкий"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": null,
+        "dictionary_entries": null,
+        "bilingual_entries": null,
+        "usage_examples": null
+      }
+    },
+    {
+      "code": "ja",
+      "labels": [
+        "Японский"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": null,
+        "dictionary_entries": null,
+        "bilingual_entries": null,
+        "usage_examples": null
+      }
+    },
+    {
+      "code": "es",
+      "labels": [
+        "Испанский"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": null,
+        "dictionary_entries": null,
+        "bilingual_entries": null,
+        "usage_examples": null
+      }
+    },
+    {
+      "code": "fr",
+      "labels": [
+        "Французский"
+      ],
+      "status": "RELEASE_READY",
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "auto_detect": true,
+      "counts": {
+        "technical_entries": null,
+        "dictionary_entries": null,
+        "bilingual_entries": null,
+        "usage_examples": null
+      }
+    }
+  ],
+  "history": [
+    {
+      "version": "AW 0.7.4",
+      "source": "docs/qa/aw074/packs.json",
+      "counts": {
+        "zh": {
+          "technical_entries": 4402
+        },
+        "ru": {
+          "technical_entries": 4330
+        }
+      }
+    },
+    {
+      "version": "AW 0.7.5",
+      "source": "docs/qa/aw075/lexical-benchmark.json",
+      "counts": {
+        "en": {
+          "dictionary_entries": 156890,
+          "usage_examples": 68008
+        },
+        "ru": {
+          "dictionary_entries": 45561,
+          "usage_examples": 53569
+        }
+      }
+    },
+    {
+      "version": "AW 0.7.7",
+      "source": "assets/language-support.json (previous snapshot)",
+      "counts": {
+        "ru": {
+          "technical_entries": 4330,
+          "dictionary_entries": 45561,
+          "bilingual_entries": 42600,
+          "usage_examples": 53569
+        },
+        "zh": {
+          "technical_entries": 4402,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "en": {
+          "technical_entries": null,
+          "dictionary_entries": 156890,
+          "bilingual_entries": 62181,
+          "usage_examples": 68008
+        },
+        "de": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "ja": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "es": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "fr": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        }
+      }
+    },
+    {
+      "version": "AW 0.8",
+      "source": "assets/language-support.json (previous snapshot)",
+      "counts": {
+        "ru": {
+          "technical_entries": 4330,
+          "dictionary_entries": 45561,
+          "bilingual_entries": 42600,
+          "usage_examples": 53569
+        },
+        "zh": {
+          "technical_entries": 4402,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "en": {
+          "technical_entries": null,
+          "dictionary_entries": 156890,
+          "bilingual_entries": 62181,
+          "usage_examples": 68008
+        },
+        "de": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "ja": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "es": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "fr": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        }
+      }
+    },
+    {
+      "version": "AW 0.8.2",
+      "source": "assets/language-support.json (previous snapshot)",
+      "counts": {
+        "ru": {
+          "technical_entries": 4330,
+          "dictionary_entries": 45561,
+          "bilingual_entries": 42600,
+          "usage_examples": 53569
+        },
+        "zh": {
+          "technical_entries": 4402,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "en": {
+          "technical_entries": null,
+          "dictionary_entries": 156890,
+          "bilingual_entries": 62181,
+          "usage_examples": 68008
+        },
+        "de": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "ja": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "es": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        },
+        "fr": {
+          "technical_entries": null,
+          "dictionary_entries": null,
+          "bilingual_entries": null,
+          "usage_examples": null
+        }
+      }
+    }
+  ],
+  "routing_note": "Маршрут зависит от пары и профиля.\nAutomatic / Balanced / Turbo / Maximum: EN↔RU использует прямой Argos; прочие пары — прямой M2M100.\nFast: прямые Argos EN↔RU и EN↔ZH имеют приоритет; остальные пары идут через M2M100.\nEconomy: Argos используется там, где есть direct/pivot route; M2M100 остаётся рабочим маршрутом для DE/ES/FR/JA и других пар без Argos.\nArgos содержит direct EN→RU, RU→EN, ZH→EN, EN→ZH и может построить ZH↔RU pivot через EN.\nM2M100 содержит 100 language codes и предоставляет direct multilingual route."
+}

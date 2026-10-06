@@ -1,0 +1,50 @@
+{
+  "compileall": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "full_regression": {
+    "tests": 457,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 163.068
+  },
+  "focused_after_final_cache_and_link_fixes": {
+    "tests": 28,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 4.96
+  },
+  "license_local_links": {
+    "checked": 347,
+    "missing": [],
+    "click_url_resolution": "absolute local path; regression tested"
+  },
+  "pack_integrity": {
+    "network_blocked": true,
+    "input_sha256": "c273fe564f580a72b8f1bcd11e6af456f912111c7de2db414cf272ce87bef73e",
+    "raw_records": 664,
+    "linked": {
+      "concepts": 664,
+      "merge_limit_skipped_concepts": 0,
+      "candidates": 994,
+      "conflicts": 16
+    },
+    "reproducible_pack_sha256": true,
+    "pack_count": 26,
+    "builtin_entries_lookup_verified": 944,
+    "builtin_integrity": "ok",
+    "builtin_journal_mode": "delete",
+    "sidecars": 0,
+    "user_entries_written": 0
+  },
+  "timestamp_utc": "2026-09-25T03:42:02.459143+00:00"
+}

@@ -1,0 +1,556 @@
+{
+  "raw_records": 181495,
+  "concepts": 181495,
+  "statuses": {
+    "AUTO": 141989,
+    "REJECTED": 222,
+    "REVIEW": 50326,
+    "VERIFIED": 4409
+  },
+  "domains": [
+    {
+      "domain": "automotive",
+      "status": "AUTO",
+      "count": 819
+    },
+    {
+      "domain": "automotive",
+      "status": "REJECTED",
+      "count": 4
+    },
+    {
+      "domain": "automotive",
+      "status": "REVIEW",
+      "count": 1067
+    },
+    {
+      "domain": "automotive",
+      "status": "VERIFIED",
+      "count": 140
+    },
+    {
+      "domain": "chemistry-engineering",
+      "status": "AUTO",
+      "count": 1347
+    },
+    {
+      "domain": "chemistry-engineering",
+      "status": "REVIEW",
+      "count": 55
+    },
+    {
+      "domain": "chemistry-engineering",
+      "status": "VERIFIED",
+      "count": 144
+    },
+    {
+      "domain": "computer-hardware",
+      "status": "AUTO",
+      "count": 1095
+    },
+    {
+      "domain": "computer-hardware",
+      "status": "REJECTED",
+      "count": 66
+    },
+    {
+      "domain": "computer-hardware",
+      "status": "REVIEW",
+      "count": 241
+    },
+    {
+      "domain": "computer-hardware",
+      "status": "VERIFIED",
+      "count": 182
+    },
+    {
+      "domain": "electrical",
+      "status": "AUTO",
+      "count": 217
+    },
+    {
+      "domain": "electrical",
+      "status": "REVIEW",
+      "count": 101
+    },
+    {
+      "domain": "electrical",
+      "status": "VERIFIED",
+      "count": 38
+    },
+    {
+      "domain": "electronics",
+      "status": "AUTO",
+      "count": 1625
+    },
+    {
+      "domain": "electronics",
+      "status": "REJECTED",
+      "count": 59
+    },
+    {
+      "domain": "electronics",
+      "status": "REVIEW",
+      "count": 379
+    },
+    {
+      "domain": "electronics",
+      "status": "VERIFIED",
+      "count": 315
+    },
+    {
+      "domain": "industrial-safety",
+      "status": "AUTO",
+      "count": 4
+    },
+    {
+      "domain": "industrial-safety",
+      "status": "VERIFIED",
+      "count": 12
+    },
+    {
+      "domain": "manufacturing",
+      "status": "AUTO",
+      "count": 709
+    },
+    {
+      "domain": "manufacturing",
+      "status": "REJECTED",
+      "count": 1
+    },
+    {
+      "domain": "manufacturing",
+      "status": "REVIEW",
+      "count": 44
+    },
+    {
+      "domain": "manufacturing",
+      "status": "VERIFIED",
+      "count": 145
+    },
+    {
+      "domain": "materials-science",
+      "status": "AUTO",
+      "count": 1381
+    },
+    {
+      "domain": "materials-science",
+      "status": "REJECTED",
+      "count": 9
+    },
+    {
+      "domain": "materials-science",
+      "status": "REVIEW",
+      "count": 53
+    },
+    {
+      "domain": "materials-science",
+      "status": "VERIFIED",
+      "count": 591
+    },
+    {
+      "domain": "measurement",
+      "status": "AUTO",
+      "count": 1253
+    },
+    {
+      "domain": "measurement",
+      "status": "REJECTED",
+      "count": 1
+    },
+    {
+      "domain": "measurement",
+      "status": "REVIEW",
+      "count": 111
+    },
+    {
+      "domain": "measurement",
+      "status": "VERIFIED",
+      "count": 390
+    },
+    {
+      "domain": "mechanical-engineering",
+      "status": "AUTO",
+      "count": 1415
+    },
+    {
+      "domain": "mechanical-engineering",
+      "status": "REJECTED",
+      "count": 2
+    },
+    {
+      "domain": "mechanical-engineering",
+      "status": "REVIEW",
+      "count": 196
+    },
+    {
+      "domain": "mechanical-engineering",
+      "status": "VERIFIED",
+      "count": 338
+    },
+    {
+      "domain": "metallurgy",
+      "status": "AUTO",
+      "count": 661
+    },
+    {
+      "domain": "metallurgy",
+      "status": "REJECTED",
+      "count": 1
+    },
+    {
+      "domain": "metallurgy",
+      "status": "REVIEW",
+      "count": 57
+    },
+    {
+      "domain": "metallurgy",
+      "status": "VERIFIED",
+      "count": 150
+    },
+    {
+      "domain": "software",
+      "status": "AUTO",
+      "count": 1019
+    },
+    {
+      "domain": "software",
+      "status": "REJECTED",
+      "count": 5
+    },
+    {
+      "domain": "software",
+      "status": "REVIEW",
+      "count": 134
+    },
+    {
+      "domain": "software",
+      "status": "VERIFIED",
+      "count": 344
+    },
+    {
+      "domain": "technical-core",
+      "status": "AUTO",
+      "count": 6215
+    },
+    {
+      "domain": "technical-core",
+      "status": "REJECTED",
+      "count": 71
+    },
+    {
+      "domain": "technical-core",
+      "status": "REVIEW",
+      "count": 894
+    },
+    {
+      "domain": "technical-core",
+      "status": "VERIFIED",
+      "count": 1620
+    },
+    {
+      "domain": "unclassified",
+      "status": "AUTO",
+      "count": 124229
+    },
+    {
+      "domain": "unclassified",
+      "status": "REJECTED",
+      "count": 3
+    },
+    {
+      "domain": "unclassified",
+      "status": "REVIEW",
+      "count": 46994
+    }
+  ],
+  "links": {
+    "DIRECT_CONCEPT": 191092,
+    "ENGLISH_PIVOT_AMBIGUOUS": 1150,
+    "ENGLISH_PIVOT_EXACT": 4704
+  },
+  "sources": {
+    "agrovoc-20260907": 42001,
+    "cedict-20260923": 125101,
+    "wikidata-technical-20260925": 14393
+  },
+  "conflict_edges": 4530,
+  "rejected_records": 0,
+  "review_decisions": 15,
+  "domain_quality": {
+    "automotive": {
+      "candidates": 2030,
+      "AUTO": 819,
+      "DIRECT_CONCEPT": 2010,
+      "manual_review": 2,
+      "has_zh_variants": 413,
+      "source_declares_traditional": 379,
+      "REVIEW": 1067,
+      "VERIFIED": 140,
+      "ENGLISH_PIVOT_EXACT": 13,
+      "REJECTED": 4,
+      "ENGLISH_PIVOT_AMBIGUOUS": 7,
+      "direct_percent": 99.01,
+      "pivot_percent": 0.99,
+      "manual_review_percent": 0.1
+    },
+    "chemistry-engineering": {
+      "candidates": 1546,
+      "AUTO": 1347,
+      "DIRECT_CONCEPT": 1529,
+      "manual_review": 0,
+      "has_zh_variants": 116,
+      "source_declares_traditional": 92,
+      "VERIFIED": 144,
+      "REVIEW": 55,
+      "ENGLISH_PIVOT_EXACT": 15,
+      "ENGLISH_PIVOT_AMBIGUOUS": 2,
+      "direct_percent": 98.9,
+      "pivot_percent": 1.1,
+      "manual_review_percent": 0.0
+    },
+    "computer-hardware": {
+      "candidates": 1584,
+      "VERIFIED": 182,
+      "DIRECT_CONCEPT": 1581,
+      "manual_review": 1,
+      "has_zh_variants": 245,
+      "source_declares_traditional": 228,
+      "REJECTED": 66,
+      "AUTO": 1095,
+      "REVIEW": 241,
+      "ENGLISH_PIVOT_EXACT": 1,
+      "ENGLISH_PIVOT_AMBIGUOUS": 2,
+      "direct_percent": 99.81,
+      "pivot_percent": 0.19,
+      "manual_review_percent": 0.06
+    },
+    "electrical": {
+      "candidates": 356,
+      "REVIEW": 101,
+      "DIRECT_CONCEPT": 340,
+      "manual_review": 0,
+      "has_zh_variants": 158,
+      "source_declares_traditional": 141,
+      "ENGLISH_PIVOT_AMBIGUOUS": 8,
+      "ENGLISH_PIVOT_EXACT": 8,
+      "AUTO": 217,
+      "VERIFIED": 38,
+      "direct_percent": 95.51,
+      "pivot_percent": 4.49,
+      "manual_review_percent": 0.0
+    },
+    "electronics": {
+      "candidates": 2378,
+      "AUTO": 1625,
+      "DIRECT_CONCEPT": 2367,
+      "manual_review": 2,
+      "has_zh_variants": 524,
+      "source_declares_traditional": 475,
+      "VERIFIED": 315,
+      "REVIEW": 379,
+      "ENGLISH_PIVOT_EXACT": 7,
+      "REJECTED": 59,
+      "ENGLISH_PIVOT_AMBIGUOUS": 4,
+      "direct_percent": 99.54,
+      "pivot_percent": 0.46,
+      "manual_review_percent": 0.08
+    },
+    "industrial-safety": {
+      "candidates": 16,
+      "VERIFIED": 12,
+      "DIRECT_CONCEPT": 16,
+      "manual_review": 0,
+      "has_zh_variants": 1,
+      "source_declares_traditional": 0,
+      "AUTO": 4,
+      "direct_percent": 100.0,
+      "pivot_percent": 0.0,
+      "manual_review_percent": 0.0
+    },
+    "manufacturing": {
+      "candidates": 899,
+      "AUTO": 709,
+      "DIRECT_CONCEPT": 890,
+      "manual_review": 1,
+      "has_zh_variants": 187,
+      "source_declares_traditional": 159,
+      "VERIFIED": 145,
+      "REVIEW": 44,
+      "ENGLISH_PIVOT_EXACT": 5,
+      "ENGLISH_PIVOT_AMBIGUOUS": 4,
+      "REJECTED": 1,
+      "direct_percent": 99.0,
+      "pivot_percent": 1.0,
+      "manual_review_percent": 0.11
+    },
+    "materials-science": {
+      "candidates": 2034,
+      "VERIFIED": 591,
+      "DIRECT_CONCEPT": 2030,
+      "manual_review": 1,
+      "has_zh_variants": 420,
+      "source_declares_traditional": 327,
+      "AUTO": 1381,
+      "REVIEW": 53,
+      "ENGLISH_PIVOT_EXACT": 4,
+      "REJECTED": 9,
+      "direct_percent": 99.8,
+      "pivot_percent": 0.2,
+      "manual_review_percent": 0.05
+    },
+    "measurement": {
+      "candidates": 1755,
+      "AUTO": 1253,
+      "DIRECT_CONCEPT": 1746,
+      "manual_review": 0,
+      "has_zh_variants": 282,
+      "source_declares_traditional": 236,
+      "VERIFIED": 390,
+      "REVIEW": 111,
+      "ENGLISH_PIVOT_EXACT": 6,
+      "ENGLISH_PIVOT_AMBIGUOUS": 3,
+      "REJECTED": 1,
+      "direct_percent": 99.49,
+      "pivot_percent": 0.51,
+      "manual_review_percent": 0.0
+    },
+    "mechanical-engineering": {
+      "candidates": 1951,
+      "AUTO": 1415,
+      "DIRECT_CONCEPT": 1939,
+      "manual_review": 2,
+      "has_zh_variants": 469,
+      "source_declares_traditional": 371,
+      "VERIFIED": 338,
+      "REVIEW": 196,
+      "ENGLISH_PIVOT_EXACT": 10,
+      "REJECTED": 2,
+      "ENGLISH_PIVOT_AMBIGUOUS": 2,
+      "direct_percent": 99.38,
+      "pivot_percent": 0.62,
+      "manual_review_percent": 0.1
+    },
+    "metallurgy": {
+      "candidates": 869,
+      "AUTO": 661,
+      "DIRECT_CONCEPT": 849,
+      "manual_review": 2,
+      "has_zh_variants": 262,
+      "source_declares_traditional": 255,
+      "VERIFIED": 150,
+      "REVIEW": 57,
+      "ENGLISH_PIVOT_EXACT": 10,
+      "REJECTED": 1,
+      "ENGLISH_PIVOT_AMBIGUOUS": 10,
+      "direct_percent": 97.7,
+      "pivot_percent": 2.3,
+      "manual_review_percent": 0.23
+    },
+    "software": {
+      "candidates": 1502,
+      "AUTO": 1019,
+      "DIRECT_CONCEPT": 1489,
+      "manual_review": 0,
+      "has_zh_variants": 459,
+      "source_declares_traditional": 476,
+      "VERIFIED": 344,
+      "REVIEW": 134,
+      "ENGLISH_PIVOT_EXACT": 13,
+      "REJECTED": 5,
+      "direct_percent": 99.13,
+      "pivot_percent": 0.87,
+      "manual_review_percent": 0.0
+    },
+    "technical-core": {
+      "candidates": 8800,
+      "AUTO": 6215,
+      "DIRECT_CONCEPT": 8746,
+      "manual_review": 4,
+      "has_zh_variants": 1449,
+      "source_declares_traditional": 1181,
+      "VERIFIED": 1620,
+      "REVIEW": 894,
+      "REJECTED": 71,
+      "ENGLISH_PIVOT_EXACT": 39,
+      "ENGLISH_PIVOT_AMBIGUOUS": 15,
+      "direct_percent": 99.39,
+      "pivot_percent": 0.61,
+      "manual_review_percent": 0.05
+    },
+    "unclassified": {
+      "candidates": 171226,
+      "REVIEW": 46994,
+      "DIRECT_CONCEPT": 165560,
+      "manual_review": 0,
+      "has_zh_variants": 88705,
+      "source_declares_traditional": 129852,
+      "AUTO": 124229,
+      "ENGLISH_PIVOT_EXACT": 4573,
+      "ENGLISH_PIVOT_AMBIGUOUS": 1093,
+      "REJECTED": 3,
+      "direct_percent": 96.69,
+      "pivot_percent": 3.31,
+      "manual_review_percent": 0.0
+    }
+  },
+  "metadata": {
+    "config_sha256": "d6ef89b6bd77b71221c1d761c473742f0f490e03d7c6246aacad3cc67f297ca5",
+    "data_revision": "181495",
+    "linked_revision": "181495",
+    "merge_limit_skipped_concepts": "0"
+  },
+  "integrity": [
+    "ok"
+  ],
+  "input_files": [
+    {
+      "hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687",
+      "source": "cedict-20260923",
+      "adapter": "cedict",
+      "offset": 9851590,
+      "records": 125131,
+      "config": "fa2475dbac66bf6237b0d34c6c400bcf8d9100500ab15f177721f83550b35d6e",
+      "complete": 1
+    },
+    {
+      "hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd",
+      "source": "agrovoc-20260907",
+      "adapter": "agrovoc",
+      "offset": 19579897,
+      "records": 42001,
+      "config": "299a03eb94cfa3a97aac716507647be0ed97471a6bb98aed8db9ba2b4caa784a",
+      "complete": 1
+    },
+    {
+      "hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+      "source": "wikidata-technical-20260925",
+      "adapter": "wikidata",
+      "offset": 116411243,
+      "records": 14393,
+      "config": "299a03eb94cfa3a97aac716507647be0ed97471a6bb98aed8db9ba2b4caa784a",
+      "complete": 1
+    }
+  ],
+  "coverage": {
+    "raw_with_zh": 171281,
+    "raw_direct_zh_ru": 44791,
+    "source_declared_traditional": 127014,
+    "source_declared_simplified": 126988,
+    "chinese_compound_records": 157369,
+    "unique_candidate_zh_terms": 161532,
+    "unique_verified_pairs": 3041
+  },
+  "source_candidate_status": {
+    "agrovoc-20260907:REVIEW": 45644,
+    "agrovoc-20260907:AUTO": 145,
+    "agrovoc-20260907:VERIFIED": 893,
+    "cedict-20260923:AUTO": 124866,
+    "cedict-20260923:REVIEW": 6082,
+    "wikidata-technical-20260925:REVIEW": 4435,
+    "wikidata-technical-20260925:AUTO": 16978,
+    "wikidata-technical-20260925:VERIFIED": 3516,
+    "wikidata-technical-20260925:REJECTED": 222
+  },
+  "cross_domain_review_candidates": 762
+}

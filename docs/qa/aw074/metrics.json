@@ -1,0 +1,112 @@
+{
+  "sizes": {
+    "build_aw074_bytes": 3233035822,
+    "final_harvest_db_bytes": 890650624,
+    "final_review_artifacts_bytes": 328768267,
+    "targeted_acquisition_bytes": 6479741,
+    "original_runtime_archive_bytes": 22930970,
+    "baseline_zip_bytes": 24213959
+  },
+  "linking": {
+    "targeted_ingest": {
+      "sha256": "f4f42f93e368defe3a8fca94a5c65a9cb43c5211087764dbea6c5c82ce6e7c0f",
+      "processed": 55,
+      "resumed": true,
+      "complete": true
+    },
+    "targeted_ingest_seconds": 0.012220200000001569,
+    "link": {
+      "concepts": 181507,
+      "merge_limit_skipped_concepts": 0,
+      "candidates": 207652,
+      "conflicts": 9506
+    },
+    "link_seconds": 123.7747551,
+    "corpus_report_seconds": 38.19335020000017,
+    "refinement_report_seconds": 11.500812900000028,
+    "peak_rss_bytes": 109137920
+  },
+  "build": {
+    "build_seconds": 11.753844699999945,
+    "prepare_seconds": 4.849046099999896,
+    "packs": 48,
+    "runtime_entries": 8732,
+    "zh_rows": 4402,
+    "ru_rows": 4330,
+    "tglossary_bytes": 3923003,
+    "sqlite_bytes": 8155136,
+    "runtime_bytes": 22894244
+  },
+  "corpus_before": {
+    "raw_with_zh": 171281,
+    "raw_direct_zh_ru": 44791,
+    "source_declared_traditional": 127014,
+    "source_declared_simplified": 126988,
+    "chinese_compound_records": 157369,
+    "unique_candidate_zh_terms": 161532,
+    "unique_verified_pairs": 3041
+  },
+  "corpus_after": {
+    "raw_with_zh": 171329,
+    "raw_direct_zh_ru": 44839,
+    "source_declared_traditional": 127042,
+    "source_declared_simplified": 127017,
+    "chinese_compound_records": 157417,
+    "unique_candidate_zh_terms": 161567,
+    "unique_verified_pairs": 3038
+  },
+  "runtime_domains": {
+    "automotive": {
+      "zh": 140,
+      "ru": 140
+    },
+    "chemistry-engineering": {
+      "zh": 145,
+      "ru": 145
+    },
+    "computer-hardware": {
+      "zh": 182,
+      "ru": 182
+    },
+    "electrical": {
+      "zh": 38,
+      "ru": 36
+    },
+    "electronics": {
+      "zh": 315,
+      "ru": 313
+    },
+    "industrial-safety": {
+      "zh": 12,
+      "ru": 12
+    },
+    "manufacturing": {
+      "zh": 146,
+      "ru": 142
+    },
+    "materials-science": {
+      "zh": 589,
+      "ru": 573
+    },
+    "measurement": {
+      "zh": 389,
+      "ru": 381
+    },
+    "mechanical-engineering": {
+      "zh": 338,
+      "ru": 330
+    },
+    "metallurgy": {
+      "zh": 150,
+      "ru": 144
+    },
+    "software": {
+      "zh": 343,
+      "ru": 341
+    },
+    "technical-core": {
+      "zh": 1615,
+      "ru": 1591
+    }
+  }
+}

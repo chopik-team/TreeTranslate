@@ -18,7 +18,7 @@ class TranslationService(QObject):
     text_busy = False
 
     def submit_text(self, text: str, source: str, target: str,
-                    policy: PerformanceSettings, request_id: str) -> None:
+                    policy: PerformanceSettings, request_id: str, *, domain: str = 'general') -> None:
         """Compatibility adapter for the AW 0.3 mock, never used for real inference."""
         from app.engine.types import TranslationResult
         self.text_busy = True

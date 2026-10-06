@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import gc
 import logging
+from app.config.logging_config import timed_stage
 import os
 from collections import deque
 from threading import Event, RLock
@@ -116,9 +117,7 @@ class ArgosBackend(BaseBackend):
             path = self._path(request.source_language, request.target_language, pivot=kind == PairKind.PIVOT)
             if not path or (kind == PairKind.DIRECT and len(path) != 1):
                 raise UnsupportedLanguageError()
-            if self._options != options:
-                self._unload_translators()
-                self._options = options
+            self._options = options
             from argostranslate import settings
             settings.device = options.device
             os.environ["ARGOS_DEVICE_TYPE"] = options.device
@@ -133,36 +132,40 @@ class ArgosBackend(BaseBackend):
                 check_cancelled(cancelled)
                 pkg, record = self._packages[pair]
                 ids.append(record.id)
-                if pair not in self._translators:
+                model_key = (pair, options.device, options.compute_type, options.threads)
+                if model_key not in self._translators:
                     self.models.states[record.id] = ModelState.LOADING
                     try:
-                        import ctranslate2
-                        translator = ctranslate2.Translator(
-                            str(self.models.validate(record) / "model"), device=options.device,
-                            compute_type=options.compute_type, intra_threads=options.threads, inter_threads=1)
+                        with timed_stage('argos_model_load'):
+                            import ctranslate2
+                            translator = ctranslate2.Translator(
+                                str(self.models.validate(record) / "model"), device=options.device,
+                                compute_type=options.compute_type, intra_threads=options.threads, inter_threads=1)
                     except (RuntimeError, OSError):
                         self.models.states[record.id] = ModelState.ERROR
                         if options.device == "cuda":
                             raise DeviceUnavailableError() from None
                         raise ModelCorruptedError() from None
-                    self._translators[pair] = translator
+                    self._translators[model_key] = translator
                     self.models.states[record.id] = ModelState.READY
-                translator = self._translators[pair]
+                translator = self._translators[model_key]
                 prefix = getattr(pkg, "target_prefix", "")
 
                 def infer(batch):
-                    return translator.translate_batch(
-                        batch, target_prefix=[[prefix]] * len(batch) if prefix else None,
-                        replace_unknowns=True, beam_size=options.beam_size, length_penalty=0.2,
-                        max_batch_size=options.batch_tokens, batch_type="tokens",
-                        max_input_length=0, max_decoding_length=options.max_decoding_length)
+                    with timed_stage('argos_inference'):
+                        return translator.translate_batch(
+                            batch, target_prefix=[[prefix]] * len(batch) if prefix else None,
+                            replace_unknowns=True, beam_size=options.beam_size, length_penalty=0.2,
+                            max_batch_size=options.batch_tokens, batch_type="tokens",
+                            max_input_length=0, max_decoding_length=options.max_decoding_length)
 
                 def decode(tokens):
                     if prefix and tokens and tokens[0] == prefix:
                         tokens = tokens[1:]
                     return pkg.tokenizer.decode(tokens).strip()
 
-                text = translate_segments(text, pair[1], pkg.tokenizer.encode, decode, infer, options, cancelled)
+                text = translate_segments(text, pair[1], pkg.tokenizer.encode, decode, infer, options, cancelled,
+                                          question_boundaries=True)
             return BackendOutput(text, tuple(ids))
 
     def _unload_translators(self) -> None:

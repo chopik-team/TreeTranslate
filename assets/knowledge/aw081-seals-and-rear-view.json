@@ -1,0 +1,532 @@
+{
+  "revision": "AW0.81",
+  "references_evaluation_only": true,
+  "review_source": "User technical answers 05 in current chat, 2026-10-04.",
+  "manuals": {
+    "caliper": {
+      "url": "https://manualzz.com/doc/54739641/hyundai-2003-tiburon-workshop-manual",
+      "verification": "Fetched Hyundai service reproduction: separate caliper piston seal and piston boots, disassembly/reassembly; Russian nomenclature approved by user."
+    },
+    "rear_view": {
+      "url": "https://ownersmanual.hyundai.com/full_webhelp/ne1n/2026/en_us/topic_kfp_wxl_w5b.html",
+      "verification": "OEM warning relation and Russian terminology explicitly confirmed by user. Linked page fetched but substantive mirror wording unavailable to parser; not claimed independently verified."
+    },
+    "brake_operation": {
+      "url": "https://manualzz.com/doc/54739641/hyundai-2003-tiburon-workshop-manual",
+      "verification": "Fetched applying-brakes operation/leak check; actual Chinese clauses and user-confirmed test drive/master cylinder/booster meanings retained. No additional OEM instruction borrowed from older manual."
+    },
+    "rvm_display": {
+      "url": "https://www.helantra7.com/hyundai_elantra_cn7_rear_view_monitor_rvm_-3939.html",
+      "verification": "User answer to async OEM question 06: preserve ECM, Reverse Display Room Mirror names its display function; do not expand to electrochromic here or change global ECM. Fetched OEM manual reproductions at helantra7 and charm.li corroborate the functional display name and distinct electrochromic technology."
+    }
+  },
+  "entries": [
+    {
+      "source": "制动钳活塞密封圈",
+      "semantic_key": "caliper_piston_seal",
+      "target": "уплотнительное кольцо поршня тормозного суппорта",
+      "genitive": "уплотнительного кольца поршня тормозного суппорта",
+      "accusative": "уплотнительное кольцо поршня тормозного суппорта",
+      "subdomain": "brakes",
+      "manual": "caliper"
+    },
+    {
+      "source": "活塞防尘罩",
+      "semantic_key": "caliper_piston_boot",
+      "target": "пыльник поршня тормозного суппорта",
+      "genitive": "пыльника поршня тормозного суппорта",
+      "accusative": "пыльник поршня тормозного суппорта",
+      "subdomain": "brakes",
+      "manual": "caliper"
+    },
+    {
+      "source": "制动钳活塞密封圈和活塞防尘罩",
+      "semantic_key": "caliper_seal_and_boot_heading",
+      "target": "Уплотнительное кольцо и пыльник поршня тормозного суппорта",
+      "genitive": "уплотнительного кольца и пыльника поршня тормозного суппорта",
+      "accusative": "уплотнительное кольцо и пыльник поршня тормозного суппорта",
+      "subdomain": "brakes",
+      "manual": "caliper",
+      "type": "PHRASE",
+      "label_only": true,
+      "semantic_role": "diagnostic_relation",
+      "relation_to": [
+        "caliper_piston_seal",
+        "caliper_piston_boot"
+      ],
+      "aliases": [
+        "制动钳活塞密封圈和活塞防尘 罩"
+      ]
+    },
+    {
+      "source": "直观",
+      "semantic_key": "direct_visual_observation",
+      "target": "непосредственный визуальный контроль",
+      "genitive": "непосредственного визуального контроля",
+      "accusative": "непосредственный визуальный контроль",
+      "subdomain": "adas",
+      "manual": "rear_view",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation",
+      "label_only": true,
+      "required_subdomains": [
+        "adas"
+      ],
+      "required_context_terms": [
+        "倒车",
+        "后视镜",
+        "摄像头"
+      ]
+    },
+    {
+      "source": "室内后视镜",
+      "semantic_key": "inside_rearview_mirror",
+      "target": "внутреннее зеркало заднего вида",
+      "genitive": "внутреннего зеркала заднего вида",
+      "accusative": "внутреннее зеркало заднего вида",
+      "subdomain": "adas",
+      "manual": "rear_view"
+    },
+    {
+      "source": "室外后视镜",
+      "semantic_key": "outside_rearview_mirror",
+      "target": "наружное зеркало заднего вида",
+      "genitive": "наружного зеркала заднего вида",
+      "accusative": "наружное зеркало заднего вида",
+      "subdomain": "adas",
+      "manual": "rear_view"
+    },
+    {
+      "source": "室内/室外后视镜",
+      "semantic_key": "inside_outside_rearview_mirrors",
+      "target": "внутреннее и наружные зеркала заднего вида",
+      "genitive": "внутреннего и наружных зеркал заднего вида",
+      "accusative": "внутреннее и наружные зеркала заднего вида",
+      "subdomain": "adas",
+      "manual": "rear_view",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "驾驶辅助系统",
+      "semantic_key": "driving_assistance_system",
+      "target": "система помощи водителю",
+      "genitive": "системы помощи водителю",
+      "accusative": "систему помощи водителю",
+      "subdomain": "adas",
+      "manual": "rear_view"
+    },
+    {
+      "source": "倒车前和倒车期间",
+      "semantic_key": "before_and_during_reversing",
+      "target": "до начала и во время движения задним ходом",
+      "genitive": "до начала и во время движения задним ходом",
+      "accusative": "до начала и во время движения задним ходом",
+      "subdomain": "adas",
+      "manual": "rear_view",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "不能通过摄像头检测到的盲区",
+      "semantic_key": "camera_undetectable_blind_spots",
+      "target": "слепые зоны, которые камера не обнаруживает",
+      "genitive": "слепых зон, которые камера не обнаруживает",
+      "accusative": "слепые зоны, которые камера не обнаруживает",
+      "subdomain": "adas",
+      "manual": "rear_view",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "制动助力器",
+      "semantic_key": "brake_booster",
+      "target": "усилитель тормозов",
+      "genitive": "усилителя тормозов",
+      "accusative": "усилитель тормозов",
+      "subdomain": "brakes",
+      "manual": "caliper",
+      "aliases": [
+        "助力器"
+      ],
+      "locative": "усилителе тормозов"
+    },
+    {
+      "source": "制动液",
+      "semantic_key": "brake_fluid",
+      "target": "тормозная жидкость",
+      "genitive": "тормозной жидкости",
+      "accusative": "тормозную жидкость",
+      "subdomain": "brakes",
+      "manual": "brake_operation"
+    },
+    {
+      "source": "制动",
+      "semantic_key": "brake_application",
+      "target": "торможение",
+      "genitive": "торможения",
+      "accusative": "торможение",
+      "subdomain": "brakes",
+      "manual": "caliper",
+      "type": "PHRASE",
+      "label_only": true,
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "工作",
+      "semantic_key": "operation",
+      "target": "работа",
+      "genitive": "работы",
+      "accusative": "работу",
+      "subdomain": "brakes",
+      "manual": "caliper",
+      "type": "PHRASE",
+      "label_only": true,
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "辅助系统",
+      "semantic_key": "auxiliary_system",
+      "target": "вспомогательная система",
+      "genitive": "вспомогательной системы",
+      "accusative": "вспомогательную систему",
+      "subdomain": "adas",
+      "manual": "rvm_display",
+      "instrumental": "вспомогательной системой"
+    },
+    {
+      "source": "音频/视频显示器",
+      "semantic_key": "audio_video_monitor",
+      "target": "аудио-/видеомонитор",
+      "genitive": "аудио-/видеомонитора",
+      "accusative": "аудио-/видеомонитор",
+      "subdomain": "adas",
+      "manual": "rvm_display",
+      "locative": "аудио-/видеомониторе"
+    },
+    {
+      "source": "倒车显示室内后视镜",
+      "semantic_key": "reverse_display_room_mirror",
+      "target": "внутреннее зеркало заднего вида с дисплеем камеры заднего вида",
+      "genitive": "внутреннего зеркала заднего вида с дисплеем камеры заднего вида",
+      "accusative": "внутреннее зеркало заднего вида с дисплеем камеры заднего вида",
+      "subdomain": "adas",
+      "manual": "rvm_display",
+      "locative": "внутреннем зеркале заднего вида с дисплеем камеры заднего вида"
+    },
+    {
+      "source": "ECM(倒车显示室内后视镜)",
+      "semantic_key": "reverse_display_room_mirror",
+      "target": "ECM (внутреннее зеркало заднего вида с дисплеем камеры заднего вида)",
+      "genitive": "ECM (внутреннего зеркала заднего вида с дисплеем камеры заднего вида)",
+      "accusative": "ECM (внутреннее зеркало заднего вида с дисплеем камеры заднего вида)",
+      "subdomain": "adas",
+      "manual": "rvm_display",
+      "locative": "ECM (внутреннем зеркале заднего вида с дисплеем камеры заднего вида)",
+      "type": "PHRASE",
+      "label_only": true,
+      "semantic_role": "diagnostic_relation",
+      "required_subdomains": [
+        "adas"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "aw081-caliper-seal-boot-heading",
+      "source": "{X}和{Y}",
+      "target": "{X} и {Y}",
+      "forms": {
+        "X": "coordination_head",
+        "Y": "nominative"
+      },
+      "allowed_slots": [
+        "制动钳活塞密封圈",
+        "活塞防尘罩"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动钳活塞密封圈"
+        ],
+        "Y": [
+          "活塞防尘罩"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "HEADING",
+        "COMPONENT_LABEL",
+        "DIAGRAM_LABEL",
+        "TABLE_CELL"
+      ],
+      "negative_relation": true,
+      "capitalize": true,
+      "slot_forms": {
+        "制动钳活塞密封圈": {
+          "coordination_head": "уплотнительное кольцо"
+        }
+      }
+    },
+    {
+      "id": "aw081-assistance-only",
+      "source": "此系统仅是{X}。",
+      "target": "Эта система служит только для помощи водителю.",
+      "forms": {
+        "X": "nominative"
+      },
+      "allowed_slots": [
+        "驾驶辅助系统"
+      ],
+      "slot_allowed": {
+        "X": [
+          "驾驶辅助系统"
+        ]
+      },
+      "subdomains": [
+        "adas"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-rear-view-direct-and-mirror-check",
+      "source": "在{X},因存在{Y},驾驶员有责任始终通过直观和{Z}观察车辆后方区域。",
+      "target": "{X} водитель обязан постоянно контролировать пространство позади автомобиля непосредственно визуально и с помощью {Z}, поскольку существуют {Y}.",
+      "forms": {
+        "X": "nominative",
+        "Y": "nominative",
+        "Z": "genitive"
+      },
+      "allowed_slots": [
+        "不能通过摄像头检测到的盲区",
+        "倒车前和倒车期间",
+        "室内/室外后视镜"
+      ],
+      "slot_allowed": {
+        "X": [
+          "倒车前和倒车期间"
+        ],
+        "Y": [
+          "不能通过摄像头检测到的盲区"
+        ],
+        "Z": [
+          "室内/室外后视镜"
+        ]
+      },
+      "subdomains": [
+        "adas"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "capitalize": true
+    },
+    {
+      "id": "aw081-apply-brakes-check-operation",
+      "source": "进行{X},检查其{Y}。",
+      "target": "{X} и проверьте {Y} тормозов.",
+      "forms": {
+        "X": "imperative",
+        "Y": "accusative"
+      },
+      "allowed_slots": [
+        "制动",
+        "工作"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动"
+        ],
+        "Y": [
+          "工作"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "capitalize": true,
+      "slot_forms": {
+        "制动": {
+          "imperative": "нажмите педаль тормоза"
+        }
+      }
+    },
+    {
+      "id": "aw081-rear-view-display-destinations",
+      "source": "此系统是{X},倒车时通过{Y}或{Z}显示车辆后方状况。",
+      "target": "Эта система является {X} и при движении задним ходом отображает пространство позади автомобиля на {Y} или на {Z}.",
+      "forms": {
+        "X": "instrumental",
+        "Y": "locative",
+        "Z": "locative"
+      },
+      "allowed_slots": [
+        "ECM(倒车显示室内后视镜)",
+        "辅助系统",
+        "音频/视频显示器"
+      ],
+      "slot_allowed": {
+        "X": [
+          "辅助系统"
+        ],
+        "Y": [
+          "音频/视频显示器"
+        ],
+        "Z": [
+          "ECM(倒车显示室内后视镜)"
+        ]
+      },
+      "subdomains": [
+        "adas"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-fluid-inside-during-disassembly",
+      "source": "如果在分解{X}时发现内部有{Y},则更换{Z}。",
+      "target": "Если при разборке {X} внутри обнаружена {Y}, замените {Z}.",
+      "forms": {
+        "X": "genitive",
+        "Y": "nominative",
+        "Z": "coordinated_nouns"
+      },
+      "allowed_slots": [
+        "制动主缸",
+        "制动助力器",
+        "制动总缸",
+        "制动液",
+        "助力器"
+      ],
+      "slot_allowed": {
+        "X": [
+          "助力器",
+          "制动助力器"
+        ],
+        "Y": [
+          "制动液"
+        ],
+        "Z": [
+          "助力器",
+          "制动助力器",
+          "制动总缸",
+          "制动主缸"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "list_cases": {
+        "Z": "accusative"
+      }
+    },
+    {
+      "id": "aw081-replace-on-fault-damage-leak",
+      "source": "如果工作不正常或{X}或发现{Y},则更换{Z}。",
+      "target": "При ненормальной работе, наличии {X} или обнаружении {Y} замените {Z}.",
+      "forms": {
+        "X": "genitive",
+        "Y": "genitive",
+        "Z": "accusative"
+      },
+      "allowed_slots": [
+        "制动主缸",
+        "制动总缸",
+        "损坏",
+        "机油泄漏",
+        "漏油"
+      ],
+      "slot_allowed": {
+        "X": [
+          "损坏"
+        ],
+        "Y": [
+          "漏油",
+          "机油泄漏"
+        ],
+        "Z": [
+          "制动总缸",
+          "制动主缸"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-additional-booster-fluid-replacement",
+      "source": "如果在{X}内部发现{Y},则还要更换{Z}。",
+      "target": "Если внутри {X} обнаружена {Y}, также замените {Z}.",
+      "forms": {
+        "X": "genitive",
+        "Y": "nominative",
+        "Z": "accusative"
+      },
+      "allowed_slots": [
+        "制动助力器",
+        "制动液",
+        "助力器"
+      ],
+      "slot_allowed": {
+        "X": [
+          "助力器",
+          "制动助力器"
+        ],
+        "Y": [
+          "制动液"
+        ],
+        "Z": [
+          "助力器",
+          "制动助力器"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    }
+  ]
+}

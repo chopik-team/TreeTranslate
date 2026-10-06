@@ -1,0 +1,82 @@
+ M .gitignore
+ M CHANGELOG.md
+ M README.md
+ M THIRD_PARTY_NOTICES.md
+ M app/config/constants.py
+ M app/controllers/translation_ui_controller.py
+ M app/documents/job.py
+ M app/engine/factory.py
+ M app/engine/types.py
+ M app/gui/dialogs/about_dialog.py
+ M app/gui/dialogs/changelog_dialog.py
+ M app/gui/pages/file_translation_page.py
+ M app/gui/pages/text_translation_page.py
+ M app/gui/styles/stylesheet.qss
+ M app/services/hybrid_translation_service.py
+ M app/services/translation_preferences.py
+ M app/services/translation_service.py
+ M docs/NEXT_CYCLE.md
+ M docs/qa/aw04-completion.png
+ M docs/qa/aw04-dictionary.png
+ M docs/qa/aw04-game.png
+ M docs/qa/aw04-real-text.png
+ M tools/smoke_lexical_ui.py
+ M tools/smoke_translation_ui.py
+?? app/config/knowledge_domains.py
+?? app/glossary/
+?? app/translation_memory/
+?? assets/config/glossary.json
+?? assets/config/translation_memory.json
+?? assets/knowledge/
+?? assets/licenses/
+?? docs/AW0.7.1_GLOSSARY_REPORT.md
+?? docs/AW0.7.2_KNOWLEDGE_HARVESTER_REPORT.md
+?? docs/AW0.7.3_KNOWLEDGE_EXPANSION_REPORT.md
+?? docs/AW0.7_TRANSLATION_MEMORY_REPORT.md
+?? docs/qa/aw07/
+?? docs/qa/aw071/
+?? docs/qa/aw072/
+?? docs/qa/aw073/
+?? tests/fixtures/glossary/
+?? tests/test_glossary.py
+?? tests/test_glossary_integration.py
+?? tests/test_knowledge_expansion.py
+?? tests/test_knowledge_harvester.py
+?? tests/test_knowledge_text_ui.py
+?? tests/test_translation_memory.py
+?? tests/test_translation_memory_documents.py
+?? tools/benchmark_glossary.py
+?? tools/benchmark_knowledge_harvester.py
+?? tools/benchmark_translation_memory.py
+?? tools/build_glossary_pack.py
+?? tools/build_license_catalog.py
+?? tools/glossary.py
+?? tools/knowledge_harvester/
+?? tools/probe_glossary_placeholders.py
+?? tools/qa_knowledge_expansion.py
+?? tools/qa_knowledge_harvester.py
+?? tools/translation_memory.py
+?? vendor/licenses/PySide6/
+?? vendor/licenses/PySide6_Addons/
+?? vendor/licenses/PySide6_Essentials/
+?? vendor/licenses/PyYAML/wheel-notices/
+?? vendor/licenses/Python/
+?? vendor/licenses/argostranslate/wheel-notices/
+?? vendor/licenses/click/wheel-notices/
+?? vendor/licenses/cloudpickle/wheel-notices/
+?? vendor/licenses/colorama/
+?? vendor/licenses/fonttools/wheel-notices/
+?? vendor/licenses/joblib/wheel-notices/
+?? vendor/licenses/lxml/wheel-notices/
+?? vendor/licenses/numpy/wheel-notices/
+?? vendor/licenses/nvidia-cublas-cu12/wheel-notices/
+?? vendor/licenses/nvidia-cuda-nvrtc-cu12/wheel-notices/
+?? vendor/licenses/packaging/wheel-notices/
+?? vendor/licenses/pypdfium2/wheel-notices/
+?? vendor/licenses/pyspellchecker/wheel-notices/
+?? vendor/licenses/python-docx/wheel-notices/
+?? vendor/licenses/regex/wheel-notices/
+?? vendor/licenses/sacremoses/wheel-notices/
+?? vendor/licenses/shiboken6/
+?? vendor/licenses/tqdm/wheel-notices/
+?? vendor/licenses/typing_extensions/

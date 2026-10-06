@@ -1,0 +1,1306 @@
+{
+  "phase": "baseline",
+  "python": "3.12.13 (tags/3.12.13:513a1bf, Mar  4 2026, 17:45:19) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+  "gpu": "NVIDIA GeForce RTX 3080, 610.88, 12288 MiB",
+  "ram_bytes": 34266484736,
+  "versions": {
+    "ctranslate2": "4.8.2",
+    "argostranslate": "1.11.0",
+    "sentencepiece": "0.2.2",
+    "PySide6": "6.11.1",
+    "pypdfium2": "5.13.0"
+  },
+  "method": "fresh process per row; first cold call, 1 warmup, 3 measured runs; no output cache; GPU figures device-total snapshots",
+  "results": [
+    {
+      "case": "short",
+      "source": "en",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "balanced",
+      "chars": 14,
+      "words": 3,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.40625,
+      "gpu_total_before_mb": 1677,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 725.7030000037048,
+      "backend": "argos",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "argos-en-ru"
+      ],
+      "route_reason": "direct primary route for en-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        74.10080000408925,
+        75.27500001015142,
+        76.71039999695495
+      ],
+      "warm_median_ms": 75.27500001015142,
+      "warm_p95_ms": 76.71039999695495,
+      "chars_per_sec": 185.98472265841238,
+      "words_per_sec": 39.85386914108837,
+      "rss_loaded_mb": 453.19140625,
+      "gpu_total_loaded_mb": 2137,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 14,
+          "latency_ms": 458.61560001503676,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 14,
+          "latency_ms": 34.24430001177825,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 14,
+          "latency_ms": 35.74639998259954,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 14,
+          "latency_ms": 36.511800019070506,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 14,
+          "latency_ms": 37.34520002035424,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 493.671875,
+      "rss_after_shutdown_mb": 444.984375,
+      "gpu_total_after_shutdown_mb": 1881
+    },
+    {
+      "case": "medium",
+      "source": "en",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "balanced",
+      "chars": 504,
+      "words": 64,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.52734375,
+      "gpu_total_before_mb": 1674,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1705.3322999854572,
+      "backend": "argos",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "argos-en-ru"
+      ],
+      "route_reason": "direct primary route for en-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        1076.5422999975272,
+        1065.7509999873582,
+        1129.039899999043
+      ],
+      "warm_median_ms": 1076.5422999975272,
+      "warm_p95_ms": 1129.039899999043,
+      "chars_per_sec": 468.16553330153187,
+      "words_per_sec": 59.44959153035325,
+      "rss_loaded_mb": 461.69921875,
+      "gpu_total_loaded_mb": 2139,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1430.031299998518,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1040.6174999952782,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1033.0278000037652,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1022.3801999818534,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1084.4510000024457,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 502.9375,
+      "rss_after_shutdown_mb": 452.87890625,
+      "gpu_total_after_shutdown_mb": 1883
+    },
+    {
+      "case": "long",
+      "source": "en",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "balanced",
+      "chars": 4046,
+      "words": 512,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.30859375,
+      "gpu_total_before_mb": 1676,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 2089.987799990922,
+      "backend": "argos",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "argos-en-ru"
+      ],
+      "route_reason": "direct primary route for en-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        1170.7609000150114,
+        1168.6183999991044,
+        1262.6990000135265
+      ],
+      "warm_median_ms": 1170.7609000150114,
+      "warm_p95_ms": 1262.6990000135265,
+      "chars_per_sec": 3455.8721596767728,
+      "words_per_sec": 437.3224285107533,
+      "rss_loaded_mb": 460.28515625,
+      "gpu_total_loaded_mb": 2140,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 4046,
+          "latency_ms": 1690.0407999928575,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 4046,
+          "latency_ms": 1214.4431000051554,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 4046,
+          "latency_ms": 1127.7587999938987,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 4046,
+          "latency_ms": 1125.320399994962,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 4046,
+          "latency_ms": 1221.7960999987554,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 489.12890625,
+      "rss_after_shutdown_mb": 448.06640625,
+      "gpu_total_after_shutdown_mb": 1884
+    },
+    {
+      "case": "very-long",
+      "source": "en",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "balanced",
+      "chars": 12142,
+      "words": 1536,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.4921875,
+      "gpu_total_before_mb": 1676,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 4573.601799987955,
+      "backend": "argos",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "argos-en-ru"
+      ],
+      "route_reason": "direct primary route for en-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        4078.1935999984853,
+        4101.744200015673,
+        4088.1952999916393
+      ],
+      "warm_median_ms": 4088.1952999916393,
+      "warm_p95_ms": 4101.744200015673,
+      "chars_per_sec": 2970.014666379767,
+      "words_per_sec": 375.7159057452909,
+      "rss_loaded_mb": 460.265625,
+      "gpu_total_loaded_mb": 2139,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 12142,
+          "latency_ms": 3987.2566999983974,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 12142,
+          "latency_ms": 3568.6588999815285,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 12142,
+          "latency_ms": 4035.1113000069745,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 12142,
+          "latency_ms": 4057.1121999819297,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 12142,
+          "latency_ms": 4044.2137999925762,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 492.99609375,
+      "rss_after_shutdown_mb": 449.82421875,
+      "gpu_total_after_shutdown_mb": 1883
+    },
+    {
+      "case": "medium",
+      "source": "en",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "cpu",
+      "profile": "balanced",
+      "chars": 504,
+      "words": 64,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.33203125,
+      "gpu_total_before_mb": 1673,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 3201.6156000026967,
+      "backend": "argos",
+      "device": "cpu",
+      "compute_type": "int8",
+      "model_ids": [
+        "argos-en-ru"
+      ],
+      "route_reason": "direct primary route for en-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        2858.772899984615,
+        2897.6775000046473,
+        2681.8110000167508
+      ],
+      "warm_median_ms": 2858.772899984615,
+      "warm_p95_ms": 2897.6775000046473,
+      "chars_per_sec": 176.299418538182,
+      "words_per_sec": 22.387227750880257,
+      "rss_loaded_mb": 266.390625,
+      "gpu_total_loaded_mb": 1669,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 2981.228299991926,
+          "device": "cpu",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 2640.3812000062317,
+          "device": "cpu",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 2812.3497999913525,
+          "device": "cpu",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 2846.0145000135526,
+          "device": "cpu",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 2635.559499991359,
+          "device": "cpu",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 321.39453125,
+      "rss_after_shutdown_mb": 52.2578125,
+      "gpu_total_after_shutdown_mb": 1669
+    },
+    {
+      "case": "medium",
+      "source": "en",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "auto",
+      "profile": "balanced",
+      "chars": 504,
+      "words": 64,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.40234375,
+      "gpu_total_before_mb": 1669,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1722.212099994067,
+      "backend": "argos",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "argos-en-ru"
+      ],
+      "route_reason": "direct primary route for en-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        1067.0998999848962,
+        1072.444399993401,
+        1041.912200016668
+      ],
+      "warm_median_ms": 1067.0998999848962,
+      "warm_p95_ms": 1072.444399993401,
+      "chars_per_sec": 472.3081690918851,
+      "words_per_sec": 59.975640519604454,
+      "rss_loaded_mb": 461.4765625,
+      "gpu_total_loaded_mb": 2113,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1443.0815000087023,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1050.0581999949645,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1022.2517999936827,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1029.8336000123527,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "en-ru",
+          "text_length": 504,
+          "latency_ms": 1000.0557000166737,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 476.35546875,
+      "rss_after_shutdown_mb": 452.390625,
+      "gpu_total_after_shutdown_mb": 1857
+    },
+    {
+      "case": "zh-ru",
+      "source": "zh",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "economy",
+      "chars": 17,
+      "words": null,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.5703125,
+      "gpu_total_before_mb": 1659,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": false,
+        "auto_gpu": false,
+        "threads": 2,
+        "beam_size": 1,
+        "batch_tokens": 192,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 960.3398999897763,
+      "backend": "argos",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "argos-zh-en",
+        "argos-en-ru"
+      ],
+      "route_reason": "pivot primary route for zh-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        166.51249999995343,
+        166.5369000111241,
+        163.06980000808835
+      ],
+      "warm_median_ms": 166.51249999995343,
+      "warm_p95_ms": 166.5369000111241,
+      "chars_per_sec": 102.09443735458152,
+      "words_per_sec": null,
+      "rss_loaded_mb": 486.98046875,
+      "gpu_total_loaded_mb": 2254,
+      "attempt_metrics": [
+        {
+          "backend": "argos",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 695.6524999986868,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 122.91299999924377,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 128.36309999693185,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 126.68710001162253,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "argos",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 124.3786999839358,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 643.01953125,
+      "rss_after_shutdown_mb": 468.3671875,
+      "gpu_total_after_shutdown_mb": 1870
+    },
+    {
+      "case": "zh-ru",
+      "source": "zh",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "fast",
+      "chars": 17,
+      "words": null,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.25,
+      "gpu_total_before_mb": 1655,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 1,
+        "batch_tokens": 384,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1195.0101999973413,
+      "backend": "m2m100",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ],
+      "route_reason": "direct quality route for zh-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        189.08930002362467,
+        186.14060000982136,
+        188.64809998194687
+      ],
+      "warm_median_ms": 188.64809998194687,
+      "warm_p95_ms": 189.08930002362467,
+      "chars_per_sec": 90.11487527108333,
+      "words_per_sec": null,
+      "rss_loaded_mb": 495.65625,
+      "gpu_total_loaded_mb": 2406,
+      "attempt_metrics": [
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 921.4782000053674,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 150.32929999870248,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 149.461799999699,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 147.32550000189804,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 150.068300019484,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 811.6484375,
+      "rss_after_shutdown_mb": 447.91796875,
+      "gpu_total_after_shutdown_mb": 1862
+    },
+    {
+      "case": "zh-ru",
+      "source": "zh",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "automatic",
+      "chars": 17,
+      "words": null,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.43359375,
+      "gpu_total_before_mb": 1655,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1197.7458000183105,
+      "backend": "m2m100",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ],
+      "route_reason": "direct quality route for zh-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        219.56249998765998,
+        214.31229999870993,
+        217.4020000093151
+      ],
+      "warm_median_ms": 217.4020000093151,
+      "warm_p95_ms": 219.56249998765998,
+      "chars_per_sec": 78.19615274593424,
+      "words_per_sec": null,
+      "rss_loaded_mb": 496.72265625,
+      "gpu_total_loaded_mb": 2404,
+      "attempt_metrics": [
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 933.0717999837361,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 177.91979998582974,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 180.48490001820028,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 175.89630000293255,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 178.48490001051687,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 792.375,
+      "rss_after_shutdown_mb": 448.6953125,
+      "gpu_total_after_shutdown_mb": 1860
+    },
+    {
+      "case": "zh-ru",
+      "source": "zh",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "balanced",
+      "chars": 17,
+      "words": null,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.43359375,
+      "gpu_total_before_mb": 1644,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 4,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1252.9235999973025,
+      "backend": "m2m100",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ],
+      "route_reason": "direct quality route for zh-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        220.4083999968134,
+        221.83309998945333,
+        214.5118999760598
+      ],
+      "warm_median_ms": 220.4083999968134,
+      "warm_p95_ms": 221.83309998945333,
+      "chars_per_sec": 77.1295467878982,
+      "words_per_sec": null,
+      "rss_loaded_mb": 496.65625,
+      "gpu_total_loaded_mb": 2406,
+      "attempt_metrics": [
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 985.4712999949697,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 197.78720001340844,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 178.73820001841523,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 183.24090001988225,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 175.666099996306,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 800.203125,
+      "rss_after_shutdown_mb": 448.9453125,
+      "gpu_total_after_shutdown_mb": 1862
+    },
+    {
+      "case": "zh-ru",
+      "source": "zh",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "turbo",
+      "chars": 17,
+      "words": null,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.41015625,
+      "gpu_total_before_mb": 1652,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 2,
+        "batch_tokens": 1536,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1191.7276000021957,
+      "backend": "m2m100",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ],
+      "route_reason": "direct quality route for zh-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        190.97759999567643,
+        193.2368999987375,
+        196.9192000105977
+      ],
+      "warm_median_ms": 193.2368999987375,
+      "warm_p95_ms": 196.9192000105977,
+      "chars_per_sec": 87.97491576459294,
+      "words_per_sec": null,
+      "rss_loaded_mb": 496.12890625,
+      "gpu_total_loaded_mb": 2406,
+      "attempt_metrics": [
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 927.3769999854267,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 153.07830000529066,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 151.45969999139197,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 155.24969997932203,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 158.31090000574477,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 805.43359375,
+      "rss_after_shutdown_mb": 448.8203125,
+      "gpu_total_after_shutdown_mb": 1862
+    },
+    {
+      "case": "zh-ru",
+      "source": "zh",
+      "target": "ru",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "maximum",
+      "chars": 17,
+      "words": null,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.53125,
+      "gpu_total_before_mb": 1655,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": true,
+        "allow_quality": true,
+        "auto_gpu": true,
+        "threads": 8,
+        "beam_size": 5,
+        "batch_tokens": 768,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1215.0495999958366,
+      "backend": "m2m100",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ],
+      "route_reason": "direct quality route for zh-ru",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        226.43119998974726,
+        222.9564000153914,
+        224.2297999910079
+      ],
+      "warm_median_ms": 224.2297999910079,
+      "warm_p95_ms": 226.43119998974726,
+      "chars_per_sec": 75.81507899789295,
+      "words_per_sec": null,
+      "rss_loaded_mb": 495.75,
+      "gpu_total_loaded_mb": 2403,
+      "attempt_metrics": [
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 950.8281999733299,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 182.34179998398758,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 188.0167000053916,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 183.47659998107702,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "zh-ru",
+          "text_length": 17,
+          "latency_ms": 185.2521999971941,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 801.47265625,
+      "rss_after_shutdown_mb": 448.1171875,
+      "gpu_total_after_shutdown_mb": 1859
+    },
+    {
+      "case": "en-fr",
+      "source": "en",
+      "target": "fr",
+      "requested_backend": "router",
+      "requested_device": "gpu",
+      "profile": "economy",
+      "chars": 61,
+      "words": 10,
+      "word_count_method": "whitespace; null for zh/ja",
+      "rss_before_mb": 33.32421875,
+      "gpu_total_before_mb": 1655,
+      "errors": [],
+      "profile_settings": {
+        "prefer_quality": false,
+        "allow_quality": false,
+        "auto_gpu": false,
+        "threads": 2,
+        "beam_size": 1,
+        "batch_tokens": 192,
+        "max_input_tokens": 192,
+        "max_decoding_length": 512
+      },
+      "cold_ms": 1156.170000002021,
+      "backend": "m2m100",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ],
+      "route_reason": "direct quality route for en-fr",
+      "fallback_used": false,
+      "warm_samples_ms": [
+        159.0211000002455,
+        161.17150001809932,
+        159.05709998332895
+      ],
+      "warm_median_ms": 159.05709998332895,
+      "warm_p95_ms": 161.17150001809932,
+      "chars_per_sec": 383.51007283795263,
+      "words_per_sec": 62.87050374392666,
+      "rss_loaded_mb": 496.0,
+      "gpu_total_loaded_mb": 2406,
+      "attempt_metrics": [
+        {
+          "backend": "m2m100",
+          "language_pair": "en-fr",
+          "text_length": 61,
+          "latency_ms": 884.5684999832883,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "en-fr",
+          "text_length": 61,
+          "latency_ms": 119.127700017998,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "en-fr",
+          "text_length": 61,
+          "latency_ms": 120.7830999919679,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "en-fr",
+          "text_length": 61,
+          "latency_ms": 121.36679998366162,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        },
+        {
+          "backend": "m2m100",
+          "language_pair": "en-fr",
+          "text_length": 61,
+          "latency_ms": 119.46570000145584,
+          "device": "cuda",
+          "success": true,
+          "fallback": false,
+          "error_type": null
+        }
+      ],
+      "rss_sampled_peak_mb": 807.34765625,
+      "rss_after_shutdown_mb": 448.21875,
+      "gpu_total_after_shutdown_mb": 1862
+    }
+  ]
+}

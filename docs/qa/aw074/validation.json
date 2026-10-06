@@ -1,0 +1,23 @@
+{
+  "version": "AW0.7.4",
+  "finalized_at": "2026-09-27T03:55:56.845171+00:00",
+  "regression": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "484",
+    "time": "156.388",
+    "timestamp": "2026-09-26T09:50:23.158729+03:00",
+    "hostname": "PC"
+  },
+  "compileall": {
+    "command": ".venv/Scripts/python -X utf8 -m compileall -q app tools",
+    "exit_code": 0
+  },
+  "git_diff_check": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "automatic_commit": false
+}

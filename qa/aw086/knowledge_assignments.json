@@ -1,0 +1,5477 @@
+[
+  {
+    "id": 1,
+    "source": "车身尺寸",
+    "target": "Размеры кузова",
+    "concept_id": "aw:concept:0121725f002e8f81e153",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 2,
+    "source": "一般事项",
+    "target": "Общие сведения",
+    "concept_id": "aw:concept:7e307f4bc4359155f94b",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 3,
+    "source": "车身维修",
+    "target": "Ремонт кузова",
+    "concept_id": "aw:concept:97579d9990ab4a67c019",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 4,
+    "source": "内部",
+    "target": "Внутренняя часть кузова",
+    "concept_id": "aw:concept:6f225eb36d6d4e6a281f",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 5,
+    "source": "前车身",
+    "target": "Передняя часть кузова",
+    "concept_id": "aw:concept:546ffcfcb04e48d5b3f2",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 6,
+    "source": "后车身",
+    "target": "Задняя часть кузова",
+    "concept_id": "aw:concept:2bb2463de17990517fbc",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 7,
+    "source": "车身侧面",
+    "target": "Боковая часть кузова",
+    "concept_id": "aw:concept:742d1aa5b02f3e7b98ec",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 8,
+    "source": "车身底部",
+    "target": "Нижняя часть кузова",
+    "concept_id": "aw:concept:c2b467a0b5d647b2432e",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 9,
+    "source": "车身面板间隙",
+    "target": "Зазоры кузовных панелей",
+    "concept_id": "aw:concept:21120302643fb9853bf1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 10,
+    "source": "车身",
+    "target": "Кузов",
+    "concept_id": "aw:concept:9d8499ba0e425af2b622",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 11,
+    "source": "概述",
+    "target": "Общие сведения",
+    "concept_id": "aw:concept:9a377ae82211e65af4c2",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 12,
+    "source": "测量方法",
+    "target": "Метод измерения",
+    "concept_id": "aw:concept:0600f2bab52452d55a1f",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 13,
+    "source": "投影尺寸",
+    "target": "Проекционные размеры",
+    "concept_id": "aw:concept:8f10461a5a58f66e9059",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 14,
+    "source": "实际测量尺寸",
+    "target": "Фактические измеренные размеры",
+    "concept_id": "aw:concept:361870a9880635ccba8e",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 15,
+    "source": "测量点",
+    "target": "Точка измерения",
+    "concept_id": "aw:concept:a8e304d34861892e475c",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 16,
+    "source": "卷尺",
+    "target": "Рулетка",
+    "concept_id": "aw:concept:0775a683adcbd1dc0dc4",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 17,
+    "source": "探头",
+    "target": "Измерительный наконечник",
+    "concept_id": "aw:concept:7798994360f49907fd4e",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 18,
+    "source": "量规",
+    "target": "Измерительная линейка",
+    "concept_id": "aw:concept:5234fb86019febf903ee",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 19,
+    "source": "轨距仪",
+    "target": "Кузовная измерительная линейка",
+    "concept_id": "aw:concept:24d3bdf61cb6b2aa955b",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 21,
+    "source": "接线孔",
+    "target": "Отверстие для жгута проводов",
+    "concept_id": "aw:concept:cb456ce81e8aaac79fbd",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 22,
+    "source": "翼子板",
+    "target": "Крыло",
+    "concept_id": "aw:concept:9da4a67103e58d1793f3",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 23,
+    "source": "翼子板孔",
+    "target": "Отверстие крыла",
+    "concept_id": "aw:concept:a92ab1f24c3dc0aaae8c",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 24,
+    "source": "侧构件",
+    "target": "Лонжерон",
+    "concept_id": "aw:concept:865684c30af46d547556",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 25,
+    "source": "前侧构件",
+    "target": "Передний лонжерон",
+    "concept_id": "aw:concept:d5d05f121b9d604c8184",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 26,
+    "source": "铰链",
+    "target": "Петля",
+    "concept_id": "aw:concept:b7e18977f267f0ac8652",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 27,
+    "source": "安装孔",
+    "target": "Крепёжное отверстие",
+    "concept_id": "aw:concept:685f8b78d48210e5b206",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 28,
+    "source": "前门",
+    "target": "Передняя дверь",
+    "concept_id": "aw:concept:6add346bbbef64c03cbc",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 29,
+    "source": "后门",
+    "target": "Задняя дверь",
+    "concept_id": "aw:concept:de24367e65f05042d09c",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 30,
+    "source": "组合灯",
+    "target": "Комбинированный фонарь",
+    "concept_id": "aw:concept:7d077f4be64166e3c5e4",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 31,
+    "source": "保险杠",
+    "target": "Бампер",
+    "concept_id": "aw:concept:e171ae4f4ae5c0054008",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 32,
+    "source": "机罩",
+    "target": "Капот",
+    "concept_id": "aw:concept:eb551ba1c66655cede74",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 33,
+    "source": "机罩铰链",
+    "target": "Петля капота",
+    "concept_id": "aw:concept:4f55a6f718dc3829565b",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 35,
+    "source": "减震器",
+    "target": "Амортизатор",
+    "concept_id": "aw:concept:f8d44739cd031c063792",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 36,
+    "source": "前减震器孔",
+    "target": "Отверстие переднего амортизатора",
+    "concept_id": "aw:concept:dcbb0c59060e8a5e62ff",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 37,
+    "source": "雨刮器",
+    "target": "Стеклоочиститель",
+    "concept_id": "aw:concept:f73d13a929f3b0835bd5",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 38,
+    "source": "雨刮器电机",
+    "target": "Электродвигатель стеклоочистителя",
+    "concept_id": "aw:concept:5c1204d4ad8e4bcb35ab",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 39,
+    "source": "雨刮器电机支架孔",
+    "target": "Отверстие кронштейна электродвигателя стеклоочистителя",
+    "concept_id": "aw:concept:539517eb5a7b855ce71d",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 40,
+    "source": "支架",
+    "target": "Кронштейн",
+    "concept_id": "aw:concept:303615b5ec2b22c5a443",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 41,
+    "source": "发动机安装支架",
+    "target": "Кронштейн крепления двигателя",
+    "concept_id": "aw:concept:6aeb50f4a151ad726f4e",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 42,
+    "source": "发动机安装支架孔",
+    "target": "Отверстие кронштейна крепления двигателя",
+    "concept_id": "aw:concept:ad7c08258330790e8d3f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 43,
+    "source": "变速驱动桥",
+    "target": "Коробка передач с главной передачей",
+    "concept_id": "aw:concept:e75ea7e560b2ed1d22d0",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 44,
+    "source": "变速驱动桥安装孔",
+    "target": "Отверстие крепления коробки передач с главной передачей",
+    "concept_id": "aw:concept:179a35db779bc91f01bc",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 45,
+    "source": "前端模块",
+    "target": "Передний модуль кузова",
+    "concept_id": "aw:concept:cbdf16e5ad72aa50c69e",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 46,
+    "source": "前端模块孔",
+    "target": "Отверстие переднего модуля кузова",
+    "concept_id": "aw:concept:50910cce1201ad062739",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 47,
+    "source": "副车架",
+    "target": "Подрамник",
+    "concept_id": "aw:concept:1532ac074e877a6da9ae",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 48,
+    "source": "前副车架",
+    "target": "Передний подрамник",
+    "concept_id": "aw:concept:dc7d01d68289f6844c64",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 49,
+    "source": "后副车架",
+    "target": "Задний подрамник",
+    "concept_id": "aw:concept:7eada4ecc4cfda904231",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 50,
+    "source": "前副车架孔",
+    "target": "Отверстие переднего подрамника",
+    "concept_id": "aw:concept:bb3e4167e8fbc59a40fd",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 51,
+    "source": "后副车架孔",
+    "target": "Отверстие заднего подрамника",
+    "concept_id": "aw:concept:3873c588b57399b5ca56",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 52,
+    "source": "悬架",
+    "target": "Подвеска",
+    "concept_id": "aw:concept:5be88eb977b6518bc300",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 53,
+    "source": "弹簧",
+    "target": "Пружина",
+    "concept_id": "aw:concept:df1a091f6dc1f6bdb835",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 54,
+    "source": "后悬架弹簧孔",
+    "target": "Отверстие пружины задней подвески",
+    "concept_id": "aw:concept:af27bf818f8996b67fbe",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 55,
+    "source": "安全带",
+    "target": "Ремень безопасности",
+    "concept_id": "aw:concept:18d8ab054b71ebb37281",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 56,
+    "source": "安全带高度调节器",
+    "target": "Регулятор высоты ремня безопасности",
+    "concept_id": "aw:concept:86e2c8b3f9691b889884",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 57,
+    "source": "安全带高度调节器上孔",
+    "target": "Верхнее отверстие регулятора высоты ремня безопасности",
+    "concept_id": "aw:concept:806faec8a8854efe55fb",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 58,
+    "source": "安全带预紧器",
+    "target": "Преднатяжитель ремня безопасности",
+    "concept_id": "aw:concept:07d84cab37ae2e49e731",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 59,
+    "source": "安全带预紧器孔",
+    "target": "Отверстие преднатяжителя ремня безопасности",
+    "concept_id": "aw:concept:afcb899b6c925695d312",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 60,
+    "source": "中央立柱",
+    "target": "Центральная стойка кузова",
+    "concept_id": "aw:concept:099d66c22d62a8a55ae9",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 61,
+    "source": "座椅安装孔",
+    "target": "Отверстие крепления сиденья",
+    "concept_id": "aw:concept:1d5606485ad0d5031c8a",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 62,
+    "source": "高度",
+    "target": "Высота",
+    "concept_id": "aw:concept:968dd036cbb1eb2b073a",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 63,
+    "source": "孔中心",
+    "target": "Центр отверстия",
+    "concept_id": "aw:concept:ae393b9317a8480bd9f4",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 64,
+    "source": "外侧面板",
+    "target": "Наружная панель",
+    "concept_id": "aw:concept:fc7e5c9ec93a85aa3a35",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 65,
+    "source": "内侧面板",
+    "target": "Внутренняя панель",
+    "concept_id": "aw:concept:23049387663800dc1343",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 66,
+    "source": "车身侧面外面板",
+    "target": "Наружная боковая панель кузова",
+    "concept_id": "aw:concept:49f1350b8e7fadff24fe",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 67,
+    "source": "车门面板",
+    "target": "Панель двери",
+    "concept_id": "aw:concept:242d331ade88443cb508",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors",
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 68,
+    "source": "前侧构件孔",
+    "target": "Отверстие переднего лонжерона",
+    "concept_id": "aw:concept:3879442b95a0e43ccae8",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 73,
+    "source": "后组合灯孔",
+    "target": "Отверстие заднего комбинированного фонаря",
+    "concept_id": "aw:concept:ae0d2be205a4223bddd9",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 74,
+    "source": "后保险杠侧孔",
+    "target": "Боковое отверстие заднего бампера",
+    "concept_id": "aw:concept:5067653ddb6b930df1bd",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 75,
+    "source": "前副车架螺栓",
+    "target": "Болт переднего подрамника",
+    "concept_id": "aw:concept:34afd98dca7e3f1abe25",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 76,
+    "source": "车顶侧内部面板孔",
+    "target": "Отверстие внутренней боковой панели крыши",
+    "concept_id": "aw:concept:6fbe9f4a17f03a5228d8",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 77,
+    "source": "中央地板加强孔",
+    "target": "Отверстие усилителя центральной части пола",
+    "concept_id": "aw:concept:ab71d1ce589323693ec9",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 78,
+    "source": "中央立柱内部面板孔",
+    "target": "Отверстие внутренней панели центральной стойки",
+    "concept_id": "aw:concept:34f84355916e4ce31a65",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 79,
+    "source": "后部地板面板孔",
+    "target": "Отверстие задней панели пола",
+    "concept_id": "aw:concept:1447ab491078695dad3d",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 80,
+    "source": "后地板前延长孔",
+    "target": "Отверстие переднего удлинителя заднего пола",
+    "concept_id": "aw:concept:cba4cea40d27c8501d94",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 81,
+    "source": "侧门槛内角板",
+    "target": "Внутренняя угловая панель порога",
+    "concept_id": "aw:concept:6f93a82ee7c461fe6938",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 82,
+    "source": "侧面外部面板后拐角",
+    "target": "Задний угол наружной боковой панели",
+    "concept_id": "aw:concept:1d7fd6ab6dd804becd16",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 83,
+    "source": "三角窗内部上面板孔",
+    "target": "Отверстие верхней внутренней панели треугольного окна",
+    "concept_id": "aw:concept:b7ae60e4cb292abf24c5",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 84,
+    "source": "三角窗内部面板孔",
+    "target": "Отверстие внутренней панели треугольного окна",
+    "concept_id": "aw:concept:1b8f934e5d01cc34ba96",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 85,
+    "source": "三角窗固定装饰孔",
+    "target": "Отверстие крепления облицовки треугольного окна",
+    "concept_id": "aw:concept:4a6cd99a0ec1beb37a4f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 86,
+    "source": "测量方法 投影尺寸",
+    "target": "Метод измерения — проекционные размеры",
+    "concept_id": "aw:concept:9efb92d3fa6c394ec53f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 87,
+    "source": "应测量外部面板 （孔） 的中心。",
+    "target": "Измерение следует выполнять по центру наружной панели (отверстия).",
+    "concept_id": "aw:concept:cff51d5ec7dbb265fbea",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement",
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 88,
+    "source": "本图中所示的这些尺寸值为实际测量的尺寸值。",
+    "target": "Размеры, указанные на данном рисунке, являются фактически измеренными значениями.",
+    "concept_id": "aw:concept:8b9ab7c0f82217943454",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 89,
+    "source": "*本图中所示的这些尺寸值为实际测量的尺寸值。 [ 单位： mm(inch) ]",
+    "target": "*Размеры, указанные на данном рисунке, являются фактически измеренными значениями. [Единицы: мм (дюймы)]",
+    "concept_id": "aw:concept:f035f5fa02815b0200c6",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 90,
+    "source": "本图中所示的这些尺寸值为实际测量的尺寸值。\n[单位：mm (inch)]",
+    "target": "Размеры, указанные на данном рисунке, являются фактически измеренными значениями.\n[Единицы: мм (дюймы)]",
+    "concept_id": "aw:concept:48ab6ecd7d5416e467e6",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 91,
+    "source": "实际测量尺寸 下部",
+    "target": "Фактические измеренные размеры — нижняя часть кузова",
+    "concept_id": "aw:concept:628021e47368d247b331",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 92,
+    "source": "下部",
+    "target": "Нижняя часть кузова",
+    "concept_id": "aw:concept:c125f45d2def35c8d28a",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 93,
+    "source": "实际",
+    "target": "Фактический размер",
+    "concept_id": "aw:concept:e0ae9a3c77ae781d428c",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 94,
+    "source": "完整装饰",
+    "target": "Полная отделка",
+    "concept_id": "aw:concept:83d6bc0ed30066a2f924",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 95,
+    "source": "车身结构",
+    "target": "Структура кузова",
+    "concept_id": "aw:concept:09fe947a417fddd4d438",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 96,
+    "source": "车身面板",
+    "target": "Кузовная панель",
+    "concept_id": "aw:concept:be13e78a377f4ba92428",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 97,
+    "source": "面板间隙",
+    "target": "Зазор между панелями",
+    "concept_id": "aw:concept:42e29a7946dfde1a4251",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 98,
+    "source": "前端",
+    "target": "Передняя часть",
+    "concept_id": "aw:concept:866a4fa82c25f0e282c7",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 99,
+    "source": "后端",
+    "target": "Задняя часть",
+    "concept_id": "aw:concept:9b826346239e803fae14",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 100,
+    "source": "前部",
+    "target": "Передняя часть",
+    "concept_id": "aw:concept:cffc5fe3a73d351ab7ad",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 101,
+    "source": "后部",
+    "target": "Задняя часть",
+    "concept_id": "aw:concept:5b79a0518fc65e99e17a",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 102,
+    "source": "车门",
+    "target": "Дверь автомобиля",
+    "concept_id": "aw:concept:3540be9758dc085a8958",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 103,
+    "source": "上铰链",
+    "target": "Верхняя петля",
+    "concept_id": "aw:concept:ac1419daf18dd52c31c0",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 104,
+    "source": "下铰链",
+    "target": "Нижняя петля",
+    "concept_id": "aw:concept:8d13dff3e8f21972ba35",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 105,
+    "source": "门锁",
+    "target": "Замок двери",
+    "concept_id": "aw:concept:63579e05e34021a82ba2",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 106,
+    "source": "门锁栓",
+    "target": "Ответная часть замка двери",
+    "concept_id": "aw:concept:fd3a54792c26bcdac109",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 107,
+    "source": "限位器",
+    "target": "Ограничитель",
+    "concept_id": "aw:concept:6586d674858699ae56dc",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 108,
+    "source": "车门限位器",
+    "target": "Ограничитель открывания двери",
+    "concept_id": "aw:concept:9280e093852c371352cd",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 109,
+    "source": "纵梁",
+    "target": "Лонжерон",
+    "concept_id": "aw:concept:161f4de3fa1c3a8110d9",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 110,
+    "source": "横梁",
+    "target": "Поперечина",
+    "concept_id": "aw:concept:283c6ae990fd18b34da9",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 111,
+    "source": "后侧构件",
+    "target": "Задний лонжерон",
+    "concept_id": "aw:concept:cf62dbafaf7cfd9870ef",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 112,
+    "source": "A柱",
+    "target": "Передняя стойка кузова",
+    "concept_id": "aw:concept:d528a52bc44fb8ebf264",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 113,
+    "source": "B柱",
+    "target": "Центральная стойка кузова",
+    "concept_id": "aw:concept:d36877537cf3e914336e",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 114,
+    "source": "C柱",
+    "target": "Задняя стойка кузова",
+    "concept_id": "aw:concept:6fd9a0b2d70ee43267cc",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 115,
+    "source": "内板",
+    "target": "Внутренняя панель",
+    "concept_id": "aw:concept:a7471e6af0bd6bde8851",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 116,
+    "source": "外板",
+    "target": "Наружная панель",
+    "concept_id": "aw:concept:e157eff1a33fd0eb8b34",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 117,
+    "source": "加强板",
+    "target": "Усилительная панель",
+    "concept_id": "aw:concept:aa182de17f7d676c8d90",
+    "type": "TERM",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 118,
+    "source": "安装支架",
+    "target": "Крепёжный кронштейн",
+    "concept_id": "aw:concept:9753474bd6488ae26f6a",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 119,
+    "source": "发动机",
+    "target": "Двигатель",
+    "concept_id": "aw:concept:5a0d47438ef5faed330f",
+    "type": "TERM",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 120,
+    "source": "发动机舱",
+    "target": "Моторный отсек",
+    "concept_id": "aw:concept:007ecaf7048d67b15091",
+    "type": "TERM",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 121,
+    "source": "座椅",
+    "target": "Сиденье",
+    "concept_id": "aw:concept:5a9fd33c7fa8589aaec3",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 122,
+    "source": "测量",
+    "target": "Измерение",
+    "concept_id": "aw:concept:c7d9b81a063e3a9072f2",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 123,
+    "source": "测量尺寸",
+    "target": "Измеренные размеры",
+    "concept_id": "aw:concept:c22ce5958c5a2244b2e9",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 124,
+    "source": "参考平面",
+    "target": "Опорная плоскость",
+    "concept_id": "aw:concept:fd365b11d3e04639dae5",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 125,
+    "source": "高度差",
+    "target": "Разница высот",
+    "concept_id": "aw:concept:6e584045af658e9d16b0",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 126,
+    "source": "基准尺寸",
+    "target": "Базовые размеры",
+    "concept_id": "aw:concept:9386e4a1bb72d41617bc",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 127,
+    "source": "公差",
+    "target": "Допуск",
+    "concept_id": "aw:concept:a78ff01b0bd382acc858",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 128,
+    "source": "间隙",
+    "target": "Зазор",
+    "concept_id": "aw:concept:03333bc9a0e849accf1b",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 129,
+    "source": "安装",
+    "target": "Установка",
+    "concept_id": "aw:concept:e8f88f51ccb085ea870b",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 130,
+    "source": "螺栓",
+    "target": "Болт",
+    "concept_id": "aw:concept:8e0b1c22fc32f747e744",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 131,
+    "source": "螺母",
+    "target": "Гайка",
+    "concept_id": "aw:concept:837cf8ec2aab5f2d34c9",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 132,
+    "source": "固定",
+    "target": "Крепление",
+    "concept_id": "aw:concept:d4b3f49cd2e4254f1664",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 133,
+    "source": "连接",
+    "target": "Соединение",
+    "concept_id": "aw:concept:a5574109f0208e899feb",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 134,
+    "source": "测量段",
+    "target": "Измерительный участок",
+    "concept_id": "aw:concept:844c1926eaacfc8cd4a0",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 135,
+    "source": "探头长度",
+    "target": "Длина измерительного наконечника",
+    "concept_id": "aw:concept:b438cfbde2149995b05d",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 136,
+    "source": "两个表面",
+    "target": "Две поверхности",
+    "concept_id": "aw:concept:7b21acb86020c2b11d0c",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 137,
+    "source": "实际尺寸",
+    "target": "Фактические размеры",
+    "concept_id": "aw:concept:6637ea6614da0c0de168",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 138,
+    "source": "实测尺寸",
+    "target": "Фактически измеренные размеры",
+    "concept_id": "aw:concept:2737788cb93b881fcf72",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 139,
+    "source": "直线距离",
+    "target": "Прямое расстояние",
+    "concept_id": "aw:concept:b08a0a7005627f2a07fa",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 140,
+    "source": "车身变动",
+    "target": "Изменение геометрии кузова",
+    "concept_id": "aw:concept:10447a4b89115d530e9a",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 141,
+    "source": "孔",
+    "target": "Отверстие",
+    "concept_id": "aw:concept:b9670616856719e989b6",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 142,
+    "source": "孔径",
+    "target": "Диаметр отверстия",
+    "concept_id": "aw:concept:44446b96f23b7bfdaac0",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 143,
+    "source": "中心线",
+    "target": "Осевая линия",
+    "concept_id": "aw:concept:291fd4df577490d0fd39",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 144,
+    "source": "对称轴",
+    "target": "Ось симметрии",
+    "concept_id": "aw:concept:4a74409b94990f141870",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 145,
+    "source": "车顶",
+    "target": "Крыша",
+    "concept_id": "aw:concept:2963a20d68203e5ba00a",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 146,
+    "source": "门槛",
+    "target": "Порог",
+    "concept_id": "aw:concept:4c744fdbd8a71ae17f84",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 147,
+    "source": "地板",
+    "target": "Пол",
+    "concept_id": "aw:concept:59a6a585ba18f342a13e",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 148,
+    "source": "行李仓盖板",
+    "target": "Крышка багажного отсека",
+    "concept_id": "aw:concept:1a0944d6555a413c9b4f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 149,
+    "source": "通风罩",
+    "target": "Панель воздухопритока",
+    "concept_id": "aw:concept:d84dda271329e394dc95",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 150,
+    "source": "通风罩侧装饰孔",
+    "target": "Отверстие боковой облицовки панели воздухопритока",
+    "concept_id": "aw:concept:895413932157718349bf",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 151,
+    "source": "通风罩横臂孔",
+    "target": "Отверстие поперечины панели воздухопритока",
+    "concept_id": "aw:concept:887cbb1dd0ade9ce8b56",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 152,
+    "source": "前门检验器孔",
+    "target": "Отверстие ограничителя открывания передней двери",
+    "concept_id": "aw:concept:3fa049aa2b21cdedbbd0",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 153,
+    "source": "后门检验器孔",
+    "target": "Отверстие ограничителя открывания задней двери",
+    "concept_id": "aw:concept:edb810b3cccb2eada8fd",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 154,
+    "source": "后门锁栓孔",
+    "target": "Отверстие ответной части замка задней двери",
+    "concept_id": "aw:concept:f666e2d7cb00e042b8a6",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 155,
+    "source": "杂物箱装饰孔",
+    "target": "Отверстие облицовки вещевого отсека",
+    "concept_id": "aw:concept:638aeac828794a2183b3",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 156,
+    "source": "行李仓盖板锁栓孔",
+    "target": "Отверстие ответной части замка крышки багажного отсека",
+    "concept_id": "aw:concept:46840e926ca570b94389",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 157,
+    "source": "前支柱转角",
+    "target": "Угол передней стойки",
+    "concept_id": "aw:concept:d4e935455a429ec4d32c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 158,
+    "source": "后面板机加孔",
+    "target": "Обработанное отверстие задней панели",
+    "concept_id": "aw:concept:c5f038c3cb7ac400a4c1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 159,
+    "source": "后杂物箱中央面板孔",
+    "target": "Отверстие центральной панели заднего вещевого отсека",
+    "concept_id": "aw:concept:73c7fe261ef4edec0b71",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 160,
+    "source": "杂物箱侧延长机孔",
+    "target": "Технологическое отверстие бокового удлинителя вещевого отсека",
+    "concept_id": "aw:concept:7db317a56e0c4dd4b0ad",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 161,
+    "source": "前侧构件机下孔",
+    "target": "Нижнее технологическое отверстие переднего лонжерона",
+    "concept_id": "aw:concept:3c39aa3a8388b7f37c44",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 162,
+    "source": "前副车架后减振器孔",
+    "target": "Отверстие заднего демпфера переднего подрамника",
+    "concept_id": "aw:concept:3002c1209b307aa4a53c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 163,
+    "source": "前侧后下构件机孔",
+    "target": "Технологическое отверстие задней нижней части переднего лонжерона",
+    "concept_id": "aw:concept:0d43c3471467d350ac48",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 164,
+    "source": "中央地板侧构件延长机孔",
+    "target": "Технологическое отверстие удлинителя лонжерона центральной части пола",
+    "concept_id": "aw:concept:ac3a6d58761ab31eddd1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 165,
+    "source": "后地板侧构件延长机孔",
+    "target": "Технологическое отверстие удлинителя лонжерона заднего пола",
+    "concept_id": "aw:concept:b820c2ac1694e14ed9a1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 166,
+    "source": "后地板侧构件机孔",
+    "target": "Технологическое отверстие лонжерона заднего пола",
+    "concept_id": "aw:concept:9a8ab0eb913b5721462f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.structure",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 167,
+    "source": "后定位臂孔",
+    "target": "Отверстие заднего направляющего рычага",
+    "concept_id": "aw:concept:e6a320bf75f97ad69665",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 168,
+    "source": "前门限位器孔",
+    "target": "Отверстие ограничителя открывания передней двери",
+    "concept_id": "aw:concept:fe08260eec4d46a4019a",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 169,
+    "source": "后门限位器孔",
+    "target": "Отверстие ограничителя открывания задней двери",
+    "concept_id": "aw:concept:e4691930d103bd537134",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 170,
+    "source": "前门锁安装孔",
+    "target": "Отверстие крепления замка передней двери",
+    "concept_id": "aw:concept:bd66cee3e670ca2a6188",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 171,
+    "source": "后门锁安装孔",
+    "target": "Отверстие крепления замка задней двери",
+    "concept_id": "aw:concept:05cdc2e4161f65397a0f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 172,
+    "source": "前座椅安装孔",
+    "target": "Отверстие крепления переднего сиденья",
+    "concept_id": "aw:concept:cc9dc400bce6c3f82dd5",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 173,
+    "source": "后座椅安装孔",
+    "target": "Отверстие крепления заднего сиденья",
+    "concept_id": "aw:concept:668d7c33c689c52bb301",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 174,
+    "source": "前悬架弹簧孔",
+    "target": "Отверстие пружины передней подвески",
+    "concept_id": "aw:concept:f5dd83823a301c48b011",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 175,
+    "source": "后减震器孔",
+    "target": "Отверстие заднего амортизатора",
+    "concept_id": "aw:concept:541caf18e6c9df736cec",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 176,
+    "source": "前保险杠安装孔",
+    "target": "Отверстие крепления переднего бампера",
+    "concept_id": "aw:concept:8bbb1ef5fba3e91836ba",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 177,
+    "source": "后保险杠安装孔",
+    "target": "Отверстие крепления заднего бампера",
+    "concept_id": "aw:concept:d40458f11d4e658d269c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 178,
+    "source": "前组合灯安装孔",
+    "target": "Отверстие крепления переднего комбинированного фонаря",
+    "concept_id": "aw:concept:5854db0b53a603948492",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 179,
+    "source": "后组合灯安装孔",
+    "target": "Отверстие крепления заднего комбинированного фонаря",
+    "concept_id": "aw:concept:48167c17c92afc6cd8f5",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 180,
+    "source": "安全带安装孔",
+    "target": "Отверстие крепления ремня безопасности",
+    "concept_id": "aw:concept:ea8386feb1477ec6d359",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 181,
+    "source": "安全带高度调节器下孔",
+    "target": "Нижнее отверстие регулятора высоты ремня безопасности",
+    "concept_id": "aw:concept:a4d181aa67ece4c8409c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 182,
+    "source": "前副车架安装螺栓",
+    "target": "Крепёжный болт переднего подрамника",
+    "concept_id": "aw:concept:d2f3db9b4142552daf4a",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 183,
+    "source": "后副车架安装螺栓",
+    "target": "Крепёжный болт заднего подрамника",
+    "concept_id": "aw:concept:9a513704fe88950faa10",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 184,
+    "source": "发动机舱加强板",
+    "target": "Усилительная панель моторного отсека",
+    "concept_id": "aw:concept:36ab3954f10ac6276fc8",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine",
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 185,
+    "source": "车门内板",
+    "target": "Внутренняя панель двери",
+    "concept_id": "aw:concept:13c54205b7df24685e5f",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors",
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 186,
+    "source": "车门外板",
+    "target": "Наружная панель двери",
+    "concept_id": "aw:concept:7970cb6adf0b83007c67",
+    "type": "TERM",
+    "subdomains": [
+      "body.doors",
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 187,
+    "source": "前纵梁",
+    "target": "Передний лонжерон",
+    "concept_id": "aw:concept:f8b529198994cdfa473d",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 188,
+    "source": "后纵梁",
+    "target": "Задний лонжерон",
+    "concept_id": "aw:concept:77a47d4a41ae9a1c543a",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 189,
+    "source": "地板横梁",
+    "target": "Поперечина пола",
+    "concept_id": "aw:concept:d190cb939ba6949566b7",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 190,
+    "source": "车顶横梁",
+    "target": "Поперечина крыши",
+    "concept_id": "aw:concept:8c784ff107c34ff47086",
+    "type": "TERM",
+    "subdomains": [
+      "body.structure"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 191,
+    "source": "门槛加强板",
+    "target": "Усилительная панель порога",
+    "concept_id": "aw:concept:93e65c9922beed55c88f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.panels"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 192,
+    "source": "测量孔",
+    "target": "Измерительное отверстие",
+    "concept_id": "aw:concept:e7b93ba7e3e8858a13e1",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 193,
+    "source": "基准点",
+    "target": "Базовая точка",
+    "concept_id": "aw:concept:baa5262159cfc652bb67",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 194,
+    "source": "测量点中心",
+    "target": "Центр точки измерения",
+    "concept_id": "aw:concept:72de0c1c7ff5792e55d1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 195,
+    "source": "测量点间距",
+    "target": "Расстояние между точками измерения",
+    "concept_id": "aw:concept:f74ddf35f251246bbee4",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 196,
+    "source": "孔中心距",
+    "target": "Расстояние между центрами отверстий",
+    "concept_id": "aw:concept:822a37498094ddee1e13",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 197,
+    "source": "左右高度差",
+    "target": "Разница высот левой и правой сторон",
+    "concept_id": "aw:concept:8cf4c21fd1f9af4bca3f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 198,
+    "source": "前后高度差",
+    "target": "Разница высот передней и задней частей",
+    "concept_id": "aw:concept:bfdf01f381e2a0189408",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 199,
+    "source": "探头调节长度",
+    "target": "Регулируемая длина измерительного наконечника",
+    "concept_id": "aw:concept:9719e4b95253009db690",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 200,
+    "source": "车身对称性",
+    "target": "Симметрия кузова",
+    "concept_id": "aw:concept:2a3483ce2a2aba25dfb1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 201,
+    "source": "尺寸偏差",
+    "target": "Отклонение размера",
+    "concept_id": "aw:concept:07f38c51b1edf7e44674",
+    "type": "TERM",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 202,
+    "source": "对角线尺寸",
+    "target": "Размер по диагонали",
+    "concept_id": "aw:concept:da2eeae86eca8fbcc15c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 203,
+    "source": "使用卷尺时",
+    "target": "При использовании рулетки",
+    "concept_id": "aw:concept:78c4150dc647485b2003",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 204,
+    "source": "使用轨距仪时",
+    "target": "При использовании кузовной измерительной линейки",
+    "concept_id": "aw:concept:bb97c72a35fb6b63a96f",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 205,
+    "source": "投影到参考平面",
+    "target": "Проецировать на опорную плоскость",
+    "concept_id": "aw:concept:8ea4aa2d6a0af71deea8",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 206,
+    "source": "确保无自由间隙",
+    "target": "Убедитесь в отсутствии люфта",
+    "concept_id": "aw:concept:f21e1ceae3b49621d634",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 207,
+    "source": "不得弯曲",
+    "target": "Не допускается изгиб",
+    "concept_id": "aw:concept:c239f9c55b9a05134c29",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 208,
+    "source": "不得扭曲",
+    "target": "Не допускается перекручивание",
+    "concept_id": "aw:concept:4d1b33a458595f899367",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 209,
+    "source": "不得拉长",
+    "target": "Не допускается растяжение",
+    "concept_id": "aw:concept:3bda0974de4d963bba03",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 210,
+    "source": "没有拉长",
+    "target": "Не растянута",
+    "concept_id": "aw:concept:944bd6951a846f1cd0fd",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 211,
+    "source": "没有扭曲",
+    "target": "Не перекручена",
+    "concept_id": "aw:concept:b3c533269c6bccd0411d",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 212,
+    "source": "没有弯曲",
+    "target": "Не согнута",
+    "concept_id": "aw:concept:cb0bf4d4f8ccfdc80861",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 213,
+    "source": "可调整",
+    "target": "Можно регулировать",
+    "concept_id": "aw:concept:c4285c4efb2660669c45",
+    "type": "PHRASE",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 214,
+    "source": "加长探头",
+    "target": "Удлинить измерительный наконечник",
+    "concept_id": "aw:concept:20401195269efc24f0f5",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 215,
+    "source": "进行测量",
+    "target": "Выполнить измерение",
+    "concept_id": "aw:concept:241e18b0af9c4415ef1c",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 216,
+    "source": "检查探头",
+    "target": "Проверьте измерительный наконечник",
+    "concept_id": "aw:concept:b43440752e716c3adbad",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 217,
+    "source": "检查量规",
+    "target": "Проверьте измерительную линейку",
+    "concept_id": "aw:concept:76951da4c609559c914b",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 218,
+    "source": "测量前检查量规",
+    "target": "Перед измерением проверьте измерительную линейку",
+    "concept_id": "aw:concept:53b43f279aec6d0a128a",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 219,
+    "source": "测量前检查探头",
+    "target": "Перед измерением проверьте измерительный наконечник",
+    "concept_id": "aw:concept:919c37a72c6ccb734127",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 220,
+    "source": "使用卷尺时应保持卷尺平直。",
+    "target": "При использовании рулетки держите её прямо.",
+    "concept_id": "aw:concept:22600c46aebd4e2f4156",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 221,
+    "source": "测量时不得弯曲卷尺。",
+    "target": "При измерении не сгибайте рулетку.",
+    "concept_id": "aw:concept:bfef2edebc72e7329d8a",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 222,
+    "source": "测量时不得扭曲卷尺。",
+    "target": "При измерении не перекручивайте рулетку.",
+    "concept_id": "aw:concept:a0a9a6fe612368f364d2",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 223,
+    "source": "测量时不得拉长卷尺。",
+    "target": "При измерении не растягивайте рулетку.",
+    "concept_id": "aw:concept:ad77dd24ce93e319cc42",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 224,
+    "source": "测量前确保无自由间隙。",
+    "target": "Перед измерением убедитесь в отсутствии люфта.",
+    "concept_id": "aw:concept:75d38461b20e45e72dfa",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 225,
+    "source": "检查探头长度。",
+    "target": "Проверьте длину измерительного наконечника.",
+    "concept_id": "aw:concept:3e118b8e0a485b40e62a",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 226,
+    "source": "两个探头应具有相等的长度。",
+    "target": "Оба измерительных наконечника должны иметь одинаковую длину.",
+    "concept_id": "aw:concept:bb28751402d7aa512c84",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 227,
+    "source": "应在孔的中心进行测量。",
+    "target": "Измерение следует выполнять по центру отверстия.",
+    "concept_id": "aw:concept:8811ca06bf960786b944",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 228,
+    "source": "测量点必须位于参考平面上。",
+    "target": "Точки измерения должны находиться на опорной плоскости.",
+    "concept_id": "aw:concept:ebd2b2e5a97e3fe57efc",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 229,
+    "source": "检查车门面板间隙。",
+    "target": "Проверьте зазор между панелями двери.",
+    "concept_id": "aw:concept:d87762053258577d7167",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.doors",
+      "body.panels"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 230,
+    "source": "测量两个表面之间的高度差。",
+    "target": "Измерьте разницу высот между двумя поверхностями.",
+    "concept_id": "aw:concept:bfcde67fccdcb31efdb3",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 231,
+    "source": "测量完成后检查尺寸偏差。",
+    "target": "После измерения проверьте отклонение размера.",
+    "concept_id": "aw:concept:59218fe518fdc6451fc6",
+    "type": "PHRASE",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 232,
+    "source": "这个测量值仅作为A/S的基准提供,所以,不能将其用作技术规范。",
+    "target": "Эти измеренные значения приведены только как ориентир для послепродажного обслуживания A/S; использовать их как технические нормативы нельзя.",
+    "concept_id": "aw:concept:5b77f6e1de63a54c2a80",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 233,
+    "source": "基本上,使用轨距仪执行本手册内的所有测量。",
+    "target": "Как правило, все измерения в этом руководстве выполняются кузовной измерительной линейкой.",
+    "concept_id": "aw:concept:f91032b67bf9632360b7",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 234,
+    "source": "使用卷尺时,一定要确保卷尺没有拉长、扭曲或弯曲。",
+    "target": "При использовании рулетки убедитесь, что она не растянута, не перекручена и не согнута.",
+    "concept_id": "aw:concept:43b7be246f62d6b1e6bb",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 235,
+    "source": "为测量车身尺寸,本手册当中使用了投影尺寸和实际尺寸。",
+    "target": "Для измерения размеров кузова в этом руководстве используются проекционные и фактические размеры.",
+    "concept_id": "aw:concept:5ec3df28e7786717d54f",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 236,
+    "source": "投影尺寸是测量点投影到参考平面时的测量尺寸,用来作为车身变动的基准尺寸。",
+    "target": "Проекционные размеры получают проецированием точек измерения на опорную плоскость; они служат базовыми размерами для оценки изменения геометрии кузова.",
+    "concept_id": "aw:concept:7c625737d33734748f9a",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 237,
+    "source": "如果轨距仪的探头长度可以调整,可通过增加一个长度等同于两个表面之间高度差的测量段,将探头加长进行测量。",
+    "target": "Если длина измерительного наконечника регулируется, удлините его на величину разницы высот между двумя поверхностями и выполните измерение.",
+    "concept_id": "aw:concept:6bdeed7f89aa8f42bc12",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 238,
+    "source": "实测尺寸是测量点间实际的直线距离,可以作为用轨距仪测量时的基准尺寸。",
+    "target": "Фактический размер — прямое расстояние между точками измерения; он служит ориентиром при измерении кузовной линейкой.",
+    "concept_id": "aw:concept:4f3690bccb23e6b9a79f",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 239,
+    "source": "首先将两个探头的调节为具有相等的长度(A=A'),然后进行测量。",
+    "target": "Сначала установите одинаковую длину обоих измерительных наконечников (A=A'), затем выполните измерение.",
+    "concept_id": "aw:concept:9ddf2173eeb84bfaa1ac",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 240,
+    "source": "应在孔的中心取测量值。",
+    "target": "Выполняйте измерение по центру отверстия.",
+    "concept_id": "aw:concept:ed4b7d2782668d018c76",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 241,
+    "source": "检查探头和量规,确保无自由间隙。",
+    "target": "Проверьте измерительные наконечники и линейку: люфта быть не должно.",
+    "concept_id": "aw:concept:97b8ee9680e275564b4f",
+    "type": "FULL_SEGMENT",
+    "subdomains": [
+      "body.body_measurement"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 242,
+    "source": "自由间隙",
+    "target": "Люфт",
+    "concept_id": "aw:concept:4a8320fa6867d929f3fa",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 243,
+    "source": "机罩铰链孔",
+    "target": "Отверстие петли капота",
+    "concept_id": "aw:concept:ecefa1a02e3cc47a27b4",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 244,
+    "source": "前门上铰链安装孔",
+    "target": "Отверстие крепления верхней петли передней двери",
+    "concept_id": "aw:concept:8e0865b5d2964db831e0",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 245,
+    "source": "前门下铰链安装孔",
+    "target": "Отверстие крепления нижней петли передней двери",
+    "concept_id": "aw:concept:4b67bb2ba112a2b05f62",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 246,
+    "source": "后门上铰链安装孔",
+    "target": "Отверстие крепления верхней петли задней двери",
+    "concept_id": "aw:concept:f90e0654caa970c7eb9c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 247,
+    "source": "后门下铰链安装孔",
+    "target": "Отверстие крепления нижней петли задней двери",
+    "concept_id": "aw:concept:ca89fe253b18819cf037",
+    "type": "COMPOUND",
+    "subdomains": [
+      "body.doors",
+      "body.body_repair"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 248,
+    "source": "冷却液",
+    "target": "Охлаждающая жидкость",
+    "concept_id": "aw:concept:46b675eb8659e42e45bc",
+    "type": "TERM",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 249,
+    "source": "散热器",
+    "target": "Радиатор",
+    "concept_id": "aw:concept:b3a1a1abb7911fb2ca9d",
+    "type": "TERM",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 250,
+    "source": "散热器盖",
+    "target": "Крышка радиатора",
+    "concept_id": "aw:concept:896f67a67954761317bc",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 251,
+    "source": "冷却风扇",
+    "target": "Вентилятор системы охлаждения",
+    "concept_id": "aw:concept:f3a56ac424095559f24f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 252,
+    "source": "储液罐",
+    "target": "Расширительный бачок",
+    "concept_id": "aw:concept:a8ffa8121081ebdfd415",
+    "type": "TERM",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 253,
+    "source": "冷却液储液罐",
+    "target": "Расширительный бачок охлаждающей жидкости",
+    "concept_id": "aw:concept:93d077cdcb6628800755",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 254,
+    "source": "排放塞",
+    "target": "Сливная пробка",
+    "concept_id": "aw:concept:f1f142d02040209a95e3",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 255,
+    "source": "散热器排放塞",
+    "target": "Сливная пробка радиатора",
+    "concept_id": "aw:concept:b370f6c56d341b34caa8",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 256,
+    "source": "散热器排水塞",
+    "target": "Сливная пробка радиатора",
+    "concept_id": "aw:concept:8b6a608e2fdc9e9c0a77",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 257,
+    "source": "冷却液软管",
+    "target": "Шланг охлаждающей жидкости",
+    "concept_id": "aw:concept:d88a87f063147c916378",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 258,
+    "source": "节温器",
+    "target": "Термостат",
+    "concept_id": "aw:concept:c9756180bdfa35104b69",
+    "type": "TERM",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 259,
+    "source": "冷却液温度",
+    "target": "Температура охлаждающей жидкости",
+    "concept_id": "aw:concept:e8697b5c8d115ef807d0",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 260,
+    "source": "冷却液液位",
+    "target": "Уровень охлаждающей жидкости",
+    "concept_id": "aw:concept:326ae31a9294e86416e2",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 261,
+    "source": "冷却液泄漏",
+    "target": "Утечка охлаждающей жидкости",
+    "concept_id": "aw:concept:a9f2acdbf9da6561141a",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 262,
+    "source": "冷却系统",
+    "target": "Система охлаждения",
+    "concept_id": "aw:concept:69cc711da277aa579bb5",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 263,
+    "source": "集成热管理模块",
+    "target": "Интегрированный модуль управления тепловым режимом",
+    "concept_id": "aw:concept:fb4aa870e41efc7eacbe",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 264,
+    "source": "冷却液补充模式",
+    "target": "Режим долива охлаждающей жидкости",
+    "concept_id": "aw:concept:8d13e08896144a1b650f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 265,
+    "source": "缓慢添加冷却液",
+    "target": "Медленно добавьте охлаждающую жидкость",
+    "concept_id": "aw:concept:03cd961b458d2d381781",
+    "type": "PHRASE",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 266,
+    "source": "检查冷却液液位",
+    "target": "Проверьте уровень охлаждающей жидкости",
+    "concept_id": "aw:concept:b942abd5d97da2d23e90",
+    "type": "PHRASE",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 267,
+    "source": "检查冷却液泄漏",
+    "target": "Проверьте наличие утечки охлаждающей жидкости",
+    "concept_id": "aw:concept:a131df4dcca2dd076ed6",
+    "type": "PHRASE",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 268,
+    "source": "机油",
+    "target": "Моторное масло",
+    "concept_id": "aw:concept:711ba3397fdf195bb45f",
+    "type": "TERM",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 269,
+    "source": "机油滤清器",
+    "target": "Масляный фильтр",
+    "concept_id": "aw:concept:a46d54d22673469ce1bb",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 270,
+    "source": "空气滤清器",
+    "target": "Воздушный фильтр",
+    "concept_id": "aw:concept:70a3178f00c887387f7e",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 271,
+    "source": "进气歧管",
+    "target": "Впускной коллектор",
+    "concept_id": "aw:concept:7f642f98079ad9bf4e93",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 272,
+    "source": "排气歧管",
+    "target": "Выпускной коллектор",
+    "concept_id": "aw:concept:c51291715d4b7159d5d1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 273,
+    "source": "火花塞",
+    "target": "Свеча зажигания",
+    "concept_id": "aw:concept:794313436815bf6ab2a9",
+    "type": "TERM",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 274,
+    "source": "点火线圈",
+    "target": "Катушка зажигания",
+    "concept_id": "aw:concept:bac71170fcca6f30b4b6",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 275,
+    "source": "发动机转速",
+    "target": "Частота вращения двигателя",
+    "concept_id": "aw:concept:ceb80055ce5ced4a127c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 276,
+    "source": "机油压力",
+    "target": "Давление моторного масла",
+    "concept_id": "aw:concept:13beaf355a011164991c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 277,
+    "source": "减振器",
+    "target": "Амортизатор",
+    "concept_id": "aw:concept:f8d44739cd031c063792",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 278,
+    "source": "悬架弹簧",
+    "target": "Пружина подвески",
+    "concept_id": "aw:concept:7dce0e38d375b7eae66c",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 279,
+    "source": "稳定杆",
+    "target": "Стабилизатор поперечной устойчивости",
+    "concept_id": "aw:concept:f529896c1bc37646502c",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 280,
+    "source": "稳定杆连杆",
+    "target": "Стойка стабилизатора поперечной устойчивости",
+    "concept_id": "aw:concept:542b86850f9863330ac3",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 281,
+    "source": "球头",
+    "target": "Шаровая опора",
+    "concept_id": "aw:concept:fb42d71621c35a4fdc32",
+    "type": "TERM",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 282,
+    "source": "车轮定位",
+    "target": "Углы установки колёс",
+    "concept_id": "aw:concept:49cbdc464564a8549d30",
+    "type": "COMPOUND",
+    "subdomains": [
+      "suspension"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 283,
+    "source": "熔断器",
+    "target": "Плавкий предохранитель",
+    "concept_id": "aw:concept:93c30bcb2dffc1d85bd2",
+    "type": "TERM",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 284,
+    "source": "线束",
+    "target": "Жгут проводов",
+    "concept_id": "aw:concept:1d6abc17d5583840a9b6",
+    "type": "TERM",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 285,
+    "source": "连接器",
+    "target": "Разъём",
+    "concept_id": "aw:concept:7587a6fe20a998edffb7",
+    "type": "TERM",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 286,
+    "source": "电压",
+    "target": "Напряжение",
+    "concept_id": "aw:concept:ccf780588d367f4cfd49",
+    "type": "TERM",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 287,
+    "source": "接地",
+    "target": "Соединение с массой",
+    "concept_id": "aw:concept:8298d46ab11c38652f29",
+    "type": "TERM",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 288,
+    "source": "蓄电池",
+    "target": "Аккумуляторная батарея",
+    "concept_id": "aw:concept:bb84279cd3ef22bdf2da",
+    "type": "TERM",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 289,
+    "source": "连接器端子",
+    "target": "Контакт разъёма",
+    "concept_id": "aw:concept:3b0da50492334fd194b6",
+    "type": "COMPOUND",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 290,
+    "source": "电源电路",
+    "target": "Цепь питания",
+    "concept_id": "aw:concept:458c57a7540bc3c64987",
+    "type": "COMPOUND",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 291,
+    "source": "接地电路",
+    "target": "Цепь соединения с массой",
+    "concept_id": "aw:concept:bc78b5ecb57f23343d3b",
+    "type": "COMPOUND",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 292,
+    "source": "线束连接器",
+    "target": "Разъём жгута проводов",
+    "concept_id": "aw:concept:b0400510e86915b18869",
+    "type": "COMPOUND",
+    "subdomains": [
+      "electrical"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 293,
+    "source": "故障码",
+    "target": "Код неисправности",
+    "concept_id": "aw:concept:5d9c508bafc34b3dfb45",
+    "type": "TERM",
+    "subdomains": [
+      "diagnostics"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 294,
+    "source": "诊断仪",
+    "target": "Диагностический прибор",
+    "concept_id": "aw:concept:c197c2f6ca7189767c83",
+    "type": "COMPOUND",
+    "subdomains": [
+      "diagnostics"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 295,
+    "source": "故障诊断",
+    "target": "Диагностика неисправностей",
+    "concept_id": "aw:concept:efa24b63208250dfb37a",
+    "type": "COMPOUND",
+    "subdomains": [
+      "diagnostics"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 296,
+    "source": "读取故障码",
+    "target": "Считайте коды неисправностей",
+    "concept_id": "aw:concept:1a248338d04bad928693",
+    "type": "PHRASE",
+    "subdomains": [
+      "diagnostics"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 297,
+    "source": "清除故障码",
+    "target": "Удалите коды неисправностей",
+    "concept_id": "aw:concept:1ae4953537285dfcc52d",
+    "type": "PHRASE",
+    "subdomains": [
+      "diagnostics"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  },
+  {
+    "id": 298,
+    "source": "拧紧力矩",
+    "target": "Момент затяжки",
+    "concept_id": "aw:concept:2033b84a6a406290999a",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 299,
+    "source": "紧固件",
+    "target": "Крепёжный элемент",
+    "concept_id": "aw:concept:b271b82f86dbc18b15f1",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 300,
+    "source": "密封圈",
+    "target": "Уплотнительное кольцо",
+    "concept_id": "aw:concept:bff58ae04f62f97e9a7f",
+    "type": "COMPOUND",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 301,
+    "source": "裂纹",
+    "target": "Трещина",
+    "concept_id": "aw:concept:c385aca944324a42355d",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 302,
+    "source": "变形",
+    "target": "Деформация",
+    "concept_id": "aw:concept:64f3d2a3eb7b73590aa2",
+    "type": "TERM",
+    "subdomains": [
+      "common"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 303,
+    "source": "排放螺塞",
+    "target": "Сливная пробка",
+    "concept_id": "aw:concept:0fe2532bd05944063022",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 304,
+    "source": "冷却风扇总成",
+    "target": "Узел вентилятора охлаждения",
+    "concept_id": "aw:concept:c9a7628f25a964852045",
+    "type": "COMPOUND",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 305,
+    "source": "防锈剂",
+    "target": "Антикоррозионная присадка",
+    "concept_id": "aw:concept:964314b6552d68c7105f",
+    "type": "TERM",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 306,
+    "source": "空转",
+    "target": "Холостой ход",
+    "concept_id": "aw:concept:882a554c619200b0b66e",
+    "type": "TERM",
+    "subdomains": [
+      "engine"
+    ],
+    "segment_types": [
+      "DIAGRAM_LABEL",
+      "COMPONENT_LABEL",
+      "TABLE_CELL",
+      "FILENAME",
+      "FOLDER_NAME"
+    ],
+    "added": false
+  },
+  {
+    "id": 307,
+    "source": "排气",
+    "target": "Удаление воздуха",
+    "concept_id": "aw:concept:2b272fff7515930598c7",
+    "type": "PHRASE",
+    "subdomains": [
+      "cooling"
+    ],
+    "segment_types": [
+      "PROSE",
+      "PROCEDURE_STEP",
+      "WARNING",
+      "CONDITION",
+      "DEFINITION"
+    ],
+    "added": false
+  }
+]

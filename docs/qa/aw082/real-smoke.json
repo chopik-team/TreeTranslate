@@ -1,0 +1,181 @@
+{
+  "restart": [
+    {
+      "locale": "ru-RU",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "ru-RU",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "en-GB",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "en-GB",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "de-DE",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "de-DE",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "es-ES",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "es-ES",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "fr-FR",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "fr-FR",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "phase": "read",
+      "passed": true
+    },
+    {
+      "locale": "ja-JP",
+      "phase": "write",
+      "passed": true
+    },
+    {
+      "locale": "ja-JP",
+      "phase": "read",
+      "passed": true
+    }
+  ],
+  "devices": [
+    {
+      "requested": "cpu",
+      "actual": "cpu",
+      "backend": "argos",
+      "compute_type": "int8",
+      "fallback_used": false,
+      "domain": "general",
+      "output": "Не запускайте насос до открытия клапана."
+    },
+    {
+      "requested": "gpu",
+      "actual": "cuda",
+      "backend": "argos",
+      "compute_type": "int8_float16",
+      "fallback_used": false,
+      "domain": "general",
+      "output": "Не запускайте насос до открытия клапана."
+    },
+    {
+      "requested": "auto",
+      "actual": "cuda",
+      "backend": "argos",
+      "compute_type": "int8_float16",
+      "fallback_used": false,
+      "domain": "general",
+      "output": "Не запускайте насос до открытия клапана."
+    }
+  ],
+  "documents": [
+    {
+      "kind": "docx",
+      "completed": true,
+      "source_unchanged": true,
+      "domain": [
+        {
+          "domain": "general",
+          "score": 0.0,
+          "matches": 0,
+          "margin": 0.0
+        }
+      ],
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw082\\smoke-output\\quality_ru.docx"
+      ]
+    },
+    {
+      "kind": "native_pdf",
+      "completed": true,
+      "source_unchanged": true,
+      "domain": [
+        {
+          "domain": "general",
+          "score": 0.0,
+          "matches": 0,
+          "margin": 0.0
+        }
+      ],
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw082\\smoke-output\\native_ru.pdf"
+      ]
+    },
+    {
+      "kind": "ocr_pdf",
+      "completed": true,
+      "source_unchanged": true,
+      "domain": [
+        {
+          "domain": "general",
+          "score": 0.0,
+          "matches": 0,
+          "margin": 0.0
+        }
+      ],
+      "outputs": [
+        "C:\\TreeTranslate\\build\\aw082\\smoke-output\\scan_ru.pdf"
+      ]
+    }
+  ],
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5700X",
+    "logical_cores": 16,
+    "ram_gb": 32,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "vram_gb": 12,
+    "cuda_available": true
+  },
+  "pause_resume": "passed",
+  "cancel": "passed",
+  "ocr": [
+    {
+      "backend": "paddle",
+      "device": "gpu",
+      "network_attempts": 0
+    }
+  ],
+  "network_attempts": 0
+}

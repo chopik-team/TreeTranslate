@@ -1,0 +1,140 @@
+{
+  "revision": "AW0.81",
+  "references_evaluation_only": true,
+  "review_origin": "CODEX_SEMANTIC_REVIEW",
+  "review_source": "Codex PHASE A acceptance review of existing diagnostics, 2026-10-04; not human-certified.",
+  "manuals": {
+    "diagnostic": {
+      "verification": "Existing diagnostic Chinese clauses and published concepts/forms. Atomic dictionary meanings and generic closed question/list grammar; no OEM reinterpretation or full reference sentence copying."
+    }
+  },
+  "entries": [
+    {
+      "source": "故障代码",
+      "semantic_key": "diagnostic_trouble_code",
+      "target": "код неисправности",
+      "genitive": "кода неисправности",
+      "accusative": "код неисправности",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "same_nominative": "тот же код неисправности"
+    },
+    {
+      "source": "离合器位置",
+      "semantic_key": "clutch_position",
+      "target": "положение сцепления",
+      "genitive": "положения сцепления",
+      "accusative": "положение сцепления",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "subdomains": [
+        "transmission",
+        "brakes"
+      ],
+      "label_only": true
+    },
+    {
+      "source": "松动",
+      "semantic_key": "looseness",
+      "target": "ослабление",
+      "genitive": "ослабления",
+      "accusative": "ослабление",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "连接不良",
+      "semantic_key": "poor_contact",
+      "target": "плохой контакт",
+      "genitive": "плохого контакта",
+      "accusative": "плохой контакт",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "弯曲",
+      "semantic_key": "bending",
+      "target": "изгиб",
+      "genitive": "изгиба",
+      "accusative": "изгиб",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "变质",
+      "semantic_key": "material_deterioration",
+      "target": "ухудшение свойств",
+      "genitive": "ухудшения свойств",
+      "accusative": "ухудшение свойств",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "连接器",
+      "semantic_key": "connector",
+      "target": "Разъём",
+      "genitive": "разъёма",
+      "accusative": "разъём",
+      "subdomain": "diagnostics",
+      "manual": "diagnostic",
+      "subdomains": [
+        "electrical",
+        "diagnostics"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "aw081-inspect-known-condition-list",
+      "source": "彻底检查{X}的{Y}情况。",
+      "target": "Тщательно проверьте {X} на наличие {Y}.",
+      "forms": {
+        "X": "accusative",
+        "Y": "condition_list"
+      },
+      "list_cases": {
+        "Y": "genitive"
+      },
+      "allowed_slots": [
+        "连接器",
+        "松动",
+        "连接不良",
+        "弯曲",
+        "腐蚀",
+        "污染",
+        "变质",
+        "损坏"
+      ],
+      "slot_allowed": {
+        "X": [
+          "连接器"
+        ],
+        "Y": [
+          "松动",
+          "连接不良",
+          "弯曲",
+          "腐蚀",
+          "污染",
+          "变质",
+          "损坏"
+        ]
+      },
+      "subdomains": [
+        "diagnostics"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP"
+      ],
+      "negative_relation": true
+    }
+  ]
+}

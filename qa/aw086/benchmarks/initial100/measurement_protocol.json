@@ -1,0 +1,27 @@
+{
+  "sample_count": 100,
+  "whole_corpus_translation": false,
+  "production_frozen": true,
+  "scripts": {
+    "aw081_speed_calibration_100.py": "674fffdb82c42a2af28c9f59756c375f386ba660161fdb424211b5da4b0fe46c",
+    "aw081_speed_calibration_report.py": "9554bc72f66730a7c06b2f4e5343c8978e6fb8a9d09f9c367fee09d3e5edf41c"
+  },
+  "stats_policy": "Inclusive stages reported separately; top5 uses disjoint interval occupancy. Scenario band is not a statistical confidence interval.",
+  "threshold_hours_default": 24,
+  "threshold_source": "optional user clarification pending; report threshold may be updated without changing production",
+  "analysis_script_revisions": [
+    {
+      "reason": "Use actual production pdf_validation stage in read-only timing analysis",
+      "before": "9554bc72f66730a7c06b2f4e5343c8978e6fb8a9d09f9c367fee09d3e5edf41c",
+      "after": "c4097a413ccbebd74be7a1901f46453d3ef7953e73dcfc075c2edb7e9a6e5fe0",
+      "during_production_measurement": true,
+      "production_changed": false
+    },
+    {
+      "reason": "Report document-level failure category/stage/type as full-run blockers; no semantic grading",
+      "after": "958183f301cffaf14575a9028d4f697b1e468e1d361b2b01d45c71e1b4bf09f1",
+      "during_production_measurement": true,
+      "production_changed": false
+    }
+  ]
+}

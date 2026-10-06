@@ -4,3 +4,9 @@
 # Preserve upstream license/model-card snapshots, including original whitespace.
 vendor/licenses/** -text -whitespace conflict-marker-size=32
 vendor/model-metadata/** -text -whitespace
+# Preserve upstream notices and forensic source/test output byte-for-byte.
+assets/knowledge/*-notices/** -text -whitespace
+tools/knowledge_harvester/license-texts/** -text -whitespace
+docs/qa/aw083-baseline/source-text/** -text -whitespace
+qa/aw086/closure/full_pytest*/junit.xml -text -whitespace
+qa/aw086/closure/full_pytest*/stdout.txt -text -whitespace

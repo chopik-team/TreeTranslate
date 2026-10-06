@@ -1,0 +1,7 @@
+{
+  "name": "AW0.86-technical-evidence.zip",
+  "size": 655459,
+  "sha256": "968fbc0d4d0b07d6ba77a1856f5ca240cdc7e85784b98f558265789797b7d1c0",
+  "members": 87,
+  "policy": "Compact technical evidence only; no source corpus, translated archives, model binaries or environments"
+}

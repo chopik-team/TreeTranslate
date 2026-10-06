@@ -1,0 +1,740 @@
+{
+  "packs": [
+    {
+      "domains": [
+        "automotive"
+      ],
+      "entries": 49,
+      "file": "automotive-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "automotive-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "automotive-ru-zh-cc-by-4-0",
+      "pack_sha256": "0575c054e474971d618f1bd01f574a51b417b6bc4198806cc2fd90b6b86ac3e9",
+      "preview": true,
+      "sha256": "3fbc84a9ec55eb026acce3f1b315da059f477b510a189045189466f86ddf9cf7",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "automotive"
+      ],
+      "entries": 91,
+      "file": "automotive-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "automotive-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "automotive-ru-zh-cc0-1-0",
+      "pack_sha256": "11c3b507d1fc4a37f1e8feb51ddccf75dbfd1c18f968343d606be43fa768dd6b",
+      "preview": true,
+      "sha256": "686af3d75c78ac6234adec56aef57e55c45d5424046241a73ce921e123bf93c8",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "automotive"
+      ],
+      "entries": 49,
+      "file": "automotive-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "automotive-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "automotive-zh-ru-cc-by-4-0",
+      "pack_sha256": "64e4226698726cd649125a301cac15b3db954a09bf68d774ada915a7307ee3b1",
+      "preview": true,
+      "sha256": "8c55a8a44363b967fd1ad7dc9e829a84dbc87aeb4eb6f2e6d08de654d68cc84f",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "automotive"
+      ],
+      "entries": 91,
+      "file": "automotive-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "automotive-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "automotive-zh-ru-cc0-1-0",
+      "pack_sha256": "6bbc07764d3db9607fd31b89da4e8eb71e0809684e3e555ee7c76af610824e4c",
+      "preview": true,
+      "sha256": "9b382147da5f7d54f11a24dff619537d027336a76c0305b27626c29578052114",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "chemistry-engineering"
+      ],
+      "entries": 4,
+      "file": "chemistry-engineering-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "chemistry-engineering-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "chemistry-engineering-ru-zh-cc-by-4-0",
+      "pack_sha256": "c3a21e0fda0e33c8edbbdc82f14ec5ec221ff41612c8dbf064b0c6232eabf3bd",
+      "preview": true,
+      "sha256": "f4c02fe92ffa4163a85a07077925d03004364e32ca0e64939c7ec8aa715a804b",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "chemistry-engineering"
+      ],
+      "entries": 141,
+      "file": "chemistry-engineering-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "chemistry-engineering-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "chemistry-engineering-ru-zh-cc0-1-0",
+      "pack_sha256": "a01c324333e317147e60061719513c0d719db8659ff50ed7555cf34764ed6dc3",
+      "preview": true,
+      "sha256": "7798cd0c5275478d68e4e28ef5fb69ca5e48589b1ea6195ba62b76f42d734241",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "chemistry-engineering"
+      ],
+      "entries": 4,
+      "file": "chemistry-engineering-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "chemistry-engineering-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "chemistry-engineering-zh-ru-cc-by-4-0",
+      "pack_sha256": "cea72a7d4893e90cbd8b969b93364c4715118b5829ca7520d86a76a507ffab41",
+      "preview": true,
+      "sha256": "dc572aeec782b80d16b232889cc1485ceda8e2e52feb4181877400ba298c30e3",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "chemistry-engineering"
+      ],
+      "entries": 141,
+      "file": "chemistry-engineering-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "chemistry-engineering-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "chemistry-engineering-zh-ru-cc0-1-0",
+      "pack_sha256": "9d2ea3526e797fa9dde595c99e9f65d5e7245e9d9be8cb5a7a52e41003ebd0d4",
+      "preview": true,
+      "sha256": "a32fb097551cb8b48ab37ee8a571a3c98f49cc8d5d36ee86ed5de8f620f632f5",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "computer-hardware"
+      ],
+      "entries": 3,
+      "file": "computer-hardware-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "computer-hardware-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "computer-hardware-ru-zh-cc-by-4-0",
+      "pack_sha256": "1ce5afb1f0a1e2ab2622e422a8d8d383fc38423127f227e1413c2b9730018714",
+      "preview": true,
+      "sha256": "5dc7fa33e7c3fc035585597389eb65acca46e3177eaf5131122b6d27391917a4",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "computer-hardware"
+      ],
+      "entries": 179,
+      "file": "computer-hardware-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "computer-hardware-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "computer-hardware-ru-zh-cc0-1-0",
+      "pack_sha256": "0f68d8103b2b6bbca501200f6dafc4767db96d571fe9d96b33fc94a6e8ce2e25",
+      "preview": true,
+      "sha256": "bf0f754ca603f2aac6d21b120a82418eded58277856c9c7e19b10945f3975c1c",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "computer-hardware"
+      ],
+      "entries": 3,
+      "file": "computer-hardware-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "computer-hardware-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "computer-hardware-zh-ru-cc-by-4-0",
+      "pack_sha256": "478ecdc4890ea342f8a5fe562762fae2d593f1af3dbedba69edb38326bb51b8f",
+      "preview": true,
+      "sha256": "3c5482c3e5981b9bfe6365106cc29ffc5fa158790b5b3f8f050253227a3a92dd",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "computer-hardware"
+      ],
+      "entries": 179,
+      "file": "computer-hardware-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "computer-hardware-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "computer-hardware-zh-ru-cc0-1-0",
+      "pack_sha256": "cea962bf5803ca9c350ed47337192158e950486ac6fa172edce09e60edd6317a",
+      "preview": true,
+      "sha256": "991cc9206e545234ddb8253e7fa7987aad514e0a2446ed4a929f301d463a454d",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "electrical"
+      ],
+      "entries": 5,
+      "file": "electrical-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "electrical-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "electrical-ru-zh-cc-by-4-0",
+      "pack_sha256": "ddbcfe6d533394cff5674999749b8f61df23bce8ce159fa7616af8f3e072d12c",
+      "preview": true,
+      "sha256": "e33f8ff7712b44b04b8c3740f10ae8e32165eff262d4bb00f12e2f6d599c2578",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "electrical"
+      ],
+      "entries": 31,
+      "file": "electrical-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "electrical-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "electrical-ru-zh-cc0-1-0",
+      "pack_sha256": "a67ca2765d0de672abf2cb60433b921e6e4014668ce3486fc44b6a94e8774816",
+      "preview": true,
+      "sha256": "f979d264ad2355f095811873f10f9189ee65375734908f8d4dbb7331470416d6",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "electrical"
+      ],
+      "entries": 5,
+      "file": "electrical-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "electrical-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "electrical-zh-ru-cc-by-4-0",
+      "pack_sha256": "72c7014e1abbfeff3506eef084e8481b80048b645be69a61f29f41a0e4df4ae9",
+      "preview": true,
+      "sha256": "c24df1b023be498974a4a0829850a5824082ebf30d4d0f4f25ebb034993b132c",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "electrical"
+      ],
+      "entries": 33,
+      "file": "electrical-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "electrical-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "electrical-zh-ru-cc0-1-0",
+      "pack_sha256": "b635fe2118444c25f278d9b266320ef0e6c61396f2dae294a2ac4c0f06fd280a",
+      "preview": true,
+      "sha256": "390bc36777f64183c4eb1ebc9fcf9b4e072d3eebf45b59c5bbf06ff585b9c01a",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "electronics"
+      ],
+      "entries": 7,
+      "file": "electronics-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "electronics-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "electronics-ru-zh-cc-by-4-0",
+      "pack_sha256": "0ab4b4cd515db2e7a2998d1efb06795e04dc029edc0d22e3613b0ba2dda5ac86",
+      "preview": true,
+      "sha256": "b0a0603fd36598202f9016240168d8b492d5fe1ee7d192109c771abe3dcacbdf",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "electronics"
+      ],
+      "entries": 306,
+      "file": "electronics-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "electronics-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "electronics-ru-zh-cc0-1-0",
+      "pack_sha256": "f00a6e9b1dc02180020c023617fd2e4cd98dbc53cafe283483c413be1a121e0e",
+      "preview": true,
+      "sha256": "f5b95b4fd9a9593e2a35414152f99d24ee8cb77839b1bd45b956a5d1fe82972a",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "electronics"
+      ],
+      "entries": 7,
+      "file": "electronics-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "electronics-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "electronics-zh-ru-cc-by-4-0",
+      "pack_sha256": "46b99562e6fdd536add25df66fd8332a7f6a4e724dc2ba3b2cd1af735cbdd760",
+      "preview": true,
+      "sha256": "87d5872678dc63ce724930624235eee14c8c8c772feca5c4a3e414c01333e8df",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "electronics"
+      ],
+      "entries": 308,
+      "file": "electronics-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "electronics-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "electronics-zh-ru-cc0-1-0",
+      "pack_sha256": "b6dc88e13d30c915c93474c29b1976b0c475d0e17176320c983d342effa8cba3",
+      "preview": true,
+      "sha256": "62902303d538ca5407008ff921d564005372ffae7fd984c5aff88e4833a56986",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "industrial-safety"
+      ],
+      "entries": 11,
+      "file": "industrial-safety-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "industrial-safety-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "industrial-safety-ru-zh-cc-by-4-0",
+      "pack_sha256": "e75108924f9d52c29614ff385993357eeff3854e042952cecc2acc29e998dd9c",
+      "preview": true,
+      "sha256": "4bb23770bb153ed8d4ed1cf165b683a172db8df3f24da57821ae165cbbbae694",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "industrial-safety"
+      ],
+      "entries": 1,
+      "file": "industrial-safety-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "industrial-safety-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "industrial-safety-ru-zh-cc0-1-0",
+      "pack_sha256": "841591297ba39bd4a43dacfc52bd71f9630cfa6586f8d7d7641f2920430c0686",
+      "preview": true,
+      "sha256": "3875abdc9419cfa761dac1b9b4ed50a4a524dec1865042619d43f76eaa97a223",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "industrial-safety"
+      ],
+      "entries": 11,
+      "file": "industrial-safety-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "industrial-safety-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "industrial-safety-zh-ru-cc-by-4-0",
+      "pack_sha256": "2729b069b4013edb1383e326afbfedbda136157e3479bd0adc8be5c4aa011d82",
+      "preview": true,
+      "sha256": "a7fd82cf55ebc8e3dc432c058658fb08d844a50b3685213d741d11f04f838d23",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "industrial-safety"
+      ],
+      "entries": 1,
+      "file": "industrial-safety-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "industrial-safety-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "industrial-safety-zh-ru-cc0-1-0",
+      "pack_sha256": "266727133d1504bdd17d79c33708ce1007e532365effa90d3961d1cd4b26d8fe",
+      "preview": true,
+      "sha256": "2e9d27350ef96121a04cf69f66d3321f976ef8ebbb247c93ce51bf7efea6f332",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "manufacturing"
+      ],
+      "entries": 142,
+      "file": "manufacturing-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "manufacturing-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "manufacturing-ru-zh-cc0-1-0",
+      "pack_sha256": "488b28a0b3bde23ccdf68b9a1ff50ba159b30b1d979ce93b5c74917dc734f94f",
+      "preview": true,
+      "sha256": "c470d6652978e8b96dfc12f57c1395b97d14eba626af28a26362c1018a33fa24",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "manufacturing"
+      ],
+      "entries": 146,
+      "file": "manufacturing-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "manufacturing-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "manufacturing-zh-ru-cc0-1-0",
+      "pack_sha256": "9e5dfbfff8e8982f7bf5231e5a2bf2852b1bd58489836587dd3d4d98b1296da8",
+      "preview": true,
+      "sha256": "c549aa8443741b520328dc22ea1f8d941d79f6a2036d36bda69d34ea0297e06a",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "materials-science"
+      ],
+      "entries": 5,
+      "file": "materials-science-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "materials-science-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "materials-science-ru-zh-cc-by-4-0",
+      "pack_sha256": "d84d27372b83a8c73ac8b27fa3dd9b00567946d8d755089ada7551b44106f0a8",
+      "preview": true,
+      "sha256": "15940d114497064583051a617cf2a7fb6c536886fd2f4bea94846cf96cde31f9",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "materials-science"
+      ],
+      "entries": 568,
+      "file": "materials-science-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "materials-science-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "materials-science-ru-zh-cc0-1-0",
+      "pack_sha256": "a7e171ecd2d91f17ab53f442c62381235410df11787a826dc2e15e00bc080006",
+      "preview": true,
+      "sha256": "9504fa642696b184234b74bbb37ec84490d3e98f63de5ea481344e109d57d0e1",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "materials-science"
+      ],
+      "entries": 6,
+      "file": "materials-science-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "materials-science-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "materials-science-zh-ru-cc-by-4-0",
+      "pack_sha256": "0d090c4f69787b3e5f26bbd023868dd01c68d3cc0ecc5b5585ee5a29076f0bd7",
+      "preview": true,
+      "sha256": "12b10a374649c634c7ab5bdf9bbe7a77213f6ed3502a9bd8a7fdd2f3952bbe57",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "materials-science"
+      ],
+      "entries": 583,
+      "file": "materials-science-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "materials-science-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "materials-science-zh-ru-cc0-1-0",
+      "pack_sha256": "fae08a6d6a09b65c836b20bdec0b417c89532254f905e0a7342e35740e92c84a",
+      "preview": true,
+      "sha256": "3a1fbf3f37a3301027923fbc913d229a8e217eb89872fc23973e6d6b2cff1166",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "measurement"
+      ],
+      "entries": 133,
+      "file": "measurement-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "measurement-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "measurement-ru-zh-cc-by-4-0",
+      "pack_sha256": "072d11484b5c8013d7a24ab8032868aa5642d2c949fde80a0ef39832b82380b4",
+      "preview": true,
+      "sha256": "b61c318142c69a80d7160ae363cb3a124870daad87b7bf4e5d19f2575a88a26d",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "measurement"
+      ],
+      "entries": 248,
+      "file": "measurement-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "measurement-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "measurement-ru-zh-cc0-1-0",
+      "pack_sha256": "fcfd8b2c6c6cddb2a6b404e64d69778da17e1d495ca260ec7a11d2876292e461",
+      "preview": true,
+      "sha256": "fb796fc5cf3ea379636d7d1abd5823abf3a0028fafb879a4823ec633ac67e051",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "measurement"
+      ],
+      "entries": 136,
+      "file": "measurement-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "measurement-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "measurement-zh-ru-cc-by-4-0",
+      "pack_sha256": "52d720b68af6a39b228b47a35d787fff300c1350776af2cdce2630951c816ebc",
+      "preview": true,
+      "sha256": "8f7d7dc594b366442891f155d7773b46b0c3b8c52dc37a5cce60d46eaa44e647",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "measurement"
+      ],
+      "entries": 253,
+      "file": "measurement-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "measurement-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "measurement-zh-ru-cc0-1-0",
+      "pack_sha256": "541f01917057caa8a4d5f34cc5ade4c66b3a8b01cb9840b53d31e86fe52acf5d",
+      "preview": true,
+      "sha256": "6dc0b8954741c9465021e1d3fc6f856cbecbe27cd2cdba89f6a44598b22301e0",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "mechanical-engineering"
+      ],
+      "entries": 330,
+      "file": "mechanical-engineering-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "mechanical-engineering-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "mechanical-engineering-ru-zh-cc0-1-0",
+      "pack_sha256": "938f171dfe41c0449487f43b089ea03cefe1f99cd29dbce471a3fe6b4e48904d",
+      "preview": true,
+      "sha256": "d4c3c47162beb98bae9ad81c6d92e2803b950e8bc9c5be9533e1a068f4e5c8b1",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "mechanical-engineering"
+      ],
+      "entries": 338,
+      "file": "mechanical-engineering-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "mechanical-engineering-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "mechanical-engineering-zh-ru-cc0-1-0",
+      "pack_sha256": "f69afd24203a3bf0b7cc19b319b2a58f00f516553ab4f2f9ecd090a7a79245b6",
+      "preview": true,
+      "sha256": "400eb694db8cd701b8387b8b4b372aed3860f10b820fce63d70e201b51dc052d",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "metallurgy"
+      ],
+      "entries": 7,
+      "file": "metallurgy-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "metallurgy-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "metallurgy-ru-zh-cc-by-4-0",
+      "pack_sha256": "57ba137ae87e6873d2e5e73bc5a61af77744983a64787242bb47e223f3448a5d",
+      "preview": true,
+      "sha256": "12b3c1534ee58b3d992524cb7203a971c26bd0f795201e2b3a9b23f87218a113",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "metallurgy"
+      ],
+      "entries": 137,
+      "file": "metallurgy-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "metallurgy-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "metallurgy-ru-zh-cc0-1-0",
+      "pack_sha256": "f39baced29c8d8e743e0c6608289851bc8a82c3887fabe85b8d8a51ceba2746d",
+      "preview": true,
+      "sha256": "4741b238de7cf6c2a963ffd473c45e4d764e031f318f7a51445fcde2ea9d6bb2",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "metallurgy"
+      ],
+      "entries": 8,
+      "file": "metallurgy-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "metallurgy-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "metallurgy-zh-ru-cc-by-4-0",
+      "pack_sha256": "a550e49d8c59669c545b85286725b9c691511feb9e519bfb11591da38f22c281",
+      "preview": true,
+      "sha256": "bd5f970000305a825aa979a87059d8b209660101de6ab37a9338bf804ad28856",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "metallurgy"
+      ],
+      "entries": 142,
+      "file": "metallurgy-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "metallurgy-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "metallurgy-zh-ru-cc0-1-0",
+      "pack_sha256": "fd9190f9c95d162a741882b3e0b89eb985b30db30a675de95c0f975a6249ca2c",
+      "preview": true,
+      "sha256": "cb53e55b0f31fed193b69f2ace1f2d8d720375e15c4c2643f09e3d9fd119dca6",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "software"
+      ],
+      "entries": 1,
+      "file": "software-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "software-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "software-ru-zh-cc-by-4-0",
+      "pack_sha256": "e004f063731943bf7b3343a2986491765e72e9cbd0f180449fd604c986933630",
+      "preview": true,
+      "sha256": "b0dfda6d9a92198c9d3ab498ef2a161fd6eefe6c36e0b613480d00d676e7f949",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "software"
+      ],
+      "entries": 340,
+      "file": "software-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "software-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "software-ru-zh-cc0-1-0",
+      "pack_sha256": "6ab82458ffd1b6264ab565dfe3c242144b13fa4b5d95739ae7682d176514ebf5",
+      "preview": true,
+      "sha256": "5d09555844968571e7b3b0a3bf4cb1ac5981765277f9092cca68401e5cd696d2",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "software"
+      ],
+      "entries": 1,
+      "file": "software-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "software-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "software-zh-ru-cc-by-4-0",
+      "pack_sha256": "d9f82c6f51e0b9707075df1830ece732d0bc6e72e8de560a3575b6b0bd1106cc",
+      "preview": true,
+      "sha256": "eb097b80f7dfd220b89a59e7ea4c1dc2e46f73999c0f46cf031b26b6085eb20a",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "software"
+      ],
+      "entries": 342,
+      "file": "software-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "software-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "software-zh-ru-cc0-1-0",
+      "pack_sha256": "23f8c455306c5b55b76963d50538a5e83f4886aa447d6a2f1ad66416f48309a6",
+      "preview": true,
+      "sha256": "6bc0ce2e6aa5bca77bb2e489c295fc2922b667636faabf2a5b89dff0c4b7e3a7",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "technical-core"
+      ],
+      "entries": 652,
+      "file": "technical-core-ru-zh-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "technical-core-ru-zh-cc-by-4-0-notices/NOTICE",
+      "pack_id": "technical-core-ru-zh-cc-by-4-0",
+      "pack_sha256": "728b239c3ad1765768f2046b69bb554bd32376569a76186980611e3df7bb10b8",
+      "preview": true,
+      "sha256": "f8d10ee9b96e719046ed7eab5fc40820cebde300211c9bb881780cfb7b5ad364",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "technical-core"
+      ],
+      "entries": 939,
+      "file": "technical-core-ru-zh-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "technical-core-ru-zh-cc0-1-0-notices/NOTICE",
+      "pack_id": "technical-core-ru-zh-cc0-1-0",
+      "pack_sha256": "26b28e54c7eff91481466886b994362a2edb25329079048371294f0e700a3153",
+      "preview": true,
+      "sha256": "9d4dae846030c422fc6816ffc5ba396d44177490d3273a78e6c64beab78f5427",
+      "source_language": "ru",
+      "target_language": "zh"
+    },
+    {
+      "domains": [
+        "technical-core"
+      ],
+      "entries": 658,
+      "file": "technical-core-zh-ru-cc-by-4-0.db",
+      "license": "CC-BY-4.0",
+      "notice": "technical-core-zh-ru-cc-by-4-0-notices/NOTICE",
+      "pack_id": "technical-core-zh-ru-cc-by-4-0",
+      "pack_sha256": "3ca28f9b5bd8c90500e21f50c1f45a0bcae7d384db9eb18b4554fef339e7887d",
+      "preview": true,
+      "sha256": "8d46f8549977b0f11f6d5c806e4173d7751182c5d97b23ef0c0405077095f802",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "domains": [
+        "technical-core"
+      ],
+      "entries": 957,
+      "file": "technical-core-zh-ru-cc0-1-0.db",
+      "license": "CC0-1.0",
+      "notice": "technical-core-zh-ru-cc0-1-0-notices/NOTICE",
+      "pack_id": "technical-core-zh-ru-cc0-1-0",
+      "pack_sha256": "7828c301505994d6784d4aee1dd30a9fb6bbc336f9b2e314c639ae4cffc41488",
+      "preview": true,
+      "sha256": "d71a8e05c43e393324d38aa399b22d981ffd2e75b475d515a70a5015c719feca",
+      "source_language": "zh",
+      "target_language": "ru"
+    },
+    {
+      "file": "aw083-body-repair-zh-ru.db",
+      "sha256": "ba2d0ce20682eb4711d1e14262d60ac1ec0858ecf9b845d8cd3a8a8e4dcf8146",
+      "pack_id": "aw083-body-repair",
+      "domains": [
+        "automotive"
+      ],
+      "entries": 1507,
+      "source_language": "zh",
+      "target_language": "ru",
+      "license": "Authored terminology; no OEM document redistribution",
+      "notice": "Authored terminology and reviewed reusable instructions. No OEM IDs, pages or proprietary paragraphs. Codex review is not independent human certification.",
+      "version": "0.81",
+      "contextual_metadata_version": 1
+    }
+  ],
+  "version": 1
+}

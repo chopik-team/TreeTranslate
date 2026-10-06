@@ -39,7 +39,7 @@ class HardwareProfileService:
     def detect(self) -> HardwareProfile:
         return HardwareProfile(
             cpu=self._cpu_name(),
-            logical_cores=os.cpu_count() or 1,
+            logical_cores=os.cpu_count() or 0,
             ram_gb=self._ram_gb(),
             gpu=self._gpu_name(),
             vram_gb=self._vram_gb(),

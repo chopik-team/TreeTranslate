@@ -1,0 +1,6 @@
+# Independently authored complete quantity nouns; no sentence targets.
+容量|ёмкость|ёмкости|ёмкость|f|common
+容积|объём|объёма|объём|m|common
+电压|напряжение|напряжения|напряжение|n|electrical
+压力|давление|давления|давление|n|common
+温度|температура|температуры|температуру|f|common

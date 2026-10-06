@@ -1,0 +1,600 @@
+{
+  "schema": 1,
+  "sample_count": 20,
+  "source_calibration_run": "25825c3f75a7",
+  "selection_method": "fixed 5/5/5/5 deterministic metric buckets; midpoint latency quantiles plus image-only/glossary/model/table anchors; restore original calibration order",
+  "sample_archive": "C:\\TreeTranslate\\qa\\aw081\\hardware_scaling_20\\CN7C_HARDWARE_FIXED20.zip",
+  "sample_archive_sha256": "76e46da3d4871abc46bb890210f3986fb276710f7b6b8a451f9578eff2246ccf",
+  "bucket_counts": {
+    "OCR_MIXED": 5,
+    "EASY_NATIVE": 5,
+    "MEDIUM": 5,
+    "HEAVY_OTHER": 5
+  },
+  "documents": [
+    {
+      "index": 0,
+      "calibration_index": 1,
+      "calibration_document_id": "2514079d21b117fe1b6bb655",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "source_sha256": "67392356300712d79f1759d1ac9ad2f652b36685af101ba047324eaa57055342",
+      "source_size": 94282,
+      "pages": 2,
+      "source_inspection": {
+        "native_alphabetic_chars": 109,
+        "large_raster_pages": 2,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "mixed",
+      "domain": "general",
+      "subdomains": {},
+      "bucket": "OCR_MIXED",
+      "selection_reason": "deterministic latency midpoint quantile 3/5 within 18 eligible baseline PDFs",
+      "baseline_latency_seconds": 71.72735219999595,
+      "baseline_ocr_seconds": 59.26661189999868,
+      "baseline_glossary_seconds": 7.258122599967464,
+      "baseline_model_seconds": 3.289627499994822,
+      "baseline_table_blocks": 23,
+      "baseline_status": "FAILED_SOURCE_PRESERVED"
+    },
+    {
+      "index": 1,
+      "calibration_index": 10,
+      "calibration_document_id": "4877e2d55fc8678cb868260b",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Intake Air Temperature Sensor (IATS)/C120102 左前轮速传感器范围 性能 间歇/检验维修.pdf",
+      "source_sha256": "bc941e086ecff318d01c660fca9597d442aeb2d011fe5e16eea642bd421b84c2",
+      "source_size": 24872,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 94,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "bucket": "EASY_NATIVE",
+      "selection_reason": "deterministic latency midpoint quantile 2/5 within 23 eligible baseline PDFs",
+      "baseline_latency_seconds": 4.646800299997267,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 2.673842699972738,
+      "baseline_model_seconds": 1.3237585999886505,
+      "baseline_table_blocks": 2,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 2,
+      "calibration_index": 14,
+      "calibration_document_id": "33b44929918cdd40e4f802d0",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Rear Door Belt Outside Weatherstrip/维修程序.pdf",
+      "source_sha256": "ec05397ab3245d844541b2f9a54730306dcda557e00076204e80025fbf0befaf",
+      "source_size": 39553,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 55,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "mixed",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.4271,
+        "automotive.body.doors": 0.3935
+      },
+      "bucket": "OCR_MIXED",
+      "selection_reason": "deterministic latency midpoint quantile 1/5 within 18 eligible baseline PDFs",
+      "baseline_latency_seconds": 36.895433399993635,
+      "baseline_ocr_seconds": 32.175980300002266,
+      "baseline_glossary_seconds": 1.4978374999991502,
+      "baseline_model_seconds": 1.7623437000074773,
+      "baseline_table_blocks": 0,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 3,
+      "calibration_index": 16,
+      "calibration_document_id": "b07eb276a783bd558c97fa4b",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140900 驾驶席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf",
+      "source_sha256": "9ca2e79e66632f2eaf03a8961e59105c277a0c2128fa47736cc76f1cccc8e8d8",
+      "source_size": 51899,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 380,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6988,
+        "automotive.electrical": 0.9055,
+        "automotive.restraint": 0.7443
+      },
+      "bucket": "MEDIUM",
+      "selection_reason": "deterministic latency midpoint quantile 4/5 within 32 eligible baseline PDFs",
+      "baseline_latency_seconds": 17.335670699998445,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 7.751033499960613,
+      "baseline_model_seconds": 6.212872900003276,
+      "baseline_table_blocks": 21,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 4,
+      "calibration_index": 19,
+      "calibration_document_id": "6a3780a8fb55e16e267a3b25",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+      "source_sha256": "904b28be8fd3119ba9e5129f7385356a86561d905abff88dc62608f8a7c37902",
+      "source_size": 46187,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 290,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9376
+      },
+      "bucket": "MEDIUM",
+      "selection_reason": "deterministic latency midpoint quantile 5/5 within 32 eligible baseline PDFs",
+      "baseline_latency_seconds": 18.479242800000065,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 10.868482999983826,
+      "baseline_model_seconds": 4.610468299979402,
+      "baseline_table_blocks": 24,
+      "baseline_status": "FAILED_SOURCE_PRESERVED"
+    },
+    {
+      "index": 5,
+      "calibration_index": 27,
+      "calibration_document_id": "6c1dbcdd3e7e61cffa5bb601",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C110117 蓄电池电压高/故障代码信息和检查.pdf",
+      "source_sha256": "3c69b78bbb47218831d41c32b80ecd8c0c73d95e74aee27723577d2a4b47b066",
+      "source_size": 61912,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 470,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "mixed",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.808,
+        "automotive.electrical": 0.9507,
+        "automotive.engine": 0.4231
+      },
+      "bucket": "OCR_MIXED",
+      "selection_reason": "deterministic latency midpoint quantile 2/5 within 18 eligible baseline PDFs",
+      "baseline_latency_seconds": 55.468949100002646,
+      "baseline_ocr_seconds": 32.18591839999863,
+      "baseline_glossary_seconds": 10.794244100019569,
+      "baseline_model_seconds": 7.361360400005651,
+      "baseline_table_blocks": 18,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 6,
+      "calibration_index": 28,
+      "calibration_document_id": "77f250a2ca154a7fffa263d2",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C125901 方向盘转角传感器-电气故障/部件检查.pdf",
+      "source_sha256": "b1ef38da24e38bc9ba9ec7788e80e2138da8a2852839c1a01906a23749033463",
+      "source_size": 40893,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 281,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6988,
+        "automotive.electrical": 0.532,
+        "automotive.steering": 0.7109
+      },
+      "bucket": "MEDIUM",
+      "selection_reason": "deterministic latency midpoint quantile 2/5 within 32 eligible baseline PDFs",
+      "baseline_latency_seconds": 10.298075899998366,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 5.017217899985553,
+      "baseline_model_seconds": 3.0795955000066897,
+      "baseline_table_blocks": 2,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 7,
+      "calibration_index": 37,
+      "calibration_document_id": "20c92502a419ec74303a44c6",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Passenger Airbag (PAB) Module/B135500 助手席空气囊电阻电路与蓄电池电路短路(1级)/ETM.pdf",
+      "source_sha256": "5a5a5036022767b9d59dd0c55b0bba7b9ee834858d89d410fc13ed4066b8c9ca",
+      "source_size": 9713,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 6,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.restraint": 0.5785
+      },
+      "bucket": "EASY_NATIVE",
+      "selection_reason": "deterministic latency midpoint quantile 1/5 within 23 eligible baseline PDFs",
+      "baseline_latency_seconds": 1.6181810000052792,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 0.7558732999968925,
+      "baseline_model_seconds": 0.26808539999910863,
+      "baseline_table_blocks": 0,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 8,
+      "calibration_index": 43,
+      "calibration_document_id": "bbb2db4b0afab8b27a30e3f8",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C181483 CAN信息故障 - SAS (CRC)/线束检查.pdf",
+      "source_sha256": "d71a57a399c82b0b392365083a6632be4388cef41abe64646006a338701eabda",
+      "source_size": 34108,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 117,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.7676
+      },
+      "bucket": "EASY_NATIVE",
+      "selection_reason": "deterministic latency midpoint quantile 5/5 within 23 eligible baseline PDFs",
+      "baseline_latency_seconds": 5.834854499997164,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 2.5127808000179357,
+      "baseline_model_seconds": 1.0185551000249689,
+      "baseline_table_blocks": 2,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 9,
+      "calibration_index": 45,
+      "calibration_document_id": "94ad9a1bdaf368e2ed78889e",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C166A87 与LDWS LKAS的通信CAN超时/检验维修.pdf",
+      "source_sha256": "f633f143c9e12f9add6642d537a0422c1aa0a7000d241f8e42782fcd58bcfb49",
+      "source_size": 32180,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7981
+      },
+      "bucket": "MEDIUM",
+      "selection_reason": "deterministic latency midpoint quantile 1/5 within 32 eligible baseline PDFs",
+      "baseline_latency_seconds": 6.246542299995781,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 3.4459548999438994,
+      "baseline_model_seconds": 2.090324699995108,
+      "baseline_table_blocks": 2,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 10,
+      "calibration_index": 46,
+      "calibration_document_id": "77fcf21b368505c5714e58f6",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/中央网关/B252400 右前转向信号电路与搭铁电路短路/故障代码信息和检查.pdf",
+      "source_sha256": "c9e72a4e16c9be314f4e297cb8c521d795c0de86fe02be8cbdf5b3ecc80e04ca",
+      "source_size": 51018,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 378,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.4231,
+        "automotive.electrical": 0.7855
+      },
+      "bucket": "MEDIUM",
+      "selection_reason": "deterministic latency midpoint quantile 3/5 within 32 eligible baseline PDFs",
+      "baseline_latency_seconds": 15.298591300001135,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 8.310935500026972,
+      "baseline_model_seconds": 5.924453199979325,
+      "baseline_table_blocks": 24,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 11,
+      "calibration_index": 52,
+      "calibration_document_id": "76d0b45ea6335925a2e9c92a",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+      "source_sha256": "62d32112088e6091df97a3bb3b765521e3f5b6568ee3953af55dcce658e8fafa",
+      "source_size": 124176,
+      "pages": 2,
+      "source_inspection": {
+        "native_alphabetic_chars": 551,
+        "large_raster_pages": 2,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "mixed",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.8846
+      },
+      "bucket": "OCR_MIXED",
+      "selection_reason": "deterministic latency midpoint quantile 4/5 within 18 eligible baseline PDFs",
+      "baseline_latency_seconds": 89.75008099999832,
+      "baseline_ocr_seconds": 59.56273090000468,
+      "baseline_glossary_seconds": 15.483200200069405,
+      "baseline_model_seconds": 10.091315999961807,
+      "baseline_table_blocks": 41,
+      "baseline_status": "FAILED_SOURCE_PRESERVED"
+    },
+    {
+      "index": 12,
+      "calibration_index": 54,
+      "calibration_document_id": "2a103de02451fcec19288e82",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P013A00 氧传感器响应慢 - 浓到稀组1传感器2/检验维修.pdf",
+      "source_sha256": "c885ced213e97bf62120cd0ab5654b7d3de1575f8f45202fc8e7fce045d3ec2c",
+      "source_size": 30156,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "bucket": "EASY_NATIVE",
+      "selection_reason": "deterministic latency midpoint quantile 3/5 within 23 eligible baseline PDFs",
+      "baseline_latency_seconds": 4.954581199999666,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 2.6799297999605187,
+      "baseline_model_seconds": 1.5817305000018678,
+      "baseline_table_blocks": 2,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 13,
+      "calibration_index": 56,
+      "calibration_document_id": "2c4e72371679e6ff0f9fc9bb",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+      "source_sha256": "8816f4946ab76fd723b4cbc26d335867012e40157b9707096b9855a13d7ef76b",
+      "source_size": 755496,
+      "pages": 5,
+      "source_inspection": {
+        "native_alphabetic_chars": 3901,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "image_only",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.3935,
+        "automotive.engine": 0.6988,
+        "automotive.interior": 0.3935
+      },
+      "bucket": "HEAVY_OTHER",
+      "selection_reason": "largest glossary stage",
+      "baseline_latency_seconds": 294.12203109999973,
+      "baseline_ocr_seconds": 155.40749869999854,
+      "baseline_glossary_seconds": 88.12865240009705,
+      "baseline_model_seconds": 34.86838190002891,
+      "baseline_table_blocks": 0,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 14,
+      "calibration_index": 58,
+      "calibration_document_id": "18ed5b6b9e9dbc91b6c2a154",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+      "source_sha256": "b04dc6f827e4012a12419e31967234b66f2fa754f9b0abcdb780bd4ccdca9ac4",
+      "source_size": 30156,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "bucket": "EASY_NATIVE",
+      "selection_reason": "deterministic latency midpoint quantile 4/5 within 23 eligible baseline PDFs",
+      "baseline_latency_seconds": 5.457320800000161,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 2.585140000010142,
+      "baseline_model_seconds": 2.247520099983376,
+      "baseline_table_blocks": 2,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 15,
+      "calibration_index": 66,
+      "calibration_document_id": "91f3e7580af103a5cd695334",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/DCT (双离合变速器)系统/双离合变速器控制系统/输入速度传感器/维修程序.pdf",
+      "source_sha256": "d298b7746ec3e78ec8364ca7aa36436efa9f7861485dafdb7f8e5af04a6cde28",
+      "source_size": 107960,
+      "pages": 2,
+      "source_inspection": {
+        "native_alphabetic_chars": 278,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "mixed",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6988,
+        "automotive.electrical": 0.508,
+        "automotive.engine": 0.3935,
+        "automotive.transmission": 0.7033
+      },
+      "bucket": "OCR_MIXED",
+      "selection_reason": "deterministic latency midpoint quantile 5/5 within 18 eligible baseline PDFs",
+      "baseline_latency_seconds": 127.95609279999917,
+      "baseline_ocr_seconds": 113.46636119999312,
+      "baseline_glossary_seconds": 7.04577109998354,
+      "baseline_model_seconds": 4.02901210001437,
+      "baseline_table_blocks": 0,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 16,
+      "calibration_index": 76,
+      "calibration_document_id": "70eeec82bb68f13923a6db29",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+      "source_sha256": "179f16c3847a20df0dcb1be1562ec9f21ef04d32e55c520c6f7e43f93ab7544b",
+      "source_size": 769296,
+      "pages": 8,
+      "source_inspection": {
+        "native_alphabetic_chars": 3478,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "image_only",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.adas": 0.3935,
+        "automotive.diagnostics": 0.4231,
+        "automotive.electrical": 0.73,
+        "automotive.hvac": 0.4231
+      },
+      "bucket": "HEAVY_OTHER",
+      "selection_reason": "image-only latency quartile rank 5/6",
+      "baseline_latency_seconds": 298.5186771000008,
+      "baseline_ocr_seconds": 231.64977389999694,
+      "baseline_glossary_seconds": 40.23141090005083,
+      "baseline_model_seconds": 16.47582630001125,
+      "baseline_table_blocks": 0,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 17,
+      "calibration_index": 82,
+      "calibration_document_id": "aab35f883430bbeff869f7d8",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+      "source_sha256": "6108b9b57fae4d8051e291e70faa5816e40a0de88b4bcc3d63cabad1617e6d00",
+      "source_size": 815081,
+      "pages": 5,
+      "source_inspection": {
+        "native_alphabetic_chars": 4118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "image_only",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.brakes": 0.3935,
+        "automotive.electrical": 0.5154,
+        "automotive.engine": 0.478,
+        "automotive.transmission": 0.3935
+      },
+      "bucket": "HEAVY_OTHER",
+      "selection_reason": "largest model stage",
+      "baseline_latency_seconds": 279.02567550000094,
+      "baseline_ocr_seconds": 157.136187899996,
+      "baseline_glossary_seconds": 72.78039830001217,
+      "baseline_model_seconds": 36.23116140003549,
+      "baseline_table_blocks": 0,
+      "baseline_status": "FAILED_SOURCE_PRESERVED"
+    },
+    {
+      "index": 18,
+      "calibration_index": 93,
+      "calibration_document_id": "f517dded5c7fcdad17235a57",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/发动机电气系统/充电系统/故障检修.pdf",
+      "source_sha256": "46b10d583075e29f3cf3b8e5c6ed6ec674dc61674fc6f5ff8e3d14b26e6fa921",
+      "source_size": 72574,
+      "pages": 2,
+      "source_inspection": {
+        "native_alphabetic_chars": 1452,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "native",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.455,
+        "automotive.electrical": 0.73,
+        "automotive.engine": 0.5507,
+        "automotive.suspension": 0.3935
+      },
+      "bucket": "HEAVY_OTHER",
+      "selection_reason": "largest table block count among remaining baseline PDFs",
+      "baseline_latency_seconds": 70.08151199999702,
+      "baseline_ocr_seconds": 0,
+      "baseline_glossary_seconds": 27.74066580012004,
+      "baseline_model_seconds": 20.31222919999709,
+      "baseline_table_blocks": 95,
+      "baseline_status": "TRANSLATED"
+    },
+    {
+      "index": 19,
+      "calibration_index": 98,
+      "calibration_document_id": "1ff4d8cd85a0f316e9d68954",
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 电路图/G 1.4 T-GDI/示意图/车身电气系统/遥控＆防盗警报系统/示意图.pdf",
+      "source_sha256": "24b16f96376cd3626d92858c2462257a85d65c902f910fe8e4aed7d9f9a01647",
+      "source_size": 150174,
+      "pages": 1,
+      "source_inspection": {
+        "native_alphabetic_chars": 555,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "classification": "image_only",
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body.doors": 0.6988,
+        "automotive.electrical": 0.5154,
+        "automotive.steering": 0.4177
+      },
+      "bucket": "HEAVY_OTHER",
+      "selection_reason": "image-only latency quartile rank 2/6",
+      "baseline_latency_seconds": 52.50802649999969,
+      "baseline_ocr_seconds": 33.71923650000099,
+      "baseline_glossary_seconds": 10.836413899938634,
+      "baseline_model_seconds": 5.133687699963048,
+      "baseline_table_blocks": 0,
+      "baseline_status": "TRANSLATED"
+    }
+  ],
+  "frozen": true,
+  "training": false
+}

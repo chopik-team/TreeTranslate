@@ -1,0 +1,15 @@
+{
+  "tm_units": 0,
+  "user_glossary_rows": 0,
+  "six_warm_lookup_ms": 193.96889999984523,
+  "automotive": {
+    "segments": 6,
+    "matched_terms": 0,
+    "matched_segments": 0,
+    "enforced": 0,
+    "fallback": 0,
+    "before_fidelity": 2,
+    "after_fidelity": 2
+  },
+  "metallurgy_sentences": 3
+}

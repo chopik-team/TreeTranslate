@@ -7,6 +7,8 @@ from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QMenu, QPushButton, Q
 from app.config.paths import icon_path
 from app.gui.widgets.animated_icon import AnimatedIcon
 
+from app.localization.widgets import QLabel, QPushButton, QMenu
+
 
 class DropZone(QFrame):
     paths_dropped = Signal(list)
@@ -33,14 +35,16 @@ class DropZone(QFrame):
             icon.setAccessibleName(format_name.upper())
             icons.addWidget(icon)
         icons.addStretch()
-        title = QLabel("Перетащите DOCX/PDF\nили папку сюда", alignment=Qt.AlignmentFlag.AlignCenter)
+        title = QLabel("Перетащите DOCX/PDF/ZIP\nили папку сюда", alignment=Qt.AlignmentFlag.AlignCenter)
         title.setObjectName("heading")
+        title.setWordWrap(True)
         hint = QLabel(
-            "Документы .DOCX и .PDF\n"
+            "Документы .DOCX, .PDF и архивы .ZIP\n"
             "Папки проверяются вместе с вложенными каталогами",
             alignment=Qt.AlignmentFlag.AlignCenter,
         )
         hint.setObjectName("secondary")
+        hint.setWordWrap(True)
         choose = QPushButton(QIcon(icon_path("folder")), "  Выбрать папку / файлы", objectName="outlinePrimary")
         choose.setMinimumHeight(48)
         choose_menu = QMenu(choose)

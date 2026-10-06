@@ -1,0 +1,23 @@
+{
+  "baseline_files": 706,
+  "missing": [],
+  "changed": [
+    "CHANGELOG.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "app/config/constants.py",
+    "app/controllers/translation_ui_controller.py",
+    "app/engine/factory.py",
+    "app/gui/dialogs/about_dialog.py",
+    "app/gui/dialogs/changelog_dialog.py",
+    "app/gui/pages/file_translation_page.py",
+    "app/gui/pages/text_translation_page.py",
+    "app/gui/styles/stylesheet.qss",
+    "app/services/hybrid_translation_service.py",
+    "app/services/translation_preferences.py",
+    "app/services/translation_service.py",
+    "docs/NEXT_CYCLE.md"
+  ],
+  "head": "9aa36fc327463b5ef11d6d02e40a810207bd5e8f",
+  "branch": "codex/next-cycle"
+}

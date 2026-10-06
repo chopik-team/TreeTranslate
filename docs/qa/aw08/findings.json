@@ -1,0 +1,89 @@
+{
+  "severity_counts": {
+    "HIGH": 4,
+    "MEDIUM": 4,
+    "LOW": 1,
+    "QUALITY_BACKLOG": 2
+  },
+  "fixed": 8,
+  "remaining": 3,
+  "findings": [
+    {
+      "id": "AW08-01",
+      "severity": "HIGH",
+      "status": "fixed",
+      "problem": "Потеря запрета после вопроса в Argos",
+      "resolution": "Границы вопроса/восклицания сохраняют следующую инструкцию."
+    },
+    {
+      "id": "AW08-02",
+      "severity": "HIGH",
+      "status": "fixed",
+      "problem": "Повреждённый decoder output принимался как перевод",
+      "resolution": "Проверка результата внутри локального fallback."
+    },
+    {
+      "id": "AW08-03",
+      "severity": "HIGH",
+      "status": "fixed",
+      "problem": "Закрытие активного окна блокировало GUI",
+      "resolution": "Кооперативное асинхронное закрытие; сохранены lifetime и восстановление задачи."
+    },
+    {
+      "id": "AW08-04",
+      "severity": "HIGH",
+      "status": "fixed",
+      "problem": "Принималась потеря отрицательного числового значения",
+      "resolution": "Fallback или понятная ошибка; сложный ZH→RU пример отклонён."
+    },
+    {
+      "id": "AW08-05",
+      "severity": "MEDIUM",
+      "status": "fixed",
+      "problem": "Модель меняла регистр явно заданных имён файлов",
+      "resolution": "Восстановление однозначного исходного регистра без вставки отсутствующих токенов."
+    },
+    {
+      "id": "AW08-06",
+      "severity": "MEDIUM",
+      "status": "fixed",
+      "problem": "Повторные chunks заново переводились в одном запросе",
+      "resolution": "Локальная дедупликация; точное совпадение результатов 8/24 абзацев."
+    },
+    {
+      "id": "AW08-07",
+      "severity": "MEDIUM",
+      "status": "fixed",
+      "problem": "О проекте заранее создавал семь скрытых диалогов",
+      "resolution": "Подробности языка создаются при первом открытии."
+    },
+    {
+      "id": "AW08-08",
+      "severity": "MEDIUM",
+      "status": "fixed",
+      "problem": "PPStructure повторно загружался на одинаковом запросе",
+      "resolution": "Убрано затенение ключа кэша переменной цикла table_models."
+    },
+    {
+      "id": "AW08-09",
+      "severity": "LOW",
+      "status": "remaining",
+      "problem": "Минимальная высота О проекте 987 px",
+      "resolution": "Адаптацию для небольших экранов оставить отдельной UX-задачей; утверждённые плитки сохранены."
+    },
+    {
+      "id": "AW08-10",
+      "severity": "QUALITY_BACKLOG",
+      "status": "remaining",
+      "problem": "Ограничения смысла и сложных числовых фраз",
+      "resolution": "10/27 рассмотренных примеров требуют проверки; 1/80 безопасно отклонён."
+    },
+    {
+      "id": "AW08-11",
+      "severity": "QUALITY_BACKLOG",
+      "status": "remaining",
+      "problem": "Покрытие технического словаря и согласование терминов",
+      "resolution": "Automotive 0 matches; возможна неверная падежная форма при enforcement; ресурсы не расширялись."
+    }
+  ]
+}

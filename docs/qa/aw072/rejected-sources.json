@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-24",
+  "sources": [
+    {
+      "source": "WIPO Pearl",
+      "status": "NOT_REDISTRIBUTABLE",
+      "url": "https://www.wipo.int/en/web/wipo-pearl/terms-wipopearl",
+      "reason": "Terms prohibit bulk extraction, storage, reformatting and redistribution without permission.",
+      "downloaded": false
+    },
+    {
+      "source": "Wiktionary production dump",
+      "status": "REVIEW_REQUIRED",
+      "url": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+      "reason": "Selected dump/extractor revision, page attribution and derivative license not audited; only local structured adapter implemented.",
+      "downloaded": false
+    },
+    {
+      "source": "Commercial or unknown-license dictionaries",
+      "status": "UNKNOWN",
+      "reason": "No specific grant for dataset reuse/redistribution. Not used.",
+      "downloaded": false
+    },
+    {
+      "source": "Model-generated translations as ground truth",
+      "status": "EXCLUDED_BY_QUALITY_POLICY",
+      "reason": "Machine output is not evidence of a correct bilingual concept pair; no machine-generated production entries.",
+      "downloaded": false
+    }
+  ]
+}

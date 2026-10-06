@@ -1,4 +1,15 @@
-# Third-party notices — TreeTranslate AW 0.6.2-alpha
+# Third-party notices — TreeTranslate AW 0.7.6
+
+AW0.7.5 добавляет к прежним источникам WordNet, OpenRussian и Tatoeba для общего EN/RU lexical storage. Все новые raw-файлы используются только при сборке, их URL/revision/SHA256 закреплены в `vendor/lexicon/manifest.json`; runtime получает SQLite и notices. Предыдущие CC-CEDICT/AGROVOC/Wikidata пакеты не перерабатывались. Форматы LICENSE/NOTICE и существующие пробелы в лицензировании моделей/изображений сохранены. См. [отчёт AW0.7.5](docs/AW0.7.5_EN_RU_DICTIONARY_REPORT.md).
+
+## Knowledge expansion (AW 0.7.3)
+
+- Встроенные термины Wikidata — CC0-1.0, атрибуция Wikidata contributors. [Условия структурированных данных](https://www.wikidata.org/wiki/Wikidata:Licensing).
+- Встроенные термины AGROVOC FAO на ZH/RU/EN — CC-BY-4.0 согласно [текущим условиям FAO](https://www.fao.org/agrovoc/maintenance), проверенным 25.09.2026. Данные нормализованы, классифицированы и отобраны TreeTranslate; FAO не подтверждала качество производных переводов.
+- Полный CC-CEDICT MDBG (revision 23.09.2026) — CC-BY-SA-4.0, [условия и официальный download](https://www.mdbg.net/chinese/dictionary?page=cc-cedict). Использован только в build для китайских вариантов и pivot-кандидатов; ни одна его пара не прошла в runtime этой версии.
+- Лицензии разделены по пакетам. Каждый runtime-пакет имеет полный LICENSE и NOTICE с исходными concept IDs, revisions, provenance, авторством и описанием обработки. Ссылки доступны в «О проекте → Лицензии и источники».
+- Исходные архивы, harvest/staging SQLite и review queues остаются в `build/aw073`; в runtime входят только итоговые SQLite и необходимые notices. Wiktionary не получен и не включён; WIPO не использован.
+- Подробные хеши и границы использования: [AW0.7.3 report](docs/AW0.7.3_KNOWLEDGE_EXPANSION_REPORT.md), [source audit](docs/qa/aw073/SOURCES.json). Неопределённость лицензий отдельных моделей Argos и изображений, описанная ниже, сохраняется.
 
 ## Local OCR runtime
 
@@ -38,7 +49,19 @@
 | NVIDIA cuBLAS CUDA 12, optional GPU | 12.9.2.10 | NVIDIA proprietary terms, LICENSE из официального wheel |
 | NVIDIA NVRTC CUDA 12, dependency of cuBLAS wheel | 12.9.86 | NVIDIA proprietary terms, LICENSE из официального wheel |
 
-PySide6 / Shiboken 6.11.1 уже использовались в AW 0.3; применяются условия Qt for Python (LGPLv3/GPLv3/commercial в зависимости от использования). Лицензия приложения в этой работе не менялась.
+PySide6 / Shiboken 6.11.1 уже использовались в AW 0.3. Установленные wheels декларируют `LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only`; доступна и отдельная коммерческая лицензия Qt. Условия конкретных Qt modules и распространения проверяются отдельно. Полные wheel notices сохранены в `vendor/licenses/PySide6*` и `vendor/licenses/shiboken6`. [Официальные условия Qt for Python](https://doc.qt.io/qtforpython-6/licenses.html). Лицензия приложения в этой работе не менялась.
+
+## Knowledge Harvester / встроенные пакеты AW0.7.2
+
+- Фактически включены только structured Wikidata entity data, **CC0-1.0**. 664 исходных concepts, per-entity `lastrevid`, input SHA и acquisition queries: `docs/qa/aw072/SOURCES.json`. [Официальная лицензия](https://www.wikidata.org/wiki/Wikidata:Licensing). Отбор, нормализация, классификация и упаковка — TreeTranslate; upstream не подтверждает качество переводов.
+- Каждый `.tglossary` содержит полный CC0 legalcode в LICENSE и source/record provenance в NOTICE. В `assets/knowledge/*-notices` сохранены копии для поставляемых read-only баз. 26 предварительных пакетов не являются новой самостоятельной лицензией на исходные данные.
+- AGROVOC **ZH/RU/EN**: CC-BY-4.0 по [FAO maintenance](https://www.fao.org/agrovoc/maintenance), другие языки могут иметь иные условия. Реальный dump не включён; реализован ограниченный JSON-LD adapter.
+- CC-CEDICT: актуальная **CC-BY-SA-4.0** по [MDBG](https://www.mdbg.net/chinese/dictionary?page=cc-cedict). Реальные записи CC-CEDICT не включены в пакеты. Есть локальный parser; scripted dictionary-page scraping не выполнялся.
+- Wiktionary: [условия текстового содержимого](https://en.wiktionary.org/wiki/Wiktionary:Copyrights), CC-BY-SA-4.0/GFDL. Конкретный dump/extractor и page-level attribution требуют проверки; source status REVIEW_REQUIRED, пакеты не включают эти данные.
+- WIPO Pearl: [условия](https://www.wipo.int/en/web/wipo-pearl/terms-wipopearl) ограничивают bulk extraction, storage, reformatting и redistribution; источник отклонён, корпус не загружался.
+- Полные тексты CC0/CC-BY/CC-BY-SA: `tools/knowledge_harvester/license-texts`. Share-alike sources не объединяются с CC0 молча; смешанная provenance блокирует сборку до отдельной проверки.
+
+В «О проекте → Лицензии и источники» отображается локальный индекс `assets/licenses/third-party.html`, построенный `tools/build_license_catalog.py` по runtime lock, сохранённому OCR inventory и model metadata. Есть ссылки на полные notices. Лицензии итоговых Argos EN↔RU weights и полный per-asset перечень прав Flaticon/Icons8 остаются не подтверждены; каталог явно показывает эти пробелы и не объявляет весь дистрибутив юридически проверенным. Полный аудит всех native Qt modules для будущего установщика не выполнен.
 
 Фактические notices и inventory: [vendor/licenses](vendor/licenses). Названия лицензий библиотек не переносятся автоматически на модельные веса. Для installer потребуется включить применимые notices всех поставляемых нативных библиотек и выполнить отдельную проверку условий распространения NVIDIA/Qt.
 
@@ -54,6 +77,10 @@ TreeTranslate использует официальный `argostranslate.packag
 - Источники: [EN→RU](https://download.freedict.org/dictionaries/eng-rus/2025.11.23/), [RU→EN](https://download.freedict.org/dictionaries/rus-eng/2025.11.23/). Версии, URL, официальные SHA512 архивов, SHA256 и размер полученной базы записаны в `vendor/lexicon/manifest.json`.
 - Изменения TreeTranslate: TEI преобразован в отдельную SQLite-базу; добавлены регистронезависимые ключи без знака ударения. Текст определений и переводов сохранён. Эта производная база распространяется на условиях CC BY-SA 3.0; её лицензия не подменяется лицензией программного кода.
 - `assets/language/usage.json`: оригинальные учебные примеры и пояснения TreeTranslate, созданные в этой разработке; CC0-1.0. Это отдельный набор, не выдержки из Yandex/FreeDict и не дообученная модель. Имена и ситуации иллюстративные.
+- Princeton WordNet 3.0: английские synsets, определения, части речи, варианты и примеры. Разрешены использование, изменение и распространение при сохранении copyright/license notice. Полный текст: `vendor/licenses/WordNet/LICENSE.txt`. Build-файл закреплён по ревизии `nltk/nltk_data` `550b6625…`; SHA256 указан в lexical manifest.
+- OpenRussian: русские леммы, английские эквиваленты, грамматические признаки и формы; **CC BY-SA 4.0**, OpenRussian.org contributors. Ревизия `50e210c…`; преобразование в общую SQLite и нормализация ключей отмечены как изменения. Полный текст: `vendor/licenses/OpenRussian/CC-BY-SA-4.0.txt`.
+- Tatoeba EN/RU detailed sentence exports от 26.09.2026: реальные предложения, ID и contributor; **CC BY 2.0 France** для текстовых предложений согласно §6.2 Terms of Use. TreeTranslate фильтрует и ранжирует записи, автор и ID сохраняются. Полный текст: `vendor/licenses/Tatoeba/CC-BY-2.0-FR.html`.
+- Сырые WordNet/OpenRussian/Tatoeba-файлы находятся только в `build/lexical-sources/aw075`; в поставку входит производная индексированная база и notices. Runtime не обращается к сети.
 - Подсказки не записывают пользовательский ввод в обучающие корпуса. У pyspellchecker частотная модель корректирует отдельные слова, без грамматического анализа предложений.
 
 Стандартный `pip check` ожидаемо сообщает отсутствующие `stanza`, `spacy`, `minisbd`: метаданные upstream пакета описывают также неиспользуемый high-level API. Совместимость используемого подмножества подтверждена тестами реального перевода в окружении без PyTorch/Transformers.

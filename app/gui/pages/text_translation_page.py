@@ -1,9 +1,10 @@
 from html import escape
+from app.localization import tr, localization
 
 from PySide6.QtCore import QTimer, Qt, Signal
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (
-    QFrame, QHBoxLayout, QLabel, QPushButton, QScrollArea,
+    QFrame, QHBoxLayout, QLabel, QPushButton, QScrollArea, QComboBox,
     QApplication, QTextBrowser, QVBoxLayout, QWidget,
 )
 
@@ -11,10 +12,11 @@ from app.config.paths import icon_path
 from app.gui.styles.theme import color
 from app.gui.widgets.acceleration_selector import AccelerationSelector
 from app.gui.widgets.language_selector import LanguageSelector
-from app.gui.widgets.translation_mode import TranslationMode
 from app.gui.widgets.assisted_text_edit import AssistedTextEdit
 from app.services.lexical_assistance import language_code, lookup_key
 from app.services.lexical_worker import LexicalWorker
+
+from app.localization.widgets import QComboBox, QLabel, QPushButton, QTextBrowser
 
 
 class TextTranslationPage(QWidget):
@@ -33,6 +35,7 @@ class TextTranslationPage(QWidget):
         self._hover_id = 0
         self._reference = None
         self._resolved_source = None
+        localization.widgets.add(self)
         self._variants = []
         self._related = []
         root = QVBoxLayout(self)
@@ -42,11 +45,8 @@ class TextTranslationPage(QWidget):
         settings_layout = QHBoxLayout(settings)
         settings_layout.setContentsMargins(16, 10, 16, 10)
         self.languages = LanguageSelector()
-        self.mode = TranslationMode()
         self.acceleration = AccelerationSelector()
         settings_layout.addWidget(self.languages, 3)
-        settings_layout.addSpacing(18)
-        settings_layout.addWidget(self.mode, 2)
         settings_layout.addSpacing(18)
         settings_layout.addWidget(self.acceleration, 2)
         root.addWidget(settings)
@@ -227,41 +227,53 @@ class TextTranslationPage(QWidget):
             examples = title + f"<p>{escape(usage['note'])}</p>"
             for source, target, context in usage["examples"]:
                 examples += f"<p><small>{escape(context)}</small><br><b>{escape(source)}</b><br>{escape(target)}</p>"
-            examples += "<p><small>TreeTranslate · учебные примеры · CC0</small></p>"
+            examples += tr("<p><small>TreeTranslate · учебные примеры · CC0</small></p>")
         else:
-            examples = title + "<p>Для этого слова пока нет учебных примеров.</p><p>Выделите слово в исходном тексте, чтобы посмотреть его значения.</p>"
+            examples = title
+        for item in reference.examples[:5]:
+            examples += (f"<p><b>{escape(item['sentence'])}</b><br>"
+                         f"<small>{escape(item['source'])} · #{escape(item['source_ref'])} · "
+                         f"{escape(item['contributor'])}</small></p>")
+        if not usage and not reference.examples:
+            examples += tr("<p>Для этого слова пока нет примеров использования.</p>")
         self.examples_text.setHtml(examples)
         dictionary = title
         curated_values = set()
         if usage:
-            action = "Нажмите вариант, чтобы вставить его в перевод." if self._can_use_variant() else "Нажмите вариант, чтобы скопировать его."
+            action = tr("Нажмите вариант, чтобы вставить его в перевод.") if self._can_use_variant() else tr("Нажмите вариант, чтобы скопировать его.")
             dictionary += f"<p><small>{action}</small></p>"
             for value, context in usage["variants"]:
                 curated_values.add(lookup_key(value))
                 dictionary += self._variant_html(value, context)
             self._related = usage.get("related", [])
-        pos_labels = {"n":"сущ.", "v":"гл.", "adj":"прил.", "adv":"нареч.", "interjection":"междометие", "pn":"имя собственное"}
+        pos_labels = {"n":tr("сущ."), "v":tr("гл."), "adj":tr("прил."), "adv":tr("нареч."), "interjection":tr("междометие"), "pn":tr("имя собственное")}
         for entry in reference.entries:
-            pronunciation = " · ".join(entry["pronunciation"][:2])
-            pos = ", ".join(pos_labels.get(p, p) for p in entry["pos"])
+            pronunciation = " · ".join(entry.get("pronunciation", [])[:2])
+            pos = ", ".join(pos_labels.get(p, p) for p in entry.get("pos", []))
             dictionary += f"<p><b>{escape(entry['headword'])}</b> {escape(pronunciation)} <small>{escape(pos)}</small></p>"
             for sense in entry["senses"][:10]:
                 definition = "; ".join(sense["definitions"][:2])
-                values = [value for value in sense["translations"][:6] if lookup_key(value) not in curated_values]
+                values = [value for value in sense.get("translations", [])[:6] if lookup_key(value) not in curated_values]
                 if values:
                     links = []
                     for value in values:
                         self._variants.append(value.replace("\u0301", ""))
                         action = "use" if self._can_use_variant() else "copy"
-                        hint = "Вставить в перевод" if action == "use" else "Скопировать вариант"
+                        hint = tr("Вставить в перевод") if action == "use" else tr("Скопировать вариант")
                         links.append(f'<a href="{action}:{len(self._variants)-1}" title="{hint}">{escape(value)}</a>')
                     dictionary += "<p>" + " · ".join(links) + f"<br><small>{escape(definition)}</small></p>"
+                elif definition:
+                    synonyms = " · ".join(sense.get("synonyms", [])[:8])
+                    dictionary += f"<p>{escape(definition)}"
+                    if synonyms:
+                        dictionary += f"<br><small>Синонимы: {escape(synonyms)}</small>"
+                    dictionary += "</p>"
         if reference.entries:
-            dictionary += "<p><small>FreeDict / WikDict / Wiktionary · CC BY-SA 3.0<br>Определения приведены на языке исходного словаря.</small></p>"
+            dictionary += tr("<p><small>FreeDict · WordNet · OpenRussian · локальные данные; источники и лицензии указаны в «О проекте».<br>Определения приведены на языке источника.</small></p>")
         if self._related:
-            dictionary += "<p><b>Связанные слова</b><br>" + " · ".join(f'<a href="word:{i}">{escape(word)}</a>' for i, word in enumerate(self._related)) + "</p>"
+            dictionary += tr("<p><b>Связанные слова</b><br>") + " · ".join(f'<a href="word:{i}">{escape(word)}</a>' for i, word in enumerate(self._related)) + "</p>"
         if reference.notice:
-            dictionary += f"<p>{escape(reference.notice)}</p>"
+            dictionary += f"<p>{escape(tr(reference.notice))}</p>"
         self.dictionary_text.setHtml(dictionary)
         self.reference_area.show()
 
@@ -272,7 +284,7 @@ class TextTranslationPage(QWidget):
         self._variants.append(value.replace("\u0301", ""))
         index = len(self._variants) - 1
         action = "use" if self._can_use_variant() else "copy"
-        hint = "Вставить в перевод" if action == "use" else "Скопировать вариант"
+        hint = tr("Вставить в перевод") if action == "use" else tr("Скопировать вариант")
         return f'<p><a href="{action}:{index}" title="{hint}"><b>{escape(value)}</b></a><br><small>{escape(context)}</small></p>'
 
     def _reference_link(self, url):
@@ -289,6 +301,10 @@ class TextTranslationPage(QWidget):
                 self.variant_chosen.emit(value)
             else:
                 QApplication.clipboard().setText(value)
+
+    def retranslate(self):
+        if self._reference is not None:
+            self._render_reference(self._reference)
 
     def shutdown(self):
         self._assist_timer.stop()

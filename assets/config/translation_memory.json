@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "exact_enabled": true,
+  "normalized_enabled": true,
+  "placeholder_enabled": true,
+  "fuzzy_enabled": true,
+  "fuzzy_reuse": false,
+  "fuzzy_threshold": 0.65,
+  "fuzzy_reuse_threshold": 0.98,
+  "cache_size": 1024,
+  "max_candidates": 96,
+  "domain_weight": 0.12,
+  "trust_weight": 0.15,
+  "busy_timeout_ms": 250
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "TTTERM{:04d}",
+    "count": 1,
+    "input": "Replace the TTTERM0001 before starting.",
+    "output": "Замените TTTERM0001 перед запуском.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "TTTERM{:04d}",
+    "count": 2,
+    "input": "Replace the TTTERM0001 and check the TTTERM0002.",
+    "output": "Заменить TTTERM0001 и проверить TTTERM0002.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "__TTTERM{:04d}__",
+    "count": 1,
+    "input": "Replace the __TTTERM0001__ before starting.",
+    "output": "Замените   TTTERM0001   перед началом.",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "__TTTERM{:04d}__",
+    "count": 2,
+    "input": "Replace the __TTTERM0001__ and check the __TTTERM0002__.",
+    "output": "Замените   TTTERM0001   и проверьте   TTTERM0002  .",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 1,
+    "input": "Replace the ZXQ0001QXZ before starting.",
+    "output": "Замените ZXQ0001QXZ перед запуском.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 2,
+    "input": "Replace the ZXQ0001QXZ and check the ZXQ0002QXZ.",
+    "output": "Замените ZXQ0001QXZ и проверьте ZXQ0002QXZ.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "format": "TTTERM{:04d}",
+    "count": 1,
+    "input": "Замените TTTERM0001 перед запуском.",
+    "output": "Replace TTTERM0001 before launch.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "format": "TTTERM{:04d}",
+    "count": 2,
+    "input": "Замените TTTERM0001 и проверьте TTTERM0002.",
+    "output": "Replace TTTERM0001 and check TTTERM0002.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "format": "__TTTERM{:04d}__",
+    "count": 1,
+    "input": "Замените __TTTERM0001__ перед запуском.",
+    "output": "Replace   TTTERM0001  before launch.",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "format": "__TTTERM{:04d}__",
+    "count": 2,
+    "input": "Замените __TTTERM0001__ и проверьте __TTTERM0002__.",
+    "output": "Replace   TTTERM0001   and check   TTTERM0002  .",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 1,
+    "input": "Замените ZXQ0001QXZ перед запуском.",
+    "output": "Replace the ZXQ0001QXZ before launch.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 2,
+    "input": "Замените ZXQ0001QXZ и проверьте ZXQ0002QXZ.",
+    "output": "Replace the ZXQ0001QXZ and check out the ZXQ0002QXZ.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "format": "TTTERM{:04d}",
+    "count": 1,
+    "input": "启动前更换TTTERM0001。",
+    "output": "Заменить TTERM0001 перед запуском.",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "format": "TTTERM{:04d}",
+    "count": 2,
+    "input": "更换TTTERM0001并检查TTTERM0002。",
+    "output": "Заменить TTERM0001 и проверить TTERM0002.",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "format": "__TTTERM{:04d}__",
+    "count": 1,
+    "input": "启动前更换__TTTERM0001__。",
+    "output": "Заменить _TTTERM0001__ перед запуском.",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "format": "__TTTERM{:04d}__",
+    "count": 2,
+    "input": "更换__TTTERM0001__并检查__TTTERM0002__。",
+    "output": "Заменить _TTTERM0001__ и проверить _TTTERM0002__.",
+    "intact": false,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 1,
+    "input": "启动前更换ZXQ0001QXZ。",
+    "output": "Заменить ZXQ0001QXZ перед запуском.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 2,
+    "input": "更换ZXQ0001QXZ并检查ZXQ0002QXZ。",
+    "output": "Заменить ZXQ0001QXZ и проверить ZXQ0002QXZ.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "TTTERM{:04d}",
+    "count": 1,
+    "input": "Replace the TTTERM0001 before starting.",
+    "output": "Заменить TTTERM0001 перед началом.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "TTTERM{:04d}",
+    "count": 2,
+    "input": "Replace the TTTERM0001 and check the TTTERM0002.",
+    "output": "Заменить TTTERM0001 и проверить TTTERM0002.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "__TTTERM{:04d}__",
+    "count": 1,
+    "input": "Replace the __TTTERM0001__ before starting.",
+    "output": "Заменить __TTTERM0001__ перед началом.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "__TTTERM{:04d}__",
+    "count": 2,
+    "input": "Replace the __TTTERM0001__ and check the __TTTERM0002__.",
+    "output": "Заменить __TTTERM0001__ и проверить __TTTERM0002__.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 1,
+    "input": "Replace the ZXQ0001QXZ before starting.",
+    "output": "Заменить ZXQ0001QXZ перед началом.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "format": "ZXQ{:04d}QXZ",
+    "count": 2,
+    "input": "Replace the ZXQ0001QXZ and check the ZXQ0002QXZ.",
+    "output": "Заменить ZXQ0001QXZ и проверить ZXQ0002QXZ.",
+    "intact": true,
+    "device": "cuda",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  }
+]

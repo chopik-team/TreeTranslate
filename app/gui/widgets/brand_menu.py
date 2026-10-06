@@ -4,6 +4,8 @@ from PySide6.QtWidgets import QFrame, QLabel, QPushButton, QVBoxLayout
 
 from app.config.paths import icon_path
 
+from app.localization.widgets import QLabel, QPushButton
+
 
 class BrandMenu(QFrame):
     settings_requested = Signal()

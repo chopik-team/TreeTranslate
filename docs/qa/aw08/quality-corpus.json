@@ -1,0 +1,642 @@
+[
+  {
+    "id": "en-ru-simple",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "simple",
+    "source": "The technician opened the door.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-grammar",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "grammar",
+    "source": "Did she check both valves yesterday? Do not start the pump.",
+    "reference_notes": "Question refers to yesterday and BOTH valves; pump start is forbidden, not requested."
+  },
+  {
+    "id": "en-ru-numbers",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "numbers",
+    "source": "Record 123, 12.5, 1 250 and 5%. The limits are −20 °C, 220 V and 42 mm. Inspect on 2026-09-28 at 14:30.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-technical",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "technical",
+    "source": "The continuous casting machine stopped because the cooling water pressure dropped.",
+    "reference_notes": "Continuous casting machine stopped; cause is falling COOLING WATER PRESSURE, not temperature."
+  },
+  {
+    "id": "en-ru-software",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "software",
+    "source": "Open config.json in C:\\Temp\\plant and run python main.py --help.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-mixed",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "mixed",
+    "source": "The steel temperature is 1 560 °C, pressure 12 bar.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-abbreviations",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "abbreviations",
+    "source": "Check the CPU, USB and API before startup.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-punctuation",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "punctuation",
+    "source": "Warning: stop! Is the valve open? \"No,\" she replied.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-long-sentence",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "long-sentence",
+    "source": "Before restarting the machine that stopped during the night, the technician checked the cooling system, replaced the damaged connector and confirmed that the emergency switch was not pressed.",
+    "reference_notes": "Keep chronology, replacement of damaged connector and NEGATED emergency-switch state."
+  },
+  {
+    "id": "en-ru-paragraphs",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "paragraphs",
+    "source": "Save the file.\n\nRestart the application.\nCheck the result.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-ru-ambiguous",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "ambiguous",
+    "source": "The crane lifted a steel beam near the river bank.",
+    "reference_notes": "Crane is lifting equipment, not a bird; bank means river bank, not a financial institution."
+  },
+  {
+    "id": "en-ru-repeatability",
+    "source_language": "en",
+    "target_language": "ru",
+    "category": "repeatability",
+    "source": "Check the cooling water pressure. Record the cooling water pressure. Do not increase the cooling water pressure.",
+    "reference_notes": "Cooling water pressure repeated consistently; final instruction prohibits increasing it."
+  },
+  {
+    "id": "ru-en-simple",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "simple",
+    "source": "Техник открыл дверь.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-grammar",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "grammar",
+    "source": "Она проверила оба клапана вчера? Не запускайте насос.",
+    "reference_notes": "Question refers to yesterday and BOTH valves; pump start is forbidden, not requested."
+  },
+  {
+    "id": "ru-en-numbers",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "numbers",
+    "source": "Запишите 123, 12.5, 1 250 и 5%. Пределы: −20 °C, 220 V и 42 mm. Проверка 2026-09-28 в 14:30.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-technical",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "technical",
+    "source": "Машина непрерывного литья остановилась из-за падения давления охлаждающей воды.",
+    "reference_notes": "Continuous casting machine stopped; cause is falling COOLING WATER PRESSURE, not temperature."
+  },
+  {
+    "id": "ru-en-software",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "software",
+    "source": "Откройте config.json в C:\\Temp\\plant и выполните python main.py --help.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-mixed",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "mixed",
+    "source": "Температура стали 1 560 °C, pressure 12 bar.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-abbreviations",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "abbreviations",
+    "source": "Проверьте CPU, USB и API перед запуском.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-punctuation",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "punctuation",
+    "source": "Внимание: стоп! Клапан открыт? «Нет», — ответила она.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-long-sentence",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "long-sentence",
+    "source": "Перед повторным запуском машины, остановившейся ночью, техник проверил систему охлаждения, заменил повреждённый разъём и убедился, что аварийный выключатель не нажат.",
+    "reference_notes": "Keep chronology, replacement of damaged connector and NEGATED emergency-switch state."
+  },
+  {
+    "id": "ru-en-paragraphs",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "paragraphs",
+    "source": "Сохраните файл.\n\nПерезапустите приложение.\nПроверьте результат.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-en-ambiguous",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "ambiguous",
+    "source": "Кран поднял стальную балку у берега реки.",
+    "reference_notes": "Crane is lifting equipment, not a bird; bank means river bank, not a financial institution."
+  },
+  {
+    "id": "ru-en-repeatability",
+    "source_language": "ru",
+    "target_language": "en",
+    "category": "repeatability",
+    "source": "Проверьте давление охлаждающей воды. Запишите давление охлаждающей воды. Не повышайте давление охлаждающей воды.",
+    "reference_notes": "Cooling water pressure repeated consistently; final instruction prohibits increasing it."
+  },
+  {
+    "id": "zh-ru-simple",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "simple",
+    "source": "技术员打开了门。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-grammar",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "grammar",
+    "source": "她昨天检查了两个阀门吗？不要启动水泵。",
+    "reference_notes": "Question refers to yesterday and BOTH valves; pump start is forbidden, not requested."
+  },
+  {
+    "id": "zh-ru-numbers",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "numbers",
+    "source": "记录123、12.5、1 250和5%。限值为−20 °C、220 V和42 mm。请于2026-09-28的14:30检查。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-technical",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "technical",
+    "source": "连铸机因冷却水压力下降而停止。",
+    "reference_notes": "Continuous casting machine stopped; cause is falling COOLING WATER PRESSURE, not temperature."
+  },
+  {
+    "id": "zh-ru-software",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "software",
+    "source": "打开C:\\Temp\\plant中的config.json，然后运行python main.py --help。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-mixed",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "mixed",
+    "source": "钢水温度为1 560 °C，pressure 12 bar。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-abbreviations",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "abbreviations",
+    "source": "启动前检查CPU、USB和API。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-punctuation",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "punctuation",
+    "source": "警告：停止！阀门打开了吗？她回答：“没有。”",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-long-sentence",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "long-sentence",
+    "source": "重新启动夜间停止的机器之前，技术员检查了冷却系统，更换了损坏的连接器，并确认紧急开关没有被按下。",
+    "reference_notes": "Keep chronology, replacement of damaged connector and NEGATED emergency-switch state."
+  },
+  {
+    "id": "zh-ru-paragraphs",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "paragraphs",
+    "source": "保存文件。\n\n重新启动应用程序。\n检查结果。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-ru-ambiguous",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "ambiguous",
+    "source": "起重机在河岸附近吊起一根钢梁。",
+    "reference_notes": "Crane is lifting equipment, not a bird; bank means river bank, not a financial institution."
+  },
+  {
+    "id": "zh-ru-repeatability",
+    "source_language": "zh",
+    "target_language": "ru",
+    "category": "repeatability",
+    "source": "检查冷却水压力。记录冷却水压力。不要增加冷却水压力。",
+    "reference_notes": "Cooling water pressure repeated consistently; final instruction prohibits increasing it."
+  },
+  {
+    "id": "ru-zh-simple",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "simple",
+    "source": "Техник открыл дверь.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-grammar",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "grammar",
+    "source": "Она проверила оба клапана вчера? Не запускайте насос.",
+    "reference_notes": "Question refers to yesterday and BOTH valves; pump start is forbidden, not requested."
+  },
+  {
+    "id": "ru-zh-numbers",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "numbers",
+    "source": "Запишите 123, 12.5, 1 250 и 5%. Пределы: −20 °C, 220 V и 42 mm. Проверка 2026-09-28 в 14:30.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-technical",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "technical",
+    "source": "Машина непрерывного литья остановилась из-за падения давления охлаждающей воды.",
+    "reference_notes": "Continuous casting machine stopped; cause is falling COOLING WATER PRESSURE, not temperature."
+  },
+  {
+    "id": "ru-zh-software",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "software",
+    "source": "Откройте config.json в C:\\Temp\\plant и выполните python main.py --help.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-mixed",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "mixed",
+    "source": "Температура стали 1 560 °C, pressure 12 bar.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-abbreviations",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "abbreviations",
+    "source": "Проверьте CPU, USB и API перед запуском.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-punctuation",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "punctuation",
+    "source": "Внимание: стоп! Клапан открыт? «Нет», — ответила она.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-long-sentence",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "long-sentence",
+    "source": "Перед повторным запуском машины, остановившейся ночью, техник проверил систему охлаждения, заменил повреждённый разъём и убедился, что аварийный выключатель не нажат.",
+    "reference_notes": "Keep chronology, replacement of damaged connector and NEGATED emergency-switch state."
+  },
+  {
+    "id": "ru-zh-paragraphs",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "paragraphs",
+    "source": "Сохраните файл.\n\nПерезапустите приложение.\nПроверьте результат.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "ru-zh-ambiguous",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "ambiguous",
+    "source": "Кран поднял стальную балку у берега реки.",
+    "reference_notes": "Crane is lifting equipment, not a bird; bank means river bank, not a financial institution."
+  },
+  {
+    "id": "ru-zh-repeatability",
+    "source_language": "ru",
+    "target_language": "zh",
+    "category": "repeatability",
+    "source": "Проверьте давление охлаждающей воды. Запишите давление охлаждающей воды. Не повышайте давление охлаждающей воды.",
+    "reference_notes": "Cooling water pressure repeated consistently; final instruction prohibits increasing it."
+  },
+  {
+    "id": "en-zh-simple",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "simple",
+    "source": "The technician opened the door.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-grammar",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "grammar",
+    "source": "Did she check both valves yesterday? Do not start the pump.",
+    "reference_notes": "Question refers to yesterday and BOTH valves; pump start is forbidden, not requested."
+  },
+  {
+    "id": "en-zh-numbers",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "numbers",
+    "source": "Record 123, 12.5, 1 250 and 5%. The limits are −20 °C, 220 V and 42 mm. Inspect on 2026-09-28 at 14:30.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-technical",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "technical",
+    "source": "The continuous casting machine stopped because the cooling water pressure dropped.",
+    "reference_notes": "Continuous casting machine stopped; cause is falling COOLING WATER PRESSURE, not temperature."
+  },
+  {
+    "id": "en-zh-software",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "software",
+    "source": "Open config.json in C:\\Temp\\plant and run python main.py --help.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-mixed",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "mixed",
+    "source": "The steel temperature is 1 560 °C, pressure 12 bar.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-abbreviations",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "abbreviations",
+    "source": "Check the CPU, USB and API before startup.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-punctuation",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "punctuation",
+    "source": "Warning: stop! Is the valve open? \"No,\" she replied.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-long-sentence",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "long-sentence",
+    "source": "Before restarting the machine that stopped during the night, the technician checked the cooling system, replaced the damaged connector and confirmed that the emergency switch was not pressed.",
+    "reference_notes": "Keep chronology, replacement of damaged connector and NEGATED emergency-switch state."
+  },
+  {
+    "id": "en-zh-paragraphs",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "paragraphs",
+    "source": "Save the file.\n\nRestart the application.\nCheck the result.",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "en-zh-ambiguous",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "ambiguous",
+    "source": "The crane lifted a steel beam near the river bank.",
+    "reference_notes": "Crane is lifting equipment, not a bird; bank means river bank, not a financial institution."
+  },
+  {
+    "id": "en-zh-repeatability",
+    "source_language": "en",
+    "target_language": "zh",
+    "category": "repeatability",
+    "source": "Check the cooling water pressure. Record the cooling water pressure. Do not increase the cooling water pressure.",
+    "reference_notes": "Cooling water pressure repeated consistently; final instruction prohibits increasing it."
+  },
+  {
+    "id": "zh-en-simple",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "simple",
+    "source": "技术员打开了门。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-grammar",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "grammar",
+    "source": "她昨天检查了两个阀门吗？不要启动水泵。",
+    "reference_notes": "Question refers to yesterday and BOTH valves; pump start is forbidden, not requested."
+  },
+  {
+    "id": "zh-en-numbers",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "numbers",
+    "source": "记录123、12.5、1 250和5%。限值为−20 °C、220 V和42 mm。请于2026-09-28的14:30检查。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-technical",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "technical",
+    "source": "连铸机因冷却水压力下降而停止。",
+    "reference_notes": "Continuous casting machine stopped; cause is falling COOLING WATER PRESSURE, not temperature."
+  },
+  {
+    "id": "zh-en-software",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "software",
+    "source": "打开C:\\Temp\\plant中的config.json，然后运行python main.py --help。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-mixed",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "mixed",
+    "source": "钢水温度为1 560 °C，pressure 12 bar。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-abbreviations",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "abbreviations",
+    "source": "启动前检查CPU、USB和API。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-punctuation",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "punctuation",
+    "source": "警告：停止！阀门打开了吗？她回答：“没有。”",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-long-sentence",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "long-sentence",
+    "source": "重新启动夜间停止的机器之前，技术员检查了冷却系统，更换了损坏的连接器，并确认紧急开关没有被按下。",
+    "reference_notes": "Keep chronology, replacement of damaged connector and NEGATED emergency-switch state."
+  },
+  {
+    "id": "zh-en-paragraphs",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "paragraphs",
+    "source": "保存文件。\n\n重新启动应用程序。\n检查结果。",
+    "reference_notes": "Preserve the stated facts, negation and structural content; wording may vary."
+  },
+  {
+    "id": "zh-en-ambiguous",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "ambiguous",
+    "source": "起重机在河岸附近吊起一根钢梁。",
+    "reference_notes": "Crane is lifting equipment, not a bird; bank means river bank, not a financial institution."
+  },
+  {
+    "id": "zh-en-repeatability",
+    "source_language": "zh",
+    "target_language": "en",
+    "category": "repeatability",
+    "source": "检查冷却水压力。记录冷却水压力。不要增加冷却水压力。",
+    "reference_notes": "Cooling water pressure repeated consistently; final instruction prohibits increasing it."
+  },
+  {
+    "id": "en-de-sanity",
+    "source_language": "en",
+    "target_language": "de",
+    "source": "Do not start the pump before the valve is open.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "de-en-sanity",
+    "source_language": "de",
+    "target_language": "en",
+    "source": "Starten Sie die Pumpe nicht, bevor das Ventil geöffnet ist.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "en-es-sanity",
+    "source_language": "en",
+    "target_language": "es",
+    "source": "Do not start the pump before the valve is open.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "es-en-sanity",
+    "source_language": "es",
+    "target_language": "en",
+    "source": "No arranque la bomba antes de abrir la válvula.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "en-fr-sanity",
+    "source_language": "en",
+    "target_language": "fr",
+    "source": "Do not start the pump before the valve is open.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "fr-en-sanity",
+    "source_language": "fr",
+    "target_language": "en",
+    "source": "Ne démarrez pas la pompe avant que la vanne soit ouverte.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "en-ja-sanity",
+    "source_language": "en",
+    "target_language": "ja",
+    "source": "Do not start the pump before the valve is open.",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  },
+  {
+    "id": "ja-en-sanity",
+    "source_language": "ja",
+    "target_language": "en",
+    "source": "バルブを開く前にポンプを始動しないでください。",
+    "category": "release-sanity",
+    "reference_notes": "Do NOT start pump until valve is open; preserve negation and temporal condition."
+  }
+]

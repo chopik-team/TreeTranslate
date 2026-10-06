@@ -1,0 +1,54 @@
+[
+  {
+    "backend": "argos",
+    "source_language": "en",
+    "target_language": "ru",
+    "source": "Replace the coolant and check the connector.",
+    "baseline": "Замените охлаждающую жидкость и проверьте разъем.",
+    "glossary": "Замените антифриз и проверьте разъём.",
+    "device": "cuda",
+    "status": "enforced",
+    "model_ids": [
+      "argos-en-ru"
+    ]
+  },
+  {
+    "backend": "argos",
+    "source_language": "ru",
+    "target_language": "en",
+    "source": "Замените антифриз и проверьте разъём.",
+    "baseline": "Replace the antifreeze and check the connector.",
+    "glossary": "Replace the coolant and check out the connector.",
+    "device": "cuda",
+    "status": "enforced",
+    "model_ids": [
+      "argos-ru-en"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "zh",
+    "target_language": "ru",
+    "source": "更换冷却液并检查连接器。",
+    "baseline": "Заменить холодильник и проверить соединитель.",
+    "glossary": "Заменить антифриз и проверить разъём.",
+    "device": "cuda",
+    "status": "enforced",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  },
+  {
+    "backend": "m2m100",
+    "source_language": "en",
+    "target_language": "ru",
+    "source": "Replace the coolant and check the connector.",
+    "baseline": "Заменить холодильник и проверить соединитель.",
+    "glossary": "Заменить антифриз и проверить разъём.",
+    "device": "cuda",
+    "status": "enforced",
+    "model_ids": [
+      "m2m100-418m-int8"
+    ]
+  }
+]

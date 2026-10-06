@@ -34,7 +34,10 @@ class PaddleBackend:
                          'RT-DETR-L_wired_table_cell_det','RT-DETR-L_wireless_table_cell_det','PP-LCNet_x1_0_doc_ori'):
                 paths[name] = self.models.require(name)
         command = dict(device=device, backend=self.name, models=paths,
-                       options={k: options[k] for k in ('threads', 'batch', 'orientation')})
+                       options={k: options[k] for k in ('threads', 'batch', 'orientation')},
+                       source_identity=request.source_identity, page_index=request.page_index,
+                       region=request.region, render_identity=request.render_identity,
+                       language=request.source_language)
         results = []
         # Auto is bounded to two alphabets, never recursive or an unbounded retry.
         for recognizer in candidates:

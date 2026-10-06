@@ -1,0 +1,151 @@
+{
+  "capabilities": {
+    "logical_cpus": 16,
+    "physical_cpus": 8,
+    "ram_total": 34266484736,
+    "ram_available": 21719625728,
+    "cuda": true,
+    "vram_total": 12884901888,
+    "vram_free": 10927210496,
+    "ocr_resident_bytes": 805306368,
+    "nmt_resident_bytes": 2147483648,
+    "memory_pressure": 0.366
+  },
+  "plan": {
+    "prepare_workers": 1,
+    "semantic_workers": 1,
+    "depth": 2,
+    "ready_depth": 2,
+    "writer_depth": 1,
+    "max_prepared_bytes": 3426648473,
+    "max_inflight_bytes": 3426648473,
+    "ram_reserve_bytes": 5711080789,
+    "cpu_headroom": 2,
+    "gpu_owners": 1
+  },
+  "policy": "original",
+  "quality_parameters_changed": false,
+  "serial_path": "depth1 or injected translator without runtime ownership",
+  "bounds": "inventory admission window; one prepare reader; one semantic owner; one writer; canonical ZIP owner",
+  "oversized": "isolated serial fallback; no increase in concurrent budget",
+  "locks": "PDF_LOCK and runtime locks unchanged; diagnostics serialized RLock; GPU admission includes OCR model release",
+  "synthetic_capabilities": [
+    {
+      "name": "A",
+      "capabilities": {
+        "logical_cpus": 4,
+        "physical_cpus": 2,
+        "ram_total": 8589934592,
+        "ram_available": 6871947673,
+        "cuda": false,
+        "vram_total": 0,
+        "vram_free": 0,
+        "ocr_resident_bytes": 805306368,
+        "nmt_resident_bytes": 2147483648,
+        "memory_pressure": 0.2
+      },
+      "plan": {
+        "prepare_workers": 1,
+        "semantic_workers": 1,
+        "depth": 1,
+        "ready_depth": 1,
+        "writer_depth": 1,
+        "max_prepared_bytes": 590558003,
+        "max_inflight_bytes": 590558003,
+        "ram_reserve_bytes": 2147483648,
+        "cpu_headroom": 1,
+        "gpu_owners": 1
+      },
+      "pressure_depth": 1,
+      "quality_settings_changed": false
+    },
+    {
+      "name": "B",
+      "capabilities": {
+        "logical_cpus": 8,
+        "physical_cpus": 4,
+        "ram_total": 17179869184,
+        "ram_available": 13743895347,
+        "cuda": true,
+        "vram_total": 4294967296,
+        "vram_free": 3435973836,
+        "ocr_resident_bytes": 805306368,
+        "nmt_resident_bytes": 2147483648,
+        "memory_pressure": 0.2
+      },
+      "plan": {
+        "prepare_workers": 1,
+        "semantic_workers": 1,
+        "depth": 2,
+        "ready_depth": 2,
+        "writer_depth": 1,
+        "max_prepared_bytes": 1717986918,
+        "max_inflight_bytes": 1717986918,
+        "ram_reserve_bytes": 2863311530,
+        "cpu_headroom": 1,
+        "gpu_owners": 1
+      },
+      "pressure_depth": 1,
+      "quality_settings_changed": false
+    },
+    {
+      "name": "C",
+      "capabilities": {
+        "logical_cpus": 16,
+        "physical_cpus": 8,
+        "ram_total": 34359738368,
+        "ram_available": 27487790694,
+        "cuda": true,
+        "vram_total": 12884901888,
+        "vram_free": 10307921510,
+        "ocr_resident_bytes": 805306368,
+        "nmt_resident_bytes": 2147483648,
+        "memory_pressure": 0.2
+      },
+      "plan": {
+        "prepare_workers": 1,
+        "semantic_workers": 1,
+        "depth": 2,
+        "ready_depth": 2,
+        "writer_depth": 1,
+        "max_prepared_bytes": 3435973836,
+        "max_inflight_bytes": 3435973836,
+        "ram_reserve_bytes": 5726623061,
+        "cpu_headroom": 2,
+        "gpu_owners": 1
+      },
+      "pressure_depth": 1,
+      "quality_settings_changed": false
+    },
+    {
+      "name": "D",
+      "capabilities": {
+        "logical_cpus": 32,
+        "physical_cpus": 16,
+        "ram_total": 68719476736,
+        "ram_available": 54975581388,
+        "cuda": true,
+        "vram_total": 25769803776,
+        "vram_free": 20615843020,
+        "ocr_resident_bytes": 805306368,
+        "nmt_resident_bytes": 2147483648,
+        "memory_pressure": 0.2
+      },
+      "plan": {
+        "prepare_workers": 1,
+        "semantic_workers": 1,
+        "depth": 2,
+        "ready_depth": 2,
+        "writer_depth": 1,
+        "max_prepared_bytes": 6871947673,
+        "max_inflight_bytes": 6871947673,
+        "ram_reserve_bytes": 11453246122,
+        "cpu_headroom": 4,
+        "gpu_owners": 1
+      },
+      "pressure_depth": 1,
+      "quality_settings_changed": false
+    }
+  ],
+  "final_production_depth_ceiling": 2
+}

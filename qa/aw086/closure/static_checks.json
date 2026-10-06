@@ -1,0 +1,51 @@
+{
+  "compileall": {
+    "command": "python -X utf8 -m compileall -q app tools tests main.py",
+    "returncode": 0
+  },
+  "models": {
+    "command": "python -X utf8 tools/verify_models.py",
+    "returncode": 0,
+    "verified_artifacts": 15,
+    "models_changed": false
+  },
+  "diff_working": {
+    "command": "git diff --check",
+    "returncode": 0
+  },
+  "diff_staged": {
+    "status": "PASS",
+    "returncode": 0
+  },
+  "new_document_links": {
+    "missing": 0
+  },
+  "credential_safety": {
+    "secret_values_printed": false,
+    "private_key_or_token_candidates": 0
+  },
+  "full_pytest_first": {
+    "passed": 1276,
+    "failures": 2,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 654.19
+  },
+  "failed_checks_standalone_retry": {
+    "passed": 2,
+    "seconds": 15.34,
+    "runtime_or_timeout_changed": false
+  },
+  "final_full_pytest": {
+    "tests": 1278,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 1278,
+    "pytest_seconds": 614.25,
+    "execution_seconds": 616.0457690000003,
+    "production_unchanged": true,
+    "status": "PASS",
+    "directory": "qa/aw086/closure/full_pytest_final"
+  }
+}

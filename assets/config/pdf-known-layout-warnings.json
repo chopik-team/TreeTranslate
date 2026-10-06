@@ -1,0 +1,12 @@
+{
+  "revision": "AW0.81",
+  "provenance": "Diagnostic A first evaluation: visually confirmed overlap; advisory registry, no fix or layout certification.",
+  "documents": {
+    "2f04664cc71f4cac0b0cc8c4bf5068bde756e055627983b348415115071ecc06": [
+      {"page": 1, "block": "p1-b11", "kind": "table_text_overlap", "status": "OPEN"}
+    ],
+    "a14e9323bcffbf6e18eabc4092c28edb2e556dbace8c3fdb844b334747ebe82b": [
+      {"page": 1, "kind": "table_text_overlap", "status": "OPEN"}
+    ]
+  }
+}

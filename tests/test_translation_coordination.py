@@ -29,52 +29,35 @@ def test_session_manager_enforces_configurable_single_job_policy() -> None:
     assert sessions.start("text")
 
 
-def test_device_and_profile_are_synchronized_everywhere(tmp_path) -> None:
+def test_device_is_synchronized_everywhere(tmp_path):
     app = QApplication.instance() or QApplication([])
-    settings = SettingsService(QSettings(str(tmp_path / "settings.ini"), QSettings.Format.IniFormat))
-    preferences = TranslationPreferences(settings)
     window = MainWindow()
-    # Replace the window's live source for this isolated test.
-    window.preferences = preferences
-    window.translation.preferences.device_changed.disconnect(window.translation._apply_device)
-    window.translation.preferences.profile_changed.disconnect(window.translation._apply_profile)
-    preferences.device_changed.connect(window.translation._apply_device)
-    preferences.profile_changed.connect(window.translation._apply_profile)
-    dialog = SettingsDialog(window, settings, preferences)
-
-    preferences.set_device("GPU")
-    preferences.set_profile("Турбо")
-    assert window.file_page.acceleration.selected() == "GPU"
-    assert window.text_page.acceleration.selected() == "GPU"
-    assert dialog.device_combo.currentText() == "GPU"
-    assert window.file_page.mode.combo.clean_mode() == "Турбо"
-    assert window.text_page.mode.combo.clean_mode() == "Турбо"
-    assert dialog.performance_mode.clean_mode() == "Турбо"
-
-    dialog.device_combo.setCurrentText("CPU")
-    dialog.performance_mode.set_clean_mode("Эконом")
-    assert window.file_page.acceleration.selected() == "CPU"
-    assert window.text_page.acceleration.selected() == "CPU"
-    assert window.file_page.mode.combo.clean_mode() == "Эконом"
-    assert window.text_page.mode.combo.clean_mode() == "Эконом"
-    dialog.close()
-    window.close()
+    dialog = SettingsDialog(window, window.settings, window.preferences)
+    try:
+        window.preferences.set_device("GPU")
+        assert window.file_page.acceleration.selected() == "GPU"
+        assert window.text_page.acceleration.selected() == "GPU"
+        assert dialog.device_combo.currentText() == "GPU"
+        dialog.device_combo.setCurrentText("CPU")
+        assert window.file_page.acceleration.selected() == "CPU"
+        assert window.text_page.acceleration.selected() == "CPU"
+        assert not hasattr(window.text_page, 'mode')
+        assert not hasattr(dialog, 'performance_mode')
+        assert window.settings.load_performance().mode == "Автоматический"
+    finally:
+        dialog.close(); window.close()
 
 
-def test_text_page_profile_change_syncs_file_page_and_settings() -> None:
+def test_text_page_device_change_syncs_file_page_and_settings():
     app = QApplication.instance() or QApplication([])
-    old_organization, old_application = app.organizationName(), app.applicationName()
-    app.setOrganizationName("CHOPIK Team")
-    app.setApplicationName("TreeTranslateTests")
     window = MainWindow()
-    window.text_page.mode.combo.set_clean_mode("Эконом")
-    window.text_page.mode.combo.set_clean_mode("Максимум")
-    assert window.preferences.profile == "Максимум"
-    assert window.file_page.mode.combo.clean_mode() == "Максимум"
-    assert window.settings.load_performance().mode == "Максимум"
-    window.close()
-    app.setOrganizationName(old_organization)
-    app.setApplicationName(old_application)
+    try:
+        for button in window.text_page.acceleration.group.buttons():
+            if button.text() == 'Auto': button.click()
+        assert window.preferences.device == 'Auto'
+        assert window.file_page.acceleration.selected() == 'Auto'
+        assert window.settings.load_performance().device == 'Auto'
+    finally: window.close()
 
 
 def test_stale_text_request_never_overwrites_latest_input() -> None:

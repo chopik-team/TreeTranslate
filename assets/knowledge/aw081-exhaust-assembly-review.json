@@ -1,0 +1,47 @@
+{
+  "revision": "AW0.81",
+  "references_evaluation_only": true,
+  "review_origin": "USER_TECHNICAL_REVIEW",
+  "review_source": "User OEM clarification, 2026-10-04: two components removed together as one assembly; retain separate component concepts.",
+  "manuals": {
+    "exhaust": {
+      "verification": "CN7C G 1.5 MPI / catalytic converter repair / UCC: explicit user clarification of 催化转化器&中央消声器; no Frozen A input."
+    }
+  },
+  "entries": [
+    {
+      "source": "中央消声器",
+      "semantic_key": "center_muffler",
+      "target": "центральный глушитель",
+      "genitive": "центрального глушителя",
+      "accusative": "центральный глушитель",
+      "subdomains": ["engine", "emissions"],
+      "subdomain": "emissions",
+      "manual": "exhaust"
+    },
+    {
+      "source": "催化转化器&中央消声器",
+      "semantic_key": "catalytic_converter_and_center_muffler_assembly",
+      "target": "каталитический нейтрализатор и центральный глушитель в сборе",
+      "genitive": "каталитического нейтрализатора и центрального глушителя в сборе",
+      "accusative": "каталитический нейтрализатор и центральный глушитель в сборе",
+      "subdomains": ["engine", "emissions"],
+      "subdomain": "emissions",
+      "manual": "exhaust",
+      "assembly_components": ["catalytic_converter", "center_muffler"],
+      "operation_unit": "ONE_ASSEMBLY_TWO_COMPONENTS"
+    }
+  ],
+  "templates": [
+    {
+      "id": "aw081-remove-exhaust-assembly",
+      "source": "拆卸{X}。",
+      "target": "Снимите {X}.",
+      "forms": {"X": "accusative"},
+      "allowed_slots": ["催化转化器&中央消声器"],
+      "subdomains": ["engine", "emissions"],
+      "types": ["PROCEDURE_STEP"],
+      "action": "REMOVE"
+    }
+  ]
+}

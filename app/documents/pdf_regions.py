@@ -40,7 +40,7 @@ def assign_regions(page, objects, segments):
         # Neighboring columns form a boundary even without a vector grid.
         neighbors = [b.bbox[0] for b in segments if b is not s and b.bbox[0] > r + 12
                      and b.bbox[1] < t and b.bbox[3] > y]
-        if neighbors:
+        if neighbors and not enclosed:
             right = min(right, min(neighbors) - 9)
         bottom = max(bottoms) + 1.5 if bottoms else bounds[1] + 22
         top = min(tops) - 1.5 if tops else bounds[3] - 22
@@ -60,9 +60,9 @@ def assign_regions(page, objects, segments):
         # Separate table cells and warning boxes; keep all their vector edges.
         s.region_kind = 'table_cell' if enclosed and right-left < (bounds[2]-bounds[0])*.65 else 'warning' if enclosed else 'paragraph'
         if s.region_kind == 'paragraph':
-            if re.match(r'^\d+[.)РіР‚Рѓ]', s.text):
+            if re.match(r'^\d+[.)、]', s.text):
                 s.region_kind = 'numbered_step'
-            elif re.match(r'^[РІР‚СћРІвЂ”РЏРІвЂ“Р„]', s.text):
+            elif re.match(r'^[•●▪–-]\s*', s.text):
                 s.region_kind = 'bullet'
             elif y < bounds[1] + 55:
                 s.region_kind = 'footer'
@@ -77,7 +77,7 @@ def assign_regions(page, objects, segments):
                 s.region_key += (round(x/12)*12,)
 
 
-def flow_boxes(segments, fonts):
+def flow_boxes(segments, fonts, prepared_faces=None):
     """Allocate a column between fixed graphics; move following text only there.
 
     Preserve original top positions unless a preceding paragraph needs more room.
@@ -85,15 +85,37 @@ def flow_boxes(segments, fonts):
     """
     from app.documents.pdf_layout import wrap
     groups = defaultdict(list)
+    fixed = [s for s in segments if s.translated is None or s.translated==s.text or s.rotation
+             or prepared_faces is not None and s.block_id not in prepared_faces]
     for s in segments:
         if not s.rotation and s.available_bbox and s.translated != s.text:
-            groups[s.region_key or s.block_id].append(s)
+            left, bottom, right, top = s.available_bbox
+            original_bottom, original_top = bottom, top
+            for anchor in fixed:
+                if anchor is s or not overlap_x((left,bottom,right,top),anchor.bbox):
+                    continue
+                if anchor.bbox[1] >= s.bbox[3]-.5:
+                    top = min(top,anchor.bbox[1]-1.5)
+                elif anchor.bbox[3] <= s.bbox[1]+.5:
+                    bottom = max(bottom,anchor.bbox[3]+1.5)
+            s.available_bbox = (left,bottom,right,top)
+            # A retained source block splits the column into separate flow
+            # bands. It cannot move with the translated paragraphs around it.
+            groups[(s.region_key or s.block_id,
+                    bottom if bottom!=original_bottom else None,
+                    top if top!=original_top else None)].append(s)
     for group in groups.values():
+        if prepared_faces is not None and any(s.block_id not in prepared_faces for s in group):
+            # Keep the original rectangles of a group containing a preserved
+            # block. Other translated blocks must not flow over its source text
+            # or raster; fitting/continuations still handle those blocks.
+            continue
         group.sort(key=lambda s: (-s.bbox[3], s.bbox[0]))
         cursor = group[0].available_bbox[3]
         sizes = {s.block_id: max(8, s.font_size) for s in group}
         def height(s, size):
-            face = fonts.resolve((s.translated or s.text) + '[...]')
+            face = (prepared_faces[s.block_id] if prepared_faces is not None
+                    else fonts.resolve((s.translated or s.text) + '[...]'))
             a, d = face.vertical(s.translated or s.text)
             lines = wrap(s.translated or s.text, face, size, s.available_bbox[2]-s.available_bbox[0])
             return (a-d)*size + max(0,len(lines)-1)*max(1.2,a-d+.1)*size + 1

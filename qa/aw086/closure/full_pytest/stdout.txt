@@ -1,0 +1,64 @@
+........................................................................ [  5%]
+........................................................................ [ 11%]
+........................................................................ [ 16%]
+........................................................................ [ 22%]
+........................................................................ [ 28%]
+........................................................................ [ 33%]
+........................................................................ [ 39%]
+........................................................................ [ 45%]
+........................................................................ [ 50%]
+........................................................................ [ 56%]
+........................................................................ [ 61%]
+...................................................F.................... [ 67%]
+........................................................................ [ 73%]
+........................................................................ [ 78%]
+........................................................................ [ 84%]
+............F........................................................... [ 90%]
+........................................................................ [ 95%]
+......................................................                   [100%]
+================================== FAILURES ===================================
+________ test_generated_snapshot_matches_actual_bundled_data_and_audit ________
+
+    def test_generated_snapshot_matches_actual_bundled_data_and_audit():
+        snapshot = load_support()
+>       assert snapshot == build_snapshot()
+E       AssertionError: assert {'schema': 1,....}, ...], ...} == {'schema': 1,....}, ...], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'version': 'AW 0.8.3'} != {'version': 'AW0.86'}
+E         {'history': [{'version': 'AW 0.7.4', 'source': 'docs/qa/aw074/packs.json', 'counts': {'zh': {'technical_entries': 4402...e': {'technical_entries': None, 'dictionary_entries': None, 'bilingual_entries': None, 'usage_examples': None}, ...}}]} != {'history': [{'version': 'AW 0.7.4', 'source': 'docs/qa/aw074/packs.json', 'counts': {'zh': {'technical_entries': 4402...e': {'technical_entries': None, 'dictionary_entries': None, 'bilingual_entries': None, 'usage_examples': None}, ...}}]}
+E         Use -v to get more diff
+
+tests\test_language_support_ux.py:17: AssertionError
+____________________ test_real_qt_gpu_window_exits_cleanly ____________________
+
+local_engine = <app.translation_memory.knowledge.TranslationKnowledgeEngine object at 0x0000022B32419670>
+
+    def test_real_qt_gpu_window_exits_cleanly(local_engine):
+        if sys.platform != "win32" or not local_engine.devices.gpu_available():
+            pytest.skip("Native Windows CUDA UI smoke requires a CUDA device")
+        env = dict(os.environ, QT_QPA_PLATFORM="windows", PYTHONIOENCODING="utf-8", PYTHONFAULTHANDLER="1")
+        run = subprocess.run([sys.executable, "tools/smoke_translation_ui.py"], capture_output=True, text=True,
+                             encoding="utf-8", timeout=45, env=env)
+>       assert run.returncode == 0, f"Native exit code {run.returncode}\n{run.stdout}\n{run.stderr}"
+E       AssertionError: Native exit code 1
+E         GUI translated backend=m2m100 device=cuda source=zh
+E         GUI translated backend=m2m100 device=cuda source=zh
+E         
+E         Traceback (most recent call last):
+E           File "C:\TreeTranslate\tools\smoke_translation_ui.py", line 74, in <module>
+E             main()
+E           File "C:\TreeTranslate\tools\smoke_translation_ui.py", line 65, in main
+E             assert not errors, errors
+E                    ^^^^^^^^^^
+E         AssertionError: ['UI translation timed out']
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\TreeTranslate\\.venv\\Scripts\\python.exe', 'tools/smoke_translation_ui.py'], returncode=1...e 65, in main\n    assert not errors, errors\n           ^^^^^^^^^^\nAssertionError: [\'UI translation timed out\']\n').returncode
+
+tests\test_real_translation.py:124: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_language_support_ux.py::test_generated_snapshot_matches_actual_bundled_data_and_audit
+FAILED tests/test_real_translation.py::test_real_qt_gpu_window_exits_cleanly
+2 failed, 1276 passed in 654.19s (0:10:54)

@@ -1,0 +1,349 @@
+{
+  "totals": {
+    "ru": 4330,
+    "sqlite_bytes": 8155136,
+    "zh": 4402,
+    "total_runtime_bytes": 22894244
+  },
+  "packs": [
+    {
+      "pack_id": "automotive-ru-zh-cc-by-4-0",
+      "entries": 49,
+      "sqlite_bytes": 73728,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "automotive-ru-zh-cc0-1-0",
+      "entries": 91,
+      "sqlite_bytes": 98304,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "automotive-zh-ru-cc-by-4-0",
+      "entries": 49,
+      "sqlite_bytes": 61440,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "automotive-zh-ru-cc0-1-0",
+      "entries": 91,
+      "sqlite_bytes": 110592,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "chemistry-engineering-ru-zh-cc-by-4-0",
+      "entries": 4,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 4,
+      "lookup_found": 4
+    },
+    {
+      "pack_id": "chemistry-engineering-ru-zh-cc0-1-0",
+      "entries": 141,
+      "sqlite_bytes": 143360,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "chemistry-engineering-zh-ru-cc-by-4-0",
+      "entries": 4,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 4,
+      "lookup_found": 4
+    },
+    {
+      "pack_id": "chemistry-engineering-zh-ru-cc0-1-0",
+      "entries": 141,
+      "sqlite_bytes": 151552,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "computer-hardware-ru-zh-cc-by-4-0",
+      "entries": 3,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 3,
+      "lookup_found": 3
+    },
+    {
+      "pack_id": "computer-hardware-ru-zh-cc0-1-0",
+      "entries": 179,
+      "sqlite_bytes": 159744,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "computer-hardware-zh-ru-cc-by-4-0",
+      "entries": 3,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 3,
+      "lookup_found": 3
+    },
+    {
+      "pack_id": "computer-hardware-zh-ru-cc0-1-0",
+      "entries": 179,
+      "sqlite_bytes": 200704,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electrical-ru-zh-cc-by-4-0",
+      "entries": 5,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electrical-ru-zh-cc0-1-0",
+      "entries": 31,
+      "sqlite_bytes": 57344,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electrical-zh-ru-cc-by-4-0",
+      "entries": 5,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electrical-zh-ru-cc0-1-0",
+      "entries": 33,
+      "sqlite_bytes": 65536,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electronics-ru-zh-cc-by-4-0",
+      "entries": 7,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electronics-ru-zh-cc0-1-0",
+      "entries": 306,
+      "sqlite_bytes": 245760,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electronics-zh-ru-cc-by-4-0",
+      "entries": 7,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "electronics-zh-ru-cc0-1-0",
+      "entries": 308,
+      "sqlite_bytes": 286720,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "industrial-safety-ru-zh-cc-by-4-0",
+      "entries": 11,
+      "sqlite_bytes": 49152,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "industrial-safety-ru-zh-cc0-1-0",
+      "entries": 1,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 1,
+      "lookup_found": 1
+    },
+    {
+      "pack_id": "industrial-safety-zh-ru-cc-by-4-0",
+      "entries": 11,
+      "sqlite_bytes": 49152,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "industrial-safety-zh-ru-cc0-1-0",
+      "entries": 1,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 1,
+      "lookup_found": 1
+    },
+    {
+      "pack_id": "manufacturing-ru-zh-cc0-1-0",
+      "entries": 142,
+      "sqlite_bytes": 135168,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "manufacturing-zh-ru-cc0-1-0",
+      "entries": 146,
+      "sqlite_bytes": 151552,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "materials-science-ru-zh-cc-by-4-0",
+      "entries": 5,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "materials-science-ru-zh-cc0-1-0",
+      "entries": 568,
+      "sqlite_bytes": 397312,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "materials-science-zh-ru-cc-by-4-0",
+      "entries": 6,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "materials-science-zh-ru-cc0-1-0",
+      "entries": 583,
+      "sqlite_bytes": 462848,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "measurement-ru-zh-cc-by-4-0",
+      "entries": 133,
+      "sqlite_bytes": 139264,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "measurement-ru-zh-cc0-1-0",
+      "entries": 248,
+      "sqlite_bytes": 204800,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "measurement-zh-ru-cc-by-4-0",
+      "entries": 136,
+      "sqlite_bytes": 131072,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "measurement-zh-ru-cc0-1-0",
+      "entries": 253,
+      "sqlite_bytes": 229376,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "mechanical-engineering-ru-zh-cc0-1-0",
+      "entries": 330,
+      "sqlite_bytes": 274432,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "mechanical-engineering-zh-ru-cc0-1-0",
+      "entries": 338,
+      "sqlite_bytes": 335872,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "metallurgy-ru-zh-cc-by-4-0",
+      "entries": 7,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "metallurgy-ru-zh-cc0-1-0",
+      "entries": 137,
+      "sqlite_bytes": 126976,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "metallurgy-zh-ru-cc-by-4-0",
+      "entries": 8,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "metallurgy-zh-ru-cc0-1-0",
+      "entries": 142,
+      "sqlite_bytes": 143360,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "software-ru-zh-cc-by-4-0",
+      "entries": 1,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 1,
+      "lookup_found": 1
+    },
+    {
+      "pack_id": "software-ru-zh-cc0-1-0",
+      "entries": 340,
+      "sqlite_bytes": 266240,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "software-zh-ru-cc-by-4-0",
+      "entries": 1,
+      "sqlite_bytes": 40960,
+      "lookup_sample": 1,
+      "lookup_found": 1
+    },
+    {
+      "pack_id": "software-zh-ru-cc0-1-0",
+      "entries": 342,
+      "sqlite_bytes": 323584,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "technical-core-ru-zh-cc-by-4-0",
+      "entries": 652,
+      "sqlite_bytes": 512000,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "technical-core-ru-zh-cc0-1-0",
+      "entries": 939,
+      "sqlite_bytes": 643072,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "technical-core-zh-ru-cc-by-4-0",
+      "entries": 658,
+      "sqlite_bytes": 487424,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    },
+    {
+      "pack_id": "technical-core-zh-ru-cc0-1-0",
+      "entries": 957,
+      "sqlite_bytes": 782336,
+      "lookup_sample": 5,
+      "lookup_found": 5
+    }
+  ],
+  "alias_collisions": [],
+  "raw_data_absent": true,
+  "checksums_and_integrity": true
+}

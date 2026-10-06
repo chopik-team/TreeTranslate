@@ -1,0 +1,18 @@
+ M CHANGELOG.md
+ M README.md
+ M app/config/constants.py
+ M app/controllers/translation_ui_controller.py
+ M app/documents/job.py
+ M app/engine/factory.py
+ M app/engine/types.py
+ M app/gui/dialogs/changelog_dialog.py
+ M app/services/hybrid_translation_service.py
+ M docs/NEXT_CYCLE.md
+?? app/translation_memory/
+?? assets/config/translation_memory.json
+?? docs/AW0.7_TRANSLATION_MEMORY_REPORT.md
+?? docs/qa/aw07/
+?? tests/test_translation_memory.py
+?? tests/test_translation_memory_documents.py
+?? tools/benchmark_translation_memory.py
+?? tools/translation_memory.py

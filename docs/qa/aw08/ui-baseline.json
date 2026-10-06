@@ -1,0 +1,100 @@
+{
+  "startup_to_ui_ms": 1369.3862999789417,
+  "idle_rss_mb": 152.63671875,
+  "dialogs": {
+    "about": {
+      "samples_ms": [
+        263.79669999005273,
+        252.88159999763593,
+        256.50769998901524
+      ],
+      "median_ms": 256.50769998901524,
+      "size": [
+        900,
+        987
+      ]
+    },
+    "settings": {
+      "samples_ms": [
+        94.00350000942126,
+        86.96630000486039,
+        80.4354999854695
+      ],
+      "median_ms": 86.96630000486039,
+      "size": [
+        980,
+        690
+      ]
+    }
+  },
+  "workloads": [
+    {
+      "kind": "text",
+      "iteration": 0,
+      "seconds": 0.7825809000059962,
+      "heartbeat_ticks": 78,
+      "max_heartbeat_gap_ms": 14.440699975239113,
+      "rss_mb": 616.9140625
+    },
+    {
+      "kind": "text",
+      "iteration": 1,
+      "seconds": 0.12725260001025163,
+      "heartbeat_ticks": 13,
+      "max_heartbeat_gap_ms": 10.050699987914413,
+      "rss_mb": 617.14453125
+    },
+    {
+      "kind": "text",
+      "iteration": 2,
+      "seconds": 0.10926969998399727,
+      "heartbeat_ticks": 11,
+      "max_heartbeat_gap_ms": 10.993200005032122,
+      "rss_mb": 617.234375
+    },
+    {
+      "kind": "text",
+      "iteration": 3,
+      "seconds": 0.11320330001763068,
+      "heartbeat_ticks": 11,
+      "max_heartbeat_gap_ms": 11.360500007867813,
+      "rss_mb": 617.23828125
+    },
+    {
+      "kind": "text",
+      "iteration": 4,
+      "seconds": 0.1188966000045184,
+      "heartbeat_ticks": 12,
+      "max_heartbeat_gap_ms": 11.494000005768612,
+      "rss_mb": 617.23828125
+    },
+    {
+      "kind": "docx",
+      "state": "JobState.COMPLETED",
+      "seconds": 1.3964519000146538,
+      "heartbeat_ticks": 140,
+      "max_heartbeat_gap_ms": 15.492200007429346,
+      "rss_mb": 664.8359375
+    },
+    {
+      "kind": "pdf",
+      "state": "JobState.COMPLETED",
+      "seconds": 0.8980098000029102,
+      "heartbeat_ticks": 65,
+      "max_heartbeat_gap_ms": 61.66569999186322,
+      "rss_mb": 713.859375
+    },
+    {
+      "kind": "ocr",
+      "state": "JobState.COMPLETED",
+      "seconds": 11.51866629999131,
+      "heartbeat_ticks": 1122,
+      "max_heartbeat_gap_ms": 43.799899984151125,
+      "rss_mb": 719.6875
+    }
+  ],
+  "cancel_text_seconds": 3.1242334000125993,
+  "rss_after_cancel_mb": 719.5,
+  "idle_close_seconds": 0.05197619998943992,
+  "rss_after_close_mb": 719.55078125
+}

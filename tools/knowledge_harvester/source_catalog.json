@@ -1,0 +1,61 @@
+{
+  "wikidata": {
+    "source_id": "wikidata",
+    "source_url": "https://www.wikidata.org/",
+    "license": "CC0-1.0",
+    "redistribution_status": "APPROVED_FOR_REDISTRIBUTION",
+    "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "license_checked_at": "2026-09-25",
+    "attribution": "Wikidata contributors; structured entity data, transformed by TreeTranslate. Attribution appreciated, not required by CC0.",
+    "independence_group": "wikidata",
+    "languages": [
+      "zh",
+      "ru",
+      "en"
+    ]
+  },
+  "agrovoc": {
+    "source_id": "agrovoc",
+    "source_url": "https://agrovoc.fao.org/",
+    "license": "CC-BY-4.0",
+    "redistribution_status": "APPROVED_FOR_REDISTRIBUTION",
+    "license_url": "https://www.fao.org/agrovoc/maintenance",
+    "license_checked_at": "2026-09-25",
+    "attribution": "FAO, AGROVOC. ZH/RU/EN content only; normalized and selected by TreeTranslate. Changes indicated; no FAO endorsement.",
+    "independence_group": "fao-agrovoc",
+    "languages": [
+      "zh",
+      "ru",
+      "en"
+    ]
+  },
+  "cedict": {
+    "source_id": "cedict",
+    "source_url": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+    "license": "CC-BY-SA-4.0",
+    "redistribution_status": "APPROVED_FOR_REDISTRIBUTION",
+    "license_url": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+    "license_checked_at": "2026-09-25",
+    "attribution": "CC-CEDICT contributors / MDBG. Derived terminology data must retain attribution and CC-BY-SA-4.0. No scraping of dictionary pages; local published dump only.",
+    "independence_group": "cc-cedict",
+    "languages": [
+      "zh",
+      "en"
+    ]
+  },
+  "wiktionary": {
+    "source_id": "wiktionary",
+    "source_url": "https://en.wiktionary.org/",
+    "license": "CC-BY-SA-4.0",
+    "redistribution_status": "REVIEW_REQUIRED",
+    "license_url": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+    "license_checked_at": "2026-09-24",
+    "attribution": "Wiktionary contributors. Structured extractor revision, page/revision attribution and compatible derivative license must be audited for the selected dump before redistribution.",
+    "independence_group": "wiktionary",
+    "languages": [
+      "zh",
+      "ru",
+      "en"
+    ]
+  }
+}

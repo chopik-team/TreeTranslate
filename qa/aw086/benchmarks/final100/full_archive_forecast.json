@@ -1,0 +1,62 @@
+{
+  "scenarios": {
+    "optimistic": {
+      "seconds": 385334.41490463156,
+      "hours": 107.03733747350877,
+      "days": 4.459889061396199
+    },
+    "typical": {
+      "seconds": 425800.0183170159,
+      "hours": 118.27778286583775,
+      "days": 4.92824095274324
+    },
+    "conservative": {
+      "seconds": 472556.8398312387,
+      "hours": 131.26578884201075,
+      "days": 5.469407868417115
+    },
+    "direct_linear": {
+      "seconds": 245876.17836486,
+      "hours": 68.29893843468334,
+      "days": 2.845789101445139
+    }
+  },
+  "fixed_seconds": 0,
+  "scan_seconds": 3.1593415000024834,
+  "weighted_seconds": 425796.8589755159,
+  "weighted_ocr_seconds": 82399.76884256022,
+  "bootstrap_p10": 385334.41490463156,
+  "bootstrap_p90": 472556.8398312387,
+  "failure_adjustment_seconds": 0.0,
+  "latency_sum_seconds": 2466.0522857000024,
+  "parallel_overlap_ratio": 1.7262032528503226,
+  "methodology": "Exact old source formula, seed 81, 2000 family bootstraps; optimistic -25% weighted OCR; conservative +50% OCR and up to 10% fewer early failures",
+  "limitation": "New admitted-to-canonical-package document latency can overlap across pipeline workers. Exact historical scenario formula retains that overlap and queue waits; scenario sums are not direct production throughput. Direct linear forecast uses actual wall with concurrency included.",
+  "historical_formula_replay": "PASS",
+  "comparison": {
+    "optimistic": {
+      "old_hours": 188.22832390519144,
+      "new_hours": 107.03733747350877,
+      "saved_hours": 81.19098643168267,
+      "saved_days": 3.382957767986778
+    },
+    "typical": {
+      "old_hours": 229.50983164705343,
+      "new_hours": 118.27778286583775,
+      "saved_hours": 111.23204878121568,
+      "saved_days": 4.63466869921732
+    },
+    "conservative": {
+      "old_hours": 303.9334322015724,
+      "new_hours": 131.26578884201075,
+      "saved_hours": 172.66764335956162,
+      "saved_days": 7.194485139981734
+    },
+    "direct_linear": {
+      "old_hours": 228.697910215975,
+      "new_hours": 68.29893843468334,
+      "saved_hours": 160.39897178129166,
+      "saved_days": 6.683290490887153
+    }
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "source_id": "cedict-20260923",
+    "source_url": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+    "license": "CC-BY-SA-4.0",
+    "redistribution_status": "APPROVED_FOR_REDISTRIBUTION",
+    "license_url": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+    "license_checked_at": "2026-09-25",
+    "attribution": "CC-CEDICT contributors / MDBG. Derived terminology data must retain attribution and CC-BY-SA-4.0. No scraping of dictionary pages; local published dump only.",
+    "independence_group": "cc-cedict",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "revision": "2026-09-23T10:03:34Z; entries=125101",
+    "acquired_at": "2026-09-25",
+    "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687",
+    "metadata_file": "build/aw073/sources/cedict/source.json",
+    "metadata_sha256": "44944950127b84bc5a406c7be1d246744514ed93936fb532b89a9d62b75de2f1"
+  },
+  {
+    "source_id": "agrovoc-20260907",
+    "source_url": "https://agrovoc.fao.org/",
+    "license": "CC-BY-4.0",
+    "redistribution_status": "APPROVED_FOR_REDISTRIBUTION",
+    "license_url": "https://www.fao.org/agrovoc/maintenance",
+    "license_checked_at": "2026-09-25",
+    "attribution": "FAO, AGROVOC. ZH/RU/EN content only; normalized and selected by TreeTranslate. Changes indicated; no FAO endorsement.",
+    "independence_group": "fao-agrovoc",
+    "languages": [
+      "zh",
+      "ru",
+      "en"
+    ],
+    "revision": "2026-09-07T10:09:21Z",
+    "acquired_at": "2026-09-25",
+    "input_sha256": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd",
+    "archive_url": "https://agrovoc.fao.org/latestAgrovoc/agrovoc_lod.nt.zip",
+    "archive_sha256": "dca2c10e1ac797ac6a8f989efbcfd73815b7867892a36ec7d353253e5f618b30",
+    "derivation": "prepare_agrovoc: materialized SKOS ZH/RU/EN, no inferred bilingual translations",
+    "metadata_file": "build/aw073/sources/agrovoc/source.json",
+    "metadata_sha256": "dd9904c14055fd9ba13fdf6c09872fc9b4fd935ef5858d2e03f06d652af4fca3"
+  },
+  {
+    "acquired_at": "2026-09-25T03:56:37.874372+00:00",
+    "attribution": "Wikidata contributors; structured entity data, transformed by TreeTranslate. Attribution appreciated, not required by CC0.",
+    "independence_group": "wikidata",
+    "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+    "languages": [
+      "zh",
+      "ru",
+      "en"
+    ],
+    "license": "CC0-1.0",
+    "license_checked_at": "2026-09-25",
+    "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "redistribution_status": "APPROVED_FOR_REDISTRIBUTION",
+    "revision": "API technical subtree subset; individual lastrevid retained",
+    "source_id": "wikidata-technical-20260925",
+    "source_url": "https://www.wikidata.org/",
+    "metadata_file": "build/aw073/sources/wikidata-expanded/source.json",
+    "metadata_sha256": "4f349ee12816d5cf188b6883a1e46d9364a434c3f15fbe1acf8c40e26f93e3e9",
+    "acquisition_summary": {
+      "plan": {
+        "depth": 3,
+        "per_domain": 1500,
+        "policy": "299a03eb94cfa3a97aac716507647be0ed97471a6bb98aed8db9ba2b4caa784a",
+        "query_syntax": "haswbstatement-pipe-v1",
+        "seed_sha256": "c273fe564f580a72b8f1bcd11e6af456f912111c7de2db414cf272ce87bef73e"
+      },
+      "domains": {
+        "automotive": 1500,
+        "chemistry-engineering": 1500,
+        "computer-hardware": 1500,
+        "electrical": 113,
+        "electronics": 1500,
+        "industrial-safety": 5,
+        "manufacturing": 887,
+        "materials-science": 1500,
+        "measurement": 1500,
+        "mechanical-engineering": 1500,
+        "metallurgy": 611,
+        "software": 1500,
+        "technical-core": 1500
+      },
+      "missing_ids": [],
+      "query_pages": 276,
+      "entity_batches": 288
+    }
+  }
+]

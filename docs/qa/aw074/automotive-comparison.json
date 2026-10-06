@@ -1,0 +1,51 @@
+{
+  "aw073": {
+    "segments": 6,
+    "matched_terms": 0,
+    "matched_segments": 0,
+    "enforced": 0,
+    "fallback": 0,
+    "before_fidelity": 2,
+    "after_fidelity": 2
+  },
+  "aw074": {
+    "segments": 6,
+    "matched_terms": 0,
+    "matched_segments": 0,
+    "enforced": 0,
+    "fallback": 0,
+    "before_fidelity": 2,
+    "after_fidelity": 2
+  },
+  "before": {
+    "冷却液": [],
+    "冷却剂": [
+      {
+        "source": "冷却剂",
+        "target": "охлаждающая жидкость",
+        "pack": "automotive-zh-ru-cc0-1-0",
+        "full_term": true
+      }
+    ],
+    "散热器": [],
+    "散热器盖": [],
+    "连接器": [],
+    "怠速": []
+  },
+  "after": {
+    "冷却液": [],
+    "冷却剂": [
+      {
+        "source": "冷却剂",
+        "target": "охлаждающая жидкость",
+        "pack": "automotive-zh-ru-cc0-1-0",
+        "full_term": true
+      }
+    ],
+    "散热器": [],
+    "散热器盖": [],
+    "连接器": [],
+    "怠速": []
+  },
+  "translated_text_unchanged": true
+}

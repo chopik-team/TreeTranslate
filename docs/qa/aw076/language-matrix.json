@@ -1,0 +1,4104 @@
+{
+  "schema": 1,
+  "audit_date": "2026-09-27",
+  "scope": "100 M2M100 model codes; W1.0 release-facing UI is limited to seven unique codes",
+  "release_language_codes": [
+    "ru",
+    "zh",
+    "en",
+    "de",
+    "ja",
+    "es",
+    "fr"
+  ],
+  "release_ui_labels": [
+    "Русский",
+    "Китайский",
+    "Английский",
+    "Английский (США)",
+    "Немецкий",
+    "Японский",
+    "Испанский",
+    "Французский"
+  ],
+  "model_language_count": 100,
+  "language_status_counts": {
+    "RELEASE_READY": 7,
+    "EXPERIMENTAL": 83,
+    "BROKEN": 10,
+    "UNSUPPORTED": 0
+  },
+  "release_direction_status_counts": {
+    "RELEASE_READY": 42,
+    "EXPERIMENTAL": 0,
+    "BROKEN": 0,
+    "UNSUPPORTED": 0
+  },
+  "runtime_size_before_bytes": 1386564347,
+  "runtime_size_after_bytes": 1386564347,
+  "languages": [
+    {
+      "code": "af",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 1884.39,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 82.46,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "am",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5252.49,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 12703.2,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ar",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 386.25,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 357.34,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ast",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 298.48,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 209.17,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "az",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 294.64,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 237.97,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ba",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 583.83,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 392.68,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "be",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 357.68,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 431.46,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "bg",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 316.9,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 269.43,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "bn",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 331.48,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 291.32,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "br",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 271.36,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 238.32,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "bs",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 342.66,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 333.55,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ca",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 367.05,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 292.38,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ceb",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 399.67,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 285.25,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "cs",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 421.92,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 246.21,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "cy",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 348.05,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 280.64,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "da",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 298.6,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 266.88,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "de",
+      "ui_labels": [
+        "Немецкий"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 384.3,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 237.66,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "de",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "el",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 512.45,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 311.18,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "en",
+      "ui_labels": [
+        "Английский",
+        "Английский (США)"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "passthrough",
+          "duration_ms": 0.0,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "passthrough",
+          "duration_ms": 0.0,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "en",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": true
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "YES",
+      "usage_examples": "YES"
+    },
+    {
+      "code": "es",
+      "ui_labels": [
+        "Испанский"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 320.65,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 291.09,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "es",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "et",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 327.83,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 271.48,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "fa",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 292.2,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 316.17,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ff",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6360.89,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "fi",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 1508.77,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 265.34,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "fr",
+      "ui_labels": [
+        "Французский"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 334.89,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 309.2,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "fr",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "fy",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 316.8,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 316.95,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ga",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6122.59,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 16999.49,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "gd",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 500.76,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 328.04,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "gl",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 246.78,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 277.37,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "gu",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 409.93,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 295.85,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ha",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 318.76,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 354.13,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "he",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 419.74,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 300.7,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "hi",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 468.71,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 261.12,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "hr",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 314.28,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 242.48,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ht",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 268.87,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 214.6,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "hu",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 295.64,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 301.21,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "hy",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 406.0,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 306.31,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "id",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 317.19,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 278.99,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ig",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 482.76,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 332.27,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ilo",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 526.31,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 277.03,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "is",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 353.51,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 335.21,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "it",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 278.02,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 199.54,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ja",
+      "ui_labels": [
+        "Японский"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 333.02,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 252.93,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "ja",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "jv",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 10347.37,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ka",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 1617.11,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 356.6,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "kk",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5522.23,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4031.86,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "km",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 29688.26,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "kn",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 11455.71,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4424.02,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ko",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 9029.76,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6631.22,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "lb",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7580.46,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6859.21,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "lg",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 93111.01,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ln",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 56030.98,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "lo",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 138125.87,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "lt",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6220.83,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 872.27,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "lv",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4977.84,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5404.63,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "mg",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8503.82,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5849.57,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "mk",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6031.28,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5470.68,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ml",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6660.81,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5957.12,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "mn",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5027.74,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4958.69,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "mr",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6176.54,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5657.55,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ms",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6508.78,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5008.79,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "my",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 44193.93,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 324552.82,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ne",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 440.13,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3206.02,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "nl",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7899.84,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3773.67,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "no",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8606.38,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6531.2,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ns",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "outbound_failed"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "oc",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6565.01,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 2920.04,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "or",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7018.05,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4734.31,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "pa",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3769.11,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 2757.09,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "pl",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3081.59,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3049.44,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ps",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 1404.35,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 2323.09,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "pt",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3002.69,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 2839.07,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ro",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 935.54,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 66.5,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ru",
+      "ui_labels": [
+        "Русский"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 82.65,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 80.59,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "ru",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": true
+      },
+      "technical_glossary": "STRONG",
+      "dictionary": "YES",
+      "usage_examples": "YES"
+    },
+    {
+      "code": "sd",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 146.49,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 88.24,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "si",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 113.86,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 74.87,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "sk",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 96.17,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 74.06,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "sl",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 124.28,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 129.62,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "so",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 122.87,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 105.16,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "sq",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 186.86,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 304.71,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "sr",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 156.03,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 113.02,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ss",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 210.16,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 3373.86,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "su",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5025.16,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6473.81,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "sv",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8257.89,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6355.8,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "sw",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7781.0,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 5738.21,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ta",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8874.58,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4980.59,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "th",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 11088.65,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7452.92,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "tl",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7051.98,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6755.86,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "tn",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "outbound_failed"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "tr",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 9875.24,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7058.79,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "uk",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8386.22,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8231.64,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "ur",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 10134.74,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7549.38,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "uz",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7107.07,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6940.55,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "vi",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 8680.68,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 6232.7,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "wo",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 145227.79,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "xh",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 1174.55,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 176.21,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "yi",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 245.6,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 141.75,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "yo",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "BROKEN",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 4484.19,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": false,
+          "backend": "m2m100",
+          "duration_ms": 0.0,
+          "error": "TranslationError"
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "zh",
+      "ui_labels": [
+        "Китайский"
+      ],
+      "ui_available": true,
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 13258.38,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 7727.32,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": true,
+        "detected": "zh",
+        "ok": true
+      },
+      "documents": {
+        "docx": true,
+        "native_pdf": true,
+        "ocr": true
+      },
+      "technical_glossary": "STRONG",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    },
+    {
+      "code": "zu",
+      "ui_labels": [],
+      "ui_available": false,
+      "status": "EXPERIMENTAL",
+      "backend": "m2m100",
+      "route": "direct",
+      "smoke": {
+        "en_to_language": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 37582.4,
+          "error": null
+        },
+        "language_to_en": {
+          "ok": true,
+          "backend": "m2m100",
+          "duration_ms": 260929.45,
+          "error": null
+        }
+      },
+      "auto_detect": {
+        "tested": false,
+        "detected": null,
+        "ok": null
+      },
+      "documents": {
+        "docx": false,
+        "native_pdf": false,
+        "ocr": false
+      },
+      "technical_glossary": "NONE",
+      "dictionary": "NO",
+      "usage_examples": "NO"
+    }
+  ],
+  "directions": [
+    {
+      "source": "ru",
+      "target": "zh",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 7344.39,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ru",
+      "target": "en",
+      "status": "RELEASE_READY",
+      "backend": "argos",
+      "expected_backend": "argos",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 5855.73,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ru",
+      "target": "de",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 11292.18,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ru",
+      "target": "ja",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 7364.61,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ru",
+      "target": "es",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 5866.02,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ru",
+      "target": "fr",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 6901.0,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "zh",
+      "target": "ru",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 6329.41,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "zh",
+      "target": "en",
+      "status": "RELEASE_READY",
+      "backend": "argos",
+      "expected_backend": "argos",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 4700.7,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "zh",
+      "target": "de",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 10972.75,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "zh",
+      "target": "ja",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 6854.44,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "zh",
+      "target": "es",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 6853.21,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "zh",
+      "target": "fr",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 6734.25,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "en",
+      "target": "ru",
+      "status": "RELEASE_READY",
+      "backend": "argos",
+      "expected_backend": "argos",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 6512.73,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "en",
+      "target": "zh",
+      "status": "RELEASE_READY",
+      "backend": "argos",
+      "expected_backend": "argos",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 1123.63,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "en",
+      "target": "de",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 1244.88,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "en",
+      "target": "ja",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 211.11,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "en",
+      "target": "es",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 174.56,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "en",
+      "target": "fr",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 226.41,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "de",
+      "target": "ru",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 211.6,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "de",
+      "target": "zh",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 299.11,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "de",
+      "target": "en",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 301.89,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "de",
+      "target": "ja",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 5298.76,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "de",
+      "target": "es",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 76.29,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "de",
+      "target": "fr",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 85.37,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ja",
+      "target": "ru",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 67.44,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ja",
+      "target": "zh",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 99.12,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ja",
+      "target": "en",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 65.37,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ja",
+      "target": "de",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 146.34,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ja",
+      "target": "es",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 109.15,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "ja",
+      "target": "fr",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 124.3,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "es",
+      "target": "ru",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 158.12,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "es",
+      "target": "zh",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 169.24,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "es",
+      "target": "en",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 114.38,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "es",
+      "target": "de",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 168.61,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "es",
+      "target": "ja",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 185.14,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "es",
+      "target": "fr",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 148.27,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "fr",
+      "target": "ru",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 124.27,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "fr",
+      "target": "zh",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 138.6,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "fr",
+      "target": "en",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 122.63,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "fr",
+      "target": "de",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 153.73,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "fr",
+      "target": "ja",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 132.4,
+      "output_ok": true,
+      "error": null
+    },
+    {
+      "source": "fr",
+      "target": "es",
+      "status": "RELEASE_READY",
+      "backend": "m2m100",
+      "expected_backend": "m2m100",
+      "route": "direct",
+      "fallback": false,
+      "device": "cuda",
+      "duration_ms": 146.99,
+      "output_ok": true,
+      "error": null
+    }
+  ]
+}

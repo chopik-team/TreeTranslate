@@ -1,0 +1,647 @@
+{
+  "schema": 1,
+  "run_id": "25825c3f75a7",
+  "status": "COMPLETED_WITH_FAILURES",
+  "logging_status": "COMPLETE",
+  "total_wall_seconds": 4783.572498500005,
+  "counters": {
+    "model_attempts": 3596,
+    "gpu_attempts": 3511,
+    "cpu_attempts": 85,
+    "gpu_fallback_events": 85,
+    "gpu_oom_events": 0,
+    "processed_segments": 7460,
+    "semantic_segments": 3799,
+    "eligible_semantic_segments": 3799,
+    "model_fallback_segments": 2773,
+    "knowledge_segments": 2253,
+    "direct_known_segments": 864,
+    "unsafe_translation_segments": 195,
+    "source_preserved_segments": 202,
+    "composition_segments": 14,
+    "cross_reference_segments": 5,
+    "model_segments": 1384,
+    "model_calls": 3144,
+    "fallback_events": 127,
+    "unit_guard_events": 71,
+    "warnings": 62155,
+    "negation_guard_events": 110,
+    "template_segments": 137,
+    "documents": 100,
+    "written_documents": 76,
+    "failed_documents": 24,
+    "source_preserved_documents": 24,
+    "source_bytes": 10588668,
+    "output_bytes": 12267222,
+    "source_pages": 157,
+    "protected_or_noise_segments": 3661,
+    "glossary_segments": 2116,
+    "action_guard_events": 5,
+    "condition_guard_events": 3,
+    "object_guard_events": 11
+  },
+  "archive_events": {
+    "inventory": 1,
+    "disk_preflight": 1,
+    "preflight_completed": 1,
+    "document_start": 100,
+    "member_packaged": 100,
+    "validated": 1,
+    "published": 1,
+    "cleanup": 1,
+    "total_documents": 100,
+    "translated_documents": 76,
+    "failed_documents": 24,
+    "source_preserved_documents": 24,
+    "skipped_non_documents": 0,
+    "fatal_errors": 0,
+    "document_category:VALIDATION": 17,
+    "document_category:UNSUPPORTED_STRUCTURE": 6,
+    "document_category:MODEL_LIMITATION": 1,
+    "summary": 1
+  },
+  "document_seconds": {
+    "median": 17.990544000000227,
+    "p90": 127.06206749999546,
+    "p95": 241.2692767000044,
+    "max": 298.2916289999994
+  },
+  "docs_per_hour": 57.19574650238777,
+  "pages_per_hour": 118.15437106414316,
+  "segments_per_second": 0.7941763193076431,
+  "source_mb_per_hour": 7.599614428544613,
+  "translated_mb_per_hour": 8.804332831037852,
+  "peak_tracked_temporary_bytes": 11785430,
+  "temporary_disk_scope": "Current extracted/output member plus growing temporary archive; excludes external OCR/runtime caches.",
+  "model_fallback_rate": 0.7299289286654382,
+  "knowledge_coverage": 0.5930508028428534,
+  "quality_score": null,
+  "coverage_is_not_quality": true,
+  "unavailable_metrics": [
+    "Missing-content/reading-order detection needs a semantic/layout reviewer; null is not zero.",
+    "GPU peak VRAM unavailable until existing CUDA allocator is initialized."
+  ],
+  "total_documents": 100,
+  "translated_documents": 76,
+  "failed_documents": 24,
+  "source_preserved_documents": 24,
+  "skipped_non_documents": 0,
+  "fatal_errors": 0,
+  "document_error_categories": {
+    "VALIDATION": 17,
+    "UNSUPPORTED_STRUCTURE": 6,
+    "MODEL_LIMITATION": 1
+  },
+  "speed_calibration": {
+    "schema": 1,
+    "scope": "100_PDF_SPEED_CALIBRATION_ONLY",
+    "run_id": "25825c3f75a7",
+    "status": "COMPLETED_WITH_FAILURES",
+    "total_wall_seconds": 4783.641141,
+    "production_job_wall_seconds": 4783.572498500005,
+    "preparation_seconds": 5.060420200003136,
+    "processed": 100,
+    "translated": 76,
+    "failed_source_preserved": 24,
+    "fatal": 0,
+    "source_bytes": 10588668,
+    "output_bytes": 12267222,
+    "source_pages": 157,
+    "output_pages": 190,
+    "output_zip": "C:\\TreeTranslate\\qa\\aw081\\speed_calibration_100\\output\\2022_USER_REPAIR_MAINTENANCE_DISASSEMBLE_(CN7C)_CHINAkoreacustomru_SPEED100_ru.zip",
+    "output_zip_sha256": "26cc48eac416ea4b23b0bb5b5f50222353ad8f7e864d07675a199d9b60fb6316",
+    "output_zip_bytes": 11342555,
+    "crc": "PASS",
+    "throughput": {
+      "processed_docs_hour": 75.256481284619,
+      "translated_docs_hour": 57.19492577631044,
+      "source_pages_hour": 118.15267561685184,
+      "output_pages_hour": 142.98731444077612,
+      "processed_segments_second": 1.5594815288423827,
+      "semantic_segments_second": 0.7941649233340766,
+      "source_mib_hour": 7.599505378447,
+      "output_mib_hour": 8.804206493923822
+    },
+    "latency": {
+      "mean": 47.80232880499978,
+      "median": 17.98846109999795,
+      "p50": 17.98846109999795,
+      "p90": 132.62626136999938,
+      "p95": 242.21033557500414,
+      "p99": 298.52607631900077,
+      "max": 299.2585990000007,
+      "scope": "child start through archive append; source ZIP extraction immediately before child tracked separately"
+    },
+    "document_types": {
+      "native": 71,
+      "mixed": 23,
+      "image_only": 6
+    },
+    "ocr_used_count": 34,
+    "stages": {
+      "pdf_open_parse": {
+        "calls": 388,
+        "seconds": 0.05435589997068746,
+        "failures": 0
+      },
+      "segmentation_reassembly": {
+        "calls": 160,
+        "seconds": 0.33126159999665106,
+        "failures": 0
+      },
+      "native_text_extract": {
+        "calls": 160,
+        "seconds": 5.482295299989346,
+        "failures": 0
+      },
+      "ocr_render": {
+        "calls": 120,
+        "seconds": 1.3574749999606865,
+        "failures": 0
+      },
+      "ocr_complexity": {
+        "calls": 120,
+        "seconds": 1.069483899998886,
+        "failures": 0
+      },
+      "ocr_recognize": {
+        "calls": 120,
+        "seconds": 3098.4177329999657,
+        "failures": 0
+      },
+      "ocr_postprocess": {
+        "calls": 120,
+        "seconds": 18.864539299982425,
+        "failures": 0
+      },
+      "hybrid_page_extract": {
+        "calls": 157,
+        "seconds": 3125.640987700026,
+        "failures": 0
+      },
+      "extract.extract_page": {
+        "calls": 317,
+        "seconds": 3125.7036555999366,
+        "failures": 0
+      },
+      "preflight_open_extract": {
+        "calls": 100,
+        "seconds": 3126.691328999994,
+        "failures": 0
+      },
+      "resolve_language": {
+        "calls": 100,
+        "seconds": 0.2006646999871009,
+        "failures": 0
+      },
+      "DocumentProfiler": {
+        "calls": 101,
+        "seconds": 0.0593142999932752,
+        "failures": 0
+      },
+      "document_profile": {
+        "calls": 100,
+        "seconds": 0.06312849999812897,
+        "failures": 0
+      },
+      "knowledge_snapshot": {
+        "calls": 101,
+        "seconds": 5.322032399963064,
+        "failures": 0
+      },
+      "snapshot_build": {
+        "calls": 100,
+        "seconds": 5.289875899987237,
+        "failures": 0
+      },
+      "reopen_cached_extraction": {
+        "calls": 100,
+        "seconds": 1.3191332999776932,
+        "failures": 0
+      },
+      "knowledge_prefetch": {
+        "calls": 115,
+        "seconds": 0.624517600008403,
+        "failures": 0
+      },
+      "segment_classification": {
+        "calls": 7460,
+        "seconds": 0.37106510037119733,
+        "failures": 0
+      },
+      "translation_memory": {
+        "calls": 6602,
+        "seconds": 14.218069200091122,
+        "failures": 0
+      },
+      "glossary_lookup": {
+        "calls": 24682,
+        "seconds": 889.7821226999731,
+        "failures": 0
+      },
+      "template_routing": {
+        "calls": 5967,
+        "seconds": 262.18480739967345,
+        "failures": 6
+      },
+      "m2m100_model_load": {
+        "calls": 35,
+        "seconds": 22.702026700033457,
+        "failures": 0
+      },
+      "m2m100_load_or_reuse": {
+        "calls": 3282,
+        "seconds": 24.69856689995504,
+        "failures": 0
+      },
+      "m2m100_inference": {
+        "calls": 3282,
+        "seconds": 429.7369885001099,
+        "failures": 0
+      },
+      "model_translation": {
+        "calls": 3597,
+        "seconds": 497.22306430015306,
+        "failures": 0
+      },
+      "translation_backend": {
+        "calls": 3597,
+        "seconds": 497.5825133998078,
+        "failures": 0
+      },
+      "semantic_guards": {
+        "calls": 3637,
+        "seconds": 34.56542160001845,
+        "failures": 0
+      },
+      "engine_translation": {
+        "calls": 3063,
+        "seconds": 931.4742559002698,
+        "failures": 1
+      },
+      "pdf_segment_translation": {
+        "calls": 3884,
+        "seconds": 1365.354980699667,
+        "failures": 77
+      },
+      "argos_model_load": {
+        "calls": 58,
+        "seconds": 12.056841499972506,
+        "failures": 0
+      },
+      "argos_inference": {
+        "calls": 315,
+        "seconds": 12.15563630003453,
+        "failures": 0
+      },
+      "path_translation": {
+        "calls": 256,
+        "seconds": 69.64982379999128,
+        "failures": 1
+      },
+      "destination_filename": {
+        "calls": 94,
+        "seconds": 69.72457150000264,
+        "failures": 1
+      },
+      "pdf_font_resolution": {
+        "calls": 124,
+        "seconds": 10.31739790001302,
+        "failures": 0
+      },
+      "pdf_flow_layout": {
+        "calls": 124,
+        "seconds": 5.114039200001571,
+        "failures": 0
+      },
+      "pdf_font_embedding": {
+        "calls": 124,
+        "seconds": 35.62792899996566,
+        "failures": 0
+      },
+      "write.FPDFPage_GenerateContent": {
+        "calls": 122,
+        "seconds": 0.19046440000238363,
+        "failures": 0
+      },
+      "pdf_page_layout_write": {
+        "calls": 124,
+        "seconds": 53.656788200023584,
+        "failures": 0
+      },
+      "pdf_continuations": {
+        "calls": 93,
+        "seconds": 122.88490299997648,
+        "failures": 0
+      },
+      "write.FPDF_SaveAsCopy": {
+        "calls": 93,
+        "seconds": 0.356716599984793,
+        "failures": 0
+      },
+      "pdf_write": {
+        "calls": 93,
+        "seconds": 177.23266169997078,
+        "failures": 0
+      },
+      "document_write": {
+        "calls": 93,
+        "seconds": 177.244475099993,
+        "failures": 0
+      },
+      "pdf_validation": {
+        "calls": 93,
+        "seconds": 1.7979755999767804,
+        "failures": 17
+      },
+      "source_hash_verification": {
+        "calls": 76,
+        "seconds": 0.0196073000333854,
+        "failures": 0
+      },
+      "publication": {
+        "calls": 76,
+        "seconds": 0.044772900007956196,
+        "failures": 0
+      },
+      "document_job": {
+        "calls": 101,
+        "seconds": 9563.042307699994,
+        "failures": 24
+      },
+      "archive_translate": {
+        "calls": 100,
+        "seconds": 4779.50809939998,
+        "failures": 24
+      },
+      "archive_scan_before_start": {
+        "calls": 1,
+        "seconds": 0.04439080000156537,
+        "failures": 0
+      },
+      "archive_validate_input": {
+        "calls": 1,
+        "seconds": 0.0021180999974603765,
+        "failures": 0
+      },
+      "archive_open": {
+        "calls": 2,
+        "seconds": 0.050427600006514695,
+        "failures": 0
+      },
+      "archive_extract": {
+        "calls": 102,
+        "seconds": 0.24960609997651773,
+        "failures": 0
+      },
+      "archive_sample": {
+        "calls": 1,
+        "seconds": 0.22900710000249092,
+        "failures": 0
+      },
+      "archive_profile": {
+        "calls": 1,
+        "seconds": 0.003844599996227771,
+        "failures": 0
+      },
+      "ocr_shutdown": {
+        "calls": 100,
+        "seconds": 27.955290400015656,
+        "failures": 0
+      },
+      "archive_pack_member": {
+        "calls": 76,
+        "seconds": 0.24944699999468867,
+        "failures": 0
+      },
+      "archive_validate_output_members": {
+        "calls": 1,
+        "seconds": 0.039182200001960155,
+        "failures": 0
+      },
+      "archive_validate_output": {
+        "calls": 1,
+        "seconds": 0.047986899997340515,
+        "failures": 0
+      },
+      "archive_publish": {
+        "calls": 1,
+        "seconds": 0.008930800002417527,
+        "failures": 0
+      },
+      "archive_cleanup": {
+        "calls": 1,
+        "seconds": 0.029981199993926566,
+        "failures": 0
+      }
+    },
+    "exclusive_categories": {
+      "extraction": 28.551043699997535,
+      "profiler/classification": 0.43037940036447253,
+      "knowledge snapshot": 5.322032399963064,
+      "OCR": 3098.4177329999657,
+      "TM": 14.218069200091122,
+      "glossary": 889.7821226999731,
+      "templates": 7.361829199413478,
+      "model": 497.22306430015306,
+      "guards": 3.361168600007659,
+      "path other": 1.7326576999112149,
+      "writer": 177.244475099993,
+      "validation": 1.7979755999767804,
+      "archive append": 0.24944699999468867,
+      "other/orchestration": 57.949143100195215
+    },
+    "top5": [
+      {
+        "category": "OCR",
+        "seconds": 3098.4177329999657,
+        "wall_share": 0.6477111559317876
+      },
+      {
+        "category": "glossary",
+        "seconds": 889.7821226999731,
+        "wall_share": 0.18600519906766416
+      },
+      {
+        "category": "model",
+        "seconds": 497.22306430015306,
+        "wall_share": 0.10394238397995939
+      },
+      {
+        "category": "writer",
+        "seconds": 177.244475099993,
+        "wall_share": 0.03705220978656873
+      },
+      {
+        "category": "other/orchestration",
+        "seconds": 57.949143100195215,
+        "wall_share": 0.012114023897720972
+      }
+    ],
+    "model": {
+      "m2m100_real_loads": 35,
+      "m2m100_load_or_reuse": {
+        "calls": 3282,
+        "seconds": 24.69856689995504,
+        "failures": 0
+      },
+      "m2m100_inference": {
+        "calls": 3282,
+        "seconds": 429.7369885001099,
+        "failures": 0
+      },
+      "argos_loads": {
+        "calls": 58,
+        "seconds": 12.056841499972506,
+        "failures": 0
+      },
+      "argos_inference": {
+        "calls": 315,
+        "seconds": 12.15563630003453,
+        "failures": 0
+      },
+      "attempts": 3597,
+      "attempt_failures": 168,
+      "actual_devices": {
+        "cuda": 3512,
+        "cpu": 85
+      },
+      "backend_devices": {
+        "m2m100/cuda": 3281,
+        "argos/cuda": 231,
+        "argos/cpu": 84,
+        "m2m100/cpu": 1
+      },
+      "fallback_attempts": 167,
+      "segment_fallback_events": 127
+    },
+    "ocr": {
+      "seconds": 3098.4177329999657,
+      "wall_share": 0.6477111559317876,
+      "pages": 90,
+      "regions": 120,
+      "documents": 34,
+      "median_document_seconds": 59.90885159999743,
+      "p90_document_seconds": 212.80260072999369,
+      "p95_document_seconds": 227.77113985500216,
+      "scope": "ocr_recognize wall includes existing worker load/recognition/structure; OCR-attempt pages/regions including failures"
+    },
+    "path": {
+      "seconds": 69.64982379999128,
+      "calls": 256,
+      "hits": 0,
+      "misses": 256,
+      "entries": 255,
+      "folder_components": 161,
+      "capacity": 4096,
+      "unique_component_scope": "distinct successful context/language/cache keys, not unique source words"
+    },
+    "routing_diagnostic": {
+      "model_attempts": 3596,
+      "gpu_attempts": 3511,
+      "cpu_attempts": 85,
+      "gpu_fallback_events": 85,
+      "gpu_oom_events": 0,
+      "processed_segments": 7460,
+      "semantic_segments": 3799,
+      "eligible_semantic_segments": 3799,
+      "model_fallback_segments": 2773,
+      "knowledge_segments": 2253,
+      "direct_known_segments": 864,
+      "unsafe_translation_segments": 195,
+      "source_preserved_segments": 202,
+      "composition_segments": 14,
+      "cross_reference_segments": 5,
+      "model_segments": 1384,
+      "model_calls": 3144,
+      "fallback_events": 127,
+      "unit_guard_events": 71,
+      "warnings": 62155,
+      "negation_guard_events": 110,
+      "template_segments": 137,
+      "protected_or_noise_segments": 3661,
+      "glossary_segments": 2116,
+      "action_guard_events": 5,
+      "condition_guard_events": 3,
+      "object_guard_events": 11
+    },
+    "model_fallback_rate": 0.7299289286654382,
+    "knowledge_coverage": 0.5930508028428534,
+    "glossary_counters": {
+      "hits": 23901,
+      "full_segment_hits": 825,
+      "constraint_hits": 2141,
+      "fallbacks": 247,
+      "placeholder_failures": 190,
+      "derived_fluid_constraints": 0
+    },
+    "tm_counters": {
+      "exact_hits": 0,
+      "normalized_hits": 0,
+      "placeholder_hits": 0,
+      "fuzzy_hits": 0,
+      "misses": 14695,
+      "reused": 0
+    },
+    "quality_score": null,
+    "warning_count": 62179,
+    "failure_rate": 0.24,
+    "failure_categories": {
+      "VALIDATION": 17,
+      "UNSUPPORTED_STRUCTURE": 6,
+      "MODEL_LIMITATION": 1
+    },
+    "failure_exceptions": {
+      "PdfError": 17,
+      "IndexError": 6,
+      "TranslationError": 1
+    },
+    "failure_stages": {
+      "validate": 17,
+      "TRANSLATING": 6,
+      "WRITING": 1
+    },
+    "estimates": {
+      "optimistic": {
+        "seconds": 677621.9660586892,
+        "hours": 188.22832390519144,
+        "continuous_days": 7.842846829382976
+      },
+      "typical": {
+        "seconds": 826235.3939293923,
+        "hours": 229.50983164705343,
+        "continuous_days": 9.56290965196056
+      },
+      "conservative": {
+        "seconds": 1094160.3559256606,
+        "hours": 303.9334322015724,
+        "continuous_days": 12.66389300839885
+      }
+    },
+    "forecast_method": {
+      "family_weighted_latency": true,
+      "fixed_seconds": 3.408260500022152,
+      "full_scan_seconds": 3.1593415000024834,
+      "weighted_source_pages_estimate": 26841.34356147285,
+      "docs_hour_proxy_hours": 228.697910215975,
+      "pages_hour_proxy_hours": 227.17508022005836,
+      "bytes_hour_proxy_hours": 240.16724942020613,
+      "resampling_seed": 81,
+      "resampling_repetitions": 2000,
+      "bootstrap_p10_seconds": 677621.9660586892,
+      "bootstrap_p90_seconds": 980853.7643672331,
+      "optimistic_ocr_assumption": "25% less OCR work than weighted sample",
+      "conservative_ocr_assumption": "50% more OCR work and up to 10 percentage points fewer early failures",
+      "inference_limit": "scenario band, not a confidence interval: deterministic size quantiles, rare strata with 1-2 PDFs and unmeasured corpus page/region count"
+    },
+    "verdict": "FULL LIVE RUN TOO SLOW / OPTIMIZATION ADVISED",
+    "acceptable_typical_hours": 24,
+    "source_immutable": true,
+    "production_unchanged": true,
+    "logging_status": "COMPLETE",
+    "observer_errors": [],
+    "semantic_regrade": false,
+    "training": false,
+    "full_corpus_run": false
+  }
+}

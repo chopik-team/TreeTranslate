@@ -1,0 +1,618 @@
+{
+  "loads": [
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5704027000001588,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.3188097000002017,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.27942799999982526,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5515252000004693,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22412710000025982,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5165409000001091,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.226539799999955,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.19072219999998197,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5342841000001499,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21632099999987986,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5065934000003836,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22192160000031436,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.21426009999959206,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5161776000004465,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2183666999999332,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.2099437000006219,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5161901000001308,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2273457999999664,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18454399999973248,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5184149999995498,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2253541000000041,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.19047800000043935,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5076014000005671,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21903089999977965,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.22445020000031946,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5070287000007738,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22698479999962728,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18466929999976855,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5266345000000001,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22116939999978058,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.23768569999992906,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5165250000000015,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22769639999933133,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18604880000020785,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5231025000002774,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2297990999995818,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5792560999998386,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2377440000000206,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.1880871000003026,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5178970999995727,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22616839999955118,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18358489999991434,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5165581000001112,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21829189999971277,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.515601300000526,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2142200000007506,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18699130000004516,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.508949300000495,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22077949999948032,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.21476669999992737,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.536161600000014,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21274860000085027,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18235999999978958,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5481192000006558,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21897919999992155,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.17777310000019497,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5168349000005037,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21356809999997495,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.2178567999999359,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.521216999999524,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21739270000034594,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.1815934999995079,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5466679000001022,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2253766000003452,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.1850454000004902,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5092118000002301,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21911219999947207,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18413130000044475,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5848925000000236,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.23992180000004737,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.1836432000000059,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5007341999998971,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21862469999996392,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18952210000043124,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5185225000004721,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.22052150000035908,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18464760000006208,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cpu",
+      "seconds": 0.44372720000046684,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.6426059000004898,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5049279999993814,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21930829999928392,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18284140000014304,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5109852000005048,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2192056000003504,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.18227610000030836,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5121503000000303,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.2153440000001865,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5578040999998848,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.5352341000007073,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.23209349999979167,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\m2m100-418m-int8\\model",
+      "device": "cuda",
+      "seconds": 0.527691400000549,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cuda",
+      "seconds": 0.21768840000004275,
+      "error_type": null
+    },
+    {
+      "model": "C:\\TreeTranslate\\vendor\\models\\argos\\argos-en-ru\\model",
+      "device": "cpu",
+      "seconds": 0.17977549999977782,
+      "error_type": null
+    }
+  ],
+  "seconds": {
+    "native_extract_actual": 7.853882899996279,
+    "ocr_recognize_inclusive": 347.0102203999977,
+    "m2m100_load_or_reuse": 26.20187670001087,
+    "tokenizer_encode": 0.12964129996998963,
+    "tokenizer_source_tokens": 0.004393499997604522,
+    "tokenizer_decode": 0.22068879998369084
+  },
+  "counts": {
+    "native_extract_actual": 160,
+    "ocr_recognize_inclusive": 120,
+    "m2m100_load_or_reuse": 3282,
+    "tokenizer_encode": 3282,
+    "tokenizer_source_tokens": 3289,
+    "tokenizer_decode": 3289
+  },
+  "inference_seconds": 564.1015580999874,
+  "calls": 3597,
+  "sequences": 3604,
+  "tokens": 59811,
+  "median_sequences": 1,
+  "median_tokens": 12,
+  "batch1": 3590,
+  "batch2": 7,
+  "repeated_identical_calls": 1871,
+  "transfer_seconds": null,
+  "transfer_note": "CT2 owns host/device preparation; its public synchronous call cannot separate transfer from inference",
+  "model_translation": {
+    "calls": 3597,
+    "seconds": 621.8656019999944,
+    "failures": 0
+  },
+  "batch2_plus": 7,
+  "fallback_attempts": 167,
+  "attempt_failures": 168,
+  "actual_inference_wall_fraction": 0.3948634626186477,
+  "actual_model_load_count": 93,
+  "backend_device_calls": {
+    "cuda": 3512,
+    "cpu": 85
+  },
+  "historical_actual_ct2_calls": null,
+  "historical_note": "Historical backend inference stage counts exist; exact native CT2 batching/tokens were not captured.",
+  "model_reuse": {
+    "calls": 3282,
+    "seconds": 25.972372900017035,
+    "failures": 0
+  },
+  "request_count": 3597,
+  "model_load_scope": "CT2 constructor calls, including failures; OCR loaders reported separately",
+  "constructor_counts_by_backend": {
+    "m2m100": 35,
+    "argos": 58
+  },
+  "constructor_load_seconds": 30.784452200007763,
+  "m2m_resident_reuse_count": 3247
+}

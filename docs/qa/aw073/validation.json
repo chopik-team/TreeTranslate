@@ -1,0 +1,10 @@
+{
+  "version": "AW 0.7.3",
+  "tests": 462,
+  "failures": 0,
+  "errors": 0,
+  "compileall": "passed",
+  "git_diff_check": "passed using repository CRLF configuration",
+  "runtime_raw_data": "absent",
+  "baseline_missing": []
+}

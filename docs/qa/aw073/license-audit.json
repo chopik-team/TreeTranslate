@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-25",
+  "sources": [
+    {
+      "source": "cedict-20260923",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+      "status": "APPROVED_FOR_REDISTRIBUTION",
+      "languages": [
+        "zh",
+        "en"
+      ]
+    },
+    {
+      "source": "agrovoc-20260907",
+      "license": "CC-BY-4.0",
+      "url": "https://www.fao.org/agrovoc/maintenance",
+      "status": "APPROVED_FOR_REDISTRIBUTION",
+      "languages": [
+        "zh",
+        "ru",
+        "en"
+      ]
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "license": "CC0-1.0",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "status": "APPROVED_FOR_REDISTRIBUTION",
+      "languages": [
+        "zh",
+        "ru",
+        "en"
+      ]
+    }
+  ],
+  "excluded": [
+    "Wiktionary production dump remains REVIEW_REQUIRED",
+    "WIPO Pearl and unknown/commercial sources not acquired"
+  ],
+  "runtime_policy": "Only generated SQLite and final LICENSE/NOTICE/README; no source archives, harvest databases or review queues"
+}

@@ -1,0 +1,31 @@
+{
+  "database": "isolated build/aw07/cli-memory.db",
+  "integrity": [
+    "ok"
+  ],
+  "stats": {
+    "total_units": 0,
+    "confirmed_units": 0,
+    "imported_units": 0,
+    "statuses": {},
+    "language_pairs": [],
+    "domains": {},
+    "counters": {
+      "exact_hits": 0,
+      "normalized_hits": 0,
+      "placeholder_hits": 0,
+      "fuzzy_hits": 0,
+      "misses": 0,
+      "reused": 0
+    },
+    "cache_entries": 0
+  },
+  "cli_actions_verified": [
+    "stats",
+    "integrity",
+    "backup",
+    "export",
+    "restore"
+  ],
+  "network_required": false
+}

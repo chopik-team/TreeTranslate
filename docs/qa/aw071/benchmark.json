@@ -1,0 +1,422 @@
+[
+  {
+    "entries": 10,
+    "inserted": 10,
+    "import_insert_seconds": 0.01556469999923138,
+    "db_startup": {
+      "median_ms": 1.6931999998632818,
+      "max_ms": 3.371599996171426,
+      "samples": 5
+    },
+    "lazy_index_first_lookup": {
+      "median_ms": 4.636400000890717,
+      "max_ms": 4.817599998204969,
+      "samples": 5
+    },
+    "exact": {
+      "median_ms": 4.644200002076104,
+      "max_ms": 5.201100000704173,
+      "samples": 5
+    },
+    "chinese": {
+      "median_ms": 4.5243999993545,
+      "max_ms": 5.072300002211705,
+      "samples": 5
+    },
+    "cyrillic": {
+      "median_ms": 4.466099999262951,
+      "max_ms": 4.981800004316028,
+      "samples": 5
+    },
+    "1_terms": {
+      "actual": 1,
+      "median_ms": 4.460399999516085,
+      "max_ms": 4.886800001258962,
+      "samples": 3
+    },
+    "10_terms": {
+      "actual": 4,
+      "median_ms": 5.091400002129376,
+      "max_ms": 5.200300001888536,
+      "samples": 3
+    },
+    "100_terms": {
+      "actual": 4,
+      "median_ms": 5.926599995291326,
+      "max_ms": 6.084200002078433,
+      "samples": 3
+    },
+    "batch": {
+      "segments": 4,
+      "median_ms": 18.333500003791414,
+      "max_ms": 19.219599998905323,
+      "samples": 3
+    },
+    "rss_before_bytes": 32583680,
+    "rss_after_bytes": 33853440,
+    "rss_peak_working_set_bytes": 33857536,
+    "database_bytes": 40960,
+    "integrity": [
+      "ok"
+    ],
+    "length_catalogs": 3,
+    "query_plan": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH aliases USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+      ]
+    ]
+  },
+  {
+    "entries": 100,
+    "inserted": 90,
+    "import_insert_seconds": 0.02013509999960661,
+    "db_startup": {
+      "median_ms": 1.6908999969018623,
+      "max_ms": 2.541699999710545,
+      "samples": 5
+    },
+    "lazy_index_first_lookup": {
+      "median_ms": 4.615099998773076,
+      "max_ms": 4.98449999577133,
+      "samples": 5
+    },
+    "exact": {
+      "median_ms": 4.442400000698399,
+      "max_ms": 4.665100001147948,
+      "samples": 5
+    },
+    "chinese": {
+      "median_ms": 4.496399997151457,
+      "max_ms": 4.870600001595449,
+      "samples": 5
+    },
+    "cyrillic": {
+      "median_ms": 4.697799995483365,
+      "max_ms": 4.9403999946662225,
+      "samples": 5
+    },
+    "1_terms": {
+      "actual": 1,
+      "median_ms": 4.549199999019038,
+      "max_ms": 4.725399994640611,
+      "samples": 3
+    },
+    "10_terms": {
+      "actual": 10,
+      "median_ms": 6.132499998784624,
+      "max_ms": 6.358600003295578,
+      "samples": 3
+    },
+    "100_terms": {
+      "actual": 34,
+      "median_ms": 11.38090000313241,
+      "max_ms": 12.915400002384558,
+      "samples": 3
+    },
+    "batch": {
+      "segments": 34,
+      "median_ms": 158.18980000040028,
+      "max_ms": 159.1344999978901,
+      "samples": 3
+    },
+    "rss_before_bytes": 33878016,
+    "rss_after_bytes": 34103296,
+    "rss_peak_working_set_bytes": 34443264,
+    "database_bytes": 77824,
+    "integrity": [
+      "ok"
+    ],
+    "length_catalogs": 3,
+    "query_plan": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH aliases USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+      ]
+    ]
+  },
+  {
+    "entries": 1000,
+    "inserted": 900,
+    "import_insert_seconds": 0.08741220000229077,
+    "db_startup": {
+      "median_ms": 1.5739000009489246,
+      "max_ms": 2.3188000050140545,
+      "samples": 5
+    },
+    "lazy_index_first_lookup": {
+      "median_ms": 4.418399999849498,
+      "max_ms": 5.1925000007031485,
+      "samples": 5
+    },
+    "exact": {
+      "median_ms": 4.786600002262276,
+      "max_ms": 4.97229999746196,
+      "samples": 5
+    },
+    "chinese": {
+      "median_ms": 4.790800005139317,
+      "max_ms": 4.9952999979723245,
+      "samples": 5
+    },
+    "cyrillic": {
+      "median_ms": 4.8934999940684065,
+      "max_ms": 4.900100000668317,
+      "samples": 5
+    },
+    "1_terms": {
+      "actual": 1,
+      "median_ms": 4.557100000965875,
+      "max_ms": 4.641699997591786,
+      "samples": 3
+    },
+    "10_terms": {
+      "actual": 10,
+      "median_ms": 6.519900001876522,
+      "max_ms": 7.550599999376573,
+      "samples": 3
+    },
+    "100_terms": {
+      "actual": 100,
+      "median_ms": 24.666199999046512,
+      "max_ms": 25.39719999913359,
+      "samples": 3
+    },
+    "batch": {
+      "segments": 100,
+      "median_ms": 482.43220000586007,
+      "max_ms": 529.5884000006481,
+      "samples": 3
+    },
+    "rss_before_bytes": 34172928,
+    "rss_after_bytes": 34734080,
+    "rss_peak_working_set_bytes": 35241984,
+    "database_bytes": 430080,
+    "integrity": [
+      "ok"
+    ],
+    "length_catalogs": 3,
+    "query_plan": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH aliases USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+      ]
+    ]
+  },
+  {
+    "entries": 10000,
+    "inserted": 9000,
+    "import_insert_seconds": 0.8625070999987656,
+    "db_startup": {
+      "median_ms": 2.0461000021896325,
+      "max_ms": 2.8404999975464307,
+      "samples": 5
+    },
+    "lazy_index_first_lookup": {
+      "median_ms": 4.821499998797663,
+      "max_ms": 5.109699995955452,
+      "samples": 5
+    },
+    "exact": {
+      "median_ms": 4.859799999394454,
+      "max_ms": 5.744900001445785,
+      "samples": 5
+    },
+    "chinese": {
+      "median_ms": 5.650799997965805,
+      "max_ms": 6.414900002710056,
+      "samples": 5
+    },
+    "cyrillic": {
+      "median_ms": 4.6685999986948445,
+      "max_ms": 5.863099999260157,
+      "samples": 5
+    },
+    "1_terms": {
+      "actual": 1,
+      "median_ms": 4.937999998219311,
+      "max_ms": 5.053799999586772,
+      "samples": 3
+    },
+    "10_terms": {
+      "actual": 10,
+      "median_ms": 7.459799999196548,
+      "max_ms": 8.946299996750895,
+      "samples": 3
+    },
+    "100_terms": {
+      "actual": 100,
+      "median_ms": 30.723999996553175,
+      "max_ms": 32.700600000680424,
+      "samples": 3
+    },
+    "batch": {
+      "segments": 100,
+      "median_ms": 495.40479999996023,
+      "max_ms": 507.187299997895,
+      "samples": 3
+    },
+    "rss_before_bytes": 34779136,
+    "rss_after_bytes": 35012608,
+    "rss_peak_working_set_bytes": 37273600,
+    "database_bytes": 3919872,
+    "integrity": [
+      "ok"
+    ],
+    "length_catalogs": 3,
+    "query_plan": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH aliases USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+      ]
+    ]
+  },
+  {
+    "entries": 100000,
+    "inserted": 90000,
+    "import_insert_seconds": 10.830680800005211,
+    "db_startup": {
+      "median_ms": 1.6004000062821433,
+      "max_ms": 2.8745000017806888,
+      "samples": 5
+    },
+    "lazy_index_first_lookup": {
+      "median_ms": 4.484399993089028,
+      "max_ms": 4.77340000361437,
+      "samples": 5
+    },
+    "exact": {
+      "median_ms": 4.36700000136625,
+      "max_ms": 4.798999994818587,
+      "samples": 5
+    },
+    "chinese": {
+      "median_ms": 4.403700004331768,
+      "max_ms": 4.502700001467019,
+      "samples": 5
+    },
+    "cyrillic": {
+      "median_ms": 4.440099997736979,
+      "max_ms": 4.587200004607439,
+      "samples": 5
+    },
+    "1_terms": {
+      "actual": 1,
+      "median_ms": 5.5188999976962805,
+      "max_ms": 5.529799993382767,
+      "samples": 3
+    },
+    "10_terms": {
+      "actual": 10,
+      "median_ms": 6.967699999222532,
+      "max_ms": 7.642200005648192,
+      "samples": 3
+    },
+    "100_terms": {
+      "actual": 100,
+      "median_ms": 26.547499997832347,
+      "max_ms": 27.0094999941648,
+      "samples": 3
+    },
+    "batch": {
+      "segments": 100,
+      "median_ms": 457.54440000018803,
+      "max_ms": 470.3617000050144,
+      "samples": 3
+    },
+    "rss_before_bytes": 35487744,
+    "rss_after_bytes": 35348480,
+    "rss_peak_working_set_bytes": 37875712,
+    "database_bytes": 38912000,
+    "integrity": [
+      "ok"
+    ],
+    "length_catalogs": 3,
+    "query_plan": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH aliases USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+      ]
+    ]
+  },
+  {
+    "entries": 500000,
+    "inserted": 400000,
+    "import_insert_seconds": 52.02081229999749,
+    "db_startup": {
+      "median_ms": 1.7401000004610978,
+      "max_ms": 3.0475999956252053,
+      "samples": 5
+    },
+    "lazy_index_first_lookup": {
+      "median_ms": 4.784600001585204,
+      "max_ms": 5.488499999046326,
+      "samples": 5
+    },
+    "exact": {
+      "median_ms": 4.3839999998454005,
+      "max_ms": 4.97479999467032,
+      "samples": 5
+    },
+    "chinese": {
+      "median_ms": 4.475700006878469,
+      "max_ms": 4.526199998508673,
+      "samples": 5
+    },
+    "cyrillic": {
+      "median_ms": 4.454699999769218,
+      "max_ms": 4.678299999795854,
+      "samples": 5
+    },
+    "1_terms": {
+      "actual": 1,
+      "median_ms": 4.42559999646619,
+      "max_ms": 4.436600000190083,
+      "samples": 3
+    },
+    "10_terms": {
+      "actual": 10,
+      "median_ms": 7.24610000179382,
+      "max_ms": 7.274799994775094,
+      "samples": 3
+    },
+    "100_terms": {
+      "actual": 100,
+      "median_ms": 29.76170000329148,
+      "max_ms": 31.499700002314057,
+      "samples": 3
+    },
+    "batch": {
+      "segments": 100,
+      "median_ms": 457.5738999992609,
+      "max_ms": 462.83450000191806,
+      "samples": 3
+    },
+    "rss_before_bytes": 35725312,
+    "rss_after_bytes": 35753984,
+    "rss_peak_working_set_bytes": 38400000,
+    "database_bytes": 195203072,
+    "integrity": [
+      "ok"
+    ],
+    "length_catalogs": 3,
+    "query_plan": [
+      [
+        2,
+        0,
+        54,
+        "SEARCH aliases USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+      ]
+    ]
+  }
+]

@@ -4,6 +4,8 @@ from PySide6.QtWidgets import QButtonGroup, QHBoxLayout, QLabel, QRadioButton, Q
 
 from app.config.paths import icon_path
 
+from app.localization.widgets import QLabel, QRadioButton, QToolButton
+
 
 class HoverInfoButton(QToolButton):
     """Shows help immediately and reliably on every hover."""
@@ -23,27 +25,15 @@ class AccelerationSelector(QWidget):
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         title_row = QHBoxLayout()
-        title_row.addWidget(QLabel("Ускорение", objectName="caption"))
+        title_row.addWidget(QLabel("Устройство", objectName="caption"))
         info = HoverInfoButton(objectName="infoButton")
         info.setIcon(QIcon(icon_path("info")))
         info.setIconSize(QSize(17, 17))
         info.setFixedSize(24, 24)
         info.setCursor(Qt.CursorShape.ArrowCursor)
         info.setToolTipDuration(30000)
-        info.setToolTip(
-            "<div style='width:360px'><b>Ускорение перевода</b><br><br>"
-            "<b>Auto</b> — приложение оценит доступную память и само распределит "
-            "вычисления между процессором и видеокартой.<br><br>"
-            "<b>CPU</b> — перевод выполняется центральным процессором. Подходит, "
-            "если видеокарта не поддерживается или её ресурсы нужны другим программам.<br><br>"
-            "<b>GPU</b> — задействует мощности видеокарты для более сложных вычислений "
-            "и ускоренной обработки крупных файлов. Для работы потребуется свободная VRAM.<br><br>"
-            "Ограничить использование CPU, RAM, GPU и VRAM можно в разделе "
-            "<b>Настройки → Производительность</b>. При нехватке памяти приложение сможет "
-            "автоматически снизить нагрузку.<br><br>"
-            "В AW 0.3 рекомендации по распределению нагрузки носят предварительный "
-            "характер и будут уточняться в следующих версиях.</div>"
-        )
+        info.setToolTip("Auto — автоматический выбор устройства. CPU — вычисления на процессоре. "
+                        "GPU — совместимая видеокарта CUDA; при недоступности показывается ошибка.")
         title_row.addWidget(info)
         title_row.addStretch()
         layout.addLayout(title_row)

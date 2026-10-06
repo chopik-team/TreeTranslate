@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "raw_candidate_queries": 9473,
+  "raw_candidate_calls": 2935,
+  "unique_raw_candidate_requests": 2299,
+  "raw_preselection_ordered_candidates_exact": true,
+  "raw_errors": [],
+  "current_final_matches_exact": true
+}

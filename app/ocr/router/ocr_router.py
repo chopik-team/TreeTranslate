@@ -9,6 +9,7 @@ from app.ocr.runtime.ocr_runtime_manager import OcrRuntimeManager
 
 class OcrRouter:
     def __init__(self, checkpoint=lambda: None, runtime=None, before_ocr=lambda: None):
+        self._owns_runtime = runtime is None
         self.runtime = runtime or OcrRuntimeManager(checkpoint=checkpoint)
         self.before_ocr = before_ocr
         self.backends = {'paddle': PaddleBackend(self.runtime), 'structure': StructureBackend(self.runtime)}
@@ -59,4 +60,5 @@ class OcrRouter:
         return result
 
     def shutdown(self):
-        self.runtime.shutdown()
+        if self._owns_runtime:
+            self.runtime.shutdown()

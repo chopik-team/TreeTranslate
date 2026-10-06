@@ -1,0 +1,37 @@
+{
+  "status": "REJECTED",
+  "scope": "AW0.8x exact-output contract/model/runtime",
+  "baseline_commit": "9aa36fc327463b5ef11d6d02e40a810207bd5e8f",
+  "baseline_kind": "Uncommitted production hashes in evidence/rollback.json; baseline commit alone is insufficient",
+  "baseline_run": "2bf4fd0f345e",
+  "captured_requests": 994,
+  "replay": {
+    "1": {
+      "seconds": 118.0948635000259,
+      "mismatches": 0,
+      "exact_outputs": true
+    },
+    "2": {
+      "seconds": 72.12172839998857,
+      "mismatches": 26,
+      "exact_outputs": false
+    },
+    "4": {
+      "seconds": 44.926184999991165,
+      "mismatches": 50,
+      "exact_outputs": false
+    },
+    "8": {
+      "seconds": 24.920021199990515,
+      "mismatches": 78,
+      "exact_outputs": false
+    }
+  },
+  "canonical_replay_evidence": "qa/aw081/nmt_batch_scheduler_5pdf/batch_replay.json",
+  "production_restored_files": [
+    "app/documents/job.py",
+    "app/documents/run_metrics.py",
+    "app/engine/runtime/runtime_manager.py",
+    "app/engine/backends/m2m100_backend.py"
+  ]
+}

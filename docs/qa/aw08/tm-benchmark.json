@@ -1,0 +1,60 @@
+[
+  {
+    "units": 10000,
+    "inserted": 10000,
+    "insert_seconds": 1.3502642000094056,
+    "startup": {
+      "median_ms": 3.470800002105534,
+      "max_ms": 5.79450000077486,
+      "samples": 7
+    },
+    "exact": {
+      "median_ms": 3.081900009419769,
+      "max_ms": 3.372999985003844,
+      "samples": 7
+    },
+    "normalized": {
+      "median_ms": 3.0811000033281744,
+      "max_ms": 3.170800016960129,
+      "samples": 7
+    },
+    "fuzzy": {
+      "median_ms": 3.8859999913256615,
+      "max_ms": 5.659199989167973,
+      "samples": 7
+    },
+    "hot": {
+      "median_ms": 1.7251999815925956,
+      "max_ms": 3.04169999435544,
+      "samples": 7
+    },
+    "batch_size": 1000,
+    "batch": {
+      "median_ms": 103.75860001659021,
+      "max_ms": 104.46469997987151,
+      "samples": 3
+    },
+    "database_bytes": 9650176,
+    "integrity": [
+      "ok"
+    ],
+    "query_plans": {
+      "source_hash": [
+        [
+          3,
+          0,
+          59,
+          "SEARCH units USING INDEX tm_exact (source_language=? AND target_language=? AND source_hash=?)"
+        ]
+      ],
+      "normalized_hash": [
+        [
+          3,
+          0,
+          59,
+          "SEARCH units USING INDEX tm_normalized (source_language=? AND target_language=? AND normalized_hash=?)"
+        ]
+      ]
+    }
+  }
+]

@@ -6,7 +6,7 @@ import os
 import subprocess
 import tempfile
 from threading import Thread, RLock, Timer
-from time import monotonic
+from time import monotonic, perf_counter
 
 from app.config.paths import PROJECT_ROOT as ROOT_DIR
 from app.ocr.config import configuration
@@ -14,15 +14,21 @@ from app.ocr.errors import OcrError
 
 
 class OcrRuntimeManager:
-    def __init__(self, python=None, checkpoint=lambda: None):
+    def __init__(self, python=None, checkpoint=lambda: None, run_scoped=False):
         self.python = Path(python or ROOT_DIR / '.venv-ocr/Scripts/python.exe')
         self.checkpoint = checkpoint
         self.process = None
         self._lock = RLock()
         self._timer = None
         self._device = None
+        self.run_scoped = run_scoped
+        from .hardware_plan import OCRCapabilities, OCRHardwarePlan
+        from .result_cache import OCRResultCache
+        self.plan = OCRHardwarePlan.from_capabilities(OCRCapabilities.detect('cpu'))
+        self.result_cache = OCRResultCache(self.plan.result_cache_bytes)
 
     def _start(self, device):
+        started = perf_counter()
         if not self.python.is_file():
             raise OcrError('runtime')
         environment = dict(os.environ, PYTHONIOENCODING='utf-8', PYTHONUTF8='1')
@@ -48,12 +54,29 @@ class OcrRuntimeManager:
             finally:
                 replies.put({'error': 'runtime'})
         Thread(target=reader, daemon=True, name='ocr-protocol').start()
+        self._event('worker_start', device=device, seconds=perf_counter()-started,
+                    worker_pid=self.process.pid)
+
+    def _event(self, event, **data):
+        path = os.environ.get('TREETRANSLATE_OCR_LIFECYCLE_LOG')
+        if path:
+            with open(path, 'a', encoding='utf-8') as stream:
+                stream.write(json.dumps(dict(event=event, pid=os.getpid(), **data)) + '\n')
 
     def run(self, image, command):
         with self._lock:
             self.checkpoint()
             if self._timer:
                 self._timer.cancel()
+            import psutil
+            if psutil.virtual_memory().available < self.plan.ram_reserve_bytes:
+                self.result_cache.clear()
+            cache_key = self.result_cache.key(image, command)
+            cached = self.result_cache.get(cache_key, command['device'])
+            if cached is not None:
+                cached.update(load_seconds=0, inference_seconds=0, result_cache_hit=True)
+                self._schedule_idle_shutdown()
+                return cached
             if self.process and self._device != command['device']:
                 self.shutdown()
             if not self.process or self.process.poll() is not None:
@@ -79,12 +102,18 @@ class OcrRuntimeManager:
                 self.checkpoint()
                 if 'error' in result:
                     raise OcrError(result['error'])
-                self._timer = Timer(configuration()['runtime']['idle_seconds'], self.shutdown)
-                self._timer.daemon = True
-                self._timer.start()
+                self.result_cache.put(cache_key, result)
+                self._schedule_idle_shutdown()
                 return result
 
+    def _schedule_idle_shutdown(self):
+        if not self.run_scoped and self.process:
+            self._timer = Timer(configuration()['runtime']['idle_seconds'], self.shutdown)
+            self._timer.daemon = True
+            self._timer.start()
+
     def shutdown(self, force=False):
+        started = perf_counter()
         with self._lock:
             if self._timer:
                 self._timer.cancel()
@@ -106,3 +135,7 @@ class OcrRuntimeManager:
                 finally:
                     process.stdin.close()
                     process.stdout.close()
+                self._event('worker_shutdown', worker_pid=process.pid,
+                            seconds=perf_counter()-started, reason='force' if force else 'owner_or_idle',
+                            result_cache_hits=self.result_cache.hits, result_cache_misses=self.result_cache.misses)
+            self.result_cache.clear()

@@ -1,0 +1,15 @@
+{
+  "version": "0.81",
+  "provenance": "User technical review 2026-10-04; independently checked Hyundai CN7 compressor, drive belt and brake oil manual reproductions. No numeric answer or file identity in rules.",
+  "facts": [
+    {"id": "brake_reservoir_cc", "all_patterns": ["DOT\\s*4", "储液器容量\\s*[:：]?\\s*[（(]\\s*cc\\s*[）)]"]},
+    {"id": "ac_compressor", "all_patterns": ["压缩机", "制冷剂"]},
+    {"id": "drive_belt_inspection", "all_patterns": ["皮带", "过度磨损", "绳线磨损"]},
+    {"id": "weatherstrip_mounting", "all_patterns": ["密封条", "车门"]},
+    {"id": "auto_defog_sensor", "all_patterns": ["自动除湿传感器", "湿气"]}
+  ],
+  "measurement_labels": [
+    {"code": "D", "source_label": "之前", "target_label": "первичный", "fact": "brake_reservoir_cc", "source_unit": "cc", "target_unit": "см³"},
+    {"code": "E", "source_label": "秒", "target_label": "вторичный", "fact": "brake_reservoir_cc", "source_unit": "cc", "target_unit": "см³"}
+  ]
+}

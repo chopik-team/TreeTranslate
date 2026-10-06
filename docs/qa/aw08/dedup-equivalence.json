@@ -1,0 +1,18 @@
+[
+  {
+    "case": "long",
+    "identical_output": true,
+    "before_chars": 6254,
+    "after_chars": 6254,
+    "paragraphs": 8,
+    "output_sha256": "a10bea623cb56b77d6175d154e8b84d4fbb5e24f119fffbbe30ee7d0d9ab2722"
+  },
+  {
+    "case": "very-long",
+    "identical_output": true,
+    "before_chars": 18766,
+    "after_chars": 18766,
+    "paragraphs": 24,
+    "output_sha256": "e07558bdfd6477bca2907e90496cceba633d82f24d9b3691908917c44e304b3a"
+  }
+]

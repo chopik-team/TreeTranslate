@@ -25,7 +25,6 @@ def main():
     window.setAttribute(Qt.WidgetAttribute.WA_DontShowOnScreen, True)
     window.preferences.set_languages("Китайский", "Русский")
     window.preferences.set_device("GPU")
-    window.preferences.set_profile("Баланс")
     # Exercise the real idle timer in the native GPU worker lifecycle.
     window.translation_service.engine.policy.idle_timeout_seconds = 0.2
     window.request_navigation(1)
@@ -38,8 +37,9 @@ def main():
         if len(results) == 1:
             def next_request():
                 assert window.translation_service.engine.runtime._warm is None, "GPU model was not unloaded after idle"
-                Path("docs/qa").mkdir(parents=True, exist_ok=True)
-                window.grab().save("docs/qa/aw04-real-text.png")
+                output = Path(os.environ.get("TREETRANSLATE_QA_DIR", "docs/qa"))
+                output.mkdir(parents=True, exist_ok=True)
+                window.grab().save(str(output / "aw04-real-text.png"))
                 window.text_page.source.editor.setPlainText("请保存配置文件。")
             QTimer.singleShot(500, next_request)
         elif len(results) == 2:

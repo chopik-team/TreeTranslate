@@ -1,0 +1,137 @@
+{
+  "corpus": "tests/fixtures/pdf/semantic-corpus.json",
+  "source_pdf_sha256": "ba930a3e2470c3566dd1bcd79247863717bb66a4ae5fb93d5a9fbaceb2b1bf1f",
+  "immutable_original": true,
+  "rows": [
+    {
+      "id": "warning_hot",
+      "source": "• 绝不能在发动机热的时候拆除散热器盖。 热流体在高压作用下从散热器喷出,可能会导致严重烫伤。",
+      "before": "• Никогда не удаляйте покрытие разгревателя при нагревании двигателя. Тепловая жидкость вытекает из разгревателя под воздействием высокого давления, что может привести к тяжелым ожогам.",
+      "after": "• Никогда не удаляйте покрытие разгревателя при жарке двигатель. Тепловая жидкость вытекает из разгревателя при высоком давлении, что может привести к тяжелым ожогам.",
+      "matched": [
+        {
+          "source": "发动机",
+          "target": "двигатель",
+          "pack": "automotive-zh-ru-cc0-1-0"
+        }
+      ],
+      "known_targets_present": 1,
+      "baseline_fidelity": true,
+      "after_fidelity": true,
+      "forbidden_before": [],
+      "forbidden_after": [],
+      "constraint_status": "enforced",
+      "backend": "m2m100",
+      "device": "cuda",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ]
+    },
+    {
+      "id": "fill_ratio",
+      "source": "8. 通过散热器盖缓慢添加冷却液和水 （45－60％） 混合物。",
+      "before": "Постепенно добавляют смесь охлаждающей жидкости и воды (45-60%) через нагревательную крышу.",
+      "after": "Постепенно добавляют смесь охлаждающей жидкости и воды (45-60%) через нагревательную крышу.",
+      "matched": [],
+      "known_targets_present": 0,
+      "baseline_fidelity": false,
+      "after_fidelity": false,
+      "forbidden_before": [],
+      "forbidden_after": [],
+      "constraint_status": "none",
+      "backend": "m2m100",
+      "device": "cuda",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ]
+    },
+    {
+      "id": "capacity",
+      "source": "IVT :约6.6公升 （1.74加仑,6.97美升,5.80加仑/夸脱）",
+      "before": "IVT: около 6,6 литров (1,74 галлона, 6,97 литров, 5,80 галлона/перевышенный)",
+      "after": "IVT: около 6,6 литров (1,74 галлона, 6,97 литров, 5,80 галлона/перевышенный)",
+      "matched": [],
+      "known_targets_present": 0,
+      "baseline_fidelity": false,
+      "after_fidelity": false,
+      "forbidden_before": [],
+      "forbidden_after": [],
+      "constraint_status": "none",
+      "backend": "m2m100",
+      "device": "cuda",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ]
+    },
+    {
+      "id": "gds_mode",
+      "source": "11. 使用GDS激活“集成热管理模块 （ITM） 冷却液补充模式”。",
+      "before": "Используйте GDS для активации модуля «Интегрированный модуль управления теплой (ITM) охлаждающей жидкости дополнения».",
+      "after": "Используйте GDS для активации модуля «Интегрированный модуль управления теплой (ITM) охлаждающей жидкости дополнения».",
+      "matched": [],
+      "known_targets_present": 0,
+      "baseline_fidelity": false,
+      "after_fidelity": false,
+      "forbidden_before": [],
+      "forbidden_after": [],
+      "constraint_status": "none",
+      "backend": "m2m100",
+      "device": "cuda",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ]
+    },
+    {
+      "id": "warmup",
+      "source": "12. 在冷却风扇工作一次之后,预热发动机20分钟。",
+      "before": "После работы охлаждающего вентилятора двигатель предварительно нагревается в течение 20 минут.",
+      "after": "После работы охлаждающего вентилятора двигатель предварительно нагревается в течение 20 минут.",
+      "matched": [
+        {
+          "source": "发动机",
+          "target": "двигатель",
+          "pack": "automotive-zh-ru-cc0-1-0"
+        }
+      ],
+      "known_targets_present": 1,
+      "baseline_fidelity": false,
+      "after_fidelity": false,
+      "forbidden_before": [],
+      "forbidden_after": [],
+      "constraint_status": "fallback_unconstrained",
+      "backend": "m2m100",
+      "device": "cuda",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ]
+    },
+    {
+      "id": "connector",
+      "source": "• 在连接集成热管理模块 （ITM） 连接器时,必须从连接器上彻底清除水或油,确保无杂质进入。",
+      "before": "• При подключении соединителя интегрированного модуля управления теплой (ITM) необходимо полностью очистить воду или масло от соединителя, чтобы обеспечить отсутствие загрязнения.",
+      "after": "• При подключении соединителя интегрированного модуля управления теплой (ITM) необходимо полностью очистить воду или масло от соединителя, чтобы обеспечить отсутствие загрязнения.",
+      "matched": [],
+      "known_targets_present": 0,
+      "baseline_fidelity": true,
+      "after_fidelity": true,
+      "forbidden_before": [],
+      "forbidden_after": [],
+      "constraint_status": "none",
+      "backend": "m2m100",
+      "device": "cuda",
+      "model_ids": [
+        "m2m100-418m-int8"
+      ]
+    }
+  ],
+  "summary": {
+    "segments": 6,
+    "matched_terms": 2,
+    "enforced": 1,
+    "fallbacks": 1,
+    "baseline_fidelity_passes": 2,
+    "after_fidelity_passes": 2
+  },
+  "tm_units": 0,
+  "human_semantic_quality_verified": false
+}

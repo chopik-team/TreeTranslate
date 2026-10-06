@@ -9,6 +9,7 @@ from app.engine.router.translation_router import TranslationRouter
 from app.engine.runtime.device_manager import DeviceManager
 from app.engine.types import (BackendCapabilities, BackendOutput, DevicePreference, InferenceOptions,
                               PairKind, PerformanceProfile, TranslationRequest)
+from app.engine.languages import RELEASE_LANGUAGE_CODES
 
 
 class FakeBackend(BaseBackend):
@@ -55,7 +56,7 @@ class FakeDevices(DeviceManager):
 @pytest.fixture
 def router():
     argos = FakeBackend("argos", [("en", "ru"), ("ru", "en")], [("zh", "ru"), ("ru", "zh")])
-    m2m = FakeBackend("m2m100", languages=["en", "ru", "zh"])
+    m2m = FakeBackend("m2m100", languages=RELEASE_LANGUAGE_CODES)
     engine = TranslationRouter({"argos": argos, "m2m100": m2m}, devices=FakeDevices())
     yield engine
     engine.shutdown()
@@ -75,12 +76,21 @@ def request(source="en", target="ru", profile=PerformanceProfile.BALANCED, devic
     ("en", "ru", PerformanceProfile.MAXIMUM, "argos"),
     ("ru", "en", PerformanceProfile.MAXIMUM, "argos"),
     ("zh", "ru", PerformanceProfile.ECONOMY, "argos"),
+    ("en", "de", PerformanceProfile.ECONOMY, "m2m100"),
 ])
 def test_routes(router, source, target, profile, backend):
     decision = router.decide(request(source, target, profile))
     assert decision.backend == backend
     result = router.translate(request(source, target, profile))
     assert result.backend == backend
+
+
+def test_every_release_pair_has_a_route_in_every_profile(router):
+    for profile in PerformanceProfile:
+        for source in RELEASE_LANGUAGE_CODES:
+            for target in RELEASE_LANGUAGE_CODES - {source}:
+                decision = router.decide(request(source, target, profile))
+                assert decision.backend in {"argos", "m2m100"}
 
 
 def test_quality_precedes_pivot_even_when_direct_argos_exists(router):

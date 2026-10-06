@@ -1,0 +1,7 @@
+# Independently authored reusable section and technical label nouns.
+# source|nominative|genitive|accusative|gender|subdomain
+说明|описание|описания|описание|n|common
+发动机和驱动桥总成|двигатель и коробка передач в сборе|двигателя и коробки передач в сборе|двигатель и коробку передач в сборе|p|engine
+总容量|общий объём|общего объёма|общий объём|m|common
+储液容量|объём резервуара|объёма резервуара|объём резервуара|m|common
+离合器位置|положение сцепления|положения сцепления|положение сцепления|n|transmission

@@ -1,0 +1,10 @@
+{
+  "tests": 1278,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": 1278,
+  "pytest_seconds": 614.25,
+  "execution_seconds": 616.0457690000003,
+  "production_unchanged": true
+}

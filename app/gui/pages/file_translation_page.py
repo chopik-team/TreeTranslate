@@ -1,6 +1,6 @@
 from PySide6.QtCore import QTimer, Qt, Signal
 from PySide6.QtGui import QIcon
-from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QPushButton, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QPushButton, QVBoxLayout, QWidget, QComboBox
 
 from app.config.paths import icon_path
 from app.gui.widgets.acceleration_selector import AccelerationSelector
@@ -9,8 +9,9 @@ from app.gui.widgets.file_tree import FileTree
 from app.gui.widgets.language_selector import LanguageSelector
 from app.gui.widgets.progress_panel import ProgressPanel
 from app.gui.widgets.toggle_switch import ToggleSwitch
-from app.gui.widgets.translation_mode import TranslationMode
 from app.gui.widgets.workspace_splitter import WorkspaceSplitter
+
+from app.localization.widgets import QComboBox, QLabel, QPushButton
 
 
 class FileTranslationPage(QWidget):
@@ -89,10 +90,7 @@ class FileTranslationPage(QWidget):
         self.languages = LanguageSelector()
         layout.addWidget(self.languages)
         controls = QHBoxLayout()
-        self.mode = TranslationMode()
         self.acceleration = AccelerationSelector()
-        controls.addWidget(self.mode, 1)
-        controls.addSpacing(18)
         controls.addWidget(self.acceleration, 1)
         layout.addLayout(controls)
         self.start_button = QPushButton(QIcon(icon_path("play")), "  Начать перевод", objectName="primary")

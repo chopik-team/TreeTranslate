@@ -1,0 +1,148 @@
+{
+  "runtime_entries": {
+    "ru": 4334,
+    "zh": 4406
+  },
+  "domains": {
+    "automotive": {
+      "ru": 140,
+      "zh": 140
+    },
+    "chemistry-engineering": {
+      "ru": 144,
+      "zh": 144
+    },
+    "computer-hardware": {
+      "ru": 182,
+      "zh": 182
+    },
+    "electrical": {
+      "ru": 36,
+      "zh": 38
+    },
+    "electronics": {
+      "ru": 313,
+      "zh": 315
+    },
+    "industrial-safety": {
+      "ru": 12,
+      "zh": 12
+    },
+    "manufacturing": {
+      "ru": 141,
+      "zh": 145
+    },
+    "materials-science": {
+      "ru": 573,
+      "zh": 589
+    },
+    "measurement": {
+      "ru": 382,
+      "zh": 390
+    },
+    "mechanical-engineering": {
+      "ru": 330,
+      "zh": 338
+    },
+    "metallurgy": {
+      "ru": 144,
+      "zh": 150
+    },
+    "software": {
+      "ru": 341,
+      "zh": 343
+    },
+    "technical-core": {
+      "ru": 1596,
+      "zh": 1620
+    }
+  },
+  "pack_counts": {
+    "zh_DIRECT_CONCEPT": 4409,
+    "zh_accepted_entries": 4406,
+    "zh_duplicate_pairs_merged": 3,
+    "zh_manually_reviewed": 0,
+    "ru_DIRECT_CONCEPT": 4336,
+    "ru_accepted_entries": 4334,
+    "ru_duplicate_pairs_merged": 2,
+    "ru_manually_reviewed": 0,
+    "ru_reverse_aliases_withheld": 3461,
+    "ru_reverse_conflicts_rejected": 73
+  },
+  "pivot_statuses": [
+    {
+      "link_type": "ENGLISH_PIVOT_AMBIGUOUS",
+      "status": "REVIEW",
+      "count": 1150
+    },
+    {
+      "link_type": "ENGLISH_PIVOT_EXACT",
+      "status": "REVIEW",
+      "count": 4704
+    }
+  ],
+  "sizes": {
+    "build_aw073_bytes": 2160670106,
+    "harvest_db_bytes": 823160832,
+    "sources_bytes": 463553378,
+    "staging_db_bytes": 63655936,
+    "review_release_bytes": 240592210,
+    "tglossary_bytes": 3924333,
+    "runtime_sqlite_bytes": 8183808,
+    "runtime_total_bytes": 22930970
+  },
+  "reviewed_performance": {
+    "conflicts_seconds": 2.611843300000146,
+    "link_seconds": 56.74996939999983,
+    "link_result": {
+      "concepts": 181495,
+      "merge_limit_skipped_concepts": 0,
+      "candidates": 196946,
+      "conflicts": 4530
+    },
+    "report_seconds": 31.99496799999997,
+    "build_seconds": 8.773101099999622,
+    "prepare_seconds": 2.5831601999998384,
+    "peak_rss_bytes": 54087680,
+    "db_bytes": 822902784,
+    "pack_bytes": 3932202,
+    "runtime_entries": 8770
+  },
+  "final_build_performance": {
+    "build_seconds": 12.471488499999396,
+    "prepare_seconds": 4.684924700002739,
+    "entries": 8740
+  },
+  "agrovoc_conversion": {
+    "archive_bytes": 96365215,
+    "archive_sha256": "dca2c10e1ac797ac6a8f989efbcfd73815b7867892a36ec7d353253e5f618b30",
+    "counts": {
+      "altLabel:en": 12796,
+      "altLabel:ru": 9568,
+      "altLabel:zh": 8646,
+      "broader:": 42447,
+      "concepts": 42001,
+      "exactMatch:": 36799,
+      "prefLabel:en": 42000,
+      "prefLabel:ru": 42000,
+      "prefLabel:zh": 41856
+    },
+    "jsonl_sha256": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd",
+    "languages": [
+      "zh",
+      "ru",
+      "en"
+    ],
+    "member": "agrovoc_lod.nt",
+    "state": {
+      "complete": true,
+      "lines": 10255762,
+      "modified": [
+        "<http://aims.fao.org/aos/agrovoc> <http://purl.org/dc/terms/modified> \"2026-09-07T10:09:21Z\"^^<http://www.w3.org/2001/XMLSchema#dateTime> ."
+      ],
+      "offset": 1461478821,
+      "sha256": "dca2c10e1ac797ac6a8f989efbcfd73815b7867892a36ec7d353253e5f618b30"
+    },
+    "uncompressed_bytes": 1461478821
+  }
+}

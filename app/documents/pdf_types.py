@@ -102,6 +102,8 @@ class PdfSegment:
     ocr_model: str = ''
     background_color: tuple = (255, 255, 255, 255)
     raster_boxes: tuple = ()
+    ocr_kind: str = ''
+    preserve_reason: str = ''
 
 
 @dataclass

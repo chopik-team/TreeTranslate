@@ -1,0 +1,4289 @@
+{
+  "schema": 1,
+  "method": "deterministic family-proportional quotas with size midpoint quantiles",
+  "exact_method": {
+    "family_key": "second POSIX path component",
+    "allocation": "floor(N_family*100/17211), minimum one; largest quota deficit until total=100",
+    "within_family": "sort(size,path); select floor((slot+0.5)*N_family/quota), then restore original inventory order",
+    "randomness": false
+  },
+  "input_archive": "C:\\Users\\PC\\Downloads\\2022_USER_REPAIR_MAINTENANCE_DISASSEMBLE_(CN7C)_CHINA_koreacustom.ru.zip",
+  "input_archive_sha256": "ecc0fd54bbc421af33febcb4f971e9a4735b15102aae9c451334a449c3a85330",
+  "inventory_pdf_count": 17211,
+  "inventory_pdf_bytes": 1913810902,
+  "scan_seconds": 3.1593415000024834,
+  "sample_archive": "C:\\TreeTranslate\\qa\\aw081\\speed_calibration_100\\2022_USER_REPAIR_MAINTENANCE_DISASSEMBLE_(CN7C)_CHINA_koreacustom.ru_SPEED100.zip",
+  "sample_archive_sha256": "d231bd5cdf637f64bfa96eab26ccb8c1dfb9d10f4df4257aba9f2ba0b2b48676",
+  "sample_count": 100,
+  "preparation_seconds": 5.060420200003136,
+  "classification_counts": {
+    "native": 86,
+    "mixed": 14
+  },
+  "corpus_families": {
+    "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程": {
+      "population": 3823,
+      "sample": 22
+    },
+    "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程": {
+      "population": 3294,
+      "sample": 19
+    },
+    "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南": {
+      "population": 4033,
+      "sample": 23
+    },
+    "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图": {
+      "population": 329,
+      "sample": 2
+    },
+    "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册": {
+      "population": 871,
+      "sample": 5
+    },
+    "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南": {
+      "population": 3440,
+      "sample": 20
+    },
+    "2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图": {
+      "population": 331,
+      "sample": 2
+    },
+    "2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册": {
+      "population": 839,
+      "sample": 5
+    },
+    "2022 第七代伊兰特(CN7C) 电路图": {
+      "population": 209,
+      "sample": 1
+    },
+    "2022 第七代伊兰特(CN7C) 车身维修手册": {
+      "population": 42,
+      "sample": 1
+    }
+  },
+  "training": false,
+  "knowledge_changes": false,
+  "documents": [
+    {
+      "index": 0,
+      "inventory_pdf_index": 373,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Battery/说明和操作.pdf",
+      "source_sha256": "cbe9a4e61e379ea28aeecd7ce3d1601c860b700a3c8c8451ecbd29c6eccb4d24",
+      "source_size": 48088,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 247,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {
+        "automotive.body": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 2172,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 13/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "general",
+        "subdomains": {
+          "automotive.body": 0.4271
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 43.38387650000368,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/батарея/Описание и действие_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 1,
+      "inventory_pdf_index": 381,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "source_sha256": "67392356300712d79f1759d1ac9ad2f652b36685af101ba047324eaa57055342",
+      "source_size": 94282,
+      "pages": 2,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 109,
+        "large_raster_pages": 2,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {},
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 3214,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 19/22",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "general",
+        "subdomains": {},
+        "ocr_used": true,
+        "table_blocks": 23,
+        "schematic_blocks": 0,
+        "latency_seconds": 71.72735219999595,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 2,
+      "inventory_pdf_index": 919,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/CVVT Oil Control Valve (OCV)/P070564 抑制器开关未使用代码/ETM.pdf",
+      "source_sha256": "0dea3d63b94d42c7ffabc8f2c746011452d389f93ecc2a494bf643697da2ad1e",
+      "source_size": 7032,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 13,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.transmission": 0.6321
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 260,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 2/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.transmission": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 1.3253878999967128,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/CVVT клапан управления нефтьюOCV)/P070564 代天/ETM_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 3,
+      "inventory_pdf_index": 1019,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+      "source_sha256": "efa3c027748014b5530d07ffc39fef57765ba14b4923e4befdd4f69b5466b445",
+      "source_size": 123675,
+      "pages": 2,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 550,
+        "large_raster_pages": 2,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9328
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 3388,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 20/22",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8846
+        },
+        "ocr_used": true,
+        "table_blocks": 41,
+        "schematic_blocks": 0,
+        "latency_seconds": 91.79306580000411,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 4,
+      "inventory_pdf_index": 1023,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U008086 车辆通信总线CAN4(齿轮执行器)/检验维修.pdf",
+      "source_sha256": "caa9e55f9ee510ca02dec0379fb7cc1c1dfc9fedf8c32594dccde98dc7db4b99",
+      "source_size": 28013,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 163,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8173,
+        "automotive.electrical": 0.478
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 1303,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 8/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.8173,
+          "automotive.electrical": 0.508
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 6.152451099995233,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/DCT Модуль управленияTCM)/U008086 Автомобильная коммуникационная линияCAN4())/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 5,
+      "inventory_pdf_index": 1303,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Engine Coolant Temperature Sensor (ECTS)/P218400 发动机冷却液温度传感器2电路电压低/故障代码信息和检查.pdf",
+      "source_sha256": "36c31083dc324d32ec0f8087c471d3999840c0cc99ccc7954afc1f904a75b411",
+      "source_size": 50045,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 344,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7878,
+        "automotive.electrical": 0.8732
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 2345,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 14/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.electrical": 0.8679
+        },
+        "ocr_used": false,
+        "table_blocks": 19,
+        "schematic_blocks": 0,
+        "latency_seconds": 16.21171320000576,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Датчик температуры охлаждающего устройства двигателя (ECTS)/P218400 Двигатель охлаждает датчик температуры жидкости2压の/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 6,
+      "inventory_pdf_index": 1597,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Fuel Gauge/C169386 ESC信号故障/ETM.pdf",
+      "source_sha256": "5b246fcc4b85f504805fecc693e36005f3376fd4ef7cc639d09da100fe53117b",
+      "source_size": 5406,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 6,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {
+        "automotive.diagnostics": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 86,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 1/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "general",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 1.4462366000007023,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Топливный калибр/C169386 ESCСигнальный дефект/ETM_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 7,
+      "inventory_pdf_index": 1680,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/G Sensor/C128504 未校准Ax信号/部件检查.pdf",
+      "source_sha256": "a1c18ba06e2a0281e697154aec702bc829c2a899744f0ec72e254c0a06e00fa6",
+      "source_size": 166441,
+      "pages": 1,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 245,
+        "large_raster_pages": 1,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6671,
+        "automotive.electrical": 0.478,
+        "automotive.restraint": 0.478,
+        "automotive.steering": 0.3935,
+        "software": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 3562,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 21/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321,
+          "automotive.electrical": 0.508,
+          "automotive.restraint": 0.4588,
+          "automotive.steering": 0.4461
+        },
+        "ocr_used": true,
+        "table_blocks": 46,
+        "schematic_blocks": 0,
+        "latency_seconds": 88.0516720999949,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/G-сенсор/C128504 xAx/компонент проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 8,
+      "inventory_pdf_index": 1875,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+      "source_sha256": "892a22f6c985ad7a056fdaead015ff62238e97771b33b3fc27b6acaaded61a7d",
+      "source_size": 367117,
+      "pages": 8,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 471,
+        "large_raster_pages": 7,
+        "empty_native_pages": 4,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6834,
+        "automotive.electrical": 0.7135,
+        "automotive.engine": 0.3935,
+        "automotive.transmission": 0.6834,
+        "software": 0.478
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 3736,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 22/22",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.brakes": 0.3935,
+          "automotive.electrical": 0.7162,
+          "automotive.engine": 0.4231,
+          "automotive.transmission": 0.4231,
+          "software": 0.3935
+        },
+        "ocr_used": true,
+        "table_blocks": 21,
+        "schematic_blocks": 0,
+        "latency_seconds": 185.46506360000058,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+        "output_pages": 8
+      }
+    },
+    {
+      "index": 9,
+      "inventory_pdf_index": 1921,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P225100 氧传感器基准搭铁电路 断路 (组1 传感器1)/检验维修.pdf",
+      "source_sha256": "d2cabbfeabdadb08326e8cde78f20b5162c641c5efbe46188d5afa3cd96c861b",
+      "source_size": 25063,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 781,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 5/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.936543699994218,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Нагретый кислородный датчик (HO2S)/P225100 ( )1 датчика1)/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 10,
+      "inventory_pdf_index": 2317,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Intake Air Temperature Sensor (IATS)/C120102 左前轮速传感器范围 性能 间歇/检验维修.pdf",
+      "source_sha256": "bc941e086ecff318d01c660fca9597d442aeb2d011fe5e16eea642bd421b84c2",
+      "source_size": 24872,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 94,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 608,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 4/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.646800299997267,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Датчик температуры воздуха (Intake Air Temperature Sensor)IATS)/C120102 左前輪 скорость датчика диапазон 性能 间歇/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 11,
+      "inventory_pdf_index": 2524,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Mode Control Actuator/B16AB00 保险杠天线故障/检验车辆维修.pdf",
+      "source_sha256": "7592a9dfca7a39100e17b00639e7a8781cc9bfd91abea24880f70d8ee095b7ba",
+      "source_size": 27076,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7981
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 1129,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 7/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7981
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.6082566999975825,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Режим Control Actuator/B16AB00 天天/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 12,
+      "inventory_pdf_index": 2599,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Occupant Classification System (OCS)/C161682 C-CAN总线OFF/部件检查.pdf",
+      "source_sha256": "0488380cebb2484279fd66c8a239bc1f82c309db7b83141e2f13498dd349a135",
+      "source_size": 44120,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 405,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8775,
+        "automotive.electrical": 0.5507,
+        "automotive.steering": 0.4231
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 1824,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 11/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.8775,
+          "automotive.electrical": 0.5766,
+          "automotive.steering": 0.4461
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 17.548173399998632,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Система классификации жильцов (OCS)/C161682 С-CANГлавная →OFF/компонент проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 13,
+      "inventory_pdf_index": 2881,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/RCV Control Solenoid Valve/P003300 涡轮增压器旁通阀控制电路/部件检查.pdf",
+      "source_sha256": "f26dd9c0cd66e9a6aedfd23e2fc155dfe1cfd802410d4c337baebf5822ea8859",
+      "source_size": 29127,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 161,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {
+        "automotive.electrical": 0.5108
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 1477,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 9/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.539
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 6.106474700005492,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/RCV Контроль соленоидного клапана/P003300 压の/компонент проверка_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 14,
+      "inventory_pdf_index": 2915,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Rear Door Belt Outside Weatherstrip/维修程序.pdf",
+      "source_sha256": "ec05397ab3245d844541b2f9a54730306dcda557e00076204e80025fbf0befaf",
+      "source_size": 39553,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 55,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.3935,
+        "automotive.body.doors": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 1650,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 10/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.4271,
+          "automotive.body.doors": 0.3935
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 36.895433399993635,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Задний дверной пояс снаружи Weatherstrip/процедуры ремонта_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 15,
+      "inventory_pdf_index": 3114,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140000 驾驶席侧面碰撞传感器(SIS)故障/检验车辆维修.pdf",
+      "source_sha256": "98bead782a7a4ab1a6e5ffc345c2859af932a809e35776724c145df6fe6eb9d4",
+      "source_size": 25165,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 97,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7769
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 955,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 6/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7769
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.172986700003094,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Сенсор бокового воздействия (SIS)/B140000 ()SIS• Неудача/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 16,
+      "inventory_pdf_index": 3121,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140900 驾驶席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf",
+      "source_sha256": "9ca2e79e66632f2eaf03a8961e59105c277a0c2128fa47736cc76f1cccc8e8d8",
+      "source_size": 51899,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 380,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8173,
+        "automotive.electrical": 0.9093,
+        "automotive.engine": 0.3935,
+        "automotive.restraint": 0.7275
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 2519,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 15/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6988,
+          "automotive.electrical": 0.9055,
+          "automotive.restraint": 0.7443
+        },
+        "ocr_used": false,
+        "table_blocks": 21,
+        "schematic_blocks": 0,
+        "latency_seconds": 17.335670699998445,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Сенсор бокового воздействия (SIS)/B140900 ()SIS· Коммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 17,
+      "inventory_pdf_index": 3164,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Smart Cruise Control Unit/C126083 方向盘转角传感器电路-信号(校验和)/ETM.pdf",
+      "source_sha256": "2f0ec29057d4b4924b2e53305c873ec7a8d1307f68156d329de377e28769f79b",
+      "source_size": 13002,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 20,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {
+        "automotive.diagnostics": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 434,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 3/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 1.884268100002373,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Умный круиз-контроль/C126083 )の)-) (验の))/ETM_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 18,
+      "inventory_pdf_index": 3210,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Smart Cruise Control Unit/C16B883 AEB 通信故障 (CRC)/故障代码信息和检查.pdf",
+      "source_sha256": "89b11418e41ff2d480b7b4326036a2da2117d05a9c8b6e27ee861176a5bfbc91",
+      "source_size": 54162,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 416,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8647,
+        "automotive.electrical": 0.7275
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 2693,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 16/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.8647,
+          "automotive.electrical": 0.5766
+        },
+        "ocr_used": false,
+        "table_blocks": 16,
+        "schematic_blocks": 0,
+        "latency_seconds": 15.209921499998018,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Умный круиз-контроль/C16B883 AEB Недостаток коммуникации (CRC)/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 19,
+      "inventory_pdf_index": 3283,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+      "source_sha256": "904b28be8fd3119ba9e5129f7385356a86561d905abff88dc62608f8a7c37902",
+      "source_size": 46187,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 290,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.937
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 1998,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 12/22",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9376
+        },
+        "ocr_used": false,
+        "table_blocks": 24,
+        "schematic_blocks": 0,
+        "latency_seconds": 18.479242800000065,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 20,
+      "inventory_pdf_index": 3299,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+      "source_sha256": "cf15f69f37f604dad83df885ad64f98a5193938fc29ad7532edeae93ba1799f6",
+      "source_size": 70141,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 867,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9834,
+        "automotive.engine": 0.478,
+        "automotive.restraint": 0.3935,
+        "automotive.steering": 0.5034
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 3041,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 18/22",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9334,
+          "automotive.engine": 0.4231
+        },
+        "ocr_used": false,
+        "table_blocks": 39,
+        "schematic_blocks": 0,
+        "latency_seconds": 36.134193000005325,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 21,
+      "inventory_pdf_index": 3305,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C126081 方向盘转角传感器电路-信号(无效)/故障代码信息和检查.pdf",
+      "source_sha256": "10bed853985ad56faff13575eb2286cdbe0b5ccf9fecd1c35ef4eb491124afb5",
+      "source_size": 58003,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 469,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7878,
+        "automotive.electrical": 0.8372,
+        "automotive.engine": 0.4231,
+        "automotive.steering": 0.6133
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程",
+      "family_population": 3823,
+      "family_sample": 22,
+      "population_weight": 173.77272727272728,
+      "size_rank": 2867,
+      "selection_reason": "family proportional quota 22/3823; size midpoint quantile slot 17/22",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7769,
+          "automotive.electrical": 0.8387,
+          "automotive.engine": 0.4231,
+          "automotive.steering": 0.6287
+        },
+        "ocr_used": false,
+        "table_blocks": 19,
+        "schematic_blocks": 0,
+        "latency_seconds": 17.999243799997203,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Рулевой датчик угла/C126081 )の)-) (неразборчиво)/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 22,
+      "inventory_pdf_index": 4161,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Battery/C110101 蓄电池电压高/故障代码信息和检查.pdf",
+      "source_sha256": "dfc206d4a7919d1a1f44237aa9e6703ea730f4250badada1957608010e15d2dd",
+      "source_size": 85258,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 681,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8173,
+        "automotive.electrical": 0.9257,
+        "automotive.engine": 0.4512
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 2860,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 17/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7981,
+          "automotive.electrical": 0.859,
+          "automotive.engine": 0.3935
+        },
+        "ocr_used": true,
+        "table_blocks": 26,
+        "schematic_blocks": 0,
+        "latency_seconds": 67.16193419999763,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/батарея/C110101 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 23,
+      "inventory_pdf_index": 4367,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Body Network System/C181208 与网关CAN超时/故障代码信息和检查.pdf",
+      "source_sha256": "dc5d40421543bb35376b9580696123282866dd8795db71d38246e1dcf6243c88",
+      "source_size": 55820,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 448,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8713,
+        "automotive.electrical": 0.7408
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 2513,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 15/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6501,
+          "automotive.electrical": 0.7432
+        },
+        "ocr_used": false,
+        "table_blocks": 19,
+        "schematic_blocks": 0,
+        "latency_seconds": 17.677116700004262,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Системные системы Body Network/C181208 С сетьюCANСуперчас/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 24,
+      "inventory_pdf_index": 4556,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Crankshaft Position Sensor (CKPS)/B294500 左后扬声器连接故障/检验车辆维修.pdf",
+      "source_sha256": "206fa5ef0177fe6a05ba9279a25e2b2ce33023f7ec063e0abe82c463bc06c22d",
+      "source_size": 26539,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 115,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6671
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 953,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 6/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6671
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 6.041696599997522,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Датчик положения коленчатого вала (CKPS)/B294500 左 後 後 後 後 後 後 後 後 後 後/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 25,
+      "inventory_pdf_index": 4564,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Crankshaft Position Sensor (CKPS)/P033500 曲轴位置传感器A电路/故障代码信息和检查.pdf",
+      "source_sha256": "a6af45a80b22837a864c08d9bf612f2e6dbdd97927fa440c5d835be4afe18b07",
+      "source_size": 52670,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 357,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8713,
+        "automotive.electrical": 0.7178,
+        "automotive.engine": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 2340,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 14/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.8713,
+          "automotive.electrical": 0.7204,
+          "automotive.engine": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 19,
+        "schematic_blocks": 0,
+        "latency_seconds": 14.535594000000856,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Датчик положения коленчатого вала (CKPS)/P033500 A/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 26,
+      "inventory_pdf_index": 4616,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Curtain Airbag (CAB) Module/B148000 助手席窗帘式空气囊电路与蓄电池电路短路/检验车辆维修.pdf",
+      "source_sha256": "5db90beda8eaafa92114f3c62f625805f6a08052c67610d250960afa7b8c4f52",
+      "source_size": 25165,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 97,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7769
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 606,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 4/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7769
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.935676299995976,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Занавесная подушка безопасностиCAB) Модуль/B148000 池 Негативный/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 27,
+      "inventory_pdf_index": 4701,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C110117 蓄电池电压高/故障代码信息和检查.pdf",
+      "source_sha256": "3c69b78bbb47218831d41c32b80ecd8c0c73d95e74aee27723577d2a4b47b066",
+      "source_size": 61912,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 470,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8262,
+        "automotive.electrical": 0.9571,
+        "automotive.engine": 0.4512
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 2687,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 16/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.808,
+          "automotive.electrical": 0.9507,
+          "automotive.engine": 0.4231
+        },
+        "ocr_used": true,
+        "table_blocks": 18,
+        "schematic_blocks": 0,
+        "latency_seconds": 55.468949100002646,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/DIS головная часть/C110117 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 28,
+      "inventory_pdf_index": 4706,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C125901 方向盘转角传感器-电气故障/部件检查.pdf",
+      "source_sha256": "b1ef38da24e38bc9ba9ec7788e80e2138da8a2852839c1a01906a23749033463",
+      "source_size": 40893,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 281,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6988,
+        "automotive.electrical": 0.5034,
+        "automotive.steering": 0.6988
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 1473,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 9/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6988,
+          "automotive.electrical": 0.532,
+          "automotive.steering": 0.7109
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 10.298075899998366,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/DIS головная часть/C125901 角, 角, 角,/компонент проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 29,
+      "inventory_pdf_index": 4976,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Engine Control Module (ECM)/P064200 传感器参考电压“A”电路电压低/故障代码信息和检查.pdf",
+      "source_sha256": "588af075c8f3bd6f6da82685bd599553d1735bfdf65ef244d808739188fc49ab",
+      "source_size": 50844,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 366,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7878,
+        "automotive.electrical": 0.8812
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 2167,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 13/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7878,
+          "automotive.electrical": 0.888
+        },
+        "ocr_used": false,
+        "table_blocks": 16,
+        "schematic_blocks": 0,
+        "latency_seconds": 15.335752500002855,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Модуль управления двигателемECM)/P064200 «А» — «А» — «А» — «А»/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 30,
+      "inventory_pdf_index": 5201,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/FCA Radar/C16B687 与FCA的通信CAN超时/ETM.pdf",
+      "source_sha256": "5fe3ff199c4a08ec0996a001692dcf30dd5b57c3891b422e1af83a725371008f",
+      "source_size": 5406,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 6,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {
+        "automotive.diagnostics": 0.3935
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 86,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 1/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "general",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 1.8831437999979244,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/FCA радар/C16B687 сFCAкоммуникацииCANСуперчас/ETM_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 31,
+      "inventory_pdf_index": 5447,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+      "source_sha256": "c3d755d9c195460dda7620aca591ecb7333ef22db832bae6d60c49cd7d1fa538",
+      "source_size": 45355,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 260,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.943
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 1647,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 10/19",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9463
+        },
+        "ocr_used": false,
+        "table_blocks": 21,
+        "schematic_blocks": 0,
+        "latency_seconds": 16.16446310000174,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 32,
+      "inventory_pdf_index": 5559,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/维修程序.pdf",
+      "source_sha256": "8b2fc7192a8c6dd442e7e4df17fbc24a182f944fd3b57f2bf7e7f685fc17d85a",
+      "source_size": 197570,
+      "pages": 3,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 451,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.cooling": 0.4231,
+        "automotive.electrical": 0.5507,
+        "automotive.emissions": 0.6834
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 3207,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 19/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.5548,
+          "automotive.emissions": 0.478
+        },
+        "ocr_used": true,
+        "table_blocks": 8,
+        "schematic_blocks": 0,
+        "latency_seconds": 190.90613229999872,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Нагретый кислородный датчик (HO2S)/процедуры ремонта_ru.pdf",
+        "output_pages": 4
+      }
+    },
+    {
+      "index": 33,
+      "inventory_pdf_index": 5631,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+      "source_sha256": "6534cf1d9d62dee4952cbf410aee70e11b4777584150e6120814951b39521744",
+      "source_size": 46906,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 322,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9392
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 1820,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 11/19",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8725
+        },
+        "ocr_used": false,
+        "table_blocks": 33,
+        "schematic_blocks": 0,
+        "latency_seconds": 21.05082940000284,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 34,
+      "inventory_pdf_index": 5682,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/IMS Tilt & Telescope Control/P21DB00 气缸1喷油器 B 电路电压低/检验车辆维修.pdf",
+      "source_sha256": "84425567a0779793e12ae119a6620d8a164a721dcb3557317ae8e86382468ee3",
+      "source_size": 25253,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 780,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 5/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.366573699997389,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/IMS Tilt & Telescope Control/P21DB00 Газовый цилиндр1B   Ilcweiten/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 35,
+      "inventory_pdf_index": 5827,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Instrument Panel ECU/P061A00 内部控制模块力矩性能/线束检查.pdf",
+      "source_sha256": "6acbd0ed88955a1c678e49f72ab22937444887e51f1b8ee714e3dee393343c4e",
+      "source_size": 30695,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 162,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.7769
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 1300,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 8/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.7897
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 7.95336110000062,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Панель инструментов ECU/P061A00 Внутренний контроль модуля мощности/Жгут проводов проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 36,
+      "inventory_pdf_index": 5912,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/LCD Monitor/C164202 CAN信息故障 - 制动/检验维修.pdf",
+      "source_sha256": "86211399b9d393bc32796c126291130042571860c4d5d737f6c1b653d29a2633",
+      "source_size": 27081,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7981
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 1126,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 7/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7981
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.643182800005889,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/LCD Монитор/C164202 CAN-/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 37,
+      "inventory_pdf_index": 6242,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Passenger Airbag (PAB) Module/B135500 助手席空气囊电阻电路与蓄电池电路短路(1级)/ETM.pdf",
+      "source_sha256": "5a5a5036022767b9d59dd0c55b0bba7b9ee834858d89d410fc13ed4066b8c9ca",
+      "source_size": 9713,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 6,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.restraint": 0.5507
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 260,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 2/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.restraint": 0.5785
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 1.6181810000052792,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Пассажирская подушка безопасностиPAB) Модуль/B135500 池 неблагоприятный1)/ETM_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 38,
+      "inventory_pdf_index": 6392,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Seat Belt Pretensioner (BPT)/B136700 助手席安全带拉紧器电阻过大/故障代码信息和检查.pdf",
+      "source_sha256": "79f004ad6e6d86641588fbb591b6d0715c801907ed7314456d07bb52c64db6ec",
+      "source_size": 125776,
+      "pages": 1,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 486,
+        "large_raster_pages": 1,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6988,
+        "automotive.electrical": 0.8504,
+        "automotive.engine": 0.3935,
+        "automotive.restraint": 0.8946
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 3033,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 18/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.electrical": 0.7676,
+          "automotive.engine": 0.3935,
+          "automotive.restraint": 0.8961
+        },
+        "ocr_used": true,
+        "table_blocks": 32,
+        "schematic_blocks": 0,
+        "latency_seconds": 62.99133459999575,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Претензионер ремня безопасностиBPT)/B136700 大/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 39,
+      "inventory_pdf_index": 6541,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+      "source_sha256": "d8b653f22a8a875afad2ca33f74ca275952e247b4928942adfa80e0a507521b8",
+      "source_size": 49090,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 350,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.adas": 0.3935,
+        "automotive.diagnostics": 0.808,
+        "automotive.electrical": 0.8347,
+        "automotive.engine": 0.4231
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 1993,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 12/19",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6671,
+          "automotive.electrical": 0.8362,
+          "automotive.engine": 0.4231
+        },
+        "ocr_used": false,
+        "table_blocks": 21,
+        "schematic_blocks": 0,
+        "latency_seconds": 14.249235299997963,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 40,
+      "inventory_pdf_index": 6849,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/TPMS Receiver/C112600 TPMS ECU蓄电池电压低/检验车辆维修.pdf",
+      "source_sha256": "cc1abb4d425cd7985d06d7f2022c7ba833efeb7e8de20d6f00458502d662db75",
+      "source_size": 23906,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6501
+      },
+      "family": "2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程",
+      "family_population": 3294,
+      "family_sample": 19,
+      "population_weight": 173.3684210526316,
+      "size_rank": 433,
+      "selection_reason": "family proportional quota 19/3294; size midpoint quantile slot 3/19",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6501
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.075290299995686,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/TPMS Получатель/C112600 TPMS ECUИнфраструктура/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 41,
+      "inventory_pdf_index": 7227,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C128354 横向加速度传感器 纵向加速度传感器 横摆率传感器-信号故障/部件检查.pdf",
+      "source_sha256": "6d779649cdf8bf7a96baa419448b0ed99a3742af26cce9d84638b28662e3d10b",
+      "source_size": 166680,
+      "pages": 1,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 245,
+        "large_raster_pages": 1,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6671,
+        "automotive.electrical": 0.478,
+        "automotive.restraint": 0.478,
+        "automotive.steering": 0.3935,
+        "software": 0.3935
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 3243,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 19/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321,
+          "automotive.electrical": 0.508,
+          "automotive.restraint": 0.4588,
+          "automotive.steering": 0.4461
+        },
+        "ocr_used": true,
+        "table_blocks": 46,
+        "schematic_blocks": 0,
+        "latency_seconds": 89.80889329999627,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C128354 横向加速度 датчик 横向加速度 датчик 横立率 датчик - сигнальный дефект/компонент проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 42,
+      "inventory_pdf_index": 7324,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C160E88 P-CAN总线OFF/检验维修.pdf",
+      "source_sha256": "ee57f03c268acb02248a68b26dfc115d9193e5780a7986f2ed27d8109d6b0a57",
+      "source_size": 29967,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 94,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 87,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 1/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.356960600001912,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C160E88 П-CANГлавная →OFF/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 43,
+      "inventory_pdf_index": 7583,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C181483 CAN信息故障 - SAS (CRC)/线束检查.pdf",
+      "source_sha256": "d71a57a399c82b0b392365083a6632be4388cef41abe64646006a338701eabda",
+      "source_size": 34108,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 117,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.7534
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 1139,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 7/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.7676
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.834854499997164,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C181483 CAN- SAS (CRC)/Жгут проводов проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 44,
+      "inventory_pdf_index": 7808,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C110216 蓄电池电压低/故障代码信息和检查.pdf",
+      "source_sha256": "12e73249e41483ef709a027b768a7d94bb49a921a060753138f15f6645f67b4c",
+      "source_size": 62306,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 458,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8262,
+        "automotive.electrical": 0.9612,
+        "automotive.engine": 0.4512
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 2717,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 16/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321,
+          "automotive.electrical": 0.9145,
+          "automotive.engine": 0.4512
+        },
+        "ocr_used": true,
+        "table_blocks": 17,
+        "schematic_blocks": 0,
+        "latency_seconds": 54.043832600000314,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Задний угловой радар/C110216 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 45,
+      "inventory_pdf_index": 7881,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C166A87 与LDWS LKAS的通信CAN超时/检验维修.pdf",
+      "source_sha256": "f633f143c9e12f9add6642d537a0422c1aa0a7000d241f8e42782fcd58bcfb49",
+      "source_size": 32180,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7981
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 789,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 5/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7981
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 6.246542299995781,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Задний угловой радар/C166A87 сLDWS LKASкоммуникацииCANСуперчас/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 46,
+      "inventory_pdf_index": 8085,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/中央网关/B252400 右前转向信号电路与搭铁电路短路/故障代码信息和检查.pdf",
+      "source_sha256": "c9e72a4e16c9be314f4e297cb8c521d795c0de86fe02be8cbdf5b3ecc80e04ca",
+      "source_size": 51018,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 378,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.4231,
+        "automotive.electrical": 0.9163
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 2016,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 12/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.4231,
+          "automotive.electrical": 0.7855
+        },
+        "ocr_used": false,
+        "table_blocks": 24,
+        "schematic_blocks": 0,
+        "latency_seconds": 15.298591300001135,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/中/B252400 右 前 前 前 前 前 前 前 前 前 前 前 前 前 前 前 前/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 47,
+      "inventory_pdf_index": 8221,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B100552 空气囊缺失故障/检验维修.pdf",
+      "source_sha256": "4c7d2dec450330237d2033edb9bc9701fcaa3d176f829f73f6a4669c60ea7819",
+      "source_size": 30930,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 101,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6501
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 613,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 4/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6501
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.837842400003865,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Инструментальный модуль/B100552 Недостаток воздушного ящика/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 48,
+      "inventory_pdf_index": 8255,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+      "source_sha256": "a1fcd41e02d2d5573bcb7dfc364d21f4f6b0d64d5ead5653cfe78304950e0d5a",
+      "source_size": 57167,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 447,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9484
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 2542,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 15/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9435
+        },
+        "ocr_used": false,
+        "table_blocks": 33,
+        "schematic_blocks": 0,
+        "latency_seconds": 26.63456899999437,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 49,
+      "inventory_pdf_index": 8386,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/前方照相机/C174686 HDA编码 & AVN  导航选项不匹配/示意图.pdf",
+      "source_sha256": "2d305892edd2471d3846e52352d24f5e955399b112b88ebbd8ce03db2845803a",
+      "source_size": 769296,
+      "pages": 8,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 3478,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.adas": 0.478,
+        "automotive.diagnostics": 0.478,
+        "automotive.electrical": 0.7654,
+        "automotive.engine": 0.478,
+        "automotive.fuel": 0.478,
+        "automotive.hvac": 0.478
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 3945,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 23/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "image_only",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.adas": 0.3935,
+          "automotive.diagnostics": 0.4231,
+          "automotive.electrical": 0.73,
+          "automotive.hvac": 0.4231
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 299.2585990000007,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/[править] Архив новостей/C174686 HDA& AVN  航/схема_ru.pdf",
+        "output_pages": 8
+      }
+    },
+    {
+      "index": 50,
+      "inventory_pdf_index": 8687,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+      "source_sha256": "761c5e2c1ac6d1928c6358935e1b41df4de63f900656d74e42a03b696e904873",
+      "source_size": 373613,
+      "pages": 8,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 471,
+        "large_raster_pages": 7,
+        "empty_native_pages": 4,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6834,
+        "automotive.electrical": 0.7135,
+        "automotive.engine": 0.3935,
+        "automotive.transmission": 0.7654,
+        "software": 0.478
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 3594,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 21/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.brakes": 0.3935,
+          "automotive.electrical": 0.7162,
+          "automotive.engine": 0.4231,
+          "automotive.transmission": 0.5726,
+          "software": 0.3935
+        },
+        "ocr_used": true,
+        "table_blocks": 21,
+        "schematic_blocks": 0,
+        "latency_seconds": 185.54322479999973,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+        "output_pages": 8
+      }
+    },
+    {
+      "index": 51,
+      "inventory_pdf_index": 8719,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074E07 6档掉档/检验维修.pdf",
+      "source_sha256": "6360b0bd125d622095753cef55aed8712af95addb9fd28061f15d03343b49dd2",
+      "source_size": 33110,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 163,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8173,
+        "automotive.electrical": 0.478
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 964,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 6/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.8173,
+          "automotive.electrical": 0.508
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 7.537125099996047,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Двойный разъем переключателя/P074E07 6Архив падений/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 52,
+      "inventory_pdf_index": 8793,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+      "source_sha256": "62d32112088e6091df97a3bb3b765521e3f5b6568ee3953af55dcce658e8fafa",
+      "source_size": 124176,
+      "pages": 2,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 551,
+        "large_raster_pages": 2,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9328
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 3068,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 18/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8846
+        },
+        "ocr_used": true,
+        "table_blocks": 41,
+        "schematic_blocks": 0,
+        "latency_seconds": 89.75008099999832,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 53,
+      "inventory_pdf_index": 9262,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+      "source_sha256": "cedaad46813b843d0d5a08dbdfc7e8e22e5433a9810b2efb7df37b2dd13d7a90",
+      "source_size": 45960,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 275,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.937
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 1490,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 9/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8387
+        },
+        "ocr_used": false,
+        "table_blocks": 25,
+        "schematic_blocks": 0,
+        "latency_seconds": 17.977678399998695,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 54,
+      "inventory_pdf_index": 9361,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P013A00 氧传感器响应慢 - 浓到稀组1传感器2/检验维修.pdf",
+      "source_sha256": "c885ced213e97bf62120cd0ab5654b7d3de1575f8f45202fc8e7fce045d3ec2c",
+      "source_size": 30156,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 263,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 2/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.954581199999666,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P013A00 -1датчика2/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 55,
+      "inventory_pdf_index": 9479,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+      "source_sha256": "f82857f2dfc93eadb82ee3638dc3f3290dab2bda0ff6f8932ebeb18afb44fcb5",
+      "source_size": 49490,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 350,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9401,
+        "automotive.engine": 0.7654,
+        "automotive.fuel": 0.5276
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 1841,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 11/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8919,
+          "automotive.engine": 0.7534,
+          "automotive.fuel": 0.5276
+        },
+        "ocr_used": false,
+        "table_blocks": 30,
+        "schematic_blocks": 0,
+        "latency_seconds": 20.66923549999774,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 56,
+      "inventory_pdf_index": 9853,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+      "source_sha256": "8816f4946ab76fd723b4cbc26d335867012e40157b9707096b9855a13d7ef76b",
+      "source_size": 755496,
+      "pages": 5,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 3901,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.brakes": 0.4231,
+        "automotive.cooling": 0.478,
+        "automotive.diagnostics": 0.4231,
+        "automotive.electrical": 0.8892,
+        "automotive.emissions": 0.6834,
+        "automotive.engine": 0.8647,
+        "automotive.fuel": 0.8173,
+        "automotive.hvac": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 3769,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 22/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "image_only",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.engine": 0.6988,
+          "automotive.interior": 0.3935
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 294.12203109999973,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P193100 角 3.3.2 角/Показать намерения_ru.pdf",
+        "output_pages": 5
+      }
+    },
+    {
+      "index": 57,
+      "inventory_pdf_index": 9888,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+      "source_sha256": "eacf22c6780186eece5f20b5307aa2f0b8eca4f13f70b592bed17805ddf490ad",
+      "source_size": 225101,
+      "pages": 4,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 282,
+        "large_raster_pages": 4,
+        "empty_native_pages": 2,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.808,
+        "automotive.electrical": 0.6988,
+        "automotive.engine": 0.6834,
+        "software": 0.3935
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 3419,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 20/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321,
+          "automotive.engine": 0.7275,
+          "software": 0.4231
+        },
+        "ocr_used": true,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 94.87043640000047,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+        "output_pages": 4
+      }
+    },
+    {
+      "index": 58,
+      "inventory_pdf_index": 10168,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+      "source_sha256": "b04dc6f827e4012a12419e31967234b66f2fa754f9b0abcdb780bd4ccdca9ac4",
+      "source_size": 30156,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 438,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 3/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.457320800000161,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P261000 ECM PCM机/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 59,
+      "inventory_pdf_index": 10460,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/安全气囊(项目 #1)/B141000 助手席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf",
+      "source_sha256": "a09cef368bd3c45248120105a0bc56e99728ce800a88b16e0617e30d0a99cc8f",
+      "source_size": 52484,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 380,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8173,
+        "automotive.electrical": 0.9093,
+        "automotive.engine": 0.3935,
+        "automotive.restraint": 0.7275
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 2191,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 13/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.808,
+          "automotive.electrical": 0.7432,
+          "automotive.engine": 0.3935,
+          "automotive.restraint": 0.7443
+        },
+        "ocr_used": false,
+        "table_blocks": 22,
+        "schematic_blocks": 0,
+        "latency_seconds": 18.31665819999762,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/(  #)1)/B141000 ()SIS· Коммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 60,
+      "inventory_pdf_index": 10655,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/电机驱动动力转向(C-MDPS)/C110216 蓄电池电压低/线束检查.pdf",
+      "source_sha256": "fae585286af1b378dadde399f0b3073a7a761a1a226501f0d531f4c8491f1769",
+      "source_size": 54306,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 452,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.3935,
+        "automotive.electrical": 0.945,
+        "automotive.steering": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 2367,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 14/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.electrical": 0.9427
+        },
+        "ocr_used": false,
+        "table_blocks": 25,
+        "schematic_blocks": 0,
+        "latency_seconds": 21.34735499999806,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机天  (С-)MDPS)/C110216 Инфраструктура/Жгут проводов проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 61,
+      "inventory_pdf_index": 10737,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/电机驱动动力转向(C-MDPS)/C181786 与网关的CAN通信故障/故障代码信息和检查.pdf",
+      "source_sha256": "4d46ed309c87a1f76b4f872323f25574f5cef96c8f1fbd0757c01307a8325604",
+      "source_size": 42736,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 256,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7878,
+        "automotive.electrical": 0.8262,
+        "automotive.engine": 0.3935
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 1315,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 8/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7878,
+          "automotive.electrical": 0.8362,
+          "automotive.engine": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 18,
+        "schematic_blocks": 0,
+        "latency_seconds": 13.449403899998288,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机天  (С-)MDPS)/C181786 的CANКоммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 62,
+      "inventory_pdf_index": 10800,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+      "source_sha256": "3b2c9a5c5330a7cad52765517f91bb3c7c24a69adffb7b72abe744b4f6d1892f",
+      "source_size": 47429,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 389,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9392,
+        "automotive.hvac": 0.5507
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 1665,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 10/23",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9334,
+          "automotive.hvac": 0.5034
+        },
+        "ocr_used": false,
+        "table_blocks": 33,
+        "schematic_blocks": 0,
+        "latency_seconds": 20.813858900000923,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 63,
+      "inventory_pdf_index": 10941,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/综合车身控制模块-车身控制模块/部件位置和功能/部件位置.pdf",
+      "source_sha256": "e5776dcdb1386c605bad3357eeaee0741a419f923602eab20929f707956fc318",
+      "source_size": 90659,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 240,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {
+        "automotive.body": 0.5347
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南",
+      "family_population": 4033,
+      "family_sample": 23,
+      "population_weight": 175.34782608695653,
+      "size_rank": 2893,
+      "selection_reason": "family proportional quota 23/4033; size midpoint quantile slot 17/23",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.5605
+        },
+        "ocr_used": true,
+        "table_blocks": 18,
+        "schematic_blocks": 0,
+        "latency_seconds": 43.21184869999706,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/- ,  -/Местоположение и функция частей/расположение компонентов_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 64,
+      "inventory_pdf_index": 11189,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+      "source_sha256": "36fae93e3f6437a8a1a34d30a266fd23325c2a16b8e2866a6d2976e934af72b3",
+      "source_size": 230853,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 311,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.restraint": 0.8504
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图",
+      "family_population": 329,
+      "family_sample": 2,
+      "population_weight": 164.5,
+      "size_rank": 246,
+      "selection_reason": "family proportional quota 2/329; size midpoint quantile slot 2/2",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.restraint": 0.8198
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 29.646273900005326,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 65,
+      "inventory_pdf_index": 11380,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+      "source_sha256": "022a977dae0213504ef4e8929db0e7eb58599f38de57b22f1da4121f7ab0da7a",
+      "source_size": 158505,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 208,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.7802
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图",
+      "family_population": 329,
+      "family_sample": 2,
+      "population_weight": 164.5,
+      "size_rank": 82,
+      "selection_reason": "family proportional quota 2/329; size midpoint quantile slot 1/2",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.7929
+        },
+        "ocr_used": false,
+        "table_blocks": 5,
+        "schematic_blocks": 0,
+        "latency_seconds": 10.89406429999508,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 66,
+      "inventory_pdf_index": 11501,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/DCT (双离合变速器)系统/双离合变速器控制系统/输入速度传感器/维修程序.pdf",
+      "source_sha256": "d298b7746ec3e78ec8364ca7aa36436efa9f7861485dafdb7f8e5af04a6cde28",
+      "source_size": 107960,
+      "pages": 2,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 278,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6988,
+        "automotive.electrical": 0.478,
+        "automotive.engine": 0.3935,
+        "automotive.transmission": 0.7033
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册",
+      "family_population": 871,
+      "family_sample": 5,
+      "population_weight": 174.2,
+      "size_rank": 609,
+      "selection_reason": "family proportional quota 5/871; size midpoint quantile slot 4/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6988,
+          "automotive.electrical": 0.508,
+          "automotive.engine": 0.3935,
+          "automotive.transmission": 0.7033
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 127.95609279999917,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/DCT (合 ) ) ) ))/Система управления двойным переключателем/Входный датчик скорости/процедуры ремонта_ru.pdf",
+        "output_pages": 3
+      }
+    },
+    {
+      "index": 67,
+      "inventory_pdf_index": 11663,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/发动机控制 燃油系统/燃料供给系统/燃料压力传感器(FPS)/规格.pdf",
+      "source_sha256": "5c0666e8dd072eafa87f55cb02341cfcb1aad6a2687b80142cd298b9fea44c42",
+      "source_size": 24601,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 20,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {},
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册",
+      "family_population": 871,
+      "family_sample": 5,
+      "population_weight": 174.2,
+      "size_rank": 87,
+      "selection_reason": "family proportional quota 5/871; size midpoint quantile slot 1/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.508
+        },
+        "ocr_used": true,
+        "table_blocks": 3,
+        "schematic_blocks": 0,
+        "latency_seconds": 37.58658120000473,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/天/Система поставок топлива/压Russian ()FPS)/технические характеристики_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 68,
+      "inventory_pdf_index": 11734,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/发动机机械系统/进气和排气系统/涡轮增压器/部件和部件位置.pdf",
+      "source_sha256": "d3f1d23c176c4af29a90f41acf34a37f40ace78708b5d02e7c730a4dc9eca74e",
+      "source_size": 68179,
+      "pages": 1,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 49,
+        "large_raster_pages": 1,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {},
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册",
+      "family_population": 871,
+      "family_sample": 5,
+      "population_weight": 174.2,
+      "size_rank": 435,
+      "selection_reason": "family proportional quota 5/871; size midpoint quantile slot 3/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "general",
+        "subdomains": {},
+        "ocr_used": true,
+        "table_blocks": 9,
+        "schematic_blocks": 0,
+        "latency_seconds": 39.85281940000277,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/机/Система ввода и выбросов газа/压の/Местоположение частей и частей_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 69,
+      "inventory_pdf_index": 12162,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/车身（内部和外部）/后座椅安全带/后中央座椅安全带卷带器/维修程序.pdf",
+      "source_sha256": "eaaa1c8ed3b7a0c02f5f76d948d83ca58fe19e3edd0af9e4dac5b46b280a484f",
+      "source_size": 45788,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 92,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.interior": 0.4231,
+        "automotive.restraint": 0.5108
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册",
+      "family_population": 871,
+      "family_sample": 5,
+      "population_weight": 174.2,
+      "size_rank": 261,
+      "selection_reason": "family proportional quota 5/871; size midpoint quantile slot 2/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.interior": 0.4231,
+          "automotive.restraint": 0.5411
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 38.395076199994946,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/)())/Задние сиденья Безопасный пояс/中中/процедуры ремонта_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 70,
+      "inventory_pdf_index": 12240,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/转向系统/方向盘（加热式方向盘）/加热式方向盘开关/维修程序.pdf",
+      "source_sha256": "bc94a96628eed5032e28cb549e7eb162a35570599504e388dc5c47e8615a14e8",
+      "source_size": 255221,
+      "pages": 3,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 297,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.4231,
+        "automotive.body.body_measurement": 0.3935,
+        "automotive.electrical": 0.478,
+        "automotive.interior": 0.6501,
+        "automotive.steering": 0.7484
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册",
+      "family_population": 871,
+      "family_sample": 5,
+      "population_weight": 174.2,
+      "size_rank": 783,
+      "selection_reason": "family proportional quota 5/871; size midpoint quantile slot 5/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.4271,
+          "automotive.body.body_measurement": 0.3935,
+          "automotive.electrical": 0.508,
+          "automotive.interior": 0.6501,
+          "automotive.steering": 0.5814
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 242.7928561000008,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/Перейти к системе/)())/Загревательный конвейер/процедуры ремонта_ru.pdf",
+        "output_pages": 3
+      }
+    },
+    {
+      "index": 71,
+      "inventory_pdf_index": 12584,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/ABS ESC/C161386 EMS CAN信号故障 (无效信号)/检验维修.pdf",
+      "source_sha256": "41b3c7ebdb56e942d7c3efe510dc3b86c03a5fcb6138a35fabd140d0c2422c09",
+      "source_size": 29967,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 94,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 86,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 1/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.69522909999796,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C161386 EMS CAN) (произносится ))/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 72,
+      "inventory_pdf_index": 12889,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/ABS ESC/C222077 左后执行器 (电机怠速)/部件检查.pdf",
+      "source_sha256": "88d8a9ce8c2dffc918eac1d6b02a650018b46a1c4b0f7a13435e79ed9573f245",
+      "source_size": 78041,
+      "pages": 1,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 209,
+        "large_raster_pages": 1,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6501,
+        "automotive.electrical": 0.7275
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 2494,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 15/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6501,
+          "automotive.electrical": 0.5548
+        },
+        "ocr_used": true,
+        "table_blocks": 11,
+        "schematic_blocks": 0,
+        "latency_seconds": 76.6534982000012,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C222077 ) (机天))/компонент проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 73,
+      "inventory_pdf_index": 12939,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/ABS ESC/C224096 未知执行器状态/线束检查.pdf",
+      "source_sha256": "1ced9ce293b19cc760b1b9dde661374fc9de76d7d6e341d51eef17264beb2247",
+      "source_size": 33567,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 115,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.7534
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 946,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 6/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.7676
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 6.56405729999824,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C224096 Статус неизвестного исполнителя/Жгут проводов проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 74,
+      "inventory_pdf_index": 13055,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/Rear Corner Radar/C120C11 警告LED左电路与搭铁电路短路/示意图.pdf",
+      "source_sha256": "c4f4cbb58b2ac63c411a8f0fe882243ba80ab408ca080fb35ee342927a96fe47",
+      "source_size": 104702,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 363,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.4231,
+        "automotive.electrical": 0.4934
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 2666,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 16/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "image_only",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.electrical": 0.5226
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 46.06932790000428,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/Задний угловой радар/C120C11 ПредупреждениеLED左回路 左回路 左回路 左回路/схема_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 75,
+      "inventory_pdf_index": 13229,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/B160500 与DDM的CAN通信超时/线束检查.pdf",
+      "source_sha256": "60a3a48eb40ca736258facc4b82544867a3a37e2c099bca0d9fa96ff22950ee3",
+      "source_size": 51445,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 333,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.3935,
+        "automotive.electrical": 0.8946
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 1806,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 11/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8787
+        },
+        "ocr_used": false,
+        "table_blocks": 41,
+        "schematic_blocks": 0,
+        "latency_seconds": 22.705640699998185,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/B160500 сDDMжадныйCANКоммуникация сверхчасовая/Жгут проводов проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 76,
+      "inventory_pdf_index": 13392,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+      "source_sha256": "179f16c3847a20df0dcb1be1562ec9f21ef04d32e55c520c6f7e43f93ab7544b",
+      "source_size": 769296,
+      "pages": 8,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 3478,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.adas": 0.478,
+        "automotive.diagnostics": 0.478,
+        "automotive.electrical": 0.7654,
+        "automotive.engine": 0.478,
+        "automotive.fuel": 0.478,
+        "automotive.hvac": 0.478
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 3182,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 19/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "image_only",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.adas": 0.3935,
+          "automotive.diagnostics": 0.4231,
+          "automotive.electrical": 0.73,
+          "automotive.hvac": 0.4231
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 298.5186771000008,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/C161100 сEMSжадныйCANКоммуникация сверхчасовая/схема_ru.pdf",
+        "output_pages": 8
+      }
+    },
+    {
+      "index": 77,
+      "inventory_pdf_index": 13469,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+      "source_sha256": "3961019485aa82f188fc08a11e7f56ac4a709e13a33150e9da2ca16a33d0a5b9",
+      "source_size": 58428,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 494,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6501,
+        "automotive.electrical": 0.6834,
+        "software": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 2322,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 14/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6501,
+          "automotive.electrical": 0.7016,
+          "software": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 32,
+        "schematic_blocks": 0,
+        "latency_seconds": 0.31289269999979297,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 78,
+      "inventory_pdf_index": 13596,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/前方照相机/C168785 与VSM2 (MDPS)的CAN通信超时/检验维修.pdf",
+      "source_sha256": "820927c9281a639ea6beb34772a1cc6e8050f065395640c5fe1c4c46d9efe999",
+      "source_size": 32180,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7981
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 774,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 5/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7981
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.96443569999974,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/[править] Архив новостей/C168785 сVSM2 (MDPS)желательноCANКоммуникация сверхчасовая/проверка и ремонт_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 79,
+      "inventory_pdf_index": 13822,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/前视雷达/C181687 与SJB的CAN通信超时/故障代码信息和检查.pdf",
+      "source_sha256": "64f1f56d0037ff7710568d44438eb986fa3c7942478749661d2e5af82155562e",
+      "source_size": 54885,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 415,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7878,
+        "automotive.electrical": 0.8173,
+        "automotive.engine": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 2150,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 13/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.electrical": 0.7016,
+          "automotive.engine": 0.4231
+        },
+        "ocr_used": false,
+        "table_blocks": 24,
+        "schematic_blocks": 0,
+        "latency_seconds": 17.076839800000016,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/天/C181687 сSJBжадныйCANКоммуникация сверхчасовая/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 80,
+      "inventory_pdf_index": 13888,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+      "source_sha256": "ed2871d6da6a67b3175e72119b219c4b89b2c9e25388c9981d4b28f0feb604d5",
+      "source_size": 46329,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 260,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.943
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 1290,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 8/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9376
+        },
+        "ocr_used": false,
+        "table_blocks": 22,
+        "schematic_blocks": 0,
+        "latency_seconds": 16.16458860000421,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 81,
+      "inventory_pdf_index": 14183,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P026800 气缸3 - 喷油器电路电压高/部件检查.pdf",
+      "source_sha256": "ed45a6e6b0b44eb7494cc0847d3d9796607aaedec11044d62a46539562e901d5",
+      "source_size": 42358,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 207,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.619
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 1118,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 7/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.641
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 9.37824130000081,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P026800 Газовый цилиндр3 - 压の/компонент проверка_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 82,
+      "inventory_pdf_index": 14270,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+      "source_sha256": "6108b9b57fae4d8051e291e70faa5816e40a0de88b4bcc3d63cabad1617e6d00",
+      "source_size": 815081,
+      "pages": 5,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 4118,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.brakes": 0.478,
+        "automotive.cooling": 0.6988,
+        "automotive.diagnostics": 0.3935,
+        "automotive.electrical": 0.6881,
+        "automotive.emissions": 0.7135,
+        "automotive.engine": 0.8713,
+        "automotive.fuel": 0.6834,
+        "automotive.hvac": 0.4512,
+        "automotive.transmission": 0.3935
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 3354,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 20/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "image_only",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.brakes": 0.3935,
+          "automotive.electrical": 0.5154,
+          "automotive.engine": 0.478,
+          "automotive.transmission": 0.3935
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 279.02567550000094,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "output_pages": 5
+      }
+    },
+    {
+      "index": 83,
+      "inventory_pdf_index": 14411,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+      "source_sha256": "32d77ef7d63d2157d03ada275bc528aa7e9d06ed9a77496944b9d56d94b80fdf",
+      "source_size": 47795,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 304,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.9338
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 1462,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 9/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.803
+        },
+        "ocr_used": false,
+        "table_blocks": 31,
+        "schematic_blocks": 0,
+        "latency_seconds": 20.42104890000337,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 84,
+      "inventory_pdf_index": 14585,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P21CF00 气缸1喷油器 B 电路 断路/检验车辆维修.pdf",
+      "source_sha256": "12d4517e565261a8d61d55bcb284f931446c338669892e0a09cddea877ae0c7d",
+      "source_size": 30344,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 95,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.6321
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 430,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 3/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.958159900001192,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P21CF00 Газовый цилиндр1B/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 85,
+      "inventory_pdf_index": 14614,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P21DE00 气缸2喷油器 B 电路电压低/故障代码信息和检查.pdf",
+      "source_sha256": "d73cd755dc95b04666631d45c533becdd19fc981b379defc7acd95b9cde3e8d1",
+      "source_size": 52704,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 348,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7878,
+        "automotive.electrical": 0.8732,
+        "automotive.engine": 0.478,
+        "automotive.fuel": 0.5034
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 1978,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 12/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7878,
+          "automotive.electrical": 0.8744,
+          "automotive.engine": 0.478,
+          "automotive.fuel": 0.5034
+        },
+        "ocr_used": false,
+        "table_blocks": 19,
+        "schematic_blocks": 0,
+        "latency_seconds": 15.197209199999634,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P21DE00 Газовый цилиндр2B   Ilcweiten/информация о коде неисправности и проверка_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 86,
+      "inventory_pdf_index": 15027,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B16D900 内部故障-系统ASIC/检验车辆维修.pdf",
+      "source_sha256": "a2b37b3b52309b4e8d7ab0d47f79069267732ec98b5ff8dc7776e322a5761ead",
+      "source_size": 30258,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 97,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7769
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 258,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 2/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7769
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 4.6878959000023315,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/(  #)1)/B16D900 -ASIC/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 87,
+      "inventory_pdf_index": 15056,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+      "source_sha256": "b0192c0fa628bfb8a42d267d21d40a84f8ec1cb9e63d302bb471b15523b98679",
+      "source_size": 49907,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 415,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.8997,
+        "automotive.restraint": 0.5507
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 1634,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 10/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.9007,
+          "automotive.restraint": 0.5785
+        },
+        "ocr_used": false,
+        "table_blocks": 33,
+        "schematic_blocks": 0,
+        "latency_seconds": 21.395107699994696,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 88,
+      "inventory_pdf_index": 15248,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/无级变速/P088000 TCM电源输入信号/检验车辆维修.pdf",
+      "source_sha256": "6d9d07e9f32baa6c23e086767812751d15c524d174a4d9f4d53c561e3fe38756",
+      "source_size": 31150,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 108,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.7981
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 602,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 4/20",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.7981
+        },
+        "ocr_used": false,
+        "table_blocks": 2,
+        "schematic_blocks": 0,
+        "latency_seconds": 5.641900899994653,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/Невысокая скорость/P088000 TCM源 Ресурсы/Проверка ремонта транспортного средства_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 89,
+      "inventory_pdf_index": 15598,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+      "source_sha256": "57a38fbde8b53a336cf9faae645dacad1641665683bd30fda6fb8e54bcd502f8",
+      "source_size": 271240,
+      "pages": 3,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 916,
+        "large_raster_pages": 1,
+        "empty_native_pages": 1,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.5034,
+        "automotive.diagnostics": 0.7275,
+        "automotive.electrical": 0.8946,
+        "software": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 3010,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 18/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.3935,
+          "automotive.electrical": 0.508,
+          "software": 0.4231
+        },
+        "ocr_used": true,
+        "table_blocks": 53,
+        "schematic_blocks": 0,
+        "latency_seconds": 174.65777849999722,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+        "output_pages": 3
+      }
+    },
+    {
+      "index": 90,
+      "inventory_pdf_index": 15687,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+      "source_sha256": "b92bb05117d4e1c495ffdaa2fa061aac0b073281ad5f63ae93e05d28e5be9693",
+      "source_size": 140320,
+      "pages": 4,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 424,
+        "large_raster_pages": 3,
+        "empty_native_pages": 2,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.diagnostics": 0.8173,
+        "automotive.electrical": 0.9106,
+        "software": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南",
+      "family_population": 3440,
+      "family_sample": 20,
+      "population_weight": 172.0,
+      "size_rank": 2838,
+      "selection_reason": "family proportional quota 20/3440; size midpoint quantile slot 17/20",
+      "production": {
+        "output_status": "FAILED_SOURCE_PRESERVED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.diagnostics": 0.8835,
+          "automotive.electrical": 0.8217,
+          "software": 0.4231
+        },
+        "ocr_used": true,
+        "table_blocks": 26,
+        "schematic_blocks": 0,
+        "latency_seconds": 68.10360130000481,
+        "output_archive_member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+        "output_pages": 4
+      }
+    },
+    {
+      "index": 91,
+      "inventory_pdf_index": 15881,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图/示意图/车身电气系统/大灯/示意图.pdf",
+      "source_sha256": "1102211b522a7fe6cad26691d443e813bb2060a6640f14e2167f7e1f3a4270a1",
+      "source_size": 249373,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 417,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.478,
+        "automotive.diagnostics": 0.4512,
+        "automotive.electrical": 0.8598
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图",
+      "family_population": 331,
+      "family_sample": 2,
+      "population_weight": 165.5,
+      "size_rank": 248,
+      "selection_reason": "family proportional quota 2/331; size midpoint quantile slot 2/2",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.5069,
+          "automotive.electrical": 0.7593
+        },
+        "ocr_used": false,
+        "table_blocks": 18,
+        "schematic_blocks": 0,
+        "latency_seconds": 33.627711699999054,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Карта круга/Показать намерения/Автомобильная электрическая система/大/схема_ru.pdf",
+        "output_pages": 3
+      }
+    },
+    {
+      "index": 92,
+      "inventory_pdf_index": 16009,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图/连接器形状/ICU（集成中央控制模块）接线盒/示意图.pdf",
+      "source_sha256": "0d1d34dcf28b289e16c28a632b60672dcfe62be42567fb5623efb738774aa9ec",
+      "source_size": 179925,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 626,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body.doors": 0.6988,
+        "automotive.brakes": 0.3935,
+        "automotive.electrical": 0.8598
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图",
+      "family_population": 331,
+      "family_sample": 2,
+      "population_weight": 165.5,
+      "size_rank": 82,
+      "selection_reason": "family proportional quota 2/331; size midpoint quantile slot 1/2",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.8611
+        },
+        "ocr_used": false,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 30.49828520000301,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Карта круга/Форма соединителя/ICU(неразборчиво)/схема_ru.pdf",
+        "output_pages": 2
+      }
+    },
+    {
+      "index": 93,
+      "inventory_pdf_index": 16326,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/发动机电气系统/充电系统/故障检修.pdf",
+      "source_sha256": "46b10d583075e29f3cf3b8e5c6ed6ec674dc61674fc6f5ff8e3d14b26e6fa921",
+      "source_size": 72574,
+      "pages": 2,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 1452,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.478,
+        "automotive.diagnostics": 0.3935,
+        "automotive.electrical": 0.9502,
+        "automotive.engine": 0.8347,
+        "automotive.suspension": 0.4231
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册",
+      "family_population": 839,
+      "family_sample": 5,
+      "population_weight": 167.8,
+      "size_rank": 419,
+      "selection_reason": "family proportional quota 5/839; size midpoint quantile slot 3/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.455,
+          "automotive.electrical": 0.73,
+          "automotive.engine": 0.5507,
+          "automotive.suspension": 0.3935
+        },
+        "ocr_used": false,
+        "table_blocks": 95,
+        "schematic_blocks": 0,
+        "latency_seconds": 70.08151199999702,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/机/Система зарядки/Недостаток ремонта_ru.pdf",
+        "output_pages": 4
+      }
+    },
+    {
+      "index": 94,
+      "inventory_pdf_index": 16397,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/智能变速器(IVT)系统/IVT控制系统/E-Module/规格.pdf",
+      "source_sha256": "95cadbee370d626ff18a044469f7371bf305e92f17acf779ea3c053c38fd50d1",
+      "source_size": 25427,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 101,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.5034,
+        "automotive.engine": 0.6321
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册",
+      "family_population": 839,
+      "family_sample": 5,
+      "population_weight": 167.8,
+      "size_rank": 83,
+      "selection_reason": "family proportional quota 5/839; size midpoint quantile slot 1/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.532,
+          "automotive.engine": 0.6321
+        },
+        "ocr_used": false,
+        "table_blocks": 19,
+        "schematic_blocks": 0,
+        "latency_seconds": 8.238155800005188,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/智()IVT• Система/IVTКонтрольная система/Электронный модуль/технические характеристики_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 95,
+      "inventory_pdf_index": 16676,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/车身（内部和外部）/仪表板/仪表板侧装饰板/维修程序.pdf",
+      "source_sha256": "4b1c11a637a1608086c2c697a104ec7694c02660ef326739920f1522449d2b79",
+      "source_size": 112379,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 130,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.electrical": 0.478,
+        "automotive.interior": 0.5789
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册",
+      "family_population": 839,
+      "family_sample": 5,
+      "population_weight": 167.8,
+      "size_rank": 587,
+      "selection_reason": "family proportional quota 5/839; size midpoint quantile slot 4/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.electrical": 0.508,
+          "automotive.interior": 0.5789
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 95.2775507999977,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/)())/Инструментальный панель/Платная панель на бок украшения/процедуры ремонта_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 96,
+      "inventory_pdf_index": 16805,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/车身（内部和外部）/天窗/天窗玻璃/维修程序.pdf",
+      "source_sha256": "2600329bd5cc010391ea2b8b0cfe8b1a68e12af9851772214a046ae64cad1701",
+      "source_size": 48670,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 77,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "general",
+      "subdomains": {},
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册",
+      "family_population": 839,
+      "family_sample": 5,
+      "population_weight": 167.8,
+      "size_rank": 251,
+      "selection_reason": "family proportional quota 5/839; size midpoint quantile slot 2/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "native",
+        "domain": "general",
+        "subdomains": {},
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 37.69109700000263,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/)())/天/天/Процедура ремонта_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 97,
+      "inventory_pdf_index": 16850,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/转向系统/方向盘（加热式方向盘）/加热式方向盘开关/维修程序.pdf",
+      "source_sha256": "0795047f4c30ae04afb7d124699e1d9bc787e3bb5021e38325332e9f5f217c01",
+      "source_size": 255221,
+      "pages": 3,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 297,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.4231,
+        "automotive.body.body_measurement": 0.3935,
+        "automotive.electrical": 0.478,
+        "automotive.interior": 0.6501,
+        "automotive.steering": 0.7484
+      },
+      "family": "2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册",
+      "family_population": 839,
+      "family_sample": 5,
+      "population_weight": 167.8,
+      "size_rank": 755,
+      "selection_reason": "family proportional quota 5/839; size midpoint quantile slot 5/5",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.4271,
+          "automotive.body.body_measurement": 0.3935,
+          "automotive.electrical": 0.508,
+          "automotive.interior": 0.6501,
+          "automotive.steering": 0.5814
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 242.1796766000043,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/Перейти к системе/)())/Загревательный конвейер/процедуры ремонта_ru.pdf",
+        "output_pages": 3
+      }
+    },
+    {
+      "index": 98,
+      "inventory_pdf_index": 17026,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 电路图/G 1.4 T-GDI/示意图/车身电气系统/遥控＆防盗警报系统/示意图.pdf",
+      "source_sha256": "24b16f96376cd3626d92858c2462257a85d65c902f910fe8e4aed7d9f9a01647",
+      "source_size": 150174,
+      "pages": 1,
+      "classification": "native",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 555,
+        "large_raster_pages": 0,
+        "empty_native_pages": 0,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body.doors": 0.7275,
+        "automotive.diagnostics": 0.4512,
+        "automotive.electrical": 0.5108,
+        "automotive.steering": 0.3935
+      },
+      "family": "2022 第七代伊兰特(CN7C) 电路图",
+      "family_population": 209,
+      "family_sample": 1,
+      "population_weight": 209.0,
+      "size_rank": 104,
+      "selection_reason": "family proportional quota 1/209; size midpoint quantile slot 1/1",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "image_only",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body.doors": 0.6988,
+          "automotive.electrical": 0.5154,
+          "automotive.steering": 0.4177
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 52.50802649999969,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C)/G 1.4 Т-GDI/Показать намерения/Автомобильная электрическая система/&/схема_ru.pdf",
+        "output_pages": 1
+      }
+    },
+    {
+      "index": 99,
+      "inventory_pdf_index": 17184,
+      "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 车身维修手册/车身构造/部件和部件位置.pdf",
+      "source_sha256": "e4bf58992856d2abd337c75838f4f2d055949ece926574fb737db5680d7aa87b",
+      "source_size": 260976,
+      "pages": 3,
+      "classification": "mixed",
+      "classification_basis": "read-only native text and large raster presence; provisional, not OCR-used",
+      "source_inspection": {
+        "native_alphabetic_chars": 10,
+        "large_raster_pages": 3,
+        "empty_native_pages": 1,
+        "error_type": null
+      },
+      "domain": "automotive",
+      "subdomains": {
+        "automotive.body": 0.5108
+      },
+      "family": "2022 第七代伊兰特(CN7C) 车身维修手册",
+      "family_population": 42,
+      "family_sample": 1,
+      "population_weight": 42.0,
+      "size_rank": 21,
+      "selection_reason": "family proportional quota 1/42; size midpoint quantile slot 1/1",
+      "production": {
+        "output_status": "TRANSLATED",
+        "classification": "mixed",
+        "domain": "automotive",
+        "subdomains": {
+          "automotive.body": 0.5379
+        },
+        "ocr_used": true,
+        "table_blocks": 0,
+        "schematic_blocks": 0,
+        "latency_seconds": 21.60322029999952,
+        "output_archive_member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) (1)/Строительство автомобиля/компоненты и их расположение_ru.pdf",
+        "output_pages": 3
+      }
+    }
+  ]
+}

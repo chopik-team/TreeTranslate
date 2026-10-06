@@ -1,0 +1,2416 @@
+{
+  "status": "PASS",
+  "pre_closure_tree_sha256": "0ddf2d9813453df0569a488272cce2e54386d77cd90f8f87a3bb5363accf7270",
+  "production_tree_sha256": "ffba121652fdf05a0b51bf97742596559b177ae141cd0e6799e3b4cf3f4e88a5",
+  "allowed_changes": [
+    "app/config/constants.py",
+    "assets/language-support.json"
+  ],
+  "production_logic_unchanged": true,
+  "hash_policy": "SHA256 of sorted relative-path NUL raw-file-SHA256 newline records; working bytes before Git text normalization",
+  "files": [
+    {
+      "path": "app/__init__.py",
+      "size": 41,
+      "sha256": "f915ae1a31c06ef40aac00b26327e7baaa45a47f80ddfbba1f7d62c72c3af548"
+    },
+    {
+      "path": "app/application.py",
+      "size": 1191,
+      "sha256": "190e44fa650cfa6941bfd95c52891952dcb02eea51c79094ff1b37cb85c4823a"
+    },
+    {
+      "path": "app/config/__init__.py",
+      "size": 33,
+      "sha256": "8865bd709d7599eb4f349ca08f6f4b37938da54a46a58aeafc28f6a689d4f92f"
+    },
+    {
+      "path": "app/config/constants.py",
+      "size": 418,
+      "sha256": "48ac8751aafc07dfa8f75cb69fd5f5ef67bdac11661c453b2a3209780d4ebb48"
+    },
+    {
+      "path": "app/config/engine_profiles.json",
+      "size": 1326,
+      "sha256": "37c6e4c5d2ad5a770c1177ddff66e611cc6d1843d170796e8deba0d9af006f10"
+    },
+    {
+      "path": "app/config/knowledge_domains.py",
+      "size": 1321,
+      "sha256": "363c5238df88d2039c0bf8b09136d97c64a2d13c7750b3fb21a14c34f0fb0d31"
+    },
+    {
+      "path": "app/config/logging_config.py",
+      "size": 2981,
+      "sha256": "0f3aba958d5e2386554572fc18595a02eafe6a93603cc5615b58c71788aa978c"
+    },
+    {
+      "path": "app/config/paths.py",
+      "size": 818,
+      "sha256": "b02feb9a80385757c138308db31d8f5ba98fd604820d24093191b8af8895c177"
+    },
+    {
+      "path": "app/config/settings.py",
+      "size": 953,
+      "sha256": "6fb4b2174c5a3f386460771b1c4dad299b493f05379e79ea6f97d2eb07c8d4cf"
+    },
+    {
+      "path": "app/controllers/__init__.py",
+      "size": 22,
+      "sha256": "0d913447498afd95c97186218154c77f63cd43551746abd3f7ce54303ec3b492"
+    },
+    {
+      "path": "app/controllers/navigation_controller.py",
+      "size": 403,
+      "sha256": "3d98f9baed8802d25f18c4bd8d16fa32b786dd21390813fe14b9e97410eb0954"
+    },
+    {
+      "path": "app/controllers/translation_ui_controller.py",
+      "size": 20383,
+      "sha256": "1173bc07a72d81ec4b3f313efb3388325d50ca7e1f4ade3957c84f51aa9f6938"
+    },
+    {
+      "path": "app/documents/__init__.py",
+      "size": 82,
+      "sha256": "38d3368d707be36a6a46788f2d54879d89525e9c2bbf5cb4b78e6de27a6a990b"
+    },
+    {
+      "path": "app/documents/archive_job.py",
+      "size": 24359,
+      "sha256": "3e739e7e558c05915f0d1b69fbcfeafd116da100fa4990f1f550f9e86a52543f"
+    },
+    {
+      "path": "app/documents/archive_pipeline.py",
+      "size": 11880,
+      "sha256": "0f3721ad2c5563cba2c5433432b67952da6ff1e3f366ca66f6fa6dc69332c388"
+    },
+    {
+      "path": "app/documents/backends.py",
+      "size": 635,
+      "sha256": "0e1dd5568c1e5cb951865b21272481bec0ed27de29a3255be73e41b5692b3978"
+    },
+    {
+      "path": "app/documents/batch_eta.py",
+      "size": 10346,
+      "sha256": "3a224a5553eeedb635df15ebcf75905f3bac65d9dd7a0f1725692fcc095f3af9"
+    },
+    {
+      "path": "app/documents/control.py",
+      "size": 1671,
+      "sha256": "f8ac62aca42221d2f0f0415fb34b72f55b3e2fc73be8698222a4303e3e893e34"
+    },
+    {
+      "path": "app/documents/docx_document.py",
+      "size": 7915,
+      "sha256": "f5d7a86180534241473a131785b13955e8d991390d27fb8ef0b208fe9caa346c"
+    },
+    {
+      "path": "app/documents/errors.py",
+      "size": 592,
+      "sha256": "4279f52b485b11daffcce9c28aceee13823eba7c7fca7b3f735d8b8636be9114"
+    },
+    {
+      "path": "app/documents/job.py",
+      "size": 34735,
+      "sha256": "e9eacd2e9ac190988e4e2f95de8913590667dba2faf0468daab9970ae653b264"
+    },
+    {
+      "path": "app/documents/measurements.py",
+      "size": 7754,
+      "sha256": "e9e2f0ed8ce5e68526628cd23bfa5f293bebd61ec7d53647e7f7d5ca9d6099f2"
+    },
+    {
+      "path": "app/documents/path_translation.py",
+      "size": 1606,
+      "sha256": "4a6041cfabfaef44291d9978c080d3c0f95a38ed6d16bb6d0350634abc8974a0"
+    },
+    {
+      "path": "app/documents/pdf_diagnostics.py",
+      "size": 1948,
+      "sha256": "530adb40544092da47a94602e3a2b23a645569330559480a7b34627155b4adcd"
+    },
+    {
+      "path": "app/documents/pdf_document.py",
+      "size": 39150,
+      "sha256": "be7f40c3c6a3e6cf5922e0c9b2e449f3a1aa7d5394730c25b53733e6916913cf"
+    },
+    {
+      "path": "app/documents/pdf_fidelity.py",
+      "size": 4388,
+      "sha256": "6778e45ea4d0a5f842c457869c38df379a097baf5f03d24a919808e584b663c2"
+    },
+    {
+      "path": "app/documents/pdf_fonts.py",
+      "size": 5951,
+      "sha256": "9758f7528351b2228142d319057e3844ecf02e2f1d983653547a4c5d94c93b4d"
+    },
+    {
+      "path": "app/documents/pdf_layout.py",
+      "size": 8141,
+      "sha256": "821501f10ad547451bf56692e96ed108c2098715cf76c84840ca5899c26b82b1"
+    },
+    {
+      "path": "app/documents/pdf_ocr_policy.py",
+      "size": 3154,
+      "sha256": "0744b50b13c5abc2dd3c9e16e6192e791f46f469401df4e9d6c26ab9513a612b"
+    },
+    {
+      "path": "app/documents/pdf_regions.py",
+      "size": 7171,
+      "sha256": "250c6ffe32cd4e9c9bd0b72863344d5775a9f20f3712c3368a7fa009666cf46e"
+    },
+    {
+      "path": "app/documents/pdf_types.py",
+      "size": 4434,
+      "sha256": "f8f5a423f533fcdfc56f39c756b1c1faca398479b09ecfffed82ccfec8fdc4b8"
+    },
+    {
+      "path": "app/documents/pipeline.py",
+      "size": 14573,
+      "sha256": "18d6104f02be40bcf72f54cc85493fc150139afd42eadb263ded25d331154fa3"
+    },
+    {
+      "path": "app/documents/run_metrics.py",
+      "size": 37049,
+      "sha256": "9e9305d43f0f727b76dac5be7f3f1a3ea170382ad52fce607d68b030c7147be4"
+    },
+    {
+      "path": "app/documents/scanner.py",
+      "size": 4044,
+      "sha256": "890c8be936bc82fd9893f6851c9d6e7f89ce77282cafd71767340920642084ee"
+    },
+    {
+      "path": "app/documents/zip_archive.py",
+      "size": 12072,
+      "sha256": "195a654a26f5c5da8a877dac2bcae1d7200e76f324de4d0246183d2ebd9d1f08"
+    },
+    {
+      "path": "app/engine/__init__.py",
+      "size": 85,
+      "sha256": "08850d621527ee4c79ee11348761f5f3a6917426d57280462b3ca5bf3b838afb"
+    },
+    {
+      "path": "app/engine/backends/__init__.py",
+      "size": 82,
+      "sha256": "f2439ee83ab811f80a0e6b188bca38ca898d52281197138fbfe1d2e01bbcd3d6"
+    },
+    {
+      "path": "app/engine/backends/argos_backend.py",
+      "size": 9236,
+      "sha256": "bd239ec8e1424e282b8c73d84a36a3f65ba5653ace6e4bce88d867794953e988"
+    },
+    {
+      "path": "app/engine/backends/base_backend.py",
+      "size": 868,
+      "sha256": "180ea1de1564e462005ef9a27673b228b1130e092fe83ed690edd4167817285e"
+    },
+    {
+      "path": "app/engine/backends/m2m100_backend.py",
+      "size": 4736,
+      "sha256": "a3c0eaf3738650c1246f4891e286e21e581d94f82cc87426064f9a19017eb1a6"
+    },
+    {
+      "path": "app/engine/backends/m2m100_tokenizer.py",
+      "size": 1651,
+      "sha256": "9920f54488c7bc4f854efcfbf810f874b796f9d2f4c94f61e2cfed71a4db5499"
+    },
+    {
+      "path": "app/engine/backends/text_segments.py",
+      "size": 3493,
+      "sha256": "86089084e798f7f2c8e3adfcd0767e293a87fc26bfddf7cc2a6417e911c5c598"
+    },
+    {
+      "path": "app/engine/errors.py",
+      "size": 1441,
+      "sha256": "ae0b91e07d50e066b7e0bfc636cff9d18ac5fb1477cf1434df8ce9893b125262"
+    },
+    {
+      "path": "app/engine/factory.py",
+      "size": 1317,
+      "sha256": "c202ceba70a82f4198f2ab50cf9155109779ba9c28f705008972f8233589cfc5"
+    },
+    {
+      "path": "app/engine/interfaces.py",
+      "size": 1719,
+      "sha256": "b82e4c99fdf8373544adedb6bd336c8b396c8b7c511fcb53c0581298ceaa1518"
+    },
+    {
+      "path": "app/engine/languages.py",
+      "size": 2076,
+      "sha256": "f0518fa3e88f0273386849a256b6ccabfca4d4ffceab0a6a020f6cdb75dc27c7"
+    },
+    {
+      "path": "app/engine/models/__init__.py",
+      "size": 46,
+      "sha256": "f290d893670143b313df3891b31df348493b669875dec91d47ae8ae3354cc475"
+    },
+    {
+      "path": "app/engine/models/manifest.py",
+      "size": 2659,
+      "sha256": "c97bd30b7fb45a7e7a948ab9307474887f9eb82fe21ba1298ad76734bcce2e0f"
+    },
+    {
+      "path": "app/engine/output_validation.py",
+      "size": 2649,
+      "sha256": "d314f1e506b5ea919e39c49d1ccf914dfde451f830e7454198a7b9ec98a81e15"
+    },
+    {
+      "path": "app/engine/router/__init__.py",
+      "size": 71,
+      "sha256": "2b5a2bfbb53379f7eff67ea418c0cad111336b8f16ebdca55caac05c6a28a290"
+    },
+    {
+      "path": "app/engine/router/route_decision.py",
+      "size": 413,
+      "sha256": "fe5ada2bc7d1fc7b9ee05d640d4c3a98dcc05284bd323d026415c5a1c2866677"
+    },
+    {
+      "path": "app/engine/router/routing_policy.py",
+      "size": 1462,
+      "sha256": "8ce92d3f4c300f7cb0595c118929f3609353676ecd948a8a5c12b5425b227ca0"
+    },
+    {
+      "path": "app/engine/router/translation_router.py",
+      "size": 11315,
+      "sha256": "ba869c4d271a99c84cf2a165561df2c144162d1127067424222b274d2fa6ad1a"
+    },
+    {
+      "path": "app/engine/runtime/__init__.py",
+      "size": 49,
+      "sha256": "2166ca2ce3890dc38ad362e187effee09f0ba9f4781272b97477af090c6f3595"
+    },
+    {
+      "path": "app/engine/runtime/cuda_libraries.py",
+      "size": 963,
+      "sha256": "5f00793b8626efd48d27203be10b8ef7c9112149672e072dc3e084b5f215ca5c"
+    },
+    {
+      "path": "app/engine/runtime/device_manager.py",
+      "size": 2514,
+      "sha256": "e739bbcf88fce00998f8692b9c4dc84e2e0f021f6479ec5af38ca1c564c6242c"
+    },
+    {
+      "path": "app/engine/runtime/model_manager.py",
+      "size": 3231,
+      "sha256": "3decca77398906542158e057ae78e54673a31d744221a83b3fd5b0dc96aead09"
+    },
+    {
+      "path": "app/engine/runtime/offline.py",
+      "size": 1318,
+      "sha256": "f50d1365bb92ccb3d373dc3c29abfbc6232b3026274576cb26695c49948e5675"
+    },
+    {
+      "path": "app/engine/runtime/runtime_manager.py",
+      "size": 5512,
+      "sha256": "310a249c119395d1755ca9e02343e036cbb73ba38a6e94ee6b6ca1a30b38222f"
+    },
+    {
+      "path": "app/engine/types.py",
+      "size": 2725,
+      "sha256": "c62de044edf660ffcf90c88f5a2e26b37c52e025061dabcff26c048d45dcc5b7"
+    },
+    {
+      "path": "app/glossary/__init__.py",
+      "size": 73,
+      "sha256": "48d943e2fe512113f61c6fecd9dc665985be30d59efbbf61c3037f043fa865d5"
+    },
+    {
+      "path": "app/glossary/bundled.py",
+      "size": 1238,
+      "sha256": "148c323c60475aa04ff45c75a45469deca7002bf5e325b871b499165db0dbf4d"
+    },
+    {
+      "path": "app/glossary/cache_plan.py",
+      "size": 1292,
+      "sha256": "fe3d64607b58994165c3a69a600aa4638dfb46f63aad7f91419de6113a71cff6"
+    },
+    {
+      "path": "app/glossary/constraints.py",
+      "size": 2120,
+      "sha256": "bc39ff29a305681d3ff13e1d2b1876d194ddaafb767d07e34db72603db24e237"
+    },
+    {
+      "path": "app/glossary/database.py",
+      "size": 8634,
+      "sha256": "4cb06c35a42c9a995197862d16894e98d3ea3bccaeca95d6c08ac401a801cee9"
+    },
+    {
+      "path": "app/glossary/domain_detection.py",
+      "size": 5771,
+      "sha256": "5f95f7a54e2ebe2e2bb3be84612610e21a51ad44a100dde6b8d6a8c1c071e43b"
+    },
+    {
+      "path": "app/glossary/engine.py",
+      "size": 22501,
+      "sha256": "008b09b9dec9a55d4bfa58e8e8d024e95632025cd5383533e65ed9e84001ad29"
+    },
+    {
+      "path": "app/glossary/errors.py",
+      "size": 261,
+      "sha256": "82b3752490876191a4db75e122bb654b1776875d08e296a537def6a9d4dfa59c"
+    },
+    {
+      "path": "app/glossary/exporter.py",
+      "size": 562,
+      "sha256": "ca157681bf867f0378715359e06f6ddde7e13cfe6799f5394f4bd0c9446ca7c0"
+    },
+    {
+      "path": "app/glossary/hot_cache.py",
+      "size": 1582,
+      "sha256": "88b88abf5f8c54a10528f828adad2c5504ba059d1441947d50678cd085077a41"
+    },
+    {
+      "path": "app/glossary/importer.py",
+      "size": 2010,
+      "sha256": "f51ff9708ac3129b6cee1f50fecec0d9b51e77080cb2988bfa1b964c8a95300d"
+    },
+    {
+      "path": "app/glossary/maintenance.py",
+      "size": 4461,
+      "sha256": "63db753784f060b1908740fbd795bc5a5c5e96391db3cf86aa77f4501fb1c6cc"
+    },
+    {
+      "path": "app/glossary/matcher.py",
+      "size": 3610,
+      "sha256": "73809f96e16eeab595e353f905a05618b5cdb6cc6afda0928d40465088ad1bd2"
+    },
+    {
+      "path": "app/glossary/models.py",
+      "size": 1618,
+      "sha256": "7ce16e239424dc4ac1b01fba47ec669de43e2fea36d716fbecbfffe5dc00ebda"
+    },
+    {
+      "path": "app/glossary/normalization.py",
+      "size": 2117,
+      "sha256": "075790ff850dab8c9e4ca8f48251beb8326a922ddedc5850339db99a338bdf4e"
+    },
+    {
+      "path": "app/glossary/packs.py",
+      "size": 9847,
+      "sha256": "a8400028e201a8a012b89623a4dad171b37ddb666e719db016c4c2fea9c75aab"
+    },
+    {
+      "path": "app/glossary/placeholders.py",
+      "size": 2402,
+      "sha256": "3ceb2d34e568a359fdec5ad109fb6fb4ea4e3b15c656ecd45800bd0ea2d5bef2"
+    },
+    {
+      "path": "app/glossary/ranking.py",
+      "size": 503,
+      "sha256": "0a7cf96621c4e585f6e83637c0658b06e86a5e68a8bd162f6b1fdc52b53f8c4c"
+    },
+    {
+      "path": "app/glossary/repository.py",
+      "size": 6148,
+      "sha256": "6dc1da9b4dc36b35bc0a80f16f17265c322a032785798b24301dd58a7eb997c6"
+    },
+    {
+      "path": "app/gui/__init__.py",
+      "size": 41,
+      "sha256": "636336604484bd1b12d0e96f51d4a9688e499fc5f80b5808efe952ffd17adf7a"
+    },
+    {
+      "path": "app/gui/dialogs/__init__.py",
+      "size": 27,
+      "sha256": "107311864115295f3daaf908a4a1966fa57deb1fff07b670a0159f5beb3cc83c"
+    },
+    {
+      "path": "app/gui/dialogs/about_dialog.py",
+      "size": 5803,
+      "sha256": "e3b858b3ab84d8471bd5cf52c064e0e40ce7a6373b33f32ac0a0e13917ddfa39"
+    },
+    {
+      "path": "app/gui/dialogs/changelog_dialog.py",
+      "size": 26787,
+      "sha256": "cb961b23420fd7aac7aec936008873aece47c1e503fb193babf7c0de00f45b71"
+    },
+    {
+      "path": "app/gui/dialogs/settings_dialog.py",
+      "size": 14258,
+      "sha256": "3a05d0bb3c58adc6a7e0825b36c214c821c3eb5821e8a6d858ab4bf68b950756"
+    },
+    {
+      "path": "app/gui/main_window.py",
+      "size": 7837,
+      "sha256": "af96ade5e16cafe6d4ea199868c79a28635210d335d4b624f3616f45ccf320d8"
+    },
+    {
+      "path": "app/gui/pages/__init__.py",
+      "size": 25,
+      "sha256": "49cab0ec66e716c04857edfb43c9dd53e0b413a338bab2ff4e90bdaee7cf55b5"
+    },
+    {
+      "path": "app/gui/pages/file_translation_page.py",
+      "size": 4447,
+      "sha256": "71b60ae3921bc12a692ad7b9e01f1a91f140e86211da8a3324b59163f099eadc"
+    },
+    {
+      "path": "app/gui/pages/text_translation_page.py",
+      "size": 16887,
+      "sha256": "ba833a2ddf4d1c4108a6c9ccd1649b2ed61f44e2bf1703261e3a55bdb64950b0"
+    },
+    {
+      "path": "app/gui/styles/__init__.py",
+      "size": 35,
+      "sha256": "4408d8d0d130bd05a7b8d12a46e7cc1aa854754fd144321e7ce9a0523a6a8468"
+    },
+    {
+      "path": "app/gui/styles/stylesheet.qss",
+      "size": 10834,
+      "sha256": "a33c361b40096a01c2bacf51d855c70f3faf46dcf0d928051bfcdc4d32e66e6f"
+    },
+    {
+      "path": "app/gui/styles/theme.py",
+      "size": 2659,
+      "sha256": "95c2ac7cc5923f76ba1f63c406fd1501ef621b76ed8e234eb6a56044f97f2301"
+    },
+    {
+      "path": "app/gui/styles/theme_manager.py",
+      "size": 806,
+      "sha256": "df27958ef02d5dd44c3fc167b366e4023f4edfa817c87daf8400cf697a652313"
+    },
+    {
+      "path": "app/gui/widgets/__init__.py",
+      "size": 27,
+      "sha256": "eba056030b4c4bc0b14b7efd46d4004cc30e4387d028951ab3bd56c188dbaed2"
+    },
+    {
+      "path": "app/gui/widgets/acceleration_selector.py",
+      "size": 2500,
+      "sha256": "0b5ba6c354d2eeab321f6e80b69afdb5a3d51017a56440388867ddb0894fe9b0"
+    },
+    {
+      "path": "app/gui/widgets/animated_icon.py",
+      "size": 1979,
+      "sha256": "13d7d3c4a6c9a7b2067ea1cc349d5d11e4a97246ce616742a41b396ae025f137"
+    },
+    {
+      "path": "app/gui/widgets/assisted_text_edit.py",
+      "size": 10358,
+      "sha256": "3dd249ed8f247f1e9e24e0aee2abfab4a65af82c753209f1b20cff98180552c0"
+    },
+    {
+      "path": "app/gui/widgets/brand_menu.py",
+      "size": 2539,
+      "sha256": "0c56912b708932c46aae30daa747078e38d37bc61e1bc55b1436a2d407da9ae4"
+    },
+    {
+      "path": "app/gui/widgets/brand_widget.py",
+      "size": 2679,
+      "sha256": "617422afb3e629cc733138dcfa9395dee8e12cb35b827f8adf5f1287f235c4d3"
+    },
+    {
+      "path": "app/gui/widgets/drop_zone.py",
+      "size": 4781,
+      "sha256": "2ff798e3176449a641fc1976f8fe2f9372f67f8543d71cd9ab28d45258f593cd"
+    },
+    {
+      "path": "app/gui/widgets/file_tree.py",
+      "size": 15048,
+      "sha256": "6e736a6d276f6edbab9248ac4bbf4e4101d6b402877f60168a3cdd65634c7047"
+    },
+    {
+      "path": "app/gui/widgets/language_combo.py",
+      "size": 1708,
+      "sha256": "4ee42529b9ae334921fb230d378ec523d9653905b3c8076e881f08484b381e2b"
+    },
+    {
+      "path": "app/gui/widgets/language_selector.py",
+      "size": 3588,
+      "sha256": "4665ca6bbf976eeea8af9ded4b9ef5eaa34f827ffdb9cea04c360936675b2f43"
+    },
+    {
+      "path": "app/gui/widgets/language_support_tab.py",
+      "size": 6553,
+      "sha256": "180c7e51a97d2c11d8a4b1528e8527c5c6214c57b5c5e7f20c18359f348d911f"
+    },
+    {
+      "path": "app/gui/widgets/navigation_tabs.py",
+      "size": 1264,
+      "sha256": "d1849670c196f5565cd0699b59a6fd327789ddeb607e4783b7bb1c554cd3790e"
+    },
+    {
+      "path": "app/gui/widgets/progress_panel.py",
+      "size": 10384,
+      "sha256": "5a1bb193b5ca30d0909f4603547aae5b033add9cd28d4b2fe67be97cd2406ae2"
+    },
+    {
+      "path": "app/gui/widgets/title_bar.py",
+      "size": 2383,
+      "sha256": "1e52216e3d23cb3fcdda2be2c1cc648751f1cf5a2cdddf754a51aef4f84e7903"
+    },
+    {
+      "path": "app/gui/widgets/toggle_switch.py",
+      "size": 3179,
+      "sha256": "44a8f343b5ee94e05dc747c7b88e4b0c1ee193e6f706925a323bb9432924a843"
+    },
+    {
+      "path": "app/gui/widgets/translation_mode.py",
+      "size": 4966,
+      "sha256": "488f3335cbe1da35f63308c95ea0f62bb8604ce54b92b66b874ec4aec35ecc53"
+    },
+    {
+      "path": "app/gui/widgets/workspace_splitter.py",
+      "size": 1718,
+      "sha256": "3bf40dcf4e541468a617670d22945dbbfd3ebb2d4fab40736584ee42db035a39"
+    },
+    {
+      "path": "app/knowledge/__init__.py",
+      "size": 85,
+      "sha256": "73547cc2dd0811041b2b0bd93ac0d50a751ac2d512223cfe248aec5f32a7b4b0"
+    },
+    {
+      "path": "app/knowledge/directives.py",
+      "size": 11556,
+      "sha256": "3c0ae317c68ae14fd0a7d59fe68997705d59fc0991b7afdf424b074648c513ec"
+    },
+    {
+      "path": "app/knowledge/objects.py",
+      "size": 7314,
+      "sha256": "1d08c237b2906a40326dabc7c928ca129aa1f76a2aa9a2d2b8ff6188dbb19773"
+    },
+    {
+      "path": "app/knowledge/profile.py",
+      "size": 6199,
+      "sha256": "b6253d0e6b9cb9d1da09ba65fb108da9f54920212ec250f5de3b44d34073795c"
+    },
+    {
+      "path": "app/knowledge/qualifiers.py",
+      "size": 3043,
+      "sha256": "3394e75c889907f95fa870584833e5f2fe54fbcf3cf36a31cbac3e0a57c1e55b"
+    },
+    {
+      "path": "app/knowledge/questions.py",
+      "size": 5377,
+      "sha256": "4bd2aa0b243df5f17946d1d94d4c165527a27108525ef258f0869eb05623c089"
+    },
+    {
+      "path": "app/knowledge/references.py",
+      "size": 4641,
+      "sha256": "aa61c1874d4b881e35b473ce7df49998562d27c10241c1ecb166226eb299a9a6"
+    },
+    {
+      "path": "app/knowledge/relations.py",
+      "size": 814,
+      "sha256": "14429c9467e9ba1065a1832cb889e9d3e679fbd07b03082f22ed9d97660a084b"
+    },
+    {
+      "path": "app/knowledge/router.py",
+      "size": 24632,
+      "sha256": "6df2eb148feff1d40708e73dd244e7cee7b8c2d5612531e2b7d8ca71b3895735"
+    },
+    {
+      "path": "app/knowledge/safety.py",
+      "size": 10416,
+      "sha256": "4f69a1a65c9c12ac2f09858c0172ac02f5ca2230a50bbdd5c95c5ad35f62f824"
+    },
+    {
+      "path": "app/knowledge/segments.py",
+      "size": 2865,
+      "sha256": "32ca8a22dbeec19f86042d297c275bfff69e35ddf2ab2234c40b7e5937a8c585"
+    },
+    {
+      "path": "app/knowledge/units.py",
+      "size": 6535,
+      "sha256": "a70872c8e2dee6cc06ab75bdcd0eac987e99d780010a1622370ba6b55312a039"
+    },
+    {
+      "path": "app/localization/__init__.py",
+      "size": 3560,
+      "sha256": "cc634df97197ef7646344bb5140f2cc9d381d87d6225ec2cd85d2324389f49c6"
+    },
+    {
+      "path": "app/localization/widgets.py",
+      "size": 6935,
+      "sha256": "33a956ea7657badbd9c59c61e1272a4fb939603620afc6dd5c14d28ff58c4f3d"
+    },
+    {
+      "path": "app/models/__init__.py",
+      "size": 29,
+      "sha256": "6c19c3d4d3e12083971e2b556d2c22fbbea652efaf77c389acce0f6d8905fe79"
+    },
+    {
+      "path": "app/models/file_item.py",
+      "size": 895,
+      "sha256": "74c1bb1dfeb14fa7df107e9714752fb4bda4728ad457e0241cfae64ef0c55242"
+    },
+    {
+      "path": "app/models/translation_job.py",
+      "size": 906,
+      "sha256": "e561a569e04ffc298a8ba5645958f31bb1844605463518b77aa0279f02a37268"
+    },
+    {
+      "path": "app/ocr/__init__.py",
+      "size": 87,
+      "sha256": "9affa31637bdd6c5fbdbc8223f2d05d1daa231f398bea1ba262380cf44b5dddd"
+    },
+    {
+      "path": "app/ocr/backends/paddle_backend.py",
+      "size": 4024,
+      "sha256": "e15c8a24ef0f18d8fada64ea63ffea5455a9926095055b39c2a4a090b3948035"
+    },
+    {
+      "path": "app/ocr/backends/structure_backend.py",
+      "size": 203,
+      "sha256": "86c1a418063758a50e07ae0432a1b502f822b4bba1a81c7c8a5a1824f17e6319"
+    },
+    {
+      "path": "app/ocr/config.py",
+      "size": 321,
+      "sha256": "aeddd58a7db8f30f15939163beded925c82fc34ffa1837377879540bda6c575b"
+    },
+    {
+      "path": "app/ocr/errors.py",
+      "size": 1820,
+      "sha256": "72edfdd6cb4192195527d0b960595806c12daf912df2313f65665f176084e131"
+    },
+    {
+      "path": "app/ocr/interfaces.py",
+      "size": 288,
+      "sha256": "b5f2992488f19545ba583f5ad6730e620e93015443fcd6d7875b729f826259d5"
+    },
+    {
+      "path": "app/ocr/page_gate.py",
+      "size": 2059,
+      "sha256": "4142b95a756e82ce2198bf0e7dbd3f738e1305b605040f1afba45150a5f860f4"
+    },
+    {
+      "path": "app/ocr/pdf_extractor.py",
+      "size": 12255,
+      "sha256": "08e7fe713e25822bba09ac8e4b9decead7b6f7df0f6993fee7c102c66409bef1"
+    },
+    {
+      "path": "app/ocr/postprocess/confidence.py",
+      "size": 208,
+      "sha256": "f135bfb42af08232983ae960849116e948ad7cf679d2d05a87e7c66f70e1e81e"
+    },
+    {
+      "path": "app/ocr/postprocess/deduplication.py",
+      "size": 1039,
+      "sha256": "4a76ee9b707e351f15a56b86d40bcaa28a1062879bf8b82d3213d41fb4756bdd"
+    },
+    {
+      "path": "app/ocr/postprocess/regions.py",
+      "size": 3708,
+      "sha256": "246eee3dc8d0e10f4a60bd680c4f3b5aa42c66df533f98c7fdf9af6cb0b8c10e"
+    },
+    {
+      "path": "app/ocr/preprocess/orientation.py",
+      "size": 425,
+      "sha256": "4f4e60195989a19920a00d1813789cadf163cfcfe2252655920ca3182f53a816"
+    },
+    {
+      "path": "app/ocr/preprocess/renderer.py",
+      "size": 945,
+      "sha256": "3d90f37d3cf93da6aa6b5604de5715aa8034bdb37a7ee34385a9bb836bebf7fa"
+    },
+    {
+      "path": "app/ocr/router/ocr_router.py",
+      "size": 3608,
+      "sha256": "2d198d681f647c481f96d6376f6ec9004485b1b2c4ace19c20f4db1c31828c19"
+    },
+    {
+      "path": "app/ocr/router/routing_policy.py",
+      "size": 611,
+      "sha256": "8bf9e1d220c231322b3a055b85189b0f3ee9378fc464d70e593105334b9c9302"
+    },
+    {
+      "path": "app/ocr/runtime/hardware_plan.py",
+      "size": 2620,
+      "sha256": "449bc03a9f941cc5cded883937a95dacf5d1391a3d689be8b00a9731f641e7ea"
+    },
+    {
+      "path": "app/ocr/runtime/ocr_model_manager.py",
+      "size": 998,
+      "sha256": "2fcfe39b89b200c13a2704fbdb648a3baf4bcaad7d414d2a3b6db8a3f88bb256"
+    },
+    {
+      "path": "app/ocr/runtime/ocr_runtime_manager.py",
+      "size": 6354,
+      "sha256": "befdc6e6f32654d87dadce8568aeb2236315674544c6b4a1b2361f10d2b00d83"
+    },
+    {
+      "path": "app/ocr/runtime/resident_cache.py",
+      "size": 2179,
+      "sha256": "9bad4def3dc5f4cd9eede49d8527e1f33ae9b42d454a843a5886c8c0c7a78a6e"
+    },
+    {
+      "path": "app/ocr/runtime/result_cache.py",
+      "size": 1506,
+      "sha256": "6f572fb461faa3c4be484b08321ac91716d33e7e80c8d478bd7fc50a5bf14f36"
+    },
+    {
+      "path": "app/ocr/runtime/worker.py",
+      "size": 12903,
+      "sha256": "788541ef27724f6184fe099c7e94c2624c32487ef00c9782ca7f53658f1193db"
+    },
+    {
+      "path": "app/ocr/types.py",
+      "size": 1133,
+      "sha256": "fa1c74f18c98bf640f4aaee9a0e8e64a3d40a0f7df2c4535accda4ea9728b268"
+    },
+    {
+      "path": "app/services/__init__.py",
+      "size": 28,
+      "sha256": "5ee368b8b403ddb926e38792d6c660d7a6ec88ea5bd628ded82a91e52931d2f1"
+    },
+    {
+      "path": "app/services/document_translation_service.py",
+      "size": 13117,
+      "sha256": "d48a6321d2f0fd2a54b56f2f25833f339e1e0bac2510658b44cf215f89cfec24"
+    },
+    {
+      "path": "app/services/file_picker.py",
+      "size": 687,
+      "sha256": "cb4ef4aaa9ddd46168e988c506048ed95ea0ea21a8a91d14be0a985055974214"
+    },
+    {
+      "path": "app/services/hardware_profile_service.py",
+      "size": 7279,
+      "sha256": "a65a8e1f07d20628d3842daea4be7c2285101cc0ff9c485bbfbe52b1daceda3c"
+    },
+    {
+      "path": "app/services/hybrid_translation_service.py",
+      "size": 6392,
+      "sha256": "6c7cb354850d3a346923552de26bdb98baae79d356117b8bd2252633566e6c4b"
+    },
+    {
+      "path": "app/services/language_support.py",
+      "size": 1846,
+      "sha256": "f2caf29d3c353d7191a0907e802ae76ee50305f2ced56c5746d39b09bfad086d"
+    },
+    {
+      "path": "app/services/lexical_assistance.py",
+      "size": 7972,
+      "sha256": "db9c10cd9506c9d5b7b83f6e124849f9264eb1a2e359ee7e1714b318b9add0d6"
+    },
+    {
+      "path": "app/services/lexical_worker.py",
+      "size": 2321,
+      "sha256": "8420f35a210aedfcd465e72a80a8b612e63b62469cd2d4dd0127432a711f25cb"
+    },
+    {
+      "path": "app/services/mock_translation_service.py",
+      "size": 3733,
+      "sha256": "cb29b0084f480c353dcfbdec0611a9dcdd0f4f022c4c9b6ae00ba203d2324501"
+    },
+    {
+      "path": "app/services/settings_service.py",
+      "size": 3967,
+      "sha256": "70d6227f45d55f8fe7c4800bc6189a1882c07e34aec0eb8b3dd90f8ab87fea4d"
+    },
+    {
+      "path": "app/services/translation_preferences.py",
+      "size": 3916,
+      "sha256": "8a5eb0df2798b4c85afd908b020ef17acdbdd2dee8571e7640437f4d67ef8f65"
+    },
+    {
+      "path": "app/services/translation_service.py",
+      "size": 1801,
+      "sha256": "4f3e0ad79cdc0feeac87e76b416d20f7fac3d3da426b38c835f85fc4bbfbfccc"
+    },
+    {
+      "path": "app/services/translation_session_manager.py",
+      "size": 1264,
+      "sha256": "72adb131a78903c8195242e06d5e24bc0fa8ba16add4151125b76d52a5b8304d"
+    },
+    {
+      "path": "app/translation_memory/__init__.py",
+      "size": 261,
+      "sha256": "9cfa872ac7fdd33d1d81c8473c37cda778c96fd878e134d4c187deed47d31143"
+    },
+    {
+      "path": "app/translation_memory/database.py",
+      "size": 5567,
+      "sha256": "c43cee0bba586c8b12b45ff85af2b48fc9ad998eb2d2a09b79385bc8b12c894a"
+    },
+    {
+      "path": "app/translation_memory/engine.py",
+      "size": 7756,
+      "sha256": "27a7cb649c1031629e6a106981cd08b6064b9d1674d2a2e123291e66256c84e0"
+    },
+    {
+      "path": "app/translation_memory/errors.py",
+      "size": 208,
+      "sha256": "e6b6a18841bdafcb2452acb3bc0fcbc3c5058155107bc2b87b666c3e6c29cd3f"
+    },
+    {
+      "path": "app/translation_memory/exporter.py",
+      "size": 3596,
+      "sha256": "129b492321a0eeebe04d473d70db896fd14443b435bc3a885a05c2bf10169e23"
+    },
+    {
+      "path": "app/translation_memory/importer.py",
+      "size": 4910,
+      "sha256": "7531ccd3fbff577e011f423ce6b8539c7c03137c608f18213117baf8ff17803f"
+    },
+    {
+      "path": "app/translation_memory/knowledge.py",
+      "size": 34658,
+      "sha256": "d4e16148b439347101335b383764dac9810e7eef8d182e6d36be23cd5d3b3fec"
+    },
+    {
+      "path": "app/translation_memory/maintenance.py",
+      "size": 3307,
+      "sha256": "c24a43868215b9469cd0dd31abcf6a49d32aa69d9312efe064ac1cdee34e79e9"
+    },
+    {
+      "path": "app/translation_memory/matcher.py",
+      "size": 2571,
+      "sha256": "3c263ebc761b20b74256030d34886617156eef2111bda7d495288768423538ae"
+    },
+    {
+      "path": "app/translation_memory/models.py",
+      "size": 1211,
+      "sha256": "7202168f41292240b6f80b32e0f572bfae24ffebe2fd01849c72cc7bd028f362"
+    },
+    {
+      "path": "app/translation_memory/normalization.py",
+      "size": 1698,
+      "sha256": "f64b1022578ccebfb270d2181299e9e1f536aa6e09afe6fa8023ce50c6ced457"
+    },
+    {
+      "path": "app/translation_memory/repository.py",
+      "size": 5709,
+      "sha256": "919b8d3f872de8153a0aa70b44d89e8f4688c64bd590b98694fe14e7f7aa9834"
+    },
+    {
+      "path": "app/translation_memory/scoring.py",
+      "size": 1076,
+      "sha256": "4b99746b8ea36bcee6f519476c1793b7d6f689df6bbe8e8ece4daaecc64db20a"
+    },
+    {
+      "path": "assets/config/automotive-grammar.json",
+      "size": 7924,
+      "sha256": "717b09f458db4b638ef83ab6e76f2821580984fd18157628bba28e6cd650fd0b"
+    },
+    {
+      "path": "assets/config/automotive-slot-forms.json",
+      "size": 424304,
+      "sha256": "ebba6666efecc73858227600cf400c38e689912d7466a6ae2d3849f6ebade87e"
+    },
+    {
+      "path": "assets/config/document-performance.json",
+      "size": 2878,
+      "sha256": "98754065af41d93a719d7ae69dcc3fe8b191668dac1fd654bb5ce013ab977cdf"
+    },
+    {
+      "path": "assets/config/glossary.json",
+      "size": 428,
+      "sha256": "d8a601f5f29083d4abac1ffb11ef27056d012e759ff6786930c28fbab129faab"
+    },
+    {
+      "path": "assets/config/knowledge-context.json",
+      "size": 5496,
+      "sha256": "9f90a929a7e73d3705b370367f03b02bf9db401f7af49dd86cc9618e2be05de2"
+    },
+    {
+      "path": "assets/config/knowledge-taxonomy.json",
+      "size": 731,
+      "sha256": "ec53431273da5901ac29a91af9e7efd84397804afd730a7c4ab58a6361515abe"
+    },
+    {
+      "path": "assets/config/knowledge-templates.json",
+      "size": 2805254,
+      "sha256": "9ac133307849215af78f4ac70ff9f204793ef8a6d8e02126ca1a54782cc5dc59"
+    },
+    {
+      "path": "assets/config/ocr.json",
+      "size": 1165,
+      "sha256": "587081e406d220349d913b7b205fe6614ec492147a54cc107b5374f855d069c2"
+    },
+    {
+      "path": "assets/config/pdf-known-layout-warnings.json",
+      "size": 490,
+      "sha256": "d481107d327b37a438fc5548cea4c2722aff5ef037451298de1dabb0e688debf"
+    },
+    {
+      "path": "assets/config/pdf_limits.json",
+      "size": 197,
+      "sha256": "f2c553ec9fc2c37d58ce16f83b0fd3ac586f8575af0e18ab56341b8016e61a03"
+    },
+    {
+      "path": "assets/config/source-semantic-corrections.json",
+      "size": 1031,
+      "sha256": "ea6238a792d6b6181cacf625b5947306bc4a1f2f89f8685bc9d07300333b4d10"
+    },
+    {
+      "path": "assets/config/technical-action-safety.json",
+      "size": 7435,
+      "sha256": "b2ac25d5e366a65b18bfbc018aced4213784bcaac975905861078107e0e63b6b"
+    },
+    {
+      "path": "assets/config/technical-actions.json",
+      "size": 15237,
+      "sha256": "2022e5180e1169e4c1be516c6a052ad958765129032cd3f0a223d0c5d85abf4f"
+    },
+    {
+      "path": "assets/config/translation_memory.json",
+      "size": 338,
+      "sha256": "be7d931509064edb99f3e9ad99b38a7b96f548d3a7ffe417790af766051e674f"
+    },
+    {
+      "path": "assets/fonts/manifest.json",
+      "size": 562,
+      "sha256": "a58f46c535f6bc8d01bc9a7182bfc4268673d5f54fb77c82ba6e35e82db58942"
+    },
+    {
+      "path": "assets/fonts/OFL-NotoSansSC.txt",
+      "size": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "assets/fonts/TreeTranslateSans-Regular.ttf",
+      "size": 10596192,
+      "sha256": "3dbb9ce88257046f3ce2ce7300402080c053f7d48c7b16a389c37e77d550f89c"
+    },
+    {
+      "path": "assets/icons/animated-add-folder.png",
+      "size": 74361,
+      "sha256": "81e73e512f68279e5f7b076dc34b1de1a38f2307492e3abba699c7bc11a9d59f"
+    },
+    {
+      "path": "assets/icons/animated-document.png",
+      "size": 101842,
+      "sha256": "ff12678778e1030ebe95dc583d49e413ddc247eb1c8b33381e261a7ef08784f1"
+    },
+    {
+      "path": "assets/icons/animated-folder.png",
+      "size": 102596,
+      "sha256": "ae4143fd24ce83bc6a9dabdf22520f626bacecd427243ccfe0343af1f85c0236"
+    },
+    {
+      "path": "assets/icons/boosty.svg",
+      "size": 333,
+      "sha256": "188bbb4a8bb4a1eda5d4933933baacbd63396e5e50caace7c094ad83f27e9c21"
+    },
+    {
+      "path": "assets/icons/cancel.svg",
+      "size": 238,
+      "sha256": "f8b31874c7f4826cc514fe879580e94e438f9fccbe92e4b27abcb378b6f2c4b4"
+    },
+    {
+      "path": "assets/icons/chevron_down.svg",
+      "size": 225,
+      "sha256": "31776688c17ea4ea0a40e54afd0285545c4180daa936c45b616189bf6c6d296f"
+    },
+    {
+      "path": "assets/icons/clock.svg",
+      "size": 231,
+      "sha256": "abb78cdb88ab67aad19e7fb519889878b9d6a5995787b1d603bbf94b6c11efb1"
+    },
+    {
+      "path": "assets/icons/close.svg",
+      "size": 209,
+      "sha256": "76451048ba61af5b69c4384dd5237db28357f363bca07f49d90fe4d37896f0c5"
+    },
+    {
+      "path": "assets/icons/document-icons-license.pdf",
+      "size": 35708,
+      "sha256": "7cc25d27268a033ce65c4c538cc71376ca5d50b78cc21b0bf2b425736e4f114a"
+    },
+    {
+      "path": "assets/icons/docx.png",
+      "size": 16418,
+      "sha256": "e0c5bb1e1e64ab01a13027c9f1d03066a7d34c4afd804d9394a380aa35ae64ea"
+    },
+    {
+      "path": "assets/icons/edit.svg",
+      "size": 286,
+      "sha256": "67db7b70add83e1f1b9a38a3c23002c439f5bdf6a366e91d733d7820534f8da5"
+    },
+    {
+      "path": "assets/icons/external_link.svg",
+      "size": 258,
+      "sha256": "5a862262f7ad010b6303a3adb8b52511f16dbb0210dadaf5ecb57ee9896bdc67"
+    },
+    {
+      "path": "assets/icons/file.svg",
+      "size": 253,
+      "sha256": "39eae05e1c592b380f84b26bcec339fdea5654b0f2fe712f938191d8f7818710"
+    },
+    {
+      "path": "assets/icons/folder.svg",
+      "size": 234,
+      "sha256": "01a0ad6fc6c5edff9b2448ba750508e87b52e1cf054ccf01b7becd23b53cca05"
+    },
+    {
+      "path": "assets/icons/help.svg",
+      "size": 303,
+      "sha256": "c653deb76b930a9d0716dabff99df3e31c10ade8b2be6212bf00019610b06428"
+    },
+    {
+      "path": "assets/icons/info.svg",
+      "size": 237,
+      "sha256": "2d3cc64f0b4e2bbc9e5a63aefa802fcec194ad8219992cd676ee7e25dbd65e13"
+    },
+    {
+      "path": "assets/icons/languages/language_de.png",
+      "size": 639,
+      "sha256": "3294a523fc1d0cb71721ab094fb13ee793684c13365981c34fb01c5cb05c2da3"
+    },
+    {
+      "path": "assets/icons/languages/language_en_gb.png",
+      "size": 774,
+      "sha256": "11dec4a193199c484e5569d6b1190eb2e54c0e49fbea9e0dff1377a8807109e1"
+    },
+    {
+      "path": "assets/icons/languages/language_en_us.png",
+      "size": 1292,
+      "sha256": "7f74dbe5b3c68b7619d65a2f84f6c22048764f748d53516d65c2c27b3112a673"
+    },
+    {
+      "path": "assets/icons/languages/language_es.png",
+      "size": 657,
+      "sha256": "81826b00f7cef79587844948f27cf060ed0341bea2070707ac29cf700330eb69"
+    },
+    {
+      "path": "assets/icons/languages/language_fr.png",
+      "size": 874,
+      "sha256": "d05b563b2e2ee3aec239db61c430b7055cfe2f3f8babe2c838f3c7829ec1e06f"
+    },
+    {
+      "path": "assets/icons/languages/language_ja.png",
+      "size": 17763,
+      "sha256": "79c8efa000ed647e0162893523876b80bf4051096f3fc991ec920a146d3fbb03"
+    },
+    {
+      "path": "assets/icons/languages/language_ro.png",
+      "size": 798,
+      "sha256": "fd47dd8ab7412eadd2487755edb8614a344a06af8c99316c328c84035ad46f15"
+    },
+    {
+      "path": "assets/icons/languages/language_ru.png",
+      "size": 826,
+      "sha256": "a94a3a1e88416d3aeb4e353bc342d6e4acf925af83f7c1f341c364706b75e3fe"
+    },
+    {
+      "path": "assets/icons/languages/language_zh.png",
+      "size": 24052,
+      "sha256": "8638f8417ef4a088ea118022be4c6b7cbc72a724c15e6b91c020840836eb3e9d"
+    },
+    {
+      "path": "assets/icons/maximize.svg",
+      "size": 215,
+      "sha256": "9f0ce9362385ce7637d9d0ca54ac7474b3c9d781f53c3ddfe3db60766cbc34fb"
+    },
+    {
+      "path": "assets/icons/minus.svg",
+      "size": 197,
+      "sha256": "6fcdd6e6799cc3a87a458e27004d6bb0c0027cd2ec159d5191b5155847882c9b"
+    },
+    {
+      "path": "assets/icons/pause.svg",
+      "size": 191,
+      "sha256": "11a2956bceab63276c37fc398005b4b9b84be0d40387fd0efaa40302d25e5e4a"
+    },
+    {
+      "path": "assets/icons/pdf.png",
+      "size": 10565,
+      "sha256": "ff64c73f326dc489ecec8f87baa87445b3d29cda25aa3f5e688902c3a3926c06"
+    },
+    {
+      "path": "assets/icons/play.svg",
+      "size": 181,
+      "sha256": "c5a0421e9ac28fc61257536c7b5ea7d676af52025ab2c80da8b6680b2e49305c"
+    },
+    {
+      "path": "assets/icons/plus.svg",
+      "size": 205,
+      "sha256": "b44d230b159701a08008fb65bf483949e376197895bde58310a7a5b522a59e32"
+    },
+    {
+      "path": "assets/icons/radio_checked.svg",
+      "size": 195,
+      "sha256": "4f1798ee4b2eeef946a445b8042f62513c03977ec348e44cd27b02f488b5abd8"
+    },
+    {
+      "path": "assets/icons/radio_unchecked.svg",
+      "size": 147,
+      "sha256": "b90da128a651031a4d483248565f55d8d444d4b5fecda3d4b6223cdf87aa6940"
+    },
+    {
+      "path": "assets/icons/refresh.svg",
+      "size": 257,
+      "sha256": "7f4c1250e51eef064a30098a17d75e7915a63b297d89d103362e089ab2e67f31"
+    },
+    {
+      "path": "assets/icons/settings.svg",
+      "size": 465,
+      "sha256": "cb2d1309e692f6cc75a8c9c8b35334212026b3c833b4ae0e3ef54220ae7b0966"
+    },
+    {
+      "path": "assets/icons/tree-check.svg",
+      "size": 205,
+      "sha256": "c59eed8b91e952cc9266432b723bdc3e1b2d87585655b4a2e87b89bdb1976a43"
+    },
+    {
+      "path": "assets/icons/tree-partial.svg",
+      "size": 175,
+      "sha256": "5a0e5a4d01d94af856ac630ec73a7faa4c7a66b5f7fd60e61cf1a3669092c0b8"
+    },
+    {
+      "path": "assets/icons/window_restore.svg",
+      "size": 248,
+      "sha256": "b39db39846e2074e74d834036beddcfc55173b30c33b8da4112215aad8f4b62f"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 58769,
+      "sha256": "16d5fe9397f19e8ca43e31bfd47f86fb2805dffaca3ecbedf584a6ef59419c7e"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc-by-4-0.db",
+      "size": 73728,
+      "sha256": "3fbc84a9ec55eb026acce3f1b315da059f477b510a189045189466f86ddf9cf7"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 250099,
+      "sha256": "94d9a17390c4f635ea4eee22e616282c7470f7721fad5490d139cf9efbd2f88c"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/automotive-ru-zh-cc0-1-0.db",
+      "size": 98304,
+      "sha256": "686af3d75c78ac6234adec56aef57e55c45d5424046241a73ce921e123bf93c8"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 58769,
+      "sha256": "16d5fe9397f19e8ca43e31bfd47f86fb2805dffaca3ecbedf584a6ef59419c7e"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc-by-4-0.db",
+      "size": 61440,
+      "sha256": "8c55a8a44363b967fd1ad7dc9e829a84dbc87aeb4eb6f2e6d08de654d68cc84f"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 250099,
+      "sha256": "94d9a17390c4f635ea4eee22e616282c7470f7721fad5490d139cf9efbd2f88c"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/automotive-zh-ru-cc0-1-0.db",
+      "size": 110592,
+      "sha256": "9b382147da5f7d54f11a24dff619537d027336a76c0305b27626c29578052114"
+    },
+    {
+      "path": "assets/knowledge/aw081-brake-and-compressor.json",
+      "size": 19228,
+      "sha256": "ee856303473573d2db760cd7bf951b9d17b95aaa6fdbd3abd63d36f9bf565184"
+    },
+    {
+      "path": "assets/knowledge/aw081-diagnostic-cata-review.json",
+      "size": 2892,
+      "sha256": "fee7ab36dc42f38dac8499c4ee23ef060b253914dda973e393a0d584f0d0e379"
+    },
+    {
+      "path": "assets/knowledge/aw081-door-aliases.txt",
+      "size": 283,
+      "sha256": "520a1074a13c9bae547e0fe9c101dc425ad0f44d8a20d3d4a615fbc3c36e5f3c"
+    },
+    {
+      "path": "assets/knowledge/aw081-duty-and-relations.json",
+      "size": 20056,
+      "sha256": "eb1f1a3b3c691f88cfe3fafae2fd91d89a9879b5aee2f768fd3b220e99f2139e"
+    },
+    {
+      "path": "assets/knowledge/aw081-exhaust-assembly-review.json",
+      "size": 1986,
+      "sha256": "4f59eaa26992cac79f1da527d49507cf96013057656f10f7e57b8523fe5a48e3"
+    },
+    {
+      "path": "assets/knowledge/aw081-oem-terminology.json",
+      "size": 8811,
+      "sha256": "72c7d3aacf97ae0176204a451b9af3a6deae1018151e4a0fcf61b0f58d919d4f"
+    },
+    {
+      "path": "assets/knowledge/aw081-phase-a-acceptance.json",
+      "size": 4125,
+      "sha256": "ef3a26c096f0ec7a7d4d6b62418c435d50304ee601232c538a19527252bb9c0e"
+    },
+    {
+      "path": "assets/knowledge/aw081-pry-components.txt",
+      "size": 302,
+      "sha256": "6a49703022d7bc607b5635f0da76f0c40ca178813b4404b9bfe2bc75263eeb6a"
+    },
+    {
+      "path": "assets/knowledge/aw081-quantities.txt",
+      "size": 418,
+      "sha256": "117b62d89343687a16f7ceee321af9bb2a02843597725f1c32c7d00315c5a9ba"
+    },
+    {
+      "path": "assets/knowledge/aw081-question-components.txt",
+      "size": 275,
+      "sha256": "393acd76046120cbc0bfd9b52b2d9c5e4a54a6a5dd5b3ca17aa4123dcdc821ce"
+    },
+    {
+      "path": "assets/knowledge/aw081-seals-and-rear-view.json",
+      "size": 18448,
+      "sha256": "643e1c31beb107ec41a454d8987b78564fa6a6f05bba34e3f5906e275b03ed18"
+    },
+    {
+      "path": "assets/knowledge/aw081-semantic-components.txt",
+      "size": 5472,
+      "sha256": "b4074c706ae67aea6220c2adcc01fcd46339e07a3598a8d57fbd34fb79e40f6c"
+    },
+    {
+      "path": "assets/knowledge/aw081-semantic-labels.txt",
+      "size": 782,
+      "sha256": "d0bfb5bd347ab1dc6b9e74c327d4094858401675a131f00f5544880425d6985d"
+    },
+    {
+      "path": "assets/knowledge/aw081-torque-caption.txt",
+      "size": 186,
+      "sha256": "767848676f9c857e53ec9748ebed1c3981fd61852cefd697634eabddfe9cc18f"
+    },
+    {
+      "path": "assets/knowledge/aw081-user-terminology.json",
+      "size": 5357,
+      "sha256": "5b315b21fbc80bc110ddd825ffc6d828cee7eaa549fa2bbdf2a89ac827f4ed88"
+    },
+    {
+      "path": "assets/knowledge/aw083-body-repair-zh-ru.db",
+      "size": 2125824,
+      "sha256": "ba2d0ce20682eb4711d1e14262d60ac1ec0858ecf9b845d8cd3a8a8e4dcf8146"
+    },
+    {
+      "path": "assets/knowledge/aw086-automotive-reviewed.tsv",
+      "size": 4482,
+      "sha256": "ff618fd17a17d471a2eba71494d5ad3f8a880e353756a2727dd30e0584adc324"
+    },
+    {
+      "path": "assets/knowledge/aw087-authored-families.txt",
+      "size": 30008,
+      "sha256": "f7175cd8d7f28ad43e009f28b88f69f0763b4f84ef33ae0d39071a5139528d37"
+    },
+    {
+      "path": "assets/knowledge/aw088-authored-families.txt",
+      "size": 78837,
+      "sha256": "0ffc4648f8caa5b885771dee15dad52e1954cf9ac16b5566450f04ace88e261c"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 4952,
+      "sha256": "0e2029c38776b31f1a7ca3b1ce5b4f22ab8363f43f1051716ab26f0735ac9903"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "f4c02fe92ffa4163a85a07077925d03004364e32ca0e64939c7ec8aa715a804b"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 301804,
+      "sha256": "882e9266871d31d4b2d999083d62aecdf0fe95c6a8d665be21cde7682e088069"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-ru-zh-cc0-1-0.db",
+      "size": 143360,
+      "sha256": "7798cd0c5275478d68e4e28ef5fb69ca5e48589b1ea6195ba62b76f42d734241"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 4952,
+      "sha256": "0e2029c38776b31f1a7ca3b1ce5b4f22ab8363f43f1051716ab26f0735ac9903"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "dc572aeec782b80d16b232889cc1485ceda8e2e52feb4181877400ba298c30e3"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 301804,
+      "sha256": "882e9266871d31d4b2d999083d62aecdf0fe95c6a8d665be21cde7682e088069"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/chemistry-engineering-zh-ru-cc0-1-0.db",
+      "size": 151552,
+      "sha256": "a32fb097551cb8b48ab37ee8a571a3c98f49cc8d5d36ee86ed5de8f620f632f5"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 4077,
+      "sha256": "3394e2bbd876bd402b4295e5b1a341e535e05f73104d83617b7f43f1bc2f50a8"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "5dc7fa33e7c3fc035585597389eb65acca46e3177eaf5131122b6d27391917a4"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 368308,
+      "sha256": "822de0194676599c1f44df13491626738793a860899c751a82656bcd9ec901b2"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-ru-zh-cc0-1-0.db",
+      "size": 159744,
+      "sha256": "bf0f754ca603f2aac6d21b120a82418eded58277856c9c7e19b10945f3975c1c"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 4077,
+      "sha256": "3394e2bbd876bd402b4295e5b1a341e535e05f73104d83617b7f43f1bc2f50a8"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "3c5482c3e5981b9bfe6365106cc29ffc5fa158790b5b3f8f050253227a3a92dd"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 368308,
+      "sha256": "822de0194676599c1f44df13491626738793a860899c751a82656bcd9ec901b2"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/computer-hardware-zh-ru-cc0-1-0.db",
+      "size": 200704,
+      "sha256": "991cc9206e545234ddb8253e7fa7987aad514e0a2446ed4a929f301d463a454d"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 6076,
+      "sha256": "fd22a0761e810fe04addf5dec33e17e748d7eeb5a1a3821e9d9931fb2186d6d7"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "e33f8ff7712b44b04b8c3740f10ae8e32165eff262d4bb00f12e2f6d599c2578"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 185809,
+      "sha256": "428ec2ecb8242b08bd5b42f31fb367d8ee35f0a49723db60a1a09d3302fe7f6f"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electrical-ru-zh-cc0-1-0.db",
+      "size": 57344,
+      "sha256": "f979d264ad2355f095811873f10f9189ee65375734908f8d4dbb7331470416d6"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 6076,
+      "sha256": "fd22a0761e810fe04addf5dec33e17e748d7eeb5a1a3821e9d9931fb2186d6d7"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "c24df1b023be498974a4a0829850a5824082ebf30d4d0f4f25ebb034993b132c"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 188257,
+      "sha256": "ae95f0f91b687e6698eea8727af3d3e009cafad0ad24a4cf2cf6a4f7a010ac06"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electrical-zh-ru-cc0-1-0.db",
+      "size": 65536,
+      "sha256": "390bc36777f64183c4eb1ebc9fcf9b4e072d3eebf45b59c5bbf06ff585b9c01a"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 8095,
+      "sha256": "f19357fd6755424693837e987db2cec6dff6ce4e2d30878f5f50b44a75b01571"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "b0a0603fd36598202f9016240168d8b492d5fe1ee7d192109c771abe3dcacbdf"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 509133,
+      "sha256": "7a9be5e0df052a4c7ff57d4d82e81d969e6d1550bf11f3604d811a8ce2f6e575"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electronics-ru-zh-cc0-1-0.db",
+      "size": 245760,
+      "sha256": "f5b95b4fd9a9593e2a35414152f99d24ee8cb77839b1bd45b956a5d1fe82972a"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 8095,
+      "sha256": "f19357fd6755424693837e987db2cec6dff6ce4e2d30878f5f50b44a75b01571"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "87d5872678dc63ce724930624235eee14c8c8c772feca5c4a3e414c01333e8df"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 511241,
+      "sha256": "7f79bb9ffb3c2b6c015cae90d5d844a6c3943bf95da895594a70615ad855ac80"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/electronics-zh-ru-cc0-1-0.db",
+      "size": 286720,
+      "sha256": "62902303d538ca5407008ff921d564005372ffae7fd984c5aff88e4833a56986"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 13527,
+      "sha256": "cbab1a5a8a9433c33bf7b44451919bf85ea5aab0af331b883bb6d74bd457a95e"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc-by-4-0.db",
+      "size": 49152,
+      "sha256": "4bb23770bb153ed8d4ed1cf165b683a172db8df3f24da57821ae165cbbbae694"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 148570,
+      "sha256": "1500387fbfcb7bcd51407b2911287a4e557b797e16530953e0ea2753637b4635"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-ru-zh-cc0-1-0.db",
+      "size": 40960,
+      "sha256": "3875abdc9419cfa761dac1b9b4ed50a4a524dec1865042619d43f76eaa97a223"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 13527,
+      "sha256": "cbab1a5a8a9433c33bf7b44451919bf85ea5aab0af331b883bb6d74bd457a95e"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc-by-4-0.db",
+      "size": 49152,
+      "sha256": "a7fd82cf55ebc8e3dc432c058658fb08d844a50b3685213d741d11f04f838d23"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 148570,
+      "sha256": "1500387fbfcb7bcd51407b2911287a4e557b797e16530953e0ea2753637b4635"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/industrial-safety-zh-ru-cc0-1-0.db",
+      "size": 40960,
+      "sha256": "2e9d27350ef96121a04cf69f66d3321f976ef8ebbb247c93ce51bf7efea6f332"
+    },
+    {
+      "path": "assets/knowledge/manifest.json",
+      "size": 27096,
+      "sha256": "3df2fb6d8ac64428775323205a7259de59196209b52409358e315906af784623"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 307636,
+      "sha256": "c7e93e6650e5076f8f3ebfe9949a3f6fbd50c6c80f87603814594b6054ed6cfd"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-ru-zh-cc0-1-0.db",
+      "size": 135168,
+      "sha256": "c470d6652978e8b96dfc12f57c1395b97d14eba626af28a26362c1018a33fa24"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 312157,
+      "sha256": "082d178af51708414effcdab504378362e6058ff9a948e6ff9c61ea51bafb60e"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/manufacturing-zh-ru-cc0-1-0.db",
+      "size": 151552,
+      "sha256": "c549aa8443741b520328dc22ea1f8d941d79f6a2036d36bda69d34ea0297e06a"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 6079,
+      "sha256": "77f09bc4dd1b9a9c86dc927719c4649191bfedb3430a26ae31c0593693578264"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "15940d114497064583051a617cf2a7fb6c536886fd2f4bea94846cf96cde31f9"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 780249,
+      "sha256": "a46b730d47b86d8c027e111dfd36ac5db8522132b158a9d3ddfa45c3ef19c415"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/materials-science-ru-zh-cc0-1-0.db",
+      "size": 397312,
+      "sha256": "9504fa642696b184234b74bbb37ec84490d3e98f63de5ea481344e109d57d0e1"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 7238,
+      "sha256": "0c7cd85c7658d9f139efe708a2f22c1f5d0a4c97d11fbbdb6d2ceaea42f15c59"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "12b10a374649c634c7ab5bdf9bbe7a77213f6ed3502a9bd8a7fdd2f3952bbe57"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 797521,
+      "sha256": "32710f768251d644e92a19cc13c3ba7937b9815ccebc3191b019f9a0a7369a9e"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/materials-science-zh-ru-cc0-1-0.db",
+      "size": 462848,
+      "sha256": "3a1fbf3f37a3301027923fbc913d229a8e217eb89872fc23973e6d6b2cff1166"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 153760,
+      "sha256": "6fc1a3a20ee14b7143cfd14c84098db6c685d1e89ab3dae9175f9be4f66f7965"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc-by-4-0.db",
+      "size": 139264,
+      "sha256": "b61c318142c69a80d7160ae363cb3a124870daad87b7bf4e5d19f2575a88a26d"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 435220,
+      "sha256": "9f8f9308d581a4854054fbec65167956a116a91311a9be4d980738ba4c772b42"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/measurement-ru-zh-cc0-1-0.db",
+      "size": 204800,
+      "sha256": "fb796fc5cf3ea379636d7d1abd5823abf3a0028fafb879a4823ec633ac67e051"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 156902,
+      "sha256": "473af1a8b7c2eec21c3e16579018d5a05c70d2beb20774355cac8f47d36ad5b6"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc-by-4-0.db",
+      "size": 131072,
+      "sha256": "8f7d7dc594b366442891f155d7773b46b0c3b8c52dc37a5cce60d46eaa44e647"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 440776,
+      "sha256": "0d235b7d8fafda928dd92bd09c3ee0e119771e487b46fe40368437d857e6dce6"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/measurement-zh-ru-cc0-1-0.db",
+      "size": 229376,
+      "sha256": "6dc0b8954741c9465021e1d3fc6f856cbecbe27cd2cdba89f6a44598b22301e0"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 535353,
+      "sha256": "17ed051f41f6d025be0e4f035290e127e2523067afb8f80665adb0deb0c97287"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-ru-zh-cc0-1-0.db",
+      "size": 274432,
+      "sha256": "d4c3c47162beb98bae9ad81c6d92e2803b950e8bc9c5be9533e1a068f4e5c8b1"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 544251,
+      "sha256": "c423b02994fe88577933b8ffa10bcaf0db8f787e4e571e120d1ada932f23d10c"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/mechanical-engineering-zh-ru-cc0-1-0.db",
+      "size": 335872,
+      "sha256": "400eb694db8cd701b8387b8b4b372aed3860f10b820fce63d70e201b51dc052d"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 9962,
+      "sha256": "f02b3387bf3f5b5222ed5f845ee5ea4ee3ded2b79b84bb7095a3ac15cb73a1ac"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "12b3c1534ee58b3d992524cb7203a971c26bd0f795201e2b3a9b23f87218a113"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 296794,
+      "sha256": "e5f5ad81d98706f198ab7a09916a1bd0170feef84d6b5b0e023e89122081458b"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-ru-zh-cc0-1-0.db",
+      "size": 126976,
+      "sha256": "4741b238de7cf6c2a963ffd473c45e4d764e031f318f7a51445fcde2ea9d6bb2"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 11526,
+      "sha256": "5ec9a9a7a47871252c7d56c9302ad9683760ec4faeacc2c25dfee83b4900685a"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "bd5f970000305a825aa979a87059d8b209660101de6ab37a9338bf804ad28856"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 302296,
+      "sha256": "8d9c0d1e9dd7d3b51fc6102bba2ba8dfb11a4258dca426f8b829ffd10480e21b"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/metallurgy-zh-ru-cc0-1-0.db",
+      "size": 143360,
+      "sha256": "cb53e55b0f31fed193b69f2ace1f2d8d720375e15c4c2643f09e3d9fd119dca6"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 2045,
+      "sha256": "315b71213a455f1de9dd3669edcb66f626b10fbe66584a5dad499f440d319b7f"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "b0dfda6d9a92198c9d3ab498ef2a161fd6eefe6c36e0b613480d00d676e7f949"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 572484,
+      "sha256": "dbefff0776061f6b4f49456a4277d838286ff257dd45f8d3fa5651d51e329e6b"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/software-ru-zh-cc0-1-0.db",
+      "size": 266240,
+      "sha256": "5d09555844968571e7b3b0a3bf4cb1ac5981765277f9092cca68401e5cd696d2"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 2045,
+      "sha256": "315b71213a455f1de9dd3669edcb66f626b10fbe66584a5dad499f440d319b7f"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc-by-4-0.db",
+      "size": 40960,
+      "sha256": "eb097b80f7dfd220b89a59e7ea4c1dc2e46f73999c0f46cf031b26b6085eb20a"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 574841,
+      "sha256": "2bd6050e47840111e9a931094437d9e3a615de6f0e47884745acfca921773728"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/software-zh-ru-cc0-1-0.db",
+      "size": 323584,
+      "sha256": "6bc0ce2e6aa5bca77bb2e489c295fc2922b667636faabf2a5b89dff0c4b7e3a7"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc-by-4-0-notices/NOTICE",
+      "size": 786638,
+      "sha256": "3a2c7920ddfaacde735c2e1600a39a8ab9015664371bba451a39791ef53bba5c"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc-by-4-0.db",
+      "size": 512000,
+      "sha256": "f8d10ee9b96e719046ed7eab5fc40820cebde300211c9bb881780cfb7b5ad364"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc0-1-0-notices/NOTICE",
+      "size": 1271918,
+      "sha256": "1e394bef155edfbf6a00212ddfc7857b27c4e2eaa7f62e0964d5657369d7daf6"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/technical-core-ru-zh-cc0-1-0.db",
+      "size": 643072,
+      "sha256": "9d4dae846030c422fc6816ffc5ba396d44177490d3273a78e6c64beab78f5427"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc-by-4-0-notices/LICENSE",
+      "size": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc-by-4-0-notices/NOTICE",
+      "size": 793345,
+      "sha256": "8540358dc3e9137524765ee1f105f1b6af8af0214dab9ef4b28cde3616bb202b"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc-by-4-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc-by-4-0.db",
+      "size": 487424,
+      "sha256": "8d46f8549977b0f11f6d5c806e4173d7751182c5d97b23ef0c0405077095f802"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc0-1-0-notices/LICENSE",
+      "size": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc0-1-0-notices/NOTICE",
+      "size": 1292487,
+      "sha256": "ae7285589cad0088557ec6901b2a3d6d307b3c037880eb00053c278753e095ae"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc0-1-0-notices/README",
+      "size": 180,
+      "sha256": "b0dc10a65a7f8f311895d41a77c1ee4300638f3aed22874fa904affb88dbebe6"
+    },
+    {
+      "path": "assets/knowledge/technical-core-zh-ru-cc0-1-0.db",
+      "size": 782336,
+      "sha256": "d71a8e05c43e393324d38aa399b22d981ffd2e75b475d515a70a5015c719feca"
+    },
+    {
+      "path": "assets/language/usage.json",
+      "size": 11359,
+      "sha256": "69c8210607b840903fdf62738c1ba44cee10dd7b935d3f441e73d1e1c0004c3d"
+    },
+    {
+      "path": "assets/language-support.json",
+      "size": 8768,
+      "sha256": "10d1112ca66c18c2acdbdbc66988453a1eea163ef5e545da4b7f32f66638fb40"
+    },
+    {
+      "path": "assets/licenses/catalog.json",
+      "size": 38310,
+      "sha256": "9053d86fddebbeed0393c3518c8e8c605c9d43d7af33c6b39f2065c61b97d6ca"
+    },
+    {
+      "path": "assets/licenses/third-party.html",
+      "size": 97811,
+      "sha256": "71ec96c63502854840e226c3bab67e0bae3086824a9fbde0c9584667561c9e4d"
+    },
+    {
+      "path": "assets/locales/de-DE.json",
+      "size": 104928,
+      "sha256": "261fcfa5b20aa9cd8214fba2066cb3f0da1b4e0734d45e591f9715ad0142fb59"
+    },
+    {
+      "path": "assets/locales/en-GB.json",
+      "size": 100333,
+      "sha256": "4e0bbb1221fbbfd01c7f00fe517299939c4ffa8a66ca5da8f09e5b9b5cdba7a1"
+    },
+    {
+      "path": "assets/locales/en-US.json",
+      "size": 100333,
+      "sha256": "cb1dba926af93fcd6e74064cfae5c00c9d11a2930e0a5d7d3dcb9a6955afe839"
+    },
+    {
+      "path": "assets/locales/es-ES.json",
+      "size": 104576,
+      "sha256": "b7a91fde67d4b18da02a0b14bf870802dac3b686419bf438829066e5396f57f2"
+    },
+    {
+      "path": "assets/locales/fr-FR.json",
+      "size": 107079,
+      "sha256": "7162b50512ace3c930f655ebe5ad63b45c3c228fd0da563dc11bc22e8ebe6c13"
+    },
+    {
+      "path": "assets/locales/ja-JP.json",
+      "size": 108909,
+      "sha256": "568bf55262fe52988f5a6d97f0eae21ed480597b3360ebff14ab4d958d234c8d"
+    },
+    {
+      "path": "assets/locales/ru-RU.json",
+      "size": 123620,
+      "sha256": "87bb0f5783486c8a574ab57e2475e6d6b71090461c36edb701bd1f2728427e23"
+    },
+    {
+      "path": "assets/locales/zh-CN.json",
+      "size": 94745,
+      "sha256": "740f303bc5042bf961d95c62422c9737806c6d43b9741d41d19cd31af93a0b96"
+    },
+    {
+      "path": "assets/logos/treetranslate.svg",
+      "size": 1560,
+      "sha256": "899731823db65d5e723f59842ce787075faa5d58858937d9f73cb2b533e98210"
+    },
+    {
+      "path": "assets/treetranslate-logo-preview.png",
+      "size": 42527,
+      "sha256": "38143dedff1ba0608bc9475c04b799eadde696172756aa5590e59cbfd2b740c4"
+    },
+    {
+      "path": "assets/treetranslate-logo.svg",
+      "size": 1813,
+      "sha256": "139405cd977d21e2909594a6ec2b8da9a8717fab9b16f5b5dd4eb02e3dd88a03"
+    },
+    {
+      "path": "main.py",
+      "size": 137,
+      "sha256": "249acf9848354e563b0af25f209568b4385b0d2042224c575c9cb3967d7231b7"
+    },
+    {
+      "path": "requirements-argos.txt",
+      "size": 102,
+      "sha256": "e73c1ffe32d7825a4d65b7b1c44dd8cdfbc7a5808c310850dceb81f5273a1801"
+    },
+    {
+      "path": "requirements-build.txt",
+      "size": 145,
+      "sha256": "5f7b5a2999034dfa45880b66b39378bd2c21a805b4f754c05939b11d49a345f7"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "size": 113,
+      "sha256": "1f240351d87221f9685f01d855aff2b5ae9a894e8ede8714012a8a009854dd0a"
+    },
+    {
+      "path": "requirements-gpu.txt",
+      "size": 135,
+      "sha256": "c57b2fbb7b7b41cd38a0a033d4c0d5ec27b1a96d346dcc66f8e5ac946e2f8692"
+    },
+    {
+      "path": "requirements-ocr-lock.txt",
+      "size": 2025,
+      "sha256": "9fb63137be8babb32e85309ee50901a6a86b5be89512eabc72e4686f4f634405"
+    },
+    {
+      "path": "requirements-runtime-lock.txt",
+      "size": 523,
+      "sha256": "77e3eb1ebd344c7c05982e4186388fc5e3a4d9815fd7020983350de06455141c"
+    },
+    {
+      "path": "requirements-runtime.txt",
+      "size": 352,
+      "sha256": "700fa6e86b72c41b553d05bbf372b30b915b104f5d2b751b7aea8bcdd23223be"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 28,
+      "sha256": "274f900af344786e88d07896a64bf72284cf315d704cd63a71d5283001015ce1"
+    },
+    {
+      "path": "vendor/models/models_manifest.json",
+      "size": 11939,
+      "sha256": "88de8e896da68b9892e8f818d429ffea32dcb4f941769e103d3e71636e123cf6"
+    }
+  ],
+  "rejected_nmt_restored_files_match": {
+    "app/documents/job.py": true,
+    "app/documents/run_metrics.py": true,
+    "app/engine/runtime/runtime_manager.py": true,
+    "app/engine/backends/m2m100_backend.py": true
+  },
+  "knowledge_db_sha256": {
+    "automotive-ru-zh-cc-by-4-0.db": "3fbc84a9ec55eb026acce3f1b315da059f477b510a189045189466f86ddf9cf7",
+    "automotive-ru-zh-cc0-1-0.db": "686af3d75c78ac6234adec56aef57e55c45d5424046241a73ce921e123bf93c8",
+    "automotive-zh-ru-cc-by-4-0.db": "8c55a8a44363b967fd1ad7dc9e829a84dbc87aeb4eb6f2e6d08de654d68cc84f",
+    "automotive-zh-ru-cc0-1-0.db": "9b382147da5f7d54f11a24dff619537d027336a76c0305b27626c29578052114",
+    "chemistry-engineering-ru-zh-cc-by-4-0.db": "f4c02fe92ffa4163a85a07077925d03004364e32ca0e64939c7ec8aa715a804b",
+    "chemistry-engineering-ru-zh-cc0-1-0.db": "7798cd0c5275478d68e4e28ef5fb69ca5e48589b1ea6195ba62b76f42d734241",
+    "chemistry-engineering-zh-ru-cc-by-4-0.db": "dc572aeec782b80d16b232889cc1485ceda8e2e52feb4181877400ba298c30e3",
+    "chemistry-engineering-zh-ru-cc0-1-0.db": "a32fb097551cb8b48ab37ee8a571a3c98f49cc8d5d36ee86ed5de8f620f632f5",
+    "computer-hardware-ru-zh-cc-by-4-0.db": "5dc7fa33e7c3fc035585597389eb65acca46e3177eaf5131122b6d27391917a4",
+    "computer-hardware-ru-zh-cc0-1-0.db": "bf0f754ca603f2aac6d21b120a82418eded58277856c9c7e19b10945f3975c1c",
+    "computer-hardware-zh-ru-cc-by-4-0.db": "3c5482c3e5981b9bfe6365106cc29ffc5fa158790b5b3f8f050253227a3a92dd",
+    "computer-hardware-zh-ru-cc0-1-0.db": "991cc9206e545234ddb8253e7fa7987aad514e0a2446ed4a929f301d463a454d",
+    "electrical-ru-zh-cc-by-4-0.db": "e33f8ff7712b44b04b8c3740f10ae8e32165eff262d4bb00f12e2f6d599c2578",
+    "electrical-ru-zh-cc0-1-0.db": "f979d264ad2355f095811873f10f9189ee65375734908f8d4dbb7331470416d6",
+    "electrical-zh-ru-cc-by-4-0.db": "c24df1b023be498974a4a0829850a5824082ebf30d4d0f4f25ebb034993b132c",
+    "electrical-zh-ru-cc0-1-0.db": "390bc36777f64183c4eb1ebc9fcf9b4e072d3eebf45b59c5bbf06ff585b9c01a",
+    "electronics-ru-zh-cc-by-4-0.db": "b0a0603fd36598202f9016240168d8b492d5fe1ee7d192109c771abe3dcacbdf",
+    "electronics-ru-zh-cc0-1-0.db": "f5b95b4fd9a9593e2a35414152f99d24ee8cb77839b1bd45b956a5d1fe82972a",
+    "electronics-zh-ru-cc-by-4-0.db": "87d5872678dc63ce724930624235eee14c8c8c772feca5c4a3e414c01333e8df",
+    "electronics-zh-ru-cc0-1-0.db": "62902303d538ca5407008ff921d564005372ffae7fd984c5aff88e4833a56986",
+    "industrial-safety-ru-zh-cc-by-4-0.db": "4bb23770bb153ed8d4ed1cf165b683a172db8df3f24da57821ae165cbbbae694",
+    "industrial-safety-ru-zh-cc0-1-0.db": "3875abdc9419cfa761dac1b9b4ed50a4a524dec1865042619d43f76eaa97a223",
+    "industrial-safety-zh-ru-cc-by-4-0.db": "a7fd82cf55ebc8e3dc432c058658fb08d844a50b3685213d741d11f04f838d23",
+    "industrial-safety-zh-ru-cc0-1-0.db": "2e9d27350ef96121a04cf69f66d3321f976ef8ebbb247c93ce51bf7efea6f332",
+    "manufacturing-ru-zh-cc0-1-0.db": "c470d6652978e8b96dfc12f57c1395b97d14eba626af28a26362c1018a33fa24",
+    "manufacturing-zh-ru-cc0-1-0.db": "c549aa8443741b520328dc22ea1f8d941d79f6a2036d36bda69d34ea0297e06a",
+    "materials-science-ru-zh-cc-by-4-0.db": "15940d114497064583051a617cf2a7fb6c536886fd2f4bea94846cf96cde31f9",
+    "materials-science-ru-zh-cc0-1-0.db": "9504fa642696b184234b74bbb37ec84490d3e98f63de5ea481344e109d57d0e1",
+    "materials-science-zh-ru-cc-by-4-0.db": "12b10a374649c634c7ab5bdf9bbe7a77213f6ed3502a9bd8a7fdd2f3952bbe57",
+    "materials-science-zh-ru-cc0-1-0.db": "3a1fbf3f37a3301027923fbc913d229a8e217eb89872fc23973e6d6b2cff1166",
+    "measurement-ru-zh-cc-by-4-0.db": "b61c318142c69a80d7160ae363cb3a124870daad87b7bf4e5d19f2575a88a26d",
+    "measurement-ru-zh-cc0-1-0.db": "fb796fc5cf3ea379636d7d1abd5823abf3a0028fafb879a4823ec633ac67e051",
+    "measurement-zh-ru-cc-by-4-0.db": "8f7d7dc594b366442891f155d7773b46b0c3b8c52dc37a5cce60d46eaa44e647",
+    "measurement-zh-ru-cc0-1-0.db": "6dc0b8954741c9465021e1d3fc6f856cbecbe27cd2cdba89f6a44598b22301e0",
+    "mechanical-engineering-ru-zh-cc0-1-0.db": "d4c3c47162beb98bae9ad81c6d92e2803b950e8bc9c5be9533e1a068f4e5c8b1",
+    "mechanical-engineering-zh-ru-cc0-1-0.db": "400eb694db8cd701b8387b8b4b372aed3860f10b820fce63d70e201b51dc052d",
+    "metallurgy-ru-zh-cc-by-4-0.db": "12b3c1534ee58b3d992524cb7203a971c26bd0f795201e2b3a9b23f87218a113",
+    "metallurgy-ru-zh-cc0-1-0.db": "4741b238de7cf6c2a963ffd473c45e4d764e031f318f7a51445fcde2ea9d6bb2",
+    "metallurgy-zh-ru-cc-by-4-0.db": "bd5f970000305a825aa979a87059d8b209660101de6ab37a9338bf804ad28856",
+    "metallurgy-zh-ru-cc0-1-0.db": "cb53e55b0f31fed193b69f2ace1f2d8d720375e15c4c2643f09e3d9fd119dca6",
+    "software-ru-zh-cc-by-4-0.db": "b0dfda6d9a92198c9d3ab498ef2a161fd6eefe6c36e0b613480d00d676e7f949",
+    "software-ru-zh-cc0-1-0.db": "5d09555844968571e7b3b0a3bf4cb1ac5981765277f9092cca68401e5cd696d2",
+    "software-zh-ru-cc-by-4-0.db": "eb097b80f7dfd220b89a59e7ea4c1dc2e46f73999c0f46cf031b26b6085eb20a",
+    "software-zh-ru-cc0-1-0.db": "6bc0ce2e6aa5bca77bb2e489c295fc2922b667636faabf2a5b89dff0c4b7e3a7",
+    "technical-core-ru-zh-cc-by-4-0.db": "f8d10ee9b96e719046ed7eab5fc40820cebde300211c9bb881780cfb7b5ad364",
+    "technical-core-ru-zh-cc0-1-0.db": "9d4dae846030c422fc6816ffc5ba396d44177490d3273a78e6c64beab78f5427",
+    "technical-core-zh-ru-cc-by-4-0.db": "8d46f8549977b0f11f6d5c806e4173d7751182c5d97b23ef0c0405077095f802",
+    "technical-core-zh-ru-cc0-1-0.db": "d71a8e05c43e393324d38aa399b22d981ffd2e75b475d515a70a5015c719feca",
+    "aw083-body-repair-zh-ru.db": "ba2d0ce20682eb4711d1e14262d60ac1ec0858ecf9b845d8cd3a8a8e4dcf8146"
+  },
+  "models_reference": "vendor/models/models_manifest.json and vendor/model-metadata/ocr/models_manifest.json",
+  "marker_inventory": {
+    "current": "app/config/constants.py:APP_VERSION",
+    "consumers": [
+      "About UI",
+      "document logs",
+      "language support builder"
+    ],
+    "historical_data": [
+      "benchmark asset version 0.81",
+      "Knowledge revisions",
+      "language-support history snapshots",
+      "TMX format component version 0.7"
+    ],
+    "package_metadata": "No pyproject/setup package version or independent CLI/build app version present"
+  }
+}

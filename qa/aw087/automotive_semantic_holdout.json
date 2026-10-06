@@ -1,0 +1,1095 @@
+{
+  "frozen_before_evaluation": true,
+  "knowledge_hashes": {
+    "assets/knowledge/aw083-body-repair-zh-ru.db": "835993c6136b80db1fbc006a712611d96283d9287dfe18522d28347f2e7284a3",
+    "assets/knowledge/aw087-authored-families.txt": "f7175cd8d7f28ad43e009f28b88f69f0763b4f84ef33ae0d39071a5139528d37",
+    "assets/config/knowledge-templates.json": "2661b11f6c0cea4911bc77d64ccf4f925621da66098ac1822929867cbe8d2b33",
+    "assets/config/automotive-slot-forms.json": "53248e47363775000a4d7a2137982004f5f3764196c2310b401495973ba2a58c",
+    "assets/config/knowledge-context.json": "ca4b2e01aa94640ad78a0cb2bebb3d17083faccb6b72f05552688fc4e6cc2055"
+  },
+  "source": "AUTHORED new combinations after knowledge development; synthetic evaluation, not unseen OEM documents",
+  "development_separate": true,
+  "reviewer": "Codex; references not independent human certification",
+  "rows": [
+    {
+      "source": "检查焊接电极。",
+      "reference": "Проверьте сварочный электрод.",
+      "expected_route": "safe_template",
+      "id": "body-000",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查定位夹具。",
+      "reference": "Проверьте позиционирующий зажим.",
+      "expected_route": "safe_template",
+      "id": "body-001",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查车身密封胶。",
+      "reference": "Проверьте кузовной герметик.",
+      "expected_route": "safe_template",
+      "id": "body-002",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查防腐涂层。",
+      "reference": "Проверьте антикоррозионное покрытие.",
+      "expected_route": "safe_template",
+      "id": "body-003",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量焊接电极。",
+      "reference": "Измерьте сварочный электрод.",
+      "expected_route": "safe_template",
+      "id": "body-004",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量定位夹具。",
+      "reference": "Измерьте позиционирующий зажим.",
+      "expected_route": "safe_template",
+      "id": "body-005",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量车身密封胶。",
+      "reference": "Измерьте кузовной герметик.",
+      "expected_route": "safe_template",
+      "id": "body-006",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量防腐涂层。",
+      "reference": "Измерьте антикоррозионное покрытие.",
+      "expected_route": "safe_template",
+      "id": "body-007",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认焊接电极。",
+      "reference": "Проверьте сварочный электрод.",
+      "expected_route": "safe_template",
+      "id": "body-008",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认定位夹具。",
+      "reference": "Проверьте позиционирующий зажим.",
+      "expected_route": "safe_template",
+      "id": "body-009",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认车身密封胶。",
+      "reference": "Проверьте кузовной герметик.",
+      "expected_route": "safe_template",
+      "id": "body-010",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认防腐涂层。",
+      "reference": "Проверьте антикоррозионное покрытие.",
+      "expected_route": "safe_template",
+      "id": "body-011",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换焊接电极。",
+      "reference": "Замените сварочный электрод.",
+      "expected_route": "safe_template",
+      "id": "body-012",
+      "area": "body",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "body-013",
+      "area": "body",
+      "source": "维修后应再次确认焊接电极没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что сварочный электрод не повреждён.",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "body-014",
+      "area": "body",
+      "source": "如果焊接电极损坏,应先停止操作。",
+      "reference": "Если сварочный электрод повреждён, следует сначала прекратить работу.",
+      "profile_cues": "车身维修 车门 钣金",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查水泵。",
+      "reference": "Проверьте водяной насос.",
+      "expected_route": "safe_template",
+      "id": "cooling-015",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查节温器壳体。",
+      "reference": "Проверьте корпус термостата.",
+      "expected_route": "safe_template",
+      "id": "cooling-016",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查膨胀水箱盖。",
+      "reference": "Проверьте крышку расширительного бачка.",
+      "expected_route": "safe_template",
+      "id": "cooling-017",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查冷却液温度传感器。",
+      "reference": "Проверьте датчик температуры охлаждающей жидкости.",
+      "expected_route": "safe_template",
+      "id": "cooling-018",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量水泵。",
+      "reference": "Измерьте водяной насос.",
+      "expected_route": "safe_template",
+      "id": "cooling-019",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量节温器壳体。",
+      "reference": "Измерьте корпус термостата.",
+      "expected_route": "safe_template",
+      "id": "cooling-020",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量膨胀水箱盖。",
+      "reference": "Измерьте крышку расширительного бачка.",
+      "expected_route": "safe_template",
+      "id": "cooling-021",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量冷却液温度传感器。",
+      "reference": "Измерьте датчик температуры охлаждающей жидкости.",
+      "expected_route": "safe_template",
+      "id": "cooling-022",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认水泵。",
+      "reference": "Проверьте водяной насос.",
+      "expected_route": "safe_template",
+      "id": "cooling-023",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认节温器壳体。",
+      "reference": "Проверьте корпус термостата.",
+      "expected_route": "safe_template",
+      "id": "cooling-024",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认膨胀水箱盖。",
+      "reference": "Проверьте крышку расширительного бачка.",
+      "expected_route": "safe_template",
+      "id": "cooling-025",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认冷却液温度传感器。",
+      "reference": "Проверьте датчик температуры охлаждающей жидкости.",
+      "expected_route": "safe_template",
+      "id": "cooling-026",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换水泵。",
+      "reference": "Замените водяной насос.",
+      "expected_route": "safe_template",
+      "id": "cooling-027",
+      "area": "cooling",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "cooling-028",
+      "area": "cooling",
+      "source": "维修后应再次确认水泵没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что водяной насос не повреждён.",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "cooling-029",
+      "area": "cooling",
+      "source": "如果水泵损坏,应先停止操作。",
+      "reference": "Если водяной насос повреждён, следует сначала прекратить работу.",
+      "profile_cues": "冷却液 散热器 冷却风扇",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查点火线圈。",
+      "reference": "Проверьте катушку зажигания.",
+      "expected_route": "safe_template",
+      "id": "engine-030",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查机油泵。",
+      "reference": "Проверьте масляный насос.",
+      "expected_route": "safe_template",
+      "id": "engine-031",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查空气滤清器。",
+      "reference": "Проверьте воздушный фильтр.",
+      "expected_route": "safe_template",
+      "id": "engine-032",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查发动机支座。",
+      "reference": "Проверьте опору двигателя.",
+      "expected_route": "safe_template",
+      "id": "engine-033",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量点火线圈。",
+      "reference": "Измерьте катушку зажигания.",
+      "expected_route": "safe_template",
+      "id": "engine-034",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量机油泵。",
+      "reference": "Измерьте масляный насос.",
+      "expected_route": "safe_template",
+      "id": "engine-035",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量空气滤清器。",
+      "reference": "Измерьте воздушный фильтр.",
+      "expected_route": "safe_template",
+      "id": "engine-036",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量发动机支座。",
+      "reference": "Измерьте опору двигателя.",
+      "expected_route": "safe_template",
+      "id": "engine-037",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认点火线圈。",
+      "reference": "Проверьте катушку зажигания.",
+      "expected_route": "safe_template",
+      "id": "engine-038",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认机油泵。",
+      "reference": "Проверьте масляный насос.",
+      "expected_route": "safe_template",
+      "id": "engine-039",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认空气滤清器。",
+      "reference": "Проверьте воздушный фильтр.",
+      "expected_route": "safe_template",
+      "id": "engine-040",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认发动机支座。",
+      "reference": "Проверьте опору двигателя.",
+      "expected_route": "safe_template",
+      "id": "engine-041",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换点火线圈。",
+      "reference": "Замените катушку зажигания.",
+      "expected_route": "safe_template",
+      "id": "engine-042",
+      "area": "engine",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "engine-043",
+      "area": "engine",
+      "source": "维修后应再次确认点火线圈没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что катушка зажигания не повреждён.",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "engine-044",
+      "area": "engine",
+      "source": "如果点火线圈损坏,应先停止操作。",
+      "reference": "Если катушка зажигания повреждён, следует сначала прекратить работу.",
+      "profile_cues": "发动机 机油 燃油",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查稳定杆衬套。",
+      "reference": "Проверьте втулку стабилизатора.",
+      "expected_route": "safe_template",
+      "id": "suspension-045",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查转向节。",
+      "reference": "Проверьте поворотный кулак.",
+      "expected_route": "safe_template",
+      "id": "suspension-046",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查轮毂轴承。",
+      "reference": "Проверьте подшипник ступицы.",
+      "expected_route": "safe_template",
+      "id": "suspension-047",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查悬架衬套。",
+      "reference": "Проверьте втулку подвески.",
+      "expected_route": "safe_template",
+      "id": "suspension-048",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量稳定杆衬套。",
+      "reference": "Измерьте втулку стабилизатора.",
+      "expected_route": "safe_template",
+      "id": "suspension-049",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量转向节。",
+      "reference": "Измерьте поворотный кулак.",
+      "expected_route": "safe_template",
+      "id": "suspension-050",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量轮毂轴承。",
+      "reference": "Измерьте подшипник ступицы.",
+      "expected_route": "safe_template",
+      "id": "suspension-051",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量悬架衬套。",
+      "reference": "Измерьте втулку подвески.",
+      "expected_route": "safe_template",
+      "id": "suspension-052",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认稳定杆衬套。",
+      "reference": "Проверьте втулку стабилизатора.",
+      "expected_route": "safe_template",
+      "id": "suspension-053",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认转向节。",
+      "reference": "Проверьте поворотный кулак.",
+      "expected_route": "safe_template",
+      "id": "suspension-054",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认轮毂轴承。",
+      "reference": "Проверьте подшипник ступицы.",
+      "expected_route": "safe_template",
+      "id": "suspension-055",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认悬架衬套。",
+      "reference": "Проверьте втулку подвески.",
+      "expected_route": "safe_template",
+      "id": "suspension-056",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换稳定杆衬套。",
+      "reference": "Замените втулку стабилизатора.",
+      "expected_route": "safe_template",
+      "id": "suspension-057",
+      "area": "suspension",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "suspension-058",
+      "area": "suspension",
+      "source": "维修后应再次确认稳定杆衬套没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что втулка стабилизатора не повреждён.",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "suspension-059",
+      "area": "suspension",
+      "source": "如果稳定杆衬套损坏,应先停止操作。",
+      "reference": "Если втулка стабилизатора повреждён, следует сначала прекратить работу.",
+      "profile_cues": "悬架 减振器 副车架",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查制动卡钳。",
+      "reference": "Проверьте тормозной суппорт.",
+      "expected_route": "safe_template",
+      "id": "brakes-060",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查制动主缸。",
+      "reference": "Проверьте главный тормозной цилиндр.",
+      "expected_route": "safe_template",
+      "id": "brakes-061",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查制动盘。",
+      "reference": "Проверьте тормозной диск.",
+      "expected_route": "safe_template",
+      "id": "brakes-062",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查制动软管。",
+      "reference": "Проверьте тормозной шланг.",
+      "expected_route": "safe_template",
+      "id": "brakes-063",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量制动卡钳。",
+      "reference": "Измерьте тормозной суппорт.",
+      "expected_route": "safe_template",
+      "id": "brakes-064",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量制动主缸。",
+      "reference": "Измерьте главный тормозной цилиндр.",
+      "expected_route": "safe_template",
+      "id": "brakes-065",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量制动盘。",
+      "reference": "Измерьте тормозной диск.",
+      "expected_route": "safe_template",
+      "id": "brakes-066",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量制动软管。",
+      "reference": "Измерьте тормозной шланг.",
+      "expected_route": "safe_template",
+      "id": "brakes-067",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认制动卡钳。",
+      "reference": "Проверьте тормозной суппорт.",
+      "expected_route": "safe_template",
+      "id": "brakes-068",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认制动主缸。",
+      "reference": "Проверьте главный тормозной цилиндр.",
+      "expected_route": "safe_template",
+      "id": "brakes-069",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认制动盘。",
+      "reference": "Проверьте тормозной диск.",
+      "expected_route": "safe_template",
+      "id": "brakes-070",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认制动软管。",
+      "reference": "Проверьте тормозной шланг.",
+      "expected_route": "safe_template",
+      "id": "brakes-071",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换制动卡钳。",
+      "reference": "Замените тормозной суппорт.",
+      "expected_route": "safe_template",
+      "id": "brakes-072",
+      "area": "brakes",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "brakes-073",
+      "area": "brakes",
+      "source": "维修后应再次确认制动卡钳没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что тормозной суппорт не повреждён.",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "brakes-074",
+      "area": "brakes",
+      "source": "如果制动卡钳损坏,应先停止操作。",
+      "reference": "Если тормозной суппорт повреждён, следует сначала прекратить работу.",
+      "profile_cues": "制动 制动液 刹车",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查继电器。",
+      "reference": "Проверьте реле.",
+      "expected_route": "safe_template",
+      "id": "electrical-075",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查线束连接器。",
+      "reference": "Проверьте разъём жгута проводов.",
+      "expected_route": "safe_template",
+      "id": "electrical-076",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查发电机。",
+      "reference": "Проверьте генератор.",
+      "expected_route": "safe_template",
+      "id": "electrical-077",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查起动机。",
+      "reference": "Проверьте стартер.",
+      "expected_route": "safe_template",
+      "id": "electrical-078",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量继电器。",
+      "reference": "Измерьте реле.",
+      "expected_route": "safe_template",
+      "id": "electrical-079",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量线束连接器。",
+      "reference": "Измерьте разъём жгута проводов.",
+      "expected_route": "safe_template",
+      "id": "electrical-080",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量发电机。",
+      "reference": "Измерьте генератор.",
+      "expected_route": "safe_template",
+      "id": "electrical-081",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量起动机。",
+      "reference": "Измерьте стартер.",
+      "expected_route": "safe_template",
+      "id": "electrical-082",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认继电器。",
+      "reference": "Проверьте реле.",
+      "expected_route": "safe_template",
+      "id": "electrical-083",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认线束连接器。",
+      "reference": "Проверьте разъём жгута проводов.",
+      "expected_route": "safe_template",
+      "id": "electrical-084",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认发电机。",
+      "reference": "Проверьте генератор.",
+      "expected_route": "safe_template",
+      "id": "electrical-085",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认起动机。",
+      "reference": "Проверьте стартер.",
+      "expected_route": "safe_template",
+      "id": "electrical-086",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换继电器。",
+      "reference": "Замените реле.",
+      "expected_route": "safe_template",
+      "id": "electrical-087",
+      "area": "electrical",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "electrical-088",
+      "area": "electrical",
+      "source": "维修后应再次确认继电器没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что реле не повреждён.",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "electrical-089",
+      "area": "electrical",
+      "source": "如果继电器损坏,应先停止操作。",
+      "reference": "Если реле повреждён, следует сначала прекратить работу.",
+      "profile_cues": "电压 线束 接地",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查诊断接口。",
+      "reference": "Проверьте диагностический разъём.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-090",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查故障指示灯。",
+      "reference": "Проверьте индикатор неисправности.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-091",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查车辆识别码。",
+      "reference": "Проверьте идентификационный номер автомобиля.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-092",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查故障历史。",
+      "reference": "Проверьте историю неисправностей.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-093",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量诊断接口。",
+      "reference": "Измерьте диагностический разъём.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-094",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量故障指示灯。",
+      "reference": "Измерьте индикатор неисправности.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-095",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量车辆识别码。",
+      "reference": "Измерьте идентификационный номер автомобиля.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-096",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量故障历史。",
+      "reference": "Измерьте историю неисправностей.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-097",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认诊断接口。",
+      "reference": "Проверьте диагностический разъём.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-098",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认故障指示灯。",
+      "reference": "Проверьте индикатор неисправности.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-099",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认车辆识别码。",
+      "reference": "Проверьте идентификационный номер автомобиля.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-100",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认故障历史。",
+      "reference": "Проверьте историю неисправностей.",
+      "expected_route": "safe_template",
+      "id": "diagnostics-101",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查诊断接口",
+      "reference": "Проверка диагностического разъёма",
+      "expected_route": "heading_template",
+      "segment_type": "HEADING",
+      "id": "diagnostics-102",
+      "area": "diagnostics",
+      "profile_cues": "诊断 故障码 DTC"
+    },
+    {
+      "id": "diagnostics-103",
+      "area": "diagnostics",
+      "source": "维修后应再次确认诊断接口没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что диагностический разъём не повреждён.",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "diagnostics-104",
+      "area": "diagnostics",
+      "source": "如果诊断接口损坏,应先停止操作。",
+      "reference": "Если диагностический разъём повреждён, следует сначала прекратить работу.",
+      "profile_cues": "诊断 故障码 DTC",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "source": "检查螺母。",
+      "reference": "Проверьте гайку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-105",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查垫圈。",
+      "reference": "Проверьте шайбу.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-106",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查卡箍。",
+      "reference": "Проверьте хомут.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-107",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "检查密封垫。",
+      "reference": "Проверьте уплотнительную прокладку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-108",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量螺母。",
+      "reference": "Измерьте гайку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-109",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量垫圈。",
+      "reference": "Измерьте шайбу.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-110",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量卡箍。",
+      "reference": "Измерьте хомут.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-111",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "测量密封垫。",
+      "reference": "Измерьте уплотнительную прокладку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-112",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认螺母。",
+      "reference": "Проверьте гайку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-113",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认垫圈。",
+      "reference": "Проверьте шайбу.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-114",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认卡箍。",
+      "reference": "Проверьте хомут.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-115",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "确认密封垫。",
+      "reference": "Проверьте уплотнительную прокладку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-116",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "source": "更换螺母。",
+      "reference": "Замените гайку.",
+      "expected_route": "safe_template",
+      "id": "service_procedure-117",
+      "area": "service_procedure",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROCEDURE_STEP"
+    },
+    {
+      "id": "service_procedure-118",
+      "area": "service_procedure",
+      "source": "维修后应再次确认螺母没有损坏。",
+      "reference": "После ремонта следует повторно убедиться, что гайка не повреждён.",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    },
+    {
+      "id": "service_procedure-119",
+      "area": "service_procedure",
+      "source": "如果螺母损坏,应先停止操作。",
+      "reference": "Если гайка повреждён, следует сначала прекратить работу.",
+      "profile_cues": "发动机 机油 散热器 冷却液",
+      "segment_type": "PROSE",
+      "expected_route": "model_or_constraints"
+    }
+  ]
+}

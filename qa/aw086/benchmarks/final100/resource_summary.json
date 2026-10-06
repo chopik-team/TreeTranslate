@@ -1,0 +1,31 @@
+{
+  "samples": 1401,
+  "sample_interval_seconds": 1,
+  "monitor_errors": [],
+  "process_tree_cpu_avg_percent": 136.24863898210486,
+  "process_tree_cpu_peak_percent": 764.862246918541,
+  "process_tree_peak_rss_bytes": 4143620096,
+  "process_tree_peak_private_commit_bytes": 10671013888,
+  "system_min_available_ram_bytes": 18626965504,
+  "gpu_device_average_utilization": 48.16428571428571,
+  "gpu_device_peak_vram_mib": 6049.0,
+  "gpu_scope": "Device wide, including desktop/other processes; one-second samples; per-process GPU memory is unavailable under Windows WDDM in this monitor.",
+  "cpu_scope": "Process tree: 100%=one logical core; sampler and nvidia-smi overhead included; first zero sample excluded from weighted average",
+  "historical": {
+    "cpu_avg": null,
+    "gpu_avg": null,
+    "tree_rss": null,
+    "tree_commit": null,
+    "vram": null,
+    "root_sampled_peak_rss_bytes": 1495412736,
+    "note": "Historical telemetry only root RSS at document boundaries, no continuous CPU/tree/GPU monitor. NOT DIRECTLY COMPARABLE."
+  },
+  "ram_limit_changed": false,
+  "models_or_execution_caps_changed": false,
+  "gpu_per_process_snapshot": {
+    "returncode": 0,
+    "stdout": "1992, [Insufficient Permissions], [N/A]\n11708, C:\\Windows\\System32\\ShellHost.exe, [N/A]\n11388, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\n11656, C:\\Windows\\explorer.exe, [N/A]\n13248, C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF\\NVIDIA Overlay.exe, [N/A]\n11484, C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF\\NVIDIA Overlay.exe, [N/A]\n14268, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\n14240, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\n16840, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.53\\msedgewebview2.exe, [N/A]\n15720, C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe, [N/A]\n19076, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\n21080, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\n20904, C:\\Users\\PC\\AppData\\Roaming\\uTorrent\\client\\uTorrentClients.exe, [N/A]\n16004, F:\\SteamLibrary\\steamapps\\common\\wallpaper_engine\\wallpaper64.exe, [N/A]\n23860, C:\\Program Files (x86)\\Brother\\iPrint&Scan\\IPSMONITOR\\iPSMonitor.exe, [N/A]\n8228, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\n7084, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]\n5748, C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe, [N/A]\n23412, C:\\Program Files\\FlyFrogLLC\\Happ\\Happ.exe, [N/A]\n24508, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.4958.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n26036, C:\\Users\\PC\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\7d8d3ac5ca9f6767\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\n26412, C:\\Program Files\\Python312\\python.exe, [N/A]\n1916, C:\\Program Files\\Python312\\python.exe, [N/A]\n",
+    "stderr": "",
+    "scope": "Single read-only process snapshot during measured run; Windows WDDM used_gpu_memory may be unavailable"
+  }
+}

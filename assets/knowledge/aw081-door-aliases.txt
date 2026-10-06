@@ -1,0 +1,3 @@
+# Independently authored full forms; declared aliases of existing door concepts.
+前车门|передняя дверь|передней двери|переднюю дверь|f|body.doors
+后车门|задняя дверь|задней двери|заднюю дверь|f|body.doors

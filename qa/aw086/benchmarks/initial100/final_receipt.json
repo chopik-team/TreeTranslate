@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "run_id": "25825c3f75a7",
+  "processed": 100,
+  "translated": 76,
+  "failed_source_preserved": 24,
+  "fatal": 0,
+  "report": "C:\\TreeTranslate\\docs\\AW0.81_100PDF_SPEED_CALIBRATION.md",
+  "report_sha256": "6a909e08cafe01f61fa07b12449ec881dc9c783eb442cc86dd5e1394e9e4248e",
+  "output_zip_sha256": "26cc48eac416ea4b23b0bb5b5f50222353ad8f7e864d07675a199d9b60fb6316",
+  "output_crc": "PASS",
+  "failed_original_paths_and_bytes": "PASS_24_OF_24",
+  "arithmetic_and_required_artifacts": "PASS",
+  "production_hashes_unchanged": 248,
+  "full_source_immutable": true,
+  "observer_errors": [],
+  "full_corpus_run": false,
+  "semantic_regrade": false,
+  "training": false,
+  "commit_created": false
+}

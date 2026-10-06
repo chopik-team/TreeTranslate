@@ -49,6 +49,20 @@ class FidelityMismatch(ValueError):
 
 
 def faithful_result(source, translated):
+    # Exact geometric symbols and point labels are not linguistic content.
+    tokens = re.findall(r"[ØøΦφ⌀]\d+(?:[.,]\d+)?|\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?|(?<![A-Za-z])[A-Z]['′″\"]+(?![A-Za-z])|(?<![A-Za-z])[A-Z](?:[-/=][A-Z]['′″\"]*)+(?![A-Za-z])", source)
+    for token in set(tokens):
+        if translated.count(token) != source.count(token):
+            raise FidelityMismatch('geometry_invariant')
+    if re.search(r'[\u4e00-\u9fff]', source):
+        for token in re.findall(r'(?<![A-Za-z])[A-Z]{1,8}(?![A-Za-z])', source):
+            if token not in translated:
+                raise FidelityMismatch('point_label_invariant')
+    if any('\u4e00' <= c <= '\u9fff' for c in source) and re.search(r'[А-Яа-я]', translated):
+        if any('\u4e00' <= c <= '\u9fff' for c in translated):
+            raise FidelityMismatch('source_residue')
+    if '\ufffd' in translated or '⁇' in translated or re.search(r'(\b\w+\b)(?:\s+\1){3,}', translated, re.I):
+        raise FidelityMismatch('decoder_garbage')
     # Check values and multiplicity before restoring the source's exact spelling.
     number = re.compile(r'\d+(?:[.,]\d+)?')
     original = list(number.finditer(source))

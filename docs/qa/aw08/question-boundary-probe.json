@@ -1,0 +1,30 @@
+[
+  {
+    "source": "en",
+    "target": "ru",
+    "variant": "paragraph",
+    "text": "Did she check both valves yesterday? Do not start the pump.",
+    "output": "Она вчера проверила оба клапана?"
+  },
+  {
+    "source": "en",
+    "target": "ru",
+    "variant": "question_boundary",
+    "text": "Did she check both valves yesterday?\nDo not start the pump.",
+    "output": "Она вчера проверила оба клапана?\nНе запускайте насос."
+  },
+  {
+    "source": "ru",
+    "target": "en",
+    "variant": "paragraph",
+    "text": "Она проверила оба клапана вчера? Не запускайте насос.",
+    "output": "Did she check both valves yesterday?"
+  },
+  {
+    "source": "ru",
+    "target": "en",
+    "variant": "question_boundary",
+    "text": "Она проверила оба клапана вчера?\nНе запускайте насос.",
+    "output": "She checked both valves yesterday?\nDon't start the pump."
+  }
+]

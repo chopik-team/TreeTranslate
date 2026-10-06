@@ -1,0 +1,1160 @@
+{
+  "冷却液": {
+    "source_records": [],
+    "candidates": []
+  },
+  "冷却剂": {
+    "source_records": [
+      {
+        "source": "cedict-20260923",
+        "record": "fa5967b6d05dac6d4386093f55d6e5ef9ce4739ad916fc189640056d6036f3b6",
+        "labels": {
+          "zh-hans": "冷却剂",
+          "zh-hant": "冷卻劑"
+        },
+        "aliases": {},
+        "definitions": [
+          "coolant"
+        ],
+        "declared_zh": true,
+        "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q1056832",
+        "labels": {
+          "en": "coolant",
+          "ru": "охлаждающая жидкость",
+          "zh": "冷卻劑",
+          "zh-cn": "冷却剂",
+          "zh-hans": "冷却剂",
+          "zh-hant": "冷卻劑"
+        },
+        "aliases": {
+          "en": [
+            "heat transfer fluid",
+            "cooling fluid"
+          ],
+          "ru": [
+            "теплоносители",
+            "теплоноситель",
+            "тосол",
+            "охлаждающий агент"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": true,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q3535009",
+        "labels": {
+          "en": "nuclear reactor coolant",
+          "ru": "теплоноситель ядерного реактора",
+          "zh": "核反應爐冷却剂",
+          "zh-cn": "核反应堆冷却剂",
+          "zh-hans": "核反應爐冷却剂",
+          "zh-hant": "核反應堆冷卻劑"
+        },
+        "aliases": {
+          "en": [
+            "reactor coolant"
+          ],
+          "zh-cn": [
+            "核反應爐冷却剂"
+          ],
+          "zh-hant": [
+            "核反應爐冷卻劑"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "a78b82c9259114349776e8eb5f1f677618161ac8ddd31e593374e589429b4a86",
+        "zh": "冷却剂",
+        "ru": "охлаждающая жидкость",
+        "domain": "automotive",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family"
+        ],
+        "link_type": "ENGLISH_PIVOT_EXACT"
+      },
+      {
+        "id": "aff8f8a6c4bca628c80433ff82ef7d4b860ceed0a92b2770e19d3ab099644487",
+        "zh": "冷却剂",
+        "ru": "",
+        "domain": "automotive",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "ebf5def30afe5efe73d2e8c7794098c56a26977e94b6e3abc274ca22b6abba1d",
+        "zh": "冷却剂",
+        "ru": "охлаждающая жидкость",
+        "domain": "automotive",
+        "status": "VERIFIED",
+        "reasons": [
+          "shared_concept",
+          "preferred_zh_ru",
+          "taxonomy_path"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      }
+    ]
+  },
+  "散热器": {
+    "source_records": [
+      {
+        "source": "cedict-20260923",
+        "record": "4ef7d0330762e80487f62a24dc5a228e49e32c4be27ff7260e9f4288c035974c",
+        "labels": {
+          "zh-hans": "散热器",
+          "zh-hant": "散熱器"
+        },
+        "aliases": {},
+        "definitions": [
+          "radiator (for heating a room)",
+          "radiator (for cooling an engine)"
+        ],
+        "declared_zh": true,
+        "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q1163026",
+        "labels": {
+          "en": "engine cooling radiator",
+          "ru": "Радиатор автомобиля",
+          "zh": "散热器",
+          "zh-hans": "散热器",
+          "zh-hant": "散熱器",
+          "zh-tw": "散熱器"
+        },
+        "aliases": {
+          "en": [
+            "radiator"
+          ],
+          "ru": [
+            "Радиаторы"
+          ],
+          "zh": [
+            "水箱 (內燃機散熱)"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": true,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "12b50058f7bac6bc43ea82ad92d93b423014ea11dce69c2975c99db12202df4f",
+        "zh": "散热器",
+        "ru": "",
+        "domain": "automotive",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "290924060819d10dd0c61b08cd1cc7fd1e14b18c96e3cf5e1f6a8863c1333a78",
+        "zh": "散热器",
+        "ru": "Радиатор автомобиля",
+        "domain": "automotive",
+        "status": "REVIEW",
+        "reasons": [
+          "shared_concept",
+          "preferred_zh_ru"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "373b2606db8920ab06f68e9b5b3bc40682a3f81ac648294bf702c30b2e0cf9b4",
+        "zh": "散热器",
+        "ru": "Радиатор автомобиля",
+        "domain": "automotive",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "9b735d795943a3722411ba28c093ba0a96d74bfeca6d82a6d80e3c185fad237e",
+        "zh": "散热器",
+        "ru": "Радиатор автомобиля",
+        "domain": "technical-core",
+        "status": "VERIFIED",
+        "reasons": [
+          "shared_concept",
+          "preferred_zh_ru",
+          "taxonomy_path"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "a8357830dced8aa12f5a65ca1867cab94705b2c559aa1ba3b7317c6ab466e89b",
+        "zh": "散热器",
+        "ru": "Радиатор автомобиля",
+        "domain": "mechanical-engineering",
+        "status": "VERIFIED",
+        "reasons": [
+          "shared_concept",
+          "preferred_zh_ru",
+          "taxonomy_path"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      }
+    ]
+  },
+  "散热器盖": {
+    "source_records": [],
+    "candidates": []
+  },
+  "连接器": {
+    "source_records": [
+      {
+        "source": "cedict-20260923",
+        "record": "3b2ad7b1528a9e44a50109b6d83065f8de314f674b9a4dbd5b0e6da76ee14615",
+        "labels": {
+          "zh-hans": "连接器",
+          "zh-hant": "連接器"
+        },
+        "aliases": {},
+        "definitions": [
+          "connector"
+        ],
+        "declared_zh": true,
+        "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q1133767",
+        "labels": {
+          "en": "DIN connector",
+          "ru": "Разъём DIN",
+          "zh": "DIN连接器",
+          "zh-hans": "DIN连接器",
+          "zh-hant": "DIN連接器"
+        },
+        "aliases": {
+          "ru": [
+            "ОНЦ-ВГ",
+            "Разъём ОНЦ-ВГ"
+          ],
+          "zh": [
+            "DIN connector"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q1501648",
+        "labels": {
+          "en": "railway coupler",
+          "ru": "Автосцепка",
+          "zh": "铁路连接器"
+        },
+        "aliases": {
+          "en": [
+            "coupler",
+            "coupling",
+            "railway coupling"
+          ],
+          "ru": [
+            "Автосцепное устройство",
+            "Автоматическая сцепка"
+          ],
+          "zh": [
+            "連結裝置"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q16000075",
+        "labels": {
+          "en": "DC power connector",
+          "zh": "直流連接器",
+          "zh-hans": "直流连接器",
+          "zh-hant": "直流聯結器"
+        },
+        "aliases": {
+          "en": [
+            "DC plug",
+            "DC socket",
+            "DC connector"
+          ],
+          "zh-hans": [
+            "直流連接器"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q18819626",
+        "labels": {
+          "en": "connector",
+          "zh": "连接器"
+        },
+        "aliases": {
+          "en": [
+            "connection",
+            "join",
+            "joiner",
+            "joint",
+            "link",
+            "attachment",
+            "mechanical connector",
+            "physical connector",
+            "mount"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": true,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q1972118",
+        "labels": {
+          "en": "edge connector",
+          "ru": "краевой соединитель",
+          "zh": "边缘连接器",
+          "zh-hans": "边缘连接器",
+          "zh-hant": "邊緣聯結器"
+        },
+        "aliases": {
+          "zh-hant": [
+            "邊緣連接器"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q2164724",
+        "labels": {
+          "en": "RF connector",
+          "ru": "Коаксиальный радиочастотный разъём",
+          "zh": "射频连接器"
+        },
+        "aliases": {
+          "en": [
+            "radio-frequency connector"
+          ],
+          "zh": [
+            "射频连接头",
+            "射频转接头"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q337205",
+        "labels": {
+          "en": "buffers and chain coupler",
+          "ru": "винтовая сцепка",
+          "zh": "缓冲饼和链式车钩",
+          "zh-cn": "缓冲饼和链式车钩",
+          "zh-hans": "缓冲饼和链式车钩"
+        },
+        "aliases": {
+          "en": [
+            "chain coupler",
+            "UIC coupler"
+          ],
+          "ru": [
+            "винтовая стяжка",
+            "винтовая упряжь"
+          ],
+          "zh": [
+            "带缓冲器的车钩",
+            "螺杆连接器"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q431525",
+        "labels": {
+          "en": "Scharfenberg coupler",
+          "ru": "Автосцепка Шарфенберга",
+          "zh": "夏芬博格式車鈎",
+          "zh-cn": "沙芬贝格车钩",
+          "zh-hans": "夏芬伯格式连接器",
+          "zh-hant": "夏芬伯格式聯結器"
+        },
+        "aliases": {
+          "zh": [
+            "夏芬伯格式连接器",
+            "夏芬伯格车钩",
+            "沙芬贝格车钩",
+            "沙芬贝格连接器",
+            "Scharfenberg自动车钩",
+            "夏芬伯格10型车钩",
+            "沙芬貝格連結器"
+          ],
+          "zh-cn": [
+            "夏芬伯格式连接器",
+            "沙芬贝格连接器",
+            "夏芬伯格车钩",
+            "Scharfenberg自动车钩",
+            "夏芬伯格10型车钩"
+          ],
+          "zh-hans": [
+            "夏芬伯格车钩",
+            "沙芬贝格连接器",
+            "Scharfenberg自动车钩",
+            "夏芬伯格10型车钩",
+            "沙芬贝格车钩"
+          ],
+          "zh-hant": [
+            "沙芬貝格聯結器",
+            "夏芬伯格車鉤",
+            "沙芬貝格車鉤",
+            "Scharfenberg自動車鉤",
+            "夏芬伯格10型車鉤",
+            "夏芬伯格式連接器",
+            "沙芬貝格連接器"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q58090628",
+        "labels": {
+          "en": "HDMI connector",
+          "zh": "HDMI 连接器"
+        },
+        "aliases": {
+          "en": [
+            "HDMI port",
+            "HDMI Type A connector"
+          ],
+          "zh": [
+            "HDMI 端口",
+            "HDMI Type A 连接器"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q7389317",
+        "labels": {
+          "en": "SCSI connector",
+          "zh": "SCSI连接器"
+        },
+        "aliases": {},
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q906097",
+        "labels": {
+          "en": "BNC connector",
+          "zh": "BNC连接器",
+          "zh-hans": "BNC连接器",
+          "zh-hant": "BNC連接器",
+          "zh-tw": "BNC連結器"
+        },
+        "aliases": {
+          "en": [
+            "Bayonet Neill–Concelman"
+          ],
+          "zh": [
+            "BNC connector"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "05ba0932f1acaab46d78488a43ba1fe7c14429ceb289bd919bc76b83380af553",
+        "zh": "连接器",
+        "ru": "биологическое прикрепление",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "105c1da3cfd7f7f40392570552a77ce314f2e42596af8aba7aecbd44b15ad9ea",
+        "zh": "连接器",
+        "ru": "VGA",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "21ecf47cbac26acad62b9bce4fe9276560e49e3fecaae2083ad6e23d8d73a8a2",
+        "zh": "连接器",
+        "ru": "VGA",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "3c6a932ced1a1a76ec2d8540459859c564b928da0d44abd30ad0a5115d3ff96f",
+        "zh": "连接器",
+        "ru": "строительный шов",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "4240a917fe3deb6d2a56797a37b38c967c632485e7f7a45cf4e627c1ecdb2076",
+        "zh": "连接器",
+        "ru": "электрический соединитель",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "56560cd7c79ce9a27fad7d0274d37a36553ce494da16f2a263f694c3eb655c8c",
+        "zh": "连接器",
+        "ru": "прикрепление паразитов",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "5d38d7037123ad4ebd558ac92d6502f4b0d54585d6b094e8b367d582f0d648b4",
+        "zh": "连接器",
+        "ru": "прикрепление миног",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "64d7649a7e5bcdb3a836410d46efff05caacd474c62512e45b0e095d039073ce",
+        "zh": "连接器",
+        "ru": "электрический соединитель",
+        "domain": "electronics",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "6701e98b12e9eda2d5e5299b3e7f179aea299e1cefeda90b2b64457fbe08f2ca",
+        "zh": "连接器",
+        "ru": "строительный шов",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "6f7227fab44c6f0f6a3fd1bc3ddf39da7badc34571513b5408e0dd1ab117a512",
+        "zh": "连接器",
+        "ru": "прикрепление паразитов",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "728900b3f75bc42bbedf7cbc5820bf403f33d64bb01fc69f16d7a9158cfd2d90",
+        "zh": "连接器",
+        "ru": "",
+        "domain": "unclassified",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "77257c0a4109b6e65c0977479e8b19e1d24f85dcd4862a0a3631a43c52b84c4a",
+        "zh": "连接器",
+        "ru": "электрический соединитель",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "7a10603424770e419b9c200b72c3bed16312559eb7e2b25d1143386b532df8e4",
+        "zh": "连接器",
+        "ru": "",
+        "domain": "mechanical-engineering",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "taxonomy_path",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "7de25875c583d4e0a04b505d72b56b34b9363c445dece17cc2b5d4398a3d619d",
+        "zh": "连接器",
+        "ru": "прикрепление миног",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "8839594ab8bd913ddaa738cfad9f4c8d8f365e92c4be89c719fd9f9bd944e60e",
+        "zh": "连接器",
+        "ru": "электрический соединитель",
+        "domain": "electrical",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "8a4828a504dbf6a45c2d45eead20bd267a930ce31b6a5664753f78f1f674874d",
+        "zh": "连接器",
+        "ru": "VGA",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "8e9b3a55115350fac8f53f326df4ea074a538d2bbe979ea6e9246972a67ddd20",
+        "zh": "连接器",
+        "ru": "биологическое прикрепление",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "a87e220eaed6522c751396a035641d576208379ecbf9466b2c39c17b212dac9d",
+        "zh": "连接器",
+        "ru": "электрический соединитель",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "ac7001a424e8f237808ed27c63757232cb7b86ede0dda2a5bcab315e610a00f7",
+        "zh": "连接器",
+        "ru": "VGA",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "b3671b7b0ff38fbf25796c939aef7e52edf7e5e3b7cef04a2fe0c1f45aec9d5d",
+        "zh": "连接器",
+        "ru": "",
+        "domain": "technical-core",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "taxonomy_path",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      },
+      {
+        "id": "e8a8eba31bde055ddc7fe4e24aba6fd8b179b11aa484639e83559f368086df7b",
+        "zh": "连接器",
+        "ru": "VGA",
+        "domain": "electronics",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "f1b5d284acac56d0412744c74169060177df98f03c3d9ab12903e5ccee267d23",
+        "zh": "连接器",
+        "ru": "электрический соединитель",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "taxonomy_path",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      }
+    ]
+  },
+  "接头": {
+    "source_records": [
+      {
+        "source": "cedict-20260923",
+        "record": "ca26ed393704da49603f42171fb80a2b451bae4741435c4058ca513ba5cf35a7",
+        "labels": {
+          "zh-hans": "接头",
+          "zh-hant": "接頭"
+        },
+        "aliases": {},
+        "definitions": [
+          "connector; joint; coupling",
+          "(coll.) to contact; to get in touch with",
+          "to have knowledge of; to be familiar with"
+        ],
+        "declared_zh": true,
+        "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+      },
+      {
+        "source": "cedict-20260923",
+        "record": "fd45ee4f297e01a1b4c5f7c6ab096a85b57f03ad3236f930b8f9bc08ce8fea9b",
+        "labels": {
+          "zh-hans": "电缆接头",
+          "zh-hant": "電纜接頭"
+        },
+        "aliases": {},
+        "definitions": [
+          "cable gland"
+        ],
+        "declared_zh": false,
+        "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q2164724",
+        "labels": {
+          "en": "RF connector",
+          "ru": "Коаксиальный радиочастотный разъём",
+          "zh": "射频连接器"
+        },
+        "aliases": {
+          "en": [
+            "radio-frequency connector"
+          ],
+          "zh": [
+            "射频连接头",
+            "射频转接头"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q2296938",
+        "labels": {
+          "en": "optical fiber connector",
+          "ru": "Волоконноптические соединители",
+          "zh": "光纖接頭",
+          "zh-hans": "光纤接头",
+          "zh-hant": "光纖接頭"
+        },
+        "aliases": {
+          "en": [
+            "optical connector",
+            "fiber connector",
+            "fiber-optic connector",
+            "optical fibre connector",
+            "fibre-optic connector",
+            "fibre connector"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q3966760",
+        "labels": {
+          "en": "Vampire tap",
+          "zh": "插入式分接头",
+          "zh-hans": "插入式分接头",
+          "zh-hant": "插入式分接頭"
+        },
+        "aliases": {},
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "0a2d712816e9683b6d67961092d4729b3c235555276faf58f0eef66b75159418",
+        "zh": "接头",
+        "ru": "VGA",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "0fa0578d788b263d3f47c0fe211c3a2116209059cfd2d740f9189c4689b0d173",
+        "zh": "接头",
+        "ru": "Автосцепка",
+        "domain": "automotive",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "domain_scope_requires_review"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "27e4778217dd8ca1844f3e237c9b9c7b93c65b4c8feaec6ace57a63c07a3856b",
+        "zh": "接头",
+        "ru": "электрический соединитель",
+        "domain": "electrical",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "32219b0bf2a394c867a5912c10b8c07ef50b0e1faf14531b4675c890fdec274d",
+        "zh": "接头",
+        "ru": "строительный шов",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "3f0a4e2cd72780df282f18cefd35096785e9166c20f09491ee1660dda2ab32b0",
+        "zh": "接头",
+        "ru": "механическое сочленение",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "437ecace06d8cb27dce304edf4c23958b1ca179caa30e12120597c0c9ed8ee04",
+        "zh": "接头",
+        "ru": "электрический соединитель",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "7fbbf88cafa6c941bf979c16a8fd6da3c876c84cf93a881256ee09e05f7d7b19",
+        "zh": "接头",
+        "ru": "электрический соединитель",
+        "domain": "electronics",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "83a87d2dfa1b6c0790ff20f68bb3214efbc2e59954733c9207b25ba5a3d26197",
+        "zh": "接头",
+        "ru": "Автосцепка",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "8514385e209720f67fb9e7a02b3096edf48d6499de9aa763fc5ee3abb8bf790a",
+        "zh": "接头",
+        "ru": "строительный шов",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "99d8cf06a986abf8789444983950b7282165245c8c1b1dafec1786f84c1cd674",
+        "zh": "接头",
+        "ru": "электрический соединитель",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "acf02da9f9e890531014cdbaae31cc1929108b6a342c321ca8e6aecb916032e1",
+        "zh": "接头",
+        "ru": "Автосцепка",
+        "domain": "technical-core",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "b36b9527389a6a9e5bf3b52d1daeff415a1bab5ba8bb28d4956f8be31a3a416c",
+        "zh": "接头",
+        "ru": "механическое сочленение",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "c02c3a1d7dcb533dd924a72f0e8d2ab8691bf5893b21446a1ca54303df42c7b3",
+        "zh": "接头",
+        "ru": "VGA",
+        "domain": "mechanical-engineering",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "e22c1e7abcb548965d8a8578924cae046784d9075f820babf73034b0d964b79b",
+        "zh": "接头",
+        "ru": "VGA",
+        "domain": "electronics",
+        "status": "REVIEW",
+        "reasons": [
+          "pivot_requires_review",
+          "mixed_license_family",
+          "acronym_or_model_identifier_keep_candidate",
+          "unresolved_conflict"
+        ],
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "id": "e38e67de11c13df8c36b1a917b377fb95149928b01a8cd8d8931508dde6814b6",
+        "zh": "接头",
+        "ru": "",
+        "domain": "unclassified",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      }
+    ]
+  },
+  "怠速": {
+    "source_records": [
+      {
+        "source": "cedict-20260923",
+        "record": "7d1e818c4720c4298b7b17ca8b22b5aef75d9d7a4477cb769e537829b64c6164",
+        "labels": {
+          "zh-hans": "怠速",
+          "zh-hant": "怠速"
+        },
+        "aliases": {},
+        "definitions": [
+          "(automotive) idling; idle speed"
+        ],
+        "declared_zh": true,
+        "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+      },
+      {
+        "source": "wikidata-technical-20260925",
+        "record": "Q845900",
+        "labels": {
+          "en": "start-stop system",
+          "ru": "Система «старт-стоп»",
+          "zh": "怠速熄火系統",
+          "zh-hans": "怠速熄火系统",
+          "zh-hant": "怠速熄火系統"
+        },
+        "aliases": {
+          "en": [
+            "stop-start system",
+            "start stop system",
+            "stop start system"
+          ],
+          "zh": [
+            "自动启停",
+            "自動啟停"
+          ]
+        },
+        "definitions": [],
+        "declared_zh": false,
+        "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "45df719ce144d4105e2832d94f5c54fb3a3899554ac1e56d6f0d25ffcf8d071d",
+        "zh": "怠速",
+        "ru": "",
+        "domain": "automotive",
+        "status": "AUTO",
+        "reasons": [
+          "shared_concept",
+          "missing_preferred_pair"
+        ],
+        "link_type": "DIRECT_CONCEPT"
+      }
+    ]
+  }
+}

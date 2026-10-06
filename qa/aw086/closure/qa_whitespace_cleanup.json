@@ -1,0 +1,42 @@
+{
+  "scope": "Only QA/tests/helpers and historical notes; no production files",
+  "changes": [
+    {
+      "path": "tests/test_aw081_brake_and_compressor.py",
+      "before_sha256": "0d4d08f39339bccb31475e44d03ee05ff678fb4fda4876e7e47989b1b9c07a82",
+      "after_sha256": "29028bb6f28dc2cc28bfe24fdbed63f095c58af779fee1b79ab78903e9612c5e",
+      "ast_unchanged": true
+    },
+    {
+      "path": "tests/test_aw081_directives.py",
+      "before_sha256": "122271789f12adccc6ae85faf87a55a56ae4c21f51703a3548b8d44dd6ac1009",
+      "after_sha256": "4f9891e257bfea108c4741b611ee7c2d115052bd53798e3977726a578180759c",
+      "ast_unchanged": true
+    },
+    {
+      "path": "tests/test_aw081_pdf_layout.py",
+      "before_sha256": "d20469cd25d8758252543be1ffe3d9e9ad7c8254905b238dc425e4d1914ee6c7",
+      "after_sha256": "62a26dac23d55c99cadbafee1bf5be32b292d1f509c49347ad69cc296592194b",
+      "ast_unchanged": true
+    },
+    {
+      "path": "tools/aw085_capture.py",
+      "before_sha256": "cee8889afe61532bd1b8893124108ed2267d811d2bbb825d7843b24d26b62065",
+      "after_sha256": "9d6ba5f7364f29476fd419c998583c126082eab5a0abbb864e6fa84755535184",
+      "ast_unchanged": true
+    },
+    {
+      "path": "tools/aw085_knowledge.py",
+      "before_sha256": "83b39ebda3d835c626d1d7fe660a91c32780fa7c7545e83be70efd50a58d320e",
+      "after_sha256": "528da2497bf173448df9d166a7bdb2d4e09f14f1be31df57509e11a5dd1cbdc0",
+      "ast_unchanged": true
+    },
+    {
+      "path": "docs/qa/MANUAL_TEST_RUNS.md",
+      "before_sha256": "84d9c659247736b1f1a691ae8404a34c97f622301e815b0691737489b31ee8e5",
+      "after_sha256": "a5f3359a50ac63e9cd26afb55034da6e04a1c401fdabd379f65ca73e9f2f8090",
+      "ast_unchanged": false
+    }
+  ],
+  "upstream_and_forensic_bytes": "Preserved via narrow existing-style gitattributes policies"
+}

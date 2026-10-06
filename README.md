@@ -1,175 +1,43 @@
 # TreeTranslate
 
-**AW 0.6.2-alpha — Hybrid PaddleOCR Router**
+**AW0.86 — technical alpha / development release.** Consolidated best known production в конце engineering cycle AW0.8x. Это source freeze, не 1.0; Windows installer и веса моделей в этот release не входят.
 
 > Your PC. Your files. Your rules.
 
-Приложение CHOPIK Team для локального перевода текста, DOCX, текстовых PDF и сканов через Argos и M2M100 418M INT8 / CTranslate2. OCR выполняется локальным PaddleOCR в отдельном процессе. Архивы, Translation Memory и Glossary пока не реализованы.
+TreeTranslate — offline-first и privacy-first приложение CHOPIK Team для локального перевода текста, DOCX, текстовых PDF, сканов, папок и ZIP. Argos и M2M100 / CTranslate2 работают локально; PaddleOCR распознаёт изображения. Подтверждённые Knowledge/glossary и translation memory помогают сохранять терминологию. Доступны Auto/CPU/GPU; обязательного облака и runtime telemetry нет. Модели готовятся отдельно, приложение не скачивает их при переводе.
 
-### OCR-компонент (AW 0.6.2)
+Оригиналы не изменяются. ZIP обрабатывается по members без полной распаковки corpus; имена переводятся lazy, коллизии разрешаются безопасно. Failed documents сохраняются по исходным paths и bytes, остальные members продолжают обработку. Итог проверяется и публикуется без перезаписи. RAR/7z и рекурсивная распаковка вложенных архивов не поддерживаются.
 
-На подготовленной машине запустите `run_dev.bat`, откройте страницу перевода файлов и добавьте PDF или папку. Выберите язык результата, устройство и профиль, затем начните перевод. OCR включается автоматически для поддерживаемых сканов. Интернет при работе не нужен. Краткий статус и ограничения: [итоги AW 0.6.2](docs/AW0.6.2_OCR_REPORT.md#итог-простыми-словами).
+## Официальный benchmark
 
-Нужна отдельная `.venv-ocr` (PaddleX несовместим с NumPy основного переводчика). Подготовка разработчиком, с явным доступом к сети:
+Same 100 PDF на Ryzen 7 5700X / 32 GB / RTX 3080 12 GB: **79,73 → 23,81 мин**, **3,35×**, **−70,14% wall**, около **252 обработанных PDF/час**. 76 переведены / 24 исходника сохранены / 0 fatal; output equivalence PASS. Скорость включает failures и зависит от corpus/hardware. Benchmark уже измерен, при release closure не повторялся.
 
-```powershell
-.venv/Scripts/python tools/prepare_ocr_runtime.py --allow-network
-.venv/Scripts/python tools/prepare_paddleocr_models.py --allow-network
-.venv/Scripts/python tools/verify_models.py
-```
+Direct estimate для 17 211 PDF: **68,30 часа** непрерывной обработки. Это прогноз, полный корпус не прогонялся. [Performance](docs/PERFORMANCE_AW0.86.md), [benchmark history](docs/BENCHMARK_HISTORY.md), [reproducibility](docs/BENCHMARK_REPRODUCIBILITY.md).
 
-Для установки без сети: `prepare_ocr_runtime.py --wheelhouse <каталог>` и `prepare_paddleocr_models.py --local <каталог>`. Runtime никогда не запускает установщики и не скачивает модели. На этой Windows-машине проверены PaddleOCR 3.7.0, PaddleX 3.7.2 и Paddle GPU 3.3.1 (CPU также поддерживается).
+## Запуск из исходников
 
-Модели хранятся в `vendor/models/ocr`, лицензии и закреплённые SHA256 — в `vendor/model-metadata/ocr` и `vendor/licenses/ocr-runtime`. Профили OCR: `assets/config/ocr.json`. Полный аудит, результаты и ограничения: [AW0.6.2_OCR_REPORT](docs/AW0.6.2_OCR_REPORT.md).
-
-## Перевод PDF
-
-PDF использует ту же очередь и настройки, что DOCX; допускаются смешанные папки. Переводится видимый извлекаемый текст: исходные текстовые объекты заменяются, остальные объекты страницы сохраняются. Поддержаны переносы, несколько колонок, повороты на 90°, локальный шрифт Latin/кириллица/китайский. URL, email и идентификаторы с цифрами защищены от перевода. Для переполнения используется controlled reflow с continuation pages; обычные PDF annotations не создаются.
-
-Если перевод не помещается даже после умеренного уменьшения шрифта до читаемого минимума, остаток переносится на дополнительную страницу, а интерфейс показывает предупреждение. Число страниц может увеличиться. Сканы и поддерживаемые растровые области смешанных PDF распознаются локальным OCR. Для них нужны подготовленные OCR-модели и `.venv-ocr`. Зашифрованные и повреждённые файлы отклоняются. Сложные маски, Form XObject, RTL и невидимый текст сохраняются без перевода с предупреждением. Группировка определяется геометрически; перевод выравнивается по левому краю блока. Точная вёрстка произвольного издательского PDF не гарантируется.
-
-Лимиты: `assets/config/pdf_limits.json`. Runtime использует только локальные модели и `assets/fonts/TreeTranslateSans-Regular.ttf`. Получение/подготовка шрифта — отдельный developer tool `tools/prepare_pdf_font.py`; приложение его не вызывает.
-
-Проверка: `.venv\Scripts\python tools/smoke_pdf_ui.py`. Подробности и ограничения: [AW0.6.1_PRODUCTION_PDF_REPORT.md](docs/AW0.6.1_PRODUCTION_PDF_REPORT.md).
-
-## Перевод DOCX
-
-Перетащите DOCX, несколько документов или папку. Вложенные каталоги сканируются рекурсивно, галочки выбирают документы. Auto определяет основной язык по выборке из всего документа; язык результата выбирается явно. Профиль и CPU/GPU/Auto используют тот же Hybrid Router, что перевод текста.
-
-- Переводятся абзацы, заголовки, списки, таблицы, колонтитулы. Runs объединяются перед переводом. Изображения, встроенные объекты, стили, связи, поля Word и URL сохраняются.
-- Оригинал не изменяется: результат собирается во временном файле, проверяется как ZIP и python-docx, затем публикуется атомарно без перезаписи. SHA256 оригинала сверяется перед публикацией.
-- По умолчанию `manual.docx` → `manual_ru.docx`; коллизия → `manual_ru (1).docx`. Действуют настройки выходной папки и шаблона. Независимые параметры «Перевести названия папок» и «Перевести названия файлов» управляют каталогами и базовыми именами DOCX отдельно. Расширение не переводится; результат очищается от запрещённых Windows-символов и зарезервированных имён.
-- Прогресс считает реальные сегменты. Pause позволяет закончить текущий ограниченный запрос; Resume продолжает. Cancel ждёт безопасного завершения native inference. Готовые ранее файлы пакета сохраняются; временный файл текущего удаляется.
-- Одновременно выполняется одно задание. Модель удерживается загруженной до завершения задания, включая паузу. Приложение не скачивает модели и не отправляет текст.
-- После сохранения доступны путь результата, «Открыть файл» и «Открыть папку».
-- «Открывать папку после завершения» автоматически открывает каталог результата при успешном завершении. По умолчанию выключено.
-- «Восстанавливать незавершённую задачу после запуска» сохраняет исходные пути локально. При следующем запуске доступные файлы повторно сканируются и ожидают нажатия «Начать перевод». Это повторный запуск перевода, а не продолжение с последнего сегмента; готовые результаты не перезаписываются. Завершение или явная отмена очищает сохранённую задачу. По умолчанию выключено.
-
-Ограничения: распределение перевода между исходными runs приблизительное — выделение и текст внутри ссылки могут не совпасть семантически после перестановки слов. Разметка абзацев и сами связи сохраняются. Текст в рисунках, текстовых полях, content controls, сносках, комментариях и результатах полей не переводится. Разрывы, поля и URL ограничивают контекст; длинные блоки делятся до 1200 символов, далее действуют токенные ограничения движка. Лимит DOCX: 256 МиБ исходного/суммарного распакованного содержимого, 20 000 ZIP members. Цифровая подпись документа после перевода недействительна. Пустой DOCX создаёт валидную копию без загрузки модели.
-
-Проверка: `.venv\Scripts\python tools/smoke_docx_ui.py`. [Полный отчёт AW0.5](docs/AW0.5_DOCX_REPORT.md).
-
-## Запуск для разработчика
-
-Python 3.12.13, Windows x64, PySide6 6.11.1. Все команды выполняются из корня репозитория.
+Windows, Python 3.12. Установщик пока не предоставляется. Dependencies и model/data manifests находятся в repository; model binaries, большая lexicon database, environments и corpus остаются локальными. Подготовка словарных данных описана в developer instructions; reference SHA сохранены в freeze evidence.
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\python tools/install_runtime.py
-# Для GPU, если CUDA 12 cuBLAS ещё не установлена:
+# Дополнительные GPU dependencies при необходимости:
 .venv\Scripts\python -m pip install -r requirements-gpu.txt
+.venv\Scripts\python tools/verify_models.py
 .venv\Scripts\python main.py
 ```
 
-Установщик зависимостей — действие разработчика; приложение его не вызывает. Он использует проверенный `requirements-runtime-lock.txt`. Для установки без интернета: `tools/install_runtime.py --wheelhouse C:\path\to\wheels`. Подготовленный wheelhouse должен содержать все зависимости, включая официальный wheel Argos.
+До запуска подготовьте локальные модели по manifests в `vendor/models/` и developer instructions в [историческом техническом README](docs/README_AW0.8x_HISTORY.md). Argos устанавливается штатным `install_runtime.py` с предусмотренной dependency policy; обычная установка всех его upstream dependencies не является инструкцией этого проекта. Model licensing и чистая установка будут отдельно проверены в AW0.9. [Third-party notices](THIRD_PARTY_NOTICES.md).
 
-Argos 1.11.0 устанавливается отдельным шагом `--no-deps`. Его стандартные зависимости включают Stanza/PyTorch, SpaCy и MiniSBD, которые наш адаптер не использует. `requirements-runtime.txt` содержит необходимые зависимости официальных API пакетов и токенизаторов. Обычный `pip install argostranslate` для runtime применять не следует. Полный `pip check` сообщает отсутствующие неиспользуемые зависимости Argos; причины описаны в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+## Состояние и документы
 
-## Локальные модели
+- [CHANGELOG: milestones 0.81–0.86](CHANGELOG.md)
+- [AW0.86 release notes](docs/releases/AW0.86.md)
+- [Freeze receipt](docs/AW0.86_FREEZE_RECEIPT.md) и [closure report](docs/AW0.86_RELEASE_CLOSURE_REPORT.md)
+- [Known issues](docs/KNOWN_ISSUES.md): 24 preserved failures не исправлены этим release; техническая целостность не гарантирует смысловое качество каждого перевода.
+- [Rejected NMT research](docs/research/REJECTED_EXPERIMENTS.md): prototype изолирован и не активен в production.
+- [AW0.9 preliminary scope](docs/AW0.9_SCOPE.md): stabilization/release preparation; roadmap утверждается отдельно.
 
-```text
-vendor/
-├── models/
-│   ├── models_manifest.json
-│   ├── argos/
-│   │   ├── argos-en-ru/
-│   │   ├── argos-ru-en/
-│   │   ├── argos-zh-en/
-│   │   └── argos-en-zh/
-│   └── m2m100-418m-int8/
-│       ├── model/        # CT2 INT8, включая model.bin и словари
-│       └── tokenizer/    # SentencePiece, vocab.json, languages.json
-├── model-metadata/      # исходные README и metadata, отслеживаются Git
-└── licenses/            # notices библиотек
-```
+Для разработчика: `python -X utf8 -m pytest -q`. Full-suite baseline, актуальные SHA и static checks перечислены в freeze receipt. Исторические отчёты не переименованы; большие raw QA paths в них относятся к локальному архиву. Компактные manifests/summaries и нужные regression fixtures сохранены в Git. Не добавляйте corpus ZIP, translated outputs, model weights или environments в repository.
 
-Модели и окружения исключены из обычной Git history. Manifest хранит версии, происхождение, пары/языки, размеры, список файлов, SHA256 и сведения о лицензиях. При отсутствии моделей приложение запускается, а запрос показывает понятную ошибку. Полная проверка запускается вручную:
-
-```powershell
-.venv\Scripts\python tools/verify_models.py
-```
-
-### Подготовка Argos — только development/build
-
-```powershell
-# Локальные upstream packages, без сети:
-.venv\Scripts\python tools/prepare_argos_models.py C:\models\translate-en_ru-1_9.argosmodel
-# Явно разрешённая разработчиком загрузка официальных packages:
-.venv\Scripts\python tools/prepare_argos_models.py --allow-network --pairs en-ru ru-en zh-en en-zh
-```
-
-Пары определяются через официальный Argos Package API и сверяются с manifest. Глобальная пользовательская установка Argos не используется. Для сравнения ZH↔RU доступны Argos pivot через английский и прямой M2M100. Пакеты EN↔RU требуют отдельного уточнения лицензии весов перед распространением.
-
-### Подготовка M2M100 — отдельное build-окружение
-
-```powershell
-python -m venv .venv-build
-.venv-build\Scripts\python -m pip install -r requirements-build.txt
-# Из локальной исходной модели:
-.venv-build\Scripts\python tools/prepare_m2m100.py --source C:\models\m2m100_418M
-# Или из официального репозитория, только с явным разрешением сети:
-.venv-build\Scripts\python tools/prepare_m2m100.py --allow-network
-.venv-build\Scripts\python tools/verify_tokenizer.py
-```
-
-Конвертер фиксирует upstream revision, использует INT8 и сохраняет токенизатор. PyTorch 2.10.0 и Transformers 4.57.6 нужны только в build-окружении. Runtime использует SentencePiece напрямую; соответствие официальному токенизатору проверяется отдельно. Уже существующая модель не перезаписывается: для повторной подготовки укажите другой `--models-root`. Инструменты подготовки одного model root запускайте последовательно.
-
-## Маршруты и устройства
-
-- Одинаковые исходный и целевой языки: исходный текст без загрузки моделей.
-- Balanced / Automatic / Turbo: Argos direct для EN↔RU; M2M100 для ZH↔RU и остальных непроверенных пар. Этот список предварительный, без обещаний качества.
-- Fast: Argos direct → M2M100 direct → Argos pivot.
-- Economy: Argos direct → Argos pivot; Auto выбирает CPU.
-- Maximum: Argos direct для EN↔RU, M2M100 direct для остальных пар → разрешённый fallback. Название модели само по себе не определяет качество.
-- Любой разрешённый direct предшествует pivot. Ошибка запуска/перевода может перейти к следующему разрешённому маршруту.
-- **CPU** использует только CPU. **GPU** использует только CUDA; при недоступности предлагает выбрать CPU/Auto. **Auto** допускает CUDA → CPU.
-- Явный выбор устройства сильнее рекомендации профиля: Economy + GPU остаётся GPU. Число потоков ограничивается доступными CPU.
-
-Конфигурация: [app/config/engine_profiles.json](app/config/engine_profiles.json). Профили проверены на Ryzen 7 5700X / RTX 3080; это калибровка на ограниченном корпусе, а не универсальный рейтинг качества. Economy: 2 потока / beam 1; Fast: 8 / 1; Balanced и Automatic: 8 / 4; Turbo: 8 / 2 с увеличенным пакетом; Maximum: 8 / 5. На этом CPU 16 потоков оказались медленнее 8. Ручное число потоков имеет приоритет и ограничивается доступными CPU. Auto языка использует локальную модель langid; короткий или смешанный текст может определяться ошибочно. Целевой язык выбирается явно.
-
-## Lifecycle и интерфейс
-
-Цепочка: GUI → TranslationUiController → HybridTranslationService → нейтральный TextTranslationEngine → Router → backend. В GUI нет импортов конкретных ML backend.
-
-При запуске не загружаются модели, токенизаторы и CUDA. Debounce текста — 420 мс. Один worker выполняет inference, один ожидающий запрос заменяется актуальным; устаревшие результаты отбрасываются. Файловая задача не стартует до фактического завершения активного text inference даже после отмены. C++ потоки принудительно не прерываются.
-
-Backend переиспользуется между запросами. По умолчанию выгружается через 180 секунд простоя; параметр вынесен в конфигурацию. При смене устройства/параметров переводчик пересоздаётся. При выходе приложение дожидается границы текущего пакета и освобождает модели. CUDA-контекст и библиотеки могут оставлять небольшой служебный расход памяти до завершения процесса.
-
-Сохранён стиль UI AW 0.3. Словарь и примеры теперь связаны с введённым или выделенным словом. Лимиты RAM/VRAM, дополнительное «Использование GPU» и автоматическое снижение нагрузки пока только сохраняются; текст об этом виден в настройках. Работают устройство, профиль, CPU threads и idle unload.
-
-## Словарь и подсказки ввода
-
-- Локальный FreeDict/WikDict: 62 181 статья EN→RU и 42 600 RU→EN. Произношение, части речи, варианты и определения из исходного словаря. Ударения не мешают поиску.
-- Учебные примеры и русские пояснения: 20 словарных групп в `assets/language/usage.json`. Это оригинальные примеры TreeTranslate, не цитаты Yandex и не результаты дообучения. Для других слов доступны значения из FreeDict; примеры не выдумываются автоматически.
-- Выделите слово для статьи, наведите для всплывающего значения. Для отдельного слова нажатие варианта заменяет результат; внутри предложения копирует вариант, поскольку автоматического выравнивания слов ещё нет.
-- Исправление/дополнение EN/RU/DE/FR/ES использует локальные частотные словари pyspellchecker. Enter или Tab принимают предложение, ↑/↓ меняют выбор, Esc отменяет, Shift+Enter вставляет новую строку. При закрытом списке Enter работает обычно. Исходный текст никогда не исправляется без действия пользователя.
-- В Auto для незавершённого слова кириллица предполагает русский, обычная латиница — английский; для других языков выберите исходный язык явно. Китайский/японский IME не перехватывается. Полной грамматической проверки предложений пока нет.
-- Поиск и загрузка частотного словаря выполняются в отдельном worker; устаревшие ответы не открывают старые подсказки. Содержимое не записывается в логи и не отправляется в сеть.
-
-Подготовка артефакта разработчиком (сеть только с явным флагом):
-
-```powershell
-.venv\Scripts\python tools/prepare_lexicon.py --allow-network
-```
-
-Для сборки без сети положите официальные архивы FreeDict `2025.11.23` EN↔RU вместе с `.sha512` в `build/lexicon-sources` и запустите эту команду без флага. В поставку включаются `vendor/lexicon/lexicon.sqlite3`, manifest, attribution XML, notices и `assets/language/usage.json`. База 43 921 408 байт исключена из Git; её преобразование воспроизводимо. Приложение не вызывает подготовку и при отсутствии базы показывает честное сообщение.
-
-## Offline / Privacy
-
-Приложение не скачивает модели и не обращается к Hub, Argos index, облачным API или телеметрии. Используются локальные пути, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1`, `HF_HUB_DISABLE_TELEMETRY=1`, отключённый debug Argos и thread-scoped audit guard для Python socket/HTTP вызовов. Это дополнительная защита известных Python путей, не общесистемный сетевой firewall.
-
-Логи содержат backend, route, устройство, model id, длину, задержку и тип ошибки. Исходный и переведённый текст не логируются. Метрики ограничены последними 1000 попытками в памяти процесса и никуда не отправляются. Ссылки GitHub/Boosty открываются только по действию пользователя.
-
-## Тесты и реальные замеры
-
-```powershell
-.venv\Scripts\python -m pip install -r requirements-dev.txt
-.venv\Scripts\python -m pytest -q
-.venv\Scripts\python -m pytest -q -m "not integration"
-.venv\Scripts\python -m pytest -q -m integration
-.venv\Scripts\python tools/benchmark_translation.py --profiles balanced --repeats 5
-```
-
-Обычные unit tests используют fake backend и не требуют моделей. Integration tests помечены `integration`, при отсутствии артефактов пропускаются; присутствующая повреждённая модель считается ошибкой. Benchmark выполняется вручную, сохраняет JSON/CSV/Markdown, различает cold/warm latency, direct/pivot, CPU/GPU и ошибки. RAM — RSS процесса; VRAM — общая память GPU в контрольных точках, не точный пик процесса. Words/sec не вычисляется для китайского и японского.
-
-Отчёты: [словарь и калибровка](docs/AW0.4_LANGUAGE_ASSISTANCE_REPORT.md), [текущие профили Router](docs/benchmarks/aw04-tuned-profiles.md). Исторические замеры до калибровки: [Phase 1](docs/AW0.4_IMPLEMENTATION_REPORT.md), [сравнение Balanced](docs/benchmarks/aw04-balanced.md), [первые профили](docs/benchmarks/aw04-profiles.md).
+AW0.86 закрывает engineering cycle 0.8; AW0.9 готовит релиз; 1.0 будет первой полноценной публичной Windows version. Последующие 1.1+ могут улучшать качество, совместимость, производительность и UX.

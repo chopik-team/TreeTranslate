@@ -1,0 +1,108 @@
+Настройки|Settings|Einstellungen|Configuración|Paramètres|设置|設定
+Общие|General|Allgemein|General|Général|常规|一般
+Язык|Language|Sprache|Idioma|Langue|语言|言語
+Производительность|Processing|Verarbeitung|Procesamiento|Traitement|处理|処理
+Интерфейс|Interface|Oberfläche|Interfaz|Interface|界面|インターフェース
+Исходный язык|Source language|Ausgangssprache|Idioma de origen|Langue source|源语言|原文の言語
+Язык перевода|Target language|Zielsprache|Idioma de destino|Langue cible|目标语言|翻訳先の言語
+Определить автоматически|Detect automatically|Automatisch erkennen|Detectar automáticamente|Détecter automatiquement|自动检测|自動検出
+Авто|Auto|Auto|Auto|Auto|自动|自動
+Русский|Russian|Russisch|Ruso|Russe|俄语|ロシア語
+Английский|English|Englisch|Inglés|Anglais|英语|英語
+Китайский|Chinese|Chinesisch|Chino|Chinois|中文|中国語
+Немецкий|German|Deutsch|Alemán|Allemand|德语|ドイツ語
+Испанский|Spanish|Spanisch|Español|Espagnol|西班牙语|スペイン語
+Французский|French|Französisch|Francés|Français|法语|フランス語
+Японский|Japanese|Japanisch|Japonés|Japonais|日语|日本語
+Устройство|Device|Gerät|Dispositivo|Appareil|设备|デバイス
+Устройство обработки|Processing device|Verarbeitungsgerät|Dispositivo de procesamiento|Appareil de traitement|处理设备|処理デバイス
+Оборудование|Hardware|Hardware|Hardware|Matériel|硬件|ハードウェア
+Определить оборудование|Detect hardware|Hardware erkennen|Detectar hardware|Détecter le matériel|检测硬件|ハードウェアを検出
+Нажмите «Определить оборудование»|Select “Detect hardware”|„Hardware erkennen“ auswählen|Seleccione «Detectar hardware»|Sélectionnez «Détecter le matériel»|请选择“检测硬件”|「ハードウェアを検出」を選択
+Не определено|Unknown|Nicht ermittelt|No detectado|Non détecté|未检测到|不明
+Не определён|Unknown|Nicht ermittelt|No detectado|Non détecté|未检测到|不明
+Не определена|Unknown|Nicht ermittelt|No detectado|Non détecté|未检测到|不明
+Доступно|Available|Verfügbar|Disponible|Disponible|可用|利用可能
+Недоступно|Unavailable|Nicht verfügbar|No disponible|Indisponible|不可用|利用不可
+Логических потоков: {0}|Logical threads: {0}|Logische Threads: {0}|Hilos lógicos: {0}|Threads logiques : {0}|逻辑线程：{0}|論理スレッド：{0}
+Готово|Done|Fertig|Listo|Terminé|完成|完了
+Закрыть|Close|Schließen|Cerrar|Fermer|关闭|閉じる
+Отменить|Cancel|Abbrechen|Cancelar|Annuler|取消|キャンセル
+Приостановить|Pause|Pausieren|Pausar|Mettre en pause|暂停|一時停止
+Продолжить|Resume|Fortsetzen|Reanudar|Reprendre|继续|再開
+Начать перевод|Start translation|Übersetzung starten|Iniciar traducción|Lancer la traduction|开始翻译|翻訳を開始
+Запустить снова|Start again|Erneut starten|Volver a iniciar|Relancer|重新开始|再実行
+Перевод файлов|File translation|Dateiübersetzung|Traducción de archivos|Traduction de fichiers|文件翻译|ファイル翻訳
+Перевод текста|Text translation|Textübersetzung|Traducción de texto|Traduction de texte|文本翻译|テキスト翻訳
+Исходный текст|Source text|Ausgangstext|Texto de origen|Texte source|原文|原文
+Перевод|Translation|Übersetzung|Traducción|Traduction|译文|翻訳
+Введите или вставьте текст для перевода…|Type or paste text to translate…|Text zum Übersetzen eingeben oder einfügen…|Escriba o pegue el texto que desea traducir…|Saisissez ou collez le texte à traduire…|输入或粘贴要翻译的文本…|翻訳するテキストを入力または貼り付け…
+Перевод появится автоматически|Translation appears automatically|Die Übersetzung erscheint automatisch|La traducción aparecerá automáticamente|La traduction apparaîtra automatiquement|译文将自动显示|翻訳結果が自動的に表示されます
+Очистить текст|Clear text|Text löschen|Borrar texto|Effacer le texte|清空文本|テキストを消去
+{0} символов|{0} characters|{0} Zeichen|{0} caracteres|{0} caractères|{0} 个字符|{0} 文字
+0 символов|0 characters|0 Zeichen|0 caracteres|0 caractère|0 个字符|0 文字
+Поменять языки местами|Swap languages|Sprachen tauschen|Intercambiar idiomas|Inverser les langues|交换语言|言語を入れ替え
+Папка сохранения|Output folder|Ausgabeordner|Carpeta de destino|Dossier de destination|输出文件夹|出力フォルダー
+Рядом с оригиналом|Next to the original|Neben dem Original|Junto al original|À côté de l’original|与原文件同目录|原本と同じ場所
+Изменить…|Change…|Ändern…|Cambiar…|Modifier…|更改…|変更…
+Добавить язык к имени|Add language to name|Sprache an Namen anhängen|Añadir idioma al nombre|Ajouter la langue au nom|在名称后添加语言|名前に言語を追加
+Оставить как в оригинале|Keep original name|Originalnamen beibehalten|Conservar el nombre original|Conserver le nom d’origine|保留原名称|元の名前を保持
+Название выходной папки|Output folder name|Name des Ausgabeordners|Nombre de la carpeta de destino|Nom du dossier de destination|输出文件夹名称|出力フォルダー名
+Изменения сохраняются автоматически|Changes are saved automatically|Änderungen werden automatisch gespeichert|Los cambios se guardan automáticamente|Les modifications sont enregistrées automatiquement|更改自动保存|変更は自動的に保存されます
+Открывать папку после завершения|Open output folder when finished|Ausgabeordner nach Abschluss öffnen|Abrir la carpeta al finalizar|Ouvrir le dossier une fois terminé|完成后打开文件夹|完了後にフォルダーを開く
+Запоминать последний выбранный язык|Remember the last selected language|Zuletzt gewählte Sprache merken|Recordar el último idioma seleccionado|Mémoriser la dernière langue sélectionnée|记住上次选择的语言|前回選択した言語を記憶
+Восстанавливать незавершённую задачу после запуска|Restore unfinished task on launch|Unfertige Aufgabe beim Start wiederherstellen|Restaurar la tarea pendiente al iniciar|Restaurer la tâche inachevée au démarrage|启动时恢复未完成的任务|起動時に未完了のタスクを復元
+Показывать расчёт оставшегося времени|Show estimated time remaining|Geschätzte Restzeit anzeigen|Mostrar el tiempo restante estimado|Afficher le temps restant estimé|显示预计剩余时间|推定残り時間を表示
+Показывать подробный прогресс|Show detailed progress|Detaillierten Fortschritt anzeigen|Mostrar el progreso detallado|Afficher la progression détaillée|显示详细进度|詳細な進捗を表示
+Язык интерфейса|Interface language|Sprache der Oberfläche|Idioma de la interfaz|Langue de l’interface|界面语言|表示言語
+О проекте|About|Über|Acerca de|À propos|关于|このアプリについて
+Настройки TreeTranslate|TreeTranslate settings|TreeTranslate-Einstellungen|Configuración de TreeTranslate|Paramètres de TreeTranslate|TreeTranslate 设置|TreeTranslate 設定
+О проекте TreeTranslate|About TreeTranslate|Über TreeTranslate|Acerca de TreeTranslate|À propos de TreeTranslate|关于 TreeTranslate|TreeTranslate について
+Поддержка языков|Language support|Sprachunterstützung|Idiomas compatibles|Langues prises en charge|语言支持|対応言語
+Движки|Engines|Übersetzungs-Engines|Motores|Moteurs|引擎|エンジン
+Движки перевода|Translation engines|Übersetzungs-Engines|Motores de traducción|Moteurs de traduction|翻译引擎|翻訳エンジン
+Лицензии и источники|Licenses and sources|Lizenzen und Quellen|Licencias y fuentes|Licences et sources|许可证与来源|ライセンスと出典
+Подробнее|Details|Details|Detalles|Détails|详细信息|詳細
+История изменений|Changelog|Änderungsverlauf|Historial de cambios|Historique des modifications|更新日志|変更履歴
+Выход|Exit|Beenden|Salir|Quitter|退出|終了
+Проект|Project|Projekt|Proyecto|Projet|项目|プロジェクト
+Концепт|Concept|Konzept|Concepto|Concept|构思|コンセプト
+Дизайн|Design|Design|Diseño|Design|设计|デザイン
+Код|Code|Code|Código|Code|代码|コード
+Ожидание|Waiting|Warten|En espera|En attente|等待|待機中
+Готово к запуску|Ready|Bereit|Listo|Prêt|就绪|開始可能
+Выполняется|Running|Wird ausgeführt|En curso|En cours|处理中|実行中
+Приостановлено|Paused|Pausiert|En pausa|En pause|已暂停|一時停止中
+Отмена…|Cancelling…|Wird abgebrochen…|Cancelando…|Annulation…|正在取消…|キャンセル中…
+Отменено|Cancelled|Abgebrochen|Cancelado|Annulé|已取消|キャンセル済み
+Ошибка|Error|Fehler|Error|Erreur|错误|エラー
+Перевод завершён|Translation complete|Übersetzung abgeschlossen|Traducción completada|Traduction terminée|翻译完成|翻訳完了
+Текущий файл|Current file|Aktuelle Datei|Archivo actual|Fichier actuel|当前文件|現在のファイル
+Обработано сегментов|Segments processed|Verarbeitete Segmente|Segmentos procesados|Segments traités|已处理片段|処理済みセグメント
+Прошло времени|Elapsed time|Verstrichene Zeit|Tiempo transcurrido|Temps écoulé|已用时间|経過時間
+Осталось примерно|Estimated remaining|Geschätzte Restzeit|Tiempo restante estimado|Temps restant estimé|预计剩余时间|推定残り時間
+Открыть папку|Open folder|Ordner öffnen|Abrir carpeta|Ouvrir le dossier|打开文件夹|フォルダーを開く
+Открыть файл|Open file|Datei öffnen|Abrir archivo|Ouvrir le fichier|打开文件|ファイルを開く
+Дополнительные параметры|Additional options|Weitere Optionen|Opciones adicionales|Options supplémentaires|其他选项|追加オプション
+Перевести названия папок|Translate folder names|Ordnernamen übersetzen|Traducir nombres de carpetas|Traduire les noms des dossiers|翻译文件夹名称|フォルダー名を翻訳
+Перевести названия файлов|Translate file names|Dateinamen übersetzen|Traducir nombres de archivos|Traduire les noms des fichiers|翻译文件名称|ファイル名を翻訳
+Словарь|Dictionary|Wörterbuch|Diccionario|Dictionnaire|词典|辞書
+Примеры использования|Usage examples|Anwendungsbeispiele|Ejemplos de uso|Exemples d’utilisation|用法示例|使用例
+Выбран словарный вариант|Dictionary translation selected|Wörterbuchübersetzung ausgewählt|Traducción del diccionario seleccionada|Traduction du dictionnaire sélectionnée|已选择词典译文|辞書の訳語を選択しました
+Память переводов|Translation memory|Übersetzungsspeicher|Memoria de traducción|Mémoire de traduction|翻译记忆库|翻訳メモリ
+Глоссарий|Glossary|Glossar|Glosario|Glossaire|术语表|用語集
+Auto выбирает подходящее устройство. CPU и GPU задают устройство явно.|Auto selects a suitable device. Choose CPU or GPU to use it explicitly.|Auto wählt ein geeignetes Gerät. Mit CPU oder GPU legen Sie das Gerät fest.|Auto elige un dispositivo adecuado. Seleccione CPU o GPU para fijarlo.|Auto choisit un appareil adapté. Sélectionnez CPU ou GPU pour l’imposer.|Auto 自动选择合适的设备。选择 CPU 或 GPU 可指定设备。|Auto は適切なデバイスを選びます。CPU または GPU を選ぶと使用するデバイスを指定できます。
+Предпросмотр найденных файлов|Selected files|Ausgewählte Dateien|Archivos seleccionados|Fichiers sélectionnés|所选文件|選択したファイル
+Выбрать файлы|Choose files|Dateien auswählen|Elegir archivos|Choisir des fichiers|选择文件|ファイルを選択
+Выбрать папку|Choose folder|Ordner auswählen|Elegir carpeta|Choisir un dossier|选择文件夹|フォルダーを選択
+  Выбрать папку / файлы|  Choose folder / files|  Ordner / Dateien auswählen|  Elegir carpeta / archivos|  Choisir un dossier / des fichiers|  选择文件夹 / 文件|  フォルダー / ファイルを選択
+Документы .DOCX и .PDF|.DOCX and .PDF documents|.DOCX- und .PDF-Dokumente|Documentos .DOCX y .PDF|Documents .DOCX et .PDF|.DOCX 和 .PDF 文档|.DOCX と .PDF 文書
+Папки проверяются вместе с вложенными каталогами|Includes subfolders|Unterordner werden einbezogen|Se incluyen las subcarpetas|Les sous-dossiers sont inclus|包括子文件夹|サブフォルダーも対象です
+Основное поведение приложения и сохранение результатов.|Application behavior and output settings.|Anwendungsverhalten und Ausgabeeinstellungen.|Comportamiento de la aplicación y resultados.|Comportement de l’application et enregistrement des résultats.|应用行为和结果保存设置。|アプリの動作と結果の保存設定。
+Внешний вид и отображение прогресса.|Progress display options.|Anzeige des Fortschritts.|Opciones de visualización del progreso.|Options d’affichage de la progression.|进度显示选项。|進捗の表示設定。
+Выберите язык приложения. Изменения применяются сразу.|Choose the interface language. Changes apply immediately.|Wählen Sie die Sprache. Änderungen werden sofort übernommen.|Elija el idioma de la interfaz. Los cambios se aplican de inmediato.|Choisissez la langue de l’interface. Les modifications s’appliquent immédiatement.|选择界面语言。更改立即生效。|表示言語を選択してください。変更はすぐに反映されます。
+Звёзды показывают глубину дополнительных языковых ресурсов.|Stars indicate the depth of additional language resources.|Sterne zeigen den Umfang zusätzlicher Sprachressourcen.|Las estrellas indican la amplitud de los recursos lingüísticos adicionales.|Les étoiles indiquent la richesse des ressources linguistiques supplémentaires.|星级表示附加语言资源的丰富程度。|星は追加の言語リソースの充実度を示します。
+Превышено время распознавания страницы. Попробуйте более короткий документ.|Page recognition timed out. Try a shorter document.|Zeitüberschreitung bei der Seitenerkennung. Versuchen Sie ein kürzeres Dokument.|Se agotó el tiempo de reconocimiento. Pruebe con un documento más corto.|Le délai de reconnaissance est dépassé. Essayez un document plus court.|页面识别超时。请尝试较短的文档。|ページ認識がタイムアウトしました。短い文書でお試しください。
+GPU недоступна для локального перевода. Выберите CPU или Auto.|GPU is unavailable for local translation. Select CPU or Auto.|GPU ist für die lokale Übersetzung nicht verfügbar. Wählen Sie CPU oder Auto.|La GPU no está disponible para la traducción local. Seleccione CPU o Auto.|Le GPU est indisponible pour la traduction locale. Choisissez CPU ou Auto.|GPU 无法用于本地翻译。请选择 CPU 或 Auto。|ローカル翻訳に GPU を使用できません。CPU または Auto を選択してください。
+GPU недоступна для OCR. Выберите CPU или Auto.|GPU is unavailable for OCR. Select CPU or Auto.|GPU ist für OCR nicht verfügbar. Wählen Sie CPU oder Auto.|La GPU no está disponible para OCR. Seleccione CPU o Auto.|Le GPU est indisponible pour l’OCR. Choisissez CPU ou Auto.|GPU 无法用于 OCR。请选择 CPU 或 Auto。|OCR に GPU を使用できません。CPU または Auto を選択してください。
+Локальный Paddle OCR runtime недоступен. Проверьте установку OCR-компонента.|The local Paddle OCR runtime is unavailable. Check the OCR component installation.|Die lokale Paddle-OCR-Laufzeit ist nicht verfügbar. Prüfen Sie die Installation der OCR-Komponente.|El entorno local de Paddle OCR no está disponible. Compruebe la instalación del componente OCR.|L’environnement local Paddle OCR est indisponible. Vérifiez l’installation du composant OCR.|本地 Paddle OCR 运行环境不可用。请检查 OCR 组件的安装。|ローカルの Paddle OCR 実行環境を利用できません。OCR コンポーネントのインストールを確認してください。

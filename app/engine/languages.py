@@ -6,6 +6,13 @@ LANGUAGE_CODES = {
     "Испанский": "es", "Французский": "fr", "Китайский": "zh", "Японский": "ja",
 }
 
+AUTOMATIC_LANGUAGE = "Определить автоматически"
+RELEASE_LANGUAGE_LABELS = (
+    "Русский", "Китайский", "Английский", "Английский (США)",
+    "Немецкий", "Японский", "Испанский", "Французский",
+)
+RELEASE_LANGUAGE_CODES = frozenset(LANGUAGE_CODES[label] for label in RELEASE_LANGUAGE_LABELS)
+
 
 def language_code(value: str) -> str:
     return LANGUAGE_CODES.get(value, value.lower())

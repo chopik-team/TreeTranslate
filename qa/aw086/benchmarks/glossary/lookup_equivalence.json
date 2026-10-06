@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "queries": 1598,
+  "modes_per_query": 3,
+  "ordered_results_constraints_selected_exact": true,
+  "actual_fixed20_queries": 9473,
+  "actual_ordered_candidates_constraints_exact": true,
+  "errors": [],
+  "raw_candidate_queries": 9473,
+  "raw_candidate_calls": 2935,
+  "unique_raw_candidate_requests": 2299,
+  "raw_preselection_ordered_candidates_exact": true,
+  "raw_errors": [],
+  "current_final_matches_exact": true
+}

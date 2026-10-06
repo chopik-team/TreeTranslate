@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "run_id": "25825c3f75a7",
+  "status": "COMPLETED_WITH_FAILURES",
+  "started_at_unix": 1791144282.3764408,
+  "metadata": {
+    "device": "auto",
+    "source_language": "auto",
+    "target_language": "ru",
+    "domain": "auto",
+    "scope": "SPEED_CALIBRATION_100_ONLY",
+    "sample_manifest": "C:\\TreeTranslate\\qa\\aw081\\speed_calibration_100\\sample_manifest.json",
+    "input_corpus": "C:\\Users\\PC\\Downloads\\2022_USER_REPAIR_MAINTENANCE_DISASSEMBLE_(CN7C)_CHINA_koreacustom.ru.zip",
+    "scan_seconds": 0.04439080000156537,
+    "selected_files": 100,
+    "training": false
+  },
+  "local_only": true,
+  "telemetry": false,
+  "source_snippets": false,
+  "frontier_policy": "Only bounded technical nominal candidates; unverified local proposals, never automatically published.",
+  "timing_policy": "Inclusive stage times. Do not sum nested stages.",
+  "flush_policy": "Per document and at least every second; torn final JSONL record may be ignored after a hard crash.",
+  "recovery_policy": "Document failures preserve original members and continue; archive/global failures are fatal and atomic. No silent retry/resume.",
+  "finished_at_unix": 1791149065.9403605,
+  "logging_failed": false
+}

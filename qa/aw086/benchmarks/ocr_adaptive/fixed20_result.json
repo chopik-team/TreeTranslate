@@ -1,0 +1,71 @@
+{
+  "verdict": "OCR PERFORMANCE PASS",
+  "baseline": {
+    "wall_seconds": 1453.5861094,
+    "model_loads": 58,
+    "model_load_seconds": 657.4620128,
+    "inference_seconds": 148.8461031
+  },
+  "after": {
+    "wall_seconds": 726.2602489000055,
+    "model_loads": 2,
+    "model_load_seconds": 24.253044100005354,
+    "model_reuses": 56,
+    "inference_seconds": 54.20055860000866,
+    "worker_starts": 1,
+    "ocr_backend_calls": 58,
+    "ocr_pages": 27,
+    "ocr_regions": 29,
+    "gate_pages": 39,
+    "gate_statuses": {
+      "MIXED_NEEDS_REGION_OCR": 8,
+      "NATIVE_SUFFICIENT": 12,
+      "IMAGE_ONLY_NEEDS_OCR": 19
+    },
+    "new_skips": 0,
+    "gate_seconds": 0.008776900009252131,
+    "cache_summaries": [
+      {
+        "event": "model_cache_summary",
+        "pid": 26984,
+        "loads": 2,
+        "reuses": 56,
+        "evictions": 0,
+        "max_models": 2,
+        "resident_ram_bytes": 1538846720,
+        "resident_vram_bytes": 1730939392
+      }
+    ],
+    "result_cache_hits": 0,
+    "peak_tree_rss_bytes": 4170092544,
+    "peak_private_commit_bytes": 10133876736,
+    "peak_device_wide_vram_mib": 5962.0,
+    "peak_paddle_allocated_bytes": 2262889984,
+    "peak_paddle_reserved_bytes": 2707401728,
+    "translated": 16,
+    "failed": 4,
+    "fatal": 0,
+    "ocr_stage_seconds": {
+      "ocr_render": 0.5572506000171416,
+      "ocr_complexity": 0.31285260000731796,
+      "ocr_recognize": 88.15729270001611,
+      "ocr_postprocess": 15.776484099995287,
+      "ocr_shutdown": 0.00086629996803822
+    },
+    "regions_avoided": 7,
+    "pages_skipped_by_existing_gate": 12,
+    "lifecycle_seconds": {
+      "paddle_runtime_init_seconds": 4.238662100004149,
+      "worker_spawn_seconds": 0.006300400003965478,
+      "shutdown_seconds": 0.9005061999996542,
+      "first_predict_seconds": 4.106733300002816,
+      "reused_predict_seconds": 50.02508729998226
+    }
+  },
+  "wall_reduction_percent": 50.036654574266294,
+  "throughput_increase_percent": 100.14672586054418,
+  "equivalence": "PASS",
+  "run_id": "2681af77e18c",
+  "main_measured_runs": 1,
+  "warmup_excluded": true
+}

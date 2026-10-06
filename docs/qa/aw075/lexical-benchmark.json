@@ -1,0 +1,25 @@
+{
+  "database_bytes": 316022784,
+  "articles": {
+    "en": 156890,
+    "ru": 45561
+  },
+  "forms": {
+    "en": 161545,
+    "ru": 486262
+  },
+  "examples": {
+    "en": 68008,
+    "ru": 53569
+  },
+  "senses": {
+    "en": 206978,
+    "ru": 46982
+  },
+  "cold_lookup_ms_median": 1.3473500002874061,
+  "cold_lookup_ms_max": 2.052800002275035,
+  "warm_lookup_ms_median": 1.2057499989168718,
+  "warm_lookup_ms_max": 1.6028000100050122,
+  "rss_delta_bytes": 3371008,
+  "peak_rss_bytes": 26611712
+}

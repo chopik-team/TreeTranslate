@@ -1,0 +1,123 @@
+{
+  "candidate_files": 1642,
+  "candidate_bytes": 77145697,
+  "large_files": [
+    {
+      "path": "assets/fonts/TreeTranslateSans-Regular.ttf",
+      "size": 10596192,
+      "tracked": true
+    }
+  ],
+  "tracked_useful_large_policy": "Existing 10.6 MB PDF font retained; no history rewrite or deletion",
+  "local_large_policy": "Raw QA trees kept locally and ignored; curated evidence and referenced regression fixtures retained",
+  "excluded_categories": [
+    "corpus/output archives",
+    "model binaries",
+    "environments",
+    "raw duplicate logs",
+    "temporary/cache trees"
+  ],
+  "exact_duplicate_render_groups": [
+    {
+      "sha256": "67bdea2af046b48053db9c9125c8cfd6be11f1136fd6c2e0d7220f26853ae605",
+      "paths": [
+        "docs/qa/aw072/regression/aw04-completion.png",
+        "docs/qa/aw073/regression/aw04-completion.png",
+        "docs/qa/aw074/regression/aw04-completion.png"
+      ],
+      "tracked": [],
+      "retained_canonical": "docs/qa/aw072/regression/aw04-completion.png",
+      "local_only_duplicates": [
+        "docs/qa/aw073/regression/aw04-completion.png",
+        "docs/qa/aw074/regression/aw04-completion.png"
+      ]
+    },
+    {
+      "sha256": "b9cb0ca03975a5ac77df77eb6e2941703ddd22be24c2e4c7b4ed57c472ea70a2",
+      "paths": [
+        "docs/qa/aw077/regression/aw04-completion.png",
+        "docs/qa/aw08/regression/aw04-completion.png"
+      ],
+      "tracked": [],
+      "retained_canonical": "docs/qa/aw077/regression/aw04-completion.png",
+      "local_only_duplicates": [
+        "docs/qa/aw08/regression/aw04-completion.png"
+      ]
+    },
+    {
+      "sha256": "62c0acf0dee820d851d22b4a45b5d6e00224c96e5b71e8c3dfc4e023705578e5",
+      "paths": [
+        "docs/qa/aw082/debug3/aw04-completion.png",
+        "docs/qa/aw082/regression/aw04-completion.png",
+        "docs/qa/aw082/regression2/aw04-completion.png",
+        "docs/qa/font-recovery/aw04-completion.png",
+        "docs/qa/aw04-completion.png"
+      ],
+      "tracked": [
+        "docs/qa/aw04-completion.png"
+      ],
+      "retained_canonical": "docs/qa/aw04-completion.png",
+      "local_only_duplicates": [
+        "docs/qa/aw082/debug3/aw04-completion.png",
+        "docs/qa/aw082/regression/aw04-completion.png",
+        "docs/qa/aw082/regression2/aw04-completion.png",
+        "docs/qa/font-recovery/aw04-completion.png"
+      ]
+    },
+    {
+      "sha256": "3c46cd4bcf46b516f3208a39f22295a3e79e73df93b7ab18a0574e647da96936",
+      "paths": [
+        "docs/qa/aw082/debug3/aw04-dictionary.png",
+        "docs/qa/aw082/regression/aw04-dictionary.png",
+        "docs/qa/aw082/regression2/aw04-dictionary.png",
+        "docs/qa/font-recovery/aw04-dictionary.png",
+        "docs/qa/aw04-dictionary.png"
+      ],
+      "tracked": [
+        "docs/qa/aw04-dictionary.png"
+      ],
+      "retained_canonical": "docs/qa/aw04-dictionary.png",
+      "local_only_duplicates": [
+        "docs/qa/aw082/debug3/aw04-dictionary.png",
+        "docs/qa/aw082/regression/aw04-dictionary.png",
+        "docs/qa/aw082/regression2/aw04-dictionary.png",
+        "docs/qa/font-recovery/aw04-dictionary.png"
+      ]
+    },
+    {
+      "sha256": "0b10a2b0a4b2fdba30ef0c47f0b848537b231b8919037212c7ee65195a9a3f20",
+      "paths": [
+        "docs/qa/aw082/debug3/aw04-game.png",
+        "docs/qa/aw082/regression/aw04-game.png",
+        "docs/qa/aw082/regression2/aw04-game.png",
+        "docs/qa/font-recovery/aw04-game.png"
+      ],
+      "tracked": [],
+      "retained_canonical": "docs/qa/aw082/debug3/aw04-game.png",
+      "local_only_duplicates": [
+        "docs/qa/aw082/regression/aw04-game.png",
+        "docs/qa/aw082/regression2/aw04-game.png",
+        "docs/qa/font-recovery/aw04-game.png"
+      ]
+    },
+    {
+      "sha256": "246cdefb036a32f15e0180d8b4b2ab7d8b8f7abe938c4dd4da7c844cbd11e67a",
+      "paths": [
+        "docs/qa/aw082/regression/aw04-real-text.png",
+        "docs/qa/aw082/regression2/aw04-real-text.png",
+        "docs/qa/font-recovery/aw04-real-text.png",
+        "docs/qa/aw04-real-text.png"
+      ],
+      "tracked": [
+        "docs/qa/aw04-real-text.png"
+      ],
+      "retained_canonical": "docs/qa/aw04-real-text.png",
+      "local_only_duplicates": [
+        "docs/qa/aw082/regression/aw04-real-text.png",
+        "docs/qa/aw082/regression2/aw04-real-text.png",
+        "docs/qa/font-recovery/aw04-real-text.png"
+      ]
+    }
+  ],
+  "duplicate_render_copies_excluded": 17
+}

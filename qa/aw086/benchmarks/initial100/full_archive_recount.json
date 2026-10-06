@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "date_moscow": "2026-10-05",
+  "rar": "C:\\Users\\PC\\Downloads\\2022_USER_REPAIR_MAINTENANCE_DISASSEMBLE_(CN7C)_CHINA_koreacustom.ru.rar",
+  "zip": "C:\\Users\\PC\\Downloads\\2022_USER_REPAIR_MAINTENANCE_DISASSEMBLE_(CN7C)_CHINA_koreacustom.ru.zip",
+  "inventory": {
+    "pdf_files": 17211,
+    "total_files": 17214,
+    "directories": 5622,
+    "total_members": 22836,
+    "other_files": {
+      ".json": 3
+    },
+    "uncompressed_pdf_bytes": 1913810902,
+    "rar_zip_pdf_paths_sizes_crc_match": true,
+    "count_basis": "archive metadata inventory; no translation or full RAR extraction"
+  },
+  "calibration_run_id": "25825c3f75a7",
+  "calibration_documents": 100,
+  "calibration_wall_seconds": 4783.641141,
+  "translated": 76,
+  "failed_source_preserved": 24,
+  "fatal": 0,
+  "processed_docs_hour": 75.256481284619,
+  "estimates": {
+    "optimistic": {
+      "seconds": 677621.9660586892,
+      "hours": 188.22832390519144,
+      "continuous_days": 7.842846829382976
+    },
+    "typical": {
+      "seconds": 826235.3939293923,
+      "hours": 229.50983164705343,
+      "continuous_days": 9.56290965196056
+    },
+    "conservative": {
+      "seconds": 1094160.3559256606,
+      "hours": 303.9334322015724,
+      "continuous_days": 12.66389300839885
+    }
+  },
+  "typical_stage_breakdown": [
+    {
+      "category": "OCR",
+      "seconds": 535849.9239925365,
+      "hours": 148.8472011090379,
+      "wall_percent": 64.85438991473765
+    },
+    {
+      "category": "glossary",
+      "seconds": 153839.25754277795,
+      "hours": 42.7331270952161,
+      "wall_percent": 18.61930131208161
+    },
+    {
+      "category": "model",
+      "seconds": 85831.11808787519,
+      "hours": 23.841977246632,
+      "wall_percent": 10.388216084484284
+    },
+    {
+      "category": "writer",
+      "seconds": 30393.38715236931,
+      "hours": 8.442607542324808,
+      "wall_percent": 3.678538510414703
+    },
+    {
+      "category": "other/orchestration",
+      "seconds": 9474.370689433365,
+      "hours": 2.631769635953712,
+      "wall_percent": 1.1466914585170895
+    },
+    {
+      "category": "extraction",
+      "seconds": 4907.9483254238685,
+      "hours": 1.3633189792844078,
+      "wall_percent": 0.594013323743341
+    },
+    {
+      "category": "TM",
+      "seconds": 2460.519815388804,
+      "hours": 0.68347772649689,
+      "wall_percent": 0.2977988880005634
+    },
+    {
+      "category": "templates",
+      "seconds": 1259.2862893004274,
+      "hours": 0.3498017470278965,
+      "wall_percent": 0.15241253262118698
+    },
+    {
+      "category": "knowledge snapshot",
+      "seconds": 909.8980900342967,
+      "hours": 0.2527494694539713,
+      "wall_percent": 0.1101257700553136
+    },
+    {
+      "category": "guards",
+      "seconds": 581.883042195114,
+      "hours": 0.16163417838753166,
+      "wall_percent": 0.07042581889742189
+    },
+    {
+      "category": "validation",
+      "seconds": 311.0858489203642,
+      "hours": 0.08641273581121227,
+      "wall_percent": 0.03765099524978094
+    },
+    {
+      "category": "path other",
+      "seconds": 297.1701775824641,
+      "hours": 0.08254727155068446,
+      "wall_percent": 0.03596676924831176
+    },
+    {
+      "category": "profiler/classification",
+      "seconds": 74.0828869279371,
+      "hours": 0.02057857970220475,
+      "wall_percent": 0.008966317283457847
+    },
+    {
+      "category": "archive append",
+      "seconds": 42.30264712643107,
+      "hours": 0.011750735312897519,
+      "wall_percent": 0.005119926771140737
+    },
+    {
+      "category": "full inventory/security scan",
+      "seconds": 3.1593415000024834,
+      "hours": 0.0008775948611118009,
+      "wall_percent": 0.00038237789414677056
+    }
+  ],
+  "method": "Disjoint actual timing intervals weighted per source-document family N/n; fixed intervals counted once; full ZIP scan added once. Nested stages never added twice.",
+  "scope": "ZIP processing on current machine and settings; not RAR conversion, quality grade, or successful translation guarantee",
+  "full_run_started": false,
+  "production_changed": false
+}

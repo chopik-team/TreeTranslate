@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "version": "0.81",
+  "source_language": "zh",
+  "target_language": "ru",
+  "device": "cuda",
+  "hardware": {
+    "logical_cpu": 16,
+    "physical_cpu": 8,
+    "ram_bytes": 34266484736,
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 3080",
+      "total_mib": 12288.0,
+      "used_mib": 1435.0,
+      "utilization": 34.0,
+      "temperature_c": 51.0,
+      "clock_mhz": 705.0,
+      "power_w": 51.04
+    }
+  },
+  "runs": [
+    "736fc7a72805"
+  ],
+  "classes": {
+    "image_only": {
+      "samples": 5,
+      "segment_seconds": 0.040077977830194116,
+      "write_page_seconds": 0.6088399400001435,
+      "chars_per_segment": 5.280039721946375,
+      "segments_per_page": 126.0,
+      "ocr_seconds": 3.4405222200000933,
+      "document_page_seconds": 9.441707299999507
+    },
+    "mixed": {
+      "samples": 15,
+      "segment_seconds": 0.24666766086952324,
+      "write_page_seconds": 1.5777716333332137,
+      "chars_per_segment": 13.03125,
+      "segments_per_page": 14.0,
+      "ocr_seconds": 1.1774795999999697,
+      "document_page_seconds": 12.675295600000027
+    },
+    "native": {
+      "samples": 56,
+      "segment_seconds": 0.28483250290996,
+      "write_page_seconds": 0.6819823999999244,
+      "chars_per_segment": 15.5,
+      "segments_per_page": 10.0,
+      "ocr_seconds": 4.7682480000003125,
+      "document_page_seconds": 10.187913750000007
+    }
+  },
+  "segment_seconds": 0.272165939999968,
+  "write_page_seconds": 0.702802199999951,
+  "chars_per_segment": 15.125,
+  "segments_per_page": 10.666666666666668,
+  "ocr_seconds": 1.1774795999999697,
+  "docs_per_hour": 251.99513190764281,
+  "pages_per_hour": 395.6323570949992,
+  "archive_seconds_per_size_unit": 9.252370761616568,
+  "size_unit_bytes": 32768,
+  "cold_start_seconds": 2.014843599999949,
+  "references": [
+    {
+      "run_id": "736fc7a72805",
+      "kind": "accepted representative 100 PDF",
+      "documents": 100,
+      "wall_seconds": 1428.5990259999999,
+      "docs_per_hour": 251.99513190764281,
+      "used_for_rates": true
+    },
+    {
+      "run_id": "2bf4fd0f345e",
+      "kind": "current NMT-heavy diagnostic fixed5 baseline",
+      "documents": 5,
+      "wall_seconds": 350.8883503,
+      "docs_per_hour": 51.298368796258096,
+      "used_for_rates": false
+    },
+    {
+      "run_id": "25825c3f75a7",
+      "kind": "historical pre-performance 100 PDF",
+      "documents": 100,
+      "wall_seconds": 4783.641141,
+      "docs_per_hour": 75.256481284619,
+      "used_for_rates": false
+    }
+  ],
+  "note": "Approximate priors for this measured hardware. Successful documents define complexity rates; failed documents are not treated as cheap successful translations. Archive size prior reproduces accepted 100 wall, without opening all members. Rejected batched replay is excluded."
+}

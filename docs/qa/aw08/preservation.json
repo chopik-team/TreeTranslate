@@ -1,0 +1,29 @@
+{
+  "baseline_files": 1179,
+  "missing": [],
+  "changed": [
+    "app/gui/widgets/language_support_tab.py",
+    "assets/language-support.json",
+    "docs/LANGUAGE_SUPPORT.md",
+    "tests/test_language_support_ux.py",
+    "CHANGELOG.md",
+    "README.md",
+    "app/config/constants.py",
+    "app/controllers/translation_ui_controller.py",
+    "app/engine/backends/argos_backend.py",
+    "app/engine/backends/text_segments.py",
+    "app/engine/router/translation_router.py",
+    "app/gui/dialogs/changelog_dialog.py",
+    "app/gui/main_window.py",
+    "app/ocr/runtime/worker.py",
+    "app/services/document_translation_service.py",
+    "app/services/hybrid_translation_service.py",
+    "docs/NEXT_CYCLE.md"
+  ],
+  "before_app_assets_bytes": 34589794,
+  "after_app_assets_bytes": 34596679,
+  "runtime_app_assets_delta_bytes": 6885,
+  "baseline_archive": "build/aw08/baseline.zip",
+  "historical_reports_unchanged": true,
+  "payloads_unchanged": true
+}

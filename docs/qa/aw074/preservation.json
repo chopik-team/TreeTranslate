@@ -1,0 +1,25 @@
+{
+  "baseline_files": 1108,
+  "missing": [],
+  "changed": [
+    "CHANGELOG.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "app/config/constants.py",
+    "app/gui/dialogs/changelog_dialog.py",
+    "assets/licenses/catalog.json",
+    "assets/licenses/third-party.html",
+    "docs/AW0.7.3_KNOWLEDGE_EXPANSION_REPORT.md",
+    "docs/NEXT_CYCLE.md",
+    "tests/test_knowledge_harvester.py",
+    "tools/knowledge_harvester/README.md",
+    "tools/knowledge_harvester/__init__.py",
+    "tools/knowledge_harvester/acquire_wikidata.py",
+    "tools/knowledge_harvester/domains/__init__.py",
+    "tools/knowledge_harvester/expand_wikidata.py",
+    "tools/knowledge_harvester/linking/__init__.py",
+    "tools/knowledge_harvester/review.py"
+  ],
+  "archived_runtime_files": 193,
+  "complete_original_snapshot": "build/aw074/baseline.zip"
+}

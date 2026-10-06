@@ -1,0 +1,70 @@
+{
+  "status": "FAIL",
+  "gate": "Native per-request exact outputs BEFORE final PDF benchmark",
+  "checks": {
+    "native_batch1_exact": true,
+    "native_batch2_exact": false,
+    "native_batch4_exact": false,
+    "native_batch8_exact": false
+  },
+  "mismatches": {
+    "1": {
+      "hypotheses": 0,
+      "decoded_text": 0
+    },
+    "2": {
+      "hypotheses": 26,
+      "decoded_text": 26
+    },
+    "4": {
+      "hypotheses": 50,
+      "decoded_text": 50
+    },
+    "8": {
+      "hypotheses": 78,
+      "decoded_text": 78
+    }
+  },
+  "counterexamples": {
+    "captured_index": 83,
+    "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/前方照相机/C174686 HDA编码 & AVN  导航选项不匹配/示意图.pdf",
+    "source": [
+      [
+        "__zh__",
+        "▁",
+        "信",
+        "号",
+        "搭",
+        "铁",
+        "</s>"
+      ]
+    ],
+    "before": [
+      [
+        "__ru__",
+        "▁Си",
+        "гнал",
+        "▁на",
+        "▁желе",
+        "зе",
+        "."
+      ]
+    ],
+    "after": [
+      [
+        "__ru__",
+        "▁Си",
+        "гнал",
+        "▁на",
+        "▁желе",
+        "зе"
+      ]
+    ],
+    "before_decoded": "Сигнал на железе.",
+    "after_decoded": "Сигнал на железе"
+  },
+  "full_pdf_equivalence": "NOT_EVALUATED: no accepted final run; do not claim statuses/OCR/glossary/candidates/writer/render equivalence for rejected prototype",
+  "source_and_dictionary_immutable": true,
+  "production_exact_baseline": true,
+  "rollback_proof": "rollback.json"
+}

@@ -1,0 +1,94 @@
+{
+  "invalid_corrupt_encrypted_input": [
+    {
+      "test": "tests.test_document_service.test_corrupted_pdf_has_no_fake_translation",
+      "passed": true
+    },
+    {
+      "test": "tests.test_documents.test_corrupt",
+      "passed": true
+    },
+    {
+      "test": "tests.test_pdf_documents.test_corrupt_and_encrypted",
+      "passed": true
+    }
+  ],
+  "missing_or_damaged_models": [
+    {
+      "test": "tests.test_model_manager.test_missing_size_and_manual_checksum_validation",
+      "passed": true
+    },
+    {
+      "test": "tests.test_offline_runtime.test_missing_models_never_attempt_network",
+      "passed": true
+    }
+  ],
+  "pause_resume_cancel": [
+    {
+      "test": "tests.test_document_service.test_file_cancel_retains_session_until_worker_finishes",
+      "passed": true
+    },
+    {
+      "test": "tests.test_documents.test_pause_resume_and_cancel",
+      "passed": true
+    },
+    {
+      "test": "tests.test_ocr.test_pause_then_cancel_at_ocr_checkpoint",
+      "passed": true
+    }
+  ],
+  "safe_output_write_errors": [
+    {
+      "test": "tests.test_release_hardening.test_destination_write_failure_is_safe_user_error[PermissionError]",
+      "passed": true
+    },
+    {
+      "test": "tests.test_release_hardening.test_destination_write_failure_is_safe_user_error[OSError]",
+      "passed": true
+    }
+  ],
+  "source_integrity": [
+    {
+      "test": "tests.test_documents.test_directory_selection_preserves_all_original_hashes",
+      "passed": true
+    }
+  ],
+  "local_fallback": [
+    {
+      "test": "tests.test_release_hardening.test_corrupted_output_falls_back_locally_and_cancel_prevents_next_backend",
+      "passed": true
+    },
+    {
+      "test": "tests.test_router.test_cancel_never_falls_back",
+      "passed": true
+    }
+  ],
+  "offline": [
+    {
+      "test": "tests.test_language_support.test_release_languages_cpu_and_auto_real_offline_smoke",
+      "passed": true
+    },
+    {
+      "test": "tests.test_ocr_integration.test_real_ocr_devices_offline[cpu]",
+      "passed": true
+    },
+    {
+      "test": "tests.test_ocr_integration.test_real_ocr_devices_offline[gpu]",
+      "passed": true
+    },
+    {
+      "test": "tests.test_ocr_integration.test_real_ocr_devices_offline[auto]",
+      "passed": true
+    }
+  ],
+  "close_restore": [
+    {
+      "test": "tests.test_document_service.test_unfinished_job_is_restored_as_ready_without_auto_start",
+      "passed": true
+    },
+    {
+      "test": "tests.test_release_hardening.test_close_active_window_waits_cooperatively_without_blocking_gui",
+      "passed": true
+    }
+  ]
+}

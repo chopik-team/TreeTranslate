@@ -1,0 +1,64 @@
+subdomain	type	source	target
+cooling	term	冷却液	Охлаждающая жидкость
+cooling	term	散热器	Радиатор
+cooling	compound	散热器盖	Крышка радиатора
+cooling	compound	冷却风扇	Вентилятор системы охлаждения
+cooling	term	储液罐	Расширительный бачок
+cooling	compound	冷却液储液罐	Расширительный бачок охлаждающей жидкости
+cooling	compound	排放塞	Сливная пробка
+cooling	compound	散热器排放塞	Сливная пробка радиатора
+cooling	compound	散热器排水塞	Сливная пробка радиатора
+cooling	compound	冷却液软管	Шланг охлаждающей жидкости
+cooling	term	节温器	Термостат
+cooling	compound	冷却液温度	Температура охлаждающей жидкости
+cooling	compound	冷却液液位	Уровень охлаждающей жидкости
+cooling	compound	冷却液泄漏	Утечка охлаждающей жидкости
+cooling	compound	冷却系统	Система охлаждения
+cooling	compound	集成热管理模块	Интегрированный модуль управления тепловым режимом
+cooling	compound	冷却液补充模式	Режим долива охлаждающей жидкости
+cooling	phrase	缓慢添加冷却液	Медленно добавьте охлаждающую жидкость
+cooling	phrase	检查冷却液液位	Проверьте уровень охлаждающей жидкости
+cooling	phrase	检查冷却液泄漏	Проверьте наличие утечки охлаждающей жидкости
+engine	term	机油	Моторное масло
+engine	compound	机油滤清器	Масляный фильтр
+engine	compound	空气滤清器	Воздушный фильтр
+engine	compound	进气歧管	Впускной коллектор
+engine	compound	排气歧管	Выпускной коллектор
+engine	term	火花塞	Свеча зажигания
+engine	compound	点火线圈	Катушка зажигания
+engine	compound	发动机转速	Частота вращения двигателя
+engine	compound	机油压力	Давление моторного масла
+suspension	term	悬架	Подвеска
+suspension	term	减振器	Амортизатор
+suspension	term	减震器	Амортизатор
+suspension	compound	悬架弹簧	Пружина подвески
+suspension	term	稳定杆	Стабилизатор поперечной устойчивости
+suspension	compound	稳定杆连杆	Стойка стабилизатора поперечной устойчивости
+suspension	term	球头	Шаровая опора
+suspension	term	副车架	Подрамник
+suspension	compound	车轮定位	Углы установки колёс
+electrical	term	熔断器	Плавкий предохранитель
+electrical	term	线束	Жгут проводов
+electrical	term	连接器	Разъём
+electrical	term	电压	Напряжение
+electrical	term	接地	Соединение с массой
+electrical	term	蓄电池	Аккумуляторная батарея
+electrical	compound	连接器端子	Контакт разъёма
+electrical	compound	电源电路	Цепь питания
+electrical	compound	接地电路	Цепь соединения с массой
+electrical	compound	线束连接器	Разъём жгута проводов
+diagnostics	term	故障码	Код неисправности
+diagnostics	compound	诊断仪	Диагностический прибор
+diagnostics	compound	故障诊断	Диагностика неисправностей
+diagnostics	phrase	读取故障码	Считайте коды неисправностей
+diagnostics	phrase	清除故障码	Удалите коды неисправностей
+common	compound	拧紧力矩	Момент затяжки
+common	compound	紧固件	Крепёжный элемент
+common	compound	密封圈	Уплотнительное кольцо
+common	term	裂纹	Трещина
+common	term	变形	Деформация
+cooling	compound	排放螺塞	Сливная пробка
+cooling	compound	冷却风扇总成	Узел вентилятора охлаждения
+cooling	term	防锈剂	Антикоррозионная присадка
+engine	term	空转	Холостой ход
+cooling	phrase	排气	Удаление воздуха

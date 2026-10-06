@@ -1,0 +1,273 @@
+{
+  "version": "0.81",
+  "weights": {
+    "content": 1.0,
+    "filename": 0.4,
+    "folder": 0.3,
+    "archive": 0.35,
+    "parent": 0.2
+  },
+  "confidence_scale": 2.0,
+  "primary_threshold": 0.6,
+  "candidate_threshold": 0.32,
+  "minimum_signals": 2,
+  "profile_cache_limit": 128,
+  "snapshot_cache_limit": 12,
+  "legacy_entry_limit": 2048,
+  "signals": {
+    "automotive.body": [
+      "车身",
+      "车门",
+      "机罩",
+      "翼子板",
+      "门槛",
+      "侧构件",
+      "车身结构",
+      "кузов",
+      "body panel",
+      "保险杠"
+    ],
+    "automotive.body.body_repair": [
+      "车身维修",
+      "钣金",
+      "车身变动",
+      "铰链安装孔",
+      "body repair",
+      "ремонт кузова"
+    ],
+    "automotive.body.body_geometry": [
+      "投影尺寸",
+      "参考平面",
+      "对角线",
+      "车身对称性",
+      "геометрия кузова"
+    ],
+    "automotive.body.body_measurement": [
+      "车身尺寸",
+      "轨距仪",
+      "卷尺",
+      "测量点",
+      "实际测量尺寸",
+      "孔中心距",
+      "高度差"
+    ],
+    "automotive.body.doors": [
+      "前门",
+      "后门",
+      "门锁",
+      "铰链",
+      "限位器",
+      "петля двери"
+    ],
+    "automotive.body.panels": [
+      "内板",
+      "外板",
+      "面板间隙",
+      "车门面板",
+      "加强板",
+      "панель двери"
+    ],
+    "automotive.body.structure": [
+      "纵梁",
+      "横梁",
+      "中央立柱",
+      "车身结构",
+      "лонжерон"
+    ],
+    "automotive.cooling": [
+      "冷却液",
+      "散热器",
+      "冷却风扇",
+      "储液罐",
+      "排气",
+      "热流体",
+      "radiator",
+      "coolant",
+      "охлаждающая жидкость",
+      "радиатор"
+    ],
+    "automotive.engine": [
+      "发动机",
+      "发动机舱",
+      "机油",
+      "燃油",
+      "engine oil",
+      "皮带",
+      "张紧装置",
+      "飞轮"
+    ],
+    "automotive.transmission": [
+      "变速驱动桥",
+      "变速器",
+      "离合器",
+      "transmission"
+    ],
+    "automotive.suspension": [
+      "悬架",
+      "减震器",
+      "减振器",
+      "副车架",
+      "定位臂",
+      "пружина подвески"
+    ],
+    "automotive.brakes": [
+      "制动",
+      "刹车",
+      "制动液",
+      "brake"
+    ],
+    "automotive.electrical": [
+      "熔断器",
+      "保险丝",
+      "电路",
+      "电压",
+      "线束",
+      "接地",
+      "连接器",
+      "проводка",
+      "fuse",
+      "voltage",
+      "大灯",
+      "转向信号灯"
+    ],
+    "automotive.diagnostics": [
+      "GDS",
+      "ITM",
+      "故障码",
+      "诊断",
+      "DTC",
+      "diagnostics"
+    ],
+    "automotive.hvac": [
+      "空调",
+      "暖风",
+      "制冷剂",
+      "hvac"
+    ],
+    "automotive.adas": [
+      "ADAS",
+      "雷达",
+      "驾驶辅助",
+      "摄像头标定"
+    ],
+    "industrial.mechanical": [
+      "车床",
+      "铣床",
+      "工业轴承",
+      "industrial bearing"
+    ],
+    "industrial.electrical": [
+      "工业电柜",
+      "三相电机",
+      "变频器"
+    ],
+    "industrial.hydraulics": [
+      "液压",
+      "液压缸",
+      "液压泵",
+      "hydraulic"
+    ],
+    "industrial.automation": [
+      "PLC",
+      "工业机器人",
+      "自动化",
+      "automation"
+    ],
+    "industrial.metallurgy": [
+      "连铸",
+      "冶金",
+      "钢水",
+      "高炉",
+      "metallurgy"
+    ],
+    "electronics": [
+      "印刷电路板",
+      "半导体",
+      "电容",
+      "电子元件"
+    ],
+    "software": [
+      "编译器",
+      "数据库",
+      "软件",
+      "源代码",
+      "compiler",
+      "software"
+    ],
+    "automotive.steering": [
+      "转向系统",
+      "方向盘",
+      "转向柱",
+      "转向齿轮箱",
+      "横拉杆",
+      "steering"
+    ],
+    "automotive.fuel": [
+      "燃油泵",
+      "燃油箱",
+      "喷油器",
+      "燃油压力",
+      "燃油滤清器",
+      "fuel pump"
+    ],
+    "automotive.emissions": [
+      "排放控制",
+      "净化控制",
+      "氧传感器",
+      "碳罐",
+      "催化转化器",
+      "emission"
+    ],
+    "automotive.restraint": [
+      "空气囊",
+      "安全带",
+      "拉紧器",
+      "SRSCM",
+      "碰撞传感器",
+      "airbag"
+    ],
+    "automotive.interior": [
+      "仪表板",
+      "装饰板",
+      "手套箱",
+      "底板控制台",
+      "座椅座垫",
+      "interior trim"
+    ]
+  },
+  "document_signals": {
+    "service_procedure": [
+      "检查",
+      "更换",
+      "拆除",
+      "安装",
+      "确保",
+      "维修",
+      "预热",
+      "激活"
+    ],
+    "repair_manual": [
+      "维修",
+      "手册",
+      "测量方法",
+      "注意事项"
+    ],
+    "technical_drawing": [
+      "尺寸",
+      "孔",
+      "Ø",
+      "测量点",
+      "A-A"
+    ]
+  },
+  "match_weights": {
+    "exactness": 0.3,
+    "trust": 0.2,
+    "domain": 0.2,
+    "subdomain": 0.15,
+    "segment_type": 0.1,
+    "specificity": 0.05
+  },
+  "high_match_threshold": 0.86,
+  "medium_match_threshold": 0.65
+}

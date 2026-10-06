@@ -1,0 +1,31 @@
+{
+  "human_verified": false,
+  "sample_size": 40,
+  "priority_domains": [
+    "automotive",
+    "metallurgy",
+    "mechanical-engineering",
+    "electrical",
+    "electronics"
+  ],
+  "raw_sample": "build/aw073/review/priority-spot-check.jsonl",
+  "decisions_file": "build/aw073/review/agent-qa-decisions.jsonl",
+  "quarantined_candidates": 15,
+  "findings": {
+    "41xx steel": "Preferred RU label is not a reliable full equivalent of the Chinese alloy-steel term.",
+    "turbocharger": "Chinese names a device; preferred RU label names turbocharging. Requires terminology review.",
+    "balance shaft": "Chinese names a shaft; preferred RU label names engine balancing. Requires terminology review.",
+    "LED-backlit LCD display": "Display versus backlighting scope differs in preferred labels.",
+    "Tensor Processing Unit": "Vendor-specific processor terminology needs scope review.",
+    "flexible-fuel vehicle": "Preferred RU label is a Latin branding/technology name rather than the Chinese vehicle term.",
+    "nitrous oxide engine": "Engine versus injection-system scope needs technical review.",
+    "rolling": "Runtime QA revealed Chinese press versus Russian rolling; both domain candidates deferred."
+  },
+  "domain_findings": [
+    "Marine/spacecraft concepts leaked into automotive via broad vehicle roots; scope markers tightened.",
+    "Powertrain layouts leaked into electrical; scope markers tightened."
+  ],
+  "no_production_pairs_added": true,
+  "no_source_targets_edited": true,
+  "runtime_review_decisions_file": "build/aw073/review/agent-runtime-qa-decisions.jsonl"
+}

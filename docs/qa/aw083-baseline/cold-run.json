@@ -1,0 +1,127 @@
+{
+  "run": "cold",
+  "wall_seconds": 1019.4920678000053,
+  "scan_seconds": 0.07360159999370808,
+  "active_seconds": 1008.2969999999987,
+  "state": "CANCELLED",
+  "outputs": [],
+  "warnings": [],
+  "errors": [],
+  "config": {
+    "source": "Определить автоматически",
+    "target": "Русский",
+    "device": "auto",
+    "profile": "automatic",
+    "threads": null,
+    "output": "C:\\TreeTranslate\\docs\\qa\\aw083-baseline\\output\\cold",
+    "template": "{name}_{lang}",
+    "translate_directories": false,
+    "translate_filenames": false,
+    "pdf_limits": null,
+    "ocr_enabled": true,
+    "domain": "auto",
+    "context": ""
+  },
+  "runtime_before": {
+    "warm_backend": null,
+    "tm_cache_entries": 0,
+    "tm_path": "C:\\Users\\PC\\AppData\\Local\\CHOPIK Team\\TreeTranslate\\translation_memory.db",
+    "glossary_path": "C:\\Users\\PC\\AppData\\Local\\CHOPIK Team\\TreeTranslate\\glossary.db",
+    "tm_counters": {
+      "exact_hits": 0,
+      "normalized_hits": 0,
+      "placeholder_hits": 0,
+      "fuzzy_hits": 0,
+      "misses": 0,
+      "reused": 0
+    },
+    "glossary_counters": {
+      "hits": 0,
+      "full_segment_hits": 0,
+      "constraint_hits": 0,
+      "fallbacks": 0,
+      "placeholder_failures": 0
+    },
+    "backends": {
+      "argos": {
+        "translator_loaded": false,
+        "translators": 0
+      },
+      "m2m100": {
+        "translator_loaded": false,
+        "translators": 0
+      }
+    }
+  },
+  "runtime_after": {
+    "warm_backend": null,
+    "tm_cache_entries": 0,
+    "tm_path": "C:\\Users\\PC\\AppData\\Local\\CHOPIK Team\\TreeTranslate\\translation_memory.db",
+    "glossary_path": "C:\\Users\\PC\\AppData\\Local\\CHOPIK Team\\TreeTranslate\\glossary.db",
+    "tm_counters": {
+      "exact_hits": 0,
+      "normalized_hits": 0,
+      "placeholder_hits": 0,
+      "fuzzy_hits": 0,
+      "misses": 0,
+      "reused": 0
+    },
+    "glossary_counters": {
+      "hits": 0,
+      "full_segment_hits": 0,
+      "constraint_hits": 0,
+      "fallbacks": 0,
+      "placeholder_failures": 0
+    },
+    "backends": {
+      "argos": {
+        "translator_loaded": false,
+        "translators": 0
+      },
+      "m2m100": {
+        "translator_loaded": false,
+        "translators": 0
+      }
+    }
+  },
+  "rss_before": {
+    "t": 3.2510794999980135,
+    "run": "cold",
+    "file": null,
+    "main_rss": 217022464,
+    "ocr_children": [],
+    "combined": 217022464
+  },
+  "rss_after": {
+    "t": 1022.8036959000019,
+    "run": "cold",
+    "file": "内部/车身维修.pdf",
+    "main_rss": 216727552,
+    "ocr_children": [],
+    "combined": 216727552
+  },
+  "vram_before": {
+    "t": 3.304968899996311,
+    "run": "cold",
+    "file": null,
+    "devices": [
+      [
+        1586,
+        12288,
+        24
+      ]
+    ]
+  },
+  "vram_after": {
+    "t": 1022.8737174999987,
+    "run": "cold",
+    "file": "内部/车身维修.pdf",
+    "devices": [
+      [
+        1519,
+        12288,
+        8
+      ]
+    ]
+  }
+}

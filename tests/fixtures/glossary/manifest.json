@@ -1,0 +1,14 @@
+{
+  "pack_id":"test-automotive",
+  "name":"Synthetic automotive test fixture — NOT production knowledge",
+  "version":"1.0.0",
+  "source_language":"en",
+  "target_language":"ru",
+  "domains":["automotive"],
+  "created_at":"2026-09-24T00:00:00Z",
+  "publisher":"TreeTranslate tests",
+  "provenance":"Synthetic controlled test phrases authored for AW0.7.1 validation; no imported corpus",
+  "license":"CC0-1.0",
+  "description":"10 test entries, not a curated production terminology source",
+  "minimum_treetranslate_version":"0.7.1"
+}

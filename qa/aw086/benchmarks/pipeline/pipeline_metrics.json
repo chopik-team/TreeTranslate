@@ -1,0 +1,35 @@
+{
+  "event": "pipeline",
+  "elapsed": 451.6539182999986,
+  "source": "C:\\TreeTranslate\\qa\\aw081\\hardware_scaling_20\\CN7C_HARDWARE_FIXED20.zip",
+  "plan": {
+    "prepare_workers": 1,
+    "semantic_workers": 1,
+    "depth": 2,
+    "ready_depth": 2,
+    "writer_depth": 1,
+    "max_prepared_bytes": 3426648473,
+    "max_inflight_bytes": 3426648473,
+    "ram_reserve_bytes": 5711080789,
+    "cpu_headroom": 2,
+    "gpu_owners": 1
+  },
+  "policy": "original",
+  "metrics": {
+    "inflight_high_water": 2,
+    "estimated_bytes_high_water": 67108864,
+    "ready_high_water": 2,
+    "ocr_admission_wait_seconds": 90.41542780002055,
+    "gpu_waiting_ready_seconds": 104.88973820000683,
+    "gpu_idle_waiting_ready_seconds": 18.847242800002277,
+    "current_bytes_high_water": 19409337,
+    "nmt_admission_wait_seconds": 5.5799981055315584e-05,
+    "writer_waiting_seconds": 348.75506999999925,
+    "writer_high_water": 1,
+    "archive_waiting_result_seconds": 13.051907999979449,
+    "committed_items": 20,
+    "prepare_backpressure_seconds": 450.42432330000884,
+    "remaining_inflight": 0,
+    "workers_joined": 1
+  }
+}

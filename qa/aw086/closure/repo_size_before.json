@@ -1,0 +1,398 @@
+{
+  "candidate_files": 4246,
+  "candidate_bytes": 3119147228,
+  "large_files": [
+    {
+      "path": "qa/aw088/harvester.db",
+      "size": 427966464,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw088/candidate_inventory.json",
+      "size": 90673974,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw088/native_corpus.db",
+      "size": 58331136,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/nmt_batch_scheduler_5pdf/runs/baseline/raw/glossary_contracts.json",
+      "size": 36593268,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw088/development_manifest.json",
+      "size": 31300843,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/runs/after/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/runs/after/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/best_easy_first/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/best_repeat_original/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/mid/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/mid_sustained/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run1/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run2/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run4/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run6/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/ocr_adaptive_runtime/runs/after/fingerprints.json",
+      "size": 29420057,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run3/fingerprints.json",
+      "size": 29420051,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run5/fingerprints.json",
+      "size": 29420051,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run7/fingerprints.json",
+      "size": 29420051,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run7_sustained/fingerprints.json",
+      "size": 29420051,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run8/fingerprints.json",
+      "size": 29420051,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/resource_samples.jsonl",
+      "size": 29093241,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/raw_copies/runs/after/fingerprints.json",
+      "size": 25746235,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/raw_copies/runs/baseline/fingerprints.json",
+      "size": 25746235,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/raw_copies/runs/depth1/fingerprints.json",
+      "size": 25746235,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/after_lookup_trace.jsonl",
+      "size": 25641367,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/after_lookup_trace.jsonl",
+      "size": 25641367,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/targeted/runs/after/fingerprints.json",
+      "size": 25579516,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/targeted/runs/before/fingerprints.json",
+      "size": 25579516,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/100pdf_final_speed_calibration/raw/observations.json",
+      "size": 22033500,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/mid_sustained/timing.log",
+      "size": 20546458,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run7_sustained/timing.log",
+      "size": 20510988,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/speed_calibration_100/timing.log",
+      "size": 19229455,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/100pdf_final_speed_calibration/raw/timing.log",
+      "size": 19048487,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/after_lookup_results.json",
+      "size": 16961869,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/before_lookup_results.json",
+      "size": 16961869,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/evidence.zip",
+      "size": 15937748,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/100pdf_final_speed_calibration/evidence.zip",
+      "size": 15552524,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/100pdf_final_speed_calibration/raw/logs/736fc7a72805/warnings.jsonl",
+      "size": 14857993,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/speed_calibration_100/logs/25825c3f75a7/warnings.jsonl",
+      "size": 14857993,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/speed_calibration_100/warnings.jsonl",
+      "size": 14857993,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/nmt_batch_scheduler_5pdf/runs/baseline/raw/timing.log",
+      "size": 14764257,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/speed_calibration_100/timing_events.jsonl",
+      "size": 14661892,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/100pdf_final_speed_calibration/raw/timing_events.jsonl",
+      "size": 14532397,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/raw_copies/after_lookup_trace.jsonl",
+      "size": 14024570,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/raw_copies/baseline_lookup_trace.jsonl",
+      "size": 14024570,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/final_speed_patch_5pdf/raw_copies/depth1_lookup_trace.jsonl",
+      "size": 14024570,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/targeted/after_lookup_trace.jsonl",
+      "size": 13720039,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/targeted/before_lookup_trace.jsonl",
+      "size": 13720039,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/nmt_batch_scheduler_5pdf/runs/baseline/raw/logs/2bf4fd0f345e/warnings.jsonl",
+      "size": 13697945,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/targeted/runs/before/timing.log",
+      "size": 11697815,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/targeted/runs/after/timing.log",
+      "size": 11697735,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw088/reviewed_harvester_v2.db",
+      "size": 11616256,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run5/logs/a5a7e8ebbe25/warnings.jsonl",
+      "size": 10930734,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run3/logs/d9d4daf8aa65/warnings.jsonl",
+      "size": 10929093,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run7/logs/5abf78ac7a02/warnings.jsonl",
+      "size": 10928862,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run7_sustained/logs/4f23dc0d9299/warnings.jsonl",
+      "size": 10928862,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run7_sustained/logs/e4f9479db3f0/warnings.jsonl",
+      "size": 10928862,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run8/logs/e2a4f1b30fee/warnings.jsonl",
+      "size": 10928862,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run1/logs/9d88ecab9fb5/warnings.jsonl",
+      "size": 10927917,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run2/logs/46b80b46fea6/warnings.jsonl",
+      "size": 10927917,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run4/logs/c68770f1c240/warnings.jsonl",
+      "size": 10927917,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/run6/logs/156eb275be4c/warnings.jsonl",
+      "size": 10927917,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/runs/after/logs/1cca0a6c2a1f/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/glossary_hot_path/runs/after/logs/07e4d3b8a299/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/best_easy_first/logs/36ab00c39fad/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/best_repeat_original/logs/92b61e58a3f1/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/mid/logs/88f995f12f8e/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/mid_sustained/logs/304bbd53edc8/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/hardware_scaling_20/runs/mid_sustained/logs/ae88a9ee3e8d/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/ocr_adaptive_runtime/runs/after/logs/2681af77e18c/warnings.jsonl",
+      "size": 10927678,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw088/corpus_map.json",
+      "size": 10918917,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/mini/runs/depth1/fingerprints.json",
+      "size": 10868471,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/mini/runs/depth2/fingerprints.json",
+      "size": 10868471,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/mini/runs/depth3/fingerprints.json",
+      "size": 10868471,
+      "tracked": false
+    },
+    {
+      "path": "qa/aw081/adaptive_pipeline/mini/runs/easy_first/fingerprints.json",
+      "size": 10868471,
+      "tracked": false
+    },
+    {
+      "path": "assets/fonts/TreeTranslateSans-Regular.ttf",
+      "size": 10596192,
+      "tracked": true
+    }
+  ],
+  "tracked_large_files": [
+    {
+      "path": "assets/fonts/TreeTranslateSans-Regular.ttf",
+      "size": 10596192,
+      "tracked": true
+    }
+  ]
+}

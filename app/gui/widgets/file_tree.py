@@ -1,12 +1,36 @@
 from pathlib import Path
 
-from PySide6.QtCore import QEvent, Qt
-from PySide6.QtGui import QIcon
+from PySide6.QtCore import QEvent, Qt, Slot
+from PySide6.QtGui import QIcon, QColor, QCursor
 from PySide6.QtWidgets import QAbstractItemView, QFrame, QHBoxLayout, QLabel, QSizePolicy, QTreeWidget, QTreeWidgetItem, QVBoxLayout
 
 from app.models.file_item import FileItem
 from app.config.paths import icon_path
 from app.gui.widgets.animated_icon import AnimatedIcon
+
+from app.localization.widgets import QLabel
+from app.documents.job import filename_stem
+
+
+class _DocumentTree(QTreeWidget):
+    """Paint one background across branches, checkboxes and document text."""
+    def drawRow(self, painter, option, index):
+        super().drawRow(painter, option, index)
+        completed = bool(index.data(Qt.ItemDataRole.UserRole + 3))
+        progress = index.data(Qt.ItemDataRole.UserRole + 4)
+        hovered = self.indexAt(self.viewport().mapFromGlobal(QCursor.pos())) == index
+        if completed or progress is not None or hovered:
+            painter.save()
+            rect = option.rect.adjusted(-option.rect.left(), 0,
+                                        self.viewport().width() - option.rect.right() - 1, 0)
+            painter.fillRect(rect, QColor(128, 128, 128, 35 if hovered else 20))
+            fraction = 100 if completed else int(progress or 0)
+            if fraction:
+                fill = rect.adjusted(0, 0, -round(rect.width() * (1 - fraction / 100)), 0)
+                is_folder = bool(index.data(Qt.ItemDataRole.UserRole + 1))
+                opacity = (55 if hovered else 35) if is_folder else (110 if hovered else 85)
+                painter.fillRect(fill, QColor(25, 166, 83, opacity))
+            painter.restore()
 
 
 class FileTree(QFrame):
@@ -27,9 +51,11 @@ class FileTree(QFrame):
         self.stats.setAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
         header.addWidget(self.stats)
         layout.addLayout(header)
-        self.tree = QTreeWidget()
+        self.tree = _DocumentTree()
         self.tree.setObjectName("documentTree")
         self.tree.setHeaderHidden(True)
+        self.tree.setAllColumnsShowFocus(True)
+        self.tree.setUniformRowHeights(True)
         self.tree.setAlternatingRowColors(True)
         self.tree.setSelectionMode(QAbstractItemView.SelectionMode.NoSelection)
         self.tree.itemChanged.connect(self._propagate_check)
@@ -44,6 +70,14 @@ class FileTree(QFrame):
         self.tree.viewport().installEventFilter(self)
         layout.addWidget(self.tree)
         self.show_empty()
+        from app.localization import localization
+        localization.widgets.add(self)
+
+    def retranslate(self):
+        from app.localization import tr
+        item = self.tree.topLevelItem(0)
+        if item and item.data(0, Qt.ItemDataRole.UserRole+2):
+            item.setText(0,tr(item.data(0, Qt.ItemDataRole.UserRole+2)))
 
     def show_empty(self) -> None:
         self._stop_folder_animation()
@@ -52,6 +86,9 @@ class FileTree(QFrame):
         self.tree.clear()
         self.tree.setRootIsDecorated(False)
         item = QTreeWidgetItem(["Здесь появится структура выбранных файлов"])
+        from app.localization import tr
+        item.setData(0, Qt.ItemDataRole.UserRole+2, 'Здесь появится структура выбранных файлов')
+        item.setText(0,tr('Здесь появится структура выбранных файлов'))
         item.setFlags(Qt.ItemFlag.ItemIsEnabled)
         item.setForeground(0, Qt.GlobalColor.gray)
         self.tree.addTopLevelItem(item)
@@ -66,6 +103,10 @@ class FileTree(QFrame):
         self.tree.clear()
         self.tree.setRootIsDecorated(True)
         top = self._make_item(root)
+        if root.name == 'Выбранные документы' and not root.path:
+            from app.localization import tr
+            top.setData(0, Qt.ItemDataRole.UserRole+2, root.name)
+            top.setText(0,tr(root.name))
         self.tree.addTopLevelItem(top)
         if root.is_folder:
             self._root_item = top
@@ -85,7 +126,10 @@ class FileTree(QFrame):
             self.badge.hide()
 
     def _make_item(self, model: FileItem) -> QTreeWidgetItem:
-        item = QTreeWidgetItem([model.name])
+        path = Path(model.name)
+        name = filename_stem(path.stem, path.suffix) + path.suffix if not model.is_folder and path.suffix else model.name
+        item = QTreeWidgetItem([name])
+        item.setToolTip(0, model.path or model.name)
         item.setData(0, Qt.ItemDataRole.UserRole, model.path)
         extension = Path(model.path or model.name).suffix.lower().lstrip(".")
         icon = "folder" if model.is_folder else extension if extension in {"docx", "pdf"} else "file"
@@ -96,6 +140,87 @@ class FileTree(QFrame):
         for child in model.children:
             item.addChild(self._make_item(child))
         return item
+
+    @Slot(object, object)
+    def mark_completed(self, source, output):
+        """Published documents stay visible and are excluded from the next attempt."""
+        def visit(item):
+            if item.data(0, Qt.ItemDataRole.UserRole) == str(source):
+                blocked = self.tree.blockSignals(True)
+                item.setData(0, Qt.ItemDataRole.UserRole + 3, str(output))
+                item.setData(0, Qt.ItemDataRole.UserRole + 4, 100)
+                item.setCheckState(0, Qt.CheckState.Unchecked)
+                self._update_parent(item.parent())
+                self.tree.blockSignals(blocked)
+            for index in range(item.childCount()):
+                visit(item.child(index))
+        for index in range(self.tree.topLevelItemCount()):
+            visit(self.tree.topLevelItem(index))
+        self._update_folder_progress()
+
+    def set_progress(self, progress):
+        if not progress.source_path:
+            return
+        def visit(item):
+            if item.data(0, Qt.ItemDataRole.UserRole) == progress.source_path:
+                blocked = self.tree.blockSignals(True)
+                item.setData(0, Qt.ItemDataRole.UserRole + 4, progress.file_percent)
+                # A confirmed rerun starts a new fill, while its previous output survives.
+                if progress.file_percent < 100:
+                    item.setData(0, Qt.ItemDataRole.UserRole + 3, None)
+                self.tree.blockSignals(blocked)
+            for index in range(item.childCount()):
+                visit(item.child(index))
+        for index in range(self.tree.topLevelItemCount()):
+            visit(self.tree.topLevelItem(index))
+        self._update_folder_progress()
+        self.tree.viewport().update()
+
+    def _update_folder_progress(self):
+        """Fill ancestor rows from the selected/processed descendant documents."""
+        def aggregate(item):
+            if not item.data(0, Qt.ItemDataRole.UserRole + 1):
+                completed = bool(item.data(0, Qt.ItemDataRole.UserRole + 3))
+                progress = item.data(0, Qt.ItemDataRole.UserRole + 4)
+                supported = Path(item.data(0, Qt.ItemDataRole.UserRole) or item.text(0)).suffix.lower() in {'.pdf', '.docx', '.zip'}
+                included = supported and (completed or progress is not None or item.checkState(0) == Qt.CheckState.Checked)
+                if not included:
+                    return 0, 0, False
+                percent = 100 if completed else min(99, max(0, int(progress or 0)))
+                return percent, 1, completed or progress is not None
+            total, count, active = 0, 0, False
+            for index in range(item.childCount()):
+                value, children, touched = aggregate(item.child(index))
+                total += value
+                count += children
+                active |= touched
+            percent = (100 if total == 100 * count else min(99, round(total / count))) if count and active else None
+            item.setData(0, Qt.ItemDataRole.UserRole + 4, percent)
+            return total, count, active
+        blocked = self.tree.blockSignals(True)
+        for index in range(self.tree.topLevelItemCount()):
+            aggregate(self.tree.topLevelItem(index))
+        self.tree.blockSignals(blocked)
+        self.tree.viewport().update()
+
+    def set_busy(self, busy):
+        # Keep the view enabled for full-row hover; only selection is locked.
+        starting = busy and not getattr(self, '_busy', False)
+        self._busy = busy
+        def visit(item):
+            flags = item.flags()
+            if starting and not item.data(0, Qt.ItemDataRole.UserRole + 1) and item.checkState(0) == Qt.CheckState.Checked:
+                item.setData(0, Qt.ItemDataRole.UserRole + 4, 0)
+            item.setFlags(flags & ~Qt.ItemFlag.ItemIsUserCheckable if busy
+                          else flags | Qt.ItemFlag.ItemIsUserCheckable)
+            for index in range(item.childCount()):
+                visit(item.child(index))
+        blocked = self.tree.blockSignals(True)
+        for index in range(self.tree.topLevelItemCount()):
+            visit(self.tree.topLevelItem(index))
+        self.tree.blockSignals(blocked)
+
+        self._update_folder_progress()
 
     def _set_folder_frame(self, icon):
         if self._animated_item is not None:
@@ -170,6 +295,7 @@ class FileTree(QFrame):
             self._propagate_to_children(child, state)
         self._update_parent(item.parent())
         self.tree.blockSignals(False)
+        self._update_folder_progress()
 
     def _propagate_to_children(self, item: QTreeWidgetItem, state: Qt.CheckState) -> None:
         for index in range(item.childCount()):

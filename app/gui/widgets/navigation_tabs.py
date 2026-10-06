@@ -5,6 +5,8 @@ from PySide6.QtWidgets import QButtonGroup, QHBoxLayout, QPushButton, QWidget
 
 from app.config.paths import icon_path
 
+from app.localization.widgets import QPushButton
+
 
 class NavigationTabs(QWidget):
     page_changed = Signal(int)

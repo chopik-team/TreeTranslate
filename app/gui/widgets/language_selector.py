@@ -2,34 +2,29 @@ from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QComboBox, QHBoxLayout, QLabel, QPushButton, QVBoxLayout, QWidget
 
 from app.gui.widgets.language_combo import LanguageComboBox
+from app.engine.languages import AUTOMATIC_LANGUAGE, RELEASE_LANGUAGE_LABELS
+
+from app.localization.widgets import QComboBox, QLabel, QPushButton
 
 
 class LanguageSelector(QWidget):
     languages_swapped = Signal(str, str)
-    AUTOMATIC = "Определить автоматически"
-    LANGUAGES = (
-        "Русский",
-        "Китайский",
-        "Английский",
-        "Английский (США)",
-        "Немецкий",
-        "Японский",
-        "Испанский",
-        "Французский",
-    )
+    AUTOMATIC = AUTOMATIC_LANGUAGE
+    LANGUAGES = RELEASE_LANGUAGE_LABELS
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self._syncing = False
         layout = QHBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
-        options = [self.AUTOMATIC, *self.LANGUAGES]
-        self.source = self._combo("Исходный язык", options)
+        self.source = self._combo("Исходный язык", [self.AUTOMATIC, *self.LANGUAGES])
         self.swap_button = QPushButton("⇄", objectName="languageSwap")
         self.swap_button.setToolTip("Поменять языки местами")
         self.swap_button.setAccessibleName("Поменять языки местами")
         self.swap_button.setFixedSize(42, 42)
-        self.target = self._combo("Язык перевода", options)
+        # LanguageResolver rejects an automatic target, so it must never be a
+        # release-facing choice.
+        self.target = self._combo("Язык перевода", list(self.LANGUAGES))
         self.target.combo.setCurrentText("Русский")
         layout.addWidget(self.source, 1)
         layout.addWidget(self.swap_button, alignment=Qt.AlignmentFlag.AlignBottom)
@@ -41,6 +36,8 @@ class LanguageSelector(QWidget):
     def swap_languages(self) -> None:
         source = self.source_combo.currentText()
         target = self.target_combo.currentText()
+        if source == self.AUTOMATIC:
+            return
         self._syncing = True
         self.source_combo.blockSignals(True)
         self.target_combo.blockSignals(True)
@@ -56,13 +53,14 @@ class LanguageSelector(QWidget):
             return
         source = self.source.combo.currentText()
         target = self.target.combo.currentText()
-        if source == self.AUTOMATIC or target == self.AUTOMATIC or source != target:
+        if source == self.AUTOMATIC or source != target:
             return
         self._syncing = True
-        if changed == "source":
-            self.target.combo.setCurrentText(self.AUTOMATIC)
-        else:
+        if changed == "target":
             self.source.combo.setCurrentText(self.AUTOMATIC)
+        else:
+            fallback = "Русский" if source != "Русский" else "Английский"
+            self.target.combo.setCurrentText(fallback)
         self._syncing = False
 
     @staticmethod

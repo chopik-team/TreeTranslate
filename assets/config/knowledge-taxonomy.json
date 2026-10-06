@@ -1,0 +1,38 @@
+{
+  "version": "0.8.8",
+  "general": {},
+  "automotive": {
+    "common": {},
+    "body": {
+      "body_repair": {},
+      "body_measurement": {},
+      "body_geometry": {},
+      "doors": {},
+      "panels": {},
+      "structure": {}
+    },
+    "cooling": {},
+    "engine": {},
+    "transmission": {},
+    "suspension": {},
+    "brakes": {},
+    "electrical": {},
+    "diagnostics": {},
+    "hvac": {},
+    "adas": {},
+    "steering": {},
+    "fuel": {},
+    "emissions": {},
+    "restraint": {},
+    "interior": {}
+  },
+  "industrial": {
+    "mechanical": {},
+    "electrical": {},
+    "hydraulics": {},
+    "automation": {},
+    "metallurgy": {}
+  },
+  "software": {},
+  "electronics": {}
+}

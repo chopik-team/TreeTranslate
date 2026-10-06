@@ -1,5 +1,6 @@
 """One PDFium writer for native text replacement and explicit raster OCR masks."""
 import ctypes
+from contextlib import contextmanager
 from hashlib import sha256
 import math
 from pathlib import Path
@@ -13,12 +14,31 @@ from app.documents.docx_document import URL
 from app.documents.errors import DocumentError, SourceChangedError
 from app.documents.pdf_fonts import FontResolver
 from app.documents.pdf_layout import group_spans, fit, wrap, FittedText
-from app.documents.pdf_diagnostics import diagnostic, context, preserved
+from app.documents.pdf_diagnostics import diagnostic, context, preserved, timed_process, timed_stage
 from app.documents.pdf_regions import assign_regions, flow_boxes
+from app.documents.pdf_ocr_policy import diagram_box, native_diagram_label, compact_label
 from app.documents.pdf_types import PdfError, PdfKind, PdfLimits, PdfSegment, PdfPageInfo, ExtractedPage
 
 # PDFium is process-global and not thread-safe, including calls on separate documents.
 PDF_LOCK = RLock()
+
+
+@contextmanager
+def detached_pdf_work():
+    """Yield this scope's PDF lock for work on copied data, never PDFium handles.
+
+    The supported CPython RLock exposes ownership via _is_owned (also used by
+    threading.Condition). An unfamiliar lock stays conservatively acquired.
+    Release one level only: a caller's additional recursive scope remains safe.
+    """
+    owned = getattr(PDF_LOCK, '_is_owned', lambda: False)()
+    if owned:
+        PDF_LOCK.release()
+    try:
+        yield
+    finally:
+        if owned:
+            PDF_LOCK.acquire()
 
 
 def wide(text):
@@ -44,6 +64,7 @@ def page_info(page, objects):
 
 class NativeTextExtractor:
     """Future extractors can return ExtractedPage; writer consumes the same segment contract."""
+    @timed_process('native_text_extract', page_index_arg=2)
     def extract(self, page, page_index, objects, limits):
         result = ExtractedPage()
         textpage = page.get_textpage()
@@ -112,6 +133,9 @@ class NativeTextExtractor:
                               and span.font_names == (obj.get_font().get_base_name(),)), None)
                 if match:
                     match.object_indices += (index,)
+            # Preserve cell identity before horizontal/vertical merging. The
+            # second pass recalculates fitting space for the resulting blocks.
+            assign_regions(page, objects, spans)
             result.segments = group_spans(page_index, spans, limits.max_segment_chars)
             assign_regions(page, objects, result.segments)
             return result
@@ -131,6 +155,8 @@ class PdfDocument:
             raise PdfError(PdfKind.UNSUPPORTED_PDF)
         self.source_bytes = self.path.read_bytes()
         self.source_hash = sha256(self.source_bytes).hexdigest()
+        if extractor is not None and hasattr(extractor, 'set_source_identity'):
+            extractor.set_source_identity(self.source_hash)
         if not self.source_bytes[:1024].lstrip().startswith(b'%PDF-'):
             raise PdfError(PdfKind.CORRUPTED_PDF)
         with PDF_LOCK:
@@ -190,6 +216,7 @@ class PdfDocument:
                 document.close()
 
     @staticmethod
+    @timed_process('pdf_open_parse')
     def _open(data):
         try:
             return pdfium.PdfDocument(data)
@@ -209,6 +236,7 @@ class PdfDocument:
         except OSError:
             raise SourceChangedError() from None
 
+    @timed_process('pdf_write')
     def write(self, output):
         with PDF_LOCK:
             document = self._open(self.source_bytes)
@@ -220,126 +248,187 @@ class PdfDocument:
                 for index in range(len(document)):
                     self.checkpoint()
                     page = document[index]
-                    try:
-                        objects = list(page.get_objects(max_depth=1))
-                        page_segments = [s for s in self.segments if s.page == index]
-                        flow_boxes(page_segments, fonts)
-                        prepared_faces = {}
-                        font_requests = []
-                        for segment in page_segments:
-                            text = segment.translated if segment.translated is not None else segment.text
-                            if text == segment.text:
-                                continue
-                            original = objects[segment.object_indices[0]] if segment.object_indices else None
-                            try:
-                                face = fonts.resolve(text + '[...]Продолжение: 0123456789.', original)
-                            except DocumentError:
-                                segment.policy = 'CONSERVATIVE_PRESERVE'
-                                segment.visible_text = segment.text
-                                preserved('font', 'local_font_coverage', index + 1, segment.object_indices[0] if segment.object_indices else None, raw.FPDF_PAGEOBJ_TEXT)
-                                self.warnings.append(f'Страница {index + 1}: исходный блок сохранён, подходящий локальный шрифт не найден.')
-                                continue
-                            prepared_faces[segment.block_id] = face
-                            font_requests.append((face, text + '[...]Продолжение: 0123456789.'))
-                        fonts.prepare(document, font_requests, cache_key=('page', index))
-                        # All raster masks precede all replacement text. Reflow
-                        # may move a line into another original line's rectangle.
-                        for segment in page_segments:
-                            if segment.origin != 'ocr' or segment.block_id not in prepared_faces:
-                                continue
-                            for x,y,r,t in segment.raster_boxes or (segment.bbox,):
-                                # Include the anti-aliased fringe around detected glyphs.
-                                x,y=max(0,x-.65),max(0,y-.65)
-                                r,t=min(self.pages[index].bounds[2],r+.65),min(self.pages[index].bounds[3],t+.65)
-                                mask = pdfium.PdfObject(raw.FPDFPageObj_CreateNewRect(x,y,r-x,t-y),pdf=document)
-                                raw.FPDFPageObj_SetFillColor(mask,*segment.background_color)
-                                raw.FPDFPath_SetDrawMode(mask,raw.FPDF_FILLMODE_WINDING,False)
-                                page.insert_obj(mask)
-                                self.added_non_text.setdefault(index,[]).extend(page_info(page,[mask]).non_text)
-                        changed = False
-                        for segment in page_segments:
-                            self.checkpoint()
-                            text = segment.translated if segment.translated is not None else segment.text
-                            if text == segment.text:
-                                segment.visible_text = text if segment.origin == 'native' else None
-                                continue
-                            original = objects[segment.object_indices[0]] if segment.object_indices else None
-                            face = prepared_faces.get(segment.block_id)
-                            if face is None:
-                                continue
-                            box = segment.rendered_bbox or segment.available_bbox or segment.bbox
-                            fitted = fit(text, face, box, segment.layout_font_size or max(8, segment.font_size), 8, segment.rotation)
-                            font = fonts.embed(document, face, text + '[...]Продолжение: 0123456789.', cache_key=('page', index))
-                            if fitted.overflow:
-                                self.continuations.append((segment, text))
-                                # Full content is placed in readable continuation blocks,
-                                # with no annotation wall and no silent truncation.
-                                marker = fit(f'Продолжение: {segment.page + 1}.{segment.reading_order + 1}', face, box, 8, 8, segment.rotation)
-                                if marker.overflow:
-                                    marker=fit('[...]',face,box,8,8,segment.rotation)
-                                fitted = FittedText(marker.lines if not marker.overflow else [], 8,
-                                                    marker.ascent, marker.leading, False)
-                                segment.overflow_text = text
-                                self.warnings.append(f'Страница {index + 1}, блок {segment.reading_order + 1}: полный перевод в продолжении документа.')
-                            # Construct all replacement objects before removing any original.
-                            replacements = []
-                            try:
-                                for line_index, line in enumerate(fitted.lines):
-                                    if not line:
+                    with timed_stage('pdf_page_layout_write', page=index + 1):
+                        try:
+                            objects = list(page.get_objects(max_depth=1))
+                            page_segments = [s for s in self.segments if s.page == index]
+                            prepared_faces = {}
+                            font_requests = []
+                            with timed_stage('pdf_font_resolution', page=index + 1):
+                                for segment in page_segments:
+                                    text = segment.translated if segment.translated is not None else segment.text
+                                    if text == segment.text:
                                         continue
-                                    obj = pdfium.PdfObject(raw.FPDFPageObj_CreateTextObj(document, font, fitted.size), pdf=document)
-                                    replacements.append(obj)
-                                    if not raw.FPDFText_SetText(obj, wide(line)):
-                                        raise PdfError(PdfKind.UNSUPPORTED_PDF)
-                                    raw.FPDFPageObj_SetFillColor(obj, *segment.color)
-                                    left, bottom, right, top = box
-                                    if segment.alignment == 'center':
-                                        left += max(0, (right-left-face.width(line, fitted.size))/2)
-                                    offset = fitted.ascent + line_index * fitted.leading
-                                    transforms = {0: (1, 0, 0, 1, left, top - offset),
-                                                  90: (0, 1, -1, 0, left + offset, bottom),
-                                                  180: (-1, 0, 0, -1, right, bottom + offset),
-                                                  270: (0, -1, 1, 0, right - offset, top)}
-                                    obj.set_matrix(pdfium.PdfMatrix(*transforms[segment.rotation]))
-                                # Preserve painting order: insert at the original object's position.
-                                if original is None:
-                                    position = raw.FPDFPage_CountObjects(page)
+                                    original = objects[segment.object_indices[0]] if segment.object_indices else None
+                                    try:
+                                        face = fonts.resolve(text + '[...]Продолжение: 0123456789.', original)
+                                    except DocumentError:
+                                        segment.policy = 'CONSERVATIVE_PRESERVE'
+                                        # OCR text remains in the source raster, not in
+                                        # the PDF text layer. Do not validate it as text.
+                                        segment.visible_text = segment.text if segment.origin == 'native' else None
+                                        preserved('font', 'local_font_coverage', index + 1, segment.object_indices[0] if segment.object_indices else None, raw.FPDF_PAGEOBJ_TEXT)
+                                        self.warnings.append(f'Страница {index + 1}: исходный блок сохранён, подходящий локальный шрифт не найден.')
+                                        continue
+                                    prepared_faces[segment.block_id] = face
+                                    font_requests.append((face, text + '[...]Продолжение: 0123456789.'))
+                            # Resolve coverage before layout and use the same face
+                            # for measuring, drawing and continuation pages.
+                            font_preserved = any(
+                                s.translated is not None and s.translated != s.text
+                                and s.block_id not in prepared_faces for s in page_segments)
+                            if font_preserved:
+                                # Region expansion assumes neighbouring text can
+                                # move too. A preserved original cannot move: keep
+                                # all replacements on this page in their source
+                                # rectangles and send overflow to continuations.
+                                for segment in page_segments:
+                                    if segment.block_id in prepared_faces:
+                                        segment.rendered_bbox = segment.bbox
+                                        segment.layout_font_size = None
+                            else:
+                                with timed_stage('pdf_flow_layout', page=index + 1):
+                                    flow_boxes(page_segments, fonts, prepared_faces)
+                            # Decide preservation BEFORE creating a mask. A diagram
+                            # label must stay attached to its drawing even on overflow.
+                            diagram_fits = {}
+                            for segment in page_segments:
+                                if (segment.ocr_kind != 'diagram_label' and not native_diagram_label(segment)) or segment.block_id not in prepared_faces:
+                                    continue
+                                box = diagram_box(segment, page_segments) if segment.origin == 'ocr' else segment.rendered_bbox or segment.available_bbox or segment.bbox
+                                minimum = 7 if segment.origin == 'ocr' else max(6, self.limits.min_font_size)
+                                fitted = fit(segment.translated, prepared_faces[segment.block_id], box,
+                                             max(8, segment.font_size), minimum, segment.rotation)
+                                if fitted.overflow:
+                                    compact = compact_label(segment.translated)
+                                    fitted = fit(compact, prepared_faces[segment.block_id], box,
+                                                 max(8, segment.font_size), minimum, segment.rotation)
+                                if fitted.overflow:
+                                    prepared_faces.pop(segment.block_id)
+                                    segment.policy = 'CONSERVATIVE_PRESERVE'
+                                    segment.status = 'preserved'
+                                    segment.preserve_reason = 'diagram_label_does_not_fit'
+                                    segment.visible_text = segment.text if segment.origin == 'native' else None
+                                    preserved('layout', 'diagram_label_does_not_fit', index + 1, None, raw.FPDF_PAGEOBJ_TEXT)
+                                    self.warnings.append(f'Страница {index + 1}, блок {segment.reading_order + 1}: перевод подписи не помещается; исходная подпись сохранена.')
                                 else:
-                                    address = ctypes.cast(original.raw, ctypes.c_void_p).value
-                                    position = next(i for i in range(raw.FPDFPage_CountObjects(page))
-                                                    if ctypes.cast(raw.FPDFPage_GetObject(page, i), ctypes.c_void_p).value == address)
-                                for offset, obj in enumerate(replacements):
-                                    if not raw.FPDFPage_InsertObjectAtIndex(page, obj, position + offset):
-                                        raise PdfError(PdfKind.UNSUPPORTED_PDF)
-                                    # Same ownership handoff as pinned pypdfium2 PdfPage.insert_obj.
-                                    obj._detach_finalizer()
-                                    obj.page = page
-                                    obj.pdf = document
-                                    segment.written_boxes += (obj.get_bounds(),)
-                                for object_index in segment.object_indices:
-                                    old = objects[object_index]
-                                    page.remove_obj(old)
-                                    old.close()
-                            finally:
-                                for obj in replacements:
-                                    if obj.page is None:
-                                        obj.close()
-                            segment.visible_text = '\n'.join(fitted.lines)
-                            segment.status = 'continuation' if segment.overflow_text else 'written'
-                            changed = True
-                        if changed:
-                            # PDFium content regeneration may lose inherited CMYK/
-                            # ICC color spaces. Pin their rendered RGBA explicitly.
-                            for obj in page.get_objects(max_depth=1):
-                                for getter, setter in ((raw.FPDFPageObj_GetFillColor, raw.FPDFPageObj_SetFillColor),
-                                                       (raw.FPDFPageObj_GetStrokeColor, raw.FPDFPageObj_SetStrokeColor)):
-                                    color = [ctypes.c_uint() for _ in range(4)]
-                                    if getter(obj, *color):
-                                        setter(obj, *(c.value for c in color))
-                            with diagnostic('write', 'FPDFPage_GenerateContent', index + 1):
-                                page.gen_content()
-                    finally:
-                        page.close()
+                                    segment.rendered_bbox = box
+                                    diagram_fits[segment.block_id] = fitted
+                            with timed_stage('pdf_font_embedding', page=index + 1):
+                                fonts.prepare(document, font_requests, cache_key=('page', index))
+                            # All raster masks precede all replacement text. Reflow
+                            # may move a line into another original line's rectangle.
+                            for segment in page_segments:
+                                if segment.origin != 'ocr' or segment.block_id not in prepared_faces:
+                                    continue
+                                for x,y,r,t in segment.raster_boxes or (segment.bbox,):
+                                    # Include the anti-aliased fringe around detected glyphs.
+                                    x,y=max(0,x-.65),max(0,y-.65)
+                                    r,t=min(self.pages[index].bounds[2],r+.65),min(self.pages[index].bounds[3],t+.65)
+                                    mask = pdfium.PdfObject(raw.FPDFPageObj_CreateNewRect(x,y,r-x,t-y),pdf=document)
+                                    raw.FPDFPageObj_SetFillColor(mask,*segment.background_color)
+                                    raw.FPDFPath_SetDrawMode(mask,raw.FPDF_FILLMODE_WINDING,False)
+                                    page.insert_obj(mask)
+                                    self.added_non_text.setdefault(index,[]).extend(page_info(page,[mask]).non_text)
+                            changed = False
+                            for segment in page_segments:
+                                self.checkpoint()
+                                text = segment.translated if segment.translated is not None else segment.text
+                                if text == segment.text:
+                                    segment.visible_text = text if segment.origin == 'native' else None
+                                    continue
+                                original = objects[segment.object_indices[0]] if segment.object_indices else None
+                                face = prepared_faces.get(segment.block_id)
+                                if face is None:
+                                    continue
+                                box = segment.rendered_bbox or segment.available_bbox or segment.bbox
+                                if segment.origin == 'ocr':
+                                    # An OCR row belongs to its source raster band.
+                                    # Extra vertical room can interleave wrapped text
+                                    # with an adjacent column in the PDF text layer.
+                                    # Width expansion remains available; true vertical
+                                    # overflow uses the existing continuation path.
+                                    box = (max(box[0], segment.bbox[0]), max(box[1], segment.bbox[1]),
+                                           box[2], min(box[3], segment.bbox[3]))
+                                    # Uniform raster background is not permission
+                                    # to extend over a neighbouring translated cell.
+                                    for neighbour in page_segments:
+                                        if (neighbour is not segment and neighbour.bbox[0] > segment.bbox[0]
+                                                and neighbour.bbox[1] < box[3] and neighbour.bbox[3] > box[1]):
+                                            box = (box[0], box[1], max(box[0], min(box[2], neighbour.bbox[0] - 1)), box[3])
+                                    segment.rendered_bbox = box
+                                fitted = diagram_fits.get(segment.block_id) or fit(text, face, box, segment.layout_font_size or max(8, segment.font_size), 8, segment.rotation)
+                                font = fonts.embed(document, face, text + '[...]Продолжение: 0123456789.', cache_key=('page', index))
+                                if fitted.overflow:
+                                    self.continuations.append((segment, text, face))
+                                    # Full content is placed in readable continuation blocks,
+                                    # with no annotation wall and no silent truncation.
+                                    marker = fit(f'Продолжение: {segment.page + 1}.{segment.reading_order + 1}', face, box, 8, 8, segment.rotation)
+                                    if marker.overflow:
+                                        marker=fit('[...]',face,box,8,8,segment.rotation)
+                                    fitted = FittedText(marker.lines if not marker.overflow else [], 8,
+                                                        marker.ascent, marker.leading, False)
+                                    segment.overflow_text = text
+                                    self.warnings.append(f'Страница {index + 1}, блок {segment.reading_order + 1}: полный перевод в продолжении документа.')
+                                # Construct all replacement objects before removing any original.
+                                replacements = []
+                                try:
+                                    for line_index, line in enumerate(fitted.lines):
+                                        if not line:
+                                            continue
+                                        obj = pdfium.PdfObject(raw.FPDFPageObj_CreateTextObj(document, font, fitted.size), pdf=document)
+                                        replacements.append(obj)
+                                        if not raw.FPDFText_SetText(obj, wide(line)):
+                                            raise PdfError(PdfKind.UNSUPPORTED_PDF)
+                                        raw.FPDFPageObj_SetFillColor(obj, *segment.color)
+                                        left, bottom, right, top = box
+                                        if segment.alignment == 'center':
+                                            left += max(0, (right-left-face.width(line, fitted.size))/2)
+                                        offset = fitted.ascent + line_index * fitted.leading
+                                        transforms = {0: (1, 0, 0, 1, left, top - offset),
+                                                      90: (0, 1, -1, 0, left + offset, bottom),
+                                                      180: (-1, 0, 0, -1, right, bottom + offset),
+                                                      270: (0, -1, 1, 0, right - offset, top)}
+                                        obj.set_matrix(pdfium.PdfMatrix(*transforms[segment.rotation]))
+                                    # Preserve painting order: insert at the original object's position.
+                                    if original is None:
+                                        position = raw.FPDFPage_CountObjects(page)
+                                    else:
+                                        address = ctypes.cast(original.raw, ctypes.c_void_p).value
+                                        position = next(i for i in range(raw.FPDFPage_CountObjects(page))
+                                                        if ctypes.cast(raw.FPDFPage_GetObject(page, i), ctypes.c_void_p).value == address)
+                                    for offset, obj in enumerate(replacements):
+                                        if not raw.FPDFPage_InsertObjectAtIndex(page, obj, position + offset):
+                                            raise PdfError(PdfKind.UNSUPPORTED_PDF)
+                                        # Same ownership handoff as pinned pypdfium2 PdfPage.insert_obj.
+                                        obj._detach_finalizer()
+                                        obj.page = page
+                                        obj.pdf = document
+                                        segment.written_boxes += (obj.get_bounds(),)
+                                    for object_index in segment.object_indices:
+                                        old = objects[object_index]
+                                        page.remove_obj(old)
+                                        old.close()
+                                finally:
+                                    for obj in replacements:
+                                        if obj.page is None:
+                                            obj.close()
+                                segment.visible_text = '\n'.join(fitted.lines)
+                                segment.status = 'continuation' if segment.overflow_text else 'written'
+                                changed = True
+                            if changed:
+                                # PDFium content regeneration may lose inherited CMYK/
+                                # ICC color spaces. Pin their rendered RGBA explicitly.
+                                for obj in page.get_objects(max_depth=1):
+                                    for getter, setter in ((raw.FPDFPageObj_GetFillColor, raw.FPDFPageObj_SetFillColor),
+                                                           (raw.FPDFPageObj_GetStrokeColor, raw.FPDFPageObj_SetStrokeColor)):
+                                        color = [ctypes.c_uint() for _ in range(4)]
+                                        if getter(obj, *color):
+                                            setter(obj, *(c.value for c in color))
+                                with diagnostic('write', 'FPDFPage_GenerateContent', index + 1):
+                                    page.gen_content()
+                        finally:
+                            page.close()
                 self._write_continuations(document, fonts)
                 self.checkpoint()
                 with diagnostic('write', 'FPDF_SaveAsCopy'):
@@ -348,14 +437,14 @@ class PdfDocument:
                 fonts.close()
                 document.close()
 
+    @timed_process('pdf_continuations')
     def _write_continuations(self, document, fonts):
         page = None
         cursor = 0
         width, height = self.pages[0].size
         try:
-            for segment, text in self.continuations:
+            for segment, text, face in self.continuations:
                 self.checkpoint()
-                face = fonts.resolve(text)
                 lines = wrap(text, face, 11, width - 72)
                 segment.continuation_lines = tuple(lines)
                 for line_index, line in enumerate(lines):
@@ -375,7 +464,7 @@ class PdfDocument:
                         segment.continuation_page = len(document)
                         self._insert_line(document, page, fonts, f'Страница {segment.page + 1} · блок {segment.reading_order + 1}', 9, 36, cursor)
                         cursor -= 16
-                    self._insert_line(document, page, fonts, line, 11, 36, cursor)
+                    self._insert_line(document, page, fonts, line, 11, 36, cursor, face=face)
                     cursor -= 14
                 cursor -= 10
             if page is not None:
@@ -385,8 +474,8 @@ class PdfDocument:
                 page.close()
 
     @staticmethod
-    def _insert_line(document, page, fonts, text, size, x, y):
-        face = fonts.resolve(text)
+    def _insert_line(document, page, fonts, text, size, x, y, face=None):
+        face = face or fonts.resolve(text)
         font = fonts.embed(document, face, text)
         obj = pdfium.PdfObject(raw.FPDFPageObj_CreateTextObj(document, font, size), pdf=document)
         if not raw.FPDFText_SetText(obj, wide(text)):
@@ -436,6 +525,7 @@ class PdfDocument:
         finally:
             raw.FPDFPage_CloseAnnot(annotation)
 
+    @timed_process('pdf_validation')
     def validate(self, output):
         if not Path(output).is_file() or not Path(output).stat().st_size:
             raise PdfError(PdfKind.CORRUPTED_PDF)
@@ -474,9 +564,14 @@ class PdfDocument:
                             # Compare that one visual equivalence, never drop text,
                             # numbers, identifiers or arbitrary punctuation.
                             actual = extracted
-                            if segment.origin == 'ocr':
-                                visible,actual=visible.replace('•','·'),actual.replace('•','·')
+                            visible,actual=visible.replace('•','·'),actual.replace('•','·')
                             if visible and visible not in actual:
+                                import logging
+                                from app.config.logging_config import current_document_run
+                                logging.getLogger('treetranslate.documents.pdf').warning(
+                                    'run=%s validation_block_failed page=%d block=%s origin=%s bbox=%s written_boxes=%s',
+                                    current_document_run(), index + 1, segment.block_id, segment.origin,
+                                    segment.bbox, segment.written_boxes)
                                 raise PdfError(PdfKind.CORRUPTED_PDF, context('validate', 'visible_text_contiguous', index + 1, segment.object_indices[0] if segment.object_indices else None, raw.FPDF_PAGEOBJ_TEXT))
                             if segment.overflow_text and not segment.continuation_lines and segment.overflow_text not in annotations:
                                 raise PdfError(PdfKind.CORRUPTED_PDF)

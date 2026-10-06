@@ -1,0 +1,285 @@
+{
+  "archive": "C:\\Users\\PC\\Downloads\\车身尺寸.zip",
+  "archive_sha256": "6c952c34172b977f95e9098650a40f90d67ac83343feb822df8d271bd4f50d74",
+  "files": [
+    {
+      "file": "一般事项.pdf",
+      "pages": 2,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 340,
+          "images": 3,
+          "paths": 15
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 30,
+          "images": 4,
+          "paths": 16
+        }
+      ],
+      "size": 65267,
+      "sha256": "01e8f13f6242cd0736a87a8d0b45a01662cdabd9de1aa843ef256b6d6d84d1fb"
+    },
+    {
+      "file": "内部/车身维修.pdf",
+      "pages": 6,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 47,
+          "images": 1,
+          "paths": 8
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 42,
+          "images": 1,
+          "paths": 8
+        },
+        {
+          "page": 3,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 42,
+          "images": 1,
+          "paths": 8
+        },
+        {
+          "page": 4,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 116,
+          "images": 7,
+          "paths": 80
+        },
+        {
+          "page": 5,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 232,
+          "images": 18,
+          "paths": 216
+        },
+        {
+          "page": 6,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 62,
+          "images": 5,
+          "paths": 72
+        }
+      ],
+      "size": 820623,
+      "sha256": "f4eb0bbf114fe3d7bff48e7c292f9ffd8e1ee3948548df8ebb8459dba544e764"
+    },
+    {
+      "file": "前车身/车身维修.pdf",
+      "pages": 5,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 49,
+          "images": 1,
+          "paths": 8
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 43,
+          "images": 1,
+          "paths": 8
+        },
+        {
+          "page": 3,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 43,
+          "images": 1,
+          "paths": 8
+        },
+        {
+          "page": 4,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 106,
+          "images": 7,
+          "paths": 80
+        },
+        {
+          "page": 5,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 110,
+          "images": 10,
+          "paths": 120
+        }
+      ],
+      "size": 697390,
+      "sha256": "3c6cdad9e8c5302f2f355f33d08c62019e188a160520339fa89ef9999121bffd"
+    },
+    {
+      "file": "后车身/车身维修.pdf",
+      "pages": 2,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 107,
+          "images": 7,
+          "paths": 80
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 30,
+          "images": 2,
+          "paths": 24
+        }
+      ],
+      "size": 245729,
+      "sha256": "c00c3d51fbc5f5f44068359581753f7b806ef893a80b1ad75654e410b83e761f"
+    },
+    {
+      "file": "车身侧面/车身维修.pdf",
+      "pages": 2,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 107,
+          "images": 7,
+          "paths": 80
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 83,
+          "images": 6,
+          "paths": 72
+        }
+      ],
+      "size": 252380,
+      "sha256": "f3bb897d40e359ac59d1ef9da7289136971a2b35ae3cd661f83c5e8bacf9f3b6"
+    },
+    {
+      "file": "车身底部/车身维修.pdf",
+      "pages": 3,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 63,
+          "images": 1,
+          "paths": 11
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 117,
+          "images": 7,
+          "paths": 80
+        },
+        {
+          "page": 3,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 89,
+          "images": 7,
+          "paths": 84
+        }
+      ],
+      "size": 360072,
+      "sha256": "4ba21f93b46569a3a1e325e19131917e51d3a00aeb2e8872ac80f3643bbbd304"
+    },
+    {
+      "file": "车身面板间隙/车身维修.pdf",
+      "pages": 2,
+      "page_inventory": [
+        {
+          "page": 1,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 68,
+          "images": 2,
+          "paths": 24
+        },
+        {
+          "page": 2,
+          "size": [
+            595.0,
+            842.0
+          ],
+          "native_chars": 40,
+          "images": 2,
+          "paths": 24
+        }
+      ],
+      "size": 128071,
+      "sha256": "ec09f409350b92b21278fdaff6db9dcce78748a2d4eb1dd48de3c758eef6e3b4"
+    }
+  ],
+  "count": 7,
+  "pages": 22,
+  "bytes": 2569532
+}

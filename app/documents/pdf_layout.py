@@ -4,6 +4,7 @@ import math
 import re
 
 from app.documents.pdf_types import PdfSegment
+from app.documents.run_metrics import measure
 
 
 def union(boxes):
@@ -37,7 +38,34 @@ def reading_order(blocks):
     return ordered
 
 
+@measure('segmentation_reassembly')
 def group_spans(page, spans, max_chars):
+    from app.documents.pdf_ocr_policy import protected_kind
+    def same_region(a, b):
+        # Grid cells are assigned before grouping: adjacent rows/columns must
+        # not become one logical string that never existed in the PDF.
+        enclosed={'table_cell','warning'}
+        if a.region_kind in enclosed or b.region_kind in enclosed:
+            return (a.region_kind==b.region_kind and a.region_key is not None
+                    and b.region_key is not None and a.region_key[:3]==b.region_key[:3])
+        return True
+
+    def hanging_continuation(block,line):
+        # A Latin bullet can be larger than CJK glyphs in its hanging-indent
+        # continuation. Require the same enclosed cell and an unfinished item;
+        # ordinary paragraphs retain their original style boundary.
+        return (block.region_kind in {'table_cell','warning'} and same_region(block,line)
+                and re.match(r'^\s*[•●▪]\s',block.text)
+                and not re.search(r'[。.!?！？]\s*$',block.text)
+                and max(block.font_size,line.font_size)/min(block.font_size,line.font_size)<=1.25)
+
+    def compatible_line_font(block,line):
+        return abs(block.font_size-line.font_size)<=line.font_size*.12 or hanging_continuation(block,line)
+
+    def compatible_indent(block,line):
+        return (abs(block.bbox[0]-line.bbox[0])<=line.font_size*.6
+                or hanging_continuation(block,line)
+                and 0<=line.bbox[0]-block.bbox[0]<=max(block.font_size,line.font_size)*.8)
     # Cluster baselines before x ordering: CJK/Latin may use different font
     # sizes and a slightly different baseline inside the same physical line.
     rows = []
@@ -53,7 +81,7 @@ def group_spans(page, spans, max_chars):
         line = None
         for span in sorted(row, key=lambda s: s.bbox[0]):
             gap = span.bbox[0] - line.bbox[2] if line else 999
-            if (line and span.rotation == line.rotation == 0 and -2 <= gap <= max(line.font_size, span.font_size) * .9
+            if (line and same_region(line, span) and span.rotation == line.rotation == 0 and -2 <= gap <= max(line.font_size, span.font_size) * .9
                     and span.color == line.color and max(span.font_size, line.font_size) / min(span.font_size, line.font_size) < 1.5):
                 space = ' ' if gap > line.font_size * .3 and not line.text.endswith(' ') and not span.text.startswith(' ') else ''
                 line.text += space + span.text
@@ -66,10 +94,11 @@ def group_spans(page, spans, max_chars):
     blocks = []
     for line in sorted(lines, key=lambda s: (-s.bbox[3], s.bbox[0])):
         candidates = [b for b in blocks if not re.match(r'^\s*(?:\d+[.)、]|[•●▪–-]\s)', line.text)
+                      and same_region(b, line) and not protected_kind(b.text) and not protected_kind(line.text)
                       and b.rotation == line.rotation == 0
-                      and abs(b.bbox[0] - line.bbox[0]) <= line.font_size * .6
+                      and compatible_indent(b,line)
                       and 0 <= b.bbox[1] - line.bbox[3] <= line.font_size * .9
-                      and abs(b.font_size - line.font_size) <= line.font_size * .12
+                      and compatible_line_font(b,line)
                       and b.color == line.color and len(b.text) + len(line.text) < max_chars]
         if candidates:
             block = min(candidates, key=lambda b: b.bbox[1] - line.bbox[3])

@@ -1,0 +1,34 @@
+{
+  "verdict": "NMT SCHEDULER REJECTED",
+  "reason": "Captured exact-output prerequisite failed at batch2/4/8",
+  "baseline": {
+    "run_id": "2bf4fd0f345e",
+    "wall_seconds": 350.88835029999973,
+    "translated": 3,
+    "failed_source_preserved": 2,
+    "fatal": 0
+  },
+  "final": {
+    "status": "NOT_RUN",
+    "reason": "Only permitted after accepted exact replay; no repeat baseline or no-op final"
+  },
+  "production_restored_exact": true,
+  "overall_speedup": null,
+  "wall_reduction_percent": null,
+  "unique_pdf": 5,
+  "measured_baseline_runs": 1,
+  "measured_final_runs": 0,
+  "broader_pdf_runs": 0,
+  "prototype_tests_passed": 51,
+  "final_checks": {
+    "all_eight_artifacts": true,
+    "production_exact_baseline": true,
+    "source_sha": true,
+    "sample_sha": true,
+    "dictionaries": true,
+    "baseline_runs": 1,
+    "final_runs": 0,
+    "no_after_directory": true,
+    "no_runtime_scheduler": true
+  }
+}

@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Iterable
 import os
 
-from PySide6.QtCore import QSize, Qt
+from PySide6.QtCore import QSize, Qt, QObject, Signal
 from PySide6.QtWidgets import (
     QApplication,
     QButtonGroup, QCheckBox, QComboBox, QDialog, QFileDialog, QFormLayout, QFrame, QHBoxLayout, QLabel,
@@ -12,11 +12,26 @@ from PySide6.QtWidgets import (
 )
 
 from app.gui.widgets.language_combo import language_icon
-from app.gui.widgets.translation_mode import ModeRequirementsCombo
 from app.services.settings_service import SettingsService
 from app.services.hardware_profile_service import HardwareProfileService
 from app.gui.styles.theme_manager import ThemeManager
 from app.services.translation_preferences import TranslationPreferences
+
+from app.localization.widgets import QCheckBox, QComboBox, QDialog, QFileDialog, QFormLayout, QLabel, QListWidget, QPushButton
+
+
+class HardwareDetection(QObject):
+    completed = Signal(object, bool)
+
+    def run(self):
+        from app.engine.runtime.device_manager import DeviceManager
+        service = HardwareProfileService()
+        hardware = service.detect()
+        try:
+            service.save(hardware)
+        except OSError:
+            pass  # A read-only settings folder does not invalidate hardware detection.
+        self.completed.emit(hardware, DeviceManager().gpu_available())
 
 
 class SettingsDialog(QDialog):
@@ -29,6 +44,8 @@ class SettingsDialog(QDialog):
         super().__init__(parent)
         self.settings = settings or SettingsService()
         self.preferences = preferences or TranslationPreferences(self.settings, self)
+        from app.localization import localization, saved_locale
+        localization.use(saved_locale(self.settings))
         self.setWindowTitle("Настройки TreeTranslate")
         self.setMinimumSize(900, 620)
         self.resize(980, 690)
@@ -144,7 +161,7 @@ class SettingsDialog(QDialog):
             add_language = value == "Добавить язык к имени"
             self.settings.save_value("general/output_template", "{name}_{lang}" if add_language else "{name}")
             preview.setText("Пример: Manual_RU" if add_language else "Пример: Manual")
-        naming.currentTextChanged.connect(update_naming_mode)
+        naming.currentIndexChanged.connect(lambda: update_naming_mode(naming.currentText()))
         update_naming_mode(naming.currentText())
         naming_box = QVBoxLayout()
         naming_box.addWidget(naming)
@@ -170,7 +187,7 @@ class SettingsDialog(QDialog):
     def _language_page(self) -> QWidget:
         page, layout, _ = self._page(
             "Язык интерфейса",
-            "Выберите язык приложения. Пока выбор сохраняется как настройка-заглушка.",
+            "Выберите язык приложения. Изменения применяются сразу.",
         )
         languages = (
             "Русский",
@@ -182,7 +199,8 @@ class SettingsDialog(QDialog):
             "中文",
             "日本語",
         )
-        selected_language = str(self.settings.value("general/ui_language", "Русский"))
+        from app.localization import LOCALES, localization, saved_locale
+        selected_language = LOCALES[saved_locale(self.settings)]
         self.language_group = QButtonGroup(self)
         self.language_group.setExclusive(True)
         for language in languages:
@@ -194,7 +212,7 @@ class SettingsDialog(QDialog):
             button.setMinimumHeight(44)
             button.setProperty("language", language)
             button.clicked.connect(
-                lambda checked, value=language: checked and self.settings.save_value("general/ui_language", value)
+                lambda checked, value=language: checked and self._change_locale(value)
             )
             self.language_group.addButton(button)
             layout.addWidget(button)
@@ -203,109 +221,63 @@ class SettingsDialog(QDialog):
         layout.addStretch()
         return page
 
+    def _change_locale(self, label):
+        from app.localization import LOCALES, localization
+        locale = next(key for key,value in LOCALES.items() if value == label)
+        self.settings.save_value('general/ui_language', locale)
+        self.settings.sync()
+        localization.use(locale)
+
     def _performance_page(self) -> QWidget:
         page, layout, form = self._page(
             "Производительность",
-            "Полный контроль нагрузки хранится только на этом компьютере. По умолчанию все параметры выбираются автоматически.",
+            "Auto выбирает подходящее устройство. CPU и GPU задают устройство явно.",
         )
-        self.performance_mode = ModeRequirementsCombo()
-        self.performance_mode.setObjectName("performanceMode")
-        self.performance_mode.set_clean_mode(self.preferences.profile)
-        self.performance_mode.currentIndexChanged.connect(
-            lambda: self.preferences.set_profile(self.performance_mode.clean_mode())
-        )
-        logical_cores = max(1, os.cpu_count() or 1)
-        thread_options = ["Автоматически", *[str(value) for value in range(1, logical_cores + 1)]]
         self.device_combo = self._combo("performance/device", self.preferences.device, ["Auto", "CPU", "GPU"])
         self.device_combo.currentTextChanged.connect(self.preferences.set_device)
         self.preferences.device_changed.connect(self._set_device)
-        self.preferences.profile_changed.connect(self._set_profile)
-        self.cpu_threads_combo = self._combo("performance/cpu_threads", "Автоматически", thread_options)
-        self.gpu_combo = self._combo("performance/gpu", "Автоматически", ["Автоматически", "Отключено", "Предпочтительно", "Обязательно"])
-        self.ram_combo = self._combo("performance/ram", "Автоматически", ["Автоматически", "2 GB", "4 GB", "6 GB", "8 GB", "12 GB", "16 GB", "24 GB", "32 GB", "48 GB", "64 GB"])
-        self.vram_combo = self._combo("performance/vram", "Автоматически", ["Автоматически", "1 GB", "2 GB", "4 GB", "6 GB", "8 GB", "10 GB", "12 GB", "16 GB", "24 GB"])
+        form.addRow("Устройство обработки", self.device_combo)
         self.hardware_value = QLabel("Нажмите «Определить оборудование»", objectName="hardwareValue")
         self.hardware_value.setWordWrap(True)
-        self.recommendation_value = QLabel("Будет рассчитан после анализа", objectName="hardwareValue")
-        self.recommendation_value.setWordWrap(True)
-        form.addRow("Режим перевода", self.performance_mode)
-        form.addRow("Устройство", self.device_combo)
-        form.addRow("Потоки CPU", self.cpu_threads_combo)
-        form.addRow("Использование GPU", self.gpu_combo)
-        form.addRow("Ограничение RAM", self.ram_combo)
-        form.addRow("Ограничение VRAM", self.vram_combo)
-        self._add_checks(layout, [
-            self._check("performance/unload_model", "Освобождать модель из памяти после простоя", True),
-            self._check("performance/reduce_load", "Автоматически снижать нагрузку при нехватке памяти", True),
-        ])
-        form.addRow("Ваше оборудование", self.hardware_value)
-        form.addRow("Рекомендуемый профиль", self.recommendation_value)
-        recommend = QPushButton("Определить оборудование")
-        recommend.setObjectName("hardwareRecommendation")
-        recommend.clicked.connect(self._show_hardware_recommendation)
-        layout.addWidget(recommend, alignment=Qt.AlignmentFlag.AlignLeft)
-        note = QLabel(
-            "Анализ только показывает предварительную рекомендацию. В AW 0.4 работают выбор устройства, "
-            "профиль, потоки CPU и выгрузка после простоя. Лимиты RAM/VRAM и снижение нагрузки пока не применяются.",
-            objectName="secondary",
-        )
-        note.setWordWrap(True)
-        layout.addWidget(note)
+        form.addRow("Оборудование", self.hardware_value)
+        detect = self.detect_button = QPushButton("Определить оборудование", objectName="hardwareDetection")
+        detect.clicked.connect(self._show_hardware_recommendation)
+        layout.addWidget(detect, alignment=Qt.AlignmentFlag.AlignLeft)
         layout.addStretch()
-        saved_hardware = HardwareProfileService().load()
-        if saved_hardware:
-            self._display_hardware_profile(saved_hardware)
+        saved = HardwareProfileService().load()
+        if saved:
+            self._display_hardware_profile(saved)
         return page
 
-    def _set_device(self, value: str) -> None:
-        if hasattr(self, "device_combo") and self.device_combo.currentText() != value:
-            self.device_combo.setCurrentText(value)
+    def _set_device(self, value):
+        self.device_combo.setCurrentText(value)
 
-    def _set_profile(self, value: str) -> None:
-        if hasattr(self, "performance_mode") and self.performance_mode.clean_mode() != value:
-            self.performance_mode.set_clean_mode(value)
+    def _show_hardware_recommendation(self):
+        from threading import Thread
+        self.detect_button.setEnabled(False)
+        worker = self._hardware_worker = HardwareDetection()
+        worker.completed.connect(self._hardware_detected)
+        Thread(target=worker.run, daemon=True, name='hardware-detection').start()
 
-    def _show_hardware_recommendation(self) -> None:
-        service = HardwareProfileService()
-        hardware = service.detect()
-        service.save(hardware)
-        self._display_hardware_profile(hardware)
+    def _hardware_detected(self, hardware, available):
+        self.detect_button.setEnabled(True)
+        self._display_hardware_profile(hardware, available)
 
-    def _display_hardware_profile(self, hardware) -> None:
-        recommendation = HardwareProfileService.recommend(hardware)
-        ram = f"{hardware.ram_gb} ГБ" if hardware.ram_gb else "не определена"
-        vram = f"{hardware.vram_gb} ГБ" if hardware.vram_gb else "не определена"
+    def _display_hardware_profile(self, hardware, cuda_available=None):
+        ram = str(hardware.ram_gb) + " GB" if hardware.ram_gb else "Не определено"
+        vram = str(hardware.vram_gb) + " GB" if hardware.vram_gb else "Не определено"
+        cores = hardware.logical_cores or 'Не определено'
+        from app.engine.runtime.device_manager import DeviceManager
+        available = "Доступно" if (DeviceManager().gpu_available() if cuda_available is None else cuda_available) else "Недоступно"
         self.hardware_value.setText(
-            f"CPU: {hardware.cpu}\n"
-            f"Логических потоков: {hardware.logical_cores}\n"
-            f"RAM: {ram}\n"
-            f"GPU: {hardware.gpu}\n"
-            f"VRAM: {vram}"
-        )
-        self.recommendation_value.setText(
-            f"Устройство: {recommendation.device}\n"
-            f"Профиль: {recommendation.profile}\n"
-            f"Потоки CPU: {recommendation.cpu_threads}\n"
-            f"Ограничение RAM: {recommendation.ram_limit}\n"
-            f"Ограничение VRAM: {recommendation.vram_limit}"
-        )
+            f"CPU: {hardware.cpu}\nЛогических потоков: {cores}\nRAM: {ram}\n"
+            f"GPU: {hardware.gpu}\nVRAM: {vram}\nCUDA: {available}")
 
     def _interface_page(self) -> QWidget:
         page, layout, form = self._page("Интерфейс", "Внешний вид и отображение прогресса.")
-        theme = self._combo("interface/theme", "Тёмная", ["Тёмная", "Системная"])
-        theme.currentTextChanged.connect(
-            lambda value: ThemeManager(QApplication.instance(), self.settings).apply(value)
-        )
-        form.addRow("Тема", theme)
-        accent = QComboBox()
-        accent.addItem("Фирменный зелёный TreeTranslate")
-        accent.setEnabled(False)
-        form.addRow("Акцентный цвет", accent)
         self._add_checks(layout, [
-            self._check("interface/animations", "Анимации интерфейса", True),
             self._check("interface/eta", "Показывать расчёт оставшегося времени", True),
             self._check("interface/detailed_progress", "Показывать подробный прогресс", True),
-            self._check("interface/extensions", "Показывать расширения файлов", True),
         ])
         layout.addStretch()
         return page

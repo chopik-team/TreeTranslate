@@ -6,6 +6,8 @@ from PySide6.QtWidgets import QComboBox
 
 from app.config.paths import ICONS_DIR
 
+from app.localization.widgets import QComboBox
+
 
 LANGUAGE_ICON_FILES = {
     "Русский": "language_ru.png",

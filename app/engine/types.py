@@ -34,6 +34,13 @@ class TranslationRequest:
     performance_profile: PerformanceProfile = PerformanceProfile.AUTOMATIC
     request_id: str = field(default_factory=lambda: uuid4().hex)
     cpu_threads: int | None = None
+    domain: str = 'general'
+    context: str = ''
+    document_type: str = ''
+    context_profile: object = None
+    knowledge_snapshot: object = None
+    segment_type: str = ''
+    context_router: object = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -49,6 +56,12 @@ class TranslationResult:
     request_id: str
     model_ids: tuple[str, ...] = ()
     compute_type: str = "none"
+    knowledge_source: str = 'model'
+    glossary_hits_count: int = 0
+    pack_ids: tuple[str, ...] = ()
+    domain: str = 'general'
+    constraint_status: str = 'none'
+    question_kind: str = ''
 
 
 @dataclass(frozen=True, slots=True)

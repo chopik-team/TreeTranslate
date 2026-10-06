@@ -1,0 +1,56 @@
+{
+  "status": "REJECTED_AND_ROLLED_BACK",
+  "prototype": "rejected_prototype.zip",
+  "production_enabled": false,
+  "cause": "DocumentJob loops synchronously: classify -> lookup_direct -> protected representation -> Knowledge/Glossary -> Router selects attempt -> Runtime.run -> CT2 -> placeholder restoration -> output guards -> serial retries/fallback -> next segment.",
+  "dependency_boundary": "Only first immutable routed model attempt before original circuit check can enter frontier. Dependent guard/placeholder retry/fallback cannot enter same frontier. Known-only guard also stops admission until canonical commit.",
+  "design": "Bounded intra-document suspended continuations on a persistent pool; only ONE semantic owner active; one native owner; canonical resume; no cross-document concurrency or artificial fill wait.",
+  "envelope": [
+    "request_id",
+    "document_sequence_id",
+    "segment_sequence_id",
+    "backend",
+    "model_root",
+    "device",
+    "source_language",
+    "target_language",
+    "prepared_source",
+    "frozen_options",
+    "fallback_kind"
+  ],
+  "compatibility": "Same backend/model/source-target/options/device/compute/beam/input-output limits/threads/fallback kind. Exact source arrays and CT2 kwargs retained except expanded target_prefix.",
+  "limits": {
+    "max_sequences": 8,
+    "max_source_tokens": 256,
+    "max_short_sequence_tokens": 32,
+    "max_prepared_bytes": 1048576
+  },
+  "hardware": "Existing PipelineCapabilities; conservative residency/reserve; CPU, low RAM/VRAM or pressure reduces 8/4/2/1 without quality option changes.",
+  "errors": "Batch-level error replays first singleton; later owners recheck original breaker/device/fallback. Per-item guard and decode-limit failure affects only owner. Cancellation wakes/discards suspended continuations.",
+  "targeted_tests": {
+    "passed": 51,
+    "failures": 0,
+    "errors": 0,
+    "duration_seconds": 33.2,
+    "scheduler_cases": 20,
+    "coverage": [
+      "1/2/4/8",
+      "Unicode and Chinese",
+      "mixed lengths",
+      "IDs/numbers/placeholders",
+      "empty/noise",
+      "near input-token limit",
+      "one failing neighbor",
+      "fallback",
+      "circuit recheck",
+      "guard retry",
+      "canonical order",
+      "known guard boundary",
+      "cancel before/native/preparation wait",
+      "depth1/2 contexts",
+      "CPU/low VRAM/pressure"
+    ]
+  },
+  "veto": "Broader captured native replay fails even batch2. No supported ceiling >1 proven. Changing models, compute type, beam or decoding to repair would cross frozen scope.",
+  "production_restored_exact": true
+}

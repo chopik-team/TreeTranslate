@@ -2,6 +2,7 @@ import os
 from dataclasses import replace
 from threading import Event, get_ident
 from time import monotonic
+from pathlib import Path
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 from PySide6.QtCore import QSettings
@@ -67,7 +68,7 @@ def test_service_coalesces_pending_requests_and_emits_on_gui_thread():
     assert engine.close_thread == engine.threads[0]
 
 
-def test_edit_clear_and_cancel_hold_session_until_native_call_finishes():
+def test_edit_clear_and_cancel_hold_session_until_native_call_finishes(tmp_path, monkeypatch):
     app = QApplication.instance() or QApplication([])
     engine = SlowEngine()
     window = MainWindow(translation_service=HybridTranslationService(engine=engine))
@@ -84,6 +85,14 @@ def test_edit_clear_and_cancel_hold_session_until_native_call_finishes():
     engine.release.set()
     wait_for(lambda: not window.sessions.is_active("text"))
     assert window.text_page.result.editor.toPlainText() == ""
+    # A real file job requires a selected document. Keep the executor mocked:
+    # this test checks session exclusion, not the document translation pipeline.
+    from app.documents.scanner import SourceFile, ScanResult
+    from app.models.file_item import FileItem
+    path=tmp_path/'selected.docx';path.write_bytes(b'fixture')
+    window.translation.service.files.scan_result=ScanResult(files=(SourceFile(path,None,Path(path.name),7),))
+    window.file_page.file_tree.populate(FileItem(path.name,path=str(path)))
+    monkeypatch.setattr(window.translation.service,'start',lambda:None)
     window.translation._start_translation()
     assert window.sessions.is_active("file")
     window.close()

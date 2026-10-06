@@ -1,0 +1,35 @@
+ M CHANGELOG.md
+ M README.md
+ M app/config/constants.py
+ M app/controllers/translation_ui_controller.py
+ M app/documents/job.py
+ M app/engine/factory.py
+ M app/engine/types.py
+ M app/gui/dialogs/changelog_dialog.py
+ M app/services/hybrid_translation_service.py
+ M docs/NEXT_CYCLE.md
+ M docs/qa/aw04-completion.png
+ M docs/qa/aw04-dictionary.png
+ M docs/qa/aw04-game.png
+ M docs/qa/aw04-real-text.png
+ M tools/smoke_lexical_ui.py
+ M tools/smoke_translation_ui.py
+?? app/glossary/
+?? app/translation_memory/
+?? assets/config/glossary.json
+?? assets/config/translation_memory.json
+?? docs/AW0.7.1_GLOSSARY_REPORT.md
+?? docs/AW0.7_TRANSLATION_MEMORY_REPORT.md
+?? docs/qa/aw07/
+?? docs/qa/aw071/
+?? tests/fixtures/glossary/
+?? tests/test_glossary.py
+?? tests/test_glossary_integration.py
+?? tests/test_translation_memory.py
+?? tests/test_translation_memory_documents.py
+?? tools/benchmark_glossary.py
+?? tools/benchmark_translation_memory.py
+?? tools/build_glossary_pack.py
+?? tools/glossary.py
+?? tools/probe_glossary_placeholders.py
+?? tools/translation_memory.py

@@ -1,0 +1,232 @@
+{
+  "version": "0.81",
+  "review_state": "VERIFIED",
+  "provenance": "Existing independently authored AW0.81 command patterns and incompatible-action pairs; moved without changing behavior.",
+  "patterns": {
+    "REMOVE": "сним(?:ите|ать|ай(?:те)?)|демонтируйте|удал(?:ите|ять)",
+    "CUT": "(?:от|раз|пере|об)режьте|(?:от|раз|пере)резать",
+    "INSTALL": "установ(?:ите|ить)|монтируйте",
+    "CONNECT": "(?:под)?соедин(?:ите|ить)|подключ(?:ите|ить)",
+    "DISCONNECT": "отсоедин(?:ите|ить)|отключ(?:ите|ить)|разъедин(?:ите|ить)",
+    "OPEN": "откройте|откры(?:ть|вайте)",
+    "CLOSE": "закройте|закры(?:ть|вайте)|замкните|замкнуть",
+    "START": "запустите|запускать|запустить",
+    "STOP": "останов(?:ите|ить)|заглуш(?:ите|ить)",
+    "TIGHTEN": "затяните|затягивайте|затянуть",
+    "LOOSEN": "ослаб(?:ьте|ить)|отпустите",
+    "FILL": "залейте|долейте|добав(?:ьте|ить)",
+    "DRAIN": "слейте|сливайте|слить",
+    "PRESS": "нажмите|нажимайте|нажать",
+    "RELEASE": "отпустите|освобод(?:ите|ить)",
+    "PULL": "вытяните|тяните|потяните",
+    "PUSH": "толкните|толкайте|вставьте|вставить|протолкните",
+    "INCREASE": "увеличьте|увеличить|повысьте|повысить",
+    "DECREASE": "уменьшите|уменьшить|снизьте|снизить",
+    "LOCK": "заблокируйте|заблокировать|зафиксируйте",
+    "UNLOCK": "разблокируйте|разблокировать",
+    "ENABLE": "активируйте|активировать",
+    "DISABLE": "деактивируйте|деактивировать",
+    "APPLY_POWER": "(?:подайте|подать|включите)\\s+(?:электро)?питание",
+    "REMOVE_POWER": "(?:отключите|снимите|отключить|снять)\\s+(?:электро)?питание|обесточьте|обесточить",
+    "CHECK": "проверьте|проверить|проверяйте",
+    "INSPECT": "осмотрите|осмотреть|осматривайте",
+    "REPLACE": "замените|заменить|заменяйте",
+    "CLEAN": "очистите|очистить|очищайте",
+    "MEASURE": "измерьте|измерить|измеряйте",
+    "ADJUST": "отрегулируйте|отрегулировать|регулируйте",
+    "ALIGN": "совместите|совместить|совмещайте|выровняйте|выровнять",
+    "VERIFY": "проверьте|проверить|проверяйте|подтвердите|подтвердить",
+    "WAIT": "дождитесь|дождаться|подождите|подождать|ждите|ждать",
+    "REMOVE_AIR": "удал(?:ите|ить)\\s+воздух|прокачайте|прокачать",
+    "AVOID": "избегайте|избегать",
+    "DO_NOT": "не\\s+(?:выполняйте|выполнять)",
+    "ENSURE": "убедитесь|убедиться|обеспечьте|обеспечить",
+    "IDLE": "холостой\\s+ход|на\\s+холост(?:ом|ых)\\s+(?:ходу|оборотах)",
+    "UNSCREW": "выверните|вывернуть|вывинтите|вывинтить|отвинтите|отвинтить",
+    "ROTATE": "поверните|повернуть|вращайте|вращать",
+    "PRY_REMOVE": "подденьте\\s+и\\s+снимите|поддеть\\s+и\\s+снять"
+  },
+  "incompatible": {
+    "REMOVE": [
+      "INSTALL",
+      "CUT",
+      "PRY_REMOVE"
+    ],
+    "INSTALL": [
+      "REMOVE"
+    ],
+    "CONNECT": [
+      "DISCONNECT"
+    ],
+    "DISCONNECT": [
+      "CONNECT"
+    ],
+    "OPEN": [
+      "CLOSE"
+    ],
+    "CLOSE": [
+      "OPEN"
+    ],
+    "START": [
+      "STOP"
+    ],
+    "STOP": [
+      "START"
+    ],
+    "TIGHTEN": [
+      "LOOSEN"
+    ],
+    "LOOSEN": [
+      "TIGHTEN"
+    ],
+    "FILL": [
+      "DRAIN"
+    ],
+    "DRAIN": [
+      "FILL"
+    ],
+    "PRESS": [
+      "RELEASE"
+    ],
+    "RELEASE": [
+      "PRESS",
+      "LOCK"
+    ],
+    "PULL": [
+      "PUSH"
+    ],
+    "PUSH": [
+      "PULL"
+    ],
+    "INCREASE": [
+      "DECREASE"
+    ],
+    "DECREASE": [
+      "INCREASE"
+    ],
+    "LOCK": [
+      "UNLOCK",
+      "RELEASE"
+    ],
+    "UNLOCK": [
+      "LOCK"
+    ],
+    "ENABLE": [
+      "DISABLE"
+    ],
+    "DISABLE": [
+      "ENABLE"
+    ],
+    "APPLY_POWER": [
+      "REMOVE_POWER"
+    ],
+    "REMOVE_POWER": [
+      "APPLY_POWER"
+    ],
+    "PRY_REMOVE": [
+      "REMOVE",
+      "INSTALL",
+      "CUT",
+      "DISCONNECT"
+    ],
+    "CHECK": [
+      "REPLACE",
+      "REMOVE",
+      "CUT"
+    ],
+    "INSPECT": [
+      "REPLACE",
+      "REMOVE",
+      "CUT"
+    ],
+    "VERIFY": [
+      "REPLACE",
+      "REMOVE",
+      "CUT"
+    ],
+    "REPLACE": [
+      "CHECK",
+      "INSPECT",
+      "CLEAN"
+    ],
+    "MEASURE": [
+      "ADJUST",
+      "REPLACE",
+      "CUT"
+    ],
+    "ADJUST": [
+      "MEASURE",
+      "CUT"
+    ],
+    "CLEAN": [
+      "REPLACE",
+      "CUT"
+    ],
+    "UNSCREW": [
+      "TIGHTEN",
+      "INSTALL",
+      "CUT"
+    ],
+    "ROTATE": [
+      "CUT",
+      "REMOVE"
+    ]
+  },
+  "pattern_review": {
+    "reviewer": "Codex; not human-certified",
+    "revision": "AW0.81",
+    "scope": "Independently authored imperative/infinitive forms of existing 40 VERIFIED actions. CHECK and VERIFY share the authored imperative and are not distinguishable from that word alone. IDLE is a state; DO_NOT is a prohibition, not a physical command.",
+    "registry_actions_added": 0
+  },
+  "incompatible_review": {
+    "reviewer": "Codex; not human-certified",
+    "revision": "AW0.81",
+    "scope": "Explicit different operations must not substitute for each other. Source sequences with both operations retain the existing conservative exception; a word mention is not sufficient proof of source command role.",
+    "new_pairs": {
+      "CHECK": [
+        "REPLACE",
+        "REMOVE",
+        "CUT"
+      ],
+      "INSPECT": [
+        "REPLACE",
+        "REMOVE",
+        "CUT"
+      ],
+      "VERIFY": [
+        "REPLACE",
+        "REMOVE",
+        "CUT"
+      ],
+      "REPLACE": [
+        "CHECK",
+        "INSPECT",
+        "CLEAN"
+      ],
+      "MEASURE": [
+        "ADJUST",
+        "REPLACE",
+        "CUT"
+      ],
+      "ADJUST": [
+        "MEASURE",
+        "CUT"
+      ],
+      "CLEAN": [
+        "REPLACE",
+        "CUT"
+      ],
+      "UNSCREW": [
+        "TIGHTEN",
+        "INSTALL",
+        "CUT"
+      ],
+      "ROTATE": [
+        "CUT",
+        "REMOVE"
+      ]
+    },
+    "pry_review_sha256": "acb0c34f41500fbdef4bc792b20563aecb215d1f1277af99b68725866b94f9bf",
+    "rejected_global_pair": "REMOVE/DISCONNECT: independently validated only inside the proven command frame, not through flat mentions."
+  }
+}

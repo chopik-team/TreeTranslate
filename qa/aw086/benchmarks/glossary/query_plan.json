@@ -1,0 +1,888 @@
+{
+  "schema_changed": false,
+  "index_added": false,
+  "hot_queries": [
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\automotive-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\automotive-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\automotive-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\automotive-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\chemistry-engineering-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\chemistry-engineering-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\chemistry-engineering-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\chemistry-engineering-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\computer-hardware-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\computer-hardware-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\computer-hardware-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\computer-hardware-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electrical-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electrical-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electrical-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electrical-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electronics-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electronics-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electronics-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\electronics-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\industrial-safety-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\industrial-safety-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\industrial-safety-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\industrial-safety-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\manufacturing-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\manufacturing-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\materials-science-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\materials-science-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\materials-science-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\materials-science-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\measurement-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\measurement-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\measurement-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\measurement-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\mechanical-engineering-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\mechanical-engineering-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\metallurgy-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\metallurgy-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\metallurgy-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\metallurgy-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\software-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\software-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\software-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\software-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\technical-core-ru-zh-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\technical-core-ru-zh-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\technical-core-zh-ru-cc-by-4-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\technical-core-zh-ru-cc0-1-0.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    },
+    {
+      "store": "C:\\TreeTranslate\\assets\\knowledge\\aw083-body-repair-zh-ru.db",
+      "query": "SELECT e.*,a.term AS alias FROM aliases a JOIN entries e ON e.id=a.entry_id WHERE a.pair=? AND a.domain IN (?,?) AND a.hash IN (?,?,?) LIMIT ?",
+      "plan": [
+        [
+          4,
+          0,
+          56,
+          "SEARCH a USING PRIMARY KEY (pair=? AND domain=? AND hash=?)"
+        ],
+        [
+          44,
+          0,
+          45,
+          "SEARCH e USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      ]
+    }
+  ]
+}

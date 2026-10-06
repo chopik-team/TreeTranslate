@@ -1,0 +1,28 @@
+{
+  "entries": 301,
+  "inserted_this_run": 0,
+  "added_since_aw085": 60,
+  "types": {
+    "TERM": 133,
+    "COMPOUND": 121,
+    "FULL_SEGMENT": 12,
+    "PHRASE": 35
+  },
+  "subdomains": {
+    "body.body_measurement": 66,
+    "body.body_repair": 90,
+    "common": 54,
+    "body.panels": 24,
+    "body.structure": 21,
+    "body.doors": 27,
+    "suspension": 22,
+    "engine": 15,
+    "cooling": 24,
+    "electrical": 10,
+    "diagnostics": 5
+  },
+  "previous_translations_unchanged": true,
+  "bytes": 479232,
+  "sha256": "73ac69302a29f7f0358dc398fcf659288291a47500466f0cb7403f2d55a9d072",
+  "existing_template_noun_slots_added": 15
+}

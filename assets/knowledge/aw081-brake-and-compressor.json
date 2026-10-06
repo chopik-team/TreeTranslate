@@ -1,0 +1,656 @@
+{
+  "revision": "AW0.81",
+  "references_evaluation_only": true,
+  "review_source": "User answers 04, attachment 2ebbc4b3-7162-47b1-8e52-8f1d306750a5, 2026-10-04.",
+  "manuals": {
+    "brakes": {
+      "url": "https://www.helantra7.com/hyundai_elantra_cn7_repair_procedures-3545.html",
+      "verification": "User confirms earlier OEM pedal-stroke, test-drive and brake-drag wording. Codex page fetch unavailable; user technical review is authoritative."
+    },
+    "compressor": {
+      "url": "https://www.hkona.com/compressor_description_and_operation-1586.html",
+      "verification": "Fetched OEM service reproduction: rotating swash plate, variable displacement and ECV/heater & A/C control signal; Russian nomenclature approved by user."
+    }
+  },
+  "entries": [
+    {
+      "source": "制动行程",
+      "semantic_key": "brake_pedal_stroke",
+      "target": "ход педали тормоза",
+      "genitive": "хода педали тормоза",
+      "accusative": "ход педали тормоза",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "type": "PHRASE",
+      "semantic_role": "quantity",
+      "required_subdomains": [
+        "brakes"
+      ]
+    },
+    {
+      "source": "快速制动",
+      "semantic_key": "quick_brake_application",
+      "target": "быстрое нажатие педали тормоза",
+      "genitive": "быстрого нажатия педали тормоза",
+      "accusative": "быстрое нажатие педали тормоза",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "locative": "быстром нажатии педали тормоза",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation",
+      "required_subdomains": [
+        "brakes"
+      ]
+    },
+    {
+      "source": "缓慢制动",
+      "semantic_key": "slow_brake_application",
+      "target": "медленное нажатие педали тормоза",
+      "genitive": "медленного нажатия педали тормоза",
+      "accusative": "медленное нажатие педали тормоза",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "locative": "медленном нажатии педали тормоза",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation",
+      "required_subdomains": [
+        "brakes"
+      ]
+    },
+    {
+      "source": "试验运转期间",
+      "semantic_key": "brake_test_run",
+      "target": "во время пробной поездки",
+      "genitive": "во время пробной поездки",
+      "accusative": "во время пробной поездки",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation",
+      "required_subdomains": [
+        "brakes"
+      ],
+      "required_context_terms": [
+        "制动助力器"
+      ]
+    },
+    {
+      "source": "制动打滑",
+      "semantic_key": "brake_drag",
+      "target": "подтормаживание",
+      "genitive": "подтормаживания",
+      "accusative": "подтормаживание",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation",
+      "required_subdomains": [
+        "brakes"
+      ],
+      "required_context_terms": [
+        "制动踏板",
+        "制动钳"
+      ]
+    },
+    {
+      "source": "制动主缸",
+      "semantic_key": "brake_master_cylinder",
+      "target": "главный тормозной цилиндр",
+      "genitive": "главного тормозного цилиндра",
+      "accusative": "главный тормозной цилиндр",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "aliases": [
+        "制动总缸"
+      ]
+    },
+    {
+      "source": "漏油",
+      "semantic_key": "brake_fluid_leakage",
+      "target": "утечка тормозной жидкости",
+      "genitive": "утечки тормозной жидкости",
+      "accusative": "утечку тормозной жидкости",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "required_subdomains": [
+        "brakes"
+      ],
+      "required_context_terms": [
+        "制动总缸",
+        "制动主缸",
+        "制动软管",
+        "制动钳"
+      ]
+    },
+    {
+      "source": "机油泄漏",
+      "semantic_key": "brake_fluid_leakage",
+      "target": "утечка тормозной жидкости",
+      "genitive": "утечки тормозной жидкости",
+      "accusative": "утечку тормозной жидкости",
+      "subdomain": "brakes",
+      "manual": "brakes",
+      "required_subdomains": [
+        "brakes"
+      ],
+      "required_context_terms": [
+        "制动总缸",
+        "制动主缸",
+        "制动软管",
+        "制动钳"
+      ]
+    },
+    {
+      "source": "旋转斜盘",
+      "semantic_key": "swash_plate",
+      "target": "наклонный диск",
+      "genitive": "наклонного диска",
+      "accusative": "наклонный диск",
+      "subdomain": "hvac",
+      "manual": "compressor",
+      "instrumental": "наклонным диском"
+    },
+    {
+      "source": "可变旋转斜盘压缩机",
+      "semantic_key": "variable_swash_plate_compressor",
+      "target": "компрессор с регулируемым рабочим объёмом и наклонным диском",
+      "genitive": "компрессора с регулируемым рабочим объёмом и наклонным диском",
+      "accusative": "компрессор с регулируемым рабочим объёмом и наклонным диском",
+      "subdomain": "hvac",
+      "manual": "compressor"
+    },
+    {
+      "source": "外部控制的可变旋转斜盘压缩机",
+      "semantic_key": "externally_controlled_variable_swash_plate_compressor",
+      "target": "компрессор с внешним управлением и регулируемым рабочим объёмом",
+      "genitive": "компрессора с внешним управлением и регулируемым рабочим объёмом",
+      "accusative": "компрессор с внешним управлением и регулируемым рабочим объёмом",
+      "subdomain": "hvac",
+      "manual": "compressor"
+    },
+    {
+      "source": "压缩机",
+      "semantic_key": "ac_compressor",
+      "target": "компрессор",
+      "genitive": "компрессора",
+      "accusative": "компрессор",
+      "subdomain": "hvac",
+      "manual": "compressor"
+    },
+    {
+      "source": "活塞",
+      "semantic_key": "piston",
+      "target": "поршень",
+      "genitive": "поршня",
+      "accusative": "поршень",
+      "subdomain": "engine",
+      "manual": "compressor",
+      "subdomains": [
+        "engine",
+        "hvac"
+      ]
+    },
+    {
+      "source": "制冷剂排量",
+      "semantic_key": "refrigerant_displacement",
+      "target": "рабочий объём по хладагенту",
+      "genitive": "рабочего объёма по хладагенту",
+      "accusative": "рабочий объём по хладагенту",
+      "subdomain": "hvac",
+      "manual": "compressor",
+      "type": "PHRASE",
+      "semantic_role": "quantity"
+    },
+    {
+      "source": "加热器与空调控制单元的电信号",
+      "semantic_key": "heater_ac_control_unit_electrical_signal",
+      "target": "электрический сигнал блока управления отопителем и кондиционером",
+      "genitive": "электрического сигнала блока управления отопителем и кондиционером",
+      "accusative": "электрический сигнал блока управления отопителем и кондиционером",
+      "subdomain": "hvac",
+      "manual": "compressor",
+      "instrumental": "электрическим сигналом блока управления отопителем и кондиционером",
+      "type": "PHRASE",
+      "semantic_role": "diagnostic_relation"
+    },
+    {
+      "source": "空调系统",
+      "semantic_key": "air_conditioning_system",
+      "target": "система кондиционирования",
+      "genitive": "системы кондиционирования",
+      "accusative": "систему кондиционирования",
+      "subdomain": "hvac",
+      "manual": "compressor"
+    }
+  ],
+  "templates": [
+    {
+      "id": "aw081-compare-application-travel",
+      "source": "检查{X}和{Y}时,{Z}是否有区别。",
+      "target": "Сравните {Z} при {X} и {Y}.",
+      "forms": {
+        "X": "locative",
+        "Y": "locative",
+        "Z": "accusative"
+      },
+      "allowed_slots": [
+        "制动行程",
+        "快速制动",
+        "缓慢制动"
+      ],
+      "slot_allowed": {
+        "X": [
+          "快速制动",
+          "缓慢制动"
+        ],
+        "Y": [
+          "快速制动",
+          "缓慢制动"
+        ],
+        "Z": [
+          "制动行程"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-replace-on-difference",
+      "source": "如果检测到差异,则更换{X}。",
+      "target": "Если обнаружено различие, замените {X}.",
+      "forms": {
+        "X": "accusative"
+      },
+      "allowed_slots": [
+        "制动主缸",
+        "制动总缸"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动总缸",
+          "制动主缸"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-marked-brake-component",
+      "source": "{X}",
+      "target": "{X}",
+      "forms": {
+        "X": "nominative"
+      },
+      "allowed_slots": [
+        "制动助力器",
+        "制动软管"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动助力器",
+          "制动软管"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "COMPONENT_LABEL",
+        "HEADING",
+        "TABLE_CELL"
+      ],
+      "negative_relation": true,
+      "component_marker": true,
+      "capitalize": true
+    },
+    {
+      "id": "aw081-inspect-damage-or-leak",
+      "source": "检查是否有任何{X}或{Y}。",
+      "target": "Проверьте наличие {X} или {Y}.",
+      "forms": {
+        "X": "genitive",
+        "Y": "genitive"
+      },
+      "allowed_slots": [
+        "损坏",
+        "机油泄漏",
+        "漏油"
+      ],
+      "slot_allowed": {
+        "X": [
+          "损坏"
+        ],
+        "Y": [
+          "机油泄漏",
+          "漏油"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-replace-on-damage-or-leak",
+      "source": "如果存在{X}或发现{Y},则更换新的{Z}。",
+      "target": "При наличии {X} или обнаружении {Y} замените {Z} новыми.",
+      "forms": {
+        "X": "genitive",
+        "Y": "genitive",
+        "Z": "coordinated_nouns"
+      },
+      "allowed_slots": [
+        "制动软管",
+        "垫圈",
+        "损坏",
+        "机油泄漏",
+        "漏油"
+      ],
+      "slot_allowed": {
+        "X": [
+          "损坏"
+        ],
+        "Y": [
+          "漏油",
+          "机油泄漏"
+        ],
+        "Z": [
+          "制动软管",
+          "垫圈"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "list_cases": {
+        "Z": "accusative"
+      }
+    },
+    {
+      "id": "aw081-pedal-fault-evidence",
+      "source": "如果{X}工作不正常,则表示存在{Y}、{Z}或漏油。",
+      "target": "Если {X} работает ненормально, это указывает на {Y}, {Z} или утечку тормозной жидкости.",
+      "forms": {
+        "X": "nominative",
+        "Y": "accusative",
+        "Z": "accusative"
+      },
+      "allowed_slots": [
+        "制动打滑",
+        "制动踏板",
+        "损坏"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动踏板"
+        ],
+        "Y": [
+          "制动打滑"
+        ],
+        "Z": [
+          "损坏"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-replace-with-new",
+      "source": "用新的{X}更换。",
+      "target": "Замените {X} новым.",
+      "forms": {
+        "X": "accusative"
+      },
+      "allowed_slots": [
+        "制动钳"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动钳"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-brake-booster-test-drive",
+      "source": "制动,并检查在{X}的操作情况。",
+      "target": "Нажмите педаль тормоза и проверьте работу усилителя {X}.",
+      "forms": {
+        "X": "nominative"
+      },
+      "allowed_slots": [
+        "试验运转期间"
+      ],
+      "slot_allowed": {
+        "X": [
+          "试验运转期间"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-replace-if-not-working",
+      "source": "如果不能正常工作,请更换{X}。",
+      "target": "Если усилитель не работает нормально, замените {X}.",
+      "forms": {
+        "X": "accusative"
+      },
+      "allowed_slots": [
+        "制动助力器"
+      ],
+      "slot_allowed": {
+        "X": [
+          "制动助力器"
+        ]
+      },
+      "subdomains": [
+        "brakes"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true
+    },
+    {
+      "id": "aw081-compressor-power-unit",
+      "source": "{X}是{Y}的动力单元。",
+      "target": "{X} является силовым агрегатом {Y}.",
+      "forms": {
+        "X": "nominative",
+        "Y": "genitive"
+      },
+      "allowed_slots": [
+        "压缩机",
+        "空调系统"
+      ],
+      "slot_allowed": {
+        "X": [
+          "压缩机"
+        ],
+        "Y": [
+          "空调系统"
+        ]
+      },
+      "subdomains": [
+        "hvac"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "capitalize": true
+    },
+    {
+      "id": "aw081-rotating-plate-piston-motion",
+      "source": "{X}配备{Y},旋转时使得活塞往复运动,以此压缩{Z}。",
+      "target": "{X} оснащён {Y}, вращение которого вызывает возвратно-поступательное движение поршня для сжатия {Z}.",
+      "forms": {
+        "X": "nominative",
+        "Y": "instrumental",
+        "Z": "genitive"
+      },
+      "allowed_slots": [
+        "制冷剂",
+        "压缩机",
+        "旋转斜盘"
+      ],
+      "slot_allowed": {
+        "X": [
+          "压缩机"
+        ],
+        "Y": [
+          "旋转斜盘"
+        ],
+        "Z": [
+          "制冷剂"
+        ]
+      },
+      "subdomains": [
+        "hvac"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "capitalize": true
+    },
+    {
+      "id": "aw081-plate-angle-changes-displacement",
+      "source": "{X}控制{Y}的角度,改变{Z}。",
+      "target": "{X} регулирует угол {Y}, изменяя {Z}.",
+      "forms": {
+        "X": "nominative",
+        "Y": "genitive",
+        "Z": "accusative"
+      },
+      "allowed_slots": [
+        "制冷剂排量",
+        "可变旋转斜盘压缩机",
+        "旋转斜盘"
+      ],
+      "slot_allowed": {
+        "X": [
+          "可变旋转斜盘压缩机"
+        ],
+        "Y": [
+          "旋转斜盘"
+        ],
+        "Z": [
+          "制冷剂排量"
+        ]
+      },
+      "subdomains": [
+        "hvac"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "capitalize": true
+    },
+    {
+      "id": "aw081-external-compressor-control",
+      "source": "{X}通过ECV（电动控制阀）,根据{Y},改变{Z}的角度。",
+      "target": "{X} изменяет угол {Z} с помощью ECV (электрического управляющего клапана) в соответствии с {Y}.",
+      "forms": {
+        "X": "nominative",
+        "Y": "instrumental",
+        "Z": "genitive"
+      },
+      "allowed_slots": [
+        "加热器与空调控制单元的电信号",
+        "外部控制的可变旋转斜盘压缩机",
+        "旋转斜盘"
+      ],
+      "slot_allowed": {
+        "X": [
+          "外部控制的可变旋转斜盘压缩机"
+        ],
+        "Y": [
+          "加热器与空调控制单元的电信号"
+        ],
+        "Z": [
+          "旋转斜盘"
+        ]
+      },
+      "subdomains": [
+        "hvac"
+      ],
+      "types": [
+        "PROSE",
+        "PROCEDURE_STEP",
+        "WARNING",
+        "CONDITION"
+      ],
+      "negative_relation": true,
+      "capitalize": true
+    }
+  ]
+}

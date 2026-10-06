@@ -1,0 +1,31 @@
+{
+  "warm_backend": null,
+  "tm_cache_entries": 0,
+  "tm_path": "C:\\Users\\PC\\AppData\\Local\\CHOPIK Team\\TreeTranslate\\translation_memory.db",
+  "glossary_path": "C:\\Users\\PC\\AppData\\Local\\CHOPIK Team\\TreeTranslate\\glossary.db",
+  "tm_counters": {
+    "exact_hits": 0,
+    "normalized_hits": 0,
+    "placeholder_hits": 0,
+    "fuzzy_hits": 0,
+    "misses": 0,
+    "reused": 0
+  },
+  "glossary_counters": {
+    "hits": 0,
+    "full_segment_hits": 0,
+    "constraint_hits": 0,
+    "fallbacks": 0,
+    "placeholder_failures": 0
+  },
+  "backends": {
+    "argos": {
+      "translator_loaded": false,
+      "translators": 0
+    },
+    "m2m100": {
+      "translator_loaded": false,
+      "translators": 0
+    }
+  }
+}

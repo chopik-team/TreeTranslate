@@ -1,0 +1,29 @@
+{
+  "references": [
+    {
+      "path": "vendor/lexicon/lexicon.sqlite3",
+      "size": 316022784,
+      "sha256": "2176705a7b932cd1e4acd300f838cce7395eb88809acd42fee23dffb1fafe5b0",
+      "included_in_git": false
+    },
+    {
+      "path": "vendor/lexicon/manifest.json",
+      "size": 5721,
+      "sha256": "1249ee132914245f5f4a53ca48e883b0f29c9de5bddc0f76e9b86591038a818e",
+      "included_in_git": true
+    },
+    {
+      "path": "vendor/models/models_manifest.json",
+      "size": 11939,
+      "sha256": "88de8e896da68b9892e8f818d429ffea32dcb4f941769e103d3e71636e123cf6",
+      "included_in_git": true
+    },
+    {
+      "path": "vendor/model-metadata/ocr/models_manifest.json",
+      "size": 15433,
+      "sha256": "366a97ab7d7d36108e07e352b2a0567ce252c817572406e4ae312fbb9b08bb01",
+      "included_in_git": true
+    }
+  ],
+  "model_binaries": "References/checksums in the unchanged model manifests; verified by tools/verify_models.py"
+}

@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "builtin_enabled": true,
+  "user_enabled": true,
+  "full_segment_enabled": true,
+  "constraints_enabled": true,
+  "max_terms_per_segment": 128,
+  "max_term_length": 256,
+  "compiled_index_cache_size": 8,
+  "cache_size": 512,
+  "placeholder_policy": "ZXQ{:04d}QXZ",
+  "conflict_policy": "user_domain_priority_longest",
+  "max_candidates": 4096,
+  "max_lookup_fragments": 100000,
+  "busy_timeout_ms": 250
+}

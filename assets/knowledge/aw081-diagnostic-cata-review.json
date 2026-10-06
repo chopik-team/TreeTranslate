@@ -1,0 +1,94 @@
+{
+  "revision": "AW0.81",
+  "references_evaluation_only": true,
+  "review_origin": "CODEX_AUTHORISED_DIAGNOSTIC_REVIEW",
+  "review_source": "User authorises Diagnostic A development, 2026-10-04; unambiguous action/object semantics, no independent OEM certification.",
+  "manuals": {
+    "diagnostic": {
+      "verification": "Diagnostic A documents 5 and 9: lifting device, support location, bleed screw tightening, press and hold pedal."
+    }
+  },
+  "entries": [
+    {
+      "source": "千斤顶",
+      "target": "домкрат",
+      "genitive": "домкрата",
+      "accusative": "домкрат",
+      "semantic_key": "jack",
+      "subdomain": "engine",
+      "subdomains": [
+        "engine",
+        "transmission",
+        "common"
+      ],
+      "manual": "diagnostic"
+    },
+    {
+      "source": "油底壳",
+      "target": "масляный поддон",
+      "genitive": "масляного поддона",
+      "accusative": "масляный поддон",
+      "semantic_key": "engine_oil_pan",
+      "subdomain": "engine",
+      "subdomains": [
+        "engine"
+      ],
+      "manual": "diagnostic",
+      "aliases": [
+        "油盘"
+      ],
+      "alias_context_terms": {
+        "油盘": [
+          "千斤顶"
+        ]
+      }
+    },
+    {
+      "source": "变速驱动桥",
+      "target": "Коробка передач с главной передачей",
+      "genitive": "коробки передач с главной передачей",
+      "accusative": "коробку передач с главной передачей",
+      "semantic_key": "transaxle",
+      "subdomain": "common",
+      "subdomains": [
+        "common"
+      ],
+      "manual": "diagnostic",
+      "instrumental": "коробкой передач с главной передачей"
+    },
+    {
+      "source": "放气螺钉",
+      "target": "винт прокачки",
+      "genitive": "винта прокачки",
+      "accusative": "винт прокачки",
+      "semantic_key": "bleed_screw",
+      "subdomain": "brakes",
+      "subdomains": [
+        "brakes"
+      ],
+      "manual": "diagnostic"
+    },
+    {
+      "source": "制动液储液罐",
+      "target": "бачок тормозной жидкости",
+      "genitive": "бачка тормозной жидкости",
+      "accusative": "бачок тормозной жидкости",
+      "semantic_key": "brake_fluid_reservoir",
+      "subdomain": "brakes",
+      "subdomains": [
+        "brakes"
+      ],
+      "manual": "diagnostic",
+      "aliases": [
+        "储液箱"
+      ],
+      "alias_context_terms": {
+        "储液箱": [
+          "制动液"
+        ]
+      },
+      "locative": "бачке тормозной жидкости"
+    }
+  ],
+  "templates": []
+}

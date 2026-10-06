@@ -1,0 +1,1056 @@
+{
+  "steel": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "f56e99a687cde5fb653f9c2eaa2001c6c8f04bdec722817b186f63e31f111d01",
+      "concept_id": "cedict:f56e99a687cde5fb653f9c2eaa2001c6c8f04bdec722817b186f63e31f111d01",
+      "labels": {
+        "zh-hans": "白钢",
+        "zh-hant": "白鋼"
+      },
+      "aliases": {},
+      "definitions": [
+        "steel"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "78650625e1dbb4b7024c0f35260ad6ad7c3057a522399ff7267d3be67c05a3bd",
+      "concept_id": "cedict:78650625e1dbb4b7024c0f35260ad6ad7c3057a522399ff7267d3be67c05a3bd",
+      "labels": {
+        "zh-hans": "钢",
+        "zh-hant": "鋼"
+      },
+      "aliases": {},
+      "definitions": [
+        "steel"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "50c570d61f8a342de384e199a41bc6585cfd4d065352fd655ada493afd218b6a",
+      "concept_id": "cedict:50c570d61f8a342de384e199a41bc6585cfd4d065352fd655ada493afd218b6a",
+      "labels": {
+        "zh-hans": "钢材",
+        "zh-hant": "鋼材"
+      },
+      "aliases": {},
+      "definitions": [
+        "steel (as raw material)",
+        "steel sheets, bars, tubes, ingots, wire etc"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "5ee66599dcdee7c2648e67dcb6d1aec0f83ccde6b51e2c0d3826583ec4dffb71",
+      "concept_id": "cedict:5ee66599dcdee7c2648e67dcb6d1aec0f83ccde6b51e2c0d3826583ec4dffb71",
+      "labels": {
+        "zh-hans": "钢制",
+        "zh-hant": "鋼製"
+      },
+      "aliases": {},
+      "definitions": [
+        "made of steel",
+        "steel (bar, screw, product etc)"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "f3073d71fa2c68ec23af8e1ed4f77d5df6e8ddeab785e47e040d3326776fbd50",
+      "concept_id": "cedict:f3073d71fa2c68ec23af8e1ed4f77d5df6e8ddeab785e47e040d3326776fbd50",
+      "labels": {
+        "zh-hans": "钢铁",
+        "zh-hant": "鋼鐵"
+      },
+      "aliases": {},
+      "definitions": [
+        "steel"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_7384",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_7384",
+      "labels": {
+        "en": "steel",
+        "ru": "сталь",
+        "zh": "钢铁"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_03079252"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q11427",
+      "concept_id": "wikidata:Q11427",
+      "labels": {
+        "en": "steel",
+        "ru": "сталь",
+        "zh": "钢",
+        "zh-hans": "钢",
+        "zh-hant": "鋼"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "P279",
+          "wikidata:Q907347"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "alloy steel": [
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q1070521",
+      "concept_id": "wikidata:Q1070521",
+      "labels": {
+        "en": "alloy steel",
+        "ru": "легированная сталь",
+        "zh": "合金钢",
+        "zh-tw": "合金鋼"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "P31",
+          "wikidata:Q119892838"
+        ],
+        [
+          "P279",
+          "wikidata:Q11427"
+        ],
+        [
+          "P279",
+          "wikidata:Q907347"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "continuous casting": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "ff28233c93e8275aeee9a4f9162725a9f6192f7344d1491f6aca6cf5e5d84eba",
+      "concept_id": "cedict:ff28233c93e8275aeee9a4f9162725a9f6192f7344d1491f6aca6cf5e5d84eba",
+      "labels": {
+        "zh-hans": "连铸",
+        "zh-hant": "連鑄"
+      },
+      "aliases": {},
+      "definitions": [
+        "continuous casting (metallurgy)"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q1506832",
+      "concept_id": "wikidata:Q1506832",
+      "labels": {
+        "en": "continuous casting",
+        "ru": "непрерывная разливка",
+        "zh": "連續鑄造",
+        "zh-cn": "连铸",
+        "zh-hans": "连铸",
+        "zh-hant": "連鑄"
+      },
+      "aliases": {
+        "en": [
+          "strand casting"
+        ],
+        "ru": [
+          "непрерывное литьё",
+          "непрерывное литье"
+        ],
+        "zh": [
+          "连铸"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "P31",
+          "wikidata:Q10843872"
+        ],
+        [
+          "P279",
+          "wikidata:Q496098"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "mold": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "a49f9a786d8c82a00b904ee62a891b21a42a8f9c8cbd187b259a77ea7fa08f52",
+      "concept_id": "cedict:a49f9a786d8c82a00b904ee62a891b21a42a8f9c8cbd187b259a77ea7fa08f52",
+      "labels": {
+        "zh-hans": "坯模",
+        "zh-hant": "坯模"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "9b06f9e3f1d917158c74d1c23255a73f05dbd266b9d90e119abf3f28a78d463a",
+      "concept_id": "cedict:9b06f9e3f1d917158c74d1c23255a73f05dbd266b9d90e119abf3f28a78d463a",
+      "labels": {
+        "zh-hans": "型",
+        "zh-hant": "型"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold",
+        "type",
+        "style",
+        "model"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "36bdd78ecd75941541b6b8f05ed6ef2118e4fd5da8f611a17728ffbaee693866",
+      "concept_id": "cedict:36bdd78ecd75941541b6b8f05ed6ef2118e4fd5da8f611a17728ffbaee693866",
+      "labels": {
+        "zh-hans": "模",
+        "zh-hant": "模"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold",
+        "die",
+        "matrix",
+        "pattern"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "5a688b86650a7bdc8824a89a3976729f78854047f8250c84abd2010f911e308b",
+      "concept_id": "cedict:5a688b86650a7bdc8824a89a3976729f78854047f8250c84abd2010f911e308b",
+      "labels": {
+        "zh-hans": "模具",
+        "zh-hant": "模具"
+      },
+      "aliases": {},
+      "definitions": [
+        "(manufacturing) mold; die",
+        "also pr. [mo2ju4]"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "24f7447116abf0452d2a6884bba0f5183e0d2b29799acb5a55cdb3f5c9f7707a",
+      "concept_id": "cedict:24f7447116abf0452d2a6884bba0f5183e0d2b29799acb5a55cdb3f5c9f7707a",
+      "labels": {
+        "zh-hans": "模型",
+        "zh-hant": "模型"
+      },
+      "aliases": {},
+      "definitions": [
+        "model",
+        "mold",
+        "matrix",
+        "pattern"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "4237adff117a0c2c5ae59b446d7e993cf7509314932c66b2260319ac44b9138c",
+      "concept_id": "cedict:4237adff117a0c2c5ae59b446d7e993cf7509314932c66b2260319ac44b9138c",
+      "labels": {
+        "zh-hans": "模子",
+        "zh-hant": "模子"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold",
+        "matrix",
+        "pattern or die"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "5d44a0ff89ec28a1dbe47283f4a364bef771e75d08ecb4d97da172365f4e4b72",
+      "concept_id": "cedict:5d44a0ff89ec28a1dbe47283f4a364bef771e75d08ecb4d97da172365f4e4b72",
+      "labels": {
+        "zh-hans": "毛",
+        "zh-hant": "毛"
+      },
+      "aliases": {},
+      "definitions": [
+        "hair",
+        "feather",
+        "down",
+        "wool",
+        "mildew",
+        "mold",
+        "coarse or semifinished",
+        "young",
+        "raw",
+        "careless",
+        "unthinking",
+        "nervous",
+        "scared",
+        "(of currency) to devalue or depreciate",
+        "classifier for Chinese fractional monetary unit ( = 角[jiao3] , = one-tenth of a yuan or 10 fen 分[fen1])"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "862e7577aa8463035f711bae0ed1d1b76a729b50d9592982be3e80b54ed331c1",
+      "concept_id": "cedict:862e7577aa8463035f711bae0ed1d1b76a729b50d9592982be3e80b54ed331c1",
+      "labels": {
+        "zh-hans": "蕈",
+        "zh-hant": "蕈"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold",
+        "mushroom"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "37f53f54b17b9d3138c0556a1e75f7a3f1054dbe760e8774d8ed57493939ddef",
+      "concept_id": "cedict:37f53f54b17b9d3138c0556a1e75f7a3f1054dbe760e8774d8ed57493939ddef",
+      "labels": {
+        "zh-hans": "霉",
+        "zh-hant": "霉"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold",
+        "mildew",
+        "to become moldy"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "6dcbb7d8574a582af101752d9d7d19dd1f75dc857b686aac47db52abe8de2bd5",
+      "concept_id": "cedict:6dcbb7d8574a582af101752d9d7d19dd1f75dc857b686aac47db52abe8de2bd5",
+      "labels": {
+        "zh-hans": "霉烂",
+        "zh-hant": "霉爛"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold",
+        "rot"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "e0a62f2590e91c7277bc8b5ede51ee407877d61caa6ef8bf37b4f0f39bc340d0",
+      "concept_id": "cedict:e0a62f2590e91c7277bc8b5ede51ee407877d61caa6ef8bf37b4f0f39bc340d0",
+      "labels": {
+        "zh-hans": "霉菌",
+        "zh-hant": "霉菌"
+      },
+      "aliases": {},
+      "definitions": [
+        "mold"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_4956",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_4956",
+      "labels": {
+        "en": "moulds",
+        "ru": "плесень",
+        "zh": "霉菌"
+      },
+      "aliases": {
+        "en": [
+          "molds"
+        ],
+        "ru": [
+          "плесневые грибы"
+        ],
+        "zh": [
+          "霉状物"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_3145"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q1941820",
+      "concept_id": "wikidata:Q1941820",
+      "labels": {
+        "en": "mold",
+        "zh": "铸型"
+      },
+      "aliases": {
+        "en": [
+          "mould"
+        ],
+        "zh": [
+          "范",
+          "鋳型",
+          "範",
+          "铸模"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "P279",
+          "wikidata:Q8205328"
+        ],
+        [
+          "P279",
+          "wikidata:Q29349307"
+        ],
+        [
+          "P279",
+          "wikidata:Q987767"
+        ],
+        [
+          "P279",
+          "wikidata:Q39546"
+        ],
+        [
+          "P279",
+          "wikidata:Q132497562"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q29349307",
+      "concept_id": "wikidata:Q29349307",
+      "labels": {
+        "en": "form"
+      },
+      "aliases": {
+        "en": [
+          "mold",
+          "cast"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "P279",
+          "wikidata:Q39546"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "tundish": [
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q7852890",
+      "concept_id": "wikidata:Q7852890",
+      "labels": {
+        "en": "Tundish"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "billet": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "48e3e6fbb71f1a3aef17a901ed3d784e113632f7e99d706e3ed21ecc5a03bcd9",
+      "concept_id": "cedict:48e3e6fbb71f1a3aef17a901ed3d784e113632f7e99d706e3ed21ecc5a03bcd9",
+      "labels": {
+        "zh-hans": "差使",
+        "zh-hant": "差使"
+      },
+      "aliases": {},
+      "definitions": [
+        "official post",
+        "billet",
+        "commission",
+        "CL:件[jian4]",
+        "see also 差事[chai1 shi5]"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "651c9a12a92186461094c8964b5b0ea951cb782bb61bf3e3c44efbb60c6715e4",
+      "concept_id": "cedict:651c9a12a92186461094c8964b5b0ea951cb782bb61bf3e3c44efbb60c6715e4",
+      "labels": {
+        "zh-hans": "钢坯",
+        "zh-hant": "鋼坯"
+      },
+      "aliases": {},
+      "definitions": [
+        "billet (steel industry)"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q107196699",
+      "concept_id": "wikidata:Q107196699",
+      "labels": {
+        "en": "billet (weapon)"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "P279",
+          "wikidata:Q39546"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "slab": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "8fc7ff8f375a63f680e4d31c13a8e6c81fadf6408a7b5225bd2abe45dd88dc65",
+      "concept_id": "cedict:8fc7ff8f375a63f680e4d31c13a8e6c81fadf6408a7b5225bd2abe45dd88dc65",
+      "labels": {
+        "zh-hans": "平板",
+        "zh-hant": "平板"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab; flat board; (engineering) surface plate",
+        "flat; level",
+        "(fig.) dull; monotonous",
+        "tablet computer (abbr. for 平板電腦|平板电脑[ping2 ban3 dian4 nao3])",
+        "phablet (large smartphone combining features of phone and tablet) (abbr. for 平板手機|平板手机[ping2 ban3 shou3 ji1])"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "5502d8c1a6309064446d83775a51fe0b59e8371c137eb4ad8a030d3b47a0c3eb",
+      "concept_id": "cedict:5502d8c1a6309064446d83775a51fe0b59e8371c137eb4ad8a030d3b47a0c3eb",
+      "labels": {
+        "zh-hans": "扁坯",
+        "zh-hant": "扁坯"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "f2edf7075b6888916dc6385209466d677e670f4fdafc4293a9cee860f45eea8c",
+      "concept_id": "cedict:f2edf7075b6888916dc6385209466d677e670f4fdafc4293a9cee860f45eea8c",
+      "labels": {
+        "zh-hans": "木板",
+        "zh-hant": "木板"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab",
+        "board",
+        "plank",
+        "CL:張|张[zhang1],塊|块[kuai4]"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "065f61064bacefad341dad44e140ec01488c06eefb175c5ab2c70132f52c846d",
+      "concept_id": "cedict:065f61064bacefad341dad44e140ec01488c06eefb175c5ab2c70132f52c846d",
+      "labels": {
+        "zh-hans": "板块",
+        "zh-hant": "板塊"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab",
+        "(geology) tectonic plate",
+        "(fig.) sector (of the stock market or of industry)",
+        "(economic) bloc"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "6f9601deb506da94696564ba7a83022164f4d521e5d1aeb01ccfcaa2a6d21a6d",
+      "concept_id": "cedict:6f9601deb506da94696564ba7a83022164f4d521e5d1aeb01ccfcaa2a6d21a6d",
+      "labels": {
+        "zh-hans": "板皮",
+        "zh-hant": "板皮"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "7c2b6afb6ff25568162a02bde06d428f14cdebb0b7fdf6982a3713b74ae3d5b1",
+      "concept_id": "cedict:7c2b6afb6ff25568162a02bde06d428f14cdebb0b7fdf6982a3713b74ae3d5b1",
+      "labels": {
+        "zh-hans": "石板",
+        "zh-hant": "石板"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab",
+        "flagstone",
+        "slate"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "80aeebb58352b94ff530a6e778f2eff96757b8a82487bd7763d18bc2ab7047dd",
+      "concept_id": "cedict:80aeebb58352b94ff530a6e778f2eff96757b8a82487bd7763d18bc2ab7047dd",
+      "labels": {
+        "zh-hans": "石片",
+        "zh-hant": "石片"
+      },
+      "aliases": {},
+      "definitions": [
+        "slab"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q3827429",
+      "concept_id": "wikidata:Q3827429",
+      "labels": {
+        "en": "plate",
+        "ru": "плита"
+      },
+      "aliases": {
+        "en": [
+          "pannel",
+          "slab",
+          "bar",
+          "panel",
+          "pane"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "P31",
+          "wikidata:Q207961"
+        ],
+        [
+          "P31",
+          "wikidata:Q122853628"
+        ],
+        [
+          "P279",
+          "wikidata:Q206615"
+        ],
+        [
+          "P279",
+          "wikidata:Q29052015"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "bloom": [
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_51dd9e80",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_51dd9e80",
+      "labels": {
+        "en": "blooms",
+        "ru": "цветение воды",
+        "zh": "水华"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_49871"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    },
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_7325b328",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_7325b328",
+      "labels": {
+        "en": "bloom",
+        "ru": "восковой налет (на листьях или плодах)",
+        "zh": "果粉"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_330705"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q130101871",
+      "concept_id": "wikidata:Q130101871",
+      "labels": {
+        "en": "yeast bloom"
+      },
+      "aliases": {
+        "en": [
+          "bloom (yeast)",
+          "frost (yeast)"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "P279",
+          "wikidata:Q1570182"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "ladle": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "6e12ab2478f3d9cf59ea3b79555b6447c0d7c27fd6e2f918a3f0194306fe9519",
+      "concept_id": "cedict:6e12ab2478f3d9cf59ea3b79555b6447c0d7c27fd6e2f918a3f0194306fe9519",
+      "labels": {
+        "zh-hans": "勺",
+        "zh-hant": "勺"
+      },
+      "aliases": {},
+      "definitions": [
+        "spoon",
+        "ladle",
+        "CL:把[ba3]",
+        "abbr. for 公勺[gong1 shao2], centiliter (unit of volume)"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "b29cc1f7fc6b76d5a16f6b6a6b9de62ce1f8e875bdd026da0ec6029f67c44b3b",
+      "concept_id": "cedict:b29cc1f7fc6b76d5a16f6b6a6b9de62ce1f8e875bdd026da0ec6029f67c44b3b",
+      "labels": {
+        "zh-hans": "勺子",
+        "zh-hant": "勺子"
+      },
+      "aliases": {},
+      "definitions": [
+        "spoon; ladle",
+        "CL:把[ba3]"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "235d64e8969829ecc556e8a6900184e940b5300b8568acac7617da0937a653b8",
+      "concept_id": "cedict:235d64e8969829ecc556e8a6900184e940b5300b8568acac7617da0937a653b8",
+      "labels": {
+        "zh-hans": "匕",
+        "zh-hant": "匕"
+      },
+      "aliases": {},
+      "definitions": [
+        "dagger",
+        "ladle",
+        "ancient type of spoon"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "0171373a96b8c854aad405aff17be36477476135cd184e2a395135fa664d1f8e",
+      "concept_id": "cedict:0171373a96b8c854aad405aff17be36477476135cd184e2a395135fa664d1f8e",
+      "labels": {
+        "zh-hans": "杓",
+        "zh-hant": "杓"
+      },
+      "aliases": {},
+      "definitions": [
+        "ladle (variant of 勺[shao2])"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "5973bba21a84fdc29771481cf0d6803974f71ebd99f1e4a4ca2be4249f1d4cbc",
+      "concept_id": "cedict:5973bba21a84fdc29771481cf0d6803974f71ebd99f1e4a4ca2be4249f1d4cbc",
+      "labels": {
+        "zh-hans": "柶",
+        "zh-hant": "柶"
+      },
+      "aliases": {},
+      "definitions": [
+        "spoon",
+        "ladle"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "afb6440de16511292f1cf40ae51e04f181667ea652fb2350b94d8f1c6cb9245f",
+      "concept_id": "cedict:afb6440de16511292f1cf40ae51e04f181667ea652fb2350b94d8f1c6cb9245f",
+      "labels": {
+        "zh-hans": "水勺",
+        "zh-hant": "水勺"
+      },
+      "aliases": {},
+      "definitions": [
+        "ladle; dipper (for water)"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "8a83f561a8b92a0ae64573cfb74ea3fc939a5d25210ebd44c19a86f814a00cce",
+      "concept_id": "cedict:8a83f561a8b92a0ae64573cfb74ea3fc939a5d25210ebd44c19a86f814a00cce",
+      "labels": {
+        "zh-hans": "炒勺",
+        "zh-hant": "炒勺"
+      },
+      "aliases": {},
+      "definitions": [
+        "wok with a long handle",
+        "wok spatula",
+        "ladle"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "e642d5722d9b1ab089b53e74509a78bd11693deec5f726a1ee9cbc8f1f1a762d",
+      "concept_id": "cedict:e642d5722d9b1ab089b53e74509a78bd11693deec5f726a1ee9cbc8f1f1a762d",
+      "labels": {
+        "zh-hans": "瓢",
+        "zh-hant": "瓢"
+      },
+      "aliases": {},
+      "definitions": [
+        "dipper",
+        "ladle"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "302d1684d326a230b9599bc05ebe414571915288e69102cd55f142d9792c2f6e",
+      "concept_id": "cedict:302d1684d326a230b9599bc05ebe414571915288e69102cd55f142d9792c2f6e",
+      "labels": {
+        "zh-hans": "舀子",
+        "zh-hant": "舀子"
+      },
+      "aliases": {},
+      "definitions": [
+        "ladle; scoop"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    }
+  ],
+  "rolling": [
+    {
+      "source": "cedict-20260923",
+      "source_record_id": "6c7178573885536615874e6f30d92183a6da7fbf0237c8ae06d28b95a562504f",
+      "concept_id": "cedict:6c7178573885536615874e6f30d92183a6da7fbf0237c8ae06d28b95a562504f",
+      "labels": {
+        "zh-hans": "轰隆",
+        "zh-hant": "轟隆"
+      },
+      "aliases": {},
+      "definitions": [
+        "(onom.) rumbling",
+        "rolling"
+      ],
+      "relations": [],
+      "input_hash": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687"
+    },
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_25797",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_25797",
+      "labels": {
+        "en": "rolling",
+        "ru": "прикатывание",
+        "zh": "压地"
+      },
+      "aliases": {},
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_2018"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    },
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_fcc0a5e4",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_fcc0a5e4",
+      "labels": {
+        "en": "rolling (ship motion)",
+        "ru": "бортовая качка",
+        "zh": "横摇（船舶运动）"
+      },
+      "aliases": {
+        "en": [
+          "roll motion"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_8339f8a1"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    },
+    {
+      "source": "wikidata-technical-20260925",
+      "source_record_id": "Q452648",
+      "concept_id": "wikidata:Q452648",
+      "labels": {
+        "en": "rolling",
+        "ru": "прокатка",
+        "zh": "轧",
+        "zh-hans": "压机",
+        "zh-hant": "壓機"
+      },
+      "aliases": {
+        "ru": [
+          "прокат",
+          "вальцовка"
+        ],
+        "zh": [
+          "压机",
+          "轧制"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "P31",
+          "wikidata:Q953045"
+        ],
+        [
+          "P31",
+          "wikidata:Q1408288"
+        ],
+        [
+          "P279",
+          "wikidata:Q5470205"
+        ]
+      ],
+      "input_hash": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325"
+    }
+  ],
+  "heat treatment": [
+    {
+      "source": "agrovoc-20260907",
+      "source_record_id": "http://aims.fao.org/aos/agrovoc/c_24947",
+      "concept_id": "agrovoc:http://aims.fao.org/aos/agrovoc/c_24947",
+      "labels": {
+        "en": "heat treatment",
+        "ru": "тепловая обработка",
+        "zh": "热处理"
+      },
+      "aliases": {
+        "en": [
+          "thermal treatment"
+        ],
+        "ru": [
+          "термическая обработка"
+        ]
+      },
+      "definitions": [],
+      "relations": [
+        [
+          "broader",
+          "agrovoc:http://aims.fao.org/aos/agrovoc/c_6195"
+        ]
+      ],
+      "input_hash": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd"
+    }
+  ]
+}

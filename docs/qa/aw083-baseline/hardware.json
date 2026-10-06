@@ -1,0 +1,8 @@
+{
+  "cpu": "AMD Ryzen 7 5700X",
+  "logical_cores": 16,
+  "ram_gb": 32,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "vram_gb": 12,
+  "cuda_available": true
+}

@@ -1,0 +1,370 @@
+{
+  "before": {
+    "groups": {
+      "native_extraction": {
+        "wait_seconds": 0.00010010000050897361,
+        "held_seconds": 0.6702021000005516,
+        "count": 3
+      },
+      "OCR_preparation": {
+        "wait_seconds": 8.820000039122533e-05,
+        "held_seconds": 105.51639580000028,
+        "count": 4
+      },
+      "writer": {
+        "wait_seconds": 39.79250379999985,
+        "held_seconds": 6.9399405999997725,
+        "count": 4
+      },
+      "validation": {
+        "wait_seconds": 9.499999941908754e-05,
+        "held_seconds": 0.38077389999989464,
+        "count": 4
+      }
+    },
+    "records": [
+      {
+        "phase": "native_extraction",
+        "member": null,
+        "wait_seconds": 2.7800000225397525e-05,
+        "held_seconds": 0.012262400000054186
+      },
+      {
+        "phase": "native_extraction",
+        "member": null,
+        "wait_seconds": 5.0800000281014945e-05,
+        "held_seconds": 0.6493482000000768
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 1.9300000076327706e-05,
+        "held_seconds": 31.37962040000002
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.5400000140507473e-05,
+        "held_seconds": 29.204551899999842
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 23.092123999999785,
+        "held_seconds": 1.2135542999999416
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 2.5499999992462108e-05,
+        "held_seconds": 0.010621300000366318
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.840000024662004e-05,
+        "held_seconds": 2.1859699999999975
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.2899999748915434e-05,
+        "held_seconds": 0.2108045999998467
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+        "wait_seconds": 2.1500000002561137e-05,
+        "held_seconds": 0.008591500000420638
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.3099999907572055e-05,
+        "held_seconds": 19.128448400000252
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+        "wait_seconds": 16.70032769999989,
+        "held_seconds": 0.6541723000000275
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+        "wait_seconds": 2.3799999780749204e-05,
+        "held_seconds": 0.04075560000001133
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.369999992879457e-05,
+        "held_seconds": 2.886243999999806
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.27999998969608e-05,
+        "held_seconds": 0.1185923999996703
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 2.0400000266818097e-05,
+        "held_seconds": 25.803775100000166
+      }
+    ],
+    "native_extraction_actual_seconds": 2.1973914999985027,
+    "layout_write_seconds": 6.641862800001036,
+    "note": "Outer lock scopes. OCR preparation includes native extraction and postprocess; recognition is detached after patch. Layout/write is inclusive inside writer held, not additive."
+  },
+  "after": {
+    "groups": {
+      "native_extraction": {
+        "wait_seconds": 8.019999995667604e-05,
+        "held_seconds": 0.7052023999999619,
+        "count": 3
+      },
+      "OCR_preparation": {
+        "wait_seconds": 0.0006332000002657878,
+        "held_seconds": 10.255022800000006,
+        "count": 24
+      },
+      "writer": {
+        "wait_seconds": 7.699999969190685e-05,
+        "held_seconds": 6.389556100000391,
+        "count": 4
+      },
+      "validation": {
+        "wait_seconds": 0.00010659999952622456,
+        "held_seconds": 0.36041750000049433,
+        "count": 4
+      }
+    },
+    "records": [
+      {
+        "phase": "native_extraction",
+        "member": null,
+        "wait_seconds": 3.149999974993989e-05,
+        "held_seconds": 0.012064399999871966
+      },
+      {
+        "phase": "native_extraction",
+        "member": null,
+        "wait_seconds": 2.8100000236008782e-05,
+        "held_seconds": 0.6844126999999389
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 2.3399999918183312e-05,
+        "held_seconds": 0.028415299999778654
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 2.750000021478627e-05,
+        "held_seconds": 0.034944999999879656
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 2.8500000098574674e-05,
+        "held_seconds": 0.005634200000258716
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.1999999717081664e-05,
+        "held_seconds": 0.48603030000003855
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 1.5499999790336005e-05,
+        "held_seconds": 0.7786890000002131
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "wait_seconds": 4.1400000100111356e-05,
+        "held_seconds": 0.013297700000293844
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.7399999908084283e-05,
+        "held_seconds": 1.762762400000156
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.5899999855028e-05,
+        "held_seconds": 0.5283564999999726
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.5599999844416743e-05,
+        "held_seconds": 0.47888960000000225
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.6300000172341242e-05,
+        "held_seconds": 0.45915940000031696
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.5800000003073364e-05,
+        "held_seconds": 0.10487389999980223
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.2899999748915434e-05,
+        "held_seconds": 2.209776900000179
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+        "wait_seconds": 2.2599999738304177e-05,
+        "held_seconds": 0.21110900000030597
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+        "wait_seconds": 2.0599999970727367e-05,
+        "held_seconds": 0.008725300000151037
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.370000038354192e-05,
+        "held_seconds": 0.142176599999857
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+        "wait_seconds": 1.4100000043981709e-05,
+        "held_seconds": 0.514228600000024
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+        "wait_seconds": 2.009999980145949e-05,
+        "held_seconds": 0.010447099999964848
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.7399999908084283e-05,
+        "held_seconds": 0.264701900000091
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.6900000193563756e-05,
+        "held_seconds": 0.2764811000001828
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 3.060000017285347e-05,
+        "held_seconds": 0.16575900000043475
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.590000030977535e-05,
+        "held_seconds": 0.18566259999988688
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.790000007735216e-05,
+        "held_seconds": 0.47070290000010573
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.609999955893727e-05,
+        "held_seconds": 0.44845070000019405
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.6899999738816405e-05,
+        "held_seconds": 0.2725828000002366
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 3.390000028957729e-05,
+        "held_seconds": 0.09742439999990893
+      },
+      {
+        "phase": "writer",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.4500000108673703e-05,
+        "held_seconds": 2.8868615999999747
+      },
+      {
+        "phase": "validation",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+        "wait_seconds": 2.2499999886349542e-05,
+        "held_seconds": 0.12556369999992967
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 1.990000009755022e-05,
+        "held_seconds": 0.45187310000028447
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 2.7400000362831634e-05,
+        "held_seconds": 2.231269799999609
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 2.7399999453336932e-05,
+        "held_seconds": 0.529671899999812
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 2.6499999876250513e-05,
+        "held_seconds": 0.5129120999999941
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 2.500000027794158e-05,
+        "held_seconds": 0.214256999999634
+      },
+      {
+        "phase": "native_extraction",
+        "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "wait_seconds": 2.5299999833805487e-05,
+        "held_seconds": 0.10203029999956925
+      }
+    ],
+    "native_extraction_actual_seconds": 2.2148402000002534,
+    "layout_write_seconds": 6.177000899999257,
+    "note": "Outer lock scopes. OCR preparation includes native extraction and postprocess; recognition is detached after patch. Layout/write is inclusive inside writer held, not additive."
+  },
+  "microbenchmark": {
+    "seconds": {
+      "before": 0.9314073999998982,
+      "candidate": 0.607887699999992
+    },
+    "exact_objects_render": true,
+    "errors": [],
+    "scope": "Actual PDF extraction and translated writer; controlled 0.6s detached CPU operation replaces recognition only in this microbenchmark",
+    "reduction_percent": 34.73449964000087
+  }
+}

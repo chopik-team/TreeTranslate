@@ -1,0 +1,10 @@
+{
+  "source": "检查合金钢。",
+  "output": "Проверьте легированная сталь.",
+  "source_derived_term": "合金钢",
+  "target": "легированная сталь",
+  "provenance": "harvest:e53ab71e14274a293235f33b1fc3770778b6464a46ee102222d6ee4bf3028c2a; full evidence: NOTICE",
+  "longest_match": true,
+  "domain_isolation": true,
+  "status": "enforced"
+}

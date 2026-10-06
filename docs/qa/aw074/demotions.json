@@ -1,0 +1,191 @@
+[
+  {
+    "id": "a80a83de86b3a8fa30d6e5144d853cc932a22ce9b679257b3d378feb083620aa",
+    "zh": "气压计",
+    "ru": "барометры",
+    "domain": "measurement",
+    "reasons": [
+      "shared_concept",
+      "preferred_zh_ru",
+      "taxonomy_path",
+      "unresolved_conflict"
+    ],
+    "conflicting_candidates": [
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "b119665b7785ae7924f1c8b8008f662b945c9144644488082dc2cfafab5eded2",
+        "zh": "气压计",
+        "ru": "барометр",
+        "en": [
+          "barometer"
+        ],
+        "domain": "measurement",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      }
+    ]
+  },
+  {
+    "id": "13536e9dd3562d724a80d45ceb46ec2779b1667f397049edd6faaf29b84e3566",
+    "zh": "自行车",
+    "ru": "велосипеды",
+    "domain": "technical-core",
+    "reasons": [
+      "shared_concept",
+      "preferred_zh_ru",
+      "taxonomy_path",
+      "mixed_license_family",
+      "unresolved_conflict"
+    ],
+    "conflicting_candidates": [
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "3cf059492feb6ce1873c91097390958cd18e9699127157710f1b9118fa6eb17b",
+        "zh": "脚踏车",
+        "ru": "велосипед",
+        "en": [
+          "bicycle",
+          "bike"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "5e2387e28a54e6d3ad924b0ec8dd7e31e3e6c36d7d8100c4b57eec87d4f1e9a2",
+        "zh": "自行车",
+        "ru": "велосипед",
+        "en": [
+          "bicycle",
+          "bike"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "64dc43cf5b1f86db249c44153dcaf22f7fce9c4cd40fd9f03dc107b79036145d",
+        "zh": "单车",
+        "ru": "велосипед",
+        "en": [
+          "bicycle",
+          "bike"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      },
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "718f19b6ef2fa2ad02a2d0e21810cf01251440a5c4c8718dcb7c6b67653e60f2",
+        "zh": "自行车",
+        "ru": "велосипед",
+        "en": [
+          "bicycle",
+          "bicycles"
+        ],
+        "domain": "technical-core",
+        "link_type": "DIRECT_CONCEPT"
+      }
+    ]
+  },
+  {
+    "id": "15ee34152edc04bfaff32157f1da7917d2941a08fbb8bf3ca0e501766ff18d8f",
+    "zh": "喷雾器",
+    "ru": "опрыскиватели",
+    "domain": "technical-core",
+    "reasons": [
+      "shared_concept",
+      "preferred_zh_ru",
+      "taxonomy_path",
+      "unresolved_conflict"
+    ],
+    "conflicting_candidates": [
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "356ad30c6ea8b07ba72a09d56816e450767cf818ec49b0e9ab42ffbd6cc5d13e",
+        "zh": "喷雾器",
+        "ru": "распылитель",
+        "en": [
+          "sprayer"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      }
+    ]
+  },
+  {
+    "id": "5ca262cb74a9c98977f9be7f0289d202dae0b339c1bac3735a9874611ebf7ac2",
+    "zh": "轭",
+    "ru": "хомуты",
+    "domain": "technical-core",
+    "reasons": [
+      "shared_concept",
+      "preferred_zh_ru",
+      "taxonomy_path",
+      "unresolved_conflict"
+    ],
+    "conflicting_candidates": [
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "890e91d7185eb63c84bb9ed93e493cf5192b0fd4456d976bbe9210992ff02a71",
+        "zh": "轭",
+        "ru": "штурвал самолёта",
+        "en": [
+          "yoke"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      }
+    ]
+  },
+  {
+    "id": "986e1152865a66e4469f3a443e96ddf41e1a6c48fba6cafa9e02794374804b75",
+    "zh": "软管",
+    "ru": "шланги",
+    "domain": "technical-core",
+    "reasons": [
+      "shared_concept",
+      "preferred_zh_ru",
+      "taxonomy_path",
+      "unresolved_conflict"
+    ],
+    "conflicting_candidates": [
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "c1d254735158e29f8eaf6c7d273e358f43d4926c538e07f3efbdb04b26393d87",
+        "zh": "软管",
+        "ru": "Шланг",
+        "en": [
+          "flexible tube",
+          "hose"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      }
+    ]
+  },
+  {
+    "id": "f04e7107c95a9b1a8742e69a9f7b26ee7fb60f295c415893f9889a119567e956",
+    "zh": "气压计",
+    "ru": "барометры",
+    "domain": "technical-core",
+    "reasons": [
+      "shared_concept",
+      "preferred_zh_ru",
+      "taxonomy_path",
+      "unresolved_conflict"
+    ],
+    "conflicting_candidates": [
+      {
+        "reason": "same_source_domain_different_target",
+        "id": "6d4613cd1f16351bd51b73cd3e2a7629d9b85d147f645051441ea4c7e1eba255",
+        "zh": "气压计",
+        "ru": "барометр",
+        "en": [
+          "barometer"
+        ],
+        "domain": "technical-core",
+        "link_type": "ENGLISH_PIVOT_AMBIGUOUS"
+      }
+    ]
+  }
+]

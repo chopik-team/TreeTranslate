@@ -1,0 +1,70 @@
+[
+  {
+    "profile": "fast",
+    "iteration": 0,
+    "state": "cold",
+    "wall_seconds": 6.205421399999921,
+    "timings": {
+      "load_seconds": 1.2575219999999945,
+      "inference_seconds": 0.4098513000000139,
+      "rss_bytes": 1637101568,
+      "network_attempts": 0,
+      "gpu_peak_allocated_bytes": 78890496,
+      "gpu_peak_reserved_bytes": 112968960
+    },
+    "backend": "paddle",
+    "text": "Parameter Value Voltage 220 V Length 42 mm Pressure 12 bar",
+    "segments": 8
+  },
+  {
+    "profile": "fast",
+    "iteration": 1,
+    "state": "warm same worker",
+    "wall_seconds": 0.06758429999990767,
+    "timings": {
+      "load_seconds": 1.0999999631167157e-06,
+      "inference_seconds": 0.05540689999997994,
+      "rss_bytes": 1638879232,
+      "network_attempts": 0,
+      "gpu_peak_allocated_bytes": 93379840,
+      "gpu_peak_reserved_bytes": 112968960
+    },
+    "backend": "paddle",
+    "text": "Parameter Value Voltage 220 V Length 42 mm Pressure 12 bar",
+    "segments": 8
+  },
+  {
+    "profile": "maximum",
+    "iteration": 0,
+    "state": "cold",
+    "wall_seconds": 20.416387100000065,
+    "timings": {
+      "load_seconds": 12.804743799999983,
+      "inference_seconds": 3.1868380000000798,
+      "rss_bytes": 2495438848,
+      "network_attempts": 0,
+      "gpu_peak_allocated_bytes": 988426496,
+      "gpu_peak_reserved_bytes": 1076953344
+    },
+    "backend": "structure",
+    "text": "Parameter Value Voltage 220 V Length 42 mm Pressure 12 bar",
+    "segments": 8
+  },
+  {
+    "profile": "maximum",
+    "iteration": 1,
+    "state": "warm same worker",
+    "wall_seconds": 0.22072110000010525,
+    "timings": {
+      "load_seconds": 1.4999999393694452e-06,
+      "inference_seconds": 0.186534800000004,
+      "rss_bytes": 2495823872,
+      "network_attempts": 0,
+      "gpu_peak_allocated_bytes": 1061487616,
+      "gpu_peak_reserved_bytes": 1229593856
+    },
+    "backend": "structure",
+    "text": "Parameter Value Voltage 220 V Length 42 mm Pressure 12 bar",
+    "segments": 8
+  }
+]

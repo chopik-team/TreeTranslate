@@ -45,6 +45,7 @@ class Reference:
     target: str
     entries: tuple[dict, ...] = ()
     usage: dict | None = None
+    examples: tuple[dict, ...] = ()
     notice: str = ""
 
 
@@ -68,20 +69,51 @@ class LexicalAssistance:
         usage = next((entry for entry in self._usage() if entry["source"] == source
                       and entry["target"] == target and lookup_key(word) in entry["words"]), None)
         entries = ()
+        examples = ()
         notice = ""
         if (source, target) in {("en", "ru"), ("ru", "en")}:
             try:
                 with closing(sqlite3.connect(self.database.resolve().as_uri() + "?mode=ro", uri=True)) as connection:
                     rows = connection.execute("SELECT payload FROM entries WHERE source=? AND target=? AND key=? LIMIT 12",
                                               (source, target, lookup_key(word))).fetchall()
-                entries = tuple(json.loads(row[0]) for row in rows)
+                    if connection.execute("PRAGMA user_version").fetchone()[0] >= 2:
+                        normalized = lookup_key(word)
+                        normalized = normalized.replace("ё", "е") if source == "ru" else normalized
+                        direct_ids = [row[0] for row in connection.execute(
+                            "SELECT id FROM articles WHERE language=? AND key=? LIMIT 12", (source, normalized))]
+                        form_ids = [row[0] for row in connection.execute(
+                            "SELECT article_id FROM forms WHERE language=? AND key=? LIMIT 12", (source, normalized))]
+                        article_ids = list(dict.fromkeys((*direct_ids, *form_ids)))[:12]
+                        if article_ids:
+                            article_marks = ",".join("?" for _ in article_ids)
+                            article_data = connection.execute(
+                                f"SELECT id,key,payload FROM articles WHERE id IN ({article_marks})", article_ids).fetchall()
+                            article_data.sort(key=lambda row: article_ids.index(row[0]))
+                        else:
+                            article_data = []
+                        lemma_keys = list(dict.fromkeys(row[1] for row in article_data))
+                        article_rows = [json.loads(row[2]) for row in article_data]
+                        if lemma_keys:
+                            marks = ",".join("?" for _ in lemma_keys)
+                            example_rows = connection.execute(f"""
+                                SELECT DISTINCT e.sentence,s.name,e.source_ref,e.contributor,e.rank
+                                FROM example_terms t JOIN examples e ON e.id=t.example_id
+                                JOIN lexical_sources s ON s.id=e.source_id
+                                WHERE t.language=? AND t.key IN ({marks})
+                                ORDER BY e.rank DESC,e.id LIMIT 5
+                            """, (source, *lemma_keys)).fetchall()
+                            examples = tuple(dict(sentence=row[0], source=row[1], source_ref=row[2],
+                                                  contributor=row[3]) for row in example_rows)
+                    else:
+                        article_rows = []
+                entries = tuple(json.loads(row[0]) for row in rows) + tuple(article_rows)
             except (sqlite3.Error, OSError, ValueError):
                 notice = "Локальный словарь недоступен."
             if not entries and not usage and not notice:
-                notice = "В локальном словаре нет этой формы. Попробуйте начальную форму слова."
+                notice = "Для этого слова пока нет словарной статьи."
         elif not usage:
             notice = "Словарные статьи пока доступны для английского и русского."
-        return Reference(word, source, target, entries, usage, notice)
+        return Reference(word, source, target, entries, usage, examples, notice)
 
     @staticmethod
     @lru_cache(maxsize=2)

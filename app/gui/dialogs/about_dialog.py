@@ -1,10 +1,14 @@
 from PySide6.QtCore import Qt, QUrl
 from PySide6.QtGui import QDesktopServices, QIcon
 from PySide6.QtSvgWidgets import QSvgWidget
-from PySide6.QtWidgets import QDialog, QFrame, QGridLayout, QLabel, QPushButton, QVBoxLayout
+from PySide6.QtWidgets import QDialog, QFrame, QGridLayout, QLabel, QPushButton, QVBoxLayout, QTabWidget, QTextBrowser
 
 from app.config.constants import APP_VERSION, ORGANIZATION_NAME, PROJECT_GITHUB_URL
-from app.config.paths import TREE_TRANSLATE_LOGO, icon_path
+from app.config.paths import TREE_TRANSLATE_LOGO, icon_path, PROJECT_ROOT, ASSETS_DIR
+from app.gui.styles.theme import color
+from app.gui.widgets.language_support_tab import LanguageSupportTab
+
+from app.localization.widgets import QDialog, QLabel, QPushButton, QTabWidget, QTextBrowser
 
 
 class AboutDialog(QDialog):
@@ -27,8 +31,8 @@ class AboutDialog(QDialog):
         layout.addWidget(version)
         layout.addSpacing(8)
         intro = QLabel(
-            "TreeTranslate — настольное приложение для локального перевода файлов, "
-            "папок, архивов, документов и обычного текста с сохранением понятной структуры.\n\n"
+            "TreeTranslate — настольное приложение для локального перевода обычного текста, "
+            "DOCX, текстовых PDF и сканов с сохранением понятной структуры.\n\n"
             "Выберите материалы и языки — приложение сохранит структуру проекта и поможет "
             "последовательно обработать весь выбранный контент."
         )
@@ -45,7 +49,7 @@ class AboutDialog(QDialog):
             ("Проект", ORGANIZATION_NAME),
             ("Концепт", "Алексей Широков · Станислав Смирнов"),
             ("Дизайн", "Станислав Смирнов"),
-            ("Код", "ChatGPT 5.6 Sol"),
+            ("Код", "ChatGPT 5.6 Sol · GPT-6"),
         )
         for row, (role, names) in enumerate(credit_rows):
             credits_layout.addWidget(QLabel(role, objectName="caption"), row, 0)
@@ -69,8 +73,25 @@ class AboutDialog(QDialog):
             label = QLabel(text)
             label.setWordWrap(True)
             engines_layout.addWidget(label)
-        layout.addWidget(engines)
-        layout.addStretch()
+        engines_layout.addStretch()
+        tabs = QTabWidget(objectName='aboutTabs')
+        tabs.addTab(LanguageSupportTab(), 'Поддержка языков')
+        tabs.addTab(engines, 'Движки')
+        licenses = QTextBrowser(objectName='licenseBrowser')
+        licenses.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        licenses.setOpenLinks(False)
+        licenses.setOpenExternalLinks(False)
+        licenses.document().setBaseUrl(QUrl.fromLocalFile(str(PROJECT_ROOT) + '/'))
+        licenses.document().setDefaultStyleSheet('a { color: ' + color('accent_green') + '; }')
+        catalog = ASSETS_DIR / 'licenses/third-party.html'
+        licenses.setHtml(catalog.read_text('utf-8') if catalog.is_file() else 'Сведения о лицензиях: THIRD_PARTY_NOTICES.md')
+        licenses.anchorClicked.connect(
+            lambda url: QDesktopServices.openUrl(licenses.document().baseUrl().resolved(url))
+        )
+        licenses.setMinimumHeight(180)
+        tabs.addTab(licenses, 'Лицензии и источники')
+        tabs.setMinimumHeight(260)
+        layout.addWidget(tabs, 1)
         attribution = QLabel(
             "Иконки: TreeTranslate Icon Pack · Flaticon · Icons8"
         )
@@ -79,3 +100,5 @@ class AboutDialog(QDialog):
         close = QPushButton("Закрыть")
         close.clicked.connect(self.accept)
         layout.addWidget(close, alignment=Qt.AlignmentFlag.AlignRight)
+        available = self.screen().availableGeometry()
+        self.resize(min(900, available.width() - 80), min(940, available.height() - 80))

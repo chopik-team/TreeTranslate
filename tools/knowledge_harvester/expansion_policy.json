@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "max_record_bytes": 4194304,
+  "max_aliases": 64,
+  "max_term_chars": 256,
+  "max_decompressed_bytes": 2147483648,
+  "batch_size": 100,
+  "max_traversal_nodes": 512,
+  "max_depth": 12,
+  "relations": [
+    "P31",
+    "P279",
+    "broader"
+  ],
+  "excluded_roots": [
+    "wikidata:Q5",
+    "wikidata:Q43229",
+    "wikidata:Q618123",
+    "wikidata:Q431289",
+    "wikidata:Q34770"
+  ],
+  "generic_terms": [
+    "方法",
+    "系统",
+    "材料",
+    "设备",
+    "метод",
+    "система"
+  ],
+  "review_label_markers": [
+    "#",
+    "列表",
+    "list of ",
+    "disambiguation"
+  ],
+  "domain_review_keywords": {
+    "automotive": [
+      "aircraft",
+      "aerospace",
+      "space vehicle",
+      "rocket",
+      "nuclear",
+      "vessel",
+      "boat",
+      "cryoprotectant",
+      "cutting fluid",
+      "bicycle",
+      "locomotive",
+      "kitchen",
+      "rental",
+      "bumper car",
+      "spacecraft",
+      "ship",
+      "underwater",
+      "submarine",
+      "aviation",
+      "airplane",
+      "helicopter",
+      "railway",
+      "maritime"
+    ],
+    "technical-core": [
+      "musical",
+      "medical",
+      "surgical",
+      "culinary",
+      "garden",
+      "butter churn",
+      "writing implement",
+      "hand fan"
+    ],
+    "electrical": [
+      "powertrain layout",
+      "engine design",
+      "engine layout",
+      "automobile layout",
+      "automotive layout"
+    ]
+  },
+  "weights": {
+    "direct": 60,
+    "preferred_pair": 15,
+    "taxonomy": 20,
+    "independent_agreement": 5,
+    "pivot": -35,
+    "generic": -30
+  },
+  "verified_threshold": 90,
+  "domains": {
+    "technical-core": {
+      "roots": [
+        "wikidata:Q11019",
+        "wikidata:Q39546",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_2631"
+      ],
+      "keywords": [
+        "engineering",
+        "machine"
+      ]
+    },
+    "automotive": {
+      "roots": [
+        "wikidata:Q42889",
+        "wikidata:Q44167",
+        "wikidata:Q1056832",
+        "wikidata:Q1796946",
+        "wikidata:Q503288",
+        "wikidata:Q6405028",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_4954",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_8180"
+      ],
+      "keywords": [
+        "automotive",
+        "vehicle",
+        "coolant",
+        "radiator"
+      ]
+    },
+    "mechanical-engineering": {
+      "roots": [
+        "wikidata:Q101333",
+        "wikidata:Q839546",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_4682"
+      ],
+      "keywords": [
+        "mechanical",
+        "hydraulic"
+      ]
+    },
+    "manufacturing": {
+      "roots": [
+        "wikidata:Q187939",
+        "wikidata:Q1408288",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_92365"
+      ],
+      "keywords": [
+        "manufacturing",
+        "machining"
+      ]
+    },
+    "metallurgy": {
+      "roots": [
+        "wikidata:Q11427",
+        "wikidata:Q37756",
+        "wikidata:Q7852890",
+        "wikidata:Q1506832",
+        "wikidata:Q107710778",
+        "wikidata:Q953045",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_29036",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_295",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_70f3d262",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_7384"
+      ],
+      "keywords": [
+        "steel",
+        "metallurgy",
+        "casting",
+        "tundish",
+        "ladle"
+      ]
+    },
+    "materials-science": {
+      "roots": [
+        "wikidata:Q214609",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_1141",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_201484fd"
+      ],
+      "keywords": [
+        "materials science"
+      ]
+    },
+    "electrical": {
+      "roots": [
+        "wikidata:Q43035",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_2518"
+      ],
+      "keywords": [
+        "electrical"
+      ]
+    },
+    "electronics": {
+      "roots": [
+        "wikidata:Q11653",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_10574",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_2522",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_49878"
+      ],
+      "keywords": [
+        "electronic"
+      ]
+    },
+    "software": {
+      "roots": [
+        "wikidata:Q7397",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_24008"
+      ],
+      "keywords": [
+        "software",
+        "programming"
+      ]
+    },
+    "computer-hardware": {
+      "roots": [
+        "wikidata:Q3966",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_1799",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_36788"
+      ],
+      "keywords": [
+        "computer hardware"
+      ]
+    },
+    "chemistry-engineering": {
+      "roots": [
+        "wikidata:Q11173",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_1515",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_9752"
+      ],
+      "keywords": [
+        "chemical engineering"
+      ]
+    },
+    "industrial-safety": {
+      "roots": [
+        "wikidata:Q48782917",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_6733"
+      ],
+      "keywords": [
+        "industrial safety",
+        "occupational safety"
+      ]
+    },
+    "measurement": {
+      "roots": [
+        "wikidata:Q2041172",
+        "wikidata:Q167676",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_12457",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_28279",
+        "agrovoc:http://aims.fao.org/aos/agrovoc/c_4668"
+      ],
+      "keywords": [
+        "measurement",
+        "sensor"
+      ]
+    }
+  }
+}

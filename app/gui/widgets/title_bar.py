@@ -6,6 +6,8 @@ from app.gui.widgets.brand_widget import BrandWidget
 from app.gui.widgets.navigation_tabs import NavigationTabs
 from app.config.paths import icon_path
 
+from app.localization.widgets import QPushButton
+
 
 class TitleBar(QWidget):
     brand_requested = Signal()

@@ -38,7 +38,7 @@ def test_local_settings_round_trip(tmp_path) -> None:
     assert restored.load().acceleration == "GPU"
     assert restored.load().translate_folders is False
     assert restored.load().translate_filenames is True
-    assert restored.load_performance().mode == "Турбо"
+    assert restored.load_performance().mode == "Автоматический"
 
 
 def test_legacy_output_location_values_are_migrated(tmp_path) -> None:

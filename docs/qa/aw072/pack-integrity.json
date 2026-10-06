@@ -1,0 +1,18 @@
+{
+  "network_blocked": true,
+  "input_sha256": "c273fe564f580a72b8f1bcd11e6af456f912111c7de2db414cf272ce87bef73e",
+  "raw_records": 664,
+  "linked": {
+    "concepts": 664,
+    "merge_limit_skipped_concepts": 0,
+    "candidates": 994,
+    "conflicts": 16
+  },
+  "reproducible_pack_sha256": true,
+  "pack_count": 26,
+  "builtin_entries_lookup_verified": 944,
+  "builtin_integrity": "ok",
+  "builtin_journal_mode": "delete",
+  "sidecars": 0,
+  "user_entries_written": 0
+}

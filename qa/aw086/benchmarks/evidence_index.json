@@ -1,0 +1,320 @@
+{
+  "policy": "Exact copies of compact existing evidence; local raw corpus/outputs/logs excluded",
+  "files": [
+    {
+      "path": "qa/aw086/benchmarks/final100/run_manifest.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/run_manifest.json",
+      "size": 251719,
+      "sha256": "bef879f810e5bfb10fa71e7c03d135ca5d53a43b3df288d95777d51adfe16d97"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/sample_manifest.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/sample_manifest.json",
+      "size": 193590,
+      "sha256": "c912237f969f62fd645d4c97e066d299cbb455b2b0cc588754165681d8195a7a"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/run_summary.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/run_summary.json",
+      "size": 520026,
+      "sha256": "4bdd00f48afa58f33447e0281fb87ed5ac424c79e69d98a29e838fd2e4d45ef0"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/stage_profile.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/stage_profile.json",
+      "size": 11248,
+      "sha256": "4036c32eddcc44b1a906caeaa2facb9b25a325107508d0b4fff7456bf233f994"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/nmt_profile.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/nmt_profile.json",
+      "size": 18902,
+      "sha256": "92a8df46a21fc40756a124b81f0cef2bef752c44b23a2743f8f8397aafdfc099"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/resource_summary.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/resource_summary.json",
+      "size": 3360,
+      "sha256": "6a7db82ac3ac99ba1d1c5f99a6169cee2938c12cc3af8d7fcb31917631756312"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/output_equivalence.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/output_equivalence.json",
+      "size": 212332,
+      "sha256": "6d24ad13a525d048d075fdd07b26926b93f9970c63e55bb50803f4839aef1e6a"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/full_archive_forecast.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/full_archive_forecast.json",
+      "size": 2215,
+      "sha256": "97018349c7238025cffe5fe45754dd4ad1b8b9219f260713da9b9ff34e724592"
+    },
+    {
+      "path": "qa/aw086/benchmarks/final100/final_evidence_audit.json",
+      "source": "qa/aw081/100pdf_final_speed_calibration/final_evidence_audit.json",
+      "size": 2333,
+      "sha256": "7df9f90efd89231a27b3834cecc0e3800dee5ded91e45e67c5e79297908b9f15"
+    },
+    {
+      "path": "qa/aw086/benchmarks/initial100/run_summary.json",
+      "source": "qa/aw081/speed_calibration_100/run_summary.json",
+      "size": 18886,
+      "sha256": "1257c68a4ea9f141aa584621153e0f2ae92ce549dab7c016ef3541a57e556ca3"
+    },
+    {
+      "path": "qa/aw086/benchmarks/initial100/run_manifest.json",
+      "source": "qa/aw081/speed_calibration_100/run_manifest.json",
+      "size": 1243,
+      "sha256": "2f7cb950b3e9aa326868ef9d5b7049ae28fa24a4b8f4df0625c6d98703fe3a31"
+    },
+    {
+      "path": "qa/aw086/benchmarks/initial100/measurement_protocol.json",
+      "source": "qa/aw081/speed_calibration_100/measurement_protocol.json",
+      "size": 1335,
+      "sha256": "661bcec2ad34c0e662053c6803a36321932d139e025afdce402e09acce38a29d"
+    },
+    {
+      "path": "qa/aw086/benchmarks/initial100/calibration_analysis.json",
+      "source": "qa/aw081/speed_calibration_100/calibration_analysis.json",
+      "size": 14701,
+      "sha256": "a492811b1cb7ce575acd3fc54a94be67dc6e26339f45fdbf91a568be3aa87be4"
+    },
+    {
+      "path": "qa/aw086/benchmarks/initial100/full_archive_recount.json",
+      "source": "qa/aw081/speed_calibration_100/full_archive_recount.json",
+      "size": 4212,
+      "sha256": "3b5299b8f40f754c93aac48d5bef98d8aaf9baf73bedeb4754881b289091204f"
+    },
+    {
+      "path": "qa/aw086/benchmarks/initial100/final_receipt.json",
+      "source": "qa/aw081/speed_calibration_100/final_receipt.json",
+      "size": 750,
+      "sha256": "5de613c415025cb2b253adb6b2ecb705de13739c64453678820b7abf63d0e536"
+    },
+    {
+      "path": "qa/aw086/benchmarks/ocr_adaptive/sample_manifest.json",
+      "source": "qa/aw081/ocr_adaptive_runtime/sample_manifest.json",
+      "size": 26070,
+      "sha256": "d897771c26f03ead37a46ba38e5d3649f908b63350c4bdde0eb36357e315a17c"
+    },
+    {
+      "path": "qa/aw086/benchmarks/ocr_adaptive/fixed20_result.json",
+      "source": "qa/aw081/ocr_adaptive_runtime/fixed20_result.json",
+      "size": 2166,
+      "sha256": "e84b634ce01c1736b30b1e826df83845742a7cd3afdf53cb5cf35ab7c0cd9a2e"
+    },
+    {
+      "path": "qa/aw086/benchmarks/ocr_adaptive/equivalence.json",
+      "source": "qa/aw081/ocr_adaptive_runtime/equivalence.json",
+      "size": 9967,
+      "sha256": "cb71aaea17fd192d20cd0a231727c06c6a27588e6bd5ff50bfd1e054e09ed5a0"
+    },
+    {
+      "path": "qa/aw086/benchmarks/ocr_adaptive/hardware_plan.json",
+      "source": "qa/aw081/ocr_adaptive_runtime/hardware_plan.json",
+      "size": 3324,
+      "sha256": "067ff6e624b7a294e1ffc8861a80c7b600a8ebe80add82fb3c33049d81124803"
+    },
+    {
+      "path": "qa/aw086/benchmarks/ocr_adaptive/final_audit.json",
+      "source": "qa/aw081/ocr_adaptive_runtime/final_audit.json",
+      "size": 57659,
+      "sha256": "e9c246954888b9daf8e24c9a70aec5cd5948459a95dc665dca25054331648934"
+    },
+    {
+      "path": "qa/aw086/benchmarks/ocr_adaptive/full_pytest.json",
+      "source": "qa/aw081/ocr_adaptive_runtime/full_pytest.json",
+      "size": 57529,
+      "sha256": "fc72948eda34e4be0b8177110d5fd523ef95605fb957b2979604154f3639fa8d"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/sample_manifest.json",
+      "source": "qa/aw081/glossary_hot_path/sample_manifest.json",
+      "size": 26070,
+      "sha256": "d897771c26f03ead37a46ba38e5d3649f908b63350c4bdde0eb36357e315a17c"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/fixed20_result.json",
+      "source": "qa/aw081/glossary_hot_path/fixed20_result.json",
+      "size": 5355,
+      "sha256": "4d93155844d2909cc2b352fac2c58d827a72fc6f98352e71bfe82072997e071a"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/lookup_equivalence.json",
+      "source": "qa/aw081/glossary_hot_path/lookup_equivalence.json",
+      "size": 457,
+      "sha256": "5f3529f9484633c80b1f5bdfd9087a7a09ca6e630fce08c9e41869508c7475bf"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/output_equivalence.json",
+      "source": "qa/aw081/glossary_hot_path/output_equivalence.json",
+      "size": 477,
+      "sha256": "4b7a0e64b15b12ad50f9bee0d4c4b70495c4400ec75280e6fc71d8f68578a287"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/query_plan.json",
+      "source": "qa/aw081/glossary_hot_path/query_plan.json",
+      "size": 27299,
+      "sha256": "aee1c362d0d1da0fd8fdc373f6591d966955ea69a07d2abc7f1eb788dbbbbcfb"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/fixed20_lookup_profile.json",
+      "source": "qa/aw081/glossary_hot_path/fixed20_lookup_profile.json",
+      "size": 110467,
+      "sha256": "6ebfb3301c2333b65ac3323007d8fc910373f85d27af3519fb4f2ea1bf4d7d7f"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/final_audit.json",
+      "source": "qa/aw081/glossary_hot_path/final_audit.json",
+      "size": 57971,
+      "sha256": "57b8aabacba7f6c9077de1f46ad794374bc87c71c9516b5c0bbf4d768abdd13c"
+    },
+    {
+      "path": "qa/aw086/benchmarks/glossary/full_pytest.json",
+      "source": "qa/aw081/glossary_hot_path/full_pytest.json",
+      "size": 57640,
+      "sha256": "d490e54a32464a500e540baa525fbd41583215086f7da82bad54c4bf0d0e12d8"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/sample_manifest.json",
+      "source": "qa/aw081/adaptive_pipeline/sample_manifest.json",
+      "size": 26070,
+      "sha256": "d897771c26f03ead37a46ba38e5d3649f908b63350c4bdde0eb36357e315a17c"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/fixed20_result.json",
+      "source": "qa/aw081/adaptive_pipeline/fixed20_result.json",
+      "size": 12560,
+      "sha256": "a95c2f6839669baf03eac518009a8b26e264d50941e162abf26651dd5e3741bf"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/output_equivalence.json",
+      "source": "qa/aw081/adaptive_pipeline/output_equivalence.json",
+      "size": 479,
+      "sha256": "09cbca0d4a45b5f89f9e008b4f82180358572426d88d71b88004e8f0ef69fe72"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/lookup_equivalence.json",
+      "source": "qa/aw081/adaptive_pipeline/lookup_equivalence.json",
+      "size": 249,
+      "sha256": "025d60b36804be47eeb22ac5720ee440d2436581a83b0754d340143618955c79"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/pipeline_metrics.json",
+      "source": "qa/aw081/adaptive_pipeline/pipeline_metrics.json",
+      "size": 1153,
+      "sha256": "f16c5797f4fc0a043d70f0c0e928d507c33223f864b5eba120e8626f84577ac4"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/pipeline_plan.json",
+      "source": "qa/aw081/adaptive_pipeline/pipeline_plan.json",
+      "size": 4463,
+      "sha256": "88b5ff5df1cff1dccc9aef14368aa321742e2860e69326ec253d2ea094732d29"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/mini_benchmarks.json",
+      "source": "qa/aw081/adaptive_pipeline/mini_benchmarks.json",
+      "size": 20622,
+      "sha256": "5e31609cba579472d99c703217ca52dfc34650de3cab4279f71607f634f70433"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/final_audit.json",
+      "source": "qa/aw081/adaptive_pipeline/final_audit.json",
+      "size": 146846,
+      "sha256": "d90cffbd7e2dda727c6e08f5bfc2d43bb16b2ab09198fad1e677d35f812fdd7f"
+    },
+    {
+      "path": "qa/aw086/benchmarks/pipeline/full_pytest.json",
+      "source": "qa/aw081/adaptive_pipeline/full_pytest.json",
+      "size": 58071,
+      "sha256": "9a92c103f1e6aeb4f8a9a6c71150e584772c7d4c968ce31ee6d6702d04bee05c"
+    },
+    {
+      "path": "qa/aw086/benchmarks/runtime_polish/sample_manifest.json",
+      "source": "qa/aw081/final_speed_patch_5pdf/sample_manifest.json",
+      "size": 18733,
+      "sha256": "dd756a93f54427a26da600124c0dbe1afe893114131c8b05a15c3e0e2a0f98ab"
+    },
+    {
+      "path": "qa/aw086/benchmarks/runtime_polish/fixed5_result.json",
+      "source": "qa/aw081/final_speed_patch_5pdf/fixed5_result.json",
+      "size": 19679,
+      "sha256": "e86872b62f1f15d67790d2a0e5c8925c9345f474f93d013367f498020e63a288"
+    },
+    {
+      "path": "qa/aw086/benchmarks/runtime_polish/accepted_changes.json",
+      "source": "qa/aw081/final_speed_patch_5pdf/accepted_changes.json",
+      "size": 67466,
+      "sha256": "449a05a1f1281bbc1d9c2b726e28f0a199d5ecead915bd9e791bc9f43f1f3678"
+    },
+    {
+      "path": "qa/aw086/benchmarks/runtime_polish/lock_profile.json",
+      "source": "qa/aw081/final_speed_patch_5pdf/lock_profile.json",
+      "size": 19921,
+      "sha256": "f536d00b7a7f6e37cc570df85b718b930c1af3847a2c6570fa6f151cdebf66bb"
+    },
+    {
+      "path": "qa/aw086/benchmarks/runtime_polish/output_equivalence.json",
+      "source": "qa/aw081/final_speed_patch_5pdf/output_equivalence.json",
+      "size": 5401,
+      "sha256": "162258bf0e8d9878e9d426bcda4391fc94fcde433c1c665495c271c518a4fd23"
+    },
+    {
+      "path": "qa/aw086/benchmarks/runtime_polish/full_pytest.json",
+      "source": "qa/aw081/final_speed_patch_5pdf/full_pytest.json",
+      "size": 58100,
+      "sha256": "c6a3b606792c629293fd397a6a210fa9ba72406f1474aeaf2478683ecd7dc8bd"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/rejected_prototype.zip",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/rejected_prototype.zip",
+      "size": 30999,
+      "sha256": "4004b10ff1c87e9907076d7b906847d5152a4559a38482eeccd07444302009e5"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/sample_manifest.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/sample_manifest.json",
+      "size": 14588,
+      "sha256": "bc51a35a80967977a688d3c6ba064b4ae33cc2ee3cfbf3d9689688a7c0c92317"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/scheduler_design.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/scheduler_design.json",
+      "size": 2658,
+      "sha256": "695f875653266870d84e9600895056536972d2aecc2cf86606d6242e9d0d7656"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/nmt_profile.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/nmt_profile.json",
+      "size": 3347,
+      "sha256": "64ccceb88961c118ad657625d3b384ec12734330e6204de7bcd454c57912980a"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/fixed5_result.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/fixed5_result.json",
+      "size": 959,
+      "sha256": "1caa41a12e03e99dc7f2b031e8478d94d5cff755a0d9d375784a69ca8bc46b81"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/output_equivalence.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/output_equivalence.json",
+      "size": 1742,
+      "sha256": "d826524a3c4967055bc0d96d199fda95e38d1ef4f7514e464b9ff926b653c2ab"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/rollback.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/rollback.json",
+      "size": 29230,
+      "sha256": "e040eddef490ca605462b38a9685802e8f78cefe39c4a41d23efad1703a08072"
+    },
+    {
+      "path": "qa/experiments/nmt_batch_scheduler/evidence/full_pytest.json",
+      "source": "qa/aw081/nmt_batch_scheduler_5pdf/full_pytest.json",
+      "size": 58207,
+      "sha256": "e451bf6c44090db94da50539e3c44483f2f7164269eb443d7f43d92c3cc16fde"
+    }
+  ],
+  "total_bytes": 2300846,
+  "research_derived_inputs": "qa/experiments/nmt_batch_scheduler/evidence/native_replay_inputs.json",
+  "preserved_test_fixture": "qa/aw081/nmt_batch_scheduler_5pdf/batch_replay.json"
+}

@@ -1,0 +1,13 @@
+{
+  "formats": [
+    "DOCX",
+    "native PDF",
+    "OCR PDF"
+  ],
+  "count": 3,
+  "glossary_enforced": 3,
+  "immutable_originals": true,
+  "real_ocr": true,
+  "real_translation": true,
+  "tm_units": 0
+}

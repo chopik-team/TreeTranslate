@@ -19,7 +19,10 @@ def duplicate(candidate, existing):
     thresholds = configuration()['dedup']
     for other in existing:
         coverage = intersection(candidate.bbox, other.bbox) / max(1, min(area(candidate.bbox), area(other.bbox)))
-        similarity = SequenceMatcher(None, normalize(candidate.text), normalize(other.text)).ratio()
-        if coverage >= thresholds['overlap'] and similarity >= thresholds['similarity']:
-            return True
+        # Disjoint geometry cannot be a duplicate, regardless of text. Keep the
+        # same thresholds/order while avoiding expensive similarity on that path.
+        if coverage >= thresholds['overlap']:
+            similarity = SequenceMatcher(None, normalize(candidate.text), normalize(other.text)).ratio()
+            if similarity >= thresholds['similarity']:
+                return True
     return False

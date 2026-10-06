@@ -1,5 +1,144 @@
 # История изменений TreeTranslate
 
+## AW0.86 — Consolidation / Freeze — 6 октября 2026
+
+Финальная техническая alpha цикла AW0.8x. Включены принятые изменения runtime, OCR, glossary/Knowledge, archive safety и bounded pipeline, а также согласованные ранее правки прогресса и обратного отсчёта ETA. Во время закрытия runtime и качество перевода не менялись; изменён только текущий version marker.
+
+- Официальный same-100 benchmark: 4783,64 → 1428,60 с (79,73 → 23,81 мин), **3,35×**, −70,14% wall; 75,26 → 252,00 обработанных PDF/час. 157 исходных / 190 выходных страниц; 76 TRANSLATED, 24 FAILED_SOURCE_PRESERVED, 0 fatal. [Performance](docs/PERFORMANCE_AW0.86.md).
+- Safe baseline после отката NMT: исторический full pytest **1269 passed**, без failures/errors/skips. Новый closing pytest и production SHA находятся в [freeze receipt](docs/AW0.86_FREEZE_RECEIPT.md).
+- Benchmarks, sample manifests, SHA/CRC/indices/configs и methodology сохранены в компактном evidence pack. [История](docs/BENCHMARK_HISTORY.md), [воспроизводимость](docs/BENCHMARK_REPRODUCIBILITY.md).
+- NMT Semantic Batch Scheduler отклонён по exact-output gate; прототип изолирован от production. [Исследования](docs/research/REJECTED_EXPERIMENTS.md).
+- Один closing commit и настоящий annotated tag AW0.86; технический GitHub release без установщика. Следующий цикл — AW0.9, только после freeze. [Release notes](docs/releases/AW0.86.md), [предварительный scope](docs/AW0.9_SCOPE.md).
+
+### Исторические milestones AW0.81–AW0.85
+
+Это документальная группировка уже выполненных этапов. Отдельных исторических Git tags/release commits для них нет; старые отчёты с внутренними номерами AW0.81 и AW0.8.x не переименованы и не переписаны.
+
+### AW0.81 — Archive Runtime / Corpus Foundation
+
+Streaming member-by-member processing без полной распаковки корпуса; reservation исходных путей, collision-safe output, точное сохранение failed sources, разделение document failures и archive/global fatal, CRC и source immutability. После раннего archive preparation bug перевод путей стал lazy, с lightweight path translation/cache; backend reuse и circuit breaker ограничили повторяющиеся deterministic failures. Инвентаризированы 17 211 PDF, выполнена первоначальная 100-PDF калибровка. Это фундамент безопасной обработки больших архивов. [Archive fix](docs/AW0.81_ARCHIVE_PERFORMANCE_FIX.md), [initial100](docs/AW0.81_100PDF_SPEED_CALIBRATION.md).
+
+### AW0.82 — OCR Adaptive Runtime
+
+Один lazy worker на run, bounded resident model cache, аппаратные RAM/VRAM ceilings, deterministic eviction, формализованный page/region gate и безопасный result cache. Fixed20: **1453,59 → 726,26 с**, −50,04% wall; OCR loads **58 → 2**, constructor/load **657,46 → 24,25 с**. Output equivalence PASS, новые OCR skips не вводились. [Отчёт](docs/AW0.81_OCR_ADAPTIVE_RUNTIME.md).
+
+### AW0.83 — Glossary / Knowledge Hot Path
+
+Persistent read-safe SQLite connections, bounded lexical/normalization/negative caches, prefetch, revision/data_version invalidation и RAM ceilings. Семантика и ranking прежние. Fixed20: **726,26 → 451,46 с** (−37,84% wall); glossary **333,15 → 66,89 с** (−79,92%). Эквивалентность 9473 фактических lookup queries PASS. [Отчёт](docs/AW0.81_GLOSSARY_HOT_PATH.md).
+
+### AW0.84 — Adaptive Pipeline / Scheduler
+
+Bounded pipeline, detached IR, backpressure, hardware-aware depth, sequence IDs, deterministic publication, failure isolation и pause/cancel cleanup; race/recovery tests. Fixed20 **451,46 → 452,60 с**: FUNCTIONAL PASS, **не выигрыш общего throughput**. Easy-first research улучшал early readiness, но не общий wall. [Отчёт](docs/AW0.81_ADAPTIVE_PIPELINE.md).
+
+### AW0.85 — Final Runtime Polish
+
+Безопасное сужение PDF_LOCK вокруг detached OCR и geometry-first dedup/postprocess. Fixed5 **277,59 → 269,08 с**, −3,06% wall (throughput +3,16%); writer lock wait **39,79 → практически 0 с**, OCR postprocess **14,43 → 7,27 с**. Функциональное и небольшое performance improvement, без нового NMT scheduler. [Отчёт](docs/AW0.81_FINAL_SPEED_PATCH_5PDF.md).
+
+## Ранее зафиксированная история
+
+## AW 0.8.3 — 1 октября 2026
+
+- ZH→RU body repair: 94 записи BUILTIN, общий Knowledge layer для подписей и имён, защита размеров и Latin/prime identifiers, консервативная обработка OCR-шумов и размещение подписей до создания масок.
+- Реальный ZIP с 7 PDF: 30 → 23 страницы, OCR continuation blocks 40 → 0, protected values 350/419 → 419/419. Сохранённые китайские подписи и ошибки смысла инструкций отмечены отдельно. [Отчёт](docs/AW0.8.3_BODY_REPAIR_QUALITY_REPORT.md).
+- Текущий движок остаётся ограничением для длинных инструкций. Подготовлены требования AW 0.8.4; новая модель и production pivot не добавлены.
+
+## AW 0.8.2 — 29 сентября 2026
+
+- ZIP input → ZIP output (1 октября): безопасный inventory/распаковка, перевод через существующий DocumentJob, сохранение структуры и неподдерживаемых assets, проверенный итоговый ZIP с no-clobber publication и cleanup. Реальный ZH→RU архив с 7 PDF прошёл два полных прогона. RAR и вложенная распаковка не добавлены. [Отчёт](docs/AW0.8.2_ZIP_OUTPUT_REPORT.md).
+
+- Дополнение PDF hotfix (1 октября): единая полоса строки на всю ширину дерева, заполнение от серого к зелёному по готовности файла. Общая ETA пакета по сохранённым замерам, инвентаризации и фактическому прогрессу; длительности ручных прогонов сохраняются отдельно от ротируемого лога. Подтверждён успешный пользовательский PDF: 108/108 сегментов, 276,30 с. [Журнал замеров](docs/qa/DOCUMENT_TIMINGS.md).
+
+- PDF hotfix (1 октября): смысловая основа имени отделена от повторных `.pdf`/`.pdf(1)` до перевода; расширение добавляется один раз. ETA исключает подготовку и первый холодный сегмент, показывает неопределённость при долгом этапе и финальной сборке. 100% следуют после публикации. `documents.log` содержит стадии, длительности обработки, загрузки модели/inference/OCR, проверки и публикации, безопасный контекст ошибки без текста документа. Реальные RU/EN прогоны ожидают проверки пользователем.
+- Исправление PDF-шрифтов (1 октября): проверка покрытия выполняется до вёрстки; неподдерживаемый блок сохраняется в оригинале с предупреждением. OCR-блок не затирается и не проверяется как отсутствующий текстовый слой. Вёрстка и страницы продолжения используют один подобранный шрифт.
+- Дополнение: на странице с сохранённым из-за шрифта блоком замены ограничены исходными прямоугольниками, избыток текста переносится в продолжения. Устранено воспроизведённое наложение на пункт 12 страницы 2 automotive PDF и последующее падение `visible_text_contiguous`; проверка целостности сохранена. Диагностика ошибок документов теперь попадает в файловый лог приложения.
+- Из Main UI и Settings удалены пользовательские performance profiles, ручная область перевода и неработающие resource controls. Auto/CPU/GPU используют общее состояние; внутренние API профилей сохранены.
+- Область определяется offline по доверенным локальным терминам, отдельно для каждого текста/документа; при недостаточной уверенности — general. Приоритет подтверждённой TM сохранён.
+- Восемь UI locales переключаются без перезапуска и без потери содержимого. Каталоги статические; UI не обращается к моделям для локализации.
+- Interface оставляет ETA и Detailed Progress; настройки действительно меняют отображение и сохраняются. Старые профили нормализуются к Automatic.
+- Проверены полный restart recovery, локальные CPU/GPU/Auto, DOCX/native PDF/OCR PDF, pause/resume/cancel. [Отчёт](docs/AW0.8.2_SETTINGS_MAIN_UI_REPORT.md).
+
+## AW 0.8 — 28 сентября 2026
+
+- Argos сохраняет инструкцию после вопроса/восклицания; исходные разделители остаются на месте.
+- Повреждённые decoder tokens и нарушение отрицательных числовых данных вызывают локальный fallback либо понятную ошибку.
+- Сохраняется регистр явно указанных файлов и команды python; неоднозначные варианты не подменяются.
+- Повторные фрагменты одного запроса переводятся один раз без потери порядка и повторений; постоянного кэша нет.
+- Исправлен ключ кэша PPStructure: повторное OCR таблиц использует уже загруженный pipeline.
+- Подробности языков создаются по требованию; закрытие активного окна ожидает worker без блокировки GUI и сохраняет незавершённую задачу.
+- Добавлен локальный baseline качества/производительности, документов/OCR, памяти и отзывчивости. Ограничения моделей раскрыты в [отчёте](docs/qa/aw08/AW0.8_RELEASE_HARDENING_REPORT.md).
+
+## AW 0.7.7 — 28 сентября 2026
+
+- В «О проекте» добавлена вкладка «Поддержка языков»: готовность перевода отдельно от глубины дополнительных ресурсов.
+- Семь карточек используют существующую матрицу, реальные локальные счётчики и сравнение с сохранёнными QA-метриками.
+- Selector, модели, маршрутизация и inference не изменены; вкладка работает offline по небольшой generated metadata.
+- [Короткий отчёт](docs/qa/aw077/AW0.7.7_LANGUAGE_SUPPORT_UX_REPORT.md).
+
+## AW 0.7.6 — 27 сентября 2026
+
+- Проверены все 100 кодов локальной M2M100 и все 42 направления семи языков, заявленных в UI; опубликована отдельная language support matrix.
+- RU/EN/ZH/DE/ES/FR/JA получили RELEASE_READY: реальные CPU, GPU и Auto smoke работают полностью offline.
+- Исправлен невалидный автоматический target: Auto остаётся только для исходного языка, swap больше не создаёт нерабочую пару, старые настройки мигрируют безопасно.
+- Исправлен Economy routing: M2M100 остаётся доступным там, где Argos не имеет маршрута, поэтому DE/ES/FR/JA не падают в экономичном режиме.
+- 83 скрытых кода классифицированы EXPERIMENTAL, 10 — BROKEN; они не добавлены в release-facing selector. Новые модели и языковые ресурсы не добавлялись.
+- [Language Support](docs/LANGUAGE_SUPPORT.md) · [отчёт](docs/AW0.7.6_LANGUAGE_RELEASE_AUDIT.md).
+
+## AW 0.7.5 — 27 сентября 2026
+
+- Общий существующий SQLite-словарь расширен без новой страницы и параллельного движка: FreeDict сохранён, добавлены WordNet 3.0 и OpenRussian.
+- Доступны 147 765 английских и 45 238 русских лемм, 253 960 смыслов и 121 577 отобранных EN/RU-примеров Tatoeba.
+- 486 262 русских форм обеспечивают точный lookup склонений и спряжений без агрессивного стемминга; `ё/е` считаются вариантами поиска, исходное написание сохраняется.
+- Примеры ранжируются по читаемости и длине, очищаются от URL/markup/дубликатов и загружаются лениво по индексам, не более пяти в UI.
+- Runtime остаётся полностью локальным; сырые корпуса находятся только в `build/lexical-sources`. База занимает 316 022 784 байта.
+- Добавлены provenance, хеши, лицензии, QA обязательных EN/RU-слов и форм, offline/integrity/size/lookup benchmark. [Отчёт](docs/AW0.7.5_EN_RU_DICTIONARY_REPORT.md).
+
+## AW 0.7.4 — 26 сентября 2026
+
+- Existing corpus refinement: English Pivot V2, EN aliases/short glosses, объяснимые ZH/domain/parent/definition evidence и REVIEW_HIGH без ослабления trust thresholds.
+- Исправлено смешивание source и target китайских aliases в pivot; уточнены положительные domain keywords, строгие scope gates сохранены.
+- Получены только 43 explicit mapped Wikidata entities и 12 недостающих родителей QA-понятий; source hashes/revisions закреплены. Старые acquisition tools дополнены `props=info`.
+- Созданы high-value review queue, классификация конфликтов, независимые pair-agreement evidence и term-by-term automotive gaps.
+- Два direct кандидата повышены после уточнения типов конфликтов; шесть прежних VERIFIED occurrences отложены. English pivot остаётся REVIEW. 48 пакетов пересобраны: 4 402 ZH→RU / 4 330 RU→ZH; предыдущие payloads сохранены.
+- Обычный текстовый перевод и лицензии сохранены. Automotive QA остался 0→0 matched terms; morphology и EN/RU Dictionary не изменялись. [Подробный отчёт](docs/AW0.7.4_KNOWLEDGE_REFINEMENT_REPORT.md).
+
+## AW 0.7.3 — 25 сентября 2026
+
+- Полные CC-CEDICT и поддержанные AGROVOC ZH/RU/EN, расширенная техническая выборка Wikidata: 181 495 исходных записей; raw данные и review queues остаются build-only.
+- 48 компактных пакетов по 13 областям: 4 406 записей ZH→RU, 4 334 RU→ZH. Разные лицензии разделены, полная provenance сохранена в NOTICE.
+- Потоковый конвертер официального AGROVOC LOD, закреплённый API-план Wikidata, отчёт покрытия и cross-domain review. Trust thresholds не снижены.
+- Коллизии обратных пар с разным регистром блокируются по нормализованному runtime-ключу; временный индекс устраняет полный скан кандидатов для каждой пары.
+- Сохранены обычный текстовый перевод, общий выбор области и приоритет TM. Обновлена атрибуция в «О проекте» для фактических источников.
+- Automotive QA не показал улучшения шести прежних предложений; металлургические проверки показали применение терминов и ограничения падежного согласования. [Полный отчёт](docs/AW0.7.3_KNOWLEDGE_EXPANSION_REPORT.md).
+
+## AW 0.7.2 — 24 сентября 2026
+
+- Developer Knowledge Harvester: отдельная build SQLite, bounded streaming/resume, source hashes/revisions, canonical concepts, direct linking и review-only English pivot.
+- Taxonomy domains, объяснимый quality score, conflicts, сохранение source variants/provenance и human review без автоматического доверия результатам моделей.
+- License gate и `.tglossary` AW0.7.1 с NOTICE/LICENSE; 26 предварительных пакетов из ограниченной реальной выборки Wikidata, 472 записи на направление по 13 областям.
+- Общий выбор области для обычного текста и документов; built-in пакеты читаются отдельно от пользовательской TM/glossary, без записи рядом с приложением.
+- В «О проекте» добавлены лицензии зависимостей, моделей, данных, шрифта и изображений, ссылки на полные notices и явно отмеченные пробелы в атрибуции.
+- Automotive QA не доказал общего улучшения качества; редакторская проверка и расширение покрытия остаются отдельной работой. Подробности: `docs/AW0.7.2_KNOWLEDGE_HARVESTER_REPORT.md`.
+
+## AW 0.7.1 — 24 сентября 2026
+
+- Завершающая проверка: отклоняются лишние маркеры всех поддерживаемых форматов и некорректные языки/domains в manifest; ошибочный пакет не меняет установленную версию.
+- Отдельный локальный Glossary Engine после TM: термины, варианты, domains/context, приоритеты, KEEP и запрещённые целевые варианты.
+- Полные термины переводятся напрямую; для предложений используется проверенный на реальных Argos/M2M100 PlaceholderCodec с откатом при повреждении.
+- Индексированный поиск без перебора всего словаря, ограниченные кеши, Unicode-границы и длинные совпадения.
+- Versioned `.tglossary`, SQLite payloads только для чтения, пользовательские переопределения и suppression, CSV/TSV/JSONL import/export и CLI.
+- Реальные EN↔RU/ZH→RU, DOCX/PDF/OCR проверки и benchmark до 500000 тестовых терминов. Производственное наполнение не выполнялось.
+- Подробности и ограничения: `docs/AW0.7.1_GLOSSARY_REPORT.md`.
+
+## AW 0.7 — 23 сентября 2026
+
+- Общая локальная Translation Memory перед TranslationRouter для текста, DOCX, PDF и OCR PDF.
+- Версионируемая SQLite в AppData, статусы доверия, языковые пары, domains/context и альтернативы перевода.
+- Exact/normalized поиск, явно подтверждённые числовые шаблоны, fuzzy-кандидаты без автоматической подмены по умолчанию.
+- Пакетный поиск, индексы, ограниченный кеш, чтение отдельной встроенной базы.
+- Явные import/export `.tmemory`, базовый TMX, экспорт подтверждённых пар; резервирование, восстановление и обслуживание.
+- Автоматического обучения на результатах моделей нет; ошибки памяти сохраняют доступность перевода моделями.
+- Отчёт и реальные синтетические замеры до 500 000 записей: `docs/AW0.7_TRANSLATION_MEMORY_REPORT.md`.
+
 ## AW 0.6.2-alpha — 23 сентября 2026
 
 - Локальный PP-OCRv6 и PP-StructureV3 для сканов и растровых фрагментов PDF.

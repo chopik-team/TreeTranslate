@@ -1,0 +1,14 @@
+[
+  {
+    "phase": "before",
+    "output": "<unk>",
+    "fallback": false,
+    "backend": "argos"
+  },
+  {
+    "phase": "after",
+    "output": "Переведено",
+    "fallback": true,
+    "backend": "m2m100"
+  }
+]

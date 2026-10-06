@@ -1,0 +1,24 @@
+{
+  "runtime_source_before_bytes": 2233813809,
+  "runtime_source_after_bytes": 2233826421,
+  "runtime_source_delta_bytes": 12612,
+  "scope": "app + assets + vendor, excluding __pycache__; model/data payloads unchanged",
+  "metadata_bytes": 4590,
+  "mean_snapshot_read_ms": 0.1427839999087155,
+  "baseline_missing": [],
+  "baseline_changed": [
+    "docs\\LANGUAGE_SUPPORT.md",
+    "CHANGELOG.md",
+    "README.md",
+    "app\\config\\constants.py",
+    "app\\gui\\dialogs\\about_dialog.py",
+    "app\\gui\\dialogs\\changelog_dialog.py",
+    "app\\gui\\styles\\stylesheet.qss",
+    "docs\\NEXT_CYCLE.md",
+    "docs\\qa\\aw04-completion.png",
+    "docs\\qa\\aw04-dictionary.png",
+    "docs\\qa\\aw04-game.png",
+    "docs\\qa\\aw04-real-text.png",
+    "tests\\test_ui_smoke.py"
+  ]
+}

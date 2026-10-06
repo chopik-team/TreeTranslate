@@ -30,7 +30,6 @@ def main():
     editor.completer.popup().setAttribute(Qt.WidgetAttribute.WA_DontShowOnScreen)
     window.preferences.set_languages("Английский", "Русский")
     window.preferences.set_device("GPU")
-    window.preferences.set_profile("Максимум")
     window.request_navigation(1)
     window.show()
     app.setActiveWindow(window)
@@ -38,14 +37,14 @@ def main():
     editor.setPlainText("hi")
     editor.moveCursor(QTextCursor.MoveOperation.End)
     state = {"step": 0, "error": None}
-    output = ROOT / "docs/qa"
+    output = Path(os.environ.get("TREETRANSLATE_QA_DIR", ROOT / "docs/qa"))
     output.mkdir(parents=True, exist_ok=True)
 
     def advance():
         try:
             if state["step"] == 0 and page._reference and page.result.editor.toPlainText():
                 assert page.result.editor.toPlainText().lower() == "привет"
-                assert "argos" in page.engine_status.text()
+                assert page.engine_status.text() == "Перевод завершён"
                 assert "Hi, Anna!" in page.examples_text.toPlainText()
                 window.grab().save(str(output / "aw04-dictionary.png"))
                 state["step"] = 1
@@ -81,7 +80,7 @@ def main():
     poll.stop()
     deadline.stop()
     assert state["step"] == 3 and state["error"] is None, state
-    print("Native Qt dictionary, Game completion + Enter, real Argos CUDA Maximum and shutdown passed")
+    print("Native Qt dictionary, Game completion + Enter, real Argos CUDA Automatic and shutdown passed")
 
 
 if __name__ == "__main__":

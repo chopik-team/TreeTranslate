@@ -1,0 +1,627 @@
+{
+  "network_attempts_parent": 0,
+  "ocr_worker_guard": "existing offline worker guard",
+  "results": [
+    {
+      "case": "docx",
+      "requested_device": "auto",
+      "iteration": 0,
+      "model_state": "cold",
+      "rss_before_mb": 91.71875,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\quality_ru.docx",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 12,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Installation guide",
+          "output": "Руководство по установке"
+        },
+        {
+          "source": "Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана."
+        },
+        {
+          "source": "Record 123 and 42 mm.",
+          "output": "Рекордные 123 и 42 мм."
+        },
+        {
+          "source": "Cooling water pressure",
+          "output": "Давление охлаждающей воды"
+        },
+        {
+          "source": "12 bar",
+          "output": "12 бар"
+        },
+        {
+          "source": "Safety instructions",
+          "output": "Инструкции по безопасности"
+        },
+        {
+          "source": "Save the configuration file.",
+          "output": "Сохранить файл конфигурации."
+        }
+      ],
+      "structure": {
+        "tables": 1,
+        "paragraphs": 4,
+        "header": "Инструкции по безопасности",
+        "footer": "Сохранить файл конфигурации."
+      },
+      "seconds": 1.786048000009032,
+      "translation_seconds": 1.6154004999843892,
+      "open_extract_seconds": 0.0168606000370346,
+      "write_seconds": 0.010892500024056062,
+      "ocr": [],
+      "rss_after_mb": 526.27734375,
+      "gpu_total_mb": 1911,
+      "parent_cpu_seconds": 6.296875,
+      "tree_peak_rss_mb": 564.09375
+    },
+    {
+      "case": "docx",
+      "requested_device": "auto",
+      "iteration": 1,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 526.51171875,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\quality_ru (1).docx",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 12,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Installation guide",
+          "output": "Руководство по установке"
+        },
+        {
+          "source": "Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана."
+        },
+        {
+          "source": "Record 123 and 42 mm.",
+          "output": "Рекордные 123 и 42 мм."
+        },
+        {
+          "source": "Cooling water pressure",
+          "output": "Давление охлаждающей воды"
+        },
+        {
+          "source": "12 bar",
+          "output": "12 бар"
+        },
+        {
+          "source": "Safety instructions",
+          "output": "Инструкции по безопасности"
+        },
+        {
+          "source": "Save the configuration file.",
+          "output": "Сохранить файл конфигурации."
+        }
+      ],
+      "structure": {
+        "tables": 1,
+        "paragraphs": 4,
+        "header": "Инструкции по безопасности",
+        "footer": "Сохранить файл конфигурации."
+      },
+      "seconds": 0.7596128000004683,
+      "translation_seconds": 0.6922707000048831,
+      "open_extract_seconds": 0.018439599982229993,
+      "write_seconds": 0.009962000011000782,
+      "ocr": [],
+      "rss_after_mb": 542.06640625,
+      "gpu_total_mb": 1911,
+      "parent_cpu_seconds": 5.5625,
+      "tree_peak_rss_mb": 564.96875
+    },
+    {
+      "case": "docx",
+      "requested_device": "auto",
+      "iteration": 2,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 542.07421875,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\quality_ru (2).docx",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 12,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Installation guide",
+          "output": "Руководство по установке"
+        },
+        {
+          "source": "Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана."
+        },
+        {
+          "source": "Record 123 and 42 mm.",
+          "output": "Рекордные 123 и 42 мм."
+        },
+        {
+          "source": "Cooling water pressure",
+          "output": "Давление охлаждающей воды"
+        },
+        {
+          "source": "12 bar",
+          "output": "12 бар"
+        },
+        {
+          "source": "Safety instructions",
+          "output": "Инструкции по безопасности"
+        },
+        {
+          "source": "Save the configuration file.",
+          "output": "Сохранить файл конфигурации."
+        }
+      ],
+      "structure": {
+        "tables": 1,
+        "paragraphs": 4,
+        "header": "Инструкции по безопасности",
+        "footer": "Сохранить файл конфигурации."
+      },
+      "seconds": 0.7331146000069566,
+      "translation_seconds": 0.6513451000209898,
+      "open_extract_seconds": 0.029833999986294657,
+      "write_seconds": 0.00958450001780875,
+      "ocr": [],
+      "rss_after_mb": 553.00390625,
+      "gpu_total_mb": 1907,
+      "parent_cpu_seconds": 4.921875,
+      "tree_peak_rss_mb": 591.03125
+    },
+    {
+      "case": "native",
+      "requested_device": "auto",
+      "iteration": 0,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 553.04296875,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\native_ru.pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 7,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "User guide",
+          "output": "Руководство пользователя"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 0.8314478999818675,
+      "translation_seconds": 0.40565229998901486,
+      "open_extract_seconds": 0.007619499956490472,
+      "write_seconds": 0.396749000006821,
+      "ocr": [],
+      "rss_after_mb": 561.4140625,
+      "gpu_total_mb": 1909,
+      "parent_cpu_seconds": 4.03125,
+      "tree_peak_rss_mb": 599.0390625
+    },
+    {
+      "case": "native",
+      "requested_device": "auto",
+      "iteration": 1,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 561.41015625,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\native_ru (1).pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 7,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "User guide",
+          "output": "Руководство пользователя"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 0.7088285000063479,
+      "translation_seconds": 0.30080830000224523,
+      "open_extract_seconds": 0.0018224000232294202,
+      "write_seconds": 0.37992649999796413,
+      "ocr": [],
+      "rss_after_mb": 575.1015625,
+      "gpu_total_mb": 1911,
+      "parent_cpu_seconds": 3.125,
+      "tree_peak_rss_mb": 603.640625
+    },
+    {
+      "case": "native",
+      "requested_device": "auto",
+      "iteration": 2,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 575.1015625,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\native_ru (2).pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 7,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "User guide",
+          "output": "Руководство пользователя"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 0.711640499997884,
+      "translation_seconds": 0.3125274000049103,
+      "open_extract_seconds": 0.0017821999790612608,
+      "write_seconds": 0.3775049999821931,
+      "ocr": [],
+      "rss_after_mb": 569.1640625,
+      "gpu_total_mb": 1911,
+      "parent_cpu_seconds": 3.265625,
+      "tree_peak_rss_mb": 607.15234375
+    },
+    {
+      "case": "scan",
+      "requested_device": "cpu",
+      "iteration": 0,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 569.16015625,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\scan_ru.pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 9,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Userguide",
+          "output": "Userguide"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 12.749521999998251,
+      "translation_seconds": 0.6032326999993529,
+      "open_extract_seconds": 11.269943300023442,
+      "write_seconds": 0.40466569998534396,
+      "ocr": [
+        {
+          "duration": 11.113646900019376,
+          "timings": {
+            "load_seconds": 0.8931054999993648,
+            "inference_seconds": 5.455955399986124,
+            "rss_bytes": 860389376,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": null,
+            "gpu_peak_reserved_bytes": null
+          },
+          "backend": "paddle",
+          "device": "cpu",
+          "segments": 4
+        }
+      ],
+      "rss_after_mb": 777.73046875,
+      "gpu_total_mb": 1657,
+      "parent_cpu_seconds": 9.15625,
+      "tree_peak_rss_mb": 2338.75
+    },
+    {
+      "case": "scan",
+      "requested_device": "cpu",
+      "iteration": 1,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 777.7421875,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\scan_ru (1).pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 9,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Userguide",
+          "output": "Userguide"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 12.420280999998795,
+      "translation_seconds": 0.6066726999997627,
+      "open_extract_seconds": 10.95645960001275,
+      "write_seconds": 0.37633009999990463,
+      "ocr": [
+        {
+          "duration": 10.793841699982295,
+          "timings": {
+            "load_seconds": 0.8547879999969155,
+            "inference_seconds": 5.424185400013812,
+            "rss_bytes": 863440896,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": null,
+            "gpu_peak_reserved_bytes": null
+          },
+          "backend": "paddle",
+          "device": "cpu",
+          "segments": 4
+        }
+      ],
+      "rss_after_mb": 777.2265625,
+      "gpu_total_mb": 1657,
+      "parent_cpu_seconds": 8.59375,
+      "tree_peak_rss_mb": 2350.22265625
+    },
+    {
+      "case": "scan",
+      "requested_device": "gpu",
+      "iteration": 0,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 777.22265625,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\scan_ru (2).pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 9,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Userguide",
+          "output": "Userguide"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 8.673176799988141,
+      "translation_seconds": 0.5176806999952532,
+      "open_extract_seconds": 7.091150499996729,
+      "write_seconds": 0.37327780001214705,
+      "ocr": [
+        {
+          "duration": 6.942763999977615,
+          "timings": {
+            "load_seconds": 1.7688531000167131,
+            "inference_seconds": 0.5537377999862656,
+            "rss_bytes": 1773740032,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": 434985984,
+            "gpu_peak_reserved_bytes": 621951744
+          },
+          "backend": "paddle",
+          "device": "gpu",
+          "segments": 4
+        }
+      ],
+      "rss_after_mb": 573.63671875,
+      "gpu_total_mb": 1919,
+      "parent_cpu_seconds": 5.203125,
+      "tree_peak_rss_mb": 2306.83984375
+    },
+    {
+      "case": "scan",
+      "requested_device": "gpu",
+      "iteration": 1,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 573.6328125,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\scan_ru (3).pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 9,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Userguide",
+          "output": "Userguide"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 8.510491099994397,
+      "translation_seconds": 0.5217808999877889,
+      "open_extract_seconds": 6.954659399983939,
+      "write_seconds": 0.3694526000181213,
+      "ocr": [
+        {
+          "duration": 6.8069176000135485,
+          "timings": {
+            "load_seconds": 1.6850646999955643,
+            "inference_seconds": 0.49195110000437126,
+            "rss_bytes": 1592561664,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": 434985984,
+            "gpu_peak_reserved_bytes": 621951744
+          },
+          "backend": "paddle",
+          "device": "gpu",
+          "segments": 4
+        }
+      ],
+      "rss_after_mb": 573.41796875,
+      "gpu_total_mb": 1924,
+      "parent_cpu_seconds": 5.78125,
+      "tree_peak_rss_mb": 2154.2734375
+    },
+    {
+      "case": "mixed",
+      "requested_device": "auto",
+      "iteration": 0,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 573.41796875,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\mixed_ru.pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 10,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "User guide",
+          "output": "Руководство пользователя"
+        },
+        {
+          "source": "Save the configuration file before restarting the application.",
+          "output": "Сохраните файл конфигурации перед перезагрузкой приложения."
+        },
+        {
+          "source": "Read the instructions before installation.",
+          "output": "Прочитайте инструкцию перед установкой."
+        }
+      ],
+      "pages": 1,
+      "seconds": 8.473639199975878,
+      "translation_seconds": 0.707159200013848,
+      "open_extract_seconds": 6.718268899974646,
+      "write_seconds": 0.3670120000024326,
+      "ocr": [
+        {
+          "duration": 6.663561199995456,
+          "timings": {
+            "load_seconds": 1.7468349999981,
+            "inference_seconds": 0.402608100004727,
+            "rss_bytes": 1781923840,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": 76225536,
+            "gpu_peak_reserved_bytes": 98068480
+          },
+          "backend": "paddle",
+          "device": "gpu",
+          "segments": 1
+        }
+      ],
+      "rss_after_mb": 573.18359375,
+      "gpu_total_mb": 1929,
+      "parent_cpu_seconds": 5.5,
+      "tree_peak_rss_mb": 2264.41015625
+    },
+    {
+      "case": "rotated",
+      "requested_device": "auto",
+      "iteration": 0,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 573.18359375,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\rotated_ru.pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 11,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана."
+        },
+        {
+          "source": "Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана."
+        },
+        {
+          "source": "Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана."
+        },
+        {
+          "source": "Userguide",
+          "output": "Userguide"
+        }
+      ],
+      "pages": 1,
+      "seconds": 8.68423129999428,
+      "translation_seconds": 0.6290664999687579,
+      "open_extract_seconds": 6.920671999978367,
+      "write_seconds": 0.4361444000096526,
+      "ocr": [
+        {
+          "duration": 6.807527900004061,
+          "timings": {
+            "load_seconds": 1.6141059000219684,
+            "inference_seconds": 0.5582370999909472,
+            "rss_bytes": 1622417408,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": 434985984,
+            "gpu_peak_reserved_bytes": 621951744
+          },
+          "backend": "paddle",
+          "device": "gpu",
+          "segments": 4
+        }
+      ],
+      "rss_after_mb": 572.20703125,
+      "gpu_total_mb": 1943,
+      "parent_cpu_seconds": 6.390625,
+      "tree_peak_rss_mb": 2152.3984375
+    },
+    {
+      "case": "poor",
+      "requested_device": "auto",
+      "iteration": 0,
+      "model_state": "mixed retained/released; see stages",
+      "rss_before_mb": 572.2265625,
+      "output": "C:\\TreeTranslate\\build\\aw08\\outputs-final\\poor_ru.pdf",
+      "source_unchanged": true,
+      "completed": true,
+      "progress_events": 9,
+      "last_percent": 100,
+      "warnings": [],
+      "transcript": [
+        {
+          "source": "Userguide",
+          "output": "Userguide"
+        },
+        {
+          "source": "Do not start the pump before the valve is open. Do not start the pump before the valve is open. Do not start the pump before the valve is open.",
+          "output": "Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана. Не запускайте насос до открытия клапана."
+        }
+      ],
+      "pages": 1,
+      "seconds": 8.703034600010142,
+      "translation_seconds": 0.5111164999834727,
+      "open_extract_seconds": 7.090120999986539,
+      "write_seconds": 0.3865790000127163,
+      "ocr": [
+        {
+          "duration": 6.9451935999968555,
+          "timings": {
+            "load_seconds": 1.8389616000058595,
+            "inference_seconds": 0.47383160001481883,
+            "rss_bytes": 1729331200,
+            "network_attempts": 0,
+            "gpu_peak_allocated_bytes": 434985984,
+            "gpu_peak_reserved_bytes": 621951744
+          },
+          "backend": "paddle",
+          "device": "gpu",
+          "segments": 4
+        }
+      ],
+      "rss_after_mb": 573.2890625,
+      "gpu_total_mb": 1951,
+      "parent_cpu_seconds": 5.375,
+      "tree_peak_rss_mb": 2261.30078125
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+OK argos-en-ru 217259288 bytes
+OK argos-ru-en 173455367 bytes
+OK argos-zh-en 86137496 bytes
+OK argos-en-zh 85640765 bytes
+OK m2m100-418m-int8 499882152 bytes
+OK OCR PP-OCRv6_small_det 10071314 bytes
+OK OCR PP-OCRv6_small_rec 21456674 bytes
+OK OCR cyrillic_PP-OCRv5_mobile_rec 8204341 bytes
+OK OCR PP-DocLayout_plus-L 130398558 bytes
+OK OCR PP-LCNet_x1_0_doc_ori 6866223 bytes
+OK OCR PP-LCNet_x1_0_table_cls 6860750 bytes
+OK OCR SLANeXt_wired 365745793 bytes
+OK OCR SLANet_plus 7999557 bytes
+OK OCR RT-DETR-L_wired_table_cell_det 129938458 bytes
+OK OCR RT-DETR-L_wireless_table_cell_det 129939193 bytes

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import gc
 import logging
+from app.config.logging_config import timed_process, timed_stage
 from threading import Event
 
 from app.engine.backends.base_backend import BaseBackend, check_cancelled
@@ -28,8 +29,10 @@ class M2M100Backend(BaseBackend):
         record = next((row for row in records if row.id == "m2m100-418m-int8"), None)
         return BackendCapabilities(languages=frozenset(record.languages) if record else frozenset())
 
+    @timed_process('m2m100_load_or_reuse')
     def _load(self, options: InferenceOptions) -> None:
-        if self._translator is not None and self._options == options:
+        if self._translator is not None and (self._options.device, self._options.compute_type, self._options.threads) == (options.device, options.compute_type, options.threads):
+            self._options = options
             return
         self.shutdown()
         records = self.models.available(self.name)
@@ -40,12 +43,13 @@ class M2M100Backend(BaseBackend):
         root = self.models.validate(record)
         self.models.states[record.id] = ModelState.LOADING
         try:
-            import ctranslate2
-            from app.engine.backends.m2m100_tokenizer import LocalM2M100Tokenizer
-            self._tokenizer = LocalM2M100Tokenizer(root / "tokenizer")
-            self._translator = ctranslate2.Translator(
-                str(root / "model"), device=options.device, compute_type=options.compute_type,
-                intra_threads=options.threads, inter_threads=1)
+            with timed_stage('m2m100_model_load'):
+                import ctranslate2
+                from app.engine.backends.m2m100_tokenizer import LocalM2M100Tokenizer
+                self._tokenizer = LocalM2M100Tokenizer(root / "tokenizer")
+                self._translator = ctranslate2.Translator(
+                    str(root / "model"), device=options.device, compute_type=options.compute_type,
+                    intra_threads=options.threads, inter_threads=1)
         except ImportError as error:
             self.models.states[record.id] = ModelState.ERROR
             logger.error("backend=m2m100 model_id=%s model_state=%s runtime_dependency_missing=%s",
@@ -71,10 +75,11 @@ class M2M100Backend(BaseBackend):
 
         def infer(batch):
             source = [tokenizer.source_tokens(pieces, request.source_language) for pieces in batch]
-            return self._translator.translate_batch(
-                source, target_prefix=[[f"__{request.target_language}__"]] * len(source),
-                beam_size=options.beam_size, max_batch_size=options.batch_tokens, batch_type="tokens",
-                max_input_length=0, max_decoding_length=options.max_decoding_length)
+            with timed_stage('m2m100_inference'):
+                return self._translator.translate_batch(
+                    source, target_prefix=[[f"__{request.target_language}__"]] * len(source),
+                    beam_size=options.beam_size, max_batch_size=options.batch_tokens, batch_type="tokens",
+                    max_input_length=0, max_decoding_length=options.max_decoding_length)
 
         text = translate_segments(request.text, request.target_language, tokenizer.encode,
                                   tokenizer.decode, infer, options, cancelled)

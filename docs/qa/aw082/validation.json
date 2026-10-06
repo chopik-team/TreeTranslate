@@ -1,0 +1,61 @@
+{
+  "version": "AW 0.8.2",
+  "tests": {
+    "tests": 565,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "checks": {
+    "compileall": {
+      "exit_code": 0
+    },
+    "diff_check": {
+      "exit_code": 0
+    }
+  },
+  "catalogs": {
+    "de-DE": {
+      "entries": 713,
+      "missing": []
+    },
+    "en-GB": {
+      "entries": 713,
+      "missing": []
+    },
+    "en-US": {
+      "entries": 713,
+      "missing": []
+    },
+    "es-ES": {
+      "entries": 713,
+      "missing": []
+    },
+    "fr-FR": {
+      "entries": 713,
+      "missing": []
+    },
+    "ja-JP": {
+      "entries": 713,
+      "missing": []
+    },
+    "ru-RU": {
+      "entries": 713,
+      "missing": []
+    },
+    "zh-CN": {
+      "entries": 713,
+      "missing": []
+    }
+  },
+  "required_keys": 696,
+  "preservation": true,
+  "restart_phases": 16,
+  "restart_passed": true,
+  "devices": 3,
+  "documents": 3,
+  "documents_passed": true,
+  "pause_resume": "passed",
+  "cancel": "passed",
+  "network_attempts": 0
+}

@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "checks": {
+    "candidates": true,
+    "writer": true,
+    "fingerprints": true,
+    "full_OCR_source_contracts_profiles": true,
+    "ordered_glossary_terms_constraints": true,
+    "every_NMT_semantic_request_backend_model_output": true,
+    "every_ordered_model_input_settings_output": true,
+    "fallback_attempts": true,
+    "backend_circuit_fallback_skips": true,
+    "statuses": true,
+    "source_SHA": true,
+    "ZIP_inventory_order_directories_CRC": true,
+    "all_PDF_bytes_except_generated_trailer_ID": true,
+    "baseline_two_resident_OCR_loads": true,
+    "after_two_resident_OCR_loads": true
+  },
+  "CRC_details": [
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "CRC_before": 850337595,
+      "CRC_after": 850337595,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P193100 角 3.3.2 角/Показать намерения_ru.pdf",
+      "CRC_before": 33724478,
+      "CRC_after": 1033395421,
+      "raw_exact": false,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P261000 ECM PCM机/проверка и ремонт_ru.pdf",
+      "CRC_before": 1971075599,
+      "CRC_after": 3281039237,
+      "raw_exact": false,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/C161100 сEMSжадныйCANКоммуникация сверхчасовая/схема_ru.pdf",
+      "CRC_before": 325065740,
+      "CRC_after": 1433344587,
+      "raw_exact": false,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+      "CRC_before": 2214070644,
+      "CRC_after": 2214070644,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/BJ Бут/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P193100 角 3.3.2 角/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P261000 ECM PCM机/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/C161100 сEMSжадныйCANКоммуникация сверхчасовая/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    },
+    {
+      "member": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/",
+      "CRC_before": 0,
+      "CRC_after": 0,
+      "raw_exact": true,
+      "all_bytes_except_generated_trailer_ID_exact": true
+    }
+  ],
+  "normalization": "Only regenerated PDF trailer /ID bytes; no content/objects/fonts/images/metadata normalization. ZIP CRC validated against every stored member; failed source raw exact."
+}

@@ -1,0 +1,414 @@
+{
+  "coverage": {
+    "steel": {
+      "candidates": 12,
+      "verified": 2,
+      "examples": [
+        {
+          "id": "0a79364744daea17eca3af5512f546cdbe5c328bf8089277aab26e38021ea775",
+          "zh": "钢铁",
+          "ru": "сталь",
+          "en": [
+            "steel"
+          ],
+          "status": "VERIFIED",
+          "score": 95,
+          "link_type": "DIRECT_CONCEPT",
+          "provenance": [
+            {
+              "concept": "agrovoc:http://aims.fao.org/aos/agrovoc/c_7384",
+              "descriptions": {},
+              "input_sha256": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd",
+              "labels": {
+                "en": "steel",
+                "ru": "сталь",
+                "zh": "钢铁"
+              },
+              "metadata": {},
+              "offset": 16016306,
+              "record": "http://aims.fao.org/aos/agrovoc/c_7384",
+              "source": "agrovoc-20260907"
+            }
+          ]
+        },
+        {
+          "id": "1495672c56b31b1bde81370804f1824ec4e78a31371f43afa5823b9ad3462bd3",
+          "zh": "钢",
+          "ru": "сталь",
+          "en": [
+            "steel"
+          ],
+          "status": "VERIFIED",
+          "score": 95,
+          "link_type": "DIRECT_CONCEPT",
+          "provenance": [
+            {
+              "concept": "wikidata:Q11427",
+              "descriptions": {
+                "en": "alloy made by combining iron and other elements",
+                "ru": "сплав железа с углеродом",
+                "zh": "由铁与其他元素结合而成的合金"
+              },
+              "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+              "labels": {
+                "en": "steel",
+                "ru": "сталь",
+                "zh": "钢",
+                "zh-hans": "钢",
+                "zh-hant": "鋼"
+              },
+              "metadata": {
+                "modified": null,
+                "revision": null
+              },
+              "offset": 11354131,
+              "record": "Q11427",
+              "source": "wikidata-technical-20260925"
+            }
+          ]
+        },
+        {
+          "id": "1d37c9f065e6f5095bd5cdc3bfae1432a5098e07abf35343a4fab9c8331aeb38",
+          "zh": "钢铁",
+          "ru": "сталь",
+          "en": [
+            "steel"
+          ],
+          "status": "REVIEW",
+          "score": 0,
+          "link_type": "ENGLISH_PIVOT_AMBIGUOUS",
+          "provenance": [
+            {
+              "concept": "cedict:f3073d71fa2c68ec23af8e1ed4f77d5df6e8ddeab785e47e040d3326776fbd50",
+              "descriptions": {},
+              "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687",
+              "labels": {
+                "zh-hans": "钢铁",
+                "zh-hant": "鋼鐵"
+              },
+              "metadata": {
+                "original_line": "鋼鐵 钢铁 [gang1 tie3] /steel/",
+                "pinyin": "gang1 tie3"
+              },
+              "offset": 8820925,
+              "record": "f3073d71fa2c68ec23af8e1ed4f77d5df6e8ddeab785e47e040d3326776fbd50",
+              "source": "cedict-20260923"
+            },
+            {
+              "concept": "agrovoc:http://aims.fao.org/aos/agrovoc/c_7384",
+              "descriptions": {},
+              "input_sha256": "d2f6aba1891e8cf09f540f11a3bc9571c3dede80e48c69b251ed8bc7461393bd",
+              "labels": {
+                "en": "steel",
+                "ru": "сталь",
+                "zh": "钢铁"
+              },
+              "metadata": {},
+              "offset": 16016306,
+              "record": "http://aims.fao.org/aos/agrovoc/c_7384",
+              "source": "agrovoc-20260907"
+            }
+          ]
+        }
+      ]
+    },
+    "alloy steel": {
+      "candidates": 1,
+      "verified": 1,
+      "examples": [
+        {
+          "id": "e53ab71e14274a293235f33b1fc3770778b6464a46ee102222d6ee4bf3028c2a",
+          "zh": "合金钢",
+          "ru": "легированная сталь",
+          "en": [
+            "alloy steel"
+          ],
+          "status": "VERIFIED",
+          "score": 95,
+          "link_type": "DIRECT_CONCEPT",
+          "provenance": [
+            {
+              "concept": "wikidata:Q1070521",
+              "descriptions": {
+                "en": "steel that is alloyed with a variety of elements"
+              },
+              "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+              "labels": {
+                "en": "alloy steel",
+                "ru": "легированная сталь",
+                "zh": "合金钢",
+                "zh-tw": "合金鋼"
+              },
+              "metadata": {
+                "modified": null,
+                "revision": null
+              },
+              "offset": 6040744,
+              "record": "Q1070521",
+              "source": "wikidata-technical-20260925"
+            }
+          ]
+        }
+      ]
+    },
+    "continuous casting": {
+      "candidates": 2,
+      "verified": 1,
+      "examples": [
+        {
+          "id": "a48de818cbd37dd106ec2fe956f950ce8a0541552d792f159d74570983bdb2c6",
+          "zh": "连铸",
+          "ru": "непрерывная разливка",
+          "en": [
+            "continuous casting"
+          ],
+          "status": "VERIFIED",
+          "score": 95,
+          "link_type": "DIRECT_CONCEPT",
+          "provenance": [
+            {
+              "concept": "wikidata:Q1506832",
+              "descriptions": {
+                "en": "process whereby molten metal is solidified into a \"semifinished\" billet, bloom, or slab for subsequent rolling in the finishing mills"
+              },
+              "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+              "labels": {
+                "en": "continuous casting",
+                "ru": "непрерывная разливка",
+                "zh": "連續鑄造",
+                "zh-cn": "连铸",
+                "zh-hans": "连铸",
+                "zh-hant": "連鑄"
+              },
+              "metadata": {
+                "modified": null,
+                "revision": null
+              },
+              "offset": 28616211,
+              "record": "Q1506832",
+              "source": "wikidata-technical-20260925"
+            }
+          ]
+        },
+        {
+          "id": "fc0cccb86f6e10350212e7a2afc6fa618c93bb05d3cb9d0c17d22f5a4a2af4f0",
+          "zh": "连铸",
+          "ru": "непрерывная разливка",
+          "en": [
+            "continuous casting"
+          ],
+          "status": "REVIEW",
+          "score": 0,
+          "link_type": "ENGLISH_PIVOT_EXACT",
+          "provenance": [
+            {
+              "concept": "cedict:ff28233c93e8275aeee9a4f9162725a9f6192f7344d1491f6aca6cf5e5d84eba",
+              "descriptions": {},
+              "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687",
+              "labels": {
+                "zh-hans": "连铸",
+                "zh-hant": "連鑄"
+              },
+              "metadata": {
+                "original_line": "連鑄 连铸 [lian2 zhu4] /continuous casting (metallurgy)/",
+                "pinyin": "lian2 zhu4"
+              },
+              "offset": 8518268,
+              "record": "ff28233c93e8275aeee9a4f9162725a9f6192f7344d1491f6aca6cf5e5d84eba",
+              "source": "cedict-20260923"
+            },
+            {
+              "concept": "wikidata:Q1506832",
+              "descriptions": {
+                "en": "process whereby molten metal is solidified into a \"semifinished\" billet, bloom, or slab for subsequent rolling in the finishing mills"
+              },
+              "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+              "labels": {
+                "en": "continuous casting",
+                "ru": "непрерывная разливка",
+                "zh": "連續鑄造",
+                "zh-cn": "连铸",
+                "zh-hans": "连铸",
+                "zh-hant": "連鑄"
+              },
+              "metadata": {
+                "modified": null,
+                "revision": null
+              },
+              "offset": 28616211,
+              "record": "Q1506832",
+              "source": "wikidata-technical-20260925"
+            }
+          ]
+        }
+      ]
+    },
+    "mold": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    },
+    "tundish": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    },
+    "billet": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    },
+    "slab": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    },
+    "bloom": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    },
+    "ladle": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    },
+    "rolling": {
+      "candidates": 2,
+      "verified": 0,
+      "examples": [
+        {
+          "id": "47a65b7840e1e16c190698cf79be4f5c5ce0e92c3bb9e46d186c81927002f91a",
+          "zh": "压机",
+          "ru": "прокатка",
+          "en": [
+            "rolling"
+          ],
+          "status": "AUTO",
+          "score": 95,
+          "link_type": "DIRECT_CONCEPT",
+          "provenance": [
+            {
+              "concept": "wikidata:Q452648",
+              "descriptions": {
+                "en": "metalworking process",
+                "ru": "процесс пластического деформирования тел на прокатном стане между вращающимися приводными валками"
+              },
+              "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+              "labels": {
+                "en": "rolling",
+                "ru": "прокатка",
+                "zh": "轧",
+                "zh-hans": "压机",
+                "zh-hant": "壓機"
+              },
+              "metadata": {
+                "modified": null,
+                "revision": null
+              },
+              "offset": 88596507,
+              "record": "Q452648",
+              "source": "wikidata-technical-20260925"
+            }
+          ]
+        },
+        {
+          "id": "71d3bec06301577cc9e327ec6d4ed8e8968e0aeb691cc5bd180163f6202c2384",
+          "zh": "轰隆",
+          "ru": "прокатка",
+          "en": [
+            "rolling"
+          ],
+          "status": "REVIEW",
+          "score": 0,
+          "link_type": "ENGLISH_PIVOT_AMBIGUOUS",
+          "provenance": [
+            {
+              "concept": "cedict:6c7178573885536615874e6f30d92183a6da7fbf0237c8ae06d28b95a562504f",
+              "descriptions": {},
+              "input_sha256": "595a2e44ae73bf8b5c97b9f2f1dbf4e693628fa56e29a283a68246180359f687",
+              "labels": {
+                "zh-hans": "轰隆",
+                "zh-hant": "轟隆"
+              },
+              "metadata": {
+                "original_line": "轟隆 轰隆 [hong1 long1] /(onom.) rumbling/rolling/",
+                "pinyin": "hong1 long1"
+              },
+              "offset": 8404756,
+              "record": "6c7178573885536615874e6f30d92183a6da7fbf0237c8ae06d28b95a562504f",
+              "source": "cedict-20260923"
+            },
+            {
+              "concept": "wikidata:Q452648",
+              "descriptions": {
+                "en": "metalworking process",
+                "ru": "процесс пластического деформирования тел на прокатном стане между вращающимися приводными валками"
+              },
+              "input_sha256": "fcab62fcbc86e307e31d1824008a6d34d428637af6263b11801174f0a6dce325",
+              "labels": {
+                "en": "rolling",
+                "ru": "прокатка",
+                "zh": "轧",
+                "zh-hans": "压机",
+                "zh-hant": "壓機"
+              },
+              "metadata": {
+                "modified": null,
+                "revision": null
+              },
+              "offset": 88596507,
+              "record": "Q452648",
+              "source": "wikidata-technical-20260925"
+            }
+          ]
+        }
+      ]
+    },
+    "heat treatment": {
+      "candidates": 0,
+      "verified": 0,
+      "examples": []
+    }
+  },
+  "sentences": [
+    {
+      "source": "检查钢铁。",
+      "result": "Проверьте сталь.",
+      "status": "enforced",
+      "candidate_id": "0a79364744daea17eca3af5512f546cdbe5c328bf8089277aab26e38021ea775",
+      "source_derived_term": "钢铁",
+      "target": "сталь",
+      "backend": "m2m100",
+      "pack_ids": [
+        "metallurgy-zh-ru-cc-by-4-0"
+      ]
+    },
+    {
+      "source": "检查合金钢。",
+      "result": "Проверьте легированная сталь.",
+      "status": "enforced",
+      "candidate_id": "e53ab71e14274a293235f33b1fc3770778b6464a46ee102222d6ee4bf3028c2a",
+      "source_derived_term": "合金钢",
+      "target": "легированная сталь",
+      "backend": "m2m100",
+      "pack_ids": [
+        "metallurgy-zh-ru-cc0-1-0"
+      ]
+    },
+    {
+      "source": "检查连铸。",
+      "result": "Проверьте непрерывная разливка.",
+      "status": "enforced",
+      "candidate_id": "a48de818cbd37dd106ec2fe956f950ce8a0541552d792f159d74570983bdb2c6",
+      "source_derived_term": "连铸",
+      "target": "непрерывная разливка",
+      "backend": "m2m100",
+      "pack_ids": [
+        "metallurgy-zh-ru-cc0-1-0"
+      ]
+    }
+  ],
+  "sentences_are_synthetic_checks_of_source_terms": true,
+  "human_semantic_quality_verified": false
+}

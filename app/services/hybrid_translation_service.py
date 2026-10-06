@@ -32,6 +32,12 @@ class HybridTranslationService(TranslationService):
         self.engine = engine
         self.real_files = True
         self.files = DocumentTranslationService(self)
+        memory = getattr(engine, 'memory', None)
+        if memory is not None:
+            memory.warning = self.files.warning.emit
+        glossary = getattr(engine, 'glossary', None)
+        if glossary is not None:
+            glossary.warning = self.files.warning.emit
         self.files.state_changed.connect(self.state_changed)
         self.files.scan_finished.connect(self.scan_finished)
         self.files.progress_changed.connect(self.progress_changed)
@@ -40,6 +46,7 @@ class HybridTranslationService(TranslationService):
         self._pending = None
         self._active_cancel = None
         self._closed = False
+        self._closing = False
         self.text_busy = False
         self._worker_finished.connect(self._complete, Qt.ConnectionType.QueuedConnection)
 
@@ -72,13 +79,13 @@ class HybridTranslationService(TranslationService):
         self.files.cancel()
 
     def submit_text(self, text: str, source: str, target: str,
-                    policy: PerformanceSettings, request_id: str) -> None:
-        if self._closed or self.files.busy:
+                    policy: PerformanceSettings, request_id: str, *, domain: str = 'general') -> None:
+        if self._closed or self._closing or self.files.busy:
             return
         request = TranslationRequest(
             text, source, target, DevicePreference(policy.device.lower()),
             PROFILE_NAMES.get(policy.mode, PerformanceProfile.AUTOMATIC), request_id,
-            int(policy.cpu_threads) if policy.cpu_threads.isdigit() else None)
+            int(policy.cpu_threads) if policy.cpu_threads.isdigit() else None, domain=domain)
         self._pending = (request, policy.unload_model)
         if self._active_cancel:
             self._active_cancel.set()
@@ -145,3 +152,9 @@ class HybridTranslationService(TranslationService):
             self._executor.shutdown(wait=True, cancel_futures=True)
         else:
             self.engine.shutdown()
+
+    def begin_shutdown(self):
+        """Reject new work while cooperative cancellation keeps the GUI alive."""
+        self._closing = True
+        self.cancel_text()
+        self.files.cancel()

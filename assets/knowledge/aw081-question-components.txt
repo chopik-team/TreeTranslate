@@ -1,0 +1,3 @@
+# Independently authored noun relation; not a diagnostic sentence.
+# source|nominative|genitive|accusative|gender|subdomain
+故障原因|причина неисправности|причины неисправности|причину неисправности|f|common

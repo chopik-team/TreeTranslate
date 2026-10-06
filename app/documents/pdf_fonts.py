@@ -100,7 +100,9 @@ class FontResolver:
     def embed(self, document, face, text, cache_key=None):
         key = (id(face), cache_key if cache_key is not None else frozenset(text))
         if key not in self.native:
-            font = TTFont(BytesIO(face.data))
+            # Preserve the bundled font timestamp: wall-clock metadata otherwise
+            # makes identical validated PDF writes differ on every run.
+            font = TTFont(BytesIO(face.data), recalcTimestamp=False)
             options = subset.Options()
             options.layout_features = []
             sub = subset.Subsetter(options=options)

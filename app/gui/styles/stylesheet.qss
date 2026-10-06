@@ -6,7 +6,7 @@ QFrame#dropZone[dragActive="true"] {{ background: {drop_active}; border-color: {
 QFrame#sourcePanel {{ background: {source_panel}; border: 1px solid {border}; border-radius: 16px; }}
 QFrame#textEditorPanel, QFrame#referencePanel {{ background: {panel_alt}; border: 1px solid {border}; border-radius: 14px; }}
 QFrame#exampleCard {{ background: {example_card}; border: 0; border-radius: 9px; }}
-QFrame#changelogCard, QFrame#aboutCredits, QFrame#aboutEngines {{ background: {panel_soft}; border: 1px solid {border}; border-radius: 12px; }}
+QFrame#changelogCard, QFrame#aboutCredits, QFrame#aboutEngines, QFrame#languageSupportCard {{ background: {panel_soft}; border: 1px solid {border}; border-radius: 12px; }}
 QLabel#aboutSectionTitle {{ font-weight: 600; color: {text_primary}; }}
 QFrame#divider {{ background: {border}; border: 0; }}
 QLabel#secondary, QLabel#caption {{ color: {text_secondary}; }}
@@ -28,6 +28,7 @@ QLabel#brandTitle {{ font-size: 16px; font-weight: 700; }}
 QLabel#brandTeam {{ font-size: 9px; letter-spacing: 2px; color: {text_secondary}; }}
 QPushButton {{ background: {panel_raised}; border: 1px solid {border}; border-radius: 9px; padding: 9px 14px; }}
 QPushButton:hover {{ background: {panel_hover}; border-color: {border_strong}; }}
+QPushButton#languageDetailsButton {{ padding: 4px 10px; }}
 QPushButton:pressed {{ background: {panel_pressed}; }}
 QPushButton:disabled {{ color: {disabled}; background: {panel_disabled}; }}
 QPushButton#primary {{ background: {accent_green}; border-color: {accent_green}; color: white; font-weight: 650; padding: 13px 20px; }}
@@ -55,6 +56,11 @@ QComboBox::drop-down {{ border: 0; width: 24px; }}
 QComboBox QAbstractItemView {{ background: {popup}; border: 1px solid {border}; selection-background-color: {selected}; outline: 0; }}
 QTextEdit {{ background: {input}; border: 1px solid {border}; border-radius: 12px; padding: 12px; selection-background-color: {selected}; }}
 QTextBrowser#referenceText {{ background: transparent; border: 0; padding: 0; }}
+QTabWidget#aboutTabs::pane {{ border: 0; background: {background}; }}
+QTabWidget#aboutTabs QTabBar::tab {{ background: {panel_soft}; color: {text_secondary}; border: 1px solid {border}; padding: 9px 14px; margin-right: 4px; }}
+QTabWidget#aboutTabs QTabBar::tab:selected {{ background: {panel_active}; color: {text_primary}; border-color: {accent_green}; }}
+QTabWidget#aboutTabs QTabBar::tab:hover {{ background: {hover}; }}
+QTextBrowser#licenseBrowser {{ border: 1px solid {border}; background: {input}; border-radius: 8px; }}
 QAbstractItemView#wordSuggestions {{ background: {popup}; border: 1px solid {border}; padding: 4px; selection-background-color: {selected}; }}
 QAbstractItemView#wordSuggestions::item {{ padding: 8px 10px; }}
 QLineEdit {{ background: {input}; border: 1px solid {border}; border-radius: 9px; padding: 9px 12px; selection-background-color: {selected}; }}
@@ -68,9 +74,17 @@ QScrollBar:vertical {{ background: transparent; width: 9px; margin: 2px; }}
 QScrollBar::handle:vertical {{ background: {scroll_handle}; border-radius: 4px; min-height: 30px; }}
 QScrollBar::handle:vertical:hover {{ background: {scroll_handle_hover}; }}
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{ height: 0; }}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {{ background: transparent; }}
+QTextBrowser#licenseBrowser QScrollBar:vertical {{ background: {panel_soft}; width: 10px; margin: 4px 2px; border: 0; border-radius: 5px; }}
+QTextBrowser#licenseBrowser QScrollBar::handle:vertical {{ background: {scroll_handle}; border: 1px solid {border_strong}; border-radius: 4px; min-height: 38px; }}
+QTextBrowser#licenseBrowser QScrollBar::handle:vertical:hover {{ background: {accent_green}; border-color: {accent_green}; }}
+QTextBrowser#licenseBrowser QScrollBar::handle:vertical:pressed {{ background: {accent_hover}; border-color: {accent_hover}; }}
+QTextBrowser#licenseBrowser QScrollBar::add-line:vertical, QTextBrowser#licenseBrowser QScrollBar::sub-line:vertical {{ height: 0; background: transparent; }}
+QTextBrowser#licenseBrowser QScrollBar::add-page:vertical, QTextBrowser#licenseBrowser QScrollBar::sub-page:vertical {{ background: transparent; }}
 QTreeWidget {{ background: transparent; border: 0; outline: 0; alternate-background-color: {alternate_row}; }}
 QTreeWidget::item {{ min-height: 28px; border-radius: 5px; }}
 QTreeWidget::item:hover {{ background: {row_hover}; }}
+QTreeWidget#documentTree::item:hover {{ background: transparent; }}
 QTreeWidget#documentTree::indicator {{ width: 16px; height: 16px; border: 1px solid {indicator_border}; border-radius: 4px; background: {input}; }}
 QTreeWidget#documentTree::indicator:checked {{ image: url({tree_check_url}); background: {accent_green}; border-color: {accent_green}; }}
 QTreeWidget#documentTree::indicator:indeterminate {{ image: url({tree_partial_url}); background: {panel_raised}; }}

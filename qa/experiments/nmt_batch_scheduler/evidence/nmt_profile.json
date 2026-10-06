@@ -1,0 +1,108 @@
+{
+  "before": {
+    "wall_seconds": 350.88835029999973,
+    "docs_per_hour": 51.29836879625814,
+    "semantic_model_requests": 1044,
+    "physical_CT2_calls": 1044,
+    "batch1": 1044,
+    "batch2": 0,
+    "batch3_4": 0,
+    "batch5_8": 0,
+    "average_sequences": 1.0,
+    "median_sequences": 1.0,
+    "max_sequences": 1,
+    "source_tokens": 12344,
+    "average_tokens": 11.82375478927203,
+    "median_tokens": 12.0,
+    "p90_tokens": 20,
+    "actual_CT2_seconds": 123.71098020000863,
+    "model_translation_seconds": 134.8803533999744,
+    "backend_attempts": 1044,
+    "failure_attempts": 18,
+    "fallback_attempts": 17,
+    "m2m_requests": 1009,
+    "argos_requests": 35,
+    "actual_CT2_model_loads": 13,
+    "m2m_load_or_reuse": 1009,
+    "m2m_real_loads": 5,
+    "argos_real_loads": 8,
+    "m2m_resident_reuse": 1004,
+    "ocr": {
+      "recognize": {
+        "calls": 26,
+        "seconds": 157.13728300000002,
+        "failures": 0
+      },
+      "inference_seconds": 64.46960340000442,
+      "model_loads": 2
+    },
+    "glossary": {
+      "counts": {
+        "sql_statements": 416212,
+        "lookups": 7633
+      },
+      "unique_logical_lookups": 993,
+      "seconds": 56.9578197000792,
+      "negative_lookups": 2966,
+      "repeated_negative_results": 2597
+    },
+    "writer": {
+      "calls": 4,
+      "seconds": 19.69816600000013,
+      "failures": 0
+    },
+    "resources": {
+      "cpu_average_percent": 113.2356134316356,
+      "gpu_average_percent": 47.94476744186046,
+      "peak_rss_bytes": 4125614080,
+      "peak_vram_mib": 5903.0,
+      "samples": 345,
+      "scope": "CPU process tree, 100%=one logical core; GPU/VRAM device-wide, one-second samples; not kernel utilization"
+    }
+  },
+  "after": null,
+  "after_reason": "Mandatory exact replay FAIL; no accepted scheduler, no final run",
+  "replay_only": {
+    "1": {
+      "calls": 994,
+      "sequences": 994,
+      "seconds": 118.0948635000259,
+      "exact_prepared_inputs": true,
+      "exact_outputs": true,
+      "decoded_text_mismatches": 0,
+      "inference_reduction_percent": 0.0,
+      "physical_call_reduction_percent": 0.0
+    },
+    "2": {
+      "calls": 497,
+      "sequences": 994,
+      "seconds": 72.12172839998857,
+      "exact_prepared_inputs": true,
+      "exact_outputs": false,
+      "decoded_text_mismatches": 26,
+      "inference_reduction_percent": 38.92898788102435,
+      "physical_call_reduction_percent": 50.0
+    },
+    "4": {
+      "calls": 249,
+      "sequences": 994,
+      "seconds": 44.926184999991165,
+      "exact_prepared_inputs": true,
+      "exact_outputs": false,
+      "decoded_text_mismatches": 50,
+      "inference_reduction_percent": 61.95754525768912,
+      "physical_call_reduction_percent": 74.94969818913482
+    },
+    "8": {
+      "calls": 125,
+      "sequences": 994,
+      "seconds": 24.920021199990515,
+      "exact_prepared_inputs": true,
+      "exact_outputs": false,
+      "decoded_text_mismatches": 78,
+      "inference_reduction_percent": 78.89830221109908,
+      "physical_call_reduction_percent": 87.42454728370221
+    }
+  },
+  "semantic_vs_physical": "Baseline Runtime semantic requests include original fallback attempts; replay batches are native execution only, not new semantic requests"
+}

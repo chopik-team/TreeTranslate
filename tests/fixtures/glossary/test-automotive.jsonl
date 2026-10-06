@@ -1,0 +1,10 @@
+{"source_term":"coolant","target_term":"охлаждающая жидкость","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false,"variants":["cooling fluid"]}
+{"source_term":"radiator cap","target_term":"крышка радиатора","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false}
+{"source_term":"connector","target_term":"разъём","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false,"variants":["connectors"]}
+{"source_term":"idle","target_term":"холостой ход","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false}
+{"source_term":"engine compartment lower cover","target_term":"нижняя защита моторного отсека","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false}
+{"source_term":"engine coolant","target_term":"охлаждающая жидкость двигателя","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false}
+{"source_term":"engine coolant temperature sensor","target_term":"датчик температуры охлаждающей жидкости двигателя","source_language":"en","target_language":"ru","domain":"automotive","case_sensitive":false}
+{"source_term":"GDS","target_term":"GDS","source_language":"en","target_language":"ru","domain":"automotive","mode":"KEEP"}
+{"source_term":"ITM","target_term":"ITM","source_language":"en","target_language":"ru","domain":"automotive","mode":"KEEP"}
+{"source_term":"IVT","target_term":"IVT","source_language":"en","target_language":"ru","domain":"automotive","mode":"KEEP"}

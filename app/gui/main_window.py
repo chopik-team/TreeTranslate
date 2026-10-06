@@ -17,6 +17,9 @@ from app.services.translation_preferences import TranslationPreferences
 from app.services.translation_session_manager import TranslationSessionManager
 from app.services.hybrid_translation_service import HybridTranslationService
 
+from app.localization.widgets import QMainWindow, QMessageBox
+
+_PENDING_CLOSE_WINDOWS = set()  # Keep Qt owners alive until their worker has acknowledged cancellation.
 
 class MainWindow(QMainWindow):
     def __init__(self, translation_service=None) -> None:
@@ -30,6 +33,9 @@ class MainWindow(QMainWindow):
         layout = QVBoxLayout(root)
         layout.setContentsMargins(1, 1, 1, 1)
         layout.setSpacing(0)
+        from app.localization import localization, saved_locale
+        self.settings = SettingsService()
+        localization.use(saved_locale(self.settings))
         self.title_bar = TitleBar(self)
         layout.addWidget(self.title_bar)
         self.stack = QStackedWidget()
@@ -41,7 +47,6 @@ class MainWindow(QMainWindow):
         self.size_grip = QSizeGrip(root)
         self.size_grip.setFixedSize(18, 18)
         self.navigation = NavigationController(self.stack, self)
-        self.settings = SettingsService()
         self.preferences = TranslationPreferences(self.settings, self)
         self.sessions = TranslationSessionManager(parent=self)
         self.translation_service = translation_service or HybridTranslationService(self)
@@ -63,6 +68,20 @@ class MainWindow(QMainWindow):
         self.translation.restore_unfinished_job()
 
     def closeEvent(self, event) -> None:
+        if (callable(getattr(self.translation_service, 'begin_shutdown', None))
+                and (getattr(self.translation_service, 'text_busy', False)
+                     or getattr(getattr(self.translation_service, 'files', None), 'busy', False))):
+            # Native cancellation is cooperative. Keep processing Qt events until
+            # the worker finishes instead of blocking the GUI in shutdown().
+            self.translation_service.begin_shutdown()
+            _PENDING_CLOSE_WINDOWS.add(self)
+            event.ignore()
+            if not hasattr(self, '_close_retry'):
+                self._close_retry = QTimer(self)
+                self._close_retry.setSingleShot(True)
+                self._close_retry.timeout.connect(self.close)
+            self._close_retry.start(50)
+            return
         # Hidden/just-created windows can still have deferred layout timers.
         # Stop them before worker shutdown and destruction of captured widgets.
         for timer in self.findChildren(QTimer):
@@ -70,6 +89,7 @@ class MainWindow(QMainWindow):
         self.text_page.shutdown()
         self.translation.cancel_text_requests()
         self.translation_service.shutdown()
+        _PENDING_CLOSE_WINDOWS.discard(self)
         super().closeEvent(event)
 
     def resizeEvent(self, event) -> None:

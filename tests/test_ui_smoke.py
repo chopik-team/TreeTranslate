@@ -3,7 +3,17 @@ from unittest.mock import patch
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
-from PySide6.QtWidgets import QApplication, QButtonGroup, QCheckBox, QComboBox, QLabel, QPushButton, QScrollArea, QToolButton
+from PySide6.QtWidgets import (
+    QApplication,
+    QButtonGroup,
+    QCheckBox,
+    QComboBox,
+    QLabel,
+    QPushButton,
+    QScrollArea,
+    QTextBrowser,
+    QToolButton,
+)
 from PySide6.QtCore import QPoint, Qt
 from PySide6.QtTest import QTest
 
@@ -66,15 +76,11 @@ def test_settings_has_separate_language_section() -> None:
         checkbox.text() == "Сворачивать приложение в системный трей"
         for checkbox in dialog.findChildren(QCheckBox)
     )
-    benchmark = dialog.findChild(QPushButton, "hardwareRecommendation")
+    benchmark = dialog.findChild(QPushButton, "hardwareDetection")
     assert benchmark is not None and benchmark.isEnabled()
     hardware_values = dialog.findChildren(QLabel, "hardwareValue")
-    assert len(hardware_values) == 2
-    assert dialog.performance_mode.clean_mode() in ("Автоматический", "Эконом", "Быстрый", "Баланс", "Турбо", "Максимум")
+    assert len(hardware_values) == 1
     assert dialog.device_combo.currentText() in ("Auto", "CPU", "GPU")
-    assert dialog.ram_combo.findText("4 GB") >= 0
-    assert dialog.vram_combo.findText("4 GB") >= 0
-    assert dialog.cpu_threads_combo.count() > 1
     assert "Масштаб интерфейса" not in {
         label.text() for label in dialog.findChildren(QLabel)
     }
@@ -103,7 +109,9 @@ def test_about_dialog_has_sorted_product_credits() -> None:
     assert "CTranslate2 4.8.2 — MIT" in labels
     assert "SentencePiece 0.2.2 — Apache-2.0" in labels
     assert "лицензия итоговых весов требует уточнения" not in labels
-    assert buttons == ["TreeTranslate", "Закрыть"]
+    assert buttons[0] == "TreeTranslate" and buttons[-1] == "Закрыть"
+    assert buttons.count("Подробнее") == 7
+    assert "Динамика языковой поддержки" not in buttons
     dialog.close()
 
 
@@ -117,6 +125,18 @@ def test_about_product_title_opens_its_github_repository() -> None:
         title.click()
     open_url.assert_called_once()
     assert open_url.call_args.args[0].toString() == PROJECT_GITHUB_URL
+    dialog.close()
+
+
+def test_about_licenses_use_the_shared_styled_scrollbar() -> None:
+    app = QApplication.instance() or QApplication([])
+    dialog = AboutDialog()
+    licenses = dialog.findChild(QTextBrowser, "licenseBrowser")
+    stylesheet = load_stylesheet()
+    assert licenses is not None
+    assert licenses.horizontalScrollBarPolicy() == Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+    assert "QTextBrowser#licenseBrowser QScrollBar::handle:vertical" in stylesheet
+    assert "QTextBrowser#licenseBrowser QScrollBar::handle:vertical:hover" in stylesheet
     dialog.close()
 
 
@@ -154,7 +174,7 @@ def test_language_pair_never_keeps_the_same_explicit_language() -> None:
     app = QApplication.instance() or QApplication([])
     selector = LanguageSelector()
     assert selector.source_combo.findText("Русский") >= 0
-    assert selector.target_combo.findText(selector.AUTOMATIC) >= 0
+    assert selector.target_combo.findText(selector.AUTOMATIC) == -1
 
     selector.source_combo.setCurrentText("Русский")
     selector.target_combo.setCurrentText("Английский")
@@ -165,7 +185,7 @@ def test_language_pair_never_keeps_the_same_explicit_language() -> None:
     selector.target_combo.setCurrentText("Английский")
     selector.source_combo.setCurrentText("Английский")
     assert selector.source_combo.currentText() == "Английский"
-    assert selector.target_combo.currentText() == selector.AUTOMATIC
+    assert selector.target_combo.currentText() == "Русский"
 
 
 def test_chinese_and_japanese_are_available_in_both_directions() -> None:
@@ -183,7 +203,7 @@ def test_chinese_and_japanese_are_available_in_both_directions() -> None:
     assert (selector.source_combo.currentText(), selector.target_combo.currentText()) == ("Китайский", "Японский")
 
     selector.source_combo.setCurrentText("Японский")
-    assert (selector.source_combo.currentText(), selector.target_combo.currentText()) == ("Японский", selector.AUTOMATIC)
+    assert (selector.source_combo.currentText(), selector.target_combo.currentText()) == ("Японский", "Русский")
 
     selector.source_combo.setCurrentText("Китайский")
     selector.target_combo.setCurrentText("Китайский")
@@ -221,8 +241,8 @@ def test_language_swap_button_exchanges_the_pair_atomically() -> None:
     selector.source_combo.setCurrentText(selector.AUTOMATIC)
     selector.target_combo.setCurrentText("Японский")
     selector.swap_button.click()
-    assert selector.source_combo.currentText() == "Японский"
-    assert selector.target_combo.currentText() == selector.AUTOMATIC
+    assert selector.source_combo.currentText() == selector.AUTOMATIC
+    assert selector.target_combo.currentText() == "Японский"
 
 
 def test_output_folder_naming_uses_clear_mode_selector() -> None:
@@ -285,7 +305,7 @@ def test_text_page_uses_automatic_translation() -> None:
     window.text_page.source.editor.clear()
     assert window.text_page.reference_area.isHidden()
     assert window.text_page.findChildren(QPushButton, "primary") == []
-    assert window.text_page.mode.combo.count() == 6
+    assert not hasattr(window.text_page, 'mode')
     window.close()
 
 
@@ -394,7 +414,7 @@ def test_acceleration_info_has_svg_and_help_text() -> None:
     assert info.cursor().shape() == Qt.CursorShape.ArrowCursor
     assert not info.icon().isNull()
     assert all(mode in info.toolTip() for mode in ("Auto", "CPU", "GPU"))
-    assert all(detail in info.toolTip() for detail in ("VRAM", "сложных вычислений", "Производительность"))
+    assert all(detail in info.toolTip() for detail in ("CUDA", "CPU", "GPU"))
     window.close()
 
 
@@ -525,8 +545,12 @@ def test_real_file_page_toggle_rendered_thumb_moves_across_frames() -> None:
     app.processEvents()
     frames = [_rendered_thumb_center(toggle)]
     QTest.mouseClick(toggle, Qt.MouseButton.LeftButton)
-    for _ in range(4):
-        QTest.qWait(50)
+    assert toggle._animation.state() == toggle._animation.State.Running
+    # Sample actual rendered frames at defined animation times. The Windows
+    # event loop can delay a timer tick under the full engine/OCR test load.
+    toggle._animation.pause()
+    for elapsed in (50, 100, 150, 200):
+        toggle._animation.setCurrentTime(elapsed)
         frames.append(_rendered_thumb_center(toggle))
     assert all(left < right for left, right in zip(frames, frames[1:])), frames
     assert toggle.isChecked()

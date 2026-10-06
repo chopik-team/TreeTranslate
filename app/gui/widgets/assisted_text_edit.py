@@ -7,6 +7,9 @@ from PySide6.QtWidgets import QCompleter, QTextEdit, QToolTip
 
 from app.gui.styles.theme import color
 
+from app.localization.widgets import QTextEdit
+from app.localization import tr
+
 
 class AssistedTextEdit(QTextEdit):
     word_hovered = Signal(str, object)
@@ -25,7 +28,7 @@ class AssistedTextEdit(QTextEdit):
         self.completer.setCompletionMode(QCompleter.CompletionMode.UnfilteredPopupCompletion)
         self.completer.setMaxVisibleItems(9)
         self.completer.popup().setObjectName("wordSuggestions")
-        self.completer.popup().setAccessibleName("Подсказки ввода")
+        self.completer.popup().setAccessibleName(tr("Подсказки ввода"))
         self.completer.popup().setMinimumWidth(280)
         self.completer.popup().installEventFilter(self)
         self.completer.activated["QModelIndex"].connect(self._accept)
@@ -36,6 +39,17 @@ class AssistedTextEdit(QTextEdit):
             "Дополнение и исправление слова: 1–9 — выбрать вариант, Enter — принять первый, "
             "Esc — закрыть.\nShift+Enter — новая строка. Выделите слово для словаря."
         )
+
+    def retranslate(self):
+        super().retranslate()
+        if not hasattr(self, 'completer'):
+            return
+        self.completer.popup().setAccessibleName(tr("Подсказки ввода"))
+        for row in range(self._completion_model.rowCount()):
+            item = self._completion_model.item(row)
+            number, word, label = item.data(Qt.ItemDataRole.UserRole+1)
+            item.setText(f"{number}   {word}    {tr(label)}")
+            item.setToolTip(tr(item.data(Qt.ItemDataRole.UserRole+2)))
 
     def token_cursor(self, cursor=None):
         cursor = QTextCursor(cursor or self.textCursor())
@@ -73,12 +87,12 @@ class AssistedTextEdit(QTextEdit):
         self._completion_model.clear()
         for number, suggestion in enumerate(suggestions[:9], start=1):
             label = "Дополнить" if suggestion.kind == "completion" else "Исправить"
-            item = QStandardItem(f"{number}   {suggestion.word}    {label}")
+            item = QStandardItem(f"{number}   {suggestion.word}    {tr(label)}")
+            item.setData((number, suggestion.word, label), Qt.ItemDataRole.UserRole+1)
             item.setData(suggestion.word, Qt.ItemDataRole.UserRole)
-            item.setToolTip(
-                f"{label} слово. Нажмите {number}, чтобы вставить этот вариант; "
-                "Enter вставляет первый вариант."
-            )
+            tooltip = f"{label} слово. Нажмите {number}, чтобы вставить этот вариант; Enter вставляет первый вариант."
+            item.setData(tooltip, Qt.ItemDataRole.UserRole+2)
+            item.setToolTip(tr(tooltip))
             self._completion_model.appendRow(item)
         self.completer.setCompletionPrefix("")
         rect = self.cursorRect()
@@ -197,6 +211,7 @@ class AssistedTextEdit(QTextEdit):
         if reference.usage:
             body = reference.usage["note"]
         else:
-            values = [value for entry in reference.entries for sense in entry["senses"] for value in sense["translations"]]
+            values = [value for entry in reference.entries for sense in entry["senses"]
+                      for value in sense.get("translations", sense.get("definitions", []))]
             body = " · ".join(dict.fromkeys(values))[:400] or reference.notice
         QToolTip.showText(point, f"<b>{escape(word)}</b><br>{escape(body)}", self, self.viewport().rect())

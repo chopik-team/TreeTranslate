@@ -1,4 +1,5 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from time import monotonic
 from enum import Enum, auto
 
 
@@ -28,3 +29,8 @@ class TranslationProgress:
     stage: str = ''
     page_index: int = 0
     page_total: int = 0
+    # Heartbeat replacements retain the time of the last real worker update.
+    sampled_at: float = field(default_factory=monotonic, repr=False, compare=False)
+    eta_scope: str = 'document'
+    source_path: str = ''
+    file_percent: int = 0

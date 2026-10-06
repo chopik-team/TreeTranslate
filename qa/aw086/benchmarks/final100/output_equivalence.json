@@ -1,0 +1,4313 @@
+{
+  "status": "PASS",
+  "checks": {
+    "statuses": true,
+    "destination_paths": true,
+    "zip_inventory_and_order": true,
+    "directory_structure": true,
+    "crc": true,
+    "failed_source_preservation": true,
+    "normalized_translated_semantics": true,
+    "available_source_metadata": true,
+    "bounded_frontier_candidates": true
+  },
+  "documents": [
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Battery/说明和操作.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/батарея/Описание и действие_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/батарея/Описание и действие_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "2514079d21b117fe1b6bb655",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "source_sha256": "67392356300712d79f1759d1ac9ad2f652b36685af101ba047324eaa57055342",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 71.72185909999826,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 2,
+          "object_index": 43,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "2514079d21b117fe1b6bb655",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+        "source_sha256": "67392356300712d79f1759d1ac9ad2f652b36685af101ba047324eaa57055342",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 16.426017600000705,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 2,
+          "object_index": 43,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/CVVT Oil Control Valve (OCV)/P070564 抑制器开关未使用代码/ETM.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/CVVT клапан управления нефтьюOCV)/P070564 代天/ETM_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/CVVT клапан управления нефтьюOCV)/P070564 代天/ETM_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "f977cc7630a60ba42962dc6b",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+        "source_sha256": "efa3c027748014b5530d07ffc39fef57765ba14b4923e4befdd4f69b5466b445",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 91.78686190000008,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 391,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "f977cc7630a60ba42962dc6b",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U006488 车辆通信总线CAN3(齿轮执行器)/线束检查.pdf",
+        "source_sha256": "efa3c027748014b5530d07ffc39fef57765ba14b4923e4befdd4f69b5466b445",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 25.770171500000288,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 391,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/DCT Control Module (TCM)/U008086 车辆通信总线CAN4(齿轮执行器)/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/DCT Модуль управленияTCM)/U008086 Автомобильная коммуникационная линияCAN4())/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/DCT Модуль управленияTCM)/U008086 Автомобильная коммуникационная линияCAN4())/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Engine Coolant Temperature Sensor (ECTS)/P218400 发动机冷却液温度传感器2电路电压低/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Датчик температуры охлаждающего устройства двигателя (ECTS)/P218400 Двигатель охлаждает датчик температуры жидкости2压の/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Датчик температуры охлаждающего устройства двигателя (ECTS)/P218400 Двигатель охлаждает датчик температуры жидкости2压の/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Fuel Gauge/C169386 ESC信号故障/ETM.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Топливный калибр/C169386 ESCСигнальный дефект/ETM_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Топливный калибр/C169386 ESCСигнальный дефект/ETM_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/G Sensor/C128504 未校准Ax信号/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/G-сенсор/C128504 xAx/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/G-сенсор/C128504 xAx/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "00a86377da5ae0818ce8305e",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+        "source_sha256": "892a22f6c985ad7a056fdaead015ff62238e97771b33b3fc27b6acaaded61a7d",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 185.45209189999878,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 471,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 138,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "00a86377da5ae0818ce8305e",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P074C77 无法分离（换档）4档/部件检查.pdf",
+        "source_sha256": "892a22f6c985ad7a056fdaead015ff62238e97771b33b3fc27b6acaaded61a7d",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 38.76801660000001,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 498,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 139,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Heated Oxygen Sensor (HO2S)/P225100 氧传感器基准搭铁电路 断路 (组1 传感器1)/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Нагретый кислородный датчик (HO2S)/P225100 ( )1 датчика1)/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Нагретый кислородный датчик (HO2S)/P225100 ( )1 датчика1)/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Intake Air Temperature Sensor (IATS)/C120102 左前轮速传感器范围 性能 间歇/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Датчик температуры воздуха (Intake Air Temperature Sensor)IATS)/C120102 左前輪 скорость датчика диапазон 性能 间歇/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Датчик температуры воздуха (Intake Air Temperature Sensor)IATS)/C120102 左前輪 скорость датчика диапазон 性能 间歇/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Mode Control Actuator/B16AB00 保险杠天线故障/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Режим Control Actuator/B16AB00 天天/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Режим Control Actuator/B16AB00 天天/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Occupant Classification System (OCS)/C161682 C-CAN总线OFF/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Система классификации жильцов (OCS)/C161682 С-CANГлавная →OFF/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Система классификации жильцов (OCS)/C161682 С-CANГлавная →OFF/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/RCV Control Solenoid Valve/P003300 涡轮增压器旁通阀控制电路/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/RCV Контроль соленоидного клапана/P003300 压の/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/RCV Контроль соленоидного клапана/P003300 压の/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Rear Door Belt Outside Weatherstrip/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Задний дверной пояс снаружи Weatherstrip/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Задний дверной пояс снаружи Weatherstrip/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140000 驾驶席侧面碰撞传感器(SIS)故障/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Сенсор бокового воздействия (SIS)/B140000 ()SIS• Неудача/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Сенсор бокового воздействия (SIS)/B140000 ()SIS• Неудача/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140900 驾驶席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Сенсор бокового воздействия (SIS)/B140900 ()SIS· Коммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Сенсор бокового воздействия (SIS)/B140900 ()SIS· Коммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Smart Cruise Control Unit/C126083 方向盘转角传感器电路-信号(校验和)/ETM.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Умный круиз-контроль/C126083 )の)-) (验の))/ETM_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Умный круиз-контроль/C126083 )の)-) (验の))/ETM_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Smart Cruise Control Unit/C16B883 AEB 通信故障 (CRC)/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Умный круиз-контроль/C16B883 AEB Недостаток коммуникации (CRC)/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Умный круиз-контроль/C16B883 AEB Недостаток коммуникации (CRC)/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "6a3780a8fb55e16e267a3b25",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+        "source_sha256": "904b28be8fd3119ba9e5129f7385356a86561d905abff88dc62608f8a7c37902",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 18.475040599994827,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 305,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "6a3780a8fb55e16e267a3b25",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf",
+        "source_sha256": "904b28be8fd3119ba9e5129f7385356a86561d905abff88dc62608f8a7c37902",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 22.885041500000625,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 305,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "dda294fe8676d31909d685f9",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+        "source_sha256": "cf15f69f37f604dad83df885ad64f98a5193938fc29ad7532edeae93ba1799f6",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 36.12921539999661,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 845,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "dda294fe8676d31909d685f9",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C110301 点火电压/线束检查.pdf",
+        "source_sha256": "cf15f69f37f604dad83df885ad64f98a5193938fc29ad7532edeae93ba1799f6",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 37.935689199999615,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 845,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Steering Angle Sensor/C126081 方向盘转角传感器电路-信号(无效)/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Рулевой датчик угла/C126081 )の)-) (неразборчиво)/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.4 Т-GDI Процесс проверки частей/Рулевой датчик угла/C126081 )の)-) (неразборчиво)/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Battery/C110101 蓄电池电压高/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/батарея/C110101 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/батарея/C110101 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Body Network System/C181208 与网关CAN超时/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Системные системы Body Network/C181208 С сетьюCANСуперчас/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Системные системы Body Network/C181208 С сетьюCANСуперчас/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Crankshaft Position Sensor (CKPS)/B294500 左后扬声器连接故障/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Датчик положения коленчатого вала (CKPS)/B294500 左 後 後 後 後 後 後 後 後 後 後/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Датчик положения коленчатого вала (CKPS)/B294500 左 後 後 後 後 後 後 後 後 後 後/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Crankshaft Position Sensor (CKPS)/P033500 曲轴位置传感器A电路/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Датчик положения коленчатого вала (CKPS)/P033500 A/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Датчик положения коленчатого вала (CKPS)/P033500 A/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Curtain Airbag (CAB) Module/B148000 助手席窗帘式空气囊电路与蓄电池电路短路/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Занавесная подушка безопасностиCAB) Модуль/B148000 池 Негативный/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Занавесная подушка безопасностиCAB) Модуль/B148000 池 Негативный/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C110117 蓄电池电压高/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/DIS головная часть/C110117 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/DIS головная часть/C110117 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C125901 方向盘转角传感器-电气故障/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/DIS головная часть/C125901 角, 角, 角,/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/DIS головная часть/C125901 角, 角, 角,/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Engine Control Module (ECM)/P064200 传感器参考电压“A”电路电压低/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Модуль управления двигателемECM)/P064200 «А» — «А» — «А» — «А»/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Модуль управления двигателемECM)/P064200 «А» — «А» — «А» — «А»/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/FCA Radar/C16B687 与FCA的通信CAN超时/ETM.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/FCA радар/C16B687 сFCAкоммуникацииCANСуперчас/ETM_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/FCA радар/C16B687 сFCAкоммуникацииCANСуперчас/ETM_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "f99726a27711eafc65990d41",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+        "source_sha256": "c3d755d9c195460dda7620aca591ecb7333ef22db832bae6d60c49cd7d1fa538",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 16.160358400004043,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 310,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "f99726a27711eafc65990d41",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/P003100 HO2S加热器电路电压低(组1 传感器1)/线束检查.pdf",
+        "source_sha256": "c3d755d9c195460dda7620aca591ecb7333ef22db832bae6d60c49cd7d1fa538",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 11.722224300000562,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 310,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Heated Oxygen Sensor (HO2S)/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Нагретый кислородный датчик (HO2S)/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Нагретый кислородный датчик (HO2S)/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "0d5a27d7e1844ba166124927",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+        "source_sha256": "6534cf1d9d62dee4952cbf410aee70e11b4777584150e6120814951b39521744",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 21.046537299997,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 349,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "0d5a27d7e1844ba166124927",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Ignition Coil/P050B00 冷起动点火正时性能/线束检查.pdf",
+        "source_sha256": "6534cf1d9d62dee4952cbf410aee70e11b4777584150e6120814951b39521744",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 28.11453040000015,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 349,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/IMS Tilt & Telescope Control/P21DB00 气缸1喷油器 B 电路电压低/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/IMS Tilt & Telescope Control/P21DB00 Газовый цилиндр1B   Ilcweiten/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/IMS Tilt & Telescope Control/P21DB00 Газовый цилиндр1B   Ilcweiten/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Instrument Panel ECU/P061A00 内部控制模块力矩性能/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Панель инструментов ECU/P061A00 Внутренний контроль модуля мощности/Жгут проводов проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Панель инструментов ECU/P061A00 Внутренний контроль модуля мощности/Жгут проводов проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/LCD Monitor/C164202 CAN信息故障 - 制动/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/LCD Монитор/C164202 CAN-/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/LCD Монитор/C164202 CAN-/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Passenger Airbag (PAB) Module/B135500 助手席空气囊电阻电路与蓄电池电路短路(1级)/ETM.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Пассажирская подушка безопасностиPAB) Модуль/B135500 池 неблагоприятный1)/ETM_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Пассажирская подушка безопасностиPAB) Модуль/B135500 池 неблагоприятный1)/ETM_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Seat Belt Pretensioner (BPT)/B136700 助手席安全带拉紧器电阻过大/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Претензионер ремня безопасностиBPT)/B136700 大/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/Претензионер ремня безопасностиBPT)/B136700 大/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "8579cb3709dc70e9b372fef1",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+        "source_sha256": "d8b653f22a8a875afad2ca33f74ca275952e247b4928942adfa80e0a507521b8",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 14.244816899998114,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 266,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "8579cb3709dc70e9b372fef1",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Smart Cruise Control Unit/C160A88 专用CAN总线OFF/故障代码信息和检查.pdf",
+        "source_sha256": "d8b653f22a8a875afad2ca33f74ca275952e247b4928942adfa80e0a507521b8",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 30.12062120000064,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 266,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/TPMS Receiver/C112600 TPMS ECU蓄电池电压低/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/TPMS Получатель/C112600 TPMS ECUИнфраструктура/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022  代 Hawaii ()CN7C) G 1.5 MPI Процесс проверки частей/TPMS Получатель/C112600 TPMS ECUИнфраструктура/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C128354 横向加速度传感器 纵向加速度传感器 横摆率传感器-信号故障/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C128354 横向加速度 датчик 横向加速度 датчик 横立率 датчик - сигнальный дефект/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C128354 横向加速度 датчик 横向加速度 датчик 横立率 датчик - сигнальный дефект/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C160E88 P-CAN总线OFF/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C160E88 П-CANГлавная →OFF/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C160E88 П-CANГлавная →OFF/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C181483 CAN信息故障 - SAS (CRC)/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C181483 CAN- SAS (CRC)/Жгут проводов проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/ABS ESC/C181483 CAN- SAS (CRC)/Жгут проводов проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C110216 蓄电池电压低/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Задний угловой радар/C110216 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Задний угловой радар/C110216 Инфраструктура/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C166A87 与LDWS LKAS的通信CAN超时/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Задний угловой радар/C166A87 сLDWS LKASкоммуникацииCANСуперчас/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Задний угловой радар/C166A87 сLDWS LKASкоммуникацииCANСуперчас/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/中央网关/B252400 右前转向信号电路与搭铁电路短路/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/中/B252400 右 前 前 前 前 前 前 前 前 前 前 前 前 前 前 前 前/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/中/B252400 右 前 前 前 前 前 前 前 前 前 前 前 前 前 前 前 前/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B100552 空气囊缺失故障/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Инструментальный модуль/B100552 Недостаток воздушного ящика/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Инструментальный модуль/B100552 Недостаток воздушного ящика/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "b06a322ab7505a91558f947f",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+        "source_sha256": "a1fcd41e02d2d5573bcb7dfc364d21f4f6b0d64d5ead5653cfe78304950e0d5a",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 26.63019869999698,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 469,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "b06a322ab7505a91558f947f",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/仪表盘模块/B280100 MM CAN信号电路故障/线束检查.pdf",
+        "source_sha256": "a1fcd41e02d2d5573bcb7dfc364d21f4f6b0d64d5ead5653cfe78304950e0d5a",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 65.41809259999991,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 469,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/前方照相机/C174686 HDA编码 & AVN  导航选项不匹配/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/[править] Архив новостей/C174686 HDA& AVN  航/схема_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/[править] Архив новостей/C174686 HDA& AVN  航/схема_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "74cfdd53d982bdec3a57f8ff",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+        "source_sha256": "761c5e2c1ac6d1928c6358935e1b41df4de63f900656d74e42a03b696e904873",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 185.5303159000032,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 471,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 138,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "74cfdd53d982bdec3a57f8ff",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074B71 无法挂（选择）3档/部件检查.pdf",
+        "source_sha256": "761c5e2c1ac6d1928c6358935e1b41df4de63f900656d74e42a03b696e904873",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 44.04061550000006,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 498,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 139,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P074E07 6档掉档/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Двойный разъем переключателя/P074E07 6Архив падений/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/Двойный разъем переключателя/P074E07 6Архив падений/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "76d0b45ea6335925a2e9c92a",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+        "source_sha256": "62d32112088e6091df97a3bb3b765521e3f5b6568ee3953af55dcce658e8fafa",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 89.743879499998,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 372,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "76d0b45ea6335925a2e9c92a",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf",
+        "source_sha256": "62d32112088e6091df97a3bb3b765521e3f5b6568ee3953af55dcce658e8fafa",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 31.077971400000024,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 372,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "52b06af4fb752e520e455cdb",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+        "source_sha256": "cedaad46813b843d0d5a08dbdfc7e8e22e5433a9810b2efb7df37b2dd13d7a90",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 17.973291100002825,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 330,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "52b06af4fb752e520e455cdb",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P011300 进气温度传感器1电路输入电压高/线束检查.pdf",
+        "source_sha256": "cedaad46813b843d0d5a08dbdfc7e8e22e5433a9810b2efb7df37b2dd13d7a90",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 31.318263999999544,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 330,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P013A00 氧传感器响应慢 - 浓到稀组1传感器2/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P013A00 -1датчика2/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P013A00 -1датчика2/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "7f441e0bbbe57abd1d531ab4",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+        "source_sha256": "f82857f2dfc93eadb82ee3638dc3f3290dab2bda0ff6f8932ebeb18afb44fcb5",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 20.665168599996832,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 418,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "7f441e0bbbe57abd1d531ab4",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P025C00 燃油泵模块 A 控制电路电压低/线束检查.pdf",
+        "source_sha256": "f82857f2dfc93eadb82ee3638dc3f3290dab2bda0ff6f8932ebeb18afb44fcb5",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 16.347165700000005,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 418,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P193100 角 3.3.2 角/Показать намерения_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P193100 角 3.3.2 角/Показать намерения_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "d1ea1dc8812cd415c9d258a0",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+        "source_sha256": "eacf22c6780186eece5f20b5307aa2f0b8eca4f13f70b592bed17805ddf490ad",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 94.86097349999909,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 471,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 138,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "d1ea1dc8812cd415c9d258a0",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193A00 CVVD电机角度传感器故障/部件检查.pdf",
+        "source_sha256": "eacf22c6780186eece5f20b5307aa2f0b8eca4f13f70b592bed17805ddf490ad",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 100.30361650000032,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 498,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 139,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P261000 ECM PCM机/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机/P261000 ECM PCM机/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/安全气囊(项目 #1)/B141000 助手席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/(  #)1)/B141000 ()SIS· Коммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/(  #)1)/B141000 ()SIS· Коммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/电机驱动动力转向(C-MDPS)/C110216 蓄电池电压低/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机天  (С-)MDPS)/C110216 Инфраструктура/Жгут проводов проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机天  (С-)MDPS)/C110216 Инфраструктура/Жгут проводов проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/电机驱动动力转向(C-MDPS)/C181786 与网关的CAN通信故障/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机天  (С-)MDPS)/C181786 的CANКоммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/机天  (С-)MDPS)/C181786 的CANКоммуникационный дефект/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "3ec44f488fa7ae2fff43d0e3",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+        "source_sha256": "3b2c9a5c5330a7cad52765517f91bb3c7c24a69adffb7b72abe744b4f6d1892f",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 20.809680300000764,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 491,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "3ec44f488fa7ae2fff43d0e3",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/空调/B123813 环境温度传感器短路(高电位)/线束检查.pdf",
+        "source_sha256": "3b2c9a5c5330a7cad52765517f91bb3c7c24a69adffb7b72abe744b4f6d1892f",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 20.920575299999655,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 491,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/综合车身控制模块-车身控制模块/部件位置和功能/部件位置.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/- ,  -/Местоположение и функция частей/расположение компонентов_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI asset ∂/- ,  -/Местоположение и функция частей/расположение компонентов_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "0c521dfd2793995563665883",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+        "source_sha256": "36fae93e3f6437a8a1a34d30a266fd23325c2a16b8e2866a6d2976e934af72b3",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 29.63783510000212,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 961,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "0c521dfd2793995563665883",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/示意图/汽车乘员保护装置/SRS空气囊/示意图(1).pdf",
+        "source_sha256": "36fae93e3f6437a8a1a34d30a266fd23325c2a16b8e2866a6d2976e934af72b3",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 22.837204600000405,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 961,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "c9eb622f53f99a466ddce5d7",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+        "source_sha256": "022a977dae0213504ef4e8929db0e7eb58599f38de57b22f1da4121f7ab0da7a",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 10.886750100005884,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 68,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "c9eb622f53f99a466ddce5d7",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 电路图/连接器形状/主线束/示意图(18).pdf",
+        "source_sha256": "022a977dae0213504ef4e8929db0e7eb58599f38de57b22f1da4121f7ab0da7a",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 23.249028900000667,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 68,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/DCT (双离合变速器)系统/双离合变速器控制系统/输入速度传感器/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/DCT (合 ) ) ) ))/Система управления двойным переключателем/Входный датчик скорости/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/DCT (合 ) ) ) ))/Система управления двойным переключателем/Входный датчик скорости/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/发动机控制 燃油系统/燃料供给系统/燃料压力传感器(FPS)/规格.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/天/Система поставок топлива/压Russian ()FPS)/технические характеристики_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/天/Система поставок топлива/压Russian ()FPS)/технические характеристики_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/发动机机械系统/进气和排气系统/涡轮增压器/部件和部件位置.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/机/Система ввода и выбросов газа/压の/Местоположение частей и частей_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/机/Система ввода и выбросов газа/压の/Местоположение частей и частей_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/车身（内部和外部）/后座椅安全带/后中央座椅安全带卷带器/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/)())/Задние сиденья Безопасный пояс/中中/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/)())/Задние сиденья Безопасный пояс/中中/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/转向系统/方向盘（加热式方向盘）/加热式方向盘开关/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/Перейти к системе/)())/Загревательный конвейер/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.4 Т-GDI Руководство по ремонту/Перейти к системе/)())/Загревательный конвейер/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/ABS ESC/C161386 EMS CAN信号故障 (无效信号)/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C161386 EMS CAN) (произносится ))/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C161386 EMS CAN) (произносится ))/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/ABS ESC/C222077 左后执行器 (电机怠速)/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C222077 ) (机天))/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C222077 ) (机天))/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/ABS ESC/C224096 未知执行器状态/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C224096 Статус неизвестного исполнителя/Жгут проводов проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/ABS ESC/C224096 Статус неизвестного исполнителя/Жгут проводов проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/Rear Corner Radar/C120C11 警告LED左电路与搭铁电路短路/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/Задний угловой радар/C120C11 ПредупреждениеLED左回路 左回路 左回路 左回路/схема_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/Задний угловой радар/C120C11 ПредупреждениеLED左回路 左回路 左回路 左回路/схема_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/B160500 与DDM的CAN通信超时/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/B160500 сDDMжадныйCANКоммуникация сверхчасовая/Жгут проводов проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/B160500 сDDMжадныйCANКоммуникация сверхчасовая/Жгут проводов проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/C161100 сEMSжадныйCANКоммуникация сверхчасовая/схема_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/中/C161100 сEMSжадныйCANКоммуникация сверхчасовая/схема_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "b291bca4467d07f25d6a4cc8",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+        "source_sha256": "3961019485aa82f188fc08a11e7f56ac4a709e13a33150e9da2ca16a33d0a5b9",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 0.30856889999995474,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 471,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 138,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "b291bca4467d07f25d6a4cc8",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/仪表盘模块/B104052 LKAS LDWS缺失故障/故障代码信息和检查.pdf",
+        "source_sha256": "3961019485aa82f188fc08a11e7f56ac4a709e13a33150e9da2ca16a33d0a5b9",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 35.1854758999998,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 498,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 139,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/前方照相机/C168785 与VSM2 (MDPS)的CAN通信超时/检验维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/[править] Архив новостей/C168785 сVSM2 (MDPS)желательноCANКоммуникация сверхчасовая/проверка и ремонт_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/[править] Архив новостей/C168785 сVSM2 (MDPS)желательноCANКоммуникация сверхчасовая/проверка и ремонт_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/前视雷达/C181687 与SJB的CAN通信超时/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/天/C181687 сSJBжадныйCANКоммуникация сверхчасовая/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/天/C181687 сSJBжадныйCANКоммуникация сверхчасовая/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "2f7d219e485e08a439a5fac9",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+        "source_sha256": "ed2871d6da6a67b3175e72119b219c4b89b2c9e25388c9981d4b28f0feb604d5",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 16.160444900000584,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 348,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "2f7d219e485e08a439a5fac9",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P003700 HO2S加热器电路电压低(组1 传感器2)/线束检查.pdf",
+        "source_sha256": "ed2871d6da6a67b3175e72119b219c4b89b2c9e25388c9981d4b28f0feb604d5",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 19.12533170000006,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 348,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P026800 气缸3 - 喷油器电路电压高/部件检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P026800 Газовый цилиндр3 - 压の/компонент проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P026800 Газовый цилиндр3 - 压の/компонент проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "aab35f883430bbeff869f7d8",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "source_sha256": "6108b9b57fae4d8051e291e70faa5816e40a0de88b4bcc3d63cabad1617e6d00",
+        "stage": "WRITING",
+        "primary_category": "MODEL_LIMITATION",
+        "secondary_categories": [],
+        "exception_type": "TranslationError",
+        "elapsed_seconds": 278.99043879999954,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\path_translation.py",
+            "line": 34,
+            "function": "__call__"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 142,
+            "function": "translate_path"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 135,
+            "function": "translate_part"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\glossary\\engine.py",
+            "line": 253,
+            "function": "translate"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\engine\\router\\translation_router.py",
+            "line": 172,
+            "function": "translate"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\engine\\router\\translation_router.py",
+            "line": 153,
+            "function": "translate"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\engine\\output_validation.py",
+            "line": 17,
+            "function": "checked_output"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "aab35f883430bbeff869f7d8",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf",
+        "source_sha256": "6108b9b57fae4d8051e291e70faa5816e40a0de88b4bcc3d63cabad1617e6d00",
+        "stage": "WRITING",
+        "primary_category": "MODEL_LIMITATION",
+        "secondary_categories": [],
+        "exception_type": "TranslationError",
+        "elapsed_seconds": 97.29259439999987,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\path_translation.py",
+            "line": 34,
+            "function": "__call__"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 142,
+            "function": "translate_path"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 135,
+            "function": "translate_part"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\glossary\\engine.py",
+            "line": 348,
+            "function": "translate"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\engine\\router\\translation_router.py",
+            "line": 172,
+            "function": "translate"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\engine\\router\\translation_router.py",
+            "line": 153,
+            "function": "translate"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\engine\\output_validation.py",
+            "line": 17,
+            "function": "checked_output"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "b9e868ca8aab6d55046ead7d",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+        "source_sha256": "32d77ef7d63d2157d03ada275bc528aa7e9d06ed9a77496944b9d56d94b80fdf",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 20.41685879999568,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 361,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "b9e868ca8aab6d55046ead7d",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P055500 制动增压器压力传感器电路/线束检查.pdf",
+        "source_sha256": "32d77ef7d63d2157d03ada275bc528aa7e9d06ed9a77496944b9d56d94b80fdf",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 76.22876319999978,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 361,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P21CF00 气缸1喷油器 B 电路 断路/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P21CF00 Газовый цилиндр1B/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P21CF00 Газовый цилиндр1B/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P21DE00 气缸2喷油器 B 电路电压低/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P21DE00 Газовый цилиндр2B   Ilcweiten/информация о коде неисправности и проверка_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/机/P21DE00 Газовый цилиндр2B   Ilcweiten/информация о коде неисправности и проверка_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B16D900 内部故障-系统ASIC/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/(  #)1)/B16D900 -ASIC/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/(  #)1)/B16D900 -ASIC/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "07fa381ae136f77dda33a892",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+        "source_sha256": "b0192c0fa628bfb8a42d267d21d40a84f8ec1cb9e63d302bb471b15523b98679",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 21.390766800002893,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 382,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_job.py",
+            "line": 239,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 432,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 254,
+            "function": "run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 272,
+            "function": "_run"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 509,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 554,
+            "function": "validate"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "07fa381ae136f77dda33a892",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/安全气囊(项目 #1)/B261800 仪表盘空气囊警告灯CAN与CAN总线通信超时/线束检查.pdf",
+        "source_sha256": "b0192c0fa628bfb8a42d267d21d40a84f8ec1cb9e63d302bb471b15523b98679",
+        "stage": "validate",
+        "primary_category": "VALIDATION",
+        "secondary_categories": [],
+        "exception_type": "PdfError",
+        "elapsed_seconds": 16.49383200000011,
+        "original_member_preserved": true,
+        "diagnostic": {
+          "page": 1,
+          "object_index": 382,
+          "native_code": 0
+        },
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pipeline.py",
+            "line": 197,
+            "function": "stage"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\archive_pipeline.py",
+            "line": 153,
+            "function": "write"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 540,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\tools\\aw081_final_speed_patch.py",
+            "line": 117,
+            "function": "wrapped"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\pdf_document.py",
+            "line": 575,
+            "function": "validate"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/无级变速/P088000 TCM电源输入信号/检验车辆维修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/Невысокая скорость/P088000 TCM源 Ресурсы/Проверка ремонта транспортного средства_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI asset ∂/Невысокая скорость/P088000 TCM源 Ресурсы/Проверка ремонта транспортного средства_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "702b8f65c7992ea6e850739f",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+        "source_sha256": "57a38fbde8b53a336cf9faae645dacad1641665683bd30fda6fb8e54bcd502f8",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 174.6471695999935,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 471,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 138,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "702b8f65c7992ea6e850739f",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/综合车身控制模块-轮胎压力监测/C121200 车速传感器故障/故障代码信息和检查.pdf",
+        "source_sha256": "57a38fbde8b53a336cf9faae645dacad1641665683bd30fda6fb8e54bcd502f8",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 8.272195900000042,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 498,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 139,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+      "status_exact": true,
+      "old_status": "FAILED_SOURCE_PRESERVED",
+      "new_status": "FAILED_SOURCE_PRESERVED",
+      "path_exact": true,
+      "old_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+      "new_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+      "raw_exact": true,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": {
+        "document_id": "6f7e040dd3cf80c8ba0187b9",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+        "source_sha256": "b92bb05117d4e1c495ffdaa2fa061aac0b073281ad5f63ae93e05d28e5be9693",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 68.09668400000373,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 471,
+            "function": "_run_documents"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 138,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 422,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "new_failure": {
+        "document_id": "6f7e040dd3cf80c8ba0187b9",
+        "member_path": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/音频视频导航/B280100 多媒体CAN信号电路故障/故障代码信息和检查.pdf",
+        "source_sha256": "b92bb05117d4e1c495ffdaa2fa061aac0b073281ad5f63ae93e05d28e5be9693",
+        "stage": "TRANSLATING",
+        "primary_category": "UNSUPPORTED_STRUCTURE",
+        "secondary_categories": [
+          "UNKNOWN_INTERNAL_ERROR"
+        ],
+        "exception_type": "IndexError",
+        "elapsed_seconds": 42.8414329999996,
+        "original_member_preserved": true,
+        "diagnostic": {},
+        "error_frames": [
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 498,
+            "function": "_document_stages"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\config\\logging_config.py",
+            "line": 77,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\job.py",
+            "line": 139,
+            "function": "_pdf_translation"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 374,
+            "function": "lookup_direct"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\documents\\run_metrics.py",
+            "line": 462,
+            "function": "call"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\translation_memory\\knowledge.py",
+            "line": 68,
+            "function": "_template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 232,
+            "function": "template"
+          },
+          {
+            "file": "C:\\TreeTranslate\\app\\knowledge\\router.py",
+            "line": 304,
+            "function": "_template_match"
+          }
+        ]
+      },
+      "failed_original_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图/示意图/车身电气系统/大灯/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Карта круга/Показать намерения/Автомобильная электрическая система/大/схема_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Карта круга/Показать намерения/Автомобильная электрическая система/大/схема_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 电路图/连接器形状/ICU（集成中央控制模块）接线盒/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Карта круга/Форма соединителя/ICU(неразборчиво)/схема_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Карта круга/Форма соединителя/ICU(неразборчиво)/схема_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/发动机电气系统/充电系统/故障检修.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/机/Система зарядки/Недостаток ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/机/Система зарядки/Недостаток ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/智能变速器(IVT)系统/IVT控制系统/E-Module/规格.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/智()IVT• Система/IVTКонтрольная система/Электронный модуль/технические характеристики_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/智()IVT• Система/IVTКонтрольная система/Электронный модуль/технические характеристики_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/车身（内部和外部）/仪表板/仪表板侧装饰板/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/)())/Инструментальный панель/Платная панель на бок украшения/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/)())/Инструментальный панель/Платная панель на бок украшения/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/车身（内部和外部）/天窗/天窗玻璃/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/)())/天/天/Процедура ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/)())/天/天/Процедура ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/转向系统/方向盘（加热式方向盘）/加热式方向盘开关/维修程序.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/Перейти к системе/)())/Загревательный конвейер/процедуры ремонта_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) G 1.5 MPI Руководство по ремонту/Перейти к системе/)())/Загревательный конвейер/процедуры ремонта_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 电路图/G 1.4 T-GDI/示意图/车身电气系统/遥控＆防盗警报系统/示意图.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C)/G 1.4 Т-GDI/Показать намерения/Автомобильная электрическая система/&/схема_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C)/G 1.4 Т-GDI/Показать намерения/Автомобильная электрическая система/&/схема_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    },
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 车身维修手册/车身构造/部件和部件位置.pdf",
+      "status_exact": true,
+      "old_status": "TRANSLATED",
+      "new_status": "TRANSLATED",
+      "path_exact": true,
+      "old_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) (1)/Строительство автомобиля/компоненты и их расположение_ru.pdf",
+      "new_path": "2022 代 Hawaii ()CN7C)/2022 代 Hawaii ()CN7C) (1)/Строительство автомобиля/компоненты и их расположение_ru.pdf",
+      "raw_exact": false,
+      "bytes_except_generated_trailer_ID_exact": true,
+      "source_metadata_differences": {},
+      "old_failure": null,
+      "new_failure": null,
+      "normalized_objects_exact": true,
+      "render_probes_exact": true,
+      "protected_ID_number_multiset_exact": true,
+      "output_semantics_exact": true
+    }
+  ],
+  "unavailable": [
+    "Historical full ordered OCR source contracts are absent; compare available extraction metadata and exact source archive bytes.",
+    "Historical full ordered translation candidates/model-ready inputs are absent; compare available bounded frontier translations and translated PDF objects/text/renders."
+  ],
+  "available_candidate_counts": {
+    "old": 38,
+    "new": 38
+  },
+  "candidate_differences": {},
+  "render_scope": "Existing probes: first and last page of every translated PDF at scale1.25; normalized objects/text on ALL pages",
+  "historical_output_sha256": "26cc48eac416ea4b23b0bb5b5f50222353ad8f7e864d07675a199d9b60fb6316"
+}

@@ -1,0 +1,441 @@
+{
+  "inclusive_stages": {
+    "pdf_open_parse": {
+      "calls": 288,
+      "seconds": 0.06422650000331487,
+      "failures": 0
+    },
+    "segmentation_reassembly": {
+      "calls": 160,
+      "seconds": 0.3707319000041025,
+      "failures": 0
+    },
+    "native_text_extract": {
+      "calls": 160,
+      "seconds": 7.831031600000642,
+      "failures": 0
+    },
+    "ocr_render": {
+      "calls": 120,
+      "seconds": 1.5052582999978767,
+      "failures": 0
+    },
+    "ocr_complexity": {
+      "calls": 120,
+      "seconds": 1.1388697999991564,
+      "failures": 0
+    },
+    "ocr_recognize": {
+      "calls": 120,
+      "seconds": 478.5461406999966,
+      "failures": 0
+    },
+    "ocr_postprocess": {
+      "calls": 120,
+      "seconds": 10.801790300002722,
+      "failures": 0
+    },
+    "hybrid_page_extract": {
+      "calls": 157,
+      "seconds": 500.33581769999637,
+      "failures": 0
+    },
+    "extract.extract_page": {
+      "calls": 160,
+      "seconds": 500.39668149999943,
+      "failures": 0
+    },
+    "preflight_open_extract": {
+      "calls": 100,
+      "seconds": 502.0361939999975,
+      "failures": 0
+    },
+    "resolve_language": {
+      "calls": 100,
+      "seconds": 0.5998416000029465,
+      "failures": 0
+    },
+    "DocumentProfiler": {
+      "calls": 101,
+      "seconds": 0.0658114000052592,
+      "failures": 0
+    },
+    "document_profile": {
+      "calls": 100,
+      "seconds": 0.25677109999560344,
+      "failures": 0
+    },
+    "knowledge_snapshot": {
+      "calls": 101,
+      "seconds": 22.795242600002894,
+      "failures": 0
+    },
+    "snapshot_build": {
+      "calls": 100,
+      "seconds": 22.977331000004597,
+      "failures": 0
+    },
+    "knowledge_prefetch": {
+      "calls": 115,
+      "seconds": 47.626277799998206,
+      "failures": 0
+    },
+    "segment_classification": {
+      "calls": 7460,
+      "seconds": 0.3618800999729501,
+      "failures": 0
+    },
+    "translation_memory": {
+      "calls": 6602,
+      "seconds": 16.977240599982906,
+      "failures": 0
+    },
+    "glossary_lookup": {
+      "calls": 24682,
+      "seconds": 196.25625560001845,
+      "failures": 0
+    },
+    "template_routing": {
+      "calls": 5967,
+      "seconds": 60.81391059999987,
+      "failures": 6
+    },
+    "m2m100_model_load": {
+      "calls": 35,
+      "seconds": 21.847539200002757,
+      "failures": 0
+    },
+    "m2m100_load_or_reuse": {
+      "calls": 3282,
+      "seconds": 25.972372900017035,
+      "failures": 0
+    },
+    "m2m100_inference": {
+      "calls": 3282,
+      "seconds": 550.0117785000284,
+      "failures": 0
+    },
+    "model_translation": {
+      "calls": 3597,
+      "seconds": 621.8656019999944,
+      "failures": 0
+    },
+    "translation_backend": {
+      "calls": 3597,
+      "seconds": 622.1912497999883,
+      "failures": 0
+    },
+    "semantic_guards": {
+      "calls": 3637,
+      "seconds": 36.60957949995736,
+      "failures": 0
+    },
+    "engine_translation": {
+      "calls": 3063,
+      "seconds": 746.9713417000175,
+      "failures": 1
+    },
+    "pdf_segment_translation": {
+      "calls": 3884,
+      "seconds": 816.5132298000572,
+      "failures": 77
+    },
+    "argos_model_load": {
+      "calls": 58,
+      "seconds": 12.572826000000532,
+      "failures": 0
+    },
+    "argos_inference": {
+      "calls": 315,
+      "seconds": 14.277858600007676,
+      "failures": 0
+    },
+    "path_translation": {
+      "calls": 256,
+      "seconds": 50.02014699999472,
+      "failures": 1
+    },
+    "destination_filename": {
+      "calls": 94,
+      "seconds": 50.22873499999969,
+      "failures": 1
+    },
+    "pdf_font_resolution": {
+      "calls": 124,
+      "seconds": 15.619167899996683,
+      "failures": 0
+    },
+    "pdf_flow_layout": {
+      "calls": 124,
+      "seconds": 6.876407499991728,
+      "failures": 0
+    },
+    "pdf_font_embedding": {
+      "calls": 124,
+      "seconds": 42.926559300007284,
+      "failures": 0
+    },
+    "write.FPDFPage_GenerateContent": {
+      "calls": 122,
+      "seconds": 0.25878369999645656,
+      "failures": 0
+    },
+    "pdf_page_layout_write": {
+      "calls": 124,
+      "seconds": 70.32995630000005,
+      "failures": 0
+    },
+    "pdf_continuations": {
+      "calls": 93,
+      "seconds": 145.11101680000047,
+      "failures": 0
+    },
+    "write.FPDF_SaveAsCopy": {
+      "calls": 93,
+      "seconds": 0.41786250000495784,
+      "failures": 0
+    },
+    "pdf_write": {
+      "calls": 93,
+      "seconds": 216.582778899995,
+      "failures": 0
+    },
+    "document_write": {
+      "calls": 93,
+      "seconds": 216.60274610000124,
+      "failures": 0
+    },
+    "pdf_validation": {
+      "calls": 93,
+      "seconds": 2.4252381999958743,
+      "failures": 17
+    },
+    "source_hash_verification": {
+      "calls": 76,
+      "seconds": 0.023613299999851733,
+      "failures": 0
+    },
+    "publication": {
+      "calls": 76,
+      "seconds": 0.05295419999583828,
+      "failures": 0
+    },
+    "archive_scan_before_start": {
+      "calls": 1,
+      "seconds": 0.04998539999996865,
+      "failures": 0
+    },
+    "archive_validate_input": {
+      "calls": 1,
+      "seconds": 0.0017969999998967978,
+      "failures": 0
+    },
+    "archive_open": {
+      "calls": 2,
+      "seconds": 0.056801000000632484,
+      "failures": 0
+    },
+    "archive_extract": {
+      "calls": 102,
+      "seconds": 0.35154440000042086,
+      "failures": 0
+    },
+    "archive_sample": {
+      "calls": 1,
+      "seconds": 0.05820999999923515,
+      "failures": 0
+    },
+    "archive_profile": {
+      "calls": 1,
+      "seconds": 0.0038678999999319785,
+      "failures": 0
+    },
+    "ocr_shutdown": {
+      "calls": 100,
+      "seconds": 0.04064689999722759,
+      "failures": 0
+    },
+    "archive_pack_member": {
+      "calls": 76,
+      "seconds": 2.8076836999998704,
+      "failures": 0
+    },
+    "archive_validate_output_members": {
+      "calls": 1,
+      "seconds": 0.043824899999890476,
+      "failures": 0
+    },
+    "archive_validate_output": {
+      "calls": 1,
+      "seconds": 0.05484919999980775,
+      "failures": 0
+    },
+    "archive_publish": {
+      "calls": 1,
+      "seconds": 0.00866760000008071,
+      "failures": 0
+    },
+    "archive_cleanup": {
+      "calls": 1,
+      "seconds": 0.03603709999970306,
+      "failures": 0
+    },
+    "document_job": {
+      "calls": 1,
+      "seconds": 1428.5192130999994,
+      "failures": 0
+    }
+  },
+  "exclusive_categories": {
+    "extraction": 21.957206399994902,
+    "profiler/classification": 0.32066239998584933,
+    "knowledge snapshot": 2.4127988000072946,
+    "OCR": 478.5461406999966,
+    "TM": 14.340418499989937,
+    "glossary": 164.31415080000716,
+    "templates": 2.7497847999566147,
+    "model": 533.4780115999938,
+    "guards": 2.7019777999757935,
+    "path other": 1.630086699993626,
+    "writer": 170.06053760000304,
+    "validation": 1.5763283999967825,
+    "archive append": 0.16774620000069262,
+    "other/orchestration": 34.343175300097755
+  },
+  "category_method": "Historical priority interval-union partition; nested and cross-thread overlaps assigned once. OCR priority precedes NMT; recognition queue wait remains OCR occupancy, not exclusive GPU kernel time.",
+  "ocr": {
+    "recognize": {
+      "calls": 120,
+      "seconds": 478.5461406999966,
+      "failures": 0
+    },
+    "load_count": 28,
+    "load_seconds": 186.06854599999951,
+    "reuse_count": 212,
+    "inference_seconds": 120.01564809999127,
+    "postprocess": {
+      "calls": 120,
+      "seconds": 10.801790300002722,
+      "failures": 0
+    },
+    "pages": 90,
+    "regions": 120,
+    "lifecycle_event_counts": {
+      "worker_start": 1,
+      "paddle_runtime_init": 1,
+      "hardware_plan": 1,
+      "component_load": 210,
+      "model_load": 28,
+      "inference": 240,
+      "model_reuse": 212,
+      "model_eviction": 26,
+      "model_cache_summary": 1,
+      "worker_shutdown": 1
+    },
+    "inference_scope": "Worker cached.predict; excludes parent GPU-owner queue wait, IPC and postprocess",
+    "plans": [
+      {
+        "event": "hardware_plan",
+        "pid": 26412,
+        "capabilities": {
+          "ram_total": 34266484736,
+          "ram_available": 21584281600,
+          "logical_threads": 16,
+          "cuda": true,
+          "vram_total": 12884901888,
+          "vram_available": 11175723008
+        },
+        "plan": {
+          "resident_models": 2,
+          "resident_ram_bytes": 11993269657,
+          "resident_vram_bytes": 8375186227,
+          "result_cache_bytes": 164443088,
+          "prepared_region_bytes": 134217728,
+          "ram_reserve_bytes": 5139972710,
+          "vram_reserve_bytes": 1932735283,
+          "batch_ceiling": null
+        },
+        "device": "gpu"
+      }
+    ]
+  },
+  "glossary": {
+    "counts": {
+      "sql_statements": 1358559,
+      "lookups": 24682
+    },
+    "unique_logical_lookups": 4900,
+    "seconds": 198.7580138999483,
+    "negative_lookups": 10687,
+    "repeated_negative_results": 8507,
+    "cache": {
+      "lexical": {
+        "prefetch_calls": 115,
+        "prefetch_unique_sources": 4163,
+        "misses": 11858,
+        "prefetch_unique_hashes": 367746,
+        "prefetch_sql_queries": 9172,
+        "negative_hits": 247315,
+        "sql_queries": 11609,
+        "positive_hits": 10048,
+        "evictions": 8485,
+        "entries": 3373,
+        "estimated_bytes": 20561377,
+        "budget": 20561920
+      },
+      "normalization": {
+        "misses": 306759,
+        "computations": 306759,
+        "positive_hits": 2386884,
+        "evictions": 290375,
+        "entries": 16384,
+        "estimated_bytes": 21791769,
+        "budget": 33554432
+      },
+      "final_entries": 512
+    },
+    "engine_counters": {
+      "hits": 23901,
+      "full_segment_hits": 825,
+      "constraint_hits": 2141,
+      "fallbacks": 247,
+      "placeholder_failures": 190,
+      "derived_fluid_constraints": 0
+    }
+  },
+  "writer": {
+    "pdf_write": {
+      "calls": 93,
+      "seconds": 216.582778899995,
+      "failures": 0
+    },
+    "document_write": {
+      "calls": 93,
+      "seconds": 216.60274610000124,
+      "failures": 0
+    },
+    "page_layout": {
+      "calls": 124,
+      "seconds": 70.32995630000005,
+      "failures": 0
+    },
+    "locks": {
+      "native_extraction": {
+        "wait_seconds": 1.5361126999996486,
+        "held_seconds": 23.37134470000001,
+        "count": 222
+      },
+      "writer": {
+        "wait_seconds": 0.0025079000033656484,
+        "held_seconds": 216.56781170000158,
+        "count": 93
+      },
+      "validation": {
+        "wait_seconds": 0.2609807999933764,
+        "held_seconds": 2.1420953999950143,
+        "count": 93
+      }
+    },
+    "actual_work_scope": "Native writer outer PDF_LOCK held excludes acquisition wait. pdf_write/document_write are inclusive and must not be summed with lock/layout subscopes."
+  }
+}

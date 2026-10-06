@@ -1,0 +1,42 @@
+[
+  {
+    "path": "app/glossary/packs.py",
+    "state": "changed"
+  },
+  {
+    "path": "app/glossary/placeholders.py",
+    "state": "changed"
+  },
+  {
+    "path": "docs/AW0.7.1_GLOSSARY_REPORT.md",
+    "state": "changed"
+  },
+  {
+    "path": "tests/test_glossary.py",
+    "state": "changed"
+  },
+  {
+    "path": "tests/test_glossary_integration.py",
+    "state": "changed"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "state": "changed"
+  },
+  {
+    "path": "README.md",
+    "state": "changed"
+  },
+  {
+    "path": "docs/NEXT_CYCLE.md",
+    "state": "changed"
+  },
+  {
+    "path": "tools/smoke_lexical_ui.py",
+    "state": "changed"
+  },
+  {
+    "path": "tools/smoke_translation_ui.py",
+    "state": "changed"
+  }
+]

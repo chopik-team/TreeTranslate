@@ -12,6 +12,8 @@ class OcrRequest:
     region: tuple | None = None
     request_id: str = ''
     complexity: dict = field(default_factory=dict)
+    source_identity: str = ''
+    render_identity: tuple | None = None
 
 
 @dataclass(frozen=True)

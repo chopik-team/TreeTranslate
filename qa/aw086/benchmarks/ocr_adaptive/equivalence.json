@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fingerprints": true,
+    "candidates": true,
+    "writer": true,
+    "ocr_source_text_block_page": true,
+    "full_source_contracts_where_observed": true,
+    "source_immutable": true,
+    "production_unchanged_during_run": true,
+    "status_counts": true,
+    "archive_crc_and_failed_exact_bytes": true,
+    "gate_and_region_selection_unchanged": true
+  },
+  "source_checks": {
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Intake Air Temperature Sensor (IATS)/C120102 左前轮速传感器范围 性能 间歇/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Rear Door Belt Outside Weatherstrip/维修程序.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140900 驾驶席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C110117 蓄电池电压高/故障代码信息和检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C125901 方向盘转角传感器-电气故障/部件检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Passenger Airbag (PAB) Module/B135500 助手席空气囊电阻电路与蓄电池电路短路(1级)/ETM.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C181483 CAN信息故障 - SAS (CRC)/线束检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C166A87 与LDWS LKAS的通信CAN超时/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/中央网关/B252400 右前转向信号电路与搭铁电路短路/故障代码信息和检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P013A00 氧传感器响应慢 - 浓到稀组1传感器2/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/DCT (双离合变速器)系统/双离合变速器控制系统/输入速度传感器/维修程序.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/发动机电气系统/充电系统/故障检修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 电路图/G 1.4 T-GDI/示意图/车身电气系统/遥控＆防盗警报系统/示意图.pdf": true
+  },
+  "full_source_contract_checks": {
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Intake Air Temperature Sensor (IATS)/C120102 左前轮速传感器范围 性能 间歇/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Rear Door Belt Outside Weatherstrip/维修程序.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/Side Impact Sensor (SIS)/B140900 驾驶席侧面碰撞传感器(SIS)通信故障/故障代码信息和检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/SRS Control Module (SRSCM)/P203300 废气温度传感器电路电压高，组1传感器2/线束检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C110117 蓄电池电压高/故障代码信息和检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/DIS head unit/C125901 方向盘转角传感器-电气故障/部件检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.5 MPI 部品检查流程/Passenger Airbag (PAB) Module/B135500 助手席空气囊电阻电路与蓄电池电路短路(1级)/ETM.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/ABS ESC/C181483 CAN信息故障 - SAS (CRC)/线束检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/Rear Corner Radar/C166A87 与LDWS LKAS的通信CAN超时/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/中央网关/B252400 右前转向信号电路与搭铁电路短路/故障代码信息和检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/双离合器变速器/P090412 1档选档传感器对蓄电池短路/线束检查.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P013A00 氧传感器响应慢 - 浓到稀组1传感器2/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P193100 阀持续时间传感器霍尔 角度关联性/示意图.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 故障代码维修指南/发动机控制/P261000 ECM PCM内部发动机关闭定时器性能/检验维修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.4 T-GDI 维修手册/DCT (双离合变速器)系统/双离合变速器控制系统/输入速度传感器/维修程序.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/中央网关/C161100 与EMS的CAN通信超时/示意图.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 故障代码维修指南/发动机控制/P040400 废气再循环控制电路范围 性能/示意图.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) G 1.5 MPI 维修手册/发动机电气系统/充电系统/故障检修.pdf": true,
+    "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022 第七代伊兰特(CN7C) 电路图/G 1.4 T-GDI/示意图/车身电气系统/遥控＆防盗警报系统/示意图.pdf": true
+  },
+  "observer_limitations": [
+    {
+      "member": "2022 第七代伊兰特(CN7C) 维修手册电路图 用户手册/2022  第七代伊兰特(CN7C) G 1.4 T-GDI 部品检查流程/BJ Boot/部件和部件位置.pdf",
+      "reason": "Initial observer captured archive native sample, not child OCR.",
+      "actual_child_check": "Exact source text/block/page through measured writer; full coordinates/confidence checked in targeted4.",
+      "observed_native_blocks": 26,
+      "actual_child_blocks": 27
+    }
+  ],
+  "comparison_reference": "C:\\TreeTranslate\\qa\\aw081\\hardware_scaling_20\\runs\\mid",
+  "source_reference": "legacy shadow; 19/20 additionally verified against MID writer",
+  "all_source_fields": "block/page/text/bbox/origin/confidence/order/polygon/model"
+}

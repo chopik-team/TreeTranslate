@@ -1,0 +1,39 @@
+{
+  "revision": "AW0.81",
+  "references_evaluation_only": true,
+  "review_source": "User answers 1–11, 2026-10-04; OEM terminology independently corroborated where accessible. Atomic concepts and bounded reusable grammar only.",
+  "manuals": {
+    "lamp": {"url": "https://www.helantra7.com/hyundai_elantra_cn7_turn_signal_lamp-3837.html", "verification": "Fetched: bulb socket, turn signal bulb, turn signal lamp assembly."},
+    "compressor": {"url": "https://www.helantra7.com/hyundai_elantra_cn7_compressor-3880.html", "verification": "Fetched: side of engine block, driven by engine V-belt."},
+    "belt": {"url": "https://www.helantra7.com/hyundai_elantra_cn7_drive_belt_system-3287.html", "verification": "Fetched: excessive wear, frayed cords, acceptable rib-side cracks, replacement if large rib chunks missing."},
+    "brake": {"url": "https://www.helantra7.com/hyundai_elantra_cn7_brake_oil-3549.html", "verification": "Fetched: reservoir capacity cc, DOT4, D Pri and E Sec. Values are not encoded in runtime rules."},
+    "cover": {"url": "https://www.helantra7.com/hyundai_elantra_cn7_engine_room_under_cover-3284.html", "verification": "Fetched: Engine Room Under Cover; malformed Chinese alias explicitly confirmed by user."},
+    "gds": {"url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10210201-0001.pdf", "verification": "Distinct EVAP menu captions confirmed by user. TSB fetched, screenshot text not independently extracted; do not claim an independent menu-caption verification."},
+    "gpf": {"url": "https://www.hkona.com/gpf_gasoline_particulate_filter_repair_procedures-731.html", "verification": "Fetched: GPF Service Regeneration."},
+    "washer": {"url": "https://www.htucson4.com/repair_procedures-2137.html", "verification": "User confirms washer without sealing qualifier; Codex fetch failed decoding. Existing concept reused."}
+  },
+  "entries": [
+    {"source":"转向信号灯总成","aliases":["灯总成"],"alias_context_terms":{"灯总成":["转向信号灯"]},"semantic_key":"turn_signal_lamp_assembly","target":"указатель поворота в сборе","genitive":"указателя поворота в сборе","accusative":"указатель поворота в сборе","subdomain":"electrical","subdomains":["electrical","body"],"manual":"lamp"},
+    {"source":"灯泡插座","semantic_key":"bulb_socket","target":"патрон лампы","genitive":"патрона лампы","accusative":"патрон лампы","subdomain":"electrical","subdomains":["electrical","body"],"manual":"lamp"},
+    {"source":"转向信号灯灯泡","semantic_key":"turn_signal_bulb","target":"лампа указателя поворота","genitive":"лампы указателя поворота","accusative":"лампу указателя поворота","subdomain":"electrical","subdomains":["electrical","body"],"manual":"lamp"},
+    {"source":"垫圈","semantic_key":"washer","target":"шайба","genitive":"шайбы","accusative":"шайбу","subdomain":"common","manual":"washer"},
+    {"source":"三角皮带","semantic_key":"v_belt","target":"клиновой ремень","genitive":"клинового ремня","accusative":"клиновой ремень","subdomain":"engine","relation_to":"engine_drive_belt:subtype","manual":"compressor"},
+    {"source":"发动机的三角皮带","semantic_key":"engine_v_belt","target":"клиновой ремень двигателя","genitive":"клинового ремня двигателя","accusative":"клиновой ремень двигателя","instrumental":"клиновым ремнём двигателя","subdomain":"engine","relation_to":"engine_drive_belt:subtype","manual":"compressor"},
+    {"source":"机体侧","semantic_key":"side_of_engine_block","target":"сбоку блока цилиндров","genitive":"сбоку блока цилиндров","accusative":"сбоку блока цилиндров","subdomain":"engine","required_semantic_facts":["ac_compressor"],"type":"PHRASE","semantic_role":"diagnostic_relation","manual":"compressor"},
+    {"source":"皮带侧面","semantic_key":"belt_rib_side","target":"ребристая сторона ремня","genitive":"ребристой стороны ремня","accusative":"ребристую сторону ремня","locative":"ребристой стороне ремня","subdomain":"engine","required_semantic_facts":["drive_belt_inspection"],"type":"PHRASE","semantic_role":"diagnostic_relation","manual":"belt"},
+    {"source":"过度磨损","semantic_key":"excessive_wear","target":"чрезмерный износ","genitive":"чрезмерного износа","accusative":"чрезмерный износ","subdomain":"engine","type":"PHRASE","semantic_role":"diagnostic_relation","manual":"belt"},
+    {"source":"发动机室底盖","aliases":["机舱被掩盖"],"reference_only_aliases":["机舱被掩盖"],"open_reference_aliases":["机舱被掩盖"],"semantic_key":"engine_room_under_cover","target":"нижняя защита моторного отсека","genitive":"нижней защиты моторного отсека","accusative":"нижнюю защиту моторного отсека","subdomain":"engine","manual":"cover"},
+    {"source":"蒸发气泄漏测试","semantic_key":"evap_leakage_test_menu","target":"Проверка герметичности системы EVAP","genitive":"проверки герметичности системы EVAP","accusative":"проверку герметичности системы EVAP","subdomain":"diagnostics","subdomains":["diagnostics","emissions","cooling"],"label_only":true,"introduced_identifiers":["EVAP"],"manual":"gds"},
+    {"source":"蒸发器系统泄漏测试","semantic_key":"evaporative_gas_system_leakage_test_menu","target":"Проверка утечек системы улавливания паров топлива","genitive":"проверки утечек системы улавливания паров топлива","accusative":"проверку утечек системы улавливания паров топлива","subdomain":"diagnostics","subdomains":["diagnostics","emissions","cooling"],"label_only":true,"manual":"gds"},
+    {"source":"GPF服务生成","semantic_key":"gpf_service_regeneration","target":"Сервисная регенерация GPF","genitive":"сервисной регенерации GPF","accusative":"сервисную регенерацию GPF","subdomain":"emissions","subdomains":["diagnostics","emissions","cooling"],"label_only":true,"manual":"gpf"}
+  ],
+  "template_extensions": [
+    {"action":"INSTALL","source_patterns":["安装{X}","安装{X}。"],"slots":["转向信号灯总成"],"manual":"lamp"}
+  ],
+  "templates": [
+    {"id":"aw081-remove-pair-from-assembly","source":"从{X}上拆卸{Y}和{Z}。","target":"Снимите {Y} и {Z} с {X}.","forms":{"X":"genitive","Y":"accusative","Z":"accusative"},"allowed_slots":["转向信号灯总成","灯总成","灯泡插座","转向信号灯灯泡"],"slot_allowed":{"X":["转向信号灯总成","灯总成"],"Y":["灯泡插座","转向信号灯灯泡"],"Z":["灯泡插座","转向信号灯灯泡"]},"subdomains":["electrical","body"],"types":["PROCEDURE_STEP","PROSE"],"component_marker":true},
+    {"id":"aw081-location-drive","source":"位于{X},由{Y}驱动。","target":"Расположен {X} и приводится в действие {Y}.","forms":{"X":"nominative","Y":"instrumental"},"allowed_slots":["机体侧","发动机的三角皮带"],"slot_allowed":{"X":["机体侧"],"Y":["发动机的三角皮带"]},"subdomains":["engine","hvac"],"types":["PROSE","PROCEDURE_STEP"]},
+    {"id":"aw081-visual-wear-inspection","source":"目视检查{X}是否{Y}、{Z}等。","target":"Визуально проверьте {X} на {Y} и {Z}.","forms":{"X":"accusative","Y":"accusative","Z":"accusative"},"allowed_slots":["皮带","过度磨损","绳线磨损"],"slot_allowed":{"X":["皮带"],"Y":["过度磨损","绳线磨损"],"Z":["过度磨损","绳线磨损"]},"subdomains":["engine"],"types":["PROSE","PROCEDURE_STEP"]},
+    {"id":"aw081-rib-cracks-replacement","source":"{X}的{Y}被认为是可接受的。如果{Z}的肋部缺少大块,则应更换。","target":"{Y} на {X} считаются допустимыми. Если отсутствуют крупные участки рёбер {Z}, ремень следует заменить.","forms":{"X":"locative","Y":"plural","Z":"genitive"},"slot_forms":{"裂纹":{"plural":"трещины"}},"allowed_slots":["皮带侧面","裂纹","皮带"],"slot_allowed":{"X":["皮带侧面"],"Y":["裂纹"],"Z":["皮带"]},"subdomains":["engine"],"types":["PROSE","PROCEDURE_STEP","CONDITION"],"capitalize":true}
+  ]
+}

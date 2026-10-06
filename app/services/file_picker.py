@@ -4,11 +4,13 @@ from PySide6.QtWidgets import QFileDialog, QWidget
 
 from app.config.constants import SUPPORTED_FILE_FILTER
 
+from app.localization.widgets import QFileDialog
+
 
 class FilePicker:
     @staticmethod
     def choose_files(parent: QWidget) -> list[Path]:
-        names, _ = QFileDialog.getOpenFileNames(parent, "Выберите документы DOCX или PDF", "", SUPPORTED_FILE_FILTER)
+        names, _ = QFileDialog.getOpenFileNames(parent, "Выберите документы DOCX, PDF или ZIP", "", SUPPORTED_FILE_FILTER)
         return [Path(name) for name in names]
 
     @staticmethod

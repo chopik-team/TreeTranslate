@@ -5,7 +5,7 @@ from PySide6.QtCore import QDir, QObject, QProcess, QUrl, Slot
 from PySide6.QtGui import QDesktopServices
 from PySide6.QtGui import QIcon
 
-from app.config.paths import icon_path
+from app.config.paths import icon_path, LOGS_DIR
 from app.gui.pages.file_translation_page import FileTranslationPage
 from app.gui.pages.text_translation_page import TextTranslationPage
 from app.models.file_item import FileItem, mock_file_tree
@@ -16,6 +16,7 @@ from app.services.translation_service import TranslationService
 from app.services.translation_preferences import TranslationPreferences
 from app.services.translation_session_manager import TranslationSessionManager
 from app.config.settings import TranslationJobConfig
+from app.localization.widgets import QMessageBox
 
 
 class TranslationUiController(QObject):
@@ -32,6 +33,9 @@ class TranslationUiController(QObject):
         self.service = service
         self.preferences = preferences or TranslationPreferences(SettingsService(), self)
         self.settings = self.preferences.settings
+        file_page.progress.apply_settings(self.settings)
+        self.settings.changed.connect(lambda key, value: file_page.progress.apply_settings(self.settings)
+                                      if key.startswith('interface/') else None)
         self.sessions = sessions or TranslationSessionManager(parent=self)
         self._text_request_id = 0
         self._source_paths: tuple[Path, ...] = ()
@@ -53,20 +57,18 @@ class TranslationUiController(QObject):
         if getattr(service, 'real_files', False):
             service.files.failed.connect(file_page.file_status.setText)
             service.files.notice.connect(file_page.file_status.setText)
+            service.files.file_completed.connect(file_page.file_tree.mark_completed)
         text_page.translate_requested.connect(self.translate_text)
         text_page.variant_chosen.connect(self._use_dictionary_variant)
         self.service.state_changed.connect(self._state_changed)
         self.service.progress_changed.connect(file_page.progress.set_progress)
+        self.service.progress_changed.connect(file_page.file_tree.set_progress)
         self.service.file_outputs_ready.connect(file_page.progress.set_output_paths)
         self.service.scan_finished.connect(self._show_tree)
         self.service.text_completed.connect(self._text_completed)
         self.service.text_failed.connect(self._text_failed)
         self.service.text_busy_changed.connect(self._text_busy_changed)
         text_page.source.editor.textChanged.connect(self._invalidate_text)
-        for page in (file_page, text_page):
-            page.mode.combo.currentIndexChanged.connect(
-                lambda _, combo=page.mode.combo: self.preferences.set_profile(combo.clean_mode())
-            )
         for page in (file_page, text_page):
             page.languages.source_combo.currentTextChanged.connect(self._save_languages)
             page.languages.target_combo.currentTextChanged.connect(self._save_languages)
@@ -76,27 +78,18 @@ class TranslationUiController(QObject):
         file_page.translate_folders.toggled.connect(self.preferences.set_translate_directories)
         file_page.translate_filenames.toggled.connect(self.preferences.set_translate_filenames)
         self.preferences.device_changed.connect(self._apply_device)
-        self.preferences.profile_changed.connect(self._apply_profile)
         self.preferences.languages_changed.connect(self._apply_languages)
         self.preferences.translate_directories_changed.connect(self._apply_translate_directories)
         self.preferences.translate_filenames_changed.connect(self._apply_translate_filenames)
         self.refresh_performance_controls()
         self.preferences.device_changed.connect(self._retranslate)
-        self.preferences.profile_changed.connect(self._retranslate)
         self.preferences.languages_changed.connect(self._retranslate)
 
     def refresh_performance_controls(self) -> None:
-        self._apply_profile(self.preferences.profile)
         self._apply_device(self.preferences.device)
         self._apply_languages(self.preferences.source_language, self.preferences.target_language)
         self._apply_translate_directories(self.preferences.translate_directories)
         self._apply_translate_filenames(self.preferences.translate_filenames)
-
-    def _apply_profile(self, value: str) -> None:
-        for page in (self.file_page, self.text_page):
-            page.mode.combo.blockSignals(True)
-            page.mode.combo.set_clean_mode(value)
-            page.mode.combo.blockSignals(False)
 
     def _apply_device(self, value: str) -> None:
         for page in (self.file_page, self.text_page):
@@ -147,25 +140,38 @@ class TranslationUiController(QObject):
             return
         if self.settings.restore_job_enabled() and self._source_paths:
             self.settings.save_unfinished_job(self._source_paths)
-        self.file_page.progress.set_output_paths(())
+        if not getattr(self.service, 'real_files', False):
+            self.file_page.progress.set_output_paths(())
         self.service.configure(self.settings.load_performance())
         if getattr(self.service, 'real_files', False):
             from app.documents.job import DocumentConfig
             from app.engine.types import DevicePreference, PerformanceProfile
             from app.services.hybrid_translation_service import PROFILE_NAMES
             selected = set(self.file_page.file_tree.selected_paths())
+            already_done = selected.intersection(self.service.files.completed_sources)
+            if already_done:
+                from app.localization import tr
+                answer = QMessageBox.question(self.file_page, tr('Повторный перевод'),
+                    tr('Выбранные файлы уже переведены. Перевести их заново?'),
+                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No, QMessageBox.StandardButton.No)
+                if answer != QMessageBox.StandardButton.Yes:
+                    selected.difference_update(already_done)
+            if not any(f.path in selected for f in self.service.files.scan_result.files):
+                self.sessions.finish('file')
+                return
             self.service.files.selected = tuple(f for f in self.service.files.scan_result.files if f.path in selected)
             mode, path = self.settings.output_location()
             policy = self.settings.load_performance()
             self.service.files.config = DocumentConfig(
                 self.preferences.source_language, self.preferences.target_language,
                 DevicePreference(self.preferences.device.lower()),
-                PROFILE_NAMES.get(self.preferences.profile, PerformanceProfile.AUTOMATIC),
+                PerformanceProfile.AUTOMATIC,
                 int(policy.cpu_threads) if policy.cpu_threads.isdigit() else None,
                 Path(path) if mode == 'custom' and path else None,
                 str(self.settings.value('general/output_template', '{name}_{lang}')),
                 self.preferences.translate_directories,
-                self.preferences.translate_filenames)
+                self.preferences.translate_filenames, domain="auto",
+                metrics_directory=LOGS_DIR / 'document_runs')
             self.file_page.file_status.setText('Перевод DOCX/PDF · Оригиналы сохраняются')
         self.service.start()
 
@@ -223,6 +229,10 @@ class TranslationUiController(QObject):
             self.settings.clear_unfinished_job()
         if getattr(self.service, 'real_files', False):
             self.file_page.progress.set_output_paths(())
+            from app.engine.types import DevicePreference
+            self.service.files.config = replace(self.service.files.config,
+                source=self.preferences.source_language, target=self.preferences.target_language,
+                device=DevicePreference(self.preferences.device.lower()))
             self.service.scan(paths)
             return
         self._source_name = paths[0].name if len(paths) == 1 else f"Выбрано файлов: {len(paths)}"
@@ -287,8 +297,9 @@ class TranslationUiController(QObject):
 
     def _state_changed(self, state: JobState) -> None:
         busy = state in {JobState.SCANNING, JobState.TRANSLATING, JobState.PAUSED, JobState.CANCELLING}
-        for widget in (self.file_page.drop_zone, self.file_page.file_tree, self.file_page.languages,
-                       self.file_page.mode, self.file_page.acceleration, self.file_page.translate_folders,
+        self.file_page.file_tree.set_busy(busy)
+        for widget in (self.file_page.drop_zone, self.file_page.languages,
+                       self.file_page.acceleration, self.file_page.translate_folders,
                        self.file_page.translate_filenames):
             widget.setEnabled(not busy)
         self.file_page.progress.set_state(state)
@@ -300,6 +311,7 @@ class TranslationUiController(QObject):
             self.sessions.finish("file")
         if state is JobState.COMPLETED or (
             state is JobState.CANCELLED and not getattr(self.service, '_closed', False)
+            and not getattr(self.service, '_closing', False)
         ):
             self.settings.clear_unfinished_job()
         if state is JobState.COMPLETED and self.settings.value("general/open_output", False, bool):
@@ -312,17 +324,21 @@ class TranslationUiController(QObject):
         if not self.sessions.start("text"):
             self.text_page.set_status("Дождитесь завершения перевода файлов.")
             return
-        policy = replace(self.settings.load_performance(), device=self.preferences.device, mode=self.preferences.profile)
+        policy = replace(self.settings.load_performance(), device=self.preferences.device, mode="Автоматический")
         self.text_page.set_status("Подготовка локального перевода…")
         self.service.submit_text(text, self.preferences.source_language, self.preferences.target_language,
-                                 policy, str(request_id))
+                                 policy, str(request_id), domain="auto")
 
     def _text_completed(self, result) -> None:
         if result.request_id == str(self._text_request_id):
             self.text_page.set_resolved_languages(result.source_language, result.target_language)
             self.text_page.set_result(result.translated_text)
-            suffix = " · резервный маршрут" if result.fallback_used else ""
-            self.text_page.set_status(f"{result.backend} · {result.device.upper()} · {result.duration_ms:.0f} мс{suffix}")
+            memory = getattr(getattr(self.service, 'engine', None), 'memory', None)
+            glossary = getattr(getattr(self.service, 'engine', None), 'glossary', None)
+            providers = (memory,) if result.backend == 'translation_memory' else (memory, glossary)
+            warnings = [provider.last_warning for provider in providers
+                        if provider and provider.last_warning]
+            self.text_page.set_status('Перевод завершён' + (' · ' + ' · '.join(warnings) if warnings else ''))
 
     def _text_failed(self, request_id: str, message: str) -> None:
         if request_id == str(self._text_request_id):

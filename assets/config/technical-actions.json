@@ -1,0 +1,514 @@
+{
+  "version": "0.81",
+  "actions": [
+    {
+      "id": "action.remove",
+      "semantic_id": "REMOVE",
+      "zh": [
+        "拆下",
+        "拆卸",
+        "拆除"
+      ],
+      "imperative": "Снимите",
+      "heading": "Снятие",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.install",
+      "semantic_id": "INSTALL",
+      "zh": [
+        "安装"
+      ],
+      "imperative": "Установите",
+      "heading": "Установка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.check",
+      "semantic_id": "CHECK",
+      "zh": [
+        "检查"
+      ],
+      "imperative": "Проверьте",
+      "heading": "Проверка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.inspect",
+      "semantic_id": "INSPECT",
+      "zh": [
+        "检查外观"
+      ],
+      "imperative": "Осмотрите",
+      "heading": "Осмотр",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.replace",
+      "semantic_id": "REPLACE",
+      "zh": [
+        "更换"
+      ],
+      "imperative": "Замените",
+      "heading": "Замена",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.fill",
+      "semantic_id": "FILL",
+      "zh": [
+        "加注",
+        "添加"
+      ],
+      "imperative": "Залейте",
+      "heading": "Заполнение",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.drain",
+      "semantic_id": "DRAIN",
+      "zh": [
+        "排出",
+        "排放"
+      ],
+      "imperative": "Слейте",
+      "heading": "Слив",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.clean",
+      "semantic_id": "CLEAN",
+      "zh": [
+        "清洁",
+        "清洗"
+      ],
+      "imperative": "Очистите",
+      "heading": "Очистка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.tighten",
+      "semantic_id": "TIGHTEN",
+      "zh": [
+        "拧紧"
+      ],
+      "imperative": "Затяните",
+      "heading": "Затяжка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.loosen",
+      "semantic_id": "LOOSEN",
+      "zh": [
+        "松开",
+        "拧松"
+      ],
+      "imperative": "Ослабьте",
+      "heading": "Ослабление",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.measure",
+      "semantic_id": "MEASURE",
+      "zh": [
+        "测量"
+      ],
+      "imperative": "Измерьте",
+      "heading": "Измерение",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.adjust",
+      "semantic_id": "ADJUST",
+      "zh": [
+        "调整"
+      ],
+      "imperative": "Отрегулируйте",
+      "heading": "Регулировка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.align",
+      "semantic_id": "ALIGN",
+      "zh": [
+        "对齐"
+      ],
+      "imperative": "Совместите",
+      "heading": "Совмещение",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.verify",
+      "semantic_id": "VERIFY",
+      "zh": [
+        "确认"
+      ],
+      "imperative": "Проверьте",
+      "heading": "Проверка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.disconnect",
+      "semantic_id": "DISCONNECT",
+      "zh": [
+        "断开",
+        "分离"
+      ],
+      "imperative": "Отсоедините",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.connect",
+      "semantic_id": "CONNECT",
+      "zh": [
+        "连接"
+      ],
+      "imperative": "Подсоедините",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.start",
+      "semantic_id": "START",
+      "zh": [
+        "启动",
+        "起动"
+      ],
+      "imperative": "Запустите",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.stop",
+      "semantic_id": "STOP",
+      "zh": [
+        "关闭"
+      ],
+      "imperative": "Остановите",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.wait",
+      "semantic_id": "WAIT",
+      "zh": [
+        "等待"
+      ],
+      "imperative": "Дождитесь",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.remove_air",
+      "semantic_id": "REMOVE_AIR",
+      "zh": [
+        "排出空气"
+      ],
+      "imperative": "Удалите воздух",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.avoid",
+      "semantic_id": "AVOID",
+      "zh": [
+        "避免"
+      ],
+      "imperative": "Избегайте",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.do_not",
+      "semantic_id": "DO_NOT",
+      "zh": [
+        "不要",
+        "不得",
+        "禁止"
+      ],
+      "imperative": "Не выполняйте",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.ensure",
+      "semantic_id": "ENSURE",
+      "zh": [
+        "确保"
+      ],
+      "imperative": "Убедитесь",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.idle",
+      "semantic_id": "IDLE",
+      "zh": [
+        "空转",
+        "怠速"
+      ],
+      "imperative": "Холостой ход",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED"
+    },
+    {
+      "id": "action.unscrew",
+      "semantic_id": "UNSCREW",
+      "zh": [
+        "拧下"
+      ],
+      "imperative": "Выверните",
+      "heading": "Выворачивание",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED; Codex review; actual development structures"
+    },
+    {
+      "id": "action.pull",
+      "semantic_id": "PULL",
+      "zh": [
+        "拉出"
+      ],
+      "imperative": "Вытяните",
+      "heading": "Вытягивание",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED; Codex review; actual development structures"
+    },
+    {
+      "id": "action.press",
+      "semantic_id": "PRESS",
+      "zh": [
+        "按下"
+      ],
+      "imperative": "Нажмите",
+      "heading": "Нажатие",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED; Codex review; actual development structures"
+    },
+    {
+      "id": "action.rotate",
+      "semantic_id": "ROTATE",
+      "zh": [
+        "转动"
+      ],
+      "imperative": "Поверните",
+      "heading": "Поворот",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED; Codex review; actual development structures"
+    },
+    {
+      "id": "action.release",
+      "semantic_id": "RELEASE",
+      "zh": [
+        "释放"
+      ],
+      "imperative": "Освободите",
+      "heading": "Освобождение",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED; Codex review; actual development structures"
+    },
+    {
+      "id": "action.open",
+      "semantic_id": "OPEN",
+      "zh": [
+        "打开"
+      ],
+      "imperative": "Откройте",
+      "heading": "Открытие",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED; Codex review; actual development structures"
+    },
+    {
+      "id": "aw081-action.increase",
+      "semantic_id": "INCREASE",
+      "zh": [
+        "增大",
+        "提高"
+      ],
+      "imperative": "Увеличьте",
+      "heading": "Увеличение",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.decrease",
+      "semantic_id": "DECREASE",
+      "zh": [
+        "降低",
+        "减小",
+        "减少"
+      ],
+      "imperative": "Уменьшите",
+      "heading": "Уменьшение",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.lock",
+      "semantic_id": "LOCK",
+      "zh": [
+        "锁定",
+        "锁止"
+      ],
+      "imperative": "Заблокируйте",
+      "heading": "Блокировка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.unlock",
+      "semantic_id": "UNLOCK",
+      "zh": [
+        "解锁"
+      ],
+      "imperative": "Разблокируйте",
+      "heading": "Разблокировка",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.enable",
+      "semantic_id": "ENABLE",
+      "zh": [
+        "启用"
+      ],
+      "imperative": "Активируйте",
+      "heading": "Активация",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.disable",
+      "semantic_id": "DISABLE",
+      "zh": [
+        "禁用",
+        "停用"
+      ],
+      "imperative": "Деактивируйте",
+      "heading": "Деактивация",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.apply_power",
+      "semantic_id": "APPLY_POWER",
+      "zh": [
+        "通电"
+      ],
+      "imperative": "Подайте питание",
+      "heading": "Подача питания",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.remove_power",
+      "semantic_id": "REMOVE_POWER",
+      "zh": [
+        "切断电源",
+        "断电"
+      ],
+      "imperative": "Отключите питание",
+      "heading": "Отключение питания",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.push",
+      "semantic_id": "PUSH",
+      "zh": [
+        "推入"
+      ],
+      "imperative": "Вставьте",
+      "heading": "Вставление",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "aw081-action.close",
+      "semantic_id": "CLOSE",
+      "zh": [
+        "闭合"
+      ],
+      "imperative": "Замкните",
+      "heading": "Замыкание",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED_WITH_DEVELOPMENT_EVIDENCE",
+      "reviewer": "Codex",
+      "evidence_file": "qa/aw081/action_development_evidence.json",
+      "evidence_sha256": "f0566703882cc0608a2fc9377ed4f28157f8fe717acbb21fc6028401831d63ea",
+      "revision": "AW0.81",
+      "ambiguity_policy": "Guard explicit contradiction only; this is not proof of an imperative clause."
+    },
+    {
+      "id": "action.pry-remove",
+      "semantic_id": "PRY_REMOVE",
+      "zh": [
+        "撬下"
+      ],
+      "imperative": "Подденьте и снимите",
+      "heading": "Снятие с поддеванием",
+      "review_state": "VERIFIED",
+      "provenance": "AUTHORED AW0.81; independent DEV operator evidence; not human certification",
+      "review_sha256": "acb0c34f41500fbdef4bc792b20563aecb215d1f1277af99b68725866b94f9bf"
+    }
+  ]
+}

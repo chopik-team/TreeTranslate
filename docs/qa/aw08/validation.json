@@ -1,0 +1,36 @@
+{
+  "completed_at_utc": "2026-09-28T18:33:12.598790+00:00",
+  "version": "AW 0.8",
+  "branch": "codex/next-cycle",
+  "full_regression": {
+    "tests": 549,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "targeted": {
+    "tests": 86,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "compileall_app_tools_exit_code": 0,
+  "git_diff_check_exit_code": 0,
+  "git_diff_check_note": "Only existing LF-to-CRLF advisory warnings; no whitespace errors.",
+  "local_model_manifest_sha256_verification_count": 15,
+  "performance_rows": 13,
+  "real_document_runs_passed": 13,
+  "quality_hard_pass": 79,
+  "quality_cases": 80,
+  "ocr_structure_repeat_verified_after_final_patch": true,
+  "git_commit_push_reset_revert_performed": false,
+  "evidence_sha256": {
+    "full-tests.xml": "f5c86a5a11a62a8207044c980bb70c39250219abb31f75fc0d8e8d9ce7467937",
+    "targeted-tests.xml": "1a12eff063c7090a26913485e276eaf9dbf44ca28f2b430f2c25d5e383b9e945",
+    "performance-final.json": "d09898a3a49f4ddb06ef8c99a22b02996a430d17fbb72c2074594ca8902d15bf",
+    "translation-quality-final.json": "b4f06f57be9bf98d3817c9ec7f021a113ba76466caaefcc1950eccda344b0281",
+    "documents-final.json": "d01605cc76a86d461b02c099cdcc5340c3c16b8a39c525405594e167a9eccec8",
+    "ocr-table.json": "26eeea0363ce4b0965b55b2760d3db54f94686bab50e7d9809b954967385030e",
+    "model-verification.txt": "ef0667108ca1cd940c1dbe515f49c8abf0676b1a1c7cbfe9fcd1d11a6a384ac8"
+  }
+}
